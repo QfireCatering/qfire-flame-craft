@@ -1,29 +1,340 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { ArrowRight, ArrowUpRight, Flame, Award, Users, Sparkles } from "lucide-react";
+import heroFire from "@/assets/hero-fire.jpg";
+import weddingTable from "@/assets/wedding-table.jpg";
+import steak from "@/assets/steak.jpg";
+import brisket from "@/assets/brisket.jpg";
+import chefTerry from "@/assets/chef-terry.jpg";
+import buffet from "@/assets/buffet.jpg";
+import phoenix from "@/assets/phoenix.jpg";
+import sanDiego from "@/assets/san-diego.jpg";
+import corporate from "@/assets/corporate.jpg";
+import privateParty from "@/assets/private-party.jpg";
+import { CTASection } from "@/components/site/Sections";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title: "Qfire Catering — Wedding, Corporate & Private Event Catering" },
+      { name: "description", content: "Full-service wood-fired catering for weddings, corporate events and private parties across Phoenix Metro and San Diego County. Featured on Food Network." },
+      { property: "og:title", content: "Qfire Catering" },
+      { property: "og:description", content: "Wood-fired flavors. Professional service. Stress-free execution." },
+      { property: "og:url", content: "/" },
+      { property: "og:image", content: heroFire },
+      { name: "twitter:image", content: heroFire },
     ],
+    links: [{ rel: "canonical", href: "/" }],
+    scripts: [{
+      type: "application/ld+json",
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FoodEstablishment",
+        name: "Qfire Catering",
+        description: "Full-service wood-fired and steakhouse catering for weddings, corporate events and private parties.",
+        areaServed: ["Phoenix Metro, AZ", "San Diego County, CA"],
+        servesCuisine: ["American", "Barbecue", "Steakhouse"],
+        priceRange: "$$$",
+      }),
+    }],
   }),
-  component: Index,
+  component: Home,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
+function Home() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <>
+      {/* HERO */}
+      <section className="relative min-h-screen flex items-center overflow-hidden grain-overlay">
+        <div className="absolute inset-0">
+          <img src={heroFire} alt="Chef grilling steaks over live fire at elegant wedding" className="absolute inset-0 w-full h-full object-cover slow-zoom" width={1920} height={1280} />
+          <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/60 to-ink/30" />
+          <div className="absolute inset-0 bg-gradient-to-r from-ink/85 via-ink/30 to-transparent" />
+        </div>
+
+        <div className="container-luxe relative z-10 pt-32 pb-20">
+          <div className="eyebrow mb-10">Featured on Food Network</div>
+          <h1 className="heading-xl text-bone max-w-5xl">
+            <span className="text-gold italic font-light">Qfire</span> Catering.
+            <br />
+            Wood-fired,
+            <br />
+            <span className="text-bone/70">unforgettable.</span>
+          </h1>
+          <p className="mt-10 max-w-xl text-xl text-bone/80 leading-relaxed font-light">
+            Full-service catering for weddings, corporate events and private parties.
+          </p>
+          <p className="mt-3 max-w-xl text-base text-bone/60 italic">
+            Wood-fired flavors. Professional service. Stress-free execution.
+          </p>
+
+          <div className="mt-12 flex flex-wrap gap-4">
+            <Link to="/quote" className="btn-primary">
+              Request a Quote <ArrowRight className="size-4" />
+            </Link>
+            <Link to="/locations" className="btn-ghost">Choose Your Location</Link>
+          </div>
+
+          <div className="mt-20 lg:mt-28 flex flex-wrap items-center gap-x-10 gap-y-4">
+            <div className="text-[0.6rem] tracking-[0.35em] uppercase text-bone/50">As Seen On</div>
+            <div className="flex flex-wrap items-center gap-x-8 gap-y-3">
+              {["Food Network", "BBQ Brawl", "Cutthroat Kitchen", "Camp Cutthroat"].map((logo) => (
+                <span key={logo} className="text-bone/85 font-display text-lg tracking-tight italic">
+                  {logo}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Scroll indicator */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-bone/40 text-[0.6rem] tracking-[0.4em] uppercase animate-pulse">
+          Scroll
+        </div>
+      </section>
+
+      {/* TWO REGIONS */}
+      <section className="relative py-24 lg:py-36 bg-onyx">
+        <div className="container-luxe">
+          <div className="text-center mb-16 lg:mb-20">
+            <div className="eyebrow justify-center mb-6">Serving Two Regions</div>
+            <h2 className="heading-lg text-bone">Where shall we cater?</h2>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-10">
+            {[
+              { key: "phoenix", img: phoenix, name: "Phoenix Metro", state: "Arizona",
+                cities: "Phoenix · Scottsdale · Mesa · Chandler · Gilbert · Glendale · Surprise · Avondale · Goodyear · Peoria",
+                href: "/phoenix" as const },
+              { key: "san-diego", img: sanDiego, name: "San Diego County", state: "California",
+                cities: "San Diego · Carlsbad · Encinitas · Del Mar · Rancho Santa Fe · Poway · La Jolla · Escondido · Vista · Oceanside",
+                href: "/san-diego" as const },
+            ].map((r) => (
+              <Link key={r.key} to={r.href} className="group relative block aspect-[4/5] lg:aspect-[5/6] overflow-hidden border border-white/5">
+                <img src={r.img} alt={r.name} loading="lazy" width={1600} height={1100}
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1500ms] group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent" />
+                <div className="absolute inset-0 p-8 lg:p-12 flex flex-col justify-end">
+                  <div className="text-[0.65rem] tracking-[0.35em] uppercase text-gold mb-4">{r.state}</div>
+                  <div className="heading-md text-bone group-hover:text-gold transition-colors duration-500">{r.name}</div>
+                  <p className="mt-5 text-sm text-bone/70 leading-relaxed max-w-md">{r.cities}</p>
+                  <div className="mt-8 inline-flex items-center gap-3 text-[0.7rem] tracking-[0.25em] uppercase text-bone group-hover:text-gold transition-colors">
+                    Enter {r.name === "Phoenix Metro" ? "Phoenix" : "San Diego"} Site
+                    <ArrowUpRight className="size-4 transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1" />
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SERVICE TYPES */}
+      <section className="py-24 lg:py-36">
+        <div className="container-luxe">
+          <div className="grid lg:grid-cols-[1fr_1.5fr] gap-12 lg:gap-20 items-end mb-20">
+            <div>
+              <div className="eyebrow mb-6">What We Cater</div>
+              <h2 className="heading-lg text-bone">Three settings. One unforgettable standard.</h2>
+            </div>
+            <p className="text-lg text-bone/65 leading-relaxed">
+              Whether you're hosting two hundred guests under bistro lights or
+              twelve at a private chef's table, the standard never changes.
+              Wood-fired. Plated by hand. Served without a single dropped detail.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-px bg-white/5 border border-white/5">
+            {[
+              { img: weddingTable, label: "Weddings", body: "Plated dinners and live-fire stations for the most photographed night of your life.", href: "/weddings" as const },
+              { img: corporate, label: "Corporate", body: "Investor dinners, holiday parties, board retreats — refined hospitality at scale.", href: "/corporate" as const },
+              { img: privateParty, label: "Private Parties", body: "Backyard luxury for milestones, anniversaries and the gatherings that matter most.", href: "/private-parties" as const },
+            ].map((s) => (
+              <Link key={s.label} to={s.href} className="group relative block aspect-[3/4] overflow-hidden bg-ink">
+                <img src={s.img} alt={s.label} loading="lazy" width={1600} height={1100}
+                  className="absolute inset-0 w-full h-full object-cover opacity-70 transition-all duration-700 group-hover:opacity-100 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/60 to-transparent" />
+                <div className="absolute inset-0 p-8 lg:p-10 flex flex-col justify-end">
+                  <div className="heading-md text-bone group-hover:text-gold transition-colors">{s.label}</div>
+                  <p className="mt-4 text-sm text-bone/70 leading-relaxed">{s.body}</p>
+                  <div className="mt-6 flex items-center gap-2 text-[0.65rem] tracking-[0.3em] uppercase text-gold opacity-0 group-hover:opacity-100 transition-opacity">
+                    Explore <ArrowRight className="size-3" />
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* MENU STYLES — split with parallax feel */}
+      <section className="relative">
+        {[
+          { img: brisket, eyebrow: "Wood-Fired", title: "Smoke. Hardwood. Live fire.", body: "Slow-smoked brisket and tri-tip. Pulled pork and chicken. Comfort sides built around the fire — mac and cheese, baked beans, southern green beans, street corn. Backyard elegance, elevated.", href: "/wood-fired" as const, reverse: false },
+          { img: steak, eyebrow: "Steakhouse", title: "Mastro's by candlelight.", body: "Ribeye. New York Strip. Filet mignon, picanha and prime rib. Salmon and surf-and-turf for the table. Plated dinners and family-style service for upscale weddings and corporate evenings.", href: "/steakhouse" as const, reverse: true },
+        ].map((s, i) => (
+          <div key={s.eyebrow} className={`grid lg:grid-cols-2 ${i % 2 ? "lg:[direction:rtl]" : ""}`}>
+            <div className="relative aspect-[4/3] lg:aspect-auto overflow-hidden">
+              <img src={s.img} alt={s.eyebrow} loading="lazy" width={1600} height={1100}
+                className="absolute inset-0 w-full h-full object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-r from-ink/40 to-transparent" />
+            </div>
+            <div className="bg-onyx flex items-center [direction:ltr]">
+              <div className="p-10 lg:p-20 max-w-xl">
+                <div className="eyebrow mb-6">{s.eyebrow}</div>
+                <h3 className="heading-lg text-bone">{s.title}</h3>
+                <p className="mt-8 text-bone/70 text-lg leading-relaxed font-light">{s.body}</p>
+                <Link to={s.href} className="mt-10 inline-flex items-center gap-3 text-[0.7rem] tracking-[0.28em] uppercase text-gold border-b border-gold/40 pb-2 hover:border-gold transition-colors">
+                  View Menu <ArrowRight className="size-3.5" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        ))}
+      </section>
+
+      {/* WHY QFIRE */}
+      <section className="py-28 lg:py-40 bg-gradient-to-b from-ink via-charcoal/30 to-ink">
+        <div className="container-luxe">
+          <div className="text-center max-w-3xl mx-auto mb-20">
+            <div className="eyebrow justify-center mb-6">Why Qfire</div>
+            <h2 className="heading-lg text-bone">Hospitality you can feel, the moment we arrive.</h2>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-white/5 border border-white/5">
+            {[
+              { n: "2,000+", l: "Events Served", icon: Users },
+              { n: "13+", l: "Years of Mastery", icon: Flame },
+              { n: "Food Network", l: "Featured Pitmaster", icon: Award },
+              { n: "Stress-Free", l: "Full-Service Execution", icon: Sparkles },
+            ].map((s) => (
+              <div key={s.l} className="bg-ink p-10 text-center">
+                <s.icon className="size-7 mx-auto text-gold mb-6" strokeWidth={1.2} />
+                <div className="text-3xl lg:text-4xl font-display text-bone tracking-tight">{s.n}</div>
+                <div className="mt-3 text-[0.65rem] tracking-[0.3em] uppercase text-bone/55">{s.l}</div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-16 text-center">
+            <Link to="/why-qfire" className="btn-ghost">Read Our Story</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* GALLERY STRIP */}
+      <section className="py-24 lg:py-32">
+        <div className="container-luxe mb-12">
+          <div className="flex flex-wrap items-end justify-between gap-6">
+            <div>
+              <div className="eyebrow mb-6">Recent Events</div>
+              <h2 className="heading-lg text-bone max-w-2xl">A look at the table.</h2>
+            </div>
+            <Link to="/pictures" className="btn-ghost">View Full Gallery</Link>
+          </div>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-1">
+          {[buffet, weddingTable, brisket, corporate, steak, privateParty, heroFire, weddingTable].map((img, i) => (
+            <div key={i} className="relative aspect-square overflow-hidden group">
+              <img src={img} alt="" loading="lazy" width={800} height={800}
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <div className="absolute inset-0 bg-ink/30 group-hover:bg-transparent transition-colors" />
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* REVIEWS */}
+      <section className="py-24 lg:py-36 bg-onyx">
+        <div className="container-luxe">
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <div className="eyebrow justify-center mb-6">From Our Clients</div>
+            <h2 className="heading-lg text-bone">Five-star, top to bottom.</h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
+            {[
+              { q: "Chef Terry — 'The BBQ Daddy' — and his team turned our wedding into the meal everyone is still talking about. Brisket, ribeye, the whole spread. Flawless.", a: "Lauren & Mark", e: "Scottsdale Wedding · 220 guests" },
+              { q: "We hired Qfire for our company's annual partner dinner. Plated steaks for 140, served hot, served perfectly. Worth every penny.", a: "David K.", e: "Corporate Event · La Jolla" },
+              { q: "Backyard 50th birthday. Wood-fired everything. Guests thought we'd flown in a steakhouse. Absolutely premium.", a: "Sandra T.", e: "Private Party · Gilbert" },
+            ].map((r, i) => (
+              <figure key={i} className="bg-ink border border-white/5 p-8 lg:p-10 relative">
+                <div className="text-gold text-5xl font-display leading-none mb-4">"</div>
+                <blockquote className="text-bone/85 leading-relaxed font-light text-lg">{r.q}</blockquote>
+                <figcaption className="mt-8 pt-6 border-t border-white/5">
+                  <div className="text-bone font-medium">{r.a}</div>
+                  <div className="text-xs text-muted-foreground mt-1 tracking-wider uppercase">{r.e}</div>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+          <div className="mt-14 text-center">
+            <Link to="/reviews" className="btn-ghost">Read All Reviews</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* CHEF TERRY */}
+      <section className="py-24 lg:py-36">
+        <div className="container-luxe">
+          <div className="grid lg:grid-cols-[1fr_1.1fr] gap-12 lg:gap-20 items-center">
+            <div className="relative aspect-[4/5] overflow-hidden">
+              <img src={chefTerry} alt="Chef Terry Matthews" loading="lazy" width={1024} height={1280}
+                className="absolute inset-0 w-full h-full object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink/40 to-transparent" />
+            </div>
+            <div>
+              <div className="eyebrow mb-6">Meet The Chef</div>
+              <h2 className="heading-lg text-bone">
+                Chef Terry Matthews.
+                <span className="block text-bone/55 italic font-light text-3xl mt-3">Known to friends as "The BBQ Daddy."</span>
+              </h2>
+              <div className="mt-10 space-y-5 text-bone/75 text-lg leading-relaxed font-light">
+                <p>
+                  Thirteen years. Two thousand events. A national television run that
+                  includes <em className="text-gold/90 not-italic">Cutthroat Kitchen</em> (winner),{" "}
+                  <em className="text-gold/90 not-italic">BBQ Brawl Season 2</em>, and{" "}
+                  <em className="text-gold/90 not-italic">Camp Cutthroat</em> — plus the kitchen of Bobby Flay.
+                </p>
+                <p>
+                  Behind Qfire is a chef who treats every event like it's his own family's.
+                  Warm with your guests. Surgical with your timeline.
+                </p>
+              </div>
+              <div className="mt-12">
+                <Link to="/about" className="btn-primary">Chef Terry's Story</Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ teaser */}
+      <section className="py-24 bg-onyx">
+        <div className="container-luxe grid lg:grid-cols-[1fr_1.5fr] gap-12 items-start">
+          <div>
+            <div className="eyebrow mb-6">FAQ</div>
+            <h2 className="heading-md text-bone">Common questions, straight answers.</h2>
+            <Link to="/faq" className="btn-ghost mt-8">All Questions</Link>
+          </div>
+          <div className="divide-y divide-white/5 border-y border-white/5">
+            {[
+              { q: "How far in advance should we book?", a: "Most weddings book 6–12 months out. Corporate and private events: 4–8 weeks is comfortable." },
+              { q: "Do you handle full service?", a: "Yes. Staffing, rentals, bartending, setup and breakdown. You enjoy your event." },
+              { q: "Can you accommodate dietary needs?", a: "Absolutely. Vegan, gluten-free, kosher-style and allergen-aware menus are part of how we plan." },
+              { q: "Do you travel?", a: "Across Phoenix Metro and San Diego County, with destination service available on request." },
+            ].map((f) => (
+              <details key={f.q} className="group py-6">
+                <summary className="flex items-center justify-between cursor-pointer list-none">
+                  <span className="text-lg font-display text-bone group-hover:text-gold transition-colors pr-6">{f.q}</span>
+                  <span className="text-gold text-2xl font-light transition-transform group-open:rotate-45">+</span>
+                </summary>
+                <p className="mt-4 text-bone/70 leading-relaxed">{f.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <CTASection />
+    </>
   );
 }
