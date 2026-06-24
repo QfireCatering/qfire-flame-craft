@@ -2,15 +2,18 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, ArrowUpRight, Flame, Award, Users, Sparkles } from "lucide-react";
 import heroFire from "@/assets/hero-fire.jpg";
 import weddingGrilling from "@/assets/wedding-grilling-hero.png.asset.json";
-import weddingTable from "@/assets/food-style.png.asset.json";
+import weddingTableAsset from "@/assets/food-style.png.asset.json";
 import steak from "@/assets/steak.jpg";
 import brisket from "@/assets/brisket.jpg";
 import chefTerry from "@/assets/chef-terry.jpg.asset.json";
 import buffet from "@/assets/buffet.jpg";
 import phoenix from "@/assets/phoenix.png.asset.json";
 import sanDiego from "@/assets/san-diego.png.asset.json";
-import corporate from "@/assets/corporate-catering.png.asset.json";
-import privateParty from "@/assets/food-style.png.asset.json";
+import corporateAsset from "@/assets/corporate-catering.png.asset.json";
+import privatePartyAsset from "@/assets/food-style.png.asset.json";
+const weddingTable = weddingTableAsset.url;
+const corporate = corporateAsset.url;
+const privateParty = privatePartyAsset.url;
 import { CTASection } from "@/components/site/Sections";
 
 export const Route = createFileRoute("/")({
