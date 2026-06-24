@@ -1,14 +1,15 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, ArrowUpRight, Flame, Award, Users, Sparkles } from "lucide-react";
+import heroFire from "@/assets/hero-fire.jpg";
 import weddingTable from "@/assets/wedding-table.jpg";
 import steak from "@/assets/steak.jpg";
 import brisket from "@/assets/brisket.jpg";
 import chefTerry from "@/assets/chef-terry.jpg.asset.json";
+import buffet from "@/assets/buffet.jpg";
 import phoenix from "@/assets/phoenix.jpg";
 import sanDiego from "@/assets/san-diego.jpg";
-import terryChefBlack from "@/assets/terry-chef-black.jpg.asset.json";
-import terryBlackShirt from "@/assets/terry-black-shirt.jpg.asset.json";
-import terryRedChef from "@/assets/terry-red-chef.jpg.asset.json";
+import corporate from "@/assets/corporate.jpg";
+import privateParty from "@/assets/private-party.jpg";
 import { CTASection } from "@/components/site/Sections";
 
 export const Route = createFileRoute("/")({
@@ -19,8 +20,8 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "Qfire Catering" },
       { property: "og:description", content: "Wood-fired flavors. Professional service. Stress-free execution." },
       { property: "og:url", content: "/" },
-      { property: "og:image", content: terryRedChef.url },
-      { name: "twitter:image", content: terryRedChef.url },
+      { property: "og:image", content: heroFire },
+      { name: "twitter:image", content: heroFire },
     ],
     links: [{ rel: "canonical", href: "/" }],
     scripts: [{
@@ -45,7 +46,7 @@ function Home() {
       {/* HERO */}
       <section className="relative min-h-screen flex items-center overflow-hidden grain-overlay">
         <div className="absolute inset-0">
-          <img src={terryRedChef.url} alt="Chef Terry Matthews" className="absolute inset-0 w-full h-full object-cover object-top slow-zoom" width={1920} height={1280} />
+          <img src={heroFire} alt="Chef grilling steaks over live fire at elegant wedding" className="absolute inset-0 w-full h-full object-cover slow-zoom" width={1920} height={1280} />
           <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/60 to-ink/30" />
           <div className="absolute inset-0 bg-gradient-to-r from-ink/85 via-ink/30 to-transparent" />
         </div>
@@ -145,8 +146,8 @@ function Home() {
           <div className="grid md:grid-cols-3 gap-px bg-white/5 border border-white/5">
             {[
               { img: weddingTable, label: "Weddings", body: "Plated dinners and live-fire stations for the most photographed night of your life.", href: "/weddings" as const },
-              { img: terryBlackShirt.url, label: "Corporate", body: "Investor dinners, holiday parties, board retreats — refined hospitality at scale.", href: "/corporate" as const },
-              { img: terryChefBlack.url, label: "Private Parties", body: "Backyard luxury for milestones, anniversaries and the gatherings that matter most.", href: "/private-parties" as const },
+              { img: corporate, label: "Corporate", body: "Investor dinners, holiday parties, board retreats — refined hospitality at scale.", href: "/corporate" as const },
+              { img: privateParty, label: "Private Parties", body: "Backyard luxury for milestones, anniversaries and the gatherings that matter most.", href: "/private-parties" as const },
             ].map((s) => (
               <Link key={s.label} to={s.href} className="group relative block aspect-[3/4] overflow-hidden bg-ink">
                 <img src={s.img} alt={s.label} loading="lazy" width={1600} height={1100}
@@ -232,7 +233,7 @@ function Home() {
           </div>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-1">
-          {[terryBlackShirt.url, weddingTable, brisket, terryBlackShirt.url, steak, terryChefBlack.url, terryRedChef.url, weddingTable].map((img, i) => (
+          {[buffet, weddingTable, brisket, corporate, steak, privateParty, heroFire, weddingTable].map((img, i) => (
             <div key={i} className="relative aspect-square overflow-hidden group">
               <img src={img} alt="" loading="lazy" width={800} height={800}
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />

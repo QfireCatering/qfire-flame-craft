@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Check } from "lucide-react";
-import terryBlackShirt from "@/assets/terry-black-shirt.jpg.asset.json";
+import buffet from "@/assets/buffet.jpg";
 import { PageHero, CTASection } from "@/components/site/Sections";
 
 export const Route = createFileRoute("/why-qfire")({
@@ -38,7 +38,7 @@ function WhyPage() {
         eyebrow="Why Qfire"
         title={<>Hospitality you can feel, <span className="text-gold italic font-light">the moment we arrive.</span></>}
         subtitle="Twelve reasons clients hire Qfire — and twelve reasons they call us back."
-        image={terryBlackShirt.url}
+        image={buffet}
       />
       <section className="py-24 lg:py-32">
         <div className="container-luxe">

@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Star } from "lucide-react";
 import { PageHero, CTASection } from "@/components/site/Sections";
-import terryBlackShirt from "@/assets/terry-black-shirt.jpg.asset.json";
+import buffet from "@/assets/buffet.jpg";
 
 export const Route = createFileRoute("/reviews")({
   head: () => ({
@@ -34,7 +34,7 @@ function ReviewsPage() {
         eyebrow="Client Reviews"
         title={<>Five-star, <span className="text-gold italic font-light">top to bottom.</span></>}
         subtitle="From wedding couples, corporate hosts and the families who hire us back, year after year."
-        image={terryBlackShirt.url}
+        image={buffet}
       />
       <section className="py-24 lg:py-32">
         <div className="container-luxe">

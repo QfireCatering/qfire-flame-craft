@@ -1,12 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHero, CTASection } from "@/components/site/Sections";
+import heroFire from "@/assets/hero-fire.jpg";
 import weddingTable from "@/assets/wedding-table.jpg";
 import brisket from "@/assets/brisket.jpg";
 import steak from "@/assets/steak.jpg";
+import corporate from "@/assets/corporate.jpg";
+import privateParty from "@/assets/private-party.jpg";
+import buffet from "@/assets/buffet.jpg";
 import chefTerry from "@/assets/chef-terry.jpg.asset.json";
-import terryChefBlack from "@/assets/terry-chef-black.jpg.asset.json";
-import terryBlackShirt from "@/assets/terry-black-shirt.jpg.asset.json";
-import terryRedChef from "@/assets/terry-red-chef.jpg.asset.json";
 
 export const Route = createFileRoute("/pictures")({
   head: () => ({
@@ -23,9 +24,9 @@ export const Route = createFileRoute("/pictures")({
 
 const masonry: { src: string; tall?: boolean; wide?: boolean }[] = [
   { src: weddingTable, wide: true }, { src: brisket }, { src: chefTerry.url, tall: true },
-  { src: steak }, { src: terryBlackShirt.url }, { src: terryChefBlack.url, wide: true },
-  { src: terryRedChef.url }, { src: terryChefBlack.url, tall: true }, { src: weddingTable },
-  { src: brisket, wide: true }, { src: steak }, { src: terryBlackShirt.url },
+  { src: steak }, { src: corporate }, { src: buffet, wide: true },
+  { src: privateParty }, { src: heroFire, tall: true }, { src: weddingTable },
+  { src: brisket, wide: true }, { src: steak }, { src: buffet },
 ];
 
 function PicturesPage() {

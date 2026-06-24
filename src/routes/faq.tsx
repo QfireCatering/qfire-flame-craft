@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import terryBlackShirt from "@/assets/terry-black-shirt.jpg.asset.json";
+import buffet from "@/assets/buffet.jpg";
 import { PageHero, CTASection } from "@/components/site/Sections";
 
 export const Route = createFileRoute("/faq")({
@@ -46,7 +46,7 @@ function FAQPage() {
         eyebrow="FAQ"
         title={<>Common questions, <span className="text-gold italic font-light">straight answers.</span></>}
         subtitle="If your question isn't answered here, send us a note. We answer every inquiry personally."
-        image={terryBlackShirt.url}
+        image={buffet}
       />
       <section className="py-24 lg:py-32">
         <div className="container-luxe max-w-4xl">

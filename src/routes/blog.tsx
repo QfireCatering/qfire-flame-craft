@@ -3,8 +3,9 @@ import { PageHero, CTASection } from "@/components/site/Sections";
 import weddingTable from "@/assets/wedding-table.jpg";
 import brisket from "@/assets/brisket.jpg";
 import steak from "@/assets/steak.jpg";
-import terryChefBlack from "@/assets/terry-chef-black.jpg.asset.json";
-import terryBlackShirt from "@/assets/terry-black-shirt.jpg.asset.json";
+import corporate from "@/assets/corporate.jpg";
+import privateParty from "@/assets/private-party.jpg";
+import buffet from "@/assets/buffet.jpg";
 
 export const Route = createFileRoute("/blog")({
   head: () => ({
@@ -22,10 +23,10 @@ export const Route = createFileRoute("/blog")({
 const posts = [
   { img: weddingTable, cat: "Wedding Tips", title: "Plated, buffet, or stations? Choosing your wedding service style.", date: "March 2026" },
   { img: brisket, cat: "Food Inspiration", title: "Why brisket belongs on your wedding menu (and how to serve it right).", date: "February 2026" },
-  { img: terryBlackShirt.url, cat: "Corporate Catering", title: "The investor dinner playbook: hospitality that closes the room.", date: "February 2026" },
+  { img: corporate, cat: "Corporate Catering", title: "The investor dinner playbook: hospitality that closes the room.", date: "February 2026" },
   { img: steak, cat: "Planning Guides", title: "Steakhouse at home: a guide to upscale catering for private dinners.", date: "January 2026" },
-  { img: terryChefBlack.url, cat: "Private Party Ideas", title: "Backyard luxury: turning your home into the venue of the year.", date: "January 2026" },
-  { img: terryBlackShirt.url, cat: "Venue Spotlights", title: "Our favorite outdoor venues across Phoenix Metro and San Diego County.", date: "December 2025" },
+  { img: privateParty, cat: "Private Party Ideas", title: "Backyard luxury: turning your home into the venue of the year.", date: "January 2026" },
+  { img: buffet, cat: "Venue Spotlights", title: "Our favorite outdoor venues across Phoenix Metro and San Diego County.", date: "December 2025" },
 ];
 
 const cats = ["Wedding Tips", "Corporate Catering", "Private Party Ideas", "Venue Spotlights", "Planning Guides", "Food Inspiration"];

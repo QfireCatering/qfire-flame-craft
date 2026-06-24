@@ -1,15 +1,12 @@
+import heroFire from "@/assets/hero-fire.jpg";
 import weddingTable from "@/assets/wedding-table.jpg";
 import steak from "@/assets/steak.jpg";
 import brisket from "@/assets/brisket.jpg";
-import terryChefBlack from "@/assets/terry-chef-black.jpg.asset.json";
-import terryBlackShirt from "@/assets/terry-black-shirt.jpg.asset.json";
-import terryRedChef from "@/assets/terry-red-chef.jpg.asset.json";
+import buffet from "@/assets/buffet.jpg";
+import corporate from "@/assets/corporate.jpg";
+import privateParty from "@/assets/private-party.jpg";
 import type { ServicePageConfig } from "@/components/site/ServicePage";
 
-const heroFire = terryRedChef.url;
-const buffet = terryBlackShirt.url;
-const corporate = terryBlackShirt.url;
-const privateParty = terryChefBlack.url;
 const galleryAll = [weddingTable, brisket, steak, buffet, heroFire, corporate, privateParty, weddingTable];
 
 export interface ServiceTemplateOptions {

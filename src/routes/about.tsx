@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import chefTerry from "@/assets/chef-terry.jpg.asset.json";
-import terryChefBlack from "@/assets/terry-chef-black.jpg.asset.json";
+import heroFire from "@/assets/hero-fire.jpg";
 import brisket from "@/assets/brisket.jpg";
 import { CTASection } from "@/components/site/Sections";
 
@@ -93,7 +93,7 @@ function AboutPage() {
       <section className="py-24 lg:py-32">
         <div className="container-luxe grid lg:grid-cols-2 gap-2">
           <div className="relative aspect-[4/5] overflow-hidden">
-            <img src={terryChefBlack.url} alt="Chef Terry Matthews" loading="lazy" className="absolute inset-0 w-full h-full object-cover object-top" />
+            <img src={heroFire} alt="Chef Terry at the fire" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
           </div>
           <div className="relative aspect-[4/5] overflow-hidden">
             <img src={brisket} alt="Brisket" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
