@@ -180,7 +180,7 @@ function Home() {
             <div key={s.eyebrow} className={`grid lg:grid-cols-2 ${i % 2 ? "lg:[direction:rtl]" : ""}`}>
               <div className="relative aspect-[4/3] lg:aspect-auto overflow-hidden">
                 {"video" in s ? (
-                  <video src={s.video} autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover" />
+                  <video src={s.video} autoPlay muted loop playsInline playbackRate={0.5} className="absolute inset-0 w-full h-full object-cover" />
                 ) : (
                   <img src={s.img} alt={s.eyebrow} loading="lazy" width={1600} height={1100} className="absolute inset-0 w-full h-full object-cover" />
                 )}
