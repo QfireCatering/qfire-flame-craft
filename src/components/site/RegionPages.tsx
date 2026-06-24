@@ -11,6 +11,8 @@ import phoenixImg from "@/assets/phoenix.jpg";
 import sanDiegoImg from "@/assets/san-diego.jpg";
 import weddingCoupleAsset from "@/assets/wedding-couple.png.asset.json";
 const weddingTable = weddingCoupleAsset.url;
+import bbqPlatterAsset from "@/assets/bbq-platter.png.asset.json";
+const bbqPlatter = bbqPlatterAsset.url;
 import brisket from "@/assets/brisket.jpg";
 import steak from "@/assets/steak.jpg";
 import corporateAsset from "@/assets/corporate-catering.png.asset.json";
