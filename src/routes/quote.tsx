@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { ArrowRight, Check } from "lucide-react";
-import heroFire from "@/assets/hero-fire.jpg";
+import chefTerry from "@/assets/chef-terry.jpg.asset.json";
 
 export const Route = createFileRoute("/quote")({
   head: () => ({
