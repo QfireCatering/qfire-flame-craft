@@ -64,7 +64,7 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-white/5 border border-white/5">
             {services.map((s, i) => {
-              const img = [weddingTable, corporate, privateParty, bbqPlatter, steak, buffet, heroFire][i % 7];
+              const img = [weddingTable, corporate, privateParty, bbqPlatter, steak, bartender, heroFire][i % 7];
               return (
                 <Link
                   key={s.slug}
