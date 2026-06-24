@@ -5,6 +5,7 @@ import weddingGrilling from "@/assets/wedding-grilling-hero.png.asset.json";
 import weddingTableAsset from "@/assets/food-style.png.asset.json";
 import steak from "@/assets/steak.jpg";
 import brisket from "@/assets/brisket.jpg";
+import brisketVideo from "@/assets/brisket-slice.mp4.asset.json";
 import chefTerry from "@/assets/chef-terry.jpg.asset.json";
 import buffet from "@/assets/buffet.jpg";
 import phoenix from "@/assets/phoenix.png.asset.json";
@@ -172,15 +173,18 @@ function Home() {
 
       {/* MENU STYLES — split with parallax feel */}
       <section className="relative">
-        {[
-          { img: brisket, eyebrow: "Wood-Fired", title: "Smoke. Hardwood. Live fire.", body: "Slow-smoked brisket and tri-tip. Pulled pork and chicken. Comfort sides built around the fire — mac and cheese, baked beans, southern green beans, street corn. Backyard elegance, elevated.", href: "/wood-fired" as const, reverse: false },
-          { img: steak, eyebrow: "Steakhouse", title: "Mastro's by candlelight.", body: "Ribeye. New York Strip. Filet mignon, picanha and prime rib. Salmon and surf-and-turf for the table. Plated dinners and family-style service for upscale weddings and corporate evenings.", href: "/steakhouse" as const, reverse: true },
-        ].map((s, i) => (
-          <div key={s.eyebrow} className={`grid lg:grid-cols-2 ${i % 2 ? "lg:[direction:rtl]" : ""}`}>
-            <div className="relative aspect-[4/3] lg:aspect-auto overflow-hidden">
-              <img src={s.img} alt={s.eyebrow} loading="lazy" width={1600} height={1100}
-                className="absolute inset-0 w-full h-full object-cover" />
-              <div className="absolute inset-0 bg-gradient-to-r from-ink/40 to-transparent" />
+          {[
+            { video: brisketVideo.url, eyebrow: "Wood-Fired", title: "Smoke. Hardwood. Live fire.", body: "Slow-smoked brisket and tri-tip. Pulled pork and chicken. Comfort sides built around the fire — mac and cheese, baked beans, southern green beans, street corn. Backyard elegance, elevated.", href: "/wood-fired" as const, reverse: false },
+            { img: steak, eyebrow: "Steakhouse", title: "Mastro's by candlelight.", body: "Ribeye. New York Strip. Filet mignon, picanha and prime rib. Salmon and surf-and-turf for the table. Plated dinners and family-style service for upscale weddings and corporate evenings.", href: "/steakhouse" as const, reverse: true },
+          ].map((s, i) => (
+            <div key={s.eyebrow} className={`grid lg:grid-cols-2 ${i % 2 ? "lg:[direction:rtl]" : ""}`}>
+              <div className="relative aspect-[4/3] lg:aspect-auto overflow-hidden">
+                {"video" in s ? (
+                  <video src={s.video} autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover" />
+                ) : (
+                  <img src={s.img} alt={s.eyebrow} loading="lazy" width={1600} height={1100} className="absolute inset-0 w-full h-full object-cover" />
+                )}
+                <div className="absolute inset-0 bg-gradient-to-r from-ink/40 to-transparent" />
             </div>
             <div className="bg-onyx flex items-center [direction:ltr]">
               <div className="p-10 lg:p-20 max-w-xl">
