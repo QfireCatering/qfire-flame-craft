@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import qfireLogo from "@/assets/qfire-logo.png.asset.json";
 
 export function Footer() {
   return (
@@ -6,9 +7,7 @@ export function Footer() {
       <div className="container-luxe py-20">
         <div className="grid lg:grid-cols-[1.4fr_1fr_1fr_1fr] gap-12 lg:gap-16">
           <div>
-            <div className="text-gold text-3xl font-display">
-              Q<span className="text-bone">fire</span>
-            </div>
+            <img src={qfireLogo.url} alt="Qfire Catering" className="h-20 w-auto" />
             <p className="mt-5 text-sm leading-relaxed text-muted-foreground max-w-sm">
               Full-service wood-fired catering for weddings, corporate events
               and private parties across Phoenix Metro and San Diego County.
