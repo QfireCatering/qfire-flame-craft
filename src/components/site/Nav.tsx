@@ -88,9 +88,7 @@ export function Nav() {
         }`}
       >
         <div className="container-luxe flex items-center justify-between h-20 lg:h-24">
-          <span className="text-gold text-2xl font-display">
-            Q<span className="text-bone">fire</span>
-          </span>
+          <img src={qfireLogo.url} alt="Qfire Catering" className="h-12 w-auto" />
           <button onClick={() => setOpen(false)} className="p-2 -mr-2 text-bone" aria-label="Close menu">
             <X className="size-6" />
           </button>
