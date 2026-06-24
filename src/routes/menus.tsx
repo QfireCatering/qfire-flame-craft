@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import brisket from "@/assets/brisket.jpg";
 import steak from "@/assets/steak.jpg";
-import chefTerry from "@/assets/chef-terry.jpg";
+import chefTerry from "@/assets/chef-terry.jpg.asset.json";
 import buffet from "@/assets/buffet.jpg";
 import { CTASection } from "@/components/site/Sections";
 

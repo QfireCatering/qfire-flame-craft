@@ -4,7 +4,7 @@ import heroFire from "@/assets/hero-fire.jpg";
 import weddingTable from "@/assets/wedding-table.jpg";
 import steak from "@/assets/steak.jpg";
 import brisket from "@/assets/brisket.jpg";
-import chefTerry from "@/assets/chef-terry.jpg";
+import chefTerry from "@/assets/chef-terry.jpg.asset.json";
 import buffet from "@/assets/buffet.jpg";
 import phoenix from "@/assets/phoenix.jpg";
 import sanDiego from "@/assets/san-diego.jpg";

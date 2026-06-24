@@ -7,7 +7,7 @@ import steak from "@/assets/steak.jpg";
 import corporate from "@/assets/corporate.jpg";
 import privateParty from "@/assets/private-party.jpg";
 import buffet from "@/assets/buffet.jpg";
-import chefTerry from "@/assets/chef-terry.jpg";
+import chefTerry from "@/assets/chef-terry.jpg.asset.json";
 
 export const Route = createFileRoute("/pictures")({
   head: () => ({

@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type { ServicePageConfig } from "@/components/site/ServicePage";
 import { ServicePage } from "@/components/site/ServicePage";
-import chefTerry from "@/assets/chef-terry.jpg";
+import chefTerry from "@/assets/chef-terry.jpg.asset.json";
 import steak from "@/assets/steak.jpg";
 import weddingTable from "@/assets/wedding-table.jpg";
 import brisket from "@/assets/brisket.jpg";
