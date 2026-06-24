@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, ArrowUpRight, Flame, Award, Users, Sparkles } from "lucide-react";
 import heroFire from "@/assets/hero-fire.jpg";
-import weddingGrilling from "@/assets/wedding-couple.png.asset.json";
+import heroImage from "@/assets/hero-wedding-grilling.png.asset.json";
 import weddingTableAsset from "@/assets/wedding-couple.png.asset.json";
 import steakAsset from "@/assets/steakhouse-backyard.png.asset.json";
 const steak = steakAsset.url;
@@ -26,8 +26,8 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "Qfire Catering" },
       { property: "og:description", content: "Wood-fired flavors. Professional service. Stress-free execution." },
       { property: "og:url", content: "/" },
-      { property: "og:image", content: weddingGrilling.url },
-      { name: "twitter:image", content: weddingGrilling.url },
+      { property: "og:image", content: heroImage.url },
+      { name: "twitter:image", content: heroImage.url },
     ],
     links: [{ rel: "canonical", href: "/" }],
     scripts: [{
@@ -52,7 +52,7 @@ function Home() {
       {/* HERO */}
       <section className="relative min-h-screen flex items-center overflow-hidden grain-overlay">
         <div className="absolute inset-0">
-          <img src={weddingGrilling.url} alt="Chef grilling over live fire at elegant outdoor wedding" className="absolute inset-0 w-full h-full object-cover slow-zoom" width={1920} height={1280} />
+          <img src={heroImage.url} alt="Chef grilling over live fire at elegant outdoor wedding" className="absolute inset-0 w-full h-full object-cover slow-zoom" width={1920} height={1280} />
           <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/60 to-ink/30" />
           <div className="absolute inset-0 bg-gradient-to-r from-ink/85 via-ink/30 to-transparent" />
         </div>
