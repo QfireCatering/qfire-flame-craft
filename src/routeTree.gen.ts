@@ -9,12 +9,66 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as WoodFiredRouteImport } from './routes/wood-fired'
+import { Route as WeddingsRouteImport } from './routes/weddings'
+import { Route as SteakhouseRouteImport } from './routes/steakhouse'
+import { Route as RentalsRouteImport } from './routes/rentals'
+import { Route as PrivatePartiesRouteImport } from './routes/private-parties'
+import { Route as PrivateChefRouteImport } from './routes/private-chef'
+import { Route as MenusRouteImport } from './routes/menus'
 import { Route as LocationsRouteImport } from './routes/locations'
+import { Route as CorporateRouteImport } from './routes/corporate'
+import { Route as BartendingRouteImport } from './routes/bartending'
 import { Route as IndexRouteImport } from './routes/index'
 
+const WoodFiredRoute = WoodFiredRouteImport.update({
+  id: '/wood-fired',
+  path: '/wood-fired',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WeddingsRoute = WeddingsRouteImport.update({
+  id: '/weddings',
+  path: '/weddings',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SteakhouseRoute = SteakhouseRouteImport.update({
+  id: '/steakhouse',
+  path: '/steakhouse',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RentalsRoute = RentalsRouteImport.update({
+  id: '/rentals',
+  path: '/rentals',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivatePartiesRoute = PrivatePartiesRouteImport.update({
+  id: '/private-parties',
+  path: '/private-parties',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivateChefRoute = PrivateChefRouteImport.update({
+  id: '/private-chef',
+  path: '/private-chef',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MenusRoute = MenusRouteImport.update({
+  id: '/menus',
+  path: '/menus',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const LocationsRoute = LocationsRouteImport.update({
   id: '/locations',
   path: '/locations',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CorporateRoute = CorporateRouteImport.update({
+  id: '/corporate',
+  path: '/corporate',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BartendingRoute = BartendingRouteImport.update({
+  id: '/bartending',
+  path: '/bartending',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -25,37 +79,170 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/bartending': typeof BartendingRoute
+  '/corporate': typeof CorporateRoute
   '/locations': typeof LocationsRoute
+  '/menus': typeof MenusRoute
+  '/private-chef': typeof PrivateChefRoute
+  '/private-parties': typeof PrivatePartiesRoute
+  '/rentals': typeof RentalsRoute
+  '/steakhouse': typeof SteakhouseRoute
+  '/weddings': typeof WeddingsRoute
+  '/wood-fired': typeof WoodFiredRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/bartending': typeof BartendingRoute
+  '/corporate': typeof CorporateRoute
   '/locations': typeof LocationsRoute
+  '/menus': typeof MenusRoute
+  '/private-chef': typeof PrivateChefRoute
+  '/private-parties': typeof PrivatePartiesRoute
+  '/rentals': typeof RentalsRoute
+  '/steakhouse': typeof SteakhouseRoute
+  '/weddings': typeof WeddingsRoute
+  '/wood-fired': typeof WoodFiredRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/bartending': typeof BartendingRoute
+  '/corporate': typeof CorporateRoute
   '/locations': typeof LocationsRoute
+  '/menus': typeof MenusRoute
+  '/private-chef': typeof PrivateChefRoute
+  '/private-parties': typeof PrivatePartiesRoute
+  '/rentals': typeof RentalsRoute
+  '/steakhouse': typeof SteakhouseRoute
+  '/weddings': typeof WeddingsRoute
+  '/wood-fired': typeof WoodFiredRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/locations'
+  fullPaths:
+    | '/'
+    | '/bartending'
+    | '/corporate'
+    | '/locations'
+    | '/menus'
+    | '/private-chef'
+    | '/private-parties'
+    | '/rentals'
+    | '/steakhouse'
+    | '/weddings'
+    | '/wood-fired'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/locations'
-  id: '__root__' | '/' | '/locations'
+  to:
+    | '/'
+    | '/bartending'
+    | '/corporate'
+    | '/locations'
+    | '/menus'
+    | '/private-chef'
+    | '/private-parties'
+    | '/rentals'
+    | '/steakhouse'
+    | '/weddings'
+    | '/wood-fired'
+  id:
+    | '__root__'
+    | '/'
+    | '/bartending'
+    | '/corporate'
+    | '/locations'
+    | '/menus'
+    | '/private-chef'
+    | '/private-parties'
+    | '/rentals'
+    | '/steakhouse'
+    | '/weddings'
+    | '/wood-fired'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  BartendingRoute: typeof BartendingRoute
+  CorporateRoute: typeof CorporateRoute
   LocationsRoute: typeof LocationsRoute
+  MenusRoute: typeof MenusRoute
+  PrivateChefRoute: typeof PrivateChefRoute
+  PrivatePartiesRoute: typeof PrivatePartiesRoute
+  RentalsRoute: typeof RentalsRoute
+  SteakhouseRoute: typeof SteakhouseRoute
+  WeddingsRoute: typeof WeddingsRoute
+  WoodFiredRoute: typeof WoodFiredRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/wood-fired': {
+      id: '/wood-fired'
+      path: '/wood-fired'
+      fullPath: '/wood-fired'
+      preLoaderRoute: typeof WoodFiredRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/weddings': {
+      id: '/weddings'
+      path: '/weddings'
+      fullPath: '/weddings'
+      preLoaderRoute: typeof WeddingsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/steakhouse': {
+      id: '/steakhouse'
+      path: '/steakhouse'
+      fullPath: '/steakhouse'
+      preLoaderRoute: typeof SteakhouseRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/rentals': {
+      id: '/rentals'
+      path: '/rentals'
+      fullPath: '/rentals'
+      preLoaderRoute: typeof RentalsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/private-parties': {
+      id: '/private-parties'
+      path: '/private-parties'
+      fullPath: '/private-parties'
+      preLoaderRoute: typeof PrivatePartiesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/private-chef': {
+      id: '/private-chef'
+      path: '/private-chef'
+      fullPath: '/private-chef'
+      preLoaderRoute: typeof PrivateChefRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/menus': {
+      id: '/menus'
+      path: '/menus'
+      fullPath: '/menus'
+      preLoaderRoute: typeof MenusRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/locations': {
       id: '/locations'
       path: '/locations'
       fullPath: '/locations'
       preLoaderRoute: typeof LocationsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/corporate': {
+      id: '/corporate'
+      path: '/corporate'
+      fullPath: '/corporate'
+      preLoaderRoute: typeof CorporateRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/bartending': {
+      id: '/bartending'
+      path: '/bartending'
+      fullPath: '/bartending'
+      preLoaderRoute: typeof BartendingRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -70,7 +257,16 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  BartendingRoute: BartendingRoute,
+  CorporateRoute: CorporateRoute,
   LocationsRoute: LocationsRoute,
+  MenusRoute: MenusRoute,
+  PrivateChefRoute: PrivateChefRoute,
+  PrivatePartiesRoute: PrivatePartiesRoute,
+  RentalsRoute: RentalsRoute,
+  SteakhouseRoute: SteakhouseRoute,
+  WeddingsRoute: WeddingsRoute,
+  WoodFiredRoute: WoodFiredRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
