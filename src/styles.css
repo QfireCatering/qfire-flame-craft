@@ -136,14 +136,13 @@
   letter-spacing: 0.32em;
   text-transform: uppercase;
   color: var(--gold);
-}
-
-@utility eyebrow::before {
-  content: "";
-  display: inline-block;
-  width: 1.75rem;
-  height: 1px;
-  background: var(--gold);
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 1.75rem;
+    height: 1px;
+    background: var(--gold);
+  }
 }
 
 @utility heading-xl {
