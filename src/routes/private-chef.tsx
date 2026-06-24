@@ -23,7 +23,7 @@ const config: ServicePageConfig = {
   eyebrow: "Private Chef",
   title: <>A chef's table, <span className="italic text-gold font-light">in your dining room.</span></>,
   subtitle: "Intimate multi-course dinners for 8 to 40 guests. Chef Terry and a small team, plated for you.",
-  heroImage: chefTerry,
+  heroImage: chefTerry.url,
   intro: {
     heading: "Personal, plated, unforgettable.",
     body: [
@@ -39,5 +39,5 @@ const config: ServicePageConfig = {
     { title: "Your Home, Our Kitchen", body: "We bring everything. You bring the guests." },
     { title: "Dietary Tailoring", body: "Every guest, every preference, every allergy — accommodated." },
   ],
-  galleryImages: [chefTerry, steak, weddingTable, brisket],
+  galleryImages: [chefTerry.url, steak, weddingTable, brisket],
 };

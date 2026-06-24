@@ -277,7 +277,7 @@ function Home() {
         <div className="container-luxe">
           <div className="grid lg:grid-cols-[1fr_1.1fr] gap-12 lg:gap-20 items-center">
             <div className="relative aspect-[4/5] overflow-hidden">
-              <img src={chefTerry} alt="Chef Terry Matthews" loading="lazy" width={1024} height={1280}
+              <img src={chefTerry.url} alt="Chef Terry Matthews" loading="lazy" width={1024} height={1280}
                 className="absolute inset-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/40 to-transparent" />
             </div>

@@ -11,7 +11,7 @@ export const Route = createFileRoute("/about")({
       { name: "description", content: "Chef Terry Matthews — known to friends as The BBQ Daddy — is the owner of Qfire Catering. Food Network veteran with 13+ years and 2,000+ events." },
       { property: "og:title", content: "Chef Terry Matthews — Qfire" },
       { property: "og:url", content: "/about" },
-      { property: "og:image", content: chefTerry },
+      { property: "og:image", content: chefTerry.url },
     ],
     links: [{ rel: "canonical", href: "/about" }],
   }),
@@ -23,7 +23,7 @@ function AboutPage() {
     <>
       <section className="relative min-h-[70vh] flex items-end overflow-hidden grain-overlay">
         <div className="absolute inset-0">
-          <img src={chefTerry} alt="Chef Terry Matthews" className="absolute inset-0 w-full h-full object-cover object-top" />
+          <img src={chefTerry.url} alt="Chef Terry Matthews" className="absolute inset-0 w-full h-full object-cover object-top" />
           <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/60 to-ink/30" />
           <div className="absolute inset-0 bg-gradient-to-r from-ink/85 via-transparent to-transparent" />
         </div>
