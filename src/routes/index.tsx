@@ -175,7 +175,7 @@ function Home() {
       <section className="relative">
           {[
             { video: brisketVideo.url, eyebrow: "Wood-Fired", title: "Smoke. Hardwood. Live fire.", body: "Slow-smoked brisket and tri-tip. Pulled pork and chicken. Comfort sides built around the fire — mac and cheese, baked beans, southern green beans, street corn. Backyard elegance, elevated.", href: "/wood-fired" as const, reverse: false },
-            { img: steak, eyebrow: "Steakhouse", title: "Mastro's by candlelight.", body: "Ribeye. New York Strip. Filet mignon, picanha and prime rib. Salmon and surf-and-turf for the table. Plated dinners and family-style service for upscale weddings and corporate evenings.", href: "/steakhouse" as const, reverse: true },
+            { img: steak, eyebrow: "Steakhouse", title: "The Steakhouse Experience... Brought To You", body: "Charcoal-grilled ribeye, New York strip, filet mignon, picanha, prime rib, salmon, and surf & turf served under candlelight with polished service and unforgettable presentation. Perfect for luxury weddings, corporate dinners, and private events.", href: "/steakhouse" as const, reverse: true },
           ].map((s, i) => (
             <div key={s.eyebrow} className={`grid lg:grid-cols-2 ${i % 2 ? "lg:[direction:rtl]" : ""}`}>
               <div className="relative aspect-[4/3] lg:aspect-auto overflow-hidden">

@@ -158,10 +158,10 @@ export function steakhouseConfig(o: ServiceTemplateOptions = {}): ServicePageCon
   const r = o.region;
   return {
     eyebrow: r ? `${r} Steakhouse Catering` : "Steakhouse Catering",
-    title: r ? <>{o.regionShort} <span className="italic text-gold font-light">steakhouse</span> catering.</> : <>The steakhouse, <span className="italic text-gold font-light">delivered.</span></>,
+    title: r ? <>{o.regionShort} <span className="italic text-gold font-light">steakhouse</span> catering.</> : <>The Steakhouse Experience... <span className="italic text-gold font-light">Brought To You.</span></>,
     subtitle: r
-      ? `Plated ribeye, filet mignon, picanha and prime rib across ${r}. Upscale weddings and corporate dinners.`
-      : "Plated ribeye, New York strip, filet mignon, picanha, prime rib, salmon and surf-and-turf. Upscale weddings, luxury corporate dinners.",
+      ? `Charcoal-grilled ribeye, New York strip, filet mignon, picanha, prime rib, salmon, and surf & turf served under candlelight with polished service and unforgettable presentation across ${r}. Perfect for luxury weddings, corporate dinners, and private events.`
+      : "Charcoal-grilled ribeye, New York strip, filet mignon, picanha, prime rib, salmon, and surf & turf served under candlelight with polished service and unforgettable presentation. Perfect for luxury weddings, corporate dinners, and private events.",
     heroImage: steak,
     intro: {
       heading: "A separate identity. A separate standard.",
