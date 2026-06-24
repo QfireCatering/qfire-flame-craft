@@ -5,6 +5,8 @@ import steakAsset from "@/assets/steakhouse-backyard.png.asset.json";
 const steak = steakAsset.url;
 import brisket from "@/assets/brisket.jpg";
 import buffet from "@/assets/buffet.jpg";
+import bartenderAsset from "@/assets/bartender.png.asset.json";
+const bartender = bartenderAsset.url;
 import corporateAsset from "@/assets/corporate-catering.png.asset.json";
 const corporate = corporateAsset.url;
 import privateParty from "@/assets/private-party.jpg";
