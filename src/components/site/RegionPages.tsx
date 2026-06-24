@@ -20,6 +20,8 @@ import corporateAsset from "@/assets/corporate-catering.png.asset.json";
 const corporate = corporateAsset.url;
 import privateParty from "@/assets/private-party.jpg";
 import buffet from "@/assets/buffet.jpg";
+import bartenderAsset from "@/assets/bartender.png.asset.json";
+const bartender = bartenderAsset.url;
 import heroFire from "@/assets/hero-fire.jpg";
 
 const regionHero: Record<RegionKey, string> = {
