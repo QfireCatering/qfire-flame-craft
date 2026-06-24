@@ -1,8 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, ArrowUpRight, Flame, Award, Users, Sparkles } from "lucide-react";
 import heroFire from "@/assets/hero-fire.jpg";
-import weddingGrilling from "@/assets/wedding-grilling-hero.png.asset.json";
-import weddingTableAsset from "@/assets/food-style.png.asset.json";
+import weddingGrilling from "@/assets/wedding-couple.png.asset.json";
+import weddingTableAsset from "@/assets/wedding-couple.png.asset.json";
 import steakAsset from "@/assets/steakhouse-backyard.png.asset.json";
 const steak = steakAsset.url;
 import brisket from "@/assets/brisket.jpg";

@@ -9,7 +9,8 @@ import {
 import { regions, services, extraPages, type RegionKey } from "@/lib/site";
 import phoenixImg from "@/assets/phoenix.jpg";
 import sanDiegoImg from "@/assets/san-diego.jpg";
-import weddingTable from "@/assets/wedding-table.jpg";
+import weddingCoupleAsset from "@/assets/wedding-couple.png.asset.json";
+const weddingTable = weddingCoupleAsset.url;
 import brisket from "@/assets/brisket.jpg";
 import steak from "@/assets/steak.jpg";
 import corporate from "@/assets/corporate.jpg";
