@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 import brisket from "@/assets/brisket.jpg";
 import steak from "@/assets/steak.jpg";
 import chefTerry from "@/assets/chef-terry.jpg.asset.json";
-import buffet from "@/assets/buffet.jpg";
+import terryBlackShirt from "@/assets/terry-black-shirt.jpg.asset.json";
 import { CTASection } from "@/components/site/Sections";
 
 export const Route = createFileRoute("/menus")({
@@ -24,7 +24,7 @@ function MenusPage() {
     { img: brisket, label: "Wood-Fired", body: "Slow-smoked brisket, tri-tip, pulled meats and comfort sides. Backyard elegance.", href: "/wood-fired" as const },
     { img: steak, label: "Steakhouse", body: "Ribeye, filet, picanha, prime rib. Plated dinners and family-style service.", href: "/steakhouse" as const },
     { img: chefTerry.url, label: "Private Chef", body: "Intimate, multi-course chef's dinners in your home or venue.", href: "/private-chef" as const },
-    { img: buffet, label: "Buffet & Stations", body: "Live-fire stations and full buffet packages for large gatherings.", href: "/wood-fired" as const },
+    { img: terryBlackShirt.url, label: "Buffet & Stations", body: "Live-fire stations and full buffet packages for large gatherings.", href: "/wood-fired" as const },
   ];
   return (
     <>

@@ -1,7 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { ArrowRight, Check } from "lucide-react";
-import heroFire from "@/assets/hero-fire.jpg";
+import terryRedChef from "@/assets/terry-red-chef.jpg.asset.json";
+
 
 export const Route = createFileRoute("/quote")({
   head: () => ({
@@ -22,7 +23,7 @@ function QuotePage() {
   return (
     <div className="min-h-screen grid lg:grid-cols-[1.1fr_1fr]">
       <div className="relative hidden lg:block">
-        <img src={heroFire} alt="" className="absolute inset-0 w-full h-full object-cover" />
+        <img src={terryRedChef.url} alt="Chef Terry Matthews" className="absolute inset-0 w-full h-full object-cover object-top" />
         <div className="absolute inset-0 bg-gradient-to-r from-ink/40 to-ink/80" />
         <div className="absolute inset-0 flex items-end p-16">
           <div>
