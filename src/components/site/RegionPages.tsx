@@ -11,6 +11,8 @@ import phoenixImg from "@/assets/phoenix.jpg";
 import sanDiegoImg from "@/assets/san-diego.jpg";
 import weddingCoupleAsset from "@/assets/wedding-couple.png.asset.json";
 const weddingTable = weddingCoupleAsset.url;
+import bbqPlatterAsset from "@/assets/bbq-platter.png.asset.json";
+const bbqPlatter = bbqPlatterAsset.url;
 import brisket from "@/assets/brisket.jpg";
 import steak from "@/assets/steak.jpg";
 import corporateAsset from "@/assets/corporate-catering.png.asset.json";
@@ -59,7 +61,7 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-white/5 border border-white/5">
             {services.map((s, i) => {
-              const img = [weddingTable, corporate, privateParty, brisket, steak, buffet, heroFire][i % 7];
+              const img = [weddingTable, corporate, privateParty, bbqPlatter, steak, buffet, heroFire][i % 7];
               return (
                 <Link
                   key={s.slug}
