@@ -7,8 +7,8 @@ import steak from "@/assets/steak.jpg";
 import brisket from "@/assets/brisket.jpg";
 import chefTerry from "@/assets/chef-terry.jpg.asset.json";
 import buffet from "@/assets/buffet.jpg";
-import phoenix from "@/assets/phoenix.jpg";
-import sanDiego from "@/assets/san-diego.jpg";
+import phoenix from "@/assets/phoenix.png.asset.json";
+import sanDiego from "@/assets/san-diego.png.asset.json";
 import corporate from "@/assets/corporate.jpg";
 import privateParty from "@/assets/private-party.jpg";
 import { CTASection } from "@/components/site/Sections";
@@ -103,10 +103,10 @@ function Home() {
 
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-10">
             {[
-              { key: "phoenix", img: phoenix, name: "Phoenix Metro", state: "Arizona",
+              { key: "phoenix", img: phoenix.url, name: "Phoenix Metro", state: "Arizona",
                 cities: "Phoenix · Scottsdale · Mesa · Chandler · Gilbert · Glendale · Surprise · Avondale · Goodyear · Peoria",
                 href: "/phoenix" as const },
-              { key: "san-diego", img: sanDiego, name: "San Diego County", state: "California",
+              { key: "san-diego", img: sanDiego.url, name: "San Diego County", state: "California",
                 cities: "San Diego · Carlsbad · Encinitas · Del Mar · Rancho Santa Fe · Poway · La Jolla · Escondido · Vista · Oceanside",
                 href: "/san-diego" as const },
             ].map((r) => (
