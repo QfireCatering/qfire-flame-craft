@@ -12,10 +12,14 @@ import sanDiegoImg from "@/assets/san-diego.jpg";
 import weddingTable from "@/assets/wedding-table.jpg";
 import brisket from "@/assets/brisket.jpg";
 import steak from "@/assets/steak.jpg";
-import corporate from "@/assets/corporate.jpg";
-import privateParty from "@/assets/private-party.jpg";
-import buffet from "@/assets/buffet.jpg";
-import heroFire from "@/assets/hero-fire.jpg";
+import terryChefBlack from "@/assets/terry-chef-black.jpg.asset.json";
+import terryBlackShirt from "@/assets/terry-black-shirt.jpg.asset.json";
+import terryRedChef from "@/assets/terry-red-chef.jpg.asset.json";
+
+const corporate = terryBlackShirt.url;
+const privateParty = terryChefBlack.url;
+const buffet = terryBlackShirt.url;
+const heroFire = terryRedChef.url;
 
 const regionHero: Record<RegionKey, string> = {
   phoenix: phoenixImg,
