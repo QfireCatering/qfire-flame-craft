@@ -5,6 +5,8 @@ import steakAsset from "@/assets/steakhouse-backyard.png.asset.json";
 const steak = steakAsset.url;
 import brisket from "@/assets/brisket.jpg";
 import buffet from "@/assets/buffet.jpg";
+import bartenderAsset from "@/assets/bartender.png.asset.json";
+const bartender = bartenderAsset.url;
 import corporateAsset from "@/assets/corporate-catering.png.asset.json";
 const corporate = corporateAsset.url;
 import privateParty from "@/assets/private-party.jpg";
@@ -202,7 +204,7 @@ export function bartendingConfig(o: ServiceTemplateOptions = {}): ServicePageCon
     subtitle: r
       ? `Licensed and insured bartending across ${r}. Signature cocktails, full bar packages, beverage management.`
       : "Licensed and insured bartenders. Signature cocktails, full bar packages, beverage management for weddings and events.",
-    heroImage: buffet,
+    heroImage: bartender,
     intro: {
       heading: "A bar program that matches the menu.",
       body: [
@@ -217,7 +219,7 @@ export function bartendingConfig(o: ServiceTemplateOptions = {}): ServicePageCon
       { title: "Wine Service", body: "Sommelier-led wine programs and pairings." },
       { title: "Non-Alcoholic Programs", body: "Mocktail menus and elevated non-alc options." },
     ],
-    galleryImages: [buffet, weddingTable, corporate, privateParty],
+    galleryImages: [bartender, weddingTable, corporate, privateParty],
     ctaTitle: "Design your bar program.",
   };
 }
