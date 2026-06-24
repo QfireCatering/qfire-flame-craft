@@ -3,7 +3,8 @@ import { ArrowRight, ArrowUpRight, Flame, Award, Users, Sparkles } from "lucide-
 import heroFire from "@/assets/hero-fire.jpg";
 import weddingGrilling from "@/assets/wedding-grilling-hero.png.asset.json";
 import weddingTableAsset from "@/assets/food-style.png.asset.json";
-import steak from "@/assets/steak.jpg";
+import steakAsset from "@/assets/steakhouse-backyard.png.asset.json";
+const steak = steakAsset.url;
 import brisket from "@/assets/brisket.jpg";
 import brisketVideo from "@/assets/brisket-slice.mp4.asset.json";
 import chefTerry from "@/assets/chef-terry.jpg.asset.json";
