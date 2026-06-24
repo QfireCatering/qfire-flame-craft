@@ -1,5 +1,6 @@
 import heroFire from "@/assets/hero-fire.jpg";
-import weddingTable from "@/assets/wedding-table.jpg";
+import weddingCoupleAsset from "@/assets/wedding-couple.png.asset.json";
+const weddingTable = weddingCoupleAsset.url;
 import steakAsset from "@/assets/steakhouse-backyard.png.asset.json";
 const steak = steakAsset.url;
 import brisket from "@/assets/brisket.jpg";
