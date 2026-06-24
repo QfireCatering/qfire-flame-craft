@@ -7,7 +7,7 @@ import steak from "@/assets/steak.jpg";
 import corporate from "@/assets/corporate.jpg";
 import privateParty from "@/assets/private-party.jpg";
 import buffet from "@/assets/buffet.jpg";
-import chefTerry from "@/assets/chef-terry.jpg";
+import chefTerry from "@/assets/chef-terry.jpg.asset.json";
 
 export const Route = createFileRoute("/pictures")({
   head: () => ({
@@ -23,7 +23,7 @@ export const Route = createFileRoute("/pictures")({
 });
 
 const masonry: { src: string; tall?: boolean; wide?: boolean }[] = [
-  { src: weddingTable, wide: true }, { src: brisket }, { src: chefTerry, tall: true },
+  { src: weddingTable, wide: true }, { src: brisket }, { src: chefTerry.url, tall: true },
   { src: steak }, { src: corporate }, { src: buffet, wide: true },
   { src: privateParty }, { src: heroFire, tall: true }, { src: weddingTable },
   { src: brisket, wide: true }, { src: steak }, { src: buffet },
