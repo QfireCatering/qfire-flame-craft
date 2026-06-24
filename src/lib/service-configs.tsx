@@ -5,7 +5,8 @@ import steakAsset from "@/assets/steakhouse-backyard.png.asset.json";
 const steak = steakAsset.url;
 import brisket from "@/assets/brisket.jpg";
 import buffet from "@/assets/buffet.jpg";
-import corporate from "@/assets/corporate.jpg";
+import corporateAsset from "@/assets/corporate-catering.png.asset.json";
+const corporate = corporateAsset.url;
 import privateParty from "@/assets/private-party.jpg";
 import type { ServicePageConfig } from "@/components/site/ServicePage";
 
