@@ -13,12 +13,15 @@ import { Route as WoodFiredRouteImport } from './routes/wood-fired'
 import { Route as WhyQfireRouteImport } from './routes/why-qfire'
 import { Route as WeddingsRouteImport } from './routes/weddings'
 import { Route as SteakhouseRouteImport } from './routes/steakhouse'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as SanDiegoRouteImport } from './routes/san-diego'
 import { Route as ReviewsRouteImport } from './routes/reviews'
 import { Route as RentalsRouteImport } from './routes/rentals'
 import { Route as QuoteRouteImport } from './routes/quote'
 import { Route as PrivatePartiesRouteImport } from './routes/private-parties'
 import { Route as PrivateChefRouteImport } from './routes/private-chef'
 import { Route as PicturesRouteImport } from './routes/pictures'
+import { Route as PhoenixRouteImport } from './routes/phoenix'
 import { Route as MenusRouteImport } from './routes/menus'
 import { Route as LocationsRouteImport } from './routes/locations'
 import { Route as FaqRouteImport } from './routes/faq'
@@ -27,6 +30,10 @@ import { Route as BlogRouteImport } from './routes/blog'
 import { Route as BartendingRouteImport } from './routes/bartending'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as SanDiegoIndexRouteImport } from './routes/san-diego.index'
+import { Route as PhoenixIndexRouteImport } from './routes/phoenix.index'
+import { Route as SanDiegoSlugRouteImport } from './routes/san-diego.$slug'
+import { Route as PhoenixSlugRouteImport } from './routes/phoenix.$slug'
 
 const WoodFiredRoute = WoodFiredRouteImport.update({
   id: '/wood-fired',
@@ -46,6 +53,16 @@ const WeddingsRoute = WeddingsRouteImport.update({
 const SteakhouseRoute = SteakhouseRouteImport.update({
   id: '/steakhouse',
   path: '/steakhouse',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SanDiegoRoute = SanDiegoRouteImport.update({
+  id: '/san-diego',
+  path: '/san-diego',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ReviewsRoute = ReviewsRouteImport.update({
@@ -76,6 +93,11 @@ const PrivateChefRoute = PrivateChefRouteImport.update({
 const PicturesRoute = PicturesRouteImport.update({
   id: '/pictures',
   path: '/pictures',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PhoenixRoute = PhoenixRouteImport.update({
+  id: '/phoenix',
+  path: '/phoenix',
   getParentRoute: () => rootRouteImport,
 } as any)
 const MenusRoute = MenusRouteImport.update({
@@ -118,6 +140,26 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SanDiegoIndexRoute = SanDiegoIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => SanDiegoRoute,
+} as any)
+const PhoenixIndexRoute = PhoenixIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => PhoenixRoute,
+} as any)
+const SanDiegoSlugRoute = SanDiegoSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => SanDiegoRoute,
+} as any)
+const PhoenixSlugRoute = PhoenixSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => PhoenixRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -128,16 +170,23 @@ export interface FileRoutesByFullPath {
   '/faq': typeof FaqRoute
   '/locations': typeof LocationsRoute
   '/menus': typeof MenusRoute
+  '/phoenix': typeof PhoenixRouteWithChildren
   '/pictures': typeof PicturesRoute
   '/private-chef': typeof PrivateChefRoute
   '/private-parties': typeof PrivatePartiesRoute
   '/quote': typeof QuoteRoute
   '/rentals': typeof RentalsRoute
   '/reviews': typeof ReviewsRoute
+  '/san-diego': typeof SanDiegoRouteWithChildren
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/steakhouse': typeof SteakhouseRoute
   '/weddings': typeof WeddingsRoute
   '/why-qfire': typeof WhyQfireRoute
   '/wood-fired': typeof WoodFiredRoute
+  '/phoenix/$slug': typeof PhoenixSlugRoute
+  '/san-diego/$slug': typeof SanDiegoSlugRoute
+  '/phoenix/': typeof PhoenixIndexRoute
+  '/san-diego/': typeof SanDiegoIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -154,10 +203,15 @@ export interface FileRoutesByTo {
   '/quote': typeof QuoteRoute
   '/rentals': typeof RentalsRoute
   '/reviews': typeof ReviewsRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/steakhouse': typeof SteakhouseRoute
   '/weddings': typeof WeddingsRoute
   '/why-qfire': typeof WhyQfireRoute
   '/wood-fired': typeof WoodFiredRoute
+  '/phoenix/$slug': typeof PhoenixSlugRoute
+  '/san-diego/$slug': typeof SanDiegoSlugRoute
+  '/phoenix': typeof PhoenixIndexRoute
+  '/san-diego': typeof SanDiegoIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -169,16 +223,23 @@ export interface FileRoutesById {
   '/faq': typeof FaqRoute
   '/locations': typeof LocationsRoute
   '/menus': typeof MenusRoute
+  '/phoenix': typeof PhoenixRouteWithChildren
   '/pictures': typeof PicturesRoute
   '/private-chef': typeof PrivateChefRoute
   '/private-parties': typeof PrivatePartiesRoute
   '/quote': typeof QuoteRoute
   '/rentals': typeof RentalsRoute
   '/reviews': typeof ReviewsRoute
+  '/san-diego': typeof SanDiegoRouteWithChildren
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/steakhouse': typeof SteakhouseRoute
   '/weddings': typeof WeddingsRoute
   '/why-qfire': typeof WhyQfireRoute
   '/wood-fired': typeof WoodFiredRoute
+  '/phoenix/$slug': typeof PhoenixSlugRoute
+  '/san-diego/$slug': typeof SanDiegoSlugRoute
+  '/phoenix/': typeof PhoenixIndexRoute
+  '/san-diego/': typeof SanDiegoIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -191,16 +252,23 @@ export interface FileRouteTypes {
     | '/faq'
     | '/locations'
     | '/menus'
+    | '/phoenix'
     | '/pictures'
     | '/private-chef'
     | '/private-parties'
     | '/quote'
     | '/rentals'
     | '/reviews'
+    | '/san-diego'
+    | '/sitemap.xml'
     | '/steakhouse'
     | '/weddings'
     | '/why-qfire'
     | '/wood-fired'
+    | '/phoenix/$slug'
+    | '/san-diego/$slug'
+    | '/phoenix/'
+    | '/san-diego/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -217,10 +285,15 @@ export interface FileRouteTypes {
     | '/quote'
     | '/rentals'
     | '/reviews'
+    | '/sitemap.xml'
     | '/steakhouse'
     | '/weddings'
     | '/why-qfire'
     | '/wood-fired'
+    | '/phoenix/$slug'
+    | '/san-diego/$slug'
+    | '/phoenix'
+    | '/san-diego'
   id:
     | '__root__'
     | '/'
@@ -231,16 +304,23 @@ export interface FileRouteTypes {
     | '/faq'
     | '/locations'
     | '/menus'
+    | '/phoenix'
     | '/pictures'
     | '/private-chef'
     | '/private-parties'
     | '/quote'
     | '/rentals'
     | '/reviews'
+    | '/san-diego'
+    | '/sitemap.xml'
     | '/steakhouse'
     | '/weddings'
     | '/why-qfire'
     | '/wood-fired'
+    | '/phoenix/$slug'
+    | '/san-diego/$slug'
+    | '/phoenix/'
+    | '/san-diego/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -252,12 +332,15 @@ export interface RootRouteChildren {
   FaqRoute: typeof FaqRoute
   LocationsRoute: typeof LocationsRoute
   MenusRoute: typeof MenusRoute
+  PhoenixRoute: typeof PhoenixRouteWithChildren
   PicturesRoute: typeof PicturesRoute
   PrivateChefRoute: typeof PrivateChefRoute
   PrivatePartiesRoute: typeof PrivatePartiesRoute
   QuoteRoute: typeof QuoteRoute
   RentalsRoute: typeof RentalsRoute
   ReviewsRoute: typeof ReviewsRoute
+  SanDiegoRoute: typeof SanDiegoRouteWithChildren
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   SteakhouseRoute: typeof SteakhouseRoute
   WeddingsRoute: typeof WeddingsRoute
   WhyQfireRoute: typeof WhyQfireRoute
@@ -292,6 +375,20 @@ declare module '@tanstack/react-router' {
       path: '/steakhouse'
       fullPath: '/steakhouse'
       preLoaderRoute: typeof SteakhouseRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/san-diego': {
+      id: '/san-diego'
+      path: '/san-diego'
+      fullPath: '/san-diego'
+      preLoaderRoute: typeof SanDiegoRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/reviews': {
@@ -334,6 +431,13 @@ declare module '@tanstack/react-router' {
       path: '/pictures'
       fullPath: '/pictures'
       preLoaderRoute: typeof PicturesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/phoenix': {
+      id: '/phoenix'
+      path: '/phoenix'
+      fullPath: '/phoenix'
+      preLoaderRoute: typeof PhoenixRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/menus': {
@@ -392,8 +496,63 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/san-diego/': {
+      id: '/san-diego/'
+      path: '/'
+      fullPath: '/san-diego/'
+      preLoaderRoute: typeof SanDiegoIndexRouteImport
+      parentRoute: typeof SanDiegoRoute
+    }
+    '/phoenix/': {
+      id: '/phoenix/'
+      path: '/'
+      fullPath: '/phoenix/'
+      preLoaderRoute: typeof PhoenixIndexRouteImport
+      parentRoute: typeof PhoenixRoute
+    }
+    '/san-diego/$slug': {
+      id: '/san-diego/$slug'
+      path: '/$slug'
+      fullPath: '/san-diego/$slug'
+      preLoaderRoute: typeof SanDiegoSlugRouteImport
+      parentRoute: typeof SanDiegoRoute
+    }
+    '/phoenix/$slug': {
+      id: '/phoenix/$slug'
+      path: '/$slug'
+      fullPath: '/phoenix/$slug'
+      preLoaderRoute: typeof PhoenixSlugRouteImport
+      parentRoute: typeof PhoenixRoute
+    }
   }
 }
+
+interface PhoenixRouteChildren {
+  PhoenixSlugRoute: typeof PhoenixSlugRoute
+  PhoenixIndexRoute: typeof PhoenixIndexRoute
+}
+
+const PhoenixRouteChildren: PhoenixRouteChildren = {
+  PhoenixSlugRoute: PhoenixSlugRoute,
+  PhoenixIndexRoute: PhoenixIndexRoute,
+}
+
+const PhoenixRouteWithChildren =
+  PhoenixRoute._addFileChildren(PhoenixRouteChildren)
+
+interface SanDiegoRouteChildren {
+  SanDiegoSlugRoute: typeof SanDiegoSlugRoute
+  SanDiegoIndexRoute: typeof SanDiegoIndexRoute
+}
+
+const SanDiegoRouteChildren: SanDiegoRouteChildren = {
+  SanDiegoSlugRoute: SanDiegoSlugRoute,
+  SanDiegoIndexRoute: SanDiegoIndexRoute,
+}
+
+const SanDiegoRouteWithChildren = SanDiegoRoute._addFileChildren(
+  SanDiegoRouteChildren,
+)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
@@ -404,12 +563,15 @@ const rootRouteChildren: RootRouteChildren = {
   FaqRoute: FaqRoute,
   LocationsRoute: LocationsRoute,
   MenusRoute: MenusRoute,
+  PhoenixRoute: PhoenixRouteWithChildren,
   PicturesRoute: PicturesRoute,
   PrivateChefRoute: PrivateChefRoute,
   PrivatePartiesRoute: PrivatePartiesRoute,
   QuoteRoute: QuoteRoute,
   RentalsRoute: RentalsRoute,
   ReviewsRoute: ReviewsRoute,
+  SanDiegoRoute: SanDiegoRouteWithChildren,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
   SteakhouseRoute: SteakhouseRoute,
   WeddingsRoute: WeddingsRoute,
   WhyQfireRoute: WhyQfireRoute,
@@ -418,3 +580,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
