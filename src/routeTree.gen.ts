@@ -10,20 +10,32 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as WoodFiredRouteImport } from './routes/wood-fired'
+import { Route as WhyQfireRouteImport } from './routes/why-qfire'
 import { Route as WeddingsRouteImport } from './routes/weddings'
 import { Route as SteakhouseRouteImport } from './routes/steakhouse'
+import { Route as ReviewsRouteImport } from './routes/reviews'
 import { Route as RentalsRouteImport } from './routes/rentals'
+import { Route as QuoteRouteImport } from './routes/quote'
 import { Route as PrivatePartiesRouteImport } from './routes/private-parties'
 import { Route as PrivateChefRouteImport } from './routes/private-chef'
+import { Route as PicturesRouteImport } from './routes/pictures'
 import { Route as MenusRouteImport } from './routes/menus'
 import { Route as LocationsRouteImport } from './routes/locations'
+import { Route as FaqRouteImport } from './routes/faq'
 import { Route as CorporateRouteImport } from './routes/corporate'
+import { Route as BlogRouteImport } from './routes/blog'
 import { Route as BartendingRouteImport } from './routes/bartending'
+import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
 const WoodFiredRoute = WoodFiredRouteImport.update({
   id: '/wood-fired',
   path: '/wood-fired',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WhyQfireRoute = WhyQfireRouteImport.update({
+  id: '/why-qfire',
+  path: '/why-qfire',
   getParentRoute: () => rootRouteImport,
 } as any)
 const WeddingsRoute = WeddingsRouteImport.update({
@@ -36,9 +48,19 @@ const SteakhouseRoute = SteakhouseRouteImport.update({
   path: '/steakhouse',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ReviewsRoute = ReviewsRouteImport.update({
+  id: '/reviews',
+  path: '/reviews',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const RentalsRoute = RentalsRouteImport.update({
   id: '/rentals',
   path: '/rentals',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const QuoteRoute = QuoteRouteImport.update({
+  id: '/quote',
+  path: '/quote',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PrivatePartiesRoute = PrivatePartiesRouteImport.update({
@@ -51,6 +73,11 @@ const PrivateChefRoute = PrivateChefRouteImport.update({
   path: '/private-chef',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PicturesRoute = PicturesRouteImport.update({
+  id: '/pictures',
+  path: '/pictures',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const MenusRoute = MenusRouteImport.update({
   id: '/menus',
   path: '/menus',
@@ -61,14 +88,29 @@ const LocationsRoute = LocationsRouteImport.update({
   path: '/locations',
   getParentRoute: () => rootRouteImport,
 } as any)
+const FaqRoute = FaqRouteImport.update({
+  id: '/faq',
+  path: '/faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const CorporateRoute = CorporateRouteImport.update({
   id: '/corporate',
   path: '/corporate',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BlogRoute = BlogRouteImport.update({
+  id: '/blog',
+  path: '/blog',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BartendingRoute = BartendingRouteImport.update({
   id: '/bartending',
   path: '/bartending',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -79,97 +121,146 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
   '/bartending': typeof BartendingRoute
+  '/blog': typeof BlogRoute
   '/corporate': typeof CorporateRoute
+  '/faq': typeof FaqRoute
   '/locations': typeof LocationsRoute
   '/menus': typeof MenusRoute
+  '/pictures': typeof PicturesRoute
   '/private-chef': typeof PrivateChefRoute
   '/private-parties': typeof PrivatePartiesRoute
+  '/quote': typeof QuoteRoute
   '/rentals': typeof RentalsRoute
+  '/reviews': typeof ReviewsRoute
   '/steakhouse': typeof SteakhouseRoute
   '/weddings': typeof WeddingsRoute
+  '/why-qfire': typeof WhyQfireRoute
   '/wood-fired': typeof WoodFiredRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
   '/bartending': typeof BartendingRoute
+  '/blog': typeof BlogRoute
   '/corporate': typeof CorporateRoute
+  '/faq': typeof FaqRoute
   '/locations': typeof LocationsRoute
   '/menus': typeof MenusRoute
+  '/pictures': typeof PicturesRoute
   '/private-chef': typeof PrivateChefRoute
   '/private-parties': typeof PrivatePartiesRoute
+  '/quote': typeof QuoteRoute
   '/rentals': typeof RentalsRoute
+  '/reviews': typeof ReviewsRoute
   '/steakhouse': typeof SteakhouseRoute
   '/weddings': typeof WeddingsRoute
+  '/why-qfire': typeof WhyQfireRoute
   '/wood-fired': typeof WoodFiredRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
   '/bartending': typeof BartendingRoute
+  '/blog': typeof BlogRoute
   '/corporate': typeof CorporateRoute
+  '/faq': typeof FaqRoute
   '/locations': typeof LocationsRoute
   '/menus': typeof MenusRoute
+  '/pictures': typeof PicturesRoute
   '/private-chef': typeof PrivateChefRoute
   '/private-parties': typeof PrivatePartiesRoute
+  '/quote': typeof QuoteRoute
   '/rentals': typeof RentalsRoute
+  '/reviews': typeof ReviewsRoute
   '/steakhouse': typeof SteakhouseRoute
   '/weddings': typeof WeddingsRoute
+  '/why-qfire': typeof WhyQfireRoute
   '/wood-fired': typeof WoodFiredRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/about'
     | '/bartending'
+    | '/blog'
     | '/corporate'
+    | '/faq'
     | '/locations'
     | '/menus'
+    | '/pictures'
     | '/private-chef'
     | '/private-parties'
+    | '/quote'
     | '/rentals'
+    | '/reviews'
     | '/steakhouse'
     | '/weddings'
+    | '/why-qfire'
     | '/wood-fired'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/about'
     | '/bartending'
+    | '/blog'
     | '/corporate'
+    | '/faq'
     | '/locations'
     | '/menus'
+    | '/pictures'
     | '/private-chef'
     | '/private-parties'
+    | '/quote'
     | '/rentals'
+    | '/reviews'
     | '/steakhouse'
     | '/weddings'
+    | '/why-qfire'
     | '/wood-fired'
   id:
     | '__root__'
     | '/'
+    | '/about'
     | '/bartending'
+    | '/blog'
     | '/corporate'
+    | '/faq'
     | '/locations'
     | '/menus'
+    | '/pictures'
     | '/private-chef'
     | '/private-parties'
+    | '/quote'
     | '/rentals'
+    | '/reviews'
     | '/steakhouse'
     | '/weddings'
+    | '/why-qfire'
     | '/wood-fired'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
   BartendingRoute: typeof BartendingRoute
+  BlogRoute: typeof BlogRoute
   CorporateRoute: typeof CorporateRoute
+  FaqRoute: typeof FaqRoute
   LocationsRoute: typeof LocationsRoute
   MenusRoute: typeof MenusRoute
+  PicturesRoute: typeof PicturesRoute
   PrivateChefRoute: typeof PrivateChefRoute
   PrivatePartiesRoute: typeof PrivatePartiesRoute
+  QuoteRoute: typeof QuoteRoute
   RentalsRoute: typeof RentalsRoute
+  ReviewsRoute: typeof ReviewsRoute
   SteakhouseRoute: typeof SteakhouseRoute
   WeddingsRoute: typeof WeddingsRoute
+  WhyQfireRoute: typeof WhyQfireRoute
   WoodFiredRoute: typeof WoodFiredRoute
 }
 
@@ -180,6 +271,13 @@ declare module '@tanstack/react-router' {
       path: '/wood-fired'
       fullPath: '/wood-fired'
       preLoaderRoute: typeof WoodFiredRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/why-qfire': {
+      id: '/why-qfire'
+      path: '/why-qfire'
+      fullPath: '/why-qfire'
+      preLoaderRoute: typeof WhyQfireRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/weddings': {
@@ -196,11 +294,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SteakhouseRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/reviews': {
+      id: '/reviews'
+      path: '/reviews'
+      fullPath: '/reviews'
+      preLoaderRoute: typeof ReviewsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/rentals': {
       id: '/rentals'
       path: '/rentals'
       fullPath: '/rentals'
       preLoaderRoute: typeof RentalsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/quote': {
+      id: '/quote'
+      path: '/quote'
+      fullPath: '/quote'
+      preLoaderRoute: typeof QuoteRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/private-parties': {
@@ -217,6 +329,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PrivateChefRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/pictures': {
+      id: '/pictures'
+      path: '/pictures'
+      fullPath: '/pictures'
+      preLoaderRoute: typeof PicturesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/menus': {
       id: '/menus'
       path: '/menus'
@@ -231,6 +350,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LocationsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/faq': {
+      id: '/faq'
+      path: '/faq'
+      fullPath: '/faq'
+      preLoaderRoute: typeof FaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/corporate': {
       id: '/corporate'
       path: '/corporate'
@@ -238,11 +364,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CorporateRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog': {
+      id: '/blog'
+      path: '/blog'
+      fullPath: '/blog'
+      preLoaderRoute: typeof BlogRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/bartending': {
       id: '/bartending'
       path: '/bartending'
       fullPath: '/bartending'
       preLoaderRoute: typeof BartendingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -257,15 +397,22 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
   BartendingRoute: BartendingRoute,
+  BlogRoute: BlogRoute,
   CorporateRoute: CorporateRoute,
+  FaqRoute: FaqRoute,
   LocationsRoute: LocationsRoute,
   MenusRoute: MenusRoute,
+  PicturesRoute: PicturesRoute,
   PrivateChefRoute: PrivateChefRoute,
   PrivatePartiesRoute: PrivatePartiesRoute,
+  QuoteRoute: QuoteRoute,
   RentalsRoute: RentalsRoute,
+  ReviewsRoute: ReviewsRoute,
   SteakhouseRoute: SteakhouseRoute,
   WeddingsRoute: WeddingsRoute,
+  WhyQfireRoute: WhyQfireRoute,
   WoodFiredRoute: WoodFiredRoute,
 }
 export const routeTree = rootRouteImport
