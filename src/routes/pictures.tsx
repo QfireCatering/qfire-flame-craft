@@ -1,7 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHero, CTASection } from "@/components/site/Sections";
 import heroFire from "@/assets/hero-fire.jpg";
-import weddingTable from "@/assets/wedding-table.jpg";
+import weddingCoupleAsset from "@/assets/wedding-couple.png.asset.json";
+const weddingTable = weddingCoupleAsset.url;
 import brisket from "@/assets/brisket.jpg";
 import steak from "@/assets/steak.jpg";
 import corporate from "@/assets/corporate.jpg";

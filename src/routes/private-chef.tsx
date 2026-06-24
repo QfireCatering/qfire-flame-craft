@@ -3,7 +3,8 @@ import type { ServicePageConfig } from "@/components/site/ServicePage";
 import { ServicePage } from "@/components/site/ServicePage";
 import chefTerry from "@/assets/chef-terry.jpg.asset.json";
 import steak from "@/assets/steak.jpg";
-import weddingTable from "@/assets/wedding-table.jpg";
+import weddingCoupleAsset from "@/assets/wedding-couple.png.asset.json";
+const weddingTable = weddingCoupleAsset.url;
 import brisket from "@/assets/brisket.jpg";
 
 export const Route = createFileRoute("/private-chef")({
