@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, ArrowUpRight, Flame, Award, Users, Sparkles } from "lucide-react";
 import heroFire from "@/assets/hero-fire.jpg";
+import weddingGrilling from "@/assets/wedding-grilling-hero.png.asset.json";
 import weddingTable from "@/assets/wedding-table.jpg";
 import steak from "@/assets/steak.jpg";
 import brisket from "@/assets/brisket.jpg";
