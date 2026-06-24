@@ -45,13 +45,8 @@ export function Nav() {
         }`}
       >
         <div className="container-luxe flex items-center justify-between h-20 lg:h-24">
-          <Link to="/" className="group flex items-center gap-3 shrink-0">
-            <span className="text-gold text-2xl font-display tracking-tight">
-              Q<span className="text-bone">fire</span>
-            </span>
-            <span className="hidden sm:inline text-[0.6rem] tracking-[0.35em] uppercase text-muted-foreground border-l border-white/15 pl-3">
-              Catering
-            </span>
+          <Link to="/" className="group flex items-center gap-3 shrink-0" aria-label="Qfire Catering">
+            <img src={qfireLogo.url} alt="Qfire Catering" className="h-12 lg:h-14 w-auto transition-transform duration-500 group-hover:scale-105" />
           </Link>
 
           <nav className="hidden lg:flex items-center gap-9">
