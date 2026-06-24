@@ -1,5 +1,4 @@
-import heroFireAsset from "@/assets/hero-fire.jpg.asset.json";
-const heroFire = heroFireAsset.url;
+import heroFire from "@/assets/hero-fire.jpg";
 import weddingTable from "@/assets/wedding-table.jpg";
 import steakAsset from "@/assets/steakhouse-backyard.png.asset.json";
 const steak = steakAsset.url;

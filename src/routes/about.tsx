@@ -1,7 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import chefTerry from "@/assets/chef-terry.jpg.asset.json";
-import heroFireAsset from "@/assets/hero-fire.jpg.asset.json";
-const heroFire = heroFireAsset.url;
+import heroFire from "@/assets/hero-fire.jpg";
 import brisket from "@/assets/brisket.jpg";
 import { CTASection } from "@/components/site/Sections";
 

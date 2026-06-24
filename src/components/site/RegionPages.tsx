@@ -15,8 +15,7 @@ import steak from "@/assets/steak.jpg";
 import corporate from "@/assets/corporate.jpg";
 import privateParty from "@/assets/private-party.jpg";
 import buffet from "@/assets/buffet.jpg";
-import heroFireAsset from "@/assets/hero-fire.jpg.asset.json";
-const heroFire = heroFireAsset.url;
+import heroFire from "@/assets/hero-fire.jpg";
 
 const regionHero: Record<RegionKey, string> = {
   phoenix: phoenixImg,
