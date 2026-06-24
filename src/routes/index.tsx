@@ -11,7 +11,7 @@ import buffet from "@/assets/buffet.jpg";
 import phoenix from "@/assets/phoenix.png.asset.json";
 import sanDiego from "@/assets/san-diego.png.asset.json";
 import corporateAsset from "@/assets/corporate-catering.png.asset.json";
-import privatePartyAsset from "@/assets/food-style.png.asset.json";
+import privatePartyAsset from "@/assets/private-party.png.asset.json";
 const weddingTable = weddingTableAsset.url;
 const corporate = corporateAsset.url;
 const privateParty = privatePartyAsset.url;
