@@ -16,6 +16,8 @@ export const Route = createFileRoute("/sitemap.xml")({
           "/locations",
           "/service-areas",
           "/weddings",
+          "/wedding-catering-phoenix",
+          "/wedding-catering-san-diego",
           "/corporate",
           "/private-parties",
           "/menus",
