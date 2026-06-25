@@ -31,6 +31,8 @@ import { Route as PhoenixRouteImport } from './routes/phoenix'
 import { Route as MenusRouteImport } from './routes/menus'
 import { Route as LocationsRouteImport } from './routes/locations'
 import { Route as FaqRouteImport } from './routes/faq'
+import { Route as CorporateCateringSanDiegoRouteImport } from './routes/corporate-catering-san-diego'
+import { Route as CorporateCateringPhoenixRouteImport } from './routes/corporate-catering-phoenix'
 import { Route as CorporateRouteImport } from './routes/corporate'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as BlogRouteImport } from './routes/blog'
@@ -154,6 +156,18 @@ const FaqRoute = FaqRouteImport.update({
   path: '/faq',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CorporateCateringSanDiegoRoute =
+  CorporateCateringSanDiegoRouteImport.update({
+    id: '/corporate-catering-san-diego',
+    path: '/corporate-catering-san-diego',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const CorporateCateringPhoenixRoute =
+  CorporateCateringPhoenixRouteImport.update({
+    id: '/corporate-catering-phoenix',
+    path: '/corporate-catering-phoenix',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const CorporateRoute = CorporateRouteImport.update({
   id: '/corporate',
   path: '/corporate',
@@ -223,6 +237,8 @@ export interface FileRoutesByFullPath {
   '/blog': typeof BlogRouteWithChildren
   '/contact': typeof ContactRoute
   '/corporate': typeof CorporateRoute
+  '/corporate-catering-phoenix': typeof CorporateCateringPhoenixRoute
+  '/corporate-catering-san-diego': typeof CorporateCateringSanDiegoRoute
   '/faq': typeof FaqRoute
   '/locations': typeof LocationsRoute
   '/menus': typeof MenusRoute
@@ -259,6 +275,8 @@ export interface FileRoutesByTo {
   '/blog': typeof BlogRouteWithChildren
   '/contact': typeof ContactRoute
   '/corporate': typeof CorporateRoute
+  '/corporate-catering-phoenix': typeof CorporateCateringPhoenixRoute
+  '/corporate-catering-san-diego': typeof CorporateCateringSanDiegoRoute
   '/faq': typeof FaqRoute
   '/locations': typeof LocationsRoute
   '/menus': typeof MenusRoute
@@ -294,6 +312,8 @@ export interface FileRoutesById {
   '/blog': typeof BlogRouteWithChildren
   '/contact': typeof ContactRoute
   '/corporate': typeof CorporateRoute
+  '/corporate-catering-phoenix': typeof CorporateCateringPhoenixRoute
+  '/corporate-catering-san-diego': typeof CorporateCateringSanDiegoRoute
   '/faq': typeof FaqRoute
   '/locations': typeof LocationsRoute
   '/menus': typeof MenusRoute
@@ -332,6 +352,8 @@ export interface FileRouteTypes {
     | '/blog'
     | '/contact'
     | '/corporate'
+    | '/corporate-catering-phoenix'
+    | '/corporate-catering-san-diego'
     | '/faq'
     | '/locations'
     | '/menus'
@@ -368,6 +390,8 @@ export interface FileRouteTypes {
     | '/blog'
     | '/contact'
     | '/corporate'
+    | '/corporate-catering-phoenix'
+    | '/corporate-catering-san-diego'
     | '/faq'
     | '/locations'
     | '/menus'
@@ -402,6 +426,8 @@ export interface FileRouteTypes {
     | '/blog'
     | '/contact'
     | '/corporate'
+    | '/corporate-catering-phoenix'
+    | '/corporate-catering-san-diego'
     | '/faq'
     | '/locations'
     | '/menus'
@@ -439,6 +465,8 @@ export interface RootRouteChildren {
   BlogRoute: typeof BlogRouteWithChildren
   ContactRoute: typeof ContactRoute
   CorporateRoute: typeof CorporateRoute
+  CorporateCateringPhoenixRoute: typeof CorporateCateringPhoenixRoute
+  CorporateCateringSanDiegoRoute: typeof CorporateCateringSanDiegoRoute
   FaqRoute: typeof FaqRoute
   LocationsRoute: typeof LocationsRoute
   MenusRoute: typeof MenusRoute
@@ -619,6 +647,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FaqRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/corporate-catering-san-diego': {
+      id: '/corporate-catering-san-diego'
+      path: '/corporate-catering-san-diego'
+      fullPath: '/corporate-catering-san-diego'
+      preLoaderRoute: typeof CorporateCateringSanDiegoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/corporate-catering-phoenix': {
+      id: '/corporate-catering-phoenix'
+      path: '/corporate-catering-phoenix'
+      fullPath: '/corporate-catering-phoenix'
+      preLoaderRoute: typeof CorporateCateringPhoenixRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/corporate': {
       id: '/corporate'
       path: '/corporate'
@@ -751,6 +793,8 @@ const rootRouteChildren: RootRouteChildren = {
   BlogRoute: BlogRouteWithChildren,
   ContactRoute: ContactRoute,
   CorporateRoute: CorporateRoute,
+  CorporateCateringPhoenixRoute: CorporateCateringPhoenixRoute,
+  CorporateCateringSanDiegoRoute: CorporateCateringSanDiegoRoute,
   FaqRoute: FaqRoute,
   LocationsRoute: LocationsRoute,
   MenusRoute: MenusRoute,
