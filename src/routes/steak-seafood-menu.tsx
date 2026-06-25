@@ -171,8 +171,9 @@ function DishCard({ d }: { d: Dish }) {
           width={1024}
           height={1024}
           className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105"
+          style={{ filter: "brightness(1.15) contrast(1.1) saturate(1.1)" }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/10 to-transparent pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink/50 via-ink/5 to-transparent pointer-events-none" />
       </div>
       <div className="p-6 lg:p-7">
         <div className="flex items-baseline justify-between gap-3">
