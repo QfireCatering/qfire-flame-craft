@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import steakhouseBackyard from "@/assets/steakhouse-backyard.png.asset.json";
+import phoenixHeroBg from "@/assets/phoenix-hero-bg.png.asset.json";
 import bourbonSteakTips from "@/assets/dishes/bourbon-glazed-steak-tips.png.asset.json";
 import { PageHero, CTASection, SectionShell } from "@/components/site/Sections";
 
@@ -214,7 +215,7 @@ function SteakSeafoodMenuPage() {
         eyebrow="Phoenix Metro Steakhouse Catering"
         title={<>The Phoenix Metro<br />Steak & Seafood Menu</>}
         subtitle="A five-course steakhouse experience — cold starter, warm hors d'oeuvre, your choice of premium steaks and seafood, sides, dessert and drinks. Grilled live at your Phoenix Metro event."
-        image={steakhouseBackyard.url}
+        image={phoenixHeroBg.url}
       >
         <div className="w-full flex flex-col items-start gap-6">
           <div className="inline-flex items-center gap-3 px-5 py-2.5 border-2 border-gold/60 bg-gold/5">
