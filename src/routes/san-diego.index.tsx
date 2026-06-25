@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { RegionLanding } from "@/components/site/RegionPages";
-import sanDiego from "@/assets/san-diego.jpg";
+import sanDiego from "@/assets/san-diego.png.asset.json";
 
 export const Route = createFileRoute("/san-diego/")({
   head: () => ({
