@@ -94,7 +94,7 @@ function QuotePage() {
       </div>
 
       <div className="flex items-center justify-center p-8 lg:p-16 bg-ink pt-32 lg:pt-16">
-        <div className="w-full max-w-lg">
+        <div className="w-full max-w-lg mt-24">
           {state === "sent" ? (
             <div className="border border-gold/40 p-10 text-center">
               <div className="text-gold text-5xl font-display mb-4">Thank you.</div>
