@@ -40,6 +40,7 @@ import { Route as SanDiegoIndexRouteImport } from './routes/san-diego.index'
 import { Route as PhoenixIndexRouteImport } from './routes/phoenix.index'
 import { Route as SanDiegoSlugRouteImport } from './routes/san-diego.$slug'
 import { Route as PhoenixSlugRouteImport } from './routes/phoenix.$slug'
+import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 
 const WoodFiredRoute = WoodFiredRouteImport.update({
   id: '/wood-fired',
@@ -196,13 +197,18 @@ const PhoenixSlugRoute = PhoenixSlugRouteImport.update({
   path: '/$slug',
   getParentRoute: () => PhoenixRoute,
 } as any)
+const BlogSlugRoute = BlogSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => BlogRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/accessibility': typeof AccessibilityRoute
   '/bartending': typeof BartendingRoute
-  '/blog': typeof BlogRoute
+  '/blog': typeof BlogRouteWithChildren
   '/contact': typeof ContactRoute
   '/corporate': typeof CorporateRoute
   '/faq': typeof FaqRoute
@@ -225,6 +231,7 @@ export interface FileRoutesByFullPath {
   '/weddings': typeof WeddingsRoute
   '/why-qfire': typeof WhyQfireRoute
   '/wood-fired': typeof WoodFiredRoute
+  '/blog/$slug': typeof BlogSlugRoute
   '/phoenix/$slug': typeof PhoenixSlugRoute
   '/san-diego/$slug': typeof SanDiegoSlugRoute
   '/phoenix/': typeof PhoenixIndexRoute
@@ -235,7 +242,7 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/accessibility': typeof AccessibilityRoute
   '/bartending': typeof BartendingRoute
-  '/blog': typeof BlogRoute
+  '/blog': typeof BlogRouteWithChildren
   '/contact': typeof ContactRoute
   '/corporate': typeof CorporateRoute
   '/faq': typeof FaqRoute
@@ -256,6 +263,7 @@ export interface FileRoutesByTo {
   '/weddings': typeof WeddingsRoute
   '/why-qfire': typeof WhyQfireRoute
   '/wood-fired': typeof WoodFiredRoute
+  '/blog/$slug': typeof BlogSlugRoute
   '/phoenix/$slug': typeof PhoenixSlugRoute
   '/san-diego/$slug': typeof SanDiegoSlugRoute
   '/phoenix': typeof PhoenixIndexRoute
@@ -267,7 +275,7 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/accessibility': typeof AccessibilityRoute
   '/bartending': typeof BartendingRoute
-  '/blog': typeof BlogRoute
+  '/blog': typeof BlogRouteWithChildren
   '/contact': typeof ContactRoute
   '/corporate': typeof CorporateRoute
   '/faq': typeof FaqRoute
@@ -290,6 +298,7 @@ export interface FileRoutesById {
   '/weddings': typeof WeddingsRoute
   '/why-qfire': typeof WhyQfireRoute
   '/wood-fired': typeof WoodFiredRoute
+  '/blog/$slug': typeof BlogSlugRoute
   '/phoenix/$slug': typeof PhoenixSlugRoute
   '/san-diego/$slug': typeof SanDiegoSlugRoute
   '/phoenix/': typeof PhoenixIndexRoute
@@ -325,6 +334,7 @@ export interface FileRouteTypes {
     | '/weddings'
     | '/why-qfire'
     | '/wood-fired'
+    | '/blog/$slug'
     | '/phoenix/$slug'
     | '/san-diego/$slug'
     | '/phoenix/'
@@ -356,6 +366,7 @@ export interface FileRouteTypes {
     | '/weddings'
     | '/why-qfire'
     | '/wood-fired'
+    | '/blog/$slug'
     | '/phoenix/$slug'
     | '/san-diego/$slug'
     | '/phoenix'
@@ -389,6 +400,7 @@ export interface FileRouteTypes {
     | '/weddings'
     | '/why-qfire'
     | '/wood-fired'
+    | '/blog/$slug'
     | '/phoenix/$slug'
     | '/san-diego/$slug'
     | '/phoenix/'
@@ -400,7 +412,7 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   AccessibilityRoute: typeof AccessibilityRoute
   BartendingRoute: typeof BartendingRoute
-  BlogRoute: typeof BlogRoute
+  BlogRoute: typeof BlogRouteWithChildren
   ContactRoute: typeof ContactRoute
   CorporateRoute: typeof CorporateRoute
   FaqRoute: typeof FaqRoute
@@ -644,8 +656,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PhoenixSlugRouteImport
       parentRoute: typeof PhoenixRoute
     }
+    '/blog/$slug': {
+      id: '/blog/$slug'
+      path: '/$slug'
+      fullPath: '/blog/$slug'
+      preLoaderRoute: typeof BlogSlugRouteImport
+      parentRoute: typeof BlogRoute
+    }
   }
 }
+
+interface BlogRouteChildren {
+  BlogSlugRoute: typeof BlogSlugRoute
+}
+
+const BlogRouteChildren: BlogRouteChildren = {
+  BlogSlugRoute: BlogSlugRoute,
+}
+
+const BlogRouteWithChildren = BlogRoute._addFileChildren(BlogRouteChildren)
 
 interface PhoenixRouteChildren {
   PhoenixSlugRoute: typeof PhoenixSlugRoute
@@ -679,7 +708,7 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   AccessibilityRoute: AccessibilityRoute,
   BartendingRoute: BartendingRoute,
-  BlogRoute: BlogRoute,
+  BlogRoute: BlogRouteWithChildren,
   ContactRoute: ContactRoute,
   CorporateRoute: CorporateRoute,
   FaqRoute: FaqRoute,
