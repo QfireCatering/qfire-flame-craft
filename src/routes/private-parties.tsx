@@ -21,12 +21,6 @@ export const Route = createFileRoute("/private-parties")({
 function PrivatePartyChooser() {
   return (
     <>
-      <style>{`
-        .sd-card-img { object-position: 85% center; }
-        @media (max-width: 767px) {
-          .sd-card-img { object-position: center center; }
-        }
-      `}</style>
       <section className="relative min-h-[70vh] flex items-end overflow-hidden">
         <img src={heroAsset.url} alt="Luxury private party catering by Qfire" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/75 to-ink/40" />
