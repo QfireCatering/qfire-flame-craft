@@ -24,7 +24,7 @@ import beefTenderloinAsset from "@/assets/dishes/beef-tenderloin.png.asset.json"
 import filetMignonAsset from "@/assets/dishes/filet-mignon.png.asset.json";
 import topSirloinAsset from "@/assets/dishes/top-sirloin.png.asset.json";
 import primeRibAsset from "@/assets/dishes/prime-rib-roast.png.asset.json";
-import triTipImg from "@/assets/dishes/tri-tip.jpg";
+import triTipImg from "@/assets/dishes/tri-tip.png.asset.json";
 import mahiMahiAsset from "@/assets/dishes/mahi-mahi.png.asset.json";
 const mahiMahiImg = mahiMahiAsset.url;
 import snapperAsset from "@/assets/dishes/snapper.png.asset.json";
@@ -47,7 +47,7 @@ import greenBeansAsset from "@/assets/dishes/green-beans.png.asset.json";
 const greenBeansImg = greenBeansAsset.url;
 import grilledAsparagusAsset from "@/assets/dishes/grilled-asparagus.png.asset.json";
 const grilledAsparagusImg = grilledAsparagusAsset.url;
-import squashZucchiniImg from "@/assets/dishes/squash-zucchini.jpg";
+import squashZucchiniImg from "@/assets/dishes/squash-zucchini.png.asset.json";
 import grilledCornImg from "@/assets/dishes/grilled-corn.jpg";
 import roastedBroccoliAsset from "@/assets/dishes/roasted-broccoli.png.asset.json";
 const roastedBroccoliImg = roastedBroccoliAsset.url;
