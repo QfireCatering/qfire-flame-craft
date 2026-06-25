@@ -50,7 +50,7 @@ function WeddingsHub() {
               We cater luxury weddings across two regions. Select yours for cities served, venue experience, and local couple reviews.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-6 lg:gap-10">
+          <div className="grid md:grid-cols-2 gap-8">
             {[
               { to: "/wedding-catering-phoenix", img: phoenix, name: "Phoenix Metro", cities: "Scottsdale · Paradise Valley · Mesa · Chandler · Gilbert · Tempe · Queen Creek" },
               { to: "/wedding-catering-san-diego", img: sanDiego, name: "San Diego County", cities: "La Jolla · Del Mar · Carlsbad · Rancho Santa Fe · Coronado · Encinitas" },
