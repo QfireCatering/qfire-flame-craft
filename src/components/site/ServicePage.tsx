@@ -55,6 +55,37 @@ export function ServicePage({ config }: { config: ServicePageConfig }) {
         </div>
       </section>
 
+      {/* Service Styles — every service page covers all formats */}
+      <section className="py-24 lg:py-32">
+        <div className="container-luxe">
+          <div className="max-w-2xl mb-14">
+            <div className="eyebrow mb-6">Service Styles</div>
+            <h2 className="heading-lg text-bone">Six ways to serve the room.</h2>
+            <p className="mt-6 text-bone/70 text-lg leading-relaxed font-light">
+              Every Qfire menu can be served in the format that fits your venue, your guest count, and the night you want them to remember.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-white/5 border border-white/5">
+            {[
+              { title: "Buffet", body: "Beautifully set, chef-attended buffet lines. Hot food, fast lines, no chaos." },
+              { title: "Family Style", body: "Shared platters down the center of the table. Warm, generous, and dinner-party intimate." },
+              { title: "Plated Service", body: "Coursed, white-glove plated dinners with synchronized service for every table." },
+              { title: "Onsite Live-Fire Grilling", body: "We roll in the grill and cook over hardwood at your venue. Guests gather. Memories form." },
+              { title: "Action Stations", body: "Chef-driven carving and live-cook stations — picanha, brisket, pasta, raw bar." },
+              { title: "Drop-Off Catering", body: "Premium daytime catering for boardrooms and offsites — packaged, labeled, on time." },
+            ].map((s, i) => (
+              <div key={s.title} className="bg-ink p-8 lg:p-10">
+                <div className="text-gold/70 text-[0.65rem] tracking-[0.3em] mb-4">
+                  {String(i + 1).padStart(2, "0")}
+                </div>
+                <h3 className="text-xl font-display text-bone mb-3">{s.title}</h3>
+                <p className="text-sm text-bone/65 leading-relaxed">{s.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Menu */}
       {config.menu && (
         <section className="py-24 lg:py-32">
