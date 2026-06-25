@@ -50,15 +50,15 @@ function CorporateHub() {
               We cater corporate events across two regions. Select yours for cities served, local case studies, and a regional team contact.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-10 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-6 lg:gap-10">
             {[
               { to: "/corporate-catering-phoenix", img: phoenix, name: "Phoenix Metro", cities: "Scottsdale · Paradise Valley · Mesa · Chandler · Gilbert · Tempe · Glendale · Peoria · Queen Creek" },
               { to: "/corporate-catering-san-diego", img: sanDiego, name: "San Diego County", cities: "La Jolla · Del Mar · Carlsbad · Rancho Santa Fe · Coronado · Encinitas · Mission Valley · Poway" },
             ].map((r) => (
-              <Link key={r.to} to={r.to} className="group relative aspect-[3/2] overflow-hidden block border border-white/10 hover:border-gold/60 transition-colors">
-                <img src={r.img} alt={`${r.name} corporate catering`} className="absolute inset-0 w-full h-full object-cover object-[center_35%] transition-transform duration-700 group-hover:scale-105" />
+              <Link key={r.to} to={r.to} className="group relative aspect-[5/4] overflow-hidden block border border-white/10 hover:border-gold/60 transition-colors">
+                <img src={r.img} alt={`${r.name} corporate catering`} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/50 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 px-8 lg:px-10 pt-8 lg:pt-10 pb-4 lg:pb-5">
+                <div className="absolute bottom-0 left-0 right-0 p-10">
                   <h3 className="font-display text-4xl lg:text-5xl text-bone">{r.name}</h3>
                   <p className="mt-3 text-bone/80 font-light">{r.cities}</p>
                   <div className="mt-6 inline-flex items-center gap-2 text-[0.7rem] tracking-[0.28em] uppercase text-gold border-b border-gold/40 pb-1">

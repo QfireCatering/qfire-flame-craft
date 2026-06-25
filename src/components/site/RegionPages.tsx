@@ -36,7 +36,7 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
     <>
       <section className="relative min-h-[85vh] flex items-end overflow-hidden grain-overlay">
         <div className="absolute inset-0">
-          <img src={regionHero[regionKey]} alt={r.name} className="absolute inset-0 w-full h-full object-cover object-[center_35%] slow-zoom" />
+          <img src={regionHero[regionKey]} alt={r.name} className="absolute inset-0 w-full h-full object-cover slow-zoom" />
           <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/65 to-ink/30" />
           <div className="absolute inset-0 bg-gradient-to-r from-ink/80 via-transparent to-transparent" />
         </div>
