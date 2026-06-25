@@ -373,39 +373,51 @@ function SteakSeafoodMenuPage() {
 
       <div id="menu" />
 
+      <section className="py-16 lg:py-24 border-t border-white/5">
+        <div className="container-luxe text-center">
+          <div className="inline-flex items-center gap-4 px-8 py-4 border-2 border-gold/40 bg-gold/5 mb-6">
+            <span className="w-3 h-3 bg-gold rotate-45" />
+            <span className="font-sans text-[0.75rem] font-semibold tracking-[0.4em] uppercase text-gold">Phoenix Metro Steakhouse Menu</span>
+            <span className="w-3 h-3 bg-gold rotate-45" />
+          </div>
+          <h2 className="heading-lg text-bone mb-4">Your Phoenix Metro Menu Selections</h2>
+          <p className="text-bone/65 text-lg max-w-2xl mx-auto">Every dish below is prepared fresh at your Phoenix, Scottsdale, Gilbert, Mesa, Tempe, Chandler, Glendale or Peoria venue by our live-fire grill team.</p>
+        </div>
+      </section>
+
       <Course
         number="01"
         eyebrow="Choose 1"
         title="First Course — Cold Starters"
-        sub="A bright, elegant opening before the grill fires up."
+        sub="A bright, elegant opening before the Phoenix Metro grill fires up."
         items={cold}
       />
       <Course
         number="02"
         eyebrow="Choose 1"
         title="Second Course — Warm Hors d'oeuvres"
-        sub="Tray-passed or stationed, finished hot off the fire."
+        sub="Tray-passed or stationed at your Phoenix Metro event, finished hot off the fire."
         items={warm}
       />
       <Course
         number="03"
         eyebrow="Choose 3"
         title="Third Course — Dinner: Steaks & Seafood"
-        sub="One selection per guest. Minimum 3 servings per selection. Additional protein selections + $32/serving."
+        sub="One selection per guest at your Phoenix Metro event. Minimum 3 servings per selection. Additional protein selections + $32/serving."
         items={meats}
       />
       <Course
         number="04"
         eyebrow="Choose 3"
         title="Sides"
-        sub="Classic steakhouse accompaniments, scratch-made for your event."
+        sub="Classic steakhouse accompaniments, scratch-made for your Phoenix Metro event."
         items={sides}
       />
       <Course
         number="05"
         eyebrow="Choose 2"
         title="Final Course — Dessert"
-        sub="One serving per guest. Coffee station available."
+        sub="One serving per guest at your Phoenix Metro celebration. Coffee station available."
         items={desserts}
       />
 
