@@ -109,26 +109,25 @@ function Home() {
             <h2 className="heading-lg text-bone">Where shall we cater?</h2>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-10 lg:gap-12">
+          <div className="grid md:grid-cols-2 gap-8">
             {[
-              { key: "phoenix", img: phoenix.url, name: "Phoenix Metro", state: "Arizona",
+              { key: "phoenix", img: phoenix.url, name: "Phoenix Metro",
                 cities: "Phoenix · Scottsdale · Mesa · Chandler · Gilbert · Glendale · Surprise · Avondale · Goodyear · Peoria",
                 href: "/phoenix" as const },
-              { key: "san-diego", img: sanDiego.url, name: "San Diego County", state: "California",
+              { key: "san-diego", img: sanDiego.url, name: "San Diego County",
                 cities: "San Diego · Carlsbad · Encinitas · Del Mar · Rancho Santa Fe · Poway · La Jolla · Escondido · Vista · Oceanside",
                 href: "/san-diego" as const },
             ].map((r) => (
-              <Link key={r.key} to={r.href} className="group relative block aspect-[4/5] lg:aspect-[5/6] overflow-hidden rounded-sm ring-1 ring-white/15 ring-offset-4 ring-offset-onyx transition-all duration-500 hover:ring-gold/60 hover:shadow-[0_0_60px_-15px_oklch(0.78_0.13_82_/_25%)]">
+              <Link key={r.key} to={r.href} className="group relative aspect-[4/5] overflow-hidden block border border-gold/20 hover:border-gold transition-colors">
                 <img src={r.img} alt={r.name} loading="lazy" width={1600} height={1100}
-                  className={`absolute inset-0 w-full h-full object-cover transition-transform duration-[1500ms] group-hover:scale-105 ${r.key === "san-diego" ? "object-right" : ""}`} />
-                <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-ink/10" />
-                <div className="absolute inset-0 p-8 lg:p-12 flex flex-col justify-end">
-                  <div className="text-[0.65rem] tracking-[0.35em] uppercase text-gold mb-4">{r.state}</div>
-                  <div className="heading-md text-bone group-hover:text-gold transition-colors duration-500">{r.name}</div>
-                  <p className="mt-5 text-sm text-bone/80 leading-relaxed max-w-md">{r.cities}</p>
-                  <div className="mt-8 inline-flex items-center gap-3 text-[0.7rem] tracking-[0.25em] uppercase text-bone group-hover:text-gold transition-colors">
-                    Enter {r.name === "Phoenix Metro" ? "Phoenix" : "San Diego"} Site
-                    <ArrowUpRight className="size-4 transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1" />
+                  className={`absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 ${r.key === "san-diego" ? "object-right" : ""}`} />
+                <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/60 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-10">
+                  <div className="eyebrow text-gold mb-3">Catering Region</div>
+                  <h3 className="font-display text-4xl md:text-5xl text-bone">{r.name}</h3>
+                  <p className="mt-4 text-bone/80 font-light">{r.cities}</p>
+                  <div className="mt-6 inline-flex items-center gap-2 text-[0.7rem] tracking-[0.28em] uppercase text-gold border-b border-gold/40 pb-1">
+                    Enter {r.name} <ArrowUpRight className="size-3" />
                   </div>
                 </div>
               </Link>
