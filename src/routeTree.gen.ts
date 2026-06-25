@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as WoodFiredRouteImport } from './routes/wood-fired'
 import { Route as WhyQfireRouteImport } from './routes/why-qfire'
 import { Route as WeddingsRouteImport } from './routes/weddings'
+import { Route as WeddingCateringSanDiegoRouteImport } from './routes/wedding-catering-san-diego'
 import { Route as WeddingCateringPhoenixRouteImport } from './routes/wedding-catering-phoenix'
 import { Route as TermsRouteImport } from './routes/terms'
 import { Route as SteakhouseRouteImport } from './routes/steakhouse'
@@ -56,6 +57,11 @@ const WhyQfireRoute = WhyQfireRouteImport.update({
 const WeddingsRoute = WeddingsRouteImport.update({
   id: '/weddings',
   path: '/weddings',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WeddingCateringSanDiegoRoute = WeddingCateringSanDiegoRouteImport.update({
+  id: '/wedding-catering-san-diego',
+  path: '/wedding-catering-san-diego',
   getParentRoute: () => rootRouteImport,
 } as any)
 const WeddingCateringPhoenixRoute = WeddingCateringPhoenixRouteImport.update({
@@ -235,6 +241,7 @@ export interface FileRoutesByFullPath {
   '/steakhouse': typeof SteakhouseRoute
   '/terms': typeof TermsRoute
   '/wedding-catering-phoenix': typeof WeddingCateringPhoenixRoute
+  '/wedding-catering-san-diego': typeof WeddingCateringSanDiegoRoute
   '/weddings': typeof WeddingsRoute
   '/why-qfire': typeof WhyQfireRoute
   '/wood-fired': typeof WoodFiredRoute
@@ -268,6 +275,7 @@ export interface FileRoutesByTo {
   '/steakhouse': typeof SteakhouseRoute
   '/terms': typeof TermsRoute
   '/wedding-catering-phoenix': typeof WeddingCateringPhoenixRoute
+  '/wedding-catering-san-diego': typeof WeddingCateringSanDiegoRoute
   '/weddings': typeof WeddingsRoute
   '/why-qfire': typeof WhyQfireRoute
   '/wood-fired': typeof WoodFiredRoute
@@ -304,6 +312,7 @@ export interface FileRoutesById {
   '/steakhouse': typeof SteakhouseRoute
   '/terms': typeof TermsRoute
   '/wedding-catering-phoenix': typeof WeddingCateringPhoenixRoute
+  '/wedding-catering-san-diego': typeof WeddingCateringSanDiegoRoute
   '/weddings': typeof WeddingsRoute
   '/why-qfire': typeof WhyQfireRoute
   '/wood-fired': typeof WoodFiredRoute
@@ -341,6 +350,7 @@ export interface FileRouteTypes {
     | '/steakhouse'
     | '/terms'
     | '/wedding-catering-phoenix'
+    | '/wedding-catering-san-diego'
     | '/weddings'
     | '/why-qfire'
     | '/wood-fired'
@@ -374,6 +384,7 @@ export interface FileRouteTypes {
     | '/steakhouse'
     | '/terms'
     | '/wedding-catering-phoenix'
+    | '/wedding-catering-san-diego'
     | '/weddings'
     | '/why-qfire'
     | '/wood-fired'
@@ -409,6 +420,7 @@ export interface FileRouteTypes {
     | '/steakhouse'
     | '/terms'
     | '/wedding-catering-phoenix'
+    | '/wedding-catering-san-diego'
     | '/weddings'
     | '/why-qfire'
     | '/wood-fired'
@@ -445,6 +457,7 @@ export interface RootRouteChildren {
   SteakhouseRoute: typeof SteakhouseRoute
   TermsRoute: typeof TermsRoute
   WeddingCateringPhoenixRoute: typeof WeddingCateringPhoenixRoute
+  WeddingCateringSanDiegoRoute: typeof WeddingCateringSanDiegoRoute
   WeddingsRoute: typeof WeddingsRoute
   WhyQfireRoute: typeof WhyQfireRoute
   WoodFiredRoute: typeof WoodFiredRoute
@@ -471,6 +484,13 @@ declare module '@tanstack/react-router' {
       path: '/weddings'
       fullPath: '/weddings'
       preLoaderRoute: typeof WeddingsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/wedding-catering-san-diego': {
+      id: '/wedding-catering-san-diego'
+      path: '/wedding-catering-san-diego'
+      fullPath: '/wedding-catering-san-diego'
+      preLoaderRoute: typeof WeddingCateringSanDiegoRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/wedding-catering-phoenix': {
@@ -749,6 +769,7 @@ const rootRouteChildren: RootRouteChildren = {
   SteakhouseRoute: SteakhouseRoute,
   TermsRoute: TermsRoute,
   WeddingCateringPhoenixRoute: WeddingCateringPhoenixRoute,
+  WeddingCateringSanDiegoRoute: WeddingCateringSanDiegoRoute,
   WeddingsRoute: WeddingsRoute,
   WhyQfireRoute: WhyQfireRoute,
   WoodFiredRoute: WoodFiredRoute,
