@@ -5,7 +5,7 @@ import heroFire from "@/assets/hero-fire.jpg";
 
 const tiers = [
   {
-    name: "Wood-Fired BBQ",
+    name: "Wood-Fired Wood-Fire",
     href: "/wood-fired",
     headline: "From $24.99 / guest",
     blurb:
@@ -39,7 +39,7 @@ export const Route = createFileRoute("/pricing")({
       {
         name: "description",
         content:
-          "Transparent catering pricing. Wood-fired BBQ from $24.99/guest. Steakhouse buffet from $74/guest, plated from $128/guest.",
+          "Transparent catering pricing. Wood-fired Wood-Fire from $24.99/guest. Steakhouse buffet from $74/guest, plated from $128/guest.",
       },
       { property: "og:title", content: "Catering Pricing — Qfire Catering" },
       { property: "og:description", content: "What it actually costs to cater your event with Qfire." },

@@ -43,7 +43,7 @@ const baseFaqs = [
   { q: "Can you grill onsite at the office?", a: "Yes. Live charcoal grilling is one of our most-requested corporate services. We roll in the wood-fired grill and cook ribeyes, brisket, chicken, and salmon right in your courtyard, rooftop, parking lot, or job site." },
   { q: "Do you provide bartenders?", a: "Yes. Licensed and insured bartenders, signature cocktails, beer-and-wine programs, mocktail service, and full setup for corporate holiday parties, client appreciation events, and executive dinners." },
   { q: "Do you provide rentals?", a: "Yes. Linens, chinaware, glassware, flatware, chafers, high-tops, lounge furniture, and AV staging through trusted partners — billed at cost and coordinated by our team." },
-  { q: "Can menus be customized?", a: "Absolutely. Every corporate menu is built around your team, your dietary needs, your budget, and your brand. Need a Texas BBQ theme for sales kickoff? A black-tie plated dinner for the board? Done." },
+  { q: "Can menus be customized?", a: "Absolutely. Every corporate menu is built around your team, your dietary needs, your budget, and your brand. Need a Texas Wood-Fire theme for sales kickoff? A black-tie plated dinner for the board? Done." },
   { q: "Can you accommodate allergies?", a: "Always. Vegetarian, vegan, gluten-free, dairy-free, kosher-style, and halal-friendly options are standard. For peanut, tree-nut, and shellfish allergies we run a dedicated prep line and label every dish." },
   { q: "Do you offer vegetarian options?", a: "Yes — beautifully composed vegetarian plates, wood-fired vegetables, grain bowls, stuffed portobellos, salads, and seasonal sides built around what's in the market." },
   { q: "Do you offer vegan options?", a: "Yes. Fully plant-based menus available — grilled vegetable platters, vegan grain bowls, plant-protein entrees, and dairy-free desserts." },
@@ -110,7 +110,7 @@ const timelineSteps = [
 ];
 
 const menuOptions = [
-  "BBQ Catering", "Steakhouse Catering", "Surf & Turf", "Breakfast Catering", "Brunch Catering",
+  "Wood-Fire Catering", "Steakhouse Catering", "Surf & Turf", "Breakfast Catering", "Brunch Catering",
   "Lunch Catering", "Dinner Catering", "Appetizers & Passed Hors d'oeuvres", "Desserts & Coffee Service",
   "Vegetarian Menus", "Vegan Menus", "Gluten-Free & Allergy Menus", "Live Charcoal Grilling Stations",
   "Premium Steaks & Carving Stations", "Boxed Executive Lunches", "Continental & Working Breakfasts",
@@ -136,7 +136,7 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
     url: path,
     telephone: "+1-602-555-0123",
     priceRange: "$$$",
-    servesCuisine: ["BBQ", "Steakhouse", "American", "Corporate Catering", "Office Catering"],
+    servesCuisine: ["Wood-Fire", "Steakhouse", "American", "Corporate Catering", "Office Catering"],
     areaServed: cities.map((c) => ({ "@type": "City", name: c })),
     aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "247" },
   };
@@ -434,14 +434,14 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
         <div className="container-luxe">
           <div className="max-w-2xl mb-14">
             <div className="eyebrow mb-6">Corporate Menu Options</div>
-            <h2 className="heading-lg text-bone">Wood-fired BBQ. Premium steakhouse. Breakfast to banquet.</h2>
+            <h2 className="heading-lg text-bone">Wood-fired Wood-Fire. Premium steakhouse. Breakfast to banquet.</h2>
             <p className="mt-6 text-bone/70 text-lg leading-relaxed font-light">
               Whatever your {regionShort} team eats — it comes off our live-fire grill or our scratch kitchen.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-1">
             {[
-              { img: platter, title: "BBQ Catering", body: "Brisket, ribs, pulled pork, smoked chicken, sausage, all the sides.", to: "/menus" },
+              { img: platter, title: "Wood-Fire Catering", body: "Brisket, ribs, pulled pork, smoked chicken, sausage, all the sides.", to: "/menus" },
               { img: steakMenu, title: "Steakhouse", body: "Ribeye, NY strip, filet, picanha, prime rib, salmon, surf & turf.", to: "/steak-seafood-menu" },
               { img: platter1, title: "Carving Stations", body: "Chef-attended live carving — picanha, brisket, prime rib, lamb.", to: "/menus" },
             ].map((m) => (

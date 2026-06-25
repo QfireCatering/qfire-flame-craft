@@ -34,6 +34,7 @@ import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as PicturesRouteImport } from './routes/pictures'
 import { Route as PhoenixRouteImport } from './routes/phoenix'
 import { Route as MenusRouteImport } from './routes/menus'
+import { Route as MediaRouteImport } from './routes/media'
 import { Route as LocationsRouteImport } from './routes/locations'
 import { Route as FaqRouteImport } from './routes/faq'
 import { Route as CorporateCateringSanDiegoRouteImport } from './routes/corporate-catering-san-diego'
@@ -181,6 +182,11 @@ const MenusRoute = MenusRouteImport.update({
   path: '/menus',
   getParentRoute: () => rootRouteImport,
 } as any)
+const MediaRoute = MediaRouteImport.update({
+  id: '/media',
+  path: '/media',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const LocationsRoute = LocationsRouteImport.update({
   id: '/locations',
   path: '/locations',
@@ -276,6 +282,7 @@ export interface FileRoutesByFullPath {
   '/corporate-catering-san-diego': typeof CorporateCateringSanDiegoRoute
   '/faq': typeof FaqRoute
   '/locations': typeof LocationsRoute
+  '/media': typeof MediaRoute
   '/menus': typeof MenusRoute
   '/phoenix': typeof PhoenixRouteWithChildren
   '/pictures': typeof PicturesRoute
@@ -319,6 +326,7 @@ export interface FileRoutesByTo {
   '/corporate-catering-san-diego': typeof CorporateCateringSanDiegoRoute
   '/faq': typeof FaqRoute
   '/locations': typeof LocationsRoute
+  '/media': typeof MediaRoute
   '/menus': typeof MenusRoute
   '/pictures': typeof PicturesRoute
   '/pricing': typeof PricingRoute
@@ -361,6 +369,7 @@ export interface FileRoutesById {
   '/corporate-catering-san-diego': typeof CorporateCateringSanDiegoRoute
   '/faq': typeof FaqRoute
   '/locations': typeof LocationsRoute
+  '/media': typeof MediaRoute
   '/menus': typeof MenusRoute
   '/phoenix': typeof PhoenixRouteWithChildren
   '/pictures': typeof PicturesRoute
@@ -406,6 +415,7 @@ export interface FileRouteTypes {
     | '/corporate-catering-san-diego'
     | '/faq'
     | '/locations'
+    | '/media'
     | '/menus'
     | '/phoenix'
     | '/pictures'
@@ -449,6 +459,7 @@ export interface FileRouteTypes {
     | '/corporate-catering-san-diego'
     | '/faq'
     | '/locations'
+    | '/media'
     | '/menus'
     | '/pictures'
     | '/pricing'
@@ -490,6 +501,7 @@ export interface FileRouteTypes {
     | '/corporate-catering-san-diego'
     | '/faq'
     | '/locations'
+    | '/media'
     | '/menus'
     | '/phoenix'
     | '/pictures'
@@ -534,6 +546,7 @@ export interface RootRouteChildren {
   CorporateCateringSanDiegoRoute: typeof CorporateCateringSanDiegoRoute
   FaqRoute: typeof FaqRoute
   LocationsRoute: typeof LocationsRoute
+  MediaRoute: typeof MediaRoute
   MenusRoute: typeof MenusRoute
   PhoenixRoute: typeof PhoenixRouteWithChildren
   PicturesRoute: typeof PicturesRoute
@@ -738,6 +751,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MenusRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/media': {
+      id: '/media'
+      path: '/media'
+      fullPath: '/media'
+      preLoaderRoute: typeof MediaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/locations': {
       id: '/locations'
       path: '/locations'
@@ -902,6 +922,7 @@ const rootRouteChildren: RootRouteChildren = {
   CorporateCateringSanDiegoRoute: CorporateCateringSanDiegoRoute,
   FaqRoute: FaqRoute,
   LocationsRoute: LocationsRoute,
+  MediaRoute: MediaRoute,
   MenusRoute: MenusRoute,
   PhoenixRoute: PhoenixRouteWithChildren,
   PicturesRoute: PicturesRoute,

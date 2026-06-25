@@ -30,7 +30,7 @@ export function Footer() {
               <li><Link to="/weddings" className="hover:text-gold transition-colors">Weddings</Link></li>
               <li><Link to="/corporate" className="hover:text-gold transition-colors">Corporate</Link></li>
               <li><Link to="/private-parties" className="hover:text-gold transition-colors">Private Parties</Link></li>
-              <li><Link to="/wood-fired" className="hover:text-gold transition-colors">Wood-Fired BBQ</Link></li>
+              <li><Link to="/wood-fired" className="hover:text-gold transition-colors">Wood-Fired Wood-Fire</Link></li>
               <li><Link to="/steakhouse" className="hover:text-gold transition-colors">Steakhouse</Link></li>
               <li><Link to="/bartending" className="hover:text-gold transition-colors">Bartending</Link></li>
               <li><Link to="/rentals" className="hover:text-gold transition-colors">Rentals</Link></li>
@@ -49,6 +49,7 @@ export function Footer() {
               <li><Link to="/about" className="hover:text-gold transition-colors">Chef Terry</Link></li>
               <li><Link to="/why-qfire" className="hover:text-gold transition-colors">Why Qfire</Link></li>
               <li><Link to="/reviews" className="hover:text-gold transition-colors">Reviews</Link></li>
+              <li><Link to="/media" className="hover:text-gold transition-colors">Press & Media</Link></li>
               <li><Link to="/blog" className="hover:text-gold transition-colors">Blog</Link></li>
               <li><Link to="/faq" className="hover:text-gold transition-colors">FAQ</Link></li>
             </ul>

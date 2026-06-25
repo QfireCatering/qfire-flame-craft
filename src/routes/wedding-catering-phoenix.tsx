@@ -29,7 +29,7 @@ export const Route = createFileRoute("/wedding-catering-phoenix")({
       { property: "og:description", content: "Luxury wedding catering across Phoenix, Scottsdale, Paradise Valley & all of Phoenix Metro. Live charcoal grilling, premium steaks, professional staff, stress-free execution." },
       { property: "og:url", content: "/wedding-catering-phoenix" },
       { property: "og:type", content: "website" },
-      { name: "keywords", content: "Phoenix wedding catering, Scottsdale wedding caterer, Paradise Valley wedding catering, Mesa wedding caterer, Chandler wedding catering, Gilbert wedding caterer, BBQ wedding catering Phoenix, steakhouse wedding catering Scottsdale, luxury wedding catering Phoenix Metro" },
+      { name: "keywords", content: "Phoenix wedding catering, Scottsdale wedding caterer, Paradise Valley wedding catering, Mesa wedding caterer, Chandler wedding catering, Gilbert wedding caterer, Wood-Fire wedding catering Phoenix, steakhouse wedding catering Scottsdale, luxury wedding catering Phoenix Metro" },
     ],
     links: [{ rel: "canonical", href: "/wedding-catering-phoenix" }],
   }),

@@ -19,6 +19,7 @@ const secondary = [
   { to: "/rentals", label: "Rentals" },
   { to: "/pictures", label: "Pictures" },
   { to: "/reviews", label: "Reviews" },
+  { to: "/media", label: "Press & Media" },
   { to: "/why-qfire", label: "Why Qfire" },
   { to: "/faq", label: "FAQ" },
   { to: "/blog", label: "Blog" },

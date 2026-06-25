@@ -8,7 +8,7 @@ const heroImage = weddingCoupleAsset.url;
 export const Route = createFileRoute("/blog")({
   head: () => ({
     meta: [
-      { title: "The Qfire Catering Journal — Wedding, Corporate & BBQ Insights" },
+      { title: "The Qfire Catering Journal — Wedding, Corporate & Wood-Fire Insights" },
       {
         name: "description",
         content:

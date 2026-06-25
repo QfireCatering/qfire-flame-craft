@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, ArrowUpRight, Flame, Award, Users, Sparkles } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Flame, Award, Users, Sparkles, Check } from "lucide-react";
 import heroFire from "@/assets/hero-fire.jpg";
 import heroImage from "@/assets/hero-wedding-grilling.png.asset.json";
 import weddingTableAsset from "@/assets/wedding-couple.png.asset.json";
@@ -214,8 +214,8 @@ function Home() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-white/5 border border-white/5">
             {[
               { n: "2,000+", l: "Events Served", icon: Users },
-              { n: "13+", l: "Years of Mastery", icon: Flame },
-              { n: "Food Network", l: "Featured Pitmaster", icon: Award },
+              { n: "25+", l: "Years Behind Fire", icon: Flame },
+              { n: "4.9★", l: "Across All Platforms", icon: Award },
               { n: "Stress-Free", l: "Full-Service Execution", icon: Sparkles },
             ].map((s) => (
               <div key={s.l} className="bg-ink p-10 text-center">
@@ -232,7 +232,88 @@ function Home() {
         </div>
       </section>
 
-      {/* GALLERY STRIP */}
+      {/* WHAT YOU GET */}
+      <section className="py-24 lg:py-32 border-t border-white/5">
+        <div className="container-luxe grid lg:grid-cols-[1fr_1.3fr] gap-12 lg:gap-20">
+          <div>
+            <div className="eyebrow mb-6">What You Get</div>
+            <h2 className="heading-lg text-bone">
+              Everything handled. <span className="text-gold italic font-light">You enjoy your event.</span>
+            </h2>
+            <p className="mt-6 text-bone/70 leading-relaxed font-light text-lg">
+              Hiring Qfire means hiring one team that runs the entire food, beverage and service experience — start to finish, set up to break down.
+            </p>
+            <Link to="/quote" className="btn-primary mt-10 inline-flex">Request Your Quote <ArrowRight className="size-4" /></Link>
+          </div>
+          <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-4">
+            {[
+              "Experienced wood-fire & steakhouse-trained team",
+              "Beautifully styled buffets, stations and plated service",
+              "Professional, uniformed service staff",
+              "Generous, restaurant-grade portions every time",
+              "Stress-free, choreographed event-day execution",
+              "Venue & vendor coordination handled for you",
+              "Full setup, replenishment and complete breakdown",
+              "Custom menu design tailored to your guest count",
+            ].map((line) => (
+              <li key={line} className="flex items-start gap-3 text-bone/85 leading-relaxed">
+                <Check className="size-5 text-gold shrink-0 mt-0.5" strokeWidth={1.5} />
+                <span>{line}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* WOOD-FIRE PRICING TIERS */}
+      <section className="py-24 lg:py-32 bg-onyx border-t border-white/5">
+        <div className="container-luxe">
+          <div className="text-center max-w-2xl mx-auto mb-14">
+            <div className="eyebrow justify-center mb-6">Wood-Fire Catering — Pricing</div>
+            <h2 className="heading-lg text-bone">
+              Wood-fire catering starting at <span className="text-gold italic font-light">$13/guest.</span>
+            </h2>
+            <p className="mt-5 text-bone/65 text-base font-light">
+              Steakhouse plated experiences begin at $74/guest. Custom proposals built around your guest count and venue.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
+            {[
+              { name: "Simple", price: "$12.99", per: "per guest", desc: "Two proteins, two sides, dinner rolls, full service crew. Built for backyard celebrations and casual gatherings." },
+              { name: "Most Popular", price: "$17.99", per: "per guest", desc: "Three proteins, three sides, salad, dinner rolls, premium serviceware. Our most-booked package for weddings and corporate events.", featured: true },
+              { name: "Premium", price: "$25.99", per: "per guest", desc: "Four proteins including brisket & ribs, four chef-curated sides, salad, dessert, full white-glove service." },
+            ].map((tier) => (
+              <article
+                key={tier.name}
+                className={`relative p-9 lg:p-10 flex flex-col ${
+                  tier.featured
+                    ? "bg-ink border border-gold/40 shadow-[0_0_40px_rgba(212,175,55,0.08)]"
+                    : "bg-ink/60 border border-white/10"
+                }`}
+              >
+                {tier.featured && (
+                  <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 px-4 py-1 bg-gold text-ink text-[0.6rem] tracking-[0.3em] uppercase font-semibold">
+                    Most Popular
+                  </div>
+                )}
+                <div className="text-[0.7rem] tracking-[0.3em] uppercase text-gold mb-4">{tier.name}</div>
+                <div className="flex items-baseline gap-2">
+                  <span className="text-5xl font-display text-bone tracking-tight">{tier.price}</span>
+                  <span className="text-bone/55 text-sm">{tier.per}</span>
+                </div>
+                <p className="mt-6 text-bone/70 leading-relaxed font-light flex-1">{tier.desc}</p>
+                <Link to="/quote" className={tier.featured ? "btn-primary mt-8" : "btn-ghost mt-8"}>
+                  Request a Quote
+                </Link>
+              </article>
+            ))}
+          </div>
+          <p className="text-center mt-10 text-xs text-bone/45 tracking-wider uppercase">
+            Pricing varies by region, guest count and customization. Final proposals are built one-to-one.
+          </p>
+        </div>
+      </section>
+
       <section className="py-24 lg:py-32">
         <div className="container-luxe mb-12">
           <div className="flex flex-wrap items-end justify-between gap-6">
