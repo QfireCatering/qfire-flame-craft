@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowRight, Check, Flame, Award, Users, Star, Clock, Sparkles, Briefcase, Building2, ShieldCheck, Truck } from "lucide-react";
+import { PhoenixPricingBanner } from "./PhoenixPricingBanner";
 import corporateRealAsset from "@/assets/corporate-real.jpg.asset.json";
 import corporateAsset from "@/assets/corporate-catering.png.asset.json";
 import steakAsset from "@/assets/steakhouse-backyard.png.asset.json";
@@ -208,6 +209,7 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
           </div>
         </div>
       </section>
+      {config.regionSlug === "phoenix" && <PhoenixPricingBanner />}
 
       {/* TRUST STRIP */}
       <section className="border-y border-white/10 bg-onyx py-10">
