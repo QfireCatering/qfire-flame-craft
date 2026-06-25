@@ -20,7 +20,7 @@ import asparagusFeta from "@/assets/dishes/asparagus-feta.jpg";
 import ribeyeAsset from "@/assets/dishes/ribeye.png.asset.json";
 import nyStripAsset from "@/assets/dishes/new-york-strip.avif.asset.json";
 import tboneAsset from "@/assets/dishes/tbone-steak.avif.asset.json";
-import beefTenderloinImg from "@/assets/dishes/beef-tenderloin.jpg";
+import beefTenderloinAsset from "@/assets/dishes/beef-tenderloin.png.asset.json";
 import filetMignonAsset from "@/assets/dishes/filet-mignon.png.asset.json";
 import topSirloinAsset from "@/assets/dishes/top-sirloin.png.asset.json";
 import primeRibAsset from "@/assets/dishes/prime-rib-roast.png.asset.json";
@@ -78,7 +78,7 @@ const meats: Dish[] = [
   { name: "Ribeye Steak", body: "The steakhouse classic — heavily marbled, char-grilled over live fire to a crusted finish with a juicy, buttery, melt-in-your-mouth center.", img: ribeyeAsset.url },
   { name: "New York Strip", body: "Cut from the short loin. Bold, beefy flavor with a firm, satisfying bite and the perfect balance of fat and lean — a true steakhouse staple.", img: nyStripAsset.url },
   { name: "T-Bone Steak", body: "Two premium cuts on one bone — the tender filet on one side, the bold New York strip on the other. Char-grilled over live fire for the ultimate steakhouse experience.", img: tboneAsset.url },
-  { name: "Beef Tenderloin", body: "The most tender cut of beef. Buttery texture, mild flavor, luxurious.", img: beefTenderloinImg },
+  { name: "Beef Tenderloin", body: "The most tender cut of beef. Buttery texture, mild flavor, luxurious.", img: beefTenderloinAsset.url },
   { name: "Filet Mignon", body: "Premium tenderloin cut, buttery and delicate.", note: "+ $10/steak", img: filetMignonAsset.url },
   { name: "Top Sirloin (10 oz) — also known as Picanha", body: "Lean, flavorful, tender, with a rich beefy taste.", img: topSirloinAsset.url },
   { name: "Smoked Prime Rib Roast", body: "Slow-smoked to perfection. Smoky crust, perfectly pink center, deep savory flavor.", img: primeRibAsset.url },
