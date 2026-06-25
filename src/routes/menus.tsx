@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
-import brisket from "@/assets/brisket.jpg";
+import bbqPlatter1 from "@/assets/bbq-platter1.png.asset.json";
 import steak from "@/assets/steak.jpg";
 import chefTerry from "@/assets/chef-terry.jpg.asset.json";
 import buffet from "@/assets/buffet.jpg";
