@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { ArrowRight, Check } from "lucide-react";
 import { ServicePage } from "@/components/site/ServicePage";
 import { PageHero, CTASection } from "@/components/site/Sections";
+import { PhoenixPricingBanner } from "./PhoenixPricingBanner";
 import {
   weddingConfig, corporateConfig, privatePartyConfig,
   woodFiredConfig, steakhouseConfig, bartendingConfig,
@@ -56,6 +57,7 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
           </div>
         </div>
       </section>
+      {regionKey === "phoenix" && <PhoenixPricingBanner />}
 
       {/* Services grid */}
       <section className="py-24 lg:py-32 bg-onyx">
@@ -134,12 +136,12 @@ export function RegionSlugPage({ regionKey, slug }: { regionKey: RegionKey; slug
   const opts = { region: r.name, regionShort: r.shortName };
 
   switch (slug) {
-    case "weddings": return <ServicePage config={weddingConfig(opts)} />;
-    case "corporate": return <ServicePage config={corporateConfig(opts)} />;
-    case "private-parties": return <ServicePage config={privatePartyConfig(opts)} />;
-    case "wood-fired": return <ServicePage config={woodFiredConfig(opts)} />;
-    case "steakhouse": return <ServicePage config={steakhouseConfig(opts)} />;
-    case "bartending": return <ServicePage config={bartendingConfig(opts)} />;
+    case "weddings": return <ServicePage config={weddingConfig(opts)} regionKey={regionKey} />;
+    case "corporate": return <ServicePage config={corporateConfig(opts)} regionKey={regionKey} />;
+    case "private-parties": return <ServicePage config={privatePartyConfig(opts)} regionKey={regionKey} />;
+    case "wood-fired": return <ServicePage config={woodFiredConfig(opts)} regionKey={regionKey} />;
+    case "steakhouse": return <ServicePage config={steakhouseConfig(opts)} regionKey={regionKey} />;
+    case "bartending": return <ServicePage config={bartendingConfig(opts)} regionKey={regionKey} />;
     case "gallery": return <RegionGallery regionKey={regionKey} />;
     case "reviews": return <RegionReviews regionKey={regionKey} />;
     case "faq": return <RegionFAQ regionKey={regionKey} />;
@@ -166,7 +168,7 @@ function RegionHoliday({ regionKey }: { regionKey: RegionKey }) {
   ];
   return (
     <>
-      <PageHero
+      <PageHero regionKey={regionKey}
         eyebrow={`${r.shortName} · Holiday`}
         title={<>Holiday catering, <span className="italic text-gold font-light">done right.</span></>}
         subtitle={`Office holiday parties, family Thanksgivings, Christmas dinners, and end-of-year client events across ${r.name}. Carved prime rib, smoked turkey, plated tasting menus — pick the night, we handle the rest.`}
@@ -246,7 +248,7 @@ function RegionBackyard({ regionKey }: { regionKey: RegionKey }) {
   ];
   return (
     <>
-      <PageHero
+      <PageHero regionKey={regionKey}
         eyebrow={`${r.shortName} · Backyard`}
         title={<>Your backyard. <span className="italic text-gold font-light">Our fire.</span></>}
         subtitle={`Graduations, birthdays, anniversaries, retirement parties — backyard catering across ${r.name}. We bring the smoker, the staff, and the menu. You bring your guests.`}
@@ -301,7 +303,7 @@ function RegionGallery({ regionKey }: { regionKey: RegionKey }) {
   const imgs = [weddingTable, brisket, steak, corporate, buffet, privateParty, heroFire, weddingTable, brisket, buffet, steak, corporate];
   return (
     <>
-      <PageHero
+      <PageHero regionKey={regionKey}
         eyebrow={`${r.shortName} Gallery`}
         title={<>{r.shortName} <span className="text-gold italic font-light">events.</span></>}
         subtitle={`Recent weddings, corporate events and private parties across ${r.metro}.`}
@@ -333,7 +335,7 @@ function RegionReviews({ regionKey }: { regionKey: RegionKey }) {
   ];
   return (
     <>
-      <PageHero
+      <PageHero regionKey={regionKey}
         eyebrow={`${r.shortName} Reviews`}
         title={<>What {r.shortName} <span className="text-gold italic font-light">is saying.</span></>}
         subtitle={`Five-star reviews from ${r.metro} clients.`}
@@ -370,7 +372,7 @@ function RegionFAQ({ regionKey }: { regionKey: RegionKey }) {
   ];
   return (
     <>
-      <PageHero
+      <PageHero regionKey={regionKey}
         eyebrow={`${r.shortName} FAQ`}
         title={<>{r.shortName} catering <span className="text-gold italic font-light">questions.</span></>}
         subtitle={`Common questions from ${r.metro} clients.`}
@@ -408,7 +410,7 @@ function RegionBlog({ regionKey }: { regionKey: RegionKey }) {
   ];
   return (
     <>
-      <PageHero
+      <PageHero regionKey={regionKey}
         eyebrow={`${r.shortName} Journal`}
         title={<>Field notes from <span className="text-gold italic font-light">{r.shortName}.</span></>}
         subtitle="Tips, guides and venue spotlights for couples and event planners."
@@ -436,7 +438,7 @@ function RegionVenues({ regionKey }: { regionKey: RegionKey }) {
   const r = regions[regionKey];
   return (
     <>
-      <PageHero
+      <PageHero regionKey={regionKey}
         eyebrow={`${r.shortName} Venues`}
         title={<>{r.shortName} <span className="text-gold italic font-light">venues</span> we love.</>}
         subtitle={`Some of the most beautiful event venues across ${r.metro} where we cater regularly.`}

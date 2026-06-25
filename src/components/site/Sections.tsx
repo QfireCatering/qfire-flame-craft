@@ -1,6 +1,8 @@
 import type { ReactNode } from "react";
 import { Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
+import { RegionKey } from "@/lib/site";
+import { PhoenixPricingBanner } from "./PhoenixPricingBanner";
 
 export function PageHero({
   eyebrow,
@@ -8,36 +10,41 @@ export function PageHero({
   subtitle,
   image,
   children,
+  regionKey,
 }: {
   eyebrow?: string;
   title: ReactNode;
   subtitle?: ReactNode;
   image: string;
   children?: ReactNode;
+  regionKey?: RegionKey;
 }) {
   return (
-    <section className="relative min-h-[78vh] flex items-end overflow-hidden grain-overlay">
-      <div className="absolute inset-0">
-        <img
-          src={image}
-          alt=""
-          className="absolute inset-0 w-full h-full object-cover slow-zoom"
-          style={{ filter: 'contrast(1.08) saturate(1.12) brightness(1.03)', imageRendering: '-webkit-optimize-contrast' }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/70 to-ink/20" />
-        <div className="absolute inset-0 bg-gradient-to-r from-ink/80 via-transparent to-transparent" />
-      </div>
-      <div className="container-luxe relative z-10 pt-40 pb-20 lg:pb-28">
-        {eyebrow && <div className="eyebrow mb-8">{eyebrow}</div>}
-        <h1 className="heading-xl text-bone max-w-4xl">{title}</h1>
-        {subtitle && (
-          <p className="mt-8 max-w-2xl text-lg lg:text-xl text-bone/75 leading-relaxed font-light">
-            {subtitle}
-          </p>
-        )}
-        {children && <div className="mt-10 flex flex-wrap gap-4">{children}</div>}
-      </div>
-    </section>
+    <>
+      <section className="relative min-h-[78vh] flex items-end overflow-hidden grain-overlay">
+        <div className="absolute inset-0">
+          <img
+            src={image}
+            alt=""
+            className="absolute inset-0 w-full h-full object-cover slow-zoom"
+            style={{ filter: 'contrast(1.08) saturate(1.12) brightness(1.03)', imageRendering: '-webkit-optimize-contrast' }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/70 to-ink/20" />
+          <div className="absolute inset-0 bg-gradient-to-r from-ink/80 via-transparent to-transparent" />
+        </div>
+        <div className="container-luxe relative z-10 pt-40 pb-20 lg:pb-28">
+          {eyebrow && <div className="eyebrow mb-8">{eyebrow}</div>}
+          <h1 className="heading-xl text-bone max-w-4xl">{title}</h1>
+          {subtitle && (
+            <p className="mt-8 max-w-2xl text-lg lg:text-xl text-bone/75 leading-relaxed font-light">
+              {subtitle}
+            </p>
+          )}
+          {children && <div className="mt-10 flex flex-wrap gap-4">{children}</div>}
+        </div>
+      </section>
+      {regionKey === "phoenix" && <PhoenixPricingBanner />}
+    </>
   );
 }
 

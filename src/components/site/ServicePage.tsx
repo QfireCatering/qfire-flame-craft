@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowRight, Check } from "lucide-react";
 import type { ReactNode } from "react";
+import { RegionKey } from "@/lib/site";
 import { PageHero, BulletGrid, CTASection } from "@/components/site/Sections";
 
 export interface ServicePageConfig {
@@ -17,7 +18,7 @@ export interface ServicePageConfig {
   ctaTitle?: string;
 }
 
-export function ServicePage({ config }: { config: ServicePageConfig }) {
+export function ServicePage({ config, regionKey }: { config: ServicePageConfig; regionKey?: RegionKey }) {
   return (
     <>
       <PageHero
@@ -25,6 +26,7 @@ export function ServicePage({ config }: { config: ServicePageConfig }) {
         title={config.title}
         subtitle={config.subtitle}
         image={config.heroImage}
+        regionKey={regionKey}
       >
         <Link to="/quote" className="btn-primary">
           Request a Quote <ArrowRight className="size-4" />
