@@ -27,6 +27,18 @@ export const Route = createFileRoute("/quote")({
   component: QuotePage,
 });
 
+function getRedirectUrl(region: string, menu: string): string | null {
+  const isPhx = region === "Phoenix Metro";
+  const isSD = region === "San Diego County";
+  const isBBQ = menu === "Wood-Fired BBQ";
+  const isSteak = menu === "Steakhouse";
+  if (isPhx && isBBQ) return "https://fs17.formsite.com/matthews3404/BBQDADDYLLC/index";
+  if (isSD && isBBQ) return "https://fs17.formsite.com/matthews3404/SanDiego/index";
+  if (isPhx && isSteak) return "/steak-seafood-menu";
+  if (isSD && isSteak) return "/steak-seafood-menu-san-diego";
+  return null;
+}
+
 function QuotePage() {
   const [state, setState] = useState<"idle" | "sending" | "sent" | "error">("idle");
   const [error, setError] = useState<string | null>(null);
@@ -52,6 +64,16 @@ function QuotePage() {
     try {
       await submit({ data: payload });
       setState("sent");
+      const redirect = getRedirectUrl(payload.region, payload.menu);
+      if (redirect) {
+        setTimeout(() => {
+          if (redirect.startsWith("http")) {
+            window.location.href = redirect;
+          } else {
+            window.location.assign(redirect);
+          }
+        }, 1200);
+      }
     } catch (err) {
       setState("error");
       setError(err instanceof Error ? err.message : "Something went wrong. Please call us.");
@@ -105,6 +127,9 @@ function QuotePage() {
                   {contact.phone}
                 </a>
                 .
+              </p>
+              <p className="text-bone/50 text-sm mt-6">
+                Redirecting you to the next step…
               </p>
             </div>
           ) : (
