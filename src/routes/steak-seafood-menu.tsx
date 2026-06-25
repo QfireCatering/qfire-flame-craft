@@ -17,8 +17,9 @@ import sausageMushroom from "@/assets/dishes/sausage-mushroom-caps.jpg";
 import baconScallops from "@/assets/dishes/bacon-wrapped-scallops.jpg";
 import tenderloinCrostini from "@/assets/dishes/tenderloin-crostini.jpg";
 import asparagusFeta from "@/assets/dishes/asparagus-feta.jpg";
-import ribeyeImg from "@/assets/dishes/ribeye.jpg";
-import nyStripImg from "@/assets/dishes/ny-strip.jpg";
+import ribeyeAsset from "@/assets/dishes/ribeye.png.asset.json";
+import nyStripAsset from "@/assets/dishes/new-york-strip.avif.asset.json";
+import tboneAsset from "@/assets/dishes/tbone-steak.avif.asset.json";
 import beefTenderloinImg from "@/assets/dishes/beef-tenderloin.jpg";
 import filetMignonAsset from "@/assets/dishes/filet-mignon.png.asset.json";
 import topSirloinAsset from "@/assets/dishes/top-sirloin.png.asset.json";
@@ -74,8 +75,9 @@ const warm: Dish[] = [
 ];
 
 const meats: Dish[] = [
-  { name: "Ribeye Steak", body: "Rich marbling, juicy, tender, buttery — melt-in-your-mouth flavor.", img: ribeyeImg },
-  { name: "New York Strip", body: "Cut from the short loin. Bold, beefy taste with the perfect balance of fat and lean.", img: nyStripImg },
+  { name: "Ribeye Steak", body: "The steakhouse classic — heavily marbled, char-grilled over live fire to a crusted finish with a juicy, buttery, melt-in-your-mouth center.", img: ribeyeAsset.url },
+  { name: "New York Strip", body: "Cut from the short loin. Bold, beefy flavor with a firm, satisfying bite and the perfect balance of fat and lean — a true steakhouse staple.", img: nyStripAsset.url },
+  { name: "T-Bone Steak", body: "Two premium cuts on one bone — the tender filet on one side, the bold New York strip on the other. Char-grilled over live fire for the ultimate steakhouse experience.", img: tboneAsset.url },
   { name: "Beef Tenderloin", body: "The most tender cut of beef. Buttery texture, mild flavor, luxurious.", img: beefTenderloinImg },
   { name: "Filet Mignon", body: "Premium tenderloin cut, buttery and delicate.", note: "+ $10/steak", img: filetMignonAsset.url },
   { name: "Top Sirloin (10 oz) — also known as Picanha", body: "Lean, flavorful, tender, with a rich beefy taste.", img: topSirloinAsset.url },
