@@ -4,6 +4,8 @@ import steakhouseBackyard from "@/assets/steakhouse-backyard.png.asset.json";
 import sanDiegoHeroBg from "@/assets/san-diego.png.asset.json";
 import bourbonSteakTips from "@/assets/dishes/bourbon-glazed-steak-tips.png.asset.json";
 import { PageHero, CTASection } from "@/components/site/Sections";
+import { TestimonialStrip } from "@/components/site/TestimonialStrip";
+import { SteakhouseMenuFAQ } from "@/components/site/SteakhouseMenuFAQ";
 
 import antipastoKabob from "@/assets/dishes/antipasto-kabob.jpg";
 import antipastoPlatter from "@/assets/dishes/charcuterie.png.asset.json";
@@ -430,6 +432,9 @@ function SteakSeafoodMenuSanDiegoPage() {
           </ul>
         </div>
       </section>
+
+      <TestimonialStrip regionKey="san-diego" />
+      <SteakhouseMenuFAQ regionKey="san-diego" />
 
       <CTASection
         title="Bring the steakhouse to your San Diego County event."

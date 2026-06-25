@@ -4,6 +4,8 @@ import steakhouseBackyard from "@/assets/steakhouse-backyard.png.asset.json";
 import phoenixHeroBg from "@/assets/phoenix-hero-bg.png.asset.json";
 import bourbonSteakTips from "@/assets/dishes/bourbon-glazed-steak-tips.png.asset.json";
 import { PageHero, CTASection, SectionShell } from "@/components/site/Sections";
+import { TestimonialStrip } from "@/components/site/TestimonialStrip";
+import { SteakhouseMenuFAQ } from "@/components/site/SteakhouseMenuFAQ";
 
 import antipastoKabob from "@/assets/dishes/antipasto-kabob.jpg";
 import antipastoPlatter from "@/assets/dishes/charcuterie.png.asset.json";
@@ -473,6 +475,9 @@ function SteakSeafoodMenuPage() {
           </ul>
         </div>
       </section>
+
+      <TestimonialStrip regionKey="phoenix" />
+      <SteakhouseMenuFAQ regionKey="phoenix" />
 
       <CTASection
         title="Bring the steakhouse to your Phoenix Metro event."
