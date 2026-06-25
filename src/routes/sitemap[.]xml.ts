@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
 import { services, extraPages } from "@/lib/site";
+import { blogPosts } from "@/lib/blog-posts";
 
 // Relative <loc> values stay correct under whatever host the project is served from.
 // Replace with absolute base when a custom domain is set.
@@ -46,7 +47,8 @@ export const Route = createFileRoute("/sitemap.xml")({
           regionPaths.push(`/${region}/holiday`);
           regionPaths.push(`/${region}/backyard`);
         }
-        const all = [...staticPaths, ...regionPaths];
+        const blogPaths = blogPosts.map((p) => `/blog/${p.slug}`);
+        const all = [...staticPaths, ...regionPaths, ...blogPaths];
         const xml = [
           `<?xml version="1.0" encoding="UTF-8"?>`,
           `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`,
