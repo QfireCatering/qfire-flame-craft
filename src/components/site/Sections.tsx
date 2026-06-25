@@ -15,7 +15,7 @@ export function PageHero({
   subtitle?: ReactNode;
   image: string;
   imageClassName?: string;
-  imageStyle?: React.CSSProperties;
+  imageStyle?: CSSProperties;
   children?: ReactNode;
 }) {
   return (
