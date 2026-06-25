@@ -50,7 +50,7 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
           <p className="mt-4 max-w-2xl text-base text-bone/55">{r.description}</p>
           <div className="mt-12 flex flex-wrap gap-4">
             <Link to="/quote" className="btn-primary">Request a Quote <ArrowRight className="size-4" /></Link>
-            <Link to="/$region/gallery" params={{ region: regionKey }} className="btn-ghost">View Gallery</Link>
+            <Link to={`/${regionKey}/gallery`} className="btn-ghost">View Gallery</Link>
           </div>
         </div>
       </section>
