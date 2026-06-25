@@ -122,7 +122,7 @@ function Home() {
                 <img src={r.img} alt={r.name} loading="lazy" width={1600} height={1100}
                   className="absolute inset-0 w-full h-full object-cover object-[center_35%] transition-transform duration-[1500ms] group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-ink/10" />
-                <div className="absolute inset-0 p-8 lg:p-10 flex flex-col justify-end">
+                <div className="absolute inset-0 px-8 lg:px-10 pt-8 lg:pt-10 pb-4 lg:pb-5 flex flex-col justify-end">
                   <div className="text-[0.65rem] tracking-[0.35em] uppercase text-gold mb-4">{r.state}</div>
                   <div className="heading-md text-bone group-hover:text-gold transition-colors duration-500">{r.name}</div>
                   <p className="mt-5 text-sm text-bone/80 leading-relaxed max-w-md">{r.cities}</p>
