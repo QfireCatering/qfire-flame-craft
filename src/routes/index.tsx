@@ -120,7 +120,7 @@ function Home() {
             ].map((r) => (
               <Link key={r.key} to={r.href} className="group relative block aspect-[4/3] overflow-hidden rounded-sm ring-1 ring-white/15 ring-offset-4 ring-offset-onyx transition-all duration-500 hover:ring-gold/60 hover:shadow-[0_0_60px_-15px_oklch(0.78_0.13_82_/_25%)]">
                 <img src={r.img} alt={r.name} loading="lazy" width={1600} height={1100}
-                  className="absolute inset-0 w-full h-full object-cover object-[center_55%] transition-transform duration-[1500ms] group-hover:scale-105" />
+                  className="absolute inset-0 w-full h-full object-cover object-[center_65%] transition-transform duration-[1500ms] group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-ink/10" />
                 <div className="absolute inset-0 p-8 lg:p-10 flex flex-col justify-end">
                   <div className="text-[0.65rem] tracking-[0.35em] uppercase text-gold mb-4">{r.state}</div>
