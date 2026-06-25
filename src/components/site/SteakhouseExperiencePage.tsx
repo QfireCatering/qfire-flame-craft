@@ -34,7 +34,7 @@ export function SteakhouseExperiencePage({ r }: { r: RegionCopy }) {
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link to="/quote" className="btn-primary">Request Your Custom Quote <ArrowRight className="size-4" /></Link>
-            <Link to="/steak-seafood-menu" className="btn-ghost">View Full Steakhouse Menu</Link>
+            <a href={r.city === "San Diego" ? "/steak-seafood-menu-san-diego" : "/steak-seafood-menu"} className="btn-ghost">View Full Steakhouse Menu</a>
           </div>
         </div>
       </section>
