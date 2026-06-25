@@ -103,7 +103,7 @@ export function privatePartyConfig(o: ServiceTemplateOptions = {}): ServicePageC
     subtitle: r
       ? `Milestone birthdays, anniversaries, graduations and intimate gatherings across ${r}.`
       : "Milestone birthdays, anniversaries, graduations, holiday gatherings — catering for the moments that matter most.",
-    heroImage: privateParty,
+    heroImage: privatePartyHero,
     intro: {
       heading: "Your home. Our kitchen.",
       body: [
