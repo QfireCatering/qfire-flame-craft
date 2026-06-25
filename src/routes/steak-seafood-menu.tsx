@@ -59,6 +59,7 @@ const cold: Dish[] = [
   { name: "House Salad", body: "Green leaf lettuce, grape tomatoes, onions, cucumbers, shredded carrots. Choice of dressings.", img: houseSalad },
   { name: "Fresh Fruit & Veggie Platter", body: "An assortment of seasonal fruit and vegetables with ranch dip.", img: fruitVeggie },
   { name: "Bruschetta with Garlic Crostini", body: "Vine-ripe tomato, basil and garlic over toasted crostini.", img: bruschetta },
+  { name: "Roasted Asparagus & Feta Salad", body: "Roasted asparagus, feta and grape tomatoes finished with lemon.", img: asparagusFeta },
 ];
 
 const warm: Dish[] = [
@@ -67,7 +68,6 @@ const warm: Dish[] = [
   { name: "Sausage-Filled Mushroom Caps", body: "Italian mushroom caps filled with pork sausage.", img: sausageMushroom },
   { name: "Bacon-Wrapped Scallops", body: "Apple-wood smoked bacon wrapped around a lightly grilled scallop.", img: baconScallops },
   { name: "Smoked Beef Tenderloin Crostini", body: "With goat cheese and house pesto.", img: tenderloinCrostini },
-  { name: "Roasted Asparagus & Feta Salad", body: "Roasted asparagus, feta and grape tomatoes finished with lemon.", img: asparagusFeta },
 ];
 
 const meats: Dish[] = [
