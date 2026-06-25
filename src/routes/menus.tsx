@@ -9,8 +9,8 @@ import { CTASection } from "@/components/site/Sections";
 export const Route = createFileRoute("/menus")({
   head: () => ({
     meta: [
-      { title: "Menus — Qfire Catering" },
-      { name: "description", content: "Wood-fired, steakhouse and private chef menus from Qfire Catering." },
+      { title: "Catering Menus — Wood-Fired BBQ, Steakhouse & Private Chef | Qfire" },
+      { name: "description", content: "Explore Qfire Catering menus: slow-smoked wood-fired BBQ, hand-cut steakhouse plates, intimate private chef dinners, live-fire stations and premium buffet packages. Every menu custom-built around your guests, venue and vision." },
       { property: "og:title", content: "Menus — Qfire" },
       { property: "og:url", content: "/menus" },
     ],

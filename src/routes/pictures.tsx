@@ -14,8 +14,8 @@ import chefTerry from "@/assets/chef-terry.jpg.asset.json";
 export const Route = createFileRoute("/pictures")({
   head: () => ({
     meta: [
-      { title: "Gallery — Qfire Catering" },
-      { name: "description", content: "Photo gallery of Qfire Catering weddings, corporate events, private parties, food and Chef Terry." },
+      { title: "Event Gallery — Weddings, Corporate, Private Parties | Qfire" },
+      { name: "description", content: "A curated photo gallery of recent Qfire Catering events — plated wedding dinners, backyard live-fire parties, corporate dinners under candlelight, hand-cut steaks, slow-smoked brisket and the team behind the fire across Phoenix and San Diego." },
       { property: "og:title", content: "Gallery — Qfire" },
       { property: "og:url", content: "/pictures" },
     ],

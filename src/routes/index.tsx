@@ -21,10 +21,10 @@ import { CTASection } from "@/components/site/Sections";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Qfire Catering — Wedding, Corporate & Private Event Catering" },
-      { name: "description", content: "Full-service wood-fired catering for weddings, corporate events and private parties across Phoenix Metro and San Diego County. Featured on Food Network." },
-      { property: "og:title", content: "Qfire Catering" },
-      { property: "og:description", content: "Wood-fired flavors. Professional service. Stress-free execution." },
+      { title: "Qfire Catering — Luxury Wedding, Corporate & Private Event Catering | Phoenix & San Diego" },
+      { name: "description", content: "Qfire Catering by Chef Terry Matthews — full-service luxury catering for weddings, corporate dinners, private parties and intimate chef's tables across Phoenix Metro and San Diego County. Wood-fired flavors, steakhouse polish, white-glove service, stress-free execution." },
+      { property: "og:title", content: "Qfire Catering — Wood-Fired Luxury, Steakhouse Polish" },
+      { property: "og:description", content: "Wood-fired flavors. Steakhouse polish. Stress-free execution. Luxury catering for weddings, corporate events and private parties — Phoenix Metro & San Diego County." },
       { property: "og:url", content: "/" },
       { property: "og:image", content: heroImage.url },
       { name: "twitter:image", content: heroImage.url },

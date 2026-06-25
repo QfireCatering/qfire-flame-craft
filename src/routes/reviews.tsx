@@ -6,8 +6,8 @@ import buffet from "@/assets/buffet.jpg";
 export const Route = createFileRoute("/reviews")({
   head: () => ({
     meta: [
-      { title: "Reviews — Qfire Catering" },
-      { name: "description", content: "Five-star reviews from wedding couples, corporate clients and private party hosts across Phoenix and San Diego." },
+      { title: "Client Reviews — 5-Star Wedding & Corporate Catering | Qfire" },
+      { name: "description", content: "Five-star reviews from wedding couples, corporate clients, holiday party hosts and private chef guests across Phoenix Metro and San Diego County. 400+ verified reviews, 5.0 average rating, the same Chef Terry standard every event." },
       { property: "og:title", content: "Reviews — Qfire" },
       { property: "og:url", content: "/reviews" },
     ],

@@ -8,17 +8,17 @@ const heroImage = weddingCoupleAsset.url;
 export const Route = createFileRoute("/blog")({
   head: () => ({
     meta: [
-      { title: "Blog — Qfire Catering" },
+      { title: "The Qfire Catering Journal — Wedding, Corporate & BBQ Insights" },
       {
         name: "description",
         content:
-          "Wedding tips, corporate catering playbooks, private party ideas, venue spotlights, planning guides and food inspiration from Chef Terry Matthews.",
+          "Field notes from the fire: wedding planning playbooks, corporate catering strategy, private party hosting, venue spotlights, seasonal menu inspiration and pitmaster technique from Chef Terry Matthews — The BBQ Daddy.",
       },
-      { property: "og:title", content: "Qfire Catering Journal" },
+      { property: "og:title", content: "The Qfire Catering Journal" },
       {
         property: "og:description",
         content:
-          "Field notes from the fire — weddings, corporate dinners, private parties, and the food we cook.",
+          "Wedding, corporate and private party catering insight from Chef Terry Matthews — written for the host who wants every detail right.",
       },
       { property: "og:url", content: "/blog" },
     ],

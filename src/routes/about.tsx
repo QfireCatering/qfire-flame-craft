@@ -7,8 +7,8 @@ import { CTASection } from "@/components/site/Sections";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Chef Terry — Qfire Catering" },
-      { name: "description", content: "Chef Terry Matthews — known to friends as The BBQ Daddy — is the owner of Qfire Catering. Food Network veteran with 13+ years and 2,000+ events." },
+      { title: "About Chef Terry Matthews — The BBQ Daddy | Qfire Catering" },
+      { name: "description", content: "Chef Terry Matthews — known as The BBQ Daddy — is the founder and executive chef of Qfire Catering. Food Network veteran (Cutthroat Kitchen, BBQ Brawl, Camp Cutthroat) with 13+ years catering 2,000+ weddings, corporate events and private dinners across Phoenix and San Diego." },
       { property: "og:title", content: "Chef Terry Matthews — Qfire" },
       { property: "og:url", content: "/about" },
       { property: "og:image", content: chefTerry.url },

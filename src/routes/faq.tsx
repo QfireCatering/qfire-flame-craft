@@ -5,8 +5,8 @@ import { PageHero, CTASection } from "@/components/site/Sections";
 export const Route = createFileRoute("/faq")({
   head: () => ({
     meta: [
-      { title: "FAQ — Qfire Catering" },
-      { name: "description", content: "Frequently asked questions about Qfire Catering — booking, menus, pricing, service, dietary needs and travel." },
+      { title: "Catering FAQ — Booking, Menus, Pricing & Service | Qfire" },
+      { name: "description", content: "Answers to the most common catering questions — booking lead times, menu customization, dietary needs, pricing, service staffing, bar packages, travel fees, deposits and event-day logistics across Phoenix Metro and San Diego County." },
       { property: "og:title", content: "FAQ — Qfire" },
       { property: "og:url", content: "/faq" },
     ],
