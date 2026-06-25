@@ -13,6 +13,7 @@ export interface ServicePageConfig {
   menu?: { heading: string; columns: { title: string; items: string[] }[] };
   galleryImages: string[];
   reviews?: { q: string; a: string; e: string }[];
+  faqs?: { q: string; a: string }[];
   ctaTitle?: string;
 }
 
@@ -156,6 +157,45 @@ export function ServicePage({ config }: { config: ServicePageConfig }) {
             </div>
           </div>
         </section>
+      )}
+
+      {/* FAQs */}
+      {config.faqs && config.faqs.length > 0 && (
+        <>
+          <section className="py-24 lg:py-32">
+            <div className="container-luxe">
+              <div className="max-w-2xl mb-14">
+                <div className="eyebrow mb-6">Frequently Asked</div>
+                <h2 className="heading-lg text-bone">Answers, before you ask.</h2>
+              </div>
+              <div className="divide-y divide-white/10 border-t border-b border-white/10">
+                {config.faqs.map((f, i) => (
+                  <details key={i} className="group py-7">
+                    <summary className="flex cursor-pointer items-start justify-between gap-8 list-none">
+                      <h3 className="text-lg lg:text-xl text-bone font-display">{f.q}</h3>
+                      <span className="text-gold text-2xl leading-none transition-transform group-open:rotate-45 shrink-0">+</span>
+                    </summary>
+                    <p className="mt-5 text-bone/75 text-base lg:text-lg leading-relaxed font-light max-w-3xl">{f.a}</p>
+                  </details>
+                ))}
+              </div>
+            </div>
+          </section>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                mainEntity: config.faqs.map((f) => ({
+                  "@type": "Question",
+                  name: f.q,
+                  acceptedAnswer: { "@type": "Answer", text: f.a },
+                })),
+              }),
+            }}
+          />
+        </>
       )}
 
       <CTASection title={config.ctaTitle ?? "Let's plan something unforgettable."} />

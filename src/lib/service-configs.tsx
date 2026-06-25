@@ -12,9 +12,15 @@ const corporate = corporateAsset.url;
 import privateParty from "@/assets/private-party.jpg";
 import privatePartyHeroAsset from "@/assets/private-parties-hero.png.asset.json";
 const privatePartyHero = privatePartyHeroAsset.url;
+import weddingRealAsset from "@/assets/wedding-real.jpg.asset.json";
+const weddingReal = weddingRealAsset.url;
+import corporateRealAsset from "@/assets/corporate-real.jpg.asset.json";
+const corporateReal = corporateRealAsset.url;
+import privateRealAsset from "@/assets/private-real.jpg.asset.json";
+const privateReal = privateRealAsset.url;
 import type { ServicePageConfig } from "@/components/site/ServicePage";
 
-const galleryAll = [weddingTable, brisket, steak, buffet, heroFire, corporate, privateParty, weddingTable];
+const galleryAll = [weddingReal, brisket, steak, buffet, heroFire, corporateReal, privateReal, weddingTable];
 
 export interface ServiceTemplateOptions {
   region?: string;       // e.g. "Phoenix Metro" or undefined
@@ -59,6 +65,14 @@ export function weddingConfig(o: ServiceTemplateOptions = {}): ServicePageConfig
       { q: "Chef Terry and his team made our wedding night unforgettable. The brisket and steaks were perfect, and the service was flawless from start to finish.", a: "Lauren & Mark", e: r ? `${r} · 220 guests` : "Scottsdale · 220 guests" },
       { q: "We did a plated dinner for 180 and not a single thing went wrong. Worth every dollar and then some.", a: "Megan & Ryan", e: r ? `${r} Wedding` : "Carlsbad Wedding" },
     ],
+    faqs: [
+      { q: "How far in advance should we book our wedding caterer?", a: "Most couples book Qfire 6 to 12 months in advance for peak Saturdays in Phoenix Metro and San Diego County. We accept a limited number of weddings each weekend so service never feels rushed. Off-peak dates and intimate weddings can often be accommodated inside 90 days." },
+      { q: "Do you handle setup, service staff, and breakdown?", a: "Yes — every wedding includes uniformed servers, captains, chefs, and a lead coordinator. We arrive hours before guest count, dress every table, execute service to the minute, and break the room down so cleanly your venue manager will ask for our card." },
+      { q: "Can we host a private tasting before we book?", a: "Absolutely. After your initial proposal we invite the couple to a private chef's-table tasting with Chef Terry. You'll sample your proposed entrees, sides, and a signature cocktail, and refine the menu in real time before contracts are finalized." },
+      { q: "Do you cater both indoor venues and outdoor live-fire weddings?", a: "Both. We routinely plate inside hotel ballrooms, vineyards, and private estates, and we also roll in our wood-fired grill for outdoor receptions where guests gather around the live-fire station. Permits, fire safety, and venue approval are all coordinated by our team." },
+      { q: "Is bar service included or separate?", a: "Bar service is offered as an add-on package with licensed, insured bartenders, signature cocktails, beer and wine programs, mixers, glassware, and ice. We can run the bar entirely or partner with your venue's beverage program." },
+      { q: "What is the average price per guest for a Qfire wedding?", a: "Most full-service Qfire weddings land between $95 and $185 per guest depending on protein selection, service style, bar package, and rentals coordination. Every proposal is custom — there are no hidden fees, no per-server gratuity surprises, and every line item is itemized." },
+    ],
     ctaTitle: "Let's design your wedding menu.",
   };
 }
@@ -87,9 +101,17 @@ export function corporateConfig(o: ServiceTemplateOptions = {}): ServicePageConf
       { title: "Holiday Parties", body: "End-of-year galas with full beverage service." },
       { title: "Box Lunches & Drop-Off", body: "Premium daytime catering for board meetings and retreats." },
     ],
-    galleryImages: [corporate, steak, buffet, brisket, weddingTable, heroFire],
+    galleryImages: [corporateReal, corporate, steak, buffet, brisket, weddingReal, heroFire, weddingTable],
     reviews: [
       { q: "Our annual partner dinner — 140 plated steaks, served hot, served right. Qfire raised the bar permanently.", a: "David K.", e: r ? `${r} Investment Firm` : "La Jolla Investment Firm" },
+    ],
+    faqs: [
+      { q: "Do you offer net-30 billing and corporate accounts?", a: "Yes. Qualified corporate clients are set up with a dedicated account manager, master service agreements, COIs on request, and net-30 billing on all invoices. Repeat clients also receive tiered volume pricing across the calendar year." },
+      { q: "Can you handle a full-day company offsite or multi-day event?", a: "Routinely. We've executed multi-day partner retreats, sales kickoffs, and board offsites with breakfast, lunch, breaks, and plated dinners across multiple venues — all coordinated by a single point of contact." },
+      { q: "What is your minimum guest count for corporate catering?", a: "Drop-off catering starts at 15 guests. Staffed buffets and plated dinners typically start at 25 guests. There is no functional ceiling — we have plated and served events of 600+ with the same standard as a chef's-table dinner for 12." },
+      { q: "Do you accommodate dietary restrictions and allergies?", a: "Always. Every proposal includes vegetarian, vegan, gluten-free, and dairy-free options. For peanut, tree-nut, and shellfish allergies we run a dedicated prep line and label every plate at the pass." },
+      { q: "Can you cater on-site at our corporate office or co-working space?", a: "Yes — we cater regularly inside corporate HQs, downtown high-rises, industrial flex spaces, and remote project sites across Phoenix Metro and San Diego County. We bring everything required, including power management for hot-hold equipment." },
+      { q: "How do you handle holiday party season bookings?", a: "Holiday party season (Nov 15 – Dec 23) books out by late September. Reserve your date early — a non-refundable date hold secures your slot, and the menu can be finalized up to 30 days before the event." },
     ],
     ctaTitle: "Plan your corporate event.",
   };
@@ -119,7 +141,15 @@ export function privatePartyConfig(o: ServiceTemplateOptions = {}): ServicePageC
       { title: "Setup & Cleanup", body: "Your home looks better when we leave than when we arrived." },
       { title: "Late-Night Bites", body: "Sliders, late-night snacks and pass-arounds for long evenings." },
     ],
-    galleryImages: [privateParty, brisket, steak, buffet, heroFire, weddingTable],
+    galleryImages: [privateReal, privateParty, brisket, steak, buffet, heroFire, weddingReal, corporateReal],
+    faqs: [
+      { q: "What is the minimum guest count for a private party?", a: "Our intimate chef's dinners start at 8 guests for fully plated, multi-course service. Staffed buffets and family-style parties typically start at 20, and there's no upper limit — we've cooked for backyard parties of 250+ across Phoenix and San Diego." },
+      { q: "Will Chef Terry actually be at our event?", a: "For private chef dinners, intimate plated experiences, and signature events, yes — Chef Terry leads the kitchen personally. For larger backyard parties he is supported by a tenured team of trained chefs who cook to the same standard he set." },
+      { q: "Can you bring the wood-fired grill to a residential property?", a: "Yes. Our mobile wood-fired grill is engineered for residential driveways, backyards, pool decks, and gated estates. We confirm clearance, ventilation, and HOA requirements during the planning call so there are no surprises the day of." },
+      { q: "Do you handle bar service, glassware, and rentals for private parties?", a: "All of it. Bartenders, glassware, linens, chinaware, gold flatware, votives, and lounge furniture can be sourced, set, and struck by our team — one vendor, one invoice, zero coordination on your part." },
+      { q: "How clean is the kitchen when you leave?", a: "Cleaner than when we arrived. Counters wiped, sinks empty, floors swept, trash bagged and removed. The standing rule for our team: the host should be able to pour a nightcap in their own kitchen ten minutes after the last guest leaves." },
+      { q: "How early should I book a private party?", a: "30 to 90 days is comfortable for most weekends. Major holidays (NYE, July 4th, Thanksgiving weekend) and graduation season fill 4 to 6 months out. Short-notice parties are accepted when our calendar allows — call directly for last-minute dates." },
+    ],
     ctaTitle: "Let's plan your party.",
   };
 }

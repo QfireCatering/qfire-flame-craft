@@ -10,8 +10,8 @@ import brisket from "@/assets/brisket.jpg";
 export const Route = createFileRoute("/private-chef")({
   head: () => ({
     meta: [
-      { title: "Private Chef Experience — Qfire Catering" },
-      { name: "description", content: "Intimate multi-course chef's dinners in your home or private venue." },
+      { title: "Private Chef Dinners in Phoenix & San Diego — Qfire" },
+      { name: "description", content: "An intimate, multi-course chef's table inside your home. Chef Terry Matthews and a tenured team plate seasonal tasting menus for 8 to 40 guests — anniversaries, birthdays, milestone gatherings and confidential corporate dinners across Phoenix and San Diego." },
       { property: "og:title", content: "Private Chef — Qfire" },
       { property: "og:url", content: "/private-chef" },
     ],

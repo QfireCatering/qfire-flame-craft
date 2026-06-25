@@ -6,8 +6,8 @@ import { PageHero, CTASection } from "@/components/site/Sections";
 export const Route = createFileRoute("/why-qfire")({
   head: () => ({
     meta: [
-      { title: "Why Qfire — Qfire Catering" },
-      { name: "description", content: "Why clients choose Qfire: stress-free execution, Food Network pedigree, full-service hospitality and 2,000+ events of experience." },
+      { title: "Why Qfire — Luxury Catering with Stress-Free Execution" },
+      { name: "description", content: "Why luxury hosts choose Qfire: Food Network pedigree, white-glove hospitality, custom menus, full-service staffing, licensed bar program, rentals coordination and 2,000+ events of disciplined execution across Phoenix Metro and San Diego County." },
       { property: "og:title", content: "Why Qfire" },
       { property: "og:url", content: "/why-qfire" },
     ],

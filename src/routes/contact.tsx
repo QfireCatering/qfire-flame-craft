@@ -5,11 +5,11 @@ import { contact } from "@/lib/contact";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Qfire Catering — Phoenix & San Diego" },
+      { title: "Contact Qfire Catering — Phoenix Metro & San Diego County" },
       {
         name: "description",
         content:
-          "Call (877) 848-7211 or email Eat@QfireCatering.com. Wood-fired catering serving Phoenix Metro and San Diego County. Response within 24 hours.",
+          "Call (877) 848-7211 or email Eat@QfireCatering.com to design your wedding, corporate event or private party menu. Wood-fired and steakhouse catering across Phoenix Metro and San Diego County — every inquiry answered within 24 hours by a real human.",
       },
       { property: "og:title", content: "Contact Qfire Catering" },
       { property: "og:url", content: "/contact" },

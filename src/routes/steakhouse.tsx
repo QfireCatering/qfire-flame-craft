@@ -5,9 +5,10 @@ import { steakhouseConfig } from "@/lib/service-configs";
 export const Route = createFileRoute("/steakhouse")({
   head: () => ({
     meta: [
-      { title: "Steakhouse Catering — Qfire Catering" },
-      { name: "description", content: "Plated ribeye, filet mignon, picanha, prime rib and surf-and-turf. Upscale wedding and corporate catering." },
+      { title: "Steakhouse Catering — Plated Ribeye, Filet, Picanha, Prime Rib | Qfire" },
+      { name: "description", content: "The steakhouse experience, brought to you. Hand-cut ribeye, New York strip, filet mignon, picanha, slow-roasted prime rib, salmon and surf & turf — plated under candlelight with white-glove service for luxury weddings, corporate dinners and private events." },
       { property: "og:title", content: "Steakhouse Catering — Qfire" },
+      { property: "og:description", content: "Hand-cut steaks, charcoal-finished, plated tableside. The steakhouse experience anywhere you need it." },
       { property: "og:url", content: "/steakhouse" },
     ],
     links: [{ rel: "canonical", href: "/steakhouse" }],
