@@ -14,8 +14,8 @@ import bruschetta from "@/assets/dishes/bruschetta.jpg";
 import teriyakiSkewer from "@/assets/dishes/teriyaki-chicken-skewer.jpg";
 import shrimpSkewers from "@/assets/dishes/grilled-shrimp-skewers.jpg";
 import sausageMushroom from "@/assets/dishes/sausage-mushroom-caps.jpg";
-import baconScallops from "@/assets/dishes/bacon-wrapped-scallops.jpg";
-import tenderloinCrostini from "@/assets/dishes/tenderloin-crostini.jpg";
+import baconScallops from "@/assets/dishes/bacon-wrapped-scallops.png.asset.json";
+import tenderloinCrostini from "@/assets/dishes/tenderloin-crostini.png.asset.json";
 import asparagusFeta from "@/assets/dishes/asparagus-feta.jpg";
 import ribeyeAsset from "@/assets/dishes/ribeye.png.asset.json";
 import nyStripAsset from "@/assets/dishes/new-york-strip.avif.asset.json";
@@ -69,8 +69,8 @@ const warm: Dish[] = [
   { name: "Teriyaki Chicken & Pineapple Skewer", body: "Teriyaki-marinated chicken thigh with grilled pineapple chunks.", img: teriyakiSkewer },
   { name: "Grilled Shrimp Skewers", body: "Perfectly seasoned shrimp grilled on-site.", img: shrimpSkewers },
   { name: "Sausage-Filled Mushroom Caps", body: "Italian mushroom caps filled with pork sausage.", img: sausageMushroom },
-  { name: "Bacon-Wrapped Scallops", body: "Apple-wood smoked bacon wrapped around a lightly grilled scallop.", img: baconScallops },
-  { name: "Smoked Beef Tenderloin Crostini", body: "With goat cheese and house pesto.", img: tenderloinCrostini },
+  { name: "Bacon-Wrapped Scallops", body: "Apple-wood smoked bacon wrapped around a lightly grilled scallop.", img: baconScallops.url },
+  { name: "Smoked Beef Tenderloin Crostini", body: "With goat cheese and house pesto.", img: tenderloinCrostini.url },
   { name: "Bourbon Glazed Steak Tips", body: "Char-grilled sirloin or tri-tip. Bourbon glaze. Garlic butter finish.", img: bourbonSteakTips.url },
 ];
 
