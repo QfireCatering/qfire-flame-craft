@@ -126,10 +126,10 @@ const upcharges = [
 export const Route = createFileRoute("/steak-seafood-menu")({
   head: () => ({
     meta: [
-      { title: "Steak & Seafood Catering Menu — Phoenix & San Diego | Qfire" },
-      { name: "description", content: "A five-course steakhouse catering menu — ribeye, filet, prime rib, lobster, salmon and more — grilled live at your event. Premium plated steak dinner catering in Phoenix Metro and San Diego County." },
-      { property: "og:title", content: "Steak & Seafood Menu — Qfire Catering" },
-      { property: "og:description", content: "Five-course steakhouse catering: cold starter, warm hors d'oeuvre, choose-3 steaks/seafood, choose-3 sides, dessert and drinks. Live on-site grilling." },
+      { title: "Steak & Seafood Catering Menu — Phoenix Metro | Qfire" },
+      { name: "description", content: "Phoenix Metro's premier five-course steakhouse catering menu — ribeye, filet, prime rib, lobster, salmon and more — grilled live at your event. Premium plated steak dinner catering in Phoenix, Scottsdale, Gilbert, Mesa, Tempe and surrounding areas." },
+      { property: "og:title", content: "Steak & Seafood Menu — Phoenix Metro | Qfire Catering" },
+      { property: "og:description", content: "Five-course steakhouse catering in Phoenix Metro: cold starter, warm hors d'oeuvre, choose-3 steaks/seafood, choose-3 sides, dessert and drinks. Live on-site grilling for weddings, corporate events and private parties." },
       { property: "og:url", content: "/steak-seafood-menu" },
       { property: "og:image", content: steakhouseBackyard.url },
     ],
@@ -140,7 +140,7 @@ export const Route = createFileRoute("/steak-seafood-menu")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Menu",
-          name: "Qfire Steak & Seafood Catering Menu",
+          name: "Qfire Steak & Seafood Catering Menu — Phoenix Metro",
           inLanguage: "en-US",
           hasMenuSection: [
             { "@type": "MenuSection", name: "First Course — Cold Starters", hasMenuItem: cold.map((d) => ({ "@type": "MenuItem", name: d.name, description: d.body })) },
@@ -209,9 +209,9 @@ function SteakSeafoodMenuPage() {
   return (
     <>
       <PageHero
-        eyebrow="Steakhouse Catering"
+        eyebrow="Steakhouse Catering — Phoenix Metro"
         title="The Steak & Seafood Menu"
-        subtitle="A five-course steakhouse experience — cold starter, warm hors d'oeuvre, your choice of premium steaks and seafood, sides, dessert and drinks. Grilled live at your event."
+        subtitle="A five-course steakhouse experience — cold starter, warm hors d'oeuvre, your choice of premium steaks and seafood, sides, dessert and drinks. Grilled live at your Phoenix Metro event."
         image={steakhouseBackyard.url}
       >
         <Link to="/quote" className="btn-primary">Request Your Quote <ArrowRight className="size-4" /></Link>
@@ -226,8 +226,8 @@ function SteakSeafoodMenuPage() {
             More Than Catering. A Private Steakhouse Experience Created Exclusively for Your Guests.
           </p>
           <div className="space-y-6 text-bone/70 text-base lg:text-lg leading-relaxed">
-            <p>If you're looking for something beyond the traditional buffet, this is where our clients naturally gravitate.</p>
-            <p>Our Surf & Turf Steakhouse Experience combines the energy of live-fire cooking with the elegance of fine dining—bringing the atmosphere of an upscale steakhouse directly to your wedding, corporate event, or private celebration.</p>
+            <p>If you're looking for something beyond the traditional buffet in the Phoenix Metro area, this is where our clients naturally gravitate.</p>
+            <p>Our Surf & Turf Steakhouse Experience combines the energy of live-fire cooking with the elegance of fine dining—bringing the atmosphere of an upscale steakhouse directly to your Phoenix, Scottsdale, Gilbert, Mesa or Tempe wedding, corporate event, or private celebration.</p>
             <p>This isn't just dinner. It's the experience your guests will remember long after the last bite.</p>
           </div>
         </div>
@@ -426,8 +426,8 @@ function SteakSeafoodMenuPage() {
       </section>
 
       <CTASection
-        title="Bring the steakhouse to your event."
-        subtitle="Tell us your date, guest count and venue. We'll send a custom proposal within 24 hours."
+        title="Bring the steakhouse to your Phoenix Metro event."
+        subtitle="Serving Phoenix, Scottsdale, Gilbert, Mesa, Tempe and surrounding areas. Tell us your date, guest count and venue — we'll send a custom proposal within 24 hours."
       />
     </>
   );
