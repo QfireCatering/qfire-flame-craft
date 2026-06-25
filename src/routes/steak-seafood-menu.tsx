@@ -7,7 +7,7 @@ import { PageHero, CTASection, SectionShell } from "@/components/site/Sections";
 
 import antipastoKabob from "@/assets/dishes/antipasto-kabob.jpg";
 import antipastoPlatter from "@/assets/dishes/antipasto-platter.jpg";
-import caesarSalad from "@/assets/dishes/caesar-salad.jpg";
+import caesarSalad from "@/assets/dishes/caesar-salad.png.asset.json";
 import houseSalad from "@/assets/dishes/house-salad.jpg";
 import fruitVeggie from "@/assets/dishes/fruit-veggie-platter.jpg";
 import bruschetta from "@/assets/dishes/bruschetta.jpg";
@@ -58,7 +58,7 @@ type Dish = { name: string; body?: string; note?: string; img: string };
 const cold: Dish[] = [
   { name: "Antipasto Kabob", body: "100% fresh, top quality. Black olives, mozzarella balls, marinated artichoke.", img: antipastoKabob },
   { name: "Antipasto Charcuterie Platter", body: "A curated assortment of spiced cheese and cured meats.", img: antipastoPlatter },
-  { name: "Caesar Salad", body: "Freshly cut romaine, parmesan, caesar croutons. Creamy or vinaigrette caesar dressing.", img: caesarSalad },
+  { name: "Caesar Salad", body: "Freshly cut romaine, parmesan, caesar croutons. Creamy or vinaigrette caesar dressing.", img: caesarSalad.url },
   { name: "House Salad", body: "Green leaf lettuce, grape tomatoes, onions, cucumbers, shredded carrots. Choice of dressings.", img: houseSalad },
   { name: "Fresh Fruit & Veggie Platter", body: "An assortment of seasonal fruit and vegetables with ranch dip.", img: fruitVeggie },
   { name: "Bruschetta with Garlic Crostini", body: "Vine-ripe tomato, basil and garlic over toasted crostini.", img: bruschetta },
