@@ -30,19 +30,6 @@ const tiers = [
       "Black-tie staff team",
     ],
   },
-  {
-    name: "Private Chef Experience",
-    href: "/private-chef",
-    headline: "From $125 / guest · 6+ guests",
-    blurb:
-      "Multi-course tasting menu cooked in your kitchen. Wine pairings on request.",
-    bullets: [
-      "Custom menu consultation",
-      "Sommelier-style pairings",
-      "Full cleanup, kitchen left spotless",
-      "Photographer-friendly plating",
-    ],
-  },
 ];
 
 export const Route = createFileRoute("/pricing")({
