@@ -15,6 +15,8 @@ import { Route as WeddingsRouteImport } from './routes/weddings'
 import { Route as WeddingCateringSanDiegoRouteImport } from './routes/wedding-catering-san-diego'
 import { Route as WeddingCateringPhoenixRouteImport } from './routes/wedding-catering-phoenix'
 import { Route as TermsRouteImport } from './routes/terms'
+import { Route as SteakhouseExperienceSanDiegoRouteImport } from './routes/steakhouse-experience-san-diego'
+import { Route as SteakhouseExperiencePhoenixRouteImport } from './routes/steakhouse-experience-phoenix'
 import { Route as SteakhouseRouteImport } from './routes/steakhouse'
 import { Route as SteakSeafoodMenuRouteImport } from './routes/steak-seafood-menu'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
@@ -78,6 +80,18 @@ const TermsRoute = TermsRouteImport.update({
   path: '/terms',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SteakhouseExperienceSanDiegoRoute =
+  SteakhouseExperienceSanDiegoRouteImport.update({
+    id: '/steakhouse-experience-san-diego',
+    path: '/steakhouse-experience-san-diego',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SteakhouseExperiencePhoenixRoute =
+  SteakhouseExperiencePhoenixRouteImport.update({
+    id: '/steakhouse-experience-phoenix',
+    path: '/steakhouse-experience-phoenix',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const SteakhouseRoute = SteakhouseRouteImport.update({
   id: '/steakhouse',
   path: '/steakhouse',
@@ -271,6 +285,8 @@ export interface FileRoutesByFullPath {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/steak-seafood-menu': typeof SteakSeafoodMenuRoute
   '/steakhouse': typeof SteakhouseRoute
+  '/steakhouse-experience-phoenix': typeof SteakhouseExperiencePhoenixRoute
+  '/steakhouse-experience-san-diego': typeof SteakhouseExperienceSanDiegoRoute
   '/terms': typeof TermsRoute
   '/wedding-catering-phoenix': typeof WeddingCateringPhoenixRoute
   '/wedding-catering-san-diego': typeof WeddingCateringSanDiegoRoute
@@ -309,6 +325,8 @@ export interface FileRoutesByTo {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/steak-seafood-menu': typeof SteakSeafoodMenuRoute
   '/steakhouse': typeof SteakhouseRoute
+  '/steakhouse-experience-phoenix': typeof SteakhouseExperiencePhoenixRoute
+  '/steakhouse-experience-san-diego': typeof SteakhouseExperienceSanDiegoRoute
   '/terms': typeof TermsRoute
   '/wedding-catering-phoenix': typeof WeddingCateringPhoenixRoute
   '/wedding-catering-san-diego': typeof WeddingCateringSanDiegoRoute
@@ -350,6 +368,8 @@ export interface FileRoutesById {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/steak-seafood-menu': typeof SteakSeafoodMenuRoute
   '/steakhouse': typeof SteakhouseRoute
+  '/steakhouse-experience-phoenix': typeof SteakhouseExperiencePhoenixRoute
+  '/steakhouse-experience-san-diego': typeof SteakhouseExperienceSanDiegoRoute
   '/terms': typeof TermsRoute
   '/wedding-catering-phoenix': typeof WeddingCateringPhoenixRoute
   '/wedding-catering-san-diego': typeof WeddingCateringSanDiegoRoute
@@ -392,6 +412,8 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/steak-seafood-menu'
     | '/steakhouse'
+    | '/steakhouse-experience-phoenix'
+    | '/steakhouse-experience-san-diego'
     | '/terms'
     | '/wedding-catering-phoenix'
     | '/wedding-catering-san-diego'
@@ -430,6 +452,8 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/steak-seafood-menu'
     | '/steakhouse'
+    | '/steakhouse-experience-phoenix'
+    | '/steakhouse-experience-san-diego'
     | '/terms'
     | '/wedding-catering-phoenix'
     | '/wedding-catering-san-diego'
@@ -470,6 +494,8 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/steak-seafood-menu'
     | '/steakhouse'
+    | '/steakhouse-experience-phoenix'
+    | '/steakhouse-experience-san-diego'
     | '/terms'
     | '/wedding-catering-phoenix'
     | '/wedding-catering-san-diego'
@@ -511,6 +537,8 @@ export interface RootRouteChildren {
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   SteakSeafoodMenuRoute: typeof SteakSeafoodMenuRoute
   SteakhouseRoute: typeof SteakhouseRoute
+  SteakhouseExperiencePhoenixRoute: typeof SteakhouseExperiencePhoenixRoute
+  SteakhouseExperienceSanDiegoRoute: typeof SteakhouseExperienceSanDiegoRoute
   TermsRoute: typeof TermsRoute
   WeddingCateringPhoenixRoute: typeof WeddingCateringPhoenixRoute
   WeddingCateringSanDiegoRoute: typeof WeddingCateringSanDiegoRoute
@@ -561,6 +589,20 @@ declare module '@tanstack/react-router' {
       path: '/terms'
       fullPath: '/terms'
       preLoaderRoute: typeof TermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/steakhouse-experience-san-diego': {
+      id: '/steakhouse-experience-san-diego'
+      path: '/steakhouse-experience-san-diego'
+      fullPath: '/steakhouse-experience-san-diego'
+      preLoaderRoute: typeof SteakhouseExperienceSanDiegoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/steakhouse-experience-phoenix': {
+      id: '/steakhouse-experience-phoenix'
+      path: '/steakhouse-experience-phoenix'
+      fullPath: '/steakhouse-experience-phoenix'
+      preLoaderRoute: typeof SteakhouseExperiencePhoenixRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/steakhouse': {
@@ -855,6 +897,8 @@ const rootRouteChildren: RootRouteChildren = {
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   SteakSeafoodMenuRoute: SteakSeafoodMenuRoute,
   SteakhouseRoute: SteakhouseRoute,
+  SteakhouseExperiencePhoenixRoute: SteakhouseExperiencePhoenixRoute,
+  SteakhouseExperienceSanDiegoRoute: SteakhouseExperienceSanDiegoRoute,
   TermsRoute: TermsRoute,
   WeddingCateringPhoenixRoute: WeddingCateringPhoenixRoute,
   WeddingCateringSanDiegoRoute: WeddingCateringSanDiegoRoute,
