@@ -426,8 +426,8 @@ function SteakSeafoodMenuPage() {
       </section>
 
       <CTASection
-        title="Bring the steakhouse to your event."
-        subtitle="Tell us your date, guest count and venue. We'll send a custom proposal within 24 hours."
+        title="Bring the steakhouse to your Phoenix Metro event."
+        subtitle="Serving Phoenix, Scottsdale, Gilbert, Mesa, Tempe and surrounding areas. Tell us your date, guest count and venue — we'll send a custom proposal within 24 hours."
       />
     </>
   );
