@@ -77,7 +77,7 @@ const meats: Dish[] = [
   { name: "Ribeye Steak", body: "Rich marbling, juicy, tender, buttery — melt-in-your-mouth flavor.", img: ribeyeImg },
   { name: "New York Strip", body: "Cut from the short loin. Bold, beefy taste with the perfect balance of fat and lean.", img: nyStripImg },
   { name: "Beef Tenderloin", body: "The most tender cut of beef. Buttery texture, mild flavor, luxurious.", img: beefTenderloinImg },
-  { name: "Filet Mignon", body: "Premium tenderloin cut, buttery and delicate.", note: "+ $10/steak", img: filetMignonImg },
+  { name: "Filet Mignon", body: "Premium tenderloin cut, buttery and delicate.", note: "+ $10/steak", img: filetMignonAsset.url },
   { name: "Top Sirloin (10 oz)", body: "Lean, flavorful, tender, with a rich beefy taste.", img: topSirloinImg },
   { name: "Smoked Prime Rib Roast", body: "Slow-smoked to perfection. Smoky crust, perfectly pink center, deep savory flavor.", img: primeRibImg },
   { name: "Beef Tri-Tip", body: "Triangular cut from the bottom sirloin. Savory crust, juicy interior, robust beefy flavor.", img: triTipImg },
