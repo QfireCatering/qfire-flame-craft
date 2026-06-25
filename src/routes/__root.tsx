@@ -82,6 +82,55 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter+Tight:wght@300;400;500;600;700&display=swap",
       },
     ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "/#website",
+              name: "Qfire Catering",
+              alternateName: "The BBQ Daddy",
+              url: "/",
+              potentialAction: {
+                "@type": "SearchAction",
+                target: "/?q={search_term_string}",
+                "query-input": "required name=search_term_string",
+              },
+            },
+            {
+              "@type": ["LocalBusiness", "FoodEstablishment", "CateringService"],
+              "@id": "/#business",
+              name: "Qfire Catering",
+              alternateName: "The BBQ Daddy",
+              url: "/",
+              telephone: "+1-877-848-7211",
+              email: "Eat@QfireCatering.com",
+              priceRange: "$$$",
+              servesCuisine: ["Wood-Fired BBQ", "Steakhouse", "American"],
+              areaServed: [
+                { "@type": "AdministrativeArea", name: "Phoenix Metro, Arizona" },
+                { "@type": "AdministrativeArea", name: "San Diego County, California" },
+              ],
+              founder: { "@id": "/about#chef-terry" },
+              sameAs: [],
+            },
+            {
+              "@type": "Person",
+              "@id": "/about#chef-terry",
+              name: "Terry Matthews",
+              alternateName: "The BBQ Daddy",
+              jobTitle: "Executive Chef & Founder",
+              worksFor: { "@id": "/#business" },
+              description:
+                "Executive chef and founder of Qfire Catering. 13+ years catering luxury weddings, corporate events and private dinners. Featured on Food Network's BBQ Brawl and Cutthroat Kitchen champion.",
+            },
+          ],
+        }),
+      },
+    ],
   }),
   shellComponent: RootShell,
   component: RootComponent,
