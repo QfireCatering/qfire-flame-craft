@@ -7,7 +7,8 @@ import {
   woodFiredConfig, steakhouseConfig, bartendingConfig,
 } from "@/lib/service-configs";
 import { regions, services, extraPages, type RegionKey } from "@/lib/site";
-import phoenixImg from "@/assets/phoenix.jpg";
+import phoenixAsset from "@/assets/az-metro.png.asset.json";
+const phoenixImg = phoenixAsset.url;
 import sanDiegoImg from "@/assets/san-diego.jpg";
 import weddingCoupleAsset from "@/assets/wedding-couple.png.asset.json";
 const weddingTable = weddingCoupleAsset.url;
