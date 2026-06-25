@@ -48,6 +48,7 @@ import creamPuffsImg from "@/assets/dishes/cream-puffs.jpg";
 import whitePetitFoursImg from "@/assets/dishes/white-petit-fours.jpg";
 import tuxedoPetitFoursImg from "@/assets/dishes/tuxedo-petit-fours.jpg";
 import coffeeStationImg from "@/assets/dishes/coffee-station.jpg";
+import drinkChoiceImg from "@/assets/dishes/drink-choice.avif";
 
 type Dish = { name: string; body?: string; note?: string; img: string };
 
@@ -58,6 +59,7 @@ const cold: Dish[] = [
   { name: "House Salad", body: "Green leaf lettuce, grape tomatoes, onions, cucumbers, shredded carrots. Choice of dressings.", img: houseSalad },
   { name: "Fresh Fruit & Veggie Platter", body: "An assortment of seasonal fruit and vegetables with ranch dip.", img: fruitVeggie },
   { name: "Bruschetta with Garlic Crostini", body: "Vine-ripe tomato, basil and garlic over toasted crostini.", img: bruschetta },
+  { name: "Roasted Asparagus & Feta Salad", body: "Roasted asparagus, feta and grape tomatoes finished with lemon.", img: asparagusFeta },
 ];
 
 const warm: Dish[] = [
@@ -66,7 +68,6 @@ const warm: Dish[] = [
   { name: "Sausage-Filled Mushroom Caps", body: "Italian mushroom caps filled with pork sausage.", img: sausageMushroom },
   { name: "Bacon-Wrapped Scallops", body: "Apple-wood smoked bacon wrapped around a lightly grilled scallop.", img: baconScallops },
   { name: "Smoked Beef Tenderloin Crostini", body: "With goat cheese and house pesto.", img: tenderloinCrostini },
-  { name: "Roasted Asparagus & Feta Salad", body: "Roasted asparagus, feta and grape tomatoes finished with lemon.", img: asparagusFeta },
 ];
 
 const meats: Dish[] = [
@@ -407,6 +408,9 @@ function SteakSeafoodMenuPage() {
             </div>
             <h2 className="heading-lg text-bone">Drinks</h2>
             <p className="mt-5 text-bone/65 leading-relaxed">Refreshing non-alcoholic options served from elegant dispensers. Full bar and bartending service available as an add-on.</p>
+          </div>
+          <div className="mb-10 overflow-hidden border border-white/5">
+            <img src={drinkChoiceImg} alt="Refreshing non-alcoholic beverage selections" loading="lazy" className="w-full h-64 lg:h-96 object-cover" />
           </div>
           <ul className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-white/5 border border-white/5">
             {drinks.map((name) => (
