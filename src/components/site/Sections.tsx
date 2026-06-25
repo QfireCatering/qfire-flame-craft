@@ -22,6 +22,7 @@ export function PageHero({
           src={image}
           alt=""
           className="absolute inset-0 w-full h-full object-cover slow-zoom"
+          style={{ filter: 'contrast(1.08) saturate(1.12) brightness(1.03)', imageRendering: '-webkit-optimize-contrast' }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/70 to-ink/20" />
         <div className="absolute inset-0 bg-gradient-to-r from-ink/80 via-transparent to-transparent" />
