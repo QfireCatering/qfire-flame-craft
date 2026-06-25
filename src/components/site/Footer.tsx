@@ -49,6 +49,7 @@ export function Footer() {
               <li><Link to="/about" className="hover:text-gold transition-colors">Chef Terry</Link></li>
               <li><Link to="/why-qfire" className="hover:text-gold transition-colors">Why Qfire</Link></li>
               <li><Link to="/reviews" className="hover:text-gold transition-colors">Reviews</Link></li>
+              <li><Link to="/media" className="hover:text-gold transition-colors">Press & Media</Link></li>
               <li><Link to="/blog" className="hover:text-gold transition-colors">Blog</Link></li>
               <li><Link to="/faq" className="hover:text-gold transition-colors">FAQ</Link></li>
             </ul>
