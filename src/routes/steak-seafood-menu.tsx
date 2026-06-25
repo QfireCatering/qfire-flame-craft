@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import steakhouseBackyard from "@/assets/steakhouse-backyard.png.asset.json";
+import bourbonSteakTips from "@/assets/dishes/bourbon-glazed-steak-tips.png.asset.json";
 import { PageHero, CTASection, SectionShell } from "@/components/site/Sections";
 
 import antipastoKabob from "@/assets/dishes/antipasto-kabob.jpg";
@@ -68,6 +69,7 @@ const warm: Dish[] = [
   { name: "Sausage-Filled Mushroom Caps", body: "Italian mushroom caps filled with pork sausage.", img: sausageMushroom },
   { name: "Bacon-Wrapped Scallops", body: "Apple-wood smoked bacon wrapped around a lightly grilled scallop.", img: baconScallops },
   { name: "Smoked Beef Tenderloin Crostini", body: "With goat cheese and house pesto.", img: tenderloinCrostini },
+  { name: "Bourbon Glazed Steak Tips", body: "Char-grilled sirloin or tri-tip. Bourbon glaze. Garlic butter finish.", img: bourbonSteakTips.url },
 ];
 
 const meats: Dish[] = [
