@@ -13,6 +13,7 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Nav } from "../components/site/Nav";
 import { Footer } from "../components/site/Footer";
+import { StickyMobileCTA } from "../components/site/StickyMobileCTA";
 
 function NotFoundComponent() {
   return (
@@ -157,10 +158,11 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       <Nav />
-      <main className="min-h-screen">
+      <main className="min-h-screen pb-20 md:pb-0">
         <Outlet />
       </main>
       <Footer />
+      <StickyMobileCTA />
     </QueryClientProvider>
   );
 }
