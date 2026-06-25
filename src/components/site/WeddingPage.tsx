@@ -48,7 +48,7 @@ export interface WeddingRegionConfig {
 const baseFaqs = [
   {
     q: "How much does luxury wedding catering cost?",
-    a: "Most full-service Qfire weddings land between $95 and $185 per guest depending on protein selection (BBQ vs. steakhouse vs. surf & turf), service style, bar package, rentals, and staffing. Every proposal is itemized — no hidden fees, no surprise gratuities.",
+    a: "Most full-service Qfire weddings land between $95 and $185 per guest depending on protein selection (Wood-Fire vs. steakhouse vs. surf & turf), service style, bar package, rentals, and staffing. Every proposal is itemized — no hidden fees, no surprise gratuities.",
   },
   {
     q: "Can our wedding menu be fully customized?",
@@ -231,7 +231,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
     url: path,
     telephone: "+1-602-555-0123",
     priceRange: "$$$",
-    servesCuisine: ["BBQ", "Steakhouse", "American", "Wedding Catering"],
+    servesCuisine: ["Wood-Fire", "Steakhouse", "American", "Wedding Catering"],
     areaServed: cities.map((c) => ({ "@type": "City", name: c })),
     aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "247" },
   };
@@ -535,14 +535,14 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         <div className="container-luxe">
           <div className="max-w-2xl mb-14">
             <div className="eyebrow mb-6">Menu Options</div>
-            <h2 className="heading-lg text-bone">Wood-fired BBQ. Premium steakhouse. Surf & turf.</h2>
+            <h2 className="heading-lg text-bone">Wood-fired Wood-Fire. Premium steakhouse. Surf & turf.</h2>
             <p className="mt-6 text-bone/70 text-lg leading-relaxed font-light">
               Whatever you serve at your {regionShort} wedding, it comes off our live-fire grill.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-1">
             {[
-              { img: platter, title: "BBQ Catering", body: "Brisket, ribs, pulled pork, smoked chicken, sausage, all the sides.", to: "/menus" },
+              { img: platter, title: "Wood-Fire Catering", body: "Brisket, ribs, pulled pork, smoked chicken, sausage, all the sides.", to: "/menus" },
               { img: steakMenu, title: "Steakhouse", body: "Ribeye, NY strip, filet, picanha, prime rib, salmon, surf & turf.", to: "/steak-seafood-menu" },
               { img: platter1, title: "Carving Stations", body: "Chef-attended live carving — picanha, brisket, prime rib, lamb.", to: "/menus" },
             ].map((m) => (

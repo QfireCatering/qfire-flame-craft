@@ -30,7 +30,7 @@ export const Route = createFileRoute("/wedding-catering-san-diego")({
       { property: "og:description", content: "Luxury wedding catering across San Diego County — La Jolla, Del Mar, Carlsbad, Rancho Santa Fe, Coronado. Live charcoal grilling, premium steaks, professional staff." },
       { property: "og:url", content: "/wedding-catering-san-diego" },
       { property: "og:type", content: "website" },
-      { name: "keywords", content: "San Diego wedding catering, La Jolla wedding caterer, Del Mar wedding catering, Carlsbad wedding caterer, Rancho Santa Fe wedding catering, Coronado wedding caterer, Encinitas wedding catering, BBQ wedding catering San Diego, steakhouse wedding catering La Jolla, luxury wedding catering San Diego County" },
+      { name: "keywords", content: "San Diego wedding catering, La Jolla wedding caterer, Del Mar wedding catering, Carlsbad wedding caterer, Rancho Santa Fe wedding catering, Coronado wedding caterer, Encinitas wedding catering, Wood-Fire wedding catering San Diego, steakhouse wedding catering La Jolla, luxury wedding catering San Diego County" },
     ],
     links: [{ rel: "canonical", href: "/wedding-catering-san-diego" }],
   }),

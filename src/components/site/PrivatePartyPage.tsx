@@ -37,8 +37,8 @@ export interface PrivatePartyRegionConfig {
 }
 
 const baseFaqs = [
-  { q: "How much does private party catering cost?", a: "Most Qfire private parties land between $48 and $165 per guest depending on menu (BBQ buffet vs. plated steakhouse vs. surf & turf), staffing, live-fire grilling, bar service, and rentals. Every proposal is fully itemized — no hidden fees, no surprise gratuity tricks." },
-  { q: "Can I customize my menu?", a: "Yes — completely. Chef Terry designs every menu around your guests, your dietary needs, your budget, and the vibe you want. BBQ, steakhouse, surf & turf, taco bar, brunch, late-night bites — you choose, we build." },
+  { q: "How much does private party catering cost?", a: "Most Qfire private parties land between $48 and $165 per guest depending on menu (Wood-Fire buffet vs. plated steakhouse vs. surf & turf), staffing, live-fire grilling, bar service, and rentals. Every proposal is fully itemized — no hidden fees, no surprise gratuity tricks." },
+  { q: "Can I customize my menu?", a: "Yes — completely. Chef Terry designs every menu around your guests, your dietary needs, your budget, and the vibe you want. Wood-Fire, steakhouse, surf & turf, taco bar, brunch, late-night bites — you choose, we build." },
   { q: "Do you grill onsite?", a: "Yes. Live charcoal grilling is our signature. We bring the wood-fired grill to your backyard, pool deck, estate, park, rooftop, or rental venue and cook fresh steaks, brisket, chicken, salmon, and burgers right in front of your guests." },
   { q: "Do you travel?", a: "Yes. We cater private parties across the entire region — backyards, private homes, estates, rented venues, parks, and vacation rentals. Travel fees only apply for events well outside our standard service area." },
   { q: "Can you accommodate dietary restrictions?", a: "Always. Vegetarian, vegan, gluten-free, dairy-free, kosher-style, and halal-friendly options are standard. For nut and shellfish allergies we run a dedicated prep line and clearly label every dish." },
@@ -104,14 +104,14 @@ const serviceStyles = [
 const timelineSteps = [
   { n: "01", title: "Request Your Quote", body: "Send your date, headcount, and party vibe — takes about 90 seconds." },
   { n: "02", title: "We'll Contact You Personally", body: "A real person — not a chatbot — calls or emails within 24 hours." },
-  { n: "03", title: "Customize Your Menu", body: "BBQ, steakhouse, surf & turf, bar program — designed around your party." },
+  { n: "03", title: "Customize Your Menu", body: "Wood-Fire, steakhouse, surf & turf, bar program — designed around your party." },
   { n: "04", title: "Reserve Your Date", body: "35% Date Charge holds the date and the team — applied to your final invoice." },
   { n: "05", title: "Finalize Guest Count Later", body: "Headcount and menu adjustments lock 7–14 days before your party." },
   { n: "06", title: "Enjoy Your Party", body: "Setup, service, live-fire grilling, bar, breakdown — handled. You just host." },
 ];
 
 const menuOptions = [
-  "BBQ Catering", "Steakhouse Catering", "Surf & Turf", "Live Charcoal Grilling", "Carving Stations",
+  "Wood-Fire Catering", "Steakhouse Catering", "Surf & Turf", "Live Charcoal Grilling", "Carving Stations",
   "Taco & Street-Food Bars", "Brunch Catering", "Dinner Catering", "Passed Hors d'oeuvres",
   "Dessert & Coffee Service", "Vegetarian Menus", "Vegan Menus", "Gluten-Free & Allergy Menus",
   "Premium Steaks & Prime Rib", "Smoked Brisket & Ribs", "Grazing & Charcuterie Displays",
@@ -137,7 +137,7 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
     url: path,
     telephone: "+1-602-555-0123",
     priceRange: "$$$",
-    servesCuisine: ["BBQ", "Steakhouse", "American", "Private Party Catering", "Backyard Catering"],
+    servesCuisine: ["Wood-Fire", "Steakhouse", "American", "Private Party Catering", "Backyard Catering"],
     areaServed: cities.map((c) => ({ "@type": "City", name: c })),
     aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "247" },
   };
@@ -196,7 +196,7 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
               Private party catering <span className="italic text-gold font-light">guests talk about for years.</span>
             </h1>
             <p className="mt-8 text-xl md:text-2xl text-bone/85 font-light leading-relaxed max-w-2xl">
-              Restaurant-quality catering for birthdays, backyard parties, anniversaries, graduations, and private celebrations across {region} — with live charcoal grilling, premium steaks, authentic BBQ, and professional service.
+              Restaurant-quality catering for birthdays, backyard parties, anniversaries, graduations, and private celebrations across {region} — with live charcoal grilling, premium steaks, authentic Wood-Fire, and professional service.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <Link to="/quote" className="btn-primary">Get My Quote <ArrowRight className="size-4" /></Link>
@@ -357,18 +357,18 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
         </div>
       </section>
 
-      {/* BBQ + STEAKHOUSE EXPERIENCE */}
+      {/* Wood-Fire + STEAKHOUSE EXPERIENCE */}
       <section className="py-24 lg:py-32">
         <div className="container-luxe grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="order-2 lg:order-1">
-            <div className="eyebrow mb-6">BBQ + Steakhouse Experience</div>
+            <div className="eyebrow mb-6">Wood-Fire + Steakhouse Experience</div>
             <h2 className="heading-lg text-bone">Most caterers offer one style. We bring both.</h2>
             <div className="mt-8 space-y-5 text-bone/80 text-lg font-light leading-relaxed">
-              <p>Qfire is the rare caterer that fluently speaks both languages — authentic, slow-smoked BBQ and a true steakhouse experience. Charcoal-grilled ribeye, NY strip, filet mignon, picanha, prime rib, salmon, surf & turf alongside brisket, ribs, pulled pork, and smoked chicken.</p>
+              <p>Qfire is the rare caterer that fluently speaks both languages — authentic, slow-smoked Wood-Fire and a true steakhouse experience. Charcoal-grilled ribeye, NY strip, filet mignon, picanha, prime rib, salmon, surf & turf alongside brisket, ribs, pulled pork, and smoked chicken.</p>
               <p>That gives you more flexibility, more creativity in your menu, and the ability to design a party that doesn't feel like every other catered event in {region}.</p>
             </div>
             <div className="mt-10 flex flex-wrap gap-4">
-              <Link to="/menus" className="btn-ghost">View BBQ Menu</Link>
+              <Link to="/menus" className="btn-ghost">View Wood-Fire Menu</Link>
               <Link to="/steak-seafood-menu" className="btn-ghost">View Steakhouse Menu</Link>
             </div>
           </div>
@@ -438,14 +438,14 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
         <div className="container-luxe">
           <div className="max-w-2xl mb-14">
             <div className="eyebrow mb-6">Private Party Menu Options</div>
-            <h2 className="heading-lg text-bone">Wood-fired BBQ. Premium steakhouse. Built around your party.</h2>
+            <h2 className="heading-lg text-bone">Wood-fired Wood-Fire. Premium steakhouse. Built around your party.</h2>
             <p className="mt-6 text-bone/70 text-lg leading-relaxed font-light">
               Whatever your {regionShort} guests love — it comes off our live-fire grill or our scratch kitchen.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-1">
             {[
-              { img: platter, title: "BBQ Catering", body: "Brisket, ribs, pulled pork, smoked chicken, sausage, all the sides.", to: "/menus" },
+              { img: platter, title: "Wood-Fire Catering", body: "Brisket, ribs, pulled pork, smoked chicken, sausage, all the sides.", to: "/menus" },
               { img: steakMenu, title: "Steakhouse", body: "Ribeye, NY strip, filet, picanha, prime rib, salmon, surf & turf.", to: "/steak-seafood-menu" },
               { img: platter1, title: "Carving Stations", body: "Chef-attended live carving — picanha, brisket, prime rib, lamb.", to: "/menus" },
             ].map((m) => (

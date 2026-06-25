@@ -31,7 +31,7 @@ function PrivatePartyChooser() {
               The party caterer <span className="italic text-gold font-light">guests talk about for years.</span>
             </h1>
             <p className="mt-8 text-xl md:text-2xl text-bone/85 font-light leading-relaxed max-w-2xl">
-              Live charcoal grilling, premium steakhouse plates, authentic BBQ, full-service hosting. Choose your region to get started.
+              Live charcoal grilling, premium steakhouse plates, authentic Wood-Fire, full-service hosting. Choose your region to get started.
             </p>
           </div>
         </div>
