@@ -49,7 +49,7 @@ function PrivatePartyChooser() {
               { to: "/private-party-catering-san-diego", title: "San Diego County", img: sanDiegoAsset.url, body: "La Jolla · Del Mar · Carlsbad · Encinitas · Rancho Santa Fe · Coronado · Poway · Oceanside · Pacific Beach · all of San Diego County." },
             ].map((r) => (
               <Link key={r.to} to={r.to} className="group relative aspect-[4/5] overflow-hidden block border border-gold/20 hover:border-gold transition-colors">
-                <img src={r.img} alt={`${r.title} private party catering`} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" style={{ objectPosition: r.title.includes("San Diego") ? "85% center" : "center" }} />
+                <img src={r.img} alt={`${r.title} private party catering`} className={`absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 ${r.title.includes("San Diego") ? "sd-card-img" : ""}`} />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/60 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-10">
                   <div className="eyebrow text-gold mb-3">Private Party Catering</div>
