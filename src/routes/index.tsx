@@ -123,7 +123,7 @@ function Home() {
                   className={`absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 ${r.key === "san-diego" ? "" : ""}`}
                   style={r.key === "san-diego" ? { objectPosition: "65% center" } : undefined} />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/60 to-transparent" />
-                <div className={`absolute bottom-0 left-0 right-0 p-10 ${r.key === "san-diego" ? "text-right" : ""}`}>
+                <div className="absolute bottom-0 left-0 right-0 p-10">
                   <div className="eyebrow text-gold mb-3">Catering Region</div>
                   <h3 className="font-display text-4xl md:text-5xl text-bone">{r.name}</h3>
                   <p className="mt-4 text-bone/80 font-light">{r.cities}</p>
