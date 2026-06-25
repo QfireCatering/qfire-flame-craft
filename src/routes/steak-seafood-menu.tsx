@@ -24,7 +24,7 @@ import beefTenderloinAsset from "@/assets/dishes/beef-tenderloin.png.asset.json"
 import filetMignonAsset from "@/assets/dishes/filet-mignon.png.asset.json";
 import topSirloinAsset from "@/assets/dishes/top-sirloin.png.asset.json";
 import primeRibAsset from "@/assets/dishes/prime-rib-roast.png.asset.json";
-import triTipImg from "@/assets/dishes/tri-tip.jpg";
+import triTipImg from "@/assets/dishes/tri-tip.png.asset.json";
 import mahiMahiAsset from "@/assets/dishes/mahi-mahi.png.asset.json";
 const mahiMahiImg = mahiMahiAsset.url;
 import snapperAsset from "@/assets/dishes/snapper.png.asset.json";
@@ -47,7 +47,7 @@ import greenBeansAsset from "@/assets/dishes/green-beans.png.asset.json";
 const greenBeansImg = greenBeansAsset.url;
 import grilledAsparagusAsset from "@/assets/dishes/grilled-asparagus.png.asset.json";
 const grilledAsparagusImg = grilledAsparagusAsset.url;
-import squashZucchiniImg from "@/assets/dishes/squash-zucchini.jpg";
+import squashZucchiniImg from "@/assets/dishes/squash-zucchini.png.asset.json";
 import grilledCornImg from "@/assets/dishes/grilled-corn.jpg";
 import roastedBroccoliAsset from "@/assets/dishes/roasted-broccoli.png.asset.json";
 const roastedBroccoliImg = roastedBroccoliAsset.url;
@@ -101,7 +101,7 @@ const meats: Dish[] = [
   { name: "Filet Mignon", body: "Premium tenderloin cut, buttery and delicate.", note: "+ $10/steak", img: filetMignonAsset.url },
   { name: "Top Sirloin (10 oz) — also known as Picanha", body: "Lean, flavorful, tender, with a rich beefy taste.", img: topSirloinAsset.url },
   { name: "Smoked Prime Rib Roast", body: "Slow-smoked to perfection. Smoky crust, perfectly pink center, deep savory flavor.", img: primeRibAsset.url },
-  { name: "Beef Tri-Tip", body: "Triangular cut from the bottom sirloin. Savory crust, juicy interior, robust beefy flavor.", img: triTipImg },
+  { name: "Beef Tri-Tip", body: "Triangular cut from the bottom sirloin. Savory crust, juicy interior, robust beefy flavor.", img: triTipImg.url },
   { name: "Grilled Mahi Mahi (8 oz)", body: "Firm, mild-flavored fish with a slightly sweet taste and flaky texture.", img: mahiMahiImg },
   { name: "Grilled Snapper (8 oz)", body: "Mild, slightly sweet, firm flaky white flesh.", img: snapperImg },
   { name: "Lobster Tails", body: "8 oz of rich, slightly sweet, succulent and buttery lobster.", note: "+ $20/serving", img: lobsterImg },
@@ -116,7 +116,7 @@ const sides: Dish[] = [
   { name: "Baked Potato", body: "Bacon, cheddar, sour cream, chives.", img: bakedPotatoImg },
   { name: "Fresh Whole Green Beans", body: "No can here.", img: greenBeansImg },
   { name: "Grilled Asparagus", body: "Lightly seasoned, brushed with natural butter, grilled to perfection.", img: grilledAsparagusImg },
-  { name: "Grilled Squash & Zucchini", body: "Vegetable crunch with char from the grill.", img: squashZucchiniImg },
+  { name: "Grilled Squash & Zucchini", body: "Vegetable crunch with char from the grill.", img: squashZucchiniImg.url },
   { name: "Grilled Sweet Corn", body: "Steamed, then grilled on-site.", img: grilledCornImg },
   { name: "Roasted Broccoli", body: "A steakhouse staple.", img: roastedBroccoliImg },
   { name: "Macaroni & Cheese", body: "A meal within itself.", img: macCheeseImg },
