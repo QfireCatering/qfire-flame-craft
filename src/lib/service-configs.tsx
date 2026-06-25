@@ -12,9 +12,15 @@ const corporate = corporateAsset.url;
 import privateParty from "@/assets/private-party.jpg";
 import privatePartyHeroAsset from "@/assets/private-parties-hero.png.asset.json";
 const privatePartyHero = privatePartyHeroAsset.url;
+import weddingRealAsset from "@/assets/wedding-real.jpg.asset.json";
+const weddingReal = weddingRealAsset.url;
+import corporateRealAsset from "@/assets/corporate-real.jpg.asset.json";
+const corporateReal = corporateRealAsset.url;
+import privateRealAsset from "@/assets/private-real.jpg.asset.json";
+const privateReal = privateRealAsset.url;
 import type { ServicePageConfig } from "@/components/site/ServicePage";
 
-const galleryAll = [weddingTable, brisket, steak, buffet, heroFire, corporate, privateParty, weddingTable];
+const galleryAll = [weddingReal, brisket, steak, buffet, heroFire, corporateReal, privateReal, weddingTable];
 
 export interface ServiceTemplateOptions {
   region?: string;       // e.g. "Phoenix Metro" or undefined
