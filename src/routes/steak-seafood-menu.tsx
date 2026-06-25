@@ -209,9 +209,9 @@ function SteakSeafoodMenuPage() {
   return (
     <>
       <PageHero
-        eyebrow="Steakhouse Catering"
+        eyebrow="Steakhouse Catering — Phoenix Metro"
         title="The Steak & Seafood Menu"
-        subtitle="A five-course steakhouse experience — cold starter, warm hors d'oeuvre, your choice of premium steaks and seafood, sides, dessert and drinks. Grilled live at your event."
+        subtitle="A five-course steakhouse experience — cold starter, warm hors d'oeuvre, your choice of premium steaks and seafood, sides, dessert and drinks. Grilled live at your Phoenix Metro event."
         image={steakhouseBackyard.url}
       >
         <Link to="/quote" className="btn-primary">Request Your Quote <ArrowRight className="size-4" /></Link>
