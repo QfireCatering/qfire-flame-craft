@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowUpRight } from "lucide-react";
-import phoenixAsset from "@/assets/phoenix.png.asset.json";
+import phoenixAsset from "@/assets/az-metro.png.asset.json";
 import sanDiegoAsset from "@/assets/san-diego.png.asset.json";
 const phoenix = phoenixAsset.url;
 const sanDiego = sanDiegoAsset.url;
