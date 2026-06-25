@@ -213,6 +213,7 @@ function SteakSeafoodMenuSanDiegoPage() {
         title={<>The San Diego County<br />Steak & Seafood Menu</>}
         subtitle="A five-course steakhouse experience — cold starter, warm hors d'oeuvre, your choice of premium steaks and seafood, sides, dessert and drinks. Grilled live at your San Diego County event."
         image={sanDiegoHeroBg.url}
+        regionKey="san-diego"
       >
         <div className="w-full flex flex-col items-start gap-6">
           <div className="inline-flex items-center gap-3 px-5 py-2.5 border-2 border-gold/60 bg-gold/5">

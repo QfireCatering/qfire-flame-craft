@@ -46,6 +46,7 @@ export function PageHero({
         </div>
       </section>
       {regionKey === "phoenix" && <PhoenixPricingBanner />}
+      {regionKey === "san-diego" && <SanDiegoPricingBanner />}
     </>
   );
 }
