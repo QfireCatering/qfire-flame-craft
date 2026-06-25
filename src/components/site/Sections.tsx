@@ -1,4 +1,4 @@
-import type { ReactNode, CSSProperties } from "react";
+import type { ReactNode } from "react";
 import { Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 
@@ -7,16 +7,12 @@ export function PageHero({
   title,
   subtitle,
   image,
-  imageClassName,
-  imageStyle,
   children,
 }: {
   eyebrow?: string;
   title: ReactNode;
   subtitle?: ReactNode;
   image: string;
-  imageClassName?: string;
-  imageStyle?: CSSProperties;
   children?: ReactNode;
 }) {
   return (
@@ -25,8 +21,7 @@ export function PageHero({
         <img
           src={image}
           alt=""
-          className={`absolute inset-0 w-full h-full object-cover slow-zoom ${imageClassName ?? ""}`}
-          style={imageStyle}
+          className="absolute inset-0 w-full h-full object-cover slow-zoom"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/70 to-ink/20" />
         <div className="absolute inset-0 bg-gradient-to-r from-ink/80 via-transparent to-transparent" />

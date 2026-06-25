@@ -171,9 +171,8 @@ function DishCard({ d }: { d: Dish }) {
           width={1024}
           height={1024}
           className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105"
-          style={{ filter: "brightness(1.15) contrast(1.1) saturate(1.1)" }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-ink/50 via-ink/5 to-transparent pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/10 to-transparent pointer-events-none" />
       </div>
       <div className="p-6 lg:p-7">
         <div className="flex items-baseline justify-between gap-3">
@@ -217,7 +216,6 @@ function SteakSeafoodMenuPage() {
         title={<>The Phoenix Metro<br />Steak & Seafood Menu</>}
         subtitle="A five-course steakhouse experience — cold starter, warm hors d'oeuvre, your choice of premium steaks and seafood, sides, dessert and drinks. Grilled live at your Phoenix Metro event."
         image={phoenixHeroBg.url}
-        imageStyle={{ filter: "brightness(1.15) contrast(1.1) saturate(1.1)" }}
       >
         <div className="w-full flex flex-col items-start gap-6">
           <div className="inline-flex items-center gap-3 px-5 py-2.5 border-2 border-gold/60 bg-gold/5">
@@ -438,7 +436,7 @@ function SteakSeafoodMenuPage() {
             <p className="mt-5 text-bone/65 leading-relaxed">Refreshing non-alcoholic options served from elegant dispensers at your Phoenix Metro event. Full bar and bartending service available as an add-on.</p>
           </div>
           <div className="mb-10 overflow-hidden border border-white/5">
-            <img src={drinkChoiceImg} alt="Refreshing non-alcoholic beverage selections" loading="lazy" className="w-full h-64 lg:h-96 object-cover" style={{ filter: "brightness(1.15) contrast(1.1) saturate(1.1)" }} />
+            <img src={drinkChoiceImg} alt="Refreshing non-alcoholic beverage selections" loading="lazy" className="w-full h-64 lg:h-96 object-cover" />
           </div>
           <ul className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-white/5 border border-white/5">
             {drinks.map((name) => (
