@@ -43,7 +43,7 @@ function LocationsPage() {
           {regions.map((r) => (
             <Link key={r.key} to={r.href} className="group relative block aspect-[4/3] overflow-hidden border border-white/5">
               <img src={r.img} alt={r.name} loading="lazy" width={1600} height={1100}
-                className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-[1500ms] group-hover:scale-105" />
+                className="absolute inset-0 w-full h-full object-cover object-[center_55%] transition-transform duration-[1500ms] group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent" />
               <div className="absolute inset-0 p-8 lg:p-10 flex flex-col justify-end">
                 <div className="text-[0.65rem] tracking-[0.35em] uppercase text-gold mb-4">{r.state}</div>
