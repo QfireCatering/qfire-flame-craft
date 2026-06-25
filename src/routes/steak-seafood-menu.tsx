@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import steakhouseBackyard from "@/assets/steakhouse-backyard.png.asset.json";
+import phoenixHeroBg from "@/assets/phoenix-hero-bg.png.asset.json";
 import bourbonSteakTips from "@/assets/dishes/bourbon-glazed-steak-tips.png.asset.json";
 import { PageHero, CTASection, SectionShell } from "@/components/site/Sections";
 
