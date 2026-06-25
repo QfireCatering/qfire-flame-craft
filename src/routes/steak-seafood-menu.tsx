@@ -217,24 +217,147 @@ function SteakSeafoodMenuPage() {
         <a href="#menu" className="btn-ghost">View the Menu</a>
       </PageHero>
 
-      <SectionShell
-        eyebrow="How It Works"
-        title="Per-guest, all-inclusive, brought to you."
-        intro="Every Qfire steak & seafood event is priced per guest and includes the full five-course menu, live on-site grilling by Chef Terry's team, and white-glove service from setup to breakdown. China, glassware and bar service available as add-ons."
-      >
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-7">
-          {upcharges.map((u) => (
-            <div key={u.t} className="bg-ink/60 border border-white/5 p-8">
-              <div className="text-[0.65rem] tracking-[0.3em] uppercase text-gold mb-4">{u.price}</div>
-              <h3 className="font-display text-bone text-xl mb-3">{u.t}</h3>
-              <p className="text-sm text-bone/65 leading-relaxed">{u.b}</p>
-            </div>
-          ))}
+      <section className="py-20 lg:py-28 border-t border-white/5">
+        <div className="container-luxe max-w-4xl">
+          <p className="eyebrow mb-5">The Experience</p>
+          <h2 className="heading-lg text-bone mb-6">The Surf & Turf Steakhouse Experience</h2>
+          <p className="text-xl lg:text-2xl text-bone/80 font-display leading-relaxed mb-8">
+            More Than Catering. A Private Steakhouse Experience Created Exclusively for Your Guests.
+          </p>
+          <div className="space-y-6 text-bone/70 text-base lg:text-lg leading-relaxed">
+            <p>If you're looking for something beyond the traditional buffet, this is where our clients naturally gravitate.</p>
+            <p>Our Surf & Turf Steakhouse Experience combines the energy of live-fire cooking with the elegance of fine dining—bringing the atmosphere of an upscale steakhouse directly to your wedding, corporate event, or private celebration.</p>
+            <p>This isn't just dinner. It's the experience your guests will remember long after the last bite.</p>
+          </div>
         </div>
-        <p className="mt-10 text-sm text-bone/55 italic">
-          Per-person pricing is built around your guest count, venue and menu selections. Request a quote for current rates — we respond within 24 hours.
-        </p>
-      </SectionShell>
+      </section>
+
+      <section className="py-20 lg:py-28 border-t border-white/5">
+        <div className="container-luxe">
+          <h3 className="heading-md text-bone mb-16 text-center">Included With Every Steakhouse Experience</h3>
+          <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
+            <div>
+              <div className="text-3xl mb-5">🔥</div>
+              <h4 className="font-display text-bone text-xl lg:text-2xl mb-4">Live Charcoal Grill Master</h4>
+              <p className="text-bone/65 leading-relaxed">Your own professional Grill Master prepares each premium selection over a live charcoal fire in front of your guests.</p>
+              <p className="text-bone/65 leading-relaxed mt-3">The aroma, the sound of the sizzling steaks, and the visual presentation become part of the entertainment—creating an interactive dining experience that simply can't be duplicated in a traditional kitchen.</p>
+            </div>
+            <div>
+              <div className="text-3xl mb-5">🍽</div>
+              <h4 className="font-display text-bone text-xl lg:text-2xl mb-4">Luxury Tableware & Elegant Presentation</h4>
+              <p className="text-bone/65 leading-relaxed mb-3">Every detail has been thoughtfully selected to create a refined dining atmosphere.</p>
+              <p className="text-bone/65 leading-relaxed mb-3">Included:</p>
+              <ul className="space-y-2 text-bone/65">
+                <li>• Premium four-piece dinnerware</li>
+                <li>• Polished silver flatware</li>
+                <li>• Cloth napkins</li>
+                <li>• Elegant glassware</li>
+                <li>• Professional buffet décor and presentation</li>
+              </ul>
+              <p className="text-bone/65 leading-relaxed mt-3">Everything arrives beautifully coordinated so your event feels polished, sophisticated, and effortlessly upscale.</p>
+            </div>
+            <div>
+              <div className="text-3xl mb-5">🥩</div>
+              <h4 className="font-display text-bone text-xl lg:text-2xl mb-4">Your Guests Will Enjoy</h4>
+              <div className="space-y-5 text-bone/65 leading-relaxed">
+                <div>
+                  <p className="font-display text-bone text-lg mb-1">Chilled Starter</p>
+                  <p>Begin the evening with a refreshing gourmet appetizer designed to welcome guests as they mingle and settle into the celebration.</p>
+                </div>
+                <div>
+                  <p className="font-display text-bone text-lg mb-1">Chef-Crafted Hot Appetizer</p>
+                  <p>A warm, handcrafted appetizer served fresh to build anticipation and set the tone for an unforgettable dining experience.</p>
+                </div>
+                <div>
+                  <p className="font-display text-bone text-lg mb-1">Signature Surf & Turf Entrée</p>
+                  <p>Indulge in three premium proteins expertly prepared over live charcoal alongside three carefully selected gourmet sides designed to complement every bite.</p>
+                  <p className="mt-2">Every plate is crafted to deliver the flavor, presentation, and quality you'd expect from a high-end steakhouse.</p>
+                </div>
+                <div>
+                  <p className="font-display text-bone text-lg mb-1">Gourmet Desserts</p>
+                  <p>Choose two handcrafted desserts from our premium collection—the perfect ending to an unforgettable meal and the course guests almost always come back for.</p>
+                </div>
+                <div>
+                  <p className="font-display text-bone text-lg mb-1">Premium Beverage Service</p>
+                  <p>Two refreshing non-alcoholic beverage selections are professionally presented, continuously stocked, and refreshed throughout dinner so your guests never have to wait.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 lg:py-28 border-t border-white/5">
+        <div className="container-luxe">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <div className="text-3xl mb-5">✨</div>
+            <h3 className="heading-md text-bone mb-4">Choose the Dining Experience That Fits Your Event</h3>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
+            <div className="bg-ink/60 border border-white/5 p-8 lg:p-10 flex flex-col">
+              <div className="text-[0.65rem] tracking-[0.3em] uppercase text-gold mb-6">Buffet Style</div>
+              <div className="font-display text-bone text-4xl lg:text-5xl mb-2">$74</div>
+              <div className="text-bone/50 text-sm mb-8">per guest</div>
+              <h4 className="font-display text-bone text-xl mb-3">Full-Service Buffet Experience</h4>
+              <p className="text-bone/65 leading-relaxed mb-6 flex-1">Elegant. Efficient. Crowd favorite. Guests enjoy the freedom to choose exactly what they want while our professional team manages every detail—from setup and presentation to replenishment and cleanup.</p>
+              <p className="text-sm text-bone/50">Perfect for couples and hosts who want an upscale experience with excellent guest flow.</p>
+            </div>
+            <div className="bg-ink/60 border border-white/5 p-8 lg:p-10 flex flex-col">
+              <div className="text-[0.65rem] tracking-[0.3em] uppercase text-gold mb-6">Family Style</div>
+              <div className="font-display text-bone text-4xl lg:text-5xl mb-2">$89</div>
+              <div className="text-bone/50 text-sm mb-8">per guest</div>
+              <h4 className="font-display text-bone text-xl mb-3">Family-Style Experience</h4>
+              <p className="text-bone/65 leading-relaxed mb-6 flex-1">Warm. Interactive. Memorable. Beautiful serving platters are placed directly on each table, encouraging conversation, connection, and a shared dining experience reminiscent of an upscale family-owned steakhouse.</p>
+              <p className="text-sm text-bone/50">Ideal for guests who enjoy lingering around the table together.</p>
+            </div>
+            <div className="bg-ink/60 border border-gold/30 p-8 lg:p-10 flex flex-col relative">
+              <div className="absolute top-0 right-0 bg-gold text-ink text-[0.6rem] tracking-[0.2em] uppercase px-3 py-1.5 font-semibold">Most Premium</div>
+              <div className="text-[0.65rem] tracking-[0.3em] uppercase text-gold mb-6">Plated Service</div>
+              <div className="font-display text-bone text-4xl lg:text-5xl mb-2">$128</div>
+              <div className="text-bone/50 text-sm mb-8">per guest</div>
+              <h4 className="font-display text-bone text-xl mb-3">Plated Steakhouse Service</h4>
+              <p className="text-bone/65 leading-relaxed mb-6 flex-1">Our most luxurious dining experience. Each course is individually plated and professionally served to every guest with restaurant-style precision.</p>
+              <p className="text-sm text-bone/50">Designed for black-tie weddings, luxury receptions, executive dinners, and events where every detail matters.</p>
+              <p className="text-sm text-bone/50 mt-3">For hosts who want their guests to feel like they've just dined at one of the finest steakhouses in the country—without ever leaving the venue.</p>
+            </div>
+          </div>
+          <p className="mt-10 text-sm text-bone/55 italic text-center">
+            Per-person pricing is built around your guest count, venue and menu selections. Request a quote for current rates — we respond within 24 hours.
+          </p>
+        </div>
+      </section>
+
+      <section className="py-20 lg:py-28 border-t border-white/5">
+        <div className="container-luxe max-w-4xl">
+          <h3 className="heading-md text-bone mb-10 text-center">Why Clients Choose This Experience</h3>
+          <div className="grid sm:grid-cols-2 gap-x-12 gap-y-5 text-bone/70">
+            <div className="flex items-start gap-3">
+              <span className="text-gold mt-1">✔</span>
+              <span>Live charcoal grilling performed in front of your guests</span>
+            </div>
+            <div className="flex items-start gap-3">
+              <span className="text-gold mt-1">✔</span>
+              <span>Premium steakhouse-quality ingredients</span>
+            </div>
+            <div className="flex items-start gap-3">
+              <span className="text-gold mt-1">✔</span>
+              <span>Restaurant-level presentation and service</span>
+            </div>
+            <div className="flex items-start gap-3">
+              <span className="text-gold mt-1">✔</span>
+              <span>Luxury dinnerware, linens, and glassware included</span>
+            </div>
+            <div className="flex items-start gap-3">
+              <span className="text-gold mt-1">✔</span>
+              <span>Experienced culinary and service professionals</span>
+            </div>
+            <div className="flex items-start gap-3">
+              <span className="text-gold mt-1">✔</span>
+              <span>An unforgettable dining experience that becomes part of the celebration—not just the meal</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <div id="menu" />
 
