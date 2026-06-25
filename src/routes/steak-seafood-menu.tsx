@@ -414,7 +414,10 @@ function SteakSeafoodMenuPage() {
           </div>
           <ul className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-white/5 border border-white/5">
             {drinks.map((name) => (
-              <li key={name} className="bg-ink p-6 lg:p-7 text-center">
+              <li
+                key={name}
+                className="bg-ink p-6 lg:p-7 text-center transition-all duration-300 ease-out hover:scale-105 hover:border-gold/40 hover:bg-gold/5 border border-transparent cursor-default"
+              >
                 <span className="font-display text-bone text-lg lg:text-xl">{name}</span>
               </li>
             ))}
