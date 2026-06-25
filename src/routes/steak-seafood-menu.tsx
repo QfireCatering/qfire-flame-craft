@@ -12,7 +12,7 @@ import houseSalad from "@/assets/dishes/house-salad.jpg";
 import fruitVeggie from "@/assets/dishes/fruit-veggie-platter.png.asset.json";
 import bruschetta from "@/assets/dishes/bruschetta.jpg";
 import teriyakiSkewer from "@/assets/dishes/teriyaki-chicken-skewer.jpg";
-import shrimpSkewers from "@/assets/dishes/grilled-shrimp-skewers.jpg";
+import shrimpSkewers from "@/assets/dishes/grilled-shrimp.png.asset.json";
 import sausageMushroom from "@/assets/dishes/sausage-mushroom-caps.jpg";
 import baconScallops from "@/assets/dishes/bacon-wrapped-scallops.png.asset.json";
 import tenderloinCrostini from "@/assets/dishes/tenderloin-crostini.png.asset.json";
@@ -67,7 +67,7 @@ const cold: Dish[] = [
 
 const warm: Dish[] = [
   { name: "Teriyaki Chicken & Pineapple Skewer", body: "Teriyaki-marinated chicken thigh with grilled pineapple chunks.", img: teriyakiSkewer },
-  { name: "Grilled Shrimp Skewers", body: "Perfectly seasoned shrimp grilled on-site.", img: shrimpSkewers },
+  { name: "Grilled Shrimp Skewers", body: "Perfectly seasoned shrimp grilled on-site.", img: shrimpSkewers.url },
   { name: "Sausage-Filled Mushroom Caps", body: "Italian mushroom caps filled with pork sausage.", img: sausageMushroom },
   { name: "Bacon-Wrapped Scallops", body: "Apple-wood smoked bacon wrapped around a lightly grilled scallop.", img: baconScallops.url },
   { name: "Smoked Beef Tenderloin Crostini", body: "With goat cheese and house pesto.", img: tenderloinCrostini.url },
@@ -78,7 +78,7 @@ const meats: Dish[] = [
   { name: "Ribeye Steak", body: "The steakhouse classic — heavily marbled, char-grilled over live fire to a crusted finish with a juicy, buttery, melt-in-your-mouth center.", img: ribeyeAsset.url },
   { name: "New York Strip", body: "Cut from the short loin. Bold, beefy flavor with a firm, satisfying bite and the perfect balance of fat and lean — a true steakhouse staple.", img: nyStripAsset.url },
   { name: "T-Bone Steak", body: "Two premium cuts on one bone — the tender filet on one side, the bold New York strip on the other. Char-grilled over live fire for the ultimate steakhouse experience.", img: tboneAsset.url },
-  { name: "Beef Tenderloin", body: "The most tender cut of beef. Buttery texture, mild flavor, luxurious.", img: beefTenderloinAsset.url },
+  { name: "Beef Tenderloin", body: "The most tender cut of beef. Buttery texture, mild flavor, luxurious.", note: "+ $5 / steak", img: beefTenderloinAsset.url },
   { name: "Filet Mignon", body: "Premium tenderloin cut, buttery and delicate.", note: "+ $10/steak", img: filetMignonAsset.url },
   { name: "Top Sirloin (10 oz) — also known as Picanha", body: "Lean, flavorful, tender, with a rich beefy taste.", img: topSirloinAsset.url },
   { name: "Smoked Prime Rib Roast", body: "Slow-smoked to perfection. Smoky crust, perfectly pink center, deep savory flavor.", img: primeRibAsset.url },
