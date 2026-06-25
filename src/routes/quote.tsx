@@ -1,14 +1,24 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, useServerFn } from "@tanstack/react-router";
 import { useState } from "react";
-import { ArrowRight, Check } from "lucide-react";
+import { ArrowRight, Check, Phone, Mail } from "lucide-react";
 import heroFire from "@/assets/hero-fire-no-person.jpg";
+import { submitLead } from "@/lib/leads.functions";
+import { contact } from "@/lib/contact";
 
 export const Route = createFileRoute("/quote")({
   head: () => ({
     meta: [
       { title: "Request a Quote — Qfire Catering" },
-      { name: "description", content: "Request a custom catering proposal from Qfire. We respond within 24 hours." },
-      { property: "og:title", content: "Request a Quote — Qfire" },
+      {
+        name: "description",
+        content:
+          "Tell us about your event. Custom catering proposal within 24 hours. Phoenix Metro & San Diego County.",
+      },
+      { property: "og:title", content: "Request a Quote — Qfire Catering" },
+      {
+        property: "og:description",
+        content: "Custom proposal within 24 hours. Wood-fired BBQ + steakhouse catering.",
+      },
       { property: "og:url", content: "/quote" },
     ],
     links: [{ rel: "canonical", href: "/quote" }],
@@ -17,7 +27,35 @@ export const Route = createFileRoute("/quote")({
 });
 
 function QuotePage() {
-  const [sent, setSent] = useState(false);
+  const [state, setState] = useState<"idle" | "sending" | "sent" | "error">("idle");
+  const [error, setError] = useState<string | null>(null);
+  const submit = useServerFn(submitLead);
+
+  async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setState("sending");
+    setError(null);
+    const fd = new FormData(e.currentTarget);
+    const payload = {
+      name: String(fd.get("name") ?? ""),
+      email: String(fd.get("email") ?? ""),
+      phone: String(fd.get("phone") ?? ""),
+      date: String(fd.get("date") ?? ""),
+      guests: String(fd.get("guests") ?? ""),
+      region: String(fd.get("region") ?? ""),
+      type: String(fd.get("type") ?? ""),
+      menu: String(fd.get("menu") ?? ""),
+      message: String(fd.get("message") ?? ""),
+      source: "quote",
+    };
+    try {
+      await submit({ data: payload });
+      setState("sent");
+    } catch (err) {
+      setState("error");
+      setError(err instanceof Error ? err.message : "Something went wrong. Please call us.");
+    }
+  }
 
   return (
     <div className="min-h-screen grid lg:grid-cols-[1.1fr_1fr]">
@@ -32,53 +70,101 @@ function QuotePage() {
               We answer every inquiry personally — usually within 24 hours.
             </p>
             <div className="mt-12 space-y-3 text-bone/80">
-              {["Custom proposal within 24 hours", "Free phone consultation", "Tastings for booked clients"].map(t => (
-                <div key={t} className="flex items-center gap-3"><Check className="size-4 text-gold" /> {t}</div>
+              {[
+                "Custom proposal within 24 hours",
+                "Free phone consultation",
+                "Tastings for booked clients",
+              ].map((t) => (
+                <div key={t} className="flex items-center gap-3">
+                  <Check className="size-4 text-gold" /> {t}
+                </div>
               ))}
+            </div>
+            <div className="mt-12 space-y-2 text-bone/70 text-sm">
+              <a href={contact.phoneHref} className="flex items-center gap-3 hover:text-gold">
+                <Phone className="size-4 text-gold" /> {contact.phone}
+              </a>
+              <a href={contact.emailHref} className="flex items-center gap-3 hover:text-gold">
+                <Mail className="size-4 text-gold" /> {contact.email}
+              </a>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="bg-ink flex items-center pt-32 lg:pt-0 pb-20 px-6 lg:px-16">
-        <div className="w-full max-w-xl mx-auto">
-          <div className="lg:hidden mb-10">
-            <div className="eyebrow mb-6">Request a Quote</div>
-            <h1 className="heading-lg text-bone">Tell us about your event.</h1>
-          </div>
-
-          {sent ? (
+      <div className="flex items-center justify-center p-8 lg:p-16 bg-ink pt-32 lg:pt-16">
+        <div className="w-full max-w-lg">
+          {state === "sent" ? (
             <div className="border border-gold/40 p-10 text-center">
               <div className="text-gold text-5xl font-display mb-4">Thank you.</div>
-              <p className="text-bone/70 text-lg">Chef Terry's team will be in touch within 24 hours.</p>
+              <p className="text-bone/70 text-lg">
+                Chef Terry's team will be in touch within 24 hours. For faster
+                response, call{" "}
+                <a href={contact.phoneHref} className="text-gold underline-offset-4 hover:underline">
+                  {contact.phone}
+                </a>
+                .
+              </p>
             </div>
           ) : (
-            <form
-              onSubmit={(e) => { e.preventDefault(); setSent(true); }}
-              className="space-y-6"
-            >
-              <Field label="Your Name" name="name" required />
+            <form onSubmit={onSubmit} className="space-y-6" noValidate>
+              <Field label="Your Name" name="name" required maxLength={120} />
               <div className="grid sm:grid-cols-2 gap-6">
-                <Field label="Email" name="email" type="email" required />
-                <Field label="Phone" name="phone" type="tel" />
+                <Field label="Email" name="email" type="email" required maxLength={255} />
+                <Field label="Phone" name="phone" type="tel" maxLength={40} />
               </div>
               <div className="grid sm:grid-cols-2 gap-6">
                 <Field label="Event Date" name="date" type="date" />
                 <Field label="Guest Count" name="guests" type="number" />
               </div>
               <div className="grid sm:grid-cols-2 gap-6">
-                <SelectField label="Region" name="region" options={["Phoenix Metro", "San Diego County", "Destination / Other"]} />
-                <SelectField label="Event Type" name="type" options={["Wedding", "Corporate", "Private Party", "Private Chef", "Other"]} />
+                <SelectField
+                  label="Region"
+                  name="region"
+                  options={["Phoenix Metro", "San Diego County", "Destination / Other"]}
+                />
+                <SelectField
+                  label="Event Type"
+                  name="type"
+                  options={["Wedding", "Corporate", "Private Party", "Private Chef", "Other"]}
+                />
               </div>
-              <SelectField label="Menu Interest" name="menu" options={["Wood-Fired", "Steakhouse", "Mix of Both", "Not sure yet"]} />
+              <SelectField
+                label="Menu Interest"
+                name="menu"
+                options={["Wood-Fired BBQ", "Steakhouse", "Mix of Both", "Not sure yet"]}
+              />
               <div>
-                <label className="block text-[0.65rem] tracking-[0.3em] uppercase text-bone/60 mb-3">Tell us about your event</label>
-                <textarea name="message" rows={5} className="w-full bg-charcoal/40 border border-white/10 px-4 py-4 text-bone focus:border-gold focus:outline-none transition-colors resize-none" />
+                <label className="block text-[0.65rem] tracking-[0.3em] uppercase text-bone/60 mb-3">
+                  Tell us about your event
+                </label>
+                <textarea
+                  name="message"
+                  rows={5}
+                  maxLength={4000}
+                  className="w-full bg-charcoal/40 border border-white/10 px-4 py-4 text-bone focus:border-gold focus:outline-none transition-colors resize-none"
+                />
               </div>
-              <button type="submit" className="btn-primary w-full">
-                Send Inquiry <ArrowRight className="size-4" />
+              {state === "error" && (
+                <div className="text-sm text-red-400 border border-red-500/30 px-4 py-3">
+                  {error ?? "Submission failed."} Please call {contact.phone}.
+                </div>
+              )}
+              <button
+                type="submit"
+                disabled={state === "sending"}
+                className="btn-primary w-full disabled:opacity-60"
+              >
+                {state === "sending" ? "Sending…" : "Send Inquiry"}{" "}
+                <ArrowRight className="size-4" />
               </button>
-              <p className="text-xs text-muted-foreground text-center">We respond personally within 24 hours.</p>
+              <p className="text-xs text-muted-foreground text-center">
+                We respond personally within 24 hours. Or call{" "}
+                <a href={contact.phoneHref} className="text-gold">
+                  {contact.phone}
+                </a>
+                .
+              </p>
             </form>
           )}
         </div>
@@ -87,22 +173,60 @@ function QuotePage() {
   );
 }
 
-function Field({ label, name, type = "text", required = false }: { label: string; name: string; type?: string; required?: boolean }) {
+function Field({
+  label,
+  name,
+  type = "text",
+  required = false,
+  maxLength,
+}: {
+  label: string;
+  name: string;
+  type?: string;
+  required?: boolean;
+  maxLength?: number;
+}) {
   return (
     <div>
-      <label className="block text-[0.65rem] tracking-[0.3em] uppercase text-bone/60 mb-3">{label}</label>
-      <input type={type} name={name} required={required} className="w-full bg-charcoal/40 border border-white/10 px-4 py-3.5 text-bone focus:border-gold focus:outline-none transition-colors" />
+      <label className="block text-[0.65rem] tracking-[0.3em] uppercase text-bone/60 mb-3">
+        {label}
+      </label>
+      <input
+        type={type}
+        name={name}
+        required={required}
+        maxLength={maxLength}
+        className="w-full bg-charcoal/40 border border-white/10 px-4 py-3.5 text-bone focus:border-gold focus:outline-none transition-colors"
+      />
     </div>
   );
 }
 
-function SelectField({ label, name, options }: { label: string; name: string; options: string[] }) {
+function SelectField({
+  label,
+  name,
+  options,
+}: {
+  label: string;
+  name: string;
+  options: string[];
+}) {
   return (
     <div>
-      <label className="block text-[0.65rem] tracking-[0.3em] uppercase text-bone/60 mb-3">{label}</label>
-      <select name={name} className="w-full bg-charcoal/40 border border-white/10 px-4 py-3.5 text-bone focus:border-gold focus:outline-none transition-colors">
+      <label className="block text-[0.65rem] tracking-[0.3em] uppercase text-bone/60 mb-3">
+        {label}
+      </label>
+      <select
+        name={name}
+        defaultValue=""
+        className="w-full bg-charcoal/40 border border-white/10 px-4 py-3.5 text-bone focus:border-gold focus:outline-none transition-colors"
+      >
         <option value="">Select…</option>
-        {options.map(o => <option key={o} value={o}>{o}</option>)}
+        {options.map((o) => (
+          <option key={o} value={o}>
+            {o}
+          </option>
+        ))}
       </select>
     </div>
   );
