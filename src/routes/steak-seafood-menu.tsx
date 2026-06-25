@@ -3,66 +3,112 @@ import { ArrowRight } from "lucide-react";
 import steakhouseBackyard from "@/assets/steakhouse-backyard.png.asset.json";
 import { PageHero, CTASection, SectionShell } from "@/components/site/Sections";
 
-type Dish = { name: string; body?: string; note?: string };
+import antipastoKabob from "@/assets/dishes/antipasto-kabob.jpg";
+import antipastoPlatter from "@/assets/dishes/antipasto-platter.jpg";
+import caesarSalad from "@/assets/dishes/caesar-salad.jpg";
+import houseSalad from "@/assets/dishes/house-salad.jpg";
+import fruitVeggie from "@/assets/dishes/fruit-veggie-platter.jpg";
+import bruschetta from "@/assets/dishes/bruschetta.jpg";
+import teriyakiSkewer from "@/assets/dishes/teriyaki-chicken-skewer.jpg";
+import shrimpSkewers from "@/assets/dishes/grilled-shrimp-skewers.jpg";
+import sausageMushroom from "@/assets/dishes/sausage-mushroom-caps.jpg";
+import baconScallops from "@/assets/dishes/bacon-wrapped-scallops.jpg";
+import tenderloinCrostini from "@/assets/dishes/tenderloin-crostini.jpg";
+import asparagusFeta from "@/assets/dishes/asparagus-feta.jpg";
+import ribeyeImg from "@/assets/dishes/ribeye.jpg";
+import nyStripImg from "@/assets/dishes/ny-strip.jpg";
+import beefTenderloinImg from "@/assets/dishes/beef-tenderloin.jpg";
+import filetMignonImg from "@/assets/dishes/filet-mignon.jpg";
+import topSirloinImg from "@/assets/dishes/top-sirloin.jpg";
+import primeRibImg from "@/assets/dishes/prime-rib.jpg";
+import triTipImg from "@/assets/dishes/tri-tip.jpg";
+import mahiMahiImg from "@/assets/dishes/mahi-mahi.jpg";
+import snapperImg from "@/assets/dishes/snapper.jpg";
+import lobsterImg from "@/assets/dishes/lobster-tails.jpg";
+import salmonImg from "@/assets/dishes/salmon.jpg";
+import grilledChickenImg from "@/assets/dishes/grilled-chicken.jpg";
+import loadedMashedImg from "@/assets/dishes/loaded-mashed.jpg";
+import garlicMashedImg from "@/assets/dishes/garlic-mashed.jpg";
+import rosemaryRedsImg from "@/assets/dishes/rosemary-reds.jpg";
+import bakedPotatoImg from "@/assets/dishes/baked-potato.jpg";
+import greenBeansImg from "@/assets/dishes/green-beans.jpg";
+import grilledAsparagusImg from "@/assets/dishes/grilled-asparagus.jpg";
+import squashZucchiniImg from "@/assets/dishes/squash-zucchini.jpg";
+import grilledCornImg from "@/assets/dishes/grilled-corn.jpg";
+import roastedBroccoliImg from "@/assets/dishes/roasted-broccoli.jpg";
+import macCheeseImg from "@/assets/dishes/mac-cheese.jpg";
+import alfredoPenneImg from "@/assets/dishes/alfredo-penne.jpg";
+import mushroomsOnionsImg from "@/assets/dishes/mushrooms-onions.jpg";
+import cheesecakeBitesImg from "@/assets/dishes/cheesecake-bites.jpg";
+import macaronsImg from "@/assets/dishes/macarons.jpg";
+import chocolateCakeImg from "@/assets/dishes/chocolate-cake.jpg";
+import cheesecakeImg from "@/assets/dishes/cheesecake.jpg";
+import cakePopsImg from "@/assets/dishes/cake-pops.jpg";
+import creamPuffsImg from "@/assets/dishes/cream-puffs.jpg";
+import whitePetitFoursImg from "@/assets/dishes/white-petit-fours.jpg";
+import tuxedoPetitFoursImg from "@/assets/dishes/tuxedo-petit-fours.jpg";
+import coffeeStationImg from "@/assets/dishes/coffee-station.jpg";
+
+type Dish = { name: string; body?: string; note?: string; img: string };
 
 const cold: Dish[] = [
-  { name: "Antipasto Kabob", body: "100% fresh, top quality. Black olives, mozzarella balls, marinated artichoke." },
-  { name: "Meat & Cheese Antipasto Platter", body: "A curated assortment of spiced cheese and cured meats." },
-  { name: "Caesar Salad", body: "Freshly cut romaine, parmesan, caesar croutons. Creamy or vinaigrette caesar dressing." },
-  { name: "House Salad", body: "Green leaf lettuce, grape tomatoes, onions, cucumbers, shredded carrots. Choice of dressings." },
-  { name: "Fresh Fruit & Veggie Platter", body: "An assortment of seasonal fruit and vegetables with ranch dip." },
-  { name: "Bruschetta with Garlic Crostini", body: "Vine-ripe tomato, basil and garlic over toasted crostini." },
+  { name: "Antipasto Kabob", body: "100% fresh, top quality. Black olives, mozzarella balls, marinated artichoke.", img: antipastoKabob },
+  { name: "Meat & Cheese Antipasto Platter", body: "A curated assortment of spiced cheese and cured meats.", img: antipastoPlatter },
+  { name: "Caesar Salad", body: "Freshly cut romaine, parmesan, caesar croutons. Creamy or vinaigrette caesar dressing.", img: caesarSalad },
+  { name: "House Salad", body: "Green leaf lettuce, grape tomatoes, onions, cucumbers, shredded carrots. Choice of dressings.", img: houseSalad },
+  { name: "Fresh Fruit & Veggie Platter", body: "An assortment of seasonal fruit and vegetables with ranch dip.", img: fruitVeggie },
+  { name: "Bruschetta with Garlic Crostini", body: "Vine-ripe tomato, basil and garlic over toasted crostini.", img: bruschetta },
 ];
 
 const warm: Dish[] = [
-  { name: "Teriyaki Chicken & Pineapple Skewer", body: "Teriyaki-marinated chicken thigh with grilled pineapple chunks." },
-  { name: "Grilled Shrimp Skewers", body: "Perfectly seasoned shrimp grilled on-site." },
-  { name: "Sausage-Filled Mushroom Caps", body: "Italian mushroom caps filled with pork sausage." },
-  { name: "Bacon-Wrapped Scallops", body: "Apple-wood smoked bacon wrapped around a lightly grilled scallop." },
-  { name: "Smoked Beef Tenderloin Crostini", body: "With goat cheese and house pesto." },
-  { name: "Roasted Asparagus & Feta Salad", body: "Roasted asparagus, feta and grape tomatoes finished with lemon." },
+  { name: "Teriyaki Chicken & Pineapple Skewer", body: "Teriyaki-marinated chicken thigh with grilled pineapple chunks.", img: teriyakiSkewer },
+  { name: "Grilled Shrimp Skewers", body: "Perfectly seasoned shrimp grilled on-site.", img: shrimpSkewers },
+  { name: "Sausage-Filled Mushroom Caps", body: "Italian mushroom caps filled with pork sausage.", img: sausageMushroom },
+  { name: "Bacon-Wrapped Scallops", body: "Apple-wood smoked bacon wrapped around a lightly grilled scallop.", img: baconScallops },
+  { name: "Smoked Beef Tenderloin Crostini", body: "With goat cheese and house pesto.", img: tenderloinCrostini },
+  { name: "Roasted Asparagus & Feta Salad", body: "Roasted asparagus, feta and grape tomatoes finished with lemon.", img: asparagusFeta },
 ];
 
 const meats: Dish[] = [
-  { name: "Ribeye Steak", body: "Rich marbling, juicy, tender, buttery — melt-in-your-mouth flavor." },
-  { name: "New York Strip", body: "Cut from the short loin. Bold, beefy taste with the perfect balance of fat and lean." },
-  { name: "Beef Tenderloin", body: "The most tender cut of beef. Buttery texture, mild flavor, luxurious." },
-  { name: "Filet Mignon", body: "Premium tenderloin cut, buttery and delicate.", note: "+ $10/steak" },
-  { name: "Top Sirloin (10 oz)", body: "Lean, flavorful, tender, with a rich beefy taste." },
-  { name: "Smoked Prime Rib Roast", body: "Slow-smoked to perfection. Smoky crust, perfectly pink center, deep savory flavor." },
-  { name: "Beef Tri-Tip", body: "Triangular cut from the bottom sirloin. Savory crust, juicy interior, robust beefy flavor." },
-  { name: "Grilled Mahi Mahi (8 oz)", body: "Firm, mild-flavored fish with a slightly sweet taste and flaky texture." },
-  { name: "Grilled Snapper (8 oz)", body: "Mild, slightly sweet, firm flaky white flesh." },
-  { name: "Lobster Tails", body: "8 oz of rich, slightly sweet, succulent and buttery lobster.", note: "+ $20/serving" },
-  { name: "Grilled Salmon (8 oz)", body: "Rich, buttery, slightly sweet. Smooth flaky texture." },
-  { name: "Grilled Chicken Breast", body: "Juicy and tender. House marinade with herbs, spice and a subtle char." },
+  { name: "Ribeye Steak", body: "Rich marbling, juicy, tender, buttery — melt-in-your-mouth flavor.", img: ribeyeImg },
+  { name: "New York Strip", body: "Cut from the short loin. Bold, beefy taste with the perfect balance of fat and lean.", img: nyStripImg },
+  { name: "Beef Tenderloin", body: "The most tender cut of beef. Buttery texture, mild flavor, luxurious.", img: beefTenderloinImg },
+  { name: "Filet Mignon", body: "Premium tenderloin cut, buttery and delicate.", note: "+ $10/steak", img: filetMignonImg },
+  { name: "Top Sirloin (10 oz)", body: "Lean, flavorful, tender, with a rich beefy taste.", img: topSirloinImg },
+  { name: "Smoked Prime Rib Roast", body: "Slow-smoked to perfection. Smoky crust, perfectly pink center, deep savory flavor.", img: primeRibImg },
+  { name: "Beef Tri-Tip", body: "Triangular cut from the bottom sirloin. Savory crust, juicy interior, robust beefy flavor.", img: triTipImg },
+  { name: "Grilled Mahi Mahi (8 oz)", body: "Firm, mild-flavored fish with a slightly sweet taste and flaky texture.", img: mahiMahiImg },
+  { name: "Grilled Snapper (8 oz)", body: "Mild, slightly sweet, firm flaky white flesh.", img: snapperImg },
+  { name: "Lobster Tails", body: "8 oz of rich, slightly sweet, succulent and buttery lobster.", note: "+ $20/serving", img: lobsterImg },
+  { name: "Grilled Salmon (8 oz)", body: "Rich, buttery, slightly sweet. Smooth flaky texture.", img: salmonImg },
+  { name: "Grilled Chicken Breast", body: "Juicy and tender. House marinade with herbs, spice and a subtle char.", img: grilledChickenImg },
 ];
 
 const sides: Dish[] = [
-  { name: "Loaded Red Mashed Potatoes", body: "Mashed reds with bacon, chives and cheddar." },
-  { name: "Garlic Mashed Potatoes", body: "Mashed Idaho potatoes with garlic and parsley." },
-  { name: "Rosemary Roasted Reds", body: "Pan-seared, roasted reds with fresh rosemary." },
-  { name: "Baked Potato", body: "Bacon, cheddar, sour cream, chives." },
-  { name: "Fresh Whole Green Beans", body: "No can here." },
-  { name: "Grilled Asparagus", body: "Lightly seasoned, brushed with natural butter, grilled to perfection." },
-  { name: "Grilled Squash & Zucchini", body: "Vegetable crunch with char from the grill." },
-  { name: "Grilled Sweet Corn", body: "Steamed, then grilled on-site." },
-  { name: "Roasted Broccoli", body: "A steakhouse staple." },
-  { name: "Macaroni & Cheese", body: "A meal within itself." },
-  { name: "Alfredo Penne Pasta", body: "Our signature alfredo sauce will have you licking the plate." },
-  { name: "Sautéed Mushrooms & Onions", body: "A great addition to any steak." },
+  { name: "Loaded Red Mashed Potatoes", body: "Mashed reds with bacon, chives and cheddar.", img: loadedMashedImg },
+  { name: "Garlic Mashed Potatoes", body: "Mashed Idaho potatoes with garlic and parsley.", img: garlicMashedImg },
+  { name: "Rosemary Roasted Reds", body: "Pan-seared, roasted reds with fresh rosemary.", img: rosemaryRedsImg },
+  { name: "Baked Potato", body: "Bacon, cheddar, sour cream, chives.", img: bakedPotatoImg },
+  { name: "Fresh Whole Green Beans", body: "No can here.", img: greenBeansImg },
+  { name: "Grilled Asparagus", body: "Lightly seasoned, brushed with natural butter, grilled to perfection.", img: grilledAsparagusImg },
+  { name: "Grilled Squash & Zucchini", body: "Vegetable crunch with char from the grill.", img: squashZucchiniImg },
+  { name: "Grilled Sweet Corn", body: "Steamed, then grilled on-site.", img: grilledCornImg },
+  { name: "Roasted Broccoli", body: "A steakhouse staple.", img: roastedBroccoliImg },
+  { name: "Macaroni & Cheese", body: "A meal within itself.", img: macCheeseImg },
+  { name: "Alfredo Penne Pasta", body: "Our signature alfredo sauce will have you licking the plate.", img: alfredoPenneImg },
+  { name: "Sautéed Mushrooms & Onions", body: "A great addition to any steak.", img: mushroomsOnionsImg },
 ];
 
 const desserts: Dish[] = [
-  { name: "Assorted Cheesecake Bites", body: "Fluffy bites — natural, raspberry, chocolate chip." },
-  { name: "French Macaron Assortment", body: "Raspberry, chocolate, vanilla, pistachio, coffee, lemon." },
-  { name: "Chocolate Cake", body: "Layered, moist chocolate cake." },
-  { name: "Cheesecake", body: "Classic, rich and creamy." },
-  { name: "Assorted Cake Pops", body: "Strawberry & pistachio · mocha coffee with cookie crumble · milk chocolate with coconut." },
-  { name: "Cream Puffs", body: "French choux pastry balls filled with vanilla cream." },
-  { name: "White Petit Fours", body: "Vanilla cake, vanilla butter crème, apricot jam, Swiss crème exterior." },
-  { name: "Tuxedo Petit Fours", body: "Royal chocolate and vanilla butter crème, chocolate or Swiss crème coating." },
-  { name: "Coffee Station", body: "Creamer, sugar, Splenda, cups, stirs and straws included." },
+  { name: "Assorted Cheesecake Bites", body: "Fluffy bites — natural, raspberry, chocolate chip.", img: cheesecakeBitesImg },
+  { name: "French Macaron Assortment", body: "Raspberry, chocolate, vanilla, pistachio, coffee, lemon.", img: macaronsImg },
+  { name: "Chocolate Cake", body: "Layered, moist chocolate cake.", img: chocolateCakeImg },
+  { name: "Cheesecake", body: "Classic, rich and creamy.", img: cheesecakeImg },
+  { name: "Assorted Cake Pops", body: "Strawberry & pistachio · mocha coffee with cookie crumble · milk chocolate with coconut.", img: cakePopsImg },
+  { name: "Cream Puffs", body: "French choux pastry balls filled with vanilla cream.", img: creamPuffsImg },
+  { name: "White Petit Fours", body: "Vanilla cake, vanilla butter crème, apricot jam, Swiss crème exterior.", img: whitePetitFoursImg },
+  { name: "Tuxedo Petit Fours", body: "Royal chocolate and vanilla butter crème, chocolate or Swiss crème coating.", img: tuxedoPetitFoursImg },
+  { name: "Coffee Station", body: "Creamer, sugar, Splenda, cups, stirs and straws included.", img: coffeeStationImg },
 ];
 
 const drinks = [
@@ -112,11 +158,17 @@ export const Route = createFileRoute("/steak-seafood-menu")({
 
 function DishCard({ d }: { d: Dish }) {
   return (
-    <article className="group bg-ink/60 border border-white/5 hover:border-gold/30 transition-colors duration-500">
-      {/* TODO: image — drop a dish photo here when uploaded */}
-      <div className="relative aspect-[4/3] overflow-hidden bg-gradient-to-br from-charcoal via-ink to-onyx flex items-center justify-center">
-        <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_30%_30%,rgba(212,175,116,0.18),transparent_60%)]" />
-        <span className="relative font-display text-bone/40 text-2xl italic px-6 text-center">{d.name}</span>
+    <article className="group bg-ink/60 border border-white/5 hover:border-gold/30 transition-colors duration-500 overflow-hidden">
+      <div className="relative aspect-[4/3] overflow-hidden bg-ink">
+        <img
+          src={d.img}
+          alt={d.name}
+          loading="lazy"
+          width={1024}
+          height={1024}
+          className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/10 to-transparent pointer-events-none" />
       </div>
       <div className="p-6 lg:p-7">
         <div className="flex items-baseline justify-between gap-3">
