@@ -438,7 +438,7 @@ function SteakSeafoodMenuPage() {
             <p className="mt-5 text-bone/65 leading-relaxed">Refreshing non-alcoholic options served from elegant dispensers at your Phoenix Metro event. Full bar and bartending service available as an add-on.</p>
           </div>
           <div className="mb-10 overflow-hidden border border-white/5">
-            <img src={drinkChoiceImg} alt="Refreshing non-alcoholic beverage selections" loading="lazy" className="w-full h-64 lg:h-96 object-cover" />
+            <img src={drinkChoiceImg} alt="Refreshing non-alcoholic beverage selections" loading="lazy" className="w-full h-64 lg:h-96 object-cover" style={{ filter: "brightness(1.15) contrast(1.1) saturate(1.1)" }} />
           </div>
           <ul className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-white/5 border border-white/5">
             {drinks.map((name) => (
