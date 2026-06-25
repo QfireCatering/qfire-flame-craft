@@ -7,7 +7,7 @@ import { PageHero, CTASection, SectionShell } from "@/components/site/Sections";
 
 import antipastoKabob from "@/assets/dishes/antipasto-kabob.jpg";
 import antipastoPlatter from "@/assets/dishes/antipasto-platter.jpg";
-import caesarSalad from "@/assets/dishes/caesar-salad.jpg";
+import caesarSalad from "@/assets/dishes/caesar-salad.png.asset.json";
 import houseSalad from "@/assets/dishes/house-salad.jpg";
 import fruitVeggie from "@/assets/dishes/fruit-veggie-platter.jpg";
 import bruschetta from "@/assets/dishes/bruschetta.jpg";
