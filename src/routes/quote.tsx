@@ -52,6 +52,16 @@ function QuotePage() {
     try {
       await submit({ data: payload });
       setState("sent");
+      const redirect = getRedirectUrl(payload.region, payload.menu);
+      if (redirect) {
+        setTimeout(() => {
+          if (redirect.startsWith("http")) {
+            window.location.href = redirect;
+          } else {
+            window.location.assign(redirect);
+          }
+        }, 1200);
+      }
     } catch (err) {
       setState("error");
       setError(err instanceof Error ? err.message : "Something went wrong. Please call us.");
