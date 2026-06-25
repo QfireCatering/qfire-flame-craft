@@ -9,7 +9,7 @@ import brisket from "@/assets/brisket.jpg";
 import brisketVideo from "@/assets/brisket-slice.mp4.asset.json";
 import chefTerry from "@/assets/chef-terry.jpg.asset.json";
 import buffet from "@/assets/buffet.jpg";
-import phoenix from "@/assets/az-metro.png.asset.json";
+import phoenix from "@/assets/phoenix-metro.png.asset.json";
 import sanDiego from "@/assets/san-diego.png.asset.json";
 import corporateAsset from "@/assets/corporate-catering.png.asset.json";
 import privatePartyAsset from "@/assets/private-party.png.asset.json";

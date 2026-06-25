@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { RegionLanding } from "@/components/site/RegionPages";
-import phoenixAsset from "@/assets/az-metro.png.asset.json";
+import phoenixAsset from "@/assets/phoenix-metro.png.asset.json";
 const phoenix = phoenixAsset.url;
 
 export const Route = createFileRoute("/phoenix/")({
