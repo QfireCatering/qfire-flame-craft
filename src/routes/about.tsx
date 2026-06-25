@@ -8,7 +8,7 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "About Chef Terry Matthews — The BBQ Daddy | Qfire Catering" },
-      { name: "description", content: "Chef Terry Matthews — known as The BBQ Daddy — is the founder and executive chef of Qfire Catering. Food Network veteran (Cutthroat Kitchen, BBQ Brawl, Camp Cutthroat) with 13+ years catering 2,000+ weddings, corporate events and private dinners across Phoenix and San Diego." },
+      { name: "description", content: "Chef Terry Matthews — known as The BBQ Daddy — is the founder and executive chef of Qfire Catering. Bringing the fire since 2001, with 25+ years experience, 2,000+ events, a 4.9-star rating across every platform, and Food Network credits including Cutthroat Kitchen (Winner), Camp Cutthroat (Winner), BBQ Brawl Season 2 and the kitchen of Bobby Flay." },
       { property: "og:title", content: "Chef Terry Matthews — Qfire" },
       { property: "og:url", content: "/about" },
       { property: "og:image", content: chefTerry.url },
@@ -46,27 +46,28 @@ function AboutPage() {
           </div>
           <div className="space-y-6 text-lg text-bone/75 leading-relaxed font-light">
             <p>
-              Terry Matthews built Qfire Catering on a simple belief: a great meal is the
-              centerpiece of every memorable night. Thirteen years in, with more than 2,000
-              events under his belt, that belief has only sharpened.
+              Terry Matthews has been bringing the fire since <span className="text-gold/90">2001</span> — more than
+              <span className="text-gold/90"> 25 years</span> behind live flame and over <span className="text-gold/90">2,000 events</span> served.
+              He built Qfire Catering on a simple belief: a great meal is the centerpiece of every memorable night, and the people behind it should make it look effortless.
             </p>
             <p>
-              His career has run from quiet private chef dinners to the brightest television
-              kitchens in the country. <em className="text-gold/90 not-italic">Cutthroat Kitchen</em>{" "}
-              champion. <em className="text-gold/90 not-italic">BBQ Brawl Season 2</em>. A stretch on{" "}
-              <em className="text-gold/90 not-italic">Camp Cutthroat</em>. Time spent in the kitchen
-              of Bobby Flay.
+              His career has run from quiet private chef dinners to the brightest television kitchens in the country:
             </p>
+            <ul className="space-y-2 text-bone/80 pl-5 list-disc marker:text-gold">
+              <li><strong className="text-bone">Winner — Cutthroat Kitchen</strong> (Food Network)</li>
+              <li><strong className="text-bone">Winner — Camp Cutthroat</strong> (Food Network)</li>
+              <li><strong className="text-bone">BBQ Brawl Season 2</strong> — featured pitmaster (Food Network)</li>
+              <li><strong className="text-bone">Cooked with Bobby Flay</strong> in his kitchen</li>
+              <li><strong className="text-bone">International Chef Competition</strong> host & judge</li>
+              <li><strong className="text-bone">Catering Coach & Mentor</strong> to caterers nationwide</li>
+            </ul>
             <p>
-              Friends, family and clients know him as "The BBQ Daddy" — a nickname earned
-              one perfect brisket at a time. But the company he built is Qfire: a full-service
-              catering operation that brings wood-fired flavor and steakhouse polish to weddings,
+              Friends, family and clients know him as "The BBQ Daddy" — a nickname earned one perfect brisket at a time.
+              But the company he built is Qfire: a full-service catering operation that brings wood-fired flavor and steakhouse polish to weddings,
               corporate events and private parties across Phoenix Metro and San Diego County.
             </p>
             <p>
-              The thing clients say most? That Chef Terry treats every event like it's his own
-              family's. Warm with your guests. Surgical with your timeline. The kind of caterer
-              you only have to hire once — because you know who you're calling next time.
+              The result speaks for itself — a <span className="text-gold/90">4.9-star rating</span> across Google, Yelp, WeddingWire and The Knot, and a roster of repeat clients who only have to hire one caterer ever again.
             </p>
           </div>
         </div>
@@ -76,10 +77,10 @@ function AboutPage() {
         <div className="container-luxe">
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-white/5 border border-white/5">
             {[
-              { n: "13+", l: "Years Catering" },
+              { n: "25+", l: "Years Behind Fire" },
               { n: "2,000+", l: "Events Served" },
-              { n: "4×", l: "Food Network Appearances" },
-              { n: "1", l: "Cutthroat Kitchen Win" },
+              { n: "4.9★", l: "Across All Platforms" },
+              { n: "2×", l: "Food Network Champion" },
             ].map((s) => (
               <div key={s.l} className="bg-ink p-10 text-center">
                 <div className="text-4xl lg:text-5xl font-display text-gold tracking-tight">{s.n}</div>

@@ -20,7 +20,7 @@ export const Route = createFileRoute("/reviews")({
         name: "Qfire Catering",
         aggregateRating: {
           "@type": "AggregateRating",
-          ratingValue: "5.0",
+          ratingValue: "4.9",
           reviewCount: "400",
         },
       }),
@@ -30,14 +30,14 @@ export const Route = createFileRoute("/reviews")({
 });
 
 const reviews = [
-  { q: "Chef Terry — 'The BBQ Daddy' — and his team turned our wedding into the meal everyone is still talking about. Brisket, ribeye, the whole spread. Flawless.", a: "Lauren & Mark", e: "Scottsdale Wedding · 220 guests" },
-  { q: "We hired Qfire for our annual partner dinner. Plated steaks for 140, served hot, served perfectly. Worth every penny.", a: "David K.", e: "Corporate · La Jolla" },
-  { q: "Backyard 50th birthday. Wood-fired everything. Guests thought we'd flown in a steakhouse. Absolutely premium.", a: "Sandra T.", e: "Private Party · Gilbert" },
-  { q: "From the first phone call to the last guest leaving, Qfire was effortless. The kind of caterer you only have to hire once because you know who you're calling next time.", a: "Megan & Ryan", e: "Carlsbad Wedding · 180 guests" },
-  { q: "We've worked with Qfire on three company events. Each one better than the last. The bar program is also excellent.", a: "Tara M.", e: "Phoenix Tech Co." },
-  { q: "The BBQ Daddy made the brisket of a lifetime. My husband still talks about the bark. Service was equally impressive.", a: "Allison P.", e: "Mesa Anniversary Party" },
-  { q: "Plated dinner for 240 at a wine country venue. Every plate landed hot. Every steak medium-rare. Truly elite operation.", a: "Hannah & Joel", e: "Rancho Santa Fe Wedding" },
-  { q: "Chef Terry personally walked us through the menu and showed up the day of to oversee everything. That kind of ownership is rare.", a: "Eric L.", e: "Private Chef Dinner · Encinitas" },
+  { q: "Chef Terry — 'The BBQ Daddy' — and his team turned our wedding into the meal everyone is still talking about. Brisket, ribeye, the whole spread. Flawless from start to finish.", a: "Tene Layman", e: "Wedding · 220 guests", source: "WeddingWire" },
+  { q: "We hired Qfire for our annual partner dinner. Plated steaks for 140, served hot, served perfectly. The team made it look easy. Worth every penny.", a: "Yara Patino", e: "Corporate · La Jolla", source: "Yelp" },
+  { q: "Backyard 50th birthday. Wood-fired everything. Guests thought we'd flown in a steakhouse. Absolutely premium top to bottom.", a: "Jean Laber", e: "Private Party · Gilbert", source: "Google" },
+  { q: "From the first phone call to the last guest leaving, Qfire was effortless. The kind of caterer you only have to hire once because you know who you're calling next time.", a: "Megan & Ryan", e: "Carlsbad Wedding · 180 guests", source: "The Knot" },
+  { q: "We've worked with Qfire on three company events. Each one better than the last. The bar program is also excellent.", a: "Tara M.", e: "Phoenix Tech Co.", source: "Google" },
+  { q: "The BBQ Daddy made the brisket of a lifetime. My husband still talks about the bark. Service was equally impressive.", a: "Allison P.", e: "Mesa Anniversary Party", source: "Yelp" },
+  { q: "Plated dinner for 240 at a wine country venue. Every plate landed hot. Every steak medium-rare. Truly elite operation.", a: "Hannah & Joel", e: "Rancho Santa Fe Wedding", source: "WeddingWire" },
+  { q: "Chef Terry personally walked us through the menu and showed up the day of to oversee everything. That kind of ownership is rare.", a: "Eric L.", e: "Private Chef Dinner · Encinitas", source: "Google" },
 ];
 
 function ReviewsPage() {
@@ -55,7 +55,7 @@ function ReviewsPage() {
             <div className="flex gap-1">
               {[...Array(5)].map((_, i) => <Star key={i} className="size-5 fill-gold text-gold" />)}
             </div>
-            <div className="text-bone/80">5.0 average across 400+ Google reviews</div>
+            <div className="text-bone/80">4.9-star average across Google, Yelp, WeddingWire & The Knot — hundreds of verified reviews</div>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             {reviews.map((r, i) => (
@@ -67,6 +67,7 @@ function ReviewsPage() {
                 <figcaption className="mt-6 pt-5 border-t border-white/5">
                   <div className="text-bone font-medium">{r.a}</div>
                   <div className="text-xs text-muted-foreground mt-1 tracking-wider uppercase">{r.e}</div>
+                  <div className="text-[0.6rem] tracking-[0.3em] uppercase text-gold/80 mt-2">Verified · {r.source}</div>
                 </figcaption>
               </figure>
             ))}
