@@ -1,7 +1,8 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 import qfireLogo from "@/assets/qfire-logo.png.asset.json";
+import { contact } from "@/lib/contact";
 
 const primary = [
   { to: "/weddings", label: "Weddings" },
