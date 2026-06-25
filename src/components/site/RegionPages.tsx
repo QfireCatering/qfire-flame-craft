@@ -152,6 +152,17 @@ export function RegionSlugPage({ regionKey, slug }: { regionKey: RegionKey; slug
 
 function RegionHoliday({ regionKey }: { regionKey: RegionKey }) {
   const r = regions[regionKey];
+  const menu = [
+    { title: "The Centerpieces", items: ["Slow-roasted prime rib, au jus", "Smoked whole turkey, brined 24 hours", "Wood-fired brisket, sliced to order", "Cedar-plank salmon", "Honey-glazed ham"] },
+    { title: "The Sides", items: ["Truffle mashed potatoes", "Cornbread stuffing", "Maple roasted root vegetables", "Creamed spinach", "Smoked mac and cheese", "Cranberry-orange relish"] },
+    { title: "Desserts & Bar", items: ["Pecan pie, bourbon caramel", "Apple crumble, vanilla bean cream", "Hot toddy bar", "Spiced cider, mulled wine", "Signature winter cocktail"] },
+  ];
+  const faqs = [
+    { q: `When should we book our ${r.shortName} holiday party?`, a: `November and December weekends fill 90+ days out. Lock your date as soon as the budget is approved — menu and staffing finalize 30 days before.` },
+    { q: `Do you cater Thanksgiving and Christmas Day?`, a: `Yes. We offer drop-off feasts, family-style delivery, and full-service in-home Thanksgiving and Christmas dinners across ${r.metro}.` },
+    { q: `Can you handle a 300-person company party?`, a: `Yes. Buffet, stations, and seated formats up to 500 guests, with full bar, rentals, and uniformed staff.` },
+    { q: `What does a typical holiday party cost?`, a: `Most ${r.shortName} holiday parties run $55–$135 per guest depending on format, menu tier, bar, and staffing. See the pricing page for tiers.` },
+  ];
   return (
     <>
       <PageHero
@@ -163,7 +174,7 @@ function RegionHoliday({ regionKey }: { regionKey: RegionKey }) {
         <Link to="/quote" className="btn-primary">Book Your Date <ArrowRight className="size-4" /></Link>
       </PageHero>
       <section className="py-24 lg:py-32 bg-onyx">
-        <div className="container-luxe max-w-4xl">
+        <div className="container-luxe max-w-5xl">
           <div className="eyebrow mb-6">Most-booked holiday formats</div>
           <h2 className="heading-md text-bone mb-10">Three ways we run a holiday.</h2>
           <div className="grid md:grid-cols-3 gap-px bg-white/5 border border-white/5">
@@ -178,15 +189,45 @@ function RegionHoliday({ regionKey }: { regionKey: RegionKey }) {
               </div>
             ))}
           </div>
-          <div className="mt-16">
-            <p className="text-bone/70 leading-relaxed">
-              Holiday dates book 90+ days out. November and December weekends fill first.
-              Lock yours now — pricing, menu, and staffing get finalized 30 days before the event.
-            </p>
-            <Link to="/quote" className="btn-primary mt-8">Request Holiday Quote <ArrowRight className="size-4" /></Link>
+        </div>
+      </section>
+
+      <section className="py-24">
+        <div className="container-luxe max-w-5xl">
+          <div className="eyebrow mb-6">A taste of the holiday menu</div>
+          <h2 className="heading-md text-bone mb-10">Sample {r.shortName} holiday menu.</h2>
+          <div className="grid md:grid-cols-3 gap-px bg-white/5 border border-white/5">
+            {menu.map((col) => (
+              <div key={col.title} className="bg-ink p-10">
+                <div className="text-gold text-xs tracking-[0.25em] uppercase mb-5">{col.title}</div>
+                <ul className="space-y-3 text-bone/85">
+                  {col.items.map((i) => <li key={i}>{i}</li>)}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
       </section>
+
+      <section className="py-24 bg-onyx">
+        <div className="container-luxe max-w-4xl">
+          <div className="eyebrow mb-6">Holiday FAQ</div>
+          <h2 className="heading-md text-bone mb-10">{r.shortName} holiday questions.</h2>
+          <div className="divide-y divide-white/5 border-y border-white/5">
+            {faqs.map((f) => (
+              <details key={f.q} className="group py-7">
+                <summary className="flex items-center justify-between cursor-pointer list-none gap-6">
+                  <span className="text-lg lg:text-xl font-display text-bone group-hover:text-gold transition-colors">{f.q}</span>
+                  <span className="text-gold text-3xl font-light transition-transform group-open:rotate-45 shrink-0">+</span>
+                </summary>
+                <p className="mt-4 text-bone/70 leading-relaxed font-light">{f.a}</p>
+              </details>
+            ))}
+          </div>
+          <Link to="/quote" className="btn-primary mt-12">Request Holiday Quote <ArrowRight className="size-4" /></Link>
+        </div>
+      </section>
+
       <CTASection title="Make this holiday the one they remember." />
     </>
   );
@@ -194,6 +235,14 @@ function RegionHoliday({ regionKey }: { regionKey: RegionKey }) {
 
 function RegionBackyard({ regionKey }: { regionKey: RegionKey }) {
   const r = regions[regionKey];
+  const occasions = [
+    { t: "Graduation Parties", b: "Brisket, pulled pork, sliders, all the sides. Casual menu, polished service, 40–200 guests." },
+    { t: "Milestone Birthdays", b: "Plated steakhouse dinners or wood-fired stations. We make the night feel like the restaurant came to you." },
+    { t: "Anniversary & Retirement", b: "Intimate seated dinners for 12–60. Multi-course, wine pairings, full staff." },
+    { t: "Engagement & Rehearsal", b: "The night before the big night. Family-style on long tables under string lights." },
+    { t: "Reunions & Welcome BBQs", b: "Out-of-town family, full smoker setup, kids run the yard, you don't lift a finger." },
+    { t: "Pool Parties & Summer Cookouts", b: "Tri-tip, hot links, charred corn, cold sides, frozen cocktails. We bring the grill." },
+  ];
   return (
     <>
       <PageHero
@@ -217,23 +266,30 @@ function RegionBackyard({ regionKey }: { regionKey: RegionKey }) {
               "Cleanup — kitchen left spotless",
               "Bartending + bar setup (optional)",
               "Tables, linens, chairs (optional)",
-              "Travel within metro included",
+              `Travel within ${r.metro} included`,
             ].map((b) => (
               <div key={b} className="flex items-center gap-3"><Check className="size-4 text-gold" /> {b}</div>
             ))}
           </div>
-          <div className="mt-16">
-            <div className="eyebrow mb-6">Common occasions</div>
-            <p className="text-bone/70 leading-relaxed">
-              Graduation parties, birthday milestones, baby showers, engagement
-              parties, retirement dinners, rehearsal dinners, anniversary celebrations,
-              welcome BBQs for out-of-town guests. If you've got a backyard and a
-              date — we'll cater it.
-            </p>
-            <Link to="/quote" className="btn-primary mt-8">Request Backyard Quote <ArrowRight className="size-4" /></Link>
-          </div>
         </div>
       </section>
+
+      <section className="py-24">
+        <div className="container-luxe max-w-5xl">
+          <div className="eyebrow mb-6">Common occasions</div>
+          <h2 className="heading-md text-bone mb-10">If it's worth gathering for, it's worth catering.</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/5 border border-white/5">
+            {occasions.map((o) => (
+              <div key={o.t} className="bg-ink p-8">
+                <div className="text-xl font-display text-bone mb-3">{o.t}</div>
+                <p className="text-bone/70 leading-relaxed text-sm">{o.b}</p>
+              </div>
+            ))}
+          </div>
+          <Link to="/quote" className="btn-primary mt-12">Request Backyard Quote <ArrowRight className="size-4" /></Link>
+        </div>
+      </section>
+
       <CTASection title="The neighbors will be jealous." />
     </>
   );
