@@ -43,15 +43,15 @@ function PrivatePartyChooser() {
             <div className="eyebrow mb-6">Where Shall We Cater</div>
             <h2 className="heading-lg text-bone">Two regions. One standard of excellence.</h2>
           </div>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-10 max-w-6xl mx-auto">
             {[
               { to: "/private-party-catering-phoenix", title: "Phoenix Metro", img: phoenixAsset.url, body: "Scottsdale · Phoenix · Mesa · Tempe · Chandler · Gilbert · Paradise Valley · Cave Creek · Fountain Hills · Queen Creek · all of Phoenix Metro." },
               { to: "/private-party-catering-san-diego", title: "San Diego County", img: sanDiegoAsset.url, body: "La Jolla · Del Mar · Carlsbad · Encinitas · Rancho Santa Fe · Coronado · Poway · Oceanside · Pacific Beach · all of San Diego County." },
             ].map((r) => (
-              <Link key={r.to} to={r.to} className="group relative aspect-[4/5] overflow-hidden block border border-gold/20 hover:border-gold transition-colors">
-                <img src={r.img} alt={`${r.title} private party catering`} className={`absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 ${r.title === "San Diego County" ? "object-center" : ""}`} />
+              <Link key={r.to} to={r.to} className="group relative aspect-[4/3] overflow-hidden block border border-gold/20 hover:border-gold transition-colors">
+                <img src={r.img} alt={`${r.title} private party catering`} className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/60 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-10">
+                <div className="absolute bottom-0 left-0 right-0 p-8 lg:p-10">
                   <div className="eyebrow text-gold mb-3">Private Party Catering</div>
                   <h3 className="font-display text-4xl md:text-5xl text-bone">{r.title}</h3>
                   <p className="mt-4 text-bone/80 font-light">{r.body}</p>
