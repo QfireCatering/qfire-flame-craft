@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowRight, Check, Flame, Award, Users, Star, Clock, Sparkles } from "lucide-react";
 import { PhoenixPricingBanner } from "./PhoenixPricingBanner";
+import { SanDiegoPricingBanner } from "./SanDiegoPricingBanner";
 import weddingCoupleAsset from "@/assets/wedding-couple.png.asset.json";
 import weddingRealAsset from "@/assets/wedding-real.jpg.asset.json";
 import weddingGrillingAsset from "@/assets/hero-wedding-grilling.png.asset.json";
@@ -294,6 +295,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         </div>
       </section>
       {config.regionSlug === "phoenix" && <PhoenixPricingBanner />}
+      {config.regionSlug === "san-diego" && <SanDiegoPricingBanner />}
 
       {/* TRUST STRIP */}
       <section className="border-y border-white/10 bg-onyx py-10">

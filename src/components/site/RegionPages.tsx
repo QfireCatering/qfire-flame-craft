@@ -3,6 +3,7 @@ import { ArrowRight, Check } from "lucide-react";
 import { ServicePage } from "@/components/site/ServicePage";
 import { PageHero, CTASection } from "@/components/site/Sections";
 import { PhoenixPricingBanner } from "./PhoenixPricingBanner";
+import { SanDiegoPricingBanner } from "./SanDiegoPricingBanner";
 import {
   weddingConfig, corporateConfig, privatePartyConfig,
   woodFiredConfig, steakhouseConfig, bartendingConfig,
@@ -58,6 +59,7 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
         </div>
       </section>
       {regionKey === "phoenix" && <PhoenixPricingBanner />}
+      {regionKey === "san-diego" && <SanDiegoPricingBanner />}
 
       {/* Services grid */}
       <section className="py-24 lg:py-32 bg-onyx">
