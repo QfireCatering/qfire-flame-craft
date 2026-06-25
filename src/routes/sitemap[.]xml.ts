@@ -22,6 +22,7 @@ export const Route = createFileRoute("/sitemap.xml")({
           "/pricing",
           "/wood-fired",
           "/steakhouse",
+          "/steak-seafood-menu",
           "/steakhouse-experience",
           "/bartending",
           "/rentals",
