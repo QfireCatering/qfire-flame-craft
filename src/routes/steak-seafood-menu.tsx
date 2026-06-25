@@ -140,7 +140,7 @@ export const Route = createFileRoute("/steak-seafood-menu")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Menu",
-          name: "Qfire Steak & Seafood Catering Menu",
+          name: "Qfire Steak & Seafood Catering Menu — Phoenix Metro",
           inLanguage: "en-US",
           hasMenuSection: [
             { "@type": "MenuSection", name: "First Course — Cold Starters", hasMenuItem: cold.map((d) => ({ "@type": "MenuItem", name: d.name, description: d.body })) },
