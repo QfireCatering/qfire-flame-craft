@@ -235,9 +235,9 @@ function SteakSeafoodMenuPage() {
             More Than Catering. A Private Steakhouse Experience Created Exclusively for Your Guests.
           </p>
           <div className="space-y-6 text-bone/70 text-base lg:text-lg leading-relaxed">
-            <p>If you're looking for something beyond the traditional buffet in the Phoenix Metro area, this is where our clients naturally gravitate.</p>
-            <p>Our Surf & Turf Steakhouse Experience combines the energy of live-fire cooking with the elegance of fine dining—bringing the atmosphere of an upscale steakhouse directly to your Phoenix, Scottsdale, Gilbert, Mesa or Tempe wedding, corporate event, or private celebration.</p>
-            <p>This isn't just dinner. It's the experience your guests will remember long after the last bite.</p>
+            <p>If you're looking for something beyond the traditional buffet in the Phoenix Metro area — from downtown Phoenix to Scottsdale, Gilbert, Mesa, Tempe, Chandler, Glendale, Peoria, Paradise Valley, Cave Creek and beyond — this is where our most discerning clients naturally gravitate.</p>
+            <p>Our Phoenix Metro Surf & Turf Steakhouse Experience combines the energy of live-fire cooking with the elegance of fine dining — bringing the atmosphere of an upscale steakhouse directly to your Phoenix, Scottsdale, Gilbert, Mesa or Tempe wedding, corporate event, or private celebration.</p>
+            <p>From Ahwatukee to Anthem, Carefree to Queen Creek, we bring restaurant-quality steakhouse catering to every corner of the Phoenix Metro. This isn't just dinner. It's the experience your guests will remember long after the last bite.</p>
           </div>
         </div>
       </section>
