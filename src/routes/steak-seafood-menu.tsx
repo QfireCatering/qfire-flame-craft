@@ -340,7 +340,8 @@ function SteakSeafoodMenuPage() {
 
       <section className="py-20 lg:py-28 border-t border-white/5">
         <div className="container-luxe max-w-4xl">
-          <h3 className="heading-md text-bone mb-10 text-center">Why Clients Choose This Experience</h3>
+          <p className="eyebrow justify-center mb-6">Phoenix Metro's #1 Choice</p>
+          <h3 className="heading-md text-bone mb-10 text-center">Why Phoenix Metro Clients Choose This Experience</h3>
           <div className="grid sm:grid-cols-2 gap-x-12 gap-y-5 text-bone/70">
             <div className="flex items-start gap-3">
               <span className="text-gold mt-1">✔</span>
