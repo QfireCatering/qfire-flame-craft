@@ -119,12 +119,12 @@ function BlogPostPage() {
             <p className="text-xl lg:text-2xl text-bone/85 leading-relaxed font-light mb-14">
               {post.excerpt}
             </p>
-            {post.body.map((section) => (
+            {post.body.map((section: { h2: string; p: string[] }) => (
               <section key={section.h2} className="mb-12">
                 <h2 className="font-display text-3xl lg:text-4xl text-bone mb-6">
                   {section.h2}
                 </h2>
-                {section.p.map((para, i) => (
+                {section.p.map((para: string, i: number) => (
                   <p
                     key={i}
                     className="text-bone/75 text-lg leading-relaxed mb-5 font-light"
