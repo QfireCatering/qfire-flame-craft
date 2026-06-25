@@ -10,6 +10,8 @@ const bartender = bartenderAsset.url;
 import corporateAsset from "@/assets/corporate-catering.png.asset.json";
 const corporate = corporateAsset.url;
 import privateParty from "@/assets/private-party.jpg";
+import privatePartyHeroAsset from "@/assets/private-parties-hero.png.asset.json";
+const privatePartyHero = privatePartyHeroAsset.url;
 import type { ServicePageConfig } from "@/components/site/ServicePage";
 
 const galleryAll = [weddingTable, brisket, steak, buffet, heroFire, corporate, privateParty, weddingTable];
@@ -101,7 +103,7 @@ export function privatePartyConfig(o: ServiceTemplateOptions = {}): ServicePageC
     subtitle: r
       ? `Milestone birthdays, anniversaries, graduations and intimate gatherings across ${r}.`
       : "Milestone birthdays, anniversaries, graduations, holiday gatherings — catering for the moments that matter most.",
-    heroImage: privateParty,
+    heroImage: privatePartyHero,
     intro: {
       heading: "Your home. Our kitchen.",
       body: [
