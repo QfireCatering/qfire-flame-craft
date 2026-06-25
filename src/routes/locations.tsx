@@ -39,19 +39,18 @@ function LocationsPage() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {regions.map((r) => (
-            <Link key={r.key} to={r.href} className="group relative block aspect-[4/5] overflow-hidden border border-white/5">
+            <Link key={r.key} to={r.href} className="group relative aspect-[4/5] overflow-hidden block border border-gold/20 hover:border-gold transition-colors">
               <img src={r.img} alt={r.name} loading="lazy" width={1600} height={1100}
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1500ms] group-hover:scale-105" />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent" />
-              <div className="absolute inset-0 p-10 lg:p-14 flex flex-col justify-end">
-                <div className="text-[0.65rem] tracking-[0.35em] uppercase text-gold mb-4">{r.state}</div>
-                <div className="heading-lg text-bone group-hover:text-gold transition-colors duration-500">{r.name}</div>
-                <p className="mt-6 text-sm text-bone/70 leading-relaxed">{r.cities.join(" · ")}</p>
-                <div className="mt-10 inline-flex items-center gap-3 text-[0.7rem] tracking-[0.28em] uppercase text-bone">
-                  Enter {r.name === "Phoenix Metro" ? "Phoenix" : "San Diego"} Site
-                  <ArrowUpRight className="size-4 transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1" />
+                className={`absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 ${r.key === "san-diego" ? "object-right" : ""}`} />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/60 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-10">
+                <div className="eyebrow text-gold mb-3">Catering Region</div>
+                <h3 className="font-display text-4xl md:text-5xl text-bone">{r.name}</h3>
+                <p className="mt-4 text-bone/80 font-light">{r.cities.join(" · ")}</p>
+                <div className="mt-6 inline-flex items-center gap-2 text-[0.7rem] tracking-[0.28em] uppercase text-gold border-b border-gold/40 pb-1">
+                  Enter {r.name} <ArrowUpRight className="size-3" />
                 </div>
               </div>
             </Link>
