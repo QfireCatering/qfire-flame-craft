@@ -69,7 +69,6 @@ export const services = [
   { slug: "wood-fired", label: "Wood-Fired Catering", short: "Wood-Fired" },
   { slug: "steakhouse", label: "Steakhouse Catering", short: "Steakhouse" },
   { slug: "bartending", label: "Bartending Services", short: "Bartending" },
-  { slug: "rentals", label: "Rentals", short: "Rentals" },
 ] as const;
 
 export const extraPages = [

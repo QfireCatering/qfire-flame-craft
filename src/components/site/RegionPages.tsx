@@ -4,7 +4,7 @@ import { ServicePage } from "@/components/site/ServicePage";
 import { PageHero, CTASection } from "@/components/site/Sections";
 import {
   weddingConfig, corporateConfig, privatePartyConfig,
-  woodFiredConfig, steakhouseConfig, bartendingConfig, rentalsConfig,
+  woodFiredConfig, steakhouseConfig, bartendingConfig,
 } from "@/lib/service-configs";
 import { regions, services, extraPages, type RegionKey } from "@/lib/site";
 import phoenixImg from "@/assets/phoenix.jpg";
@@ -64,7 +64,7 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-white/5 border border-white/5">
             {services.map((s, i) => {
-              const img = [weddingTable, corporate, privateParty, bbqPlatter, steak, bartender, heroFire][i % 7];
+              const img = [weddingTable, corporate, privateParty, bbqPlatter, steak, bartender][i % 6];
               return (
                 <Link
                   key={s.slug}
