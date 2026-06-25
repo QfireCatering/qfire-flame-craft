@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import bbqPlatter1 from "@/assets/bbq-platter1.png.asset.json";
-import steak from "@/assets/steak.jpg";
+import steakhouseMenu from "@/assets/steakhouse-menu.png.asset.json";
 import chefTerry from "@/assets/chef-terry.jpg.asset.json";
 import buffet from "@/assets/buffet.jpg";
 import { CTASection } from "@/components/site/Sections";
