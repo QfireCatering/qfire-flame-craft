@@ -54,7 +54,7 @@ export function Nav() {
               <Link
                 key={item.to}
                 to={item.to}
-                className="relative text-[0.78rem] tracking-[0.18em] uppercase text-bone font-bold hover:text-gold transition-colors duration-300 group"
+                className="relative text-[0.78rem] tracking-[0.18em] uppercase text-bone hover:text-gold transition-colors duration-300 group"
                 activeProps={{ className: "text-gold" }}
               >
                 {item.label}
