@@ -18,6 +18,7 @@ import { Route as TermsRouteImport } from './routes/terms'
 import { Route as SteakhouseExperienceSanDiegoRouteImport } from './routes/steakhouse-experience-san-diego'
 import { Route as SteakhouseExperiencePhoenixRouteImport } from './routes/steakhouse-experience-phoenix'
 import { Route as SteakhouseRouteImport } from './routes/steakhouse'
+import { Route as SteakSeafoodMenuSanDiegoRouteImport } from './routes/steak-seafood-menu-san-diego'
 import { Route as SteakSeafoodMenuRouteImport } from './routes/steak-seafood-menu'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ServiceAreasRouteImport } from './routes/service-areas'
@@ -97,6 +98,12 @@ const SteakhouseRoute = SteakhouseRouteImport.update({
   path: '/steakhouse',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SteakSeafoodMenuSanDiegoRoute =
+  SteakSeafoodMenuSanDiegoRouteImport.update({
+    id: '/steak-seafood-menu-san-diego',
+    path: '/steak-seafood-menu-san-diego',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const SteakSeafoodMenuRoute = SteakSeafoodMenuRouteImport.update({
   id: '/steak-seafood-menu',
   path: '/steak-seafood-menu',
@@ -284,6 +291,7 @@ export interface FileRoutesByFullPath {
   '/service-areas': typeof ServiceAreasRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/steak-seafood-menu': typeof SteakSeafoodMenuRoute
+  '/steak-seafood-menu-san-diego': typeof SteakSeafoodMenuSanDiegoRoute
   '/steakhouse': typeof SteakhouseRoute
   '/steakhouse-experience-phoenix': typeof SteakhouseExperiencePhoenixRoute
   '/steakhouse-experience-san-diego': typeof SteakhouseExperienceSanDiegoRoute
@@ -324,6 +332,7 @@ export interface FileRoutesByTo {
   '/service-areas': typeof ServiceAreasRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/steak-seafood-menu': typeof SteakSeafoodMenuRoute
+  '/steak-seafood-menu-san-diego': typeof SteakSeafoodMenuSanDiegoRoute
   '/steakhouse': typeof SteakhouseRoute
   '/steakhouse-experience-phoenix': typeof SteakhouseExperiencePhoenixRoute
   '/steakhouse-experience-san-diego': typeof SteakhouseExperienceSanDiegoRoute
@@ -367,6 +376,7 @@ export interface FileRoutesById {
   '/service-areas': typeof ServiceAreasRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/steak-seafood-menu': typeof SteakSeafoodMenuRoute
+  '/steak-seafood-menu-san-diego': typeof SteakSeafoodMenuSanDiegoRoute
   '/steakhouse': typeof SteakhouseRoute
   '/steakhouse-experience-phoenix': typeof SteakhouseExperiencePhoenixRoute
   '/steakhouse-experience-san-diego': typeof SteakhouseExperienceSanDiegoRoute
@@ -411,6 +421,7 @@ export interface FileRouteTypes {
     | '/service-areas'
     | '/sitemap.xml'
     | '/steak-seafood-menu'
+    | '/steak-seafood-menu-san-diego'
     | '/steakhouse'
     | '/steakhouse-experience-phoenix'
     | '/steakhouse-experience-san-diego'
@@ -451,6 +462,7 @@ export interface FileRouteTypes {
     | '/service-areas'
     | '/sitemap.xml'
     | '/steak-seafood-menu'
+    | '/steak-seafood-menu-san-diego'
     | '/steakhouse'
     | '/steakhouse-experience-phoenix'
     | '/steakhouse-experience-san-diego'
@@ -493,6 +505,7 @@ export interface FileRouteTypes {
     | '/service-areas'
     | '/sitemap.xml'
     | '/steak-seafood-menu'
+    | '/steak-seafood-menu-san-diego'
     | '/steakhouse'
     | '/steakhouse-experience-phoenix'
     | '/steakhouse-experience-san-diego'
@@ -536,6 +549,7 @@ export interface RootRouteChildren {
   ServiceAreasRoute: typeof ServiceAreasRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   SteakSeafoodMenuRoute: typeof SteakSeafoodMenuRoute
+  SteakSeafoodMenuSanDiegoRoute: typeof SteakSeafoodMenuSanDiegoRoute
   SteakhouseRoute: typeof SteakhouseRoute
   SteakhouseExperiencePhoenixRoute: typeof SteakhouseExperiencePhoenixRoute
   SteakhouseExperienceSanDiegoRoute: typeof SteakhouseExperienceSanDiegoRoute
@@ -610,6 +624,13 @@ declare module '@tanstack/react-router' {
       path: '/steakhouse'
       fullPath: '/steakhouse'
       preLoaderRoute: typeof SteakhouseRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/steak-seafood-menu-san-diego': {
+      id: '/steak-seafood-menu-san-diego'
+      path: '/steak-seafood-menu-san-diego'
+      fullPath: '/steak-seafood-menu-san-diego'
+      preLoaderRoute: typeof SteakSeafoodMenuSanDiegoRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/steak-seafood-menu': {
@@ -896,6 +917,7 @@ const rootRouteChildren: RootRouteChildren = {
   ServiceAreasRoute: ServiceAreasRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   SteakSeafoodMenuRoute: SteakSeafoodMenuRoute,
+  SteakSeafoodMenuSanDiegoRoute: SteakSeafoodMenuSanDiegoRoute,
   SteakhouseRoute: SteakhouseRoute,
   SteakhouseExperiencePhoenixRoute: SteakhouseExperiencePhoenixRoute,
   SteakhouseExperienceSanDiegoRoute: SteakhouseExperienceSanDiegoRoute,
