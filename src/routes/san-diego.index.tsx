@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { RegionLanding } from "@/components/site/RegionPages";
-import sanDiego from "@/assets/san-diego.jpg";
+import sanDiego from "@/assets/san-diego.png.asset.json";
 
 export const Route = createFileRoute("/san-diego/")({
   head: () => ({
@@ -10,7 +10,7 @@ export const Route = createFileRoute("/san-diego/")({
       { property: "og:title", content: "San Diego Catering — Qfire" },
       { property: "og:description", content: "Wood-fired catering across San Diego County." },
       { property: "og:url", content: "/san-diego" },
-      { property: "og:image", content: sanDiego },
+      { property: "og:image", content: sanDiego.url },
     ],
     links: [{ rel: "canonical", href: "/san-diego" }],
   }),
