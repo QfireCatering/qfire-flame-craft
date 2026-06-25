@@ -65,6 +65,9 @@ export function Nav() {
           </nav>
 
           <div className="flex items-center gap-3">
+            <a href={contact.phoneHref} className="hidden xl:inline-flex items-center gap-2 text-[0.65rem] tracking-[0.25em] uppercase text-bone/80 hover:text-gold transition-colors">
+              <Phone className="size-3.5" /> {contact.phone}
+            </a>
             <Link to="/locations" className="hidden md:inline-flex btn-ghost text-[0.65rem] px-5 py-3">
               Choose Location
             </Link>
