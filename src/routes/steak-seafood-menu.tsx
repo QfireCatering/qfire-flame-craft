@@ -9,7 +9,7 @@ import antipastoKabob from "@/assets/dishes/antipasto-kabob.jpg";
 import antipastoPlatter from "@/assets/dishes/charcuterie.png.asset.json";
 import caesarSalad from "@/assets/dishes/caesar-salad.png.asset.json";
 import houseSalad from "@/assets/dishes/house-salad.jpg";
-import fruitVeggie from "@/assets/dishes/fruit-veggie-platter.jpg";
+import fruitVeggie from "@/assets/dishes/fruit-veggie-platter.png.asset.json";
 import bruschetta from "@/assets/dishes/bruschetta.jpg";
 import teriyakiSkewer from "@/assets/dishes/teriyaki-chicken-skewer.jpg";
 import shrimpSkewers from "@/assets/dishes/grilled-shrimp-skewers.jpg";
@@ -60,7 +60,7 @@ const cold: Dish[] = [
   { name: "Antipasto Charcuterie Platter", body: "A curated assortment of spiced cheese and cured meats.", img: antipastoPlatter.url },
   { name: "Caesar Salad", body: "Freshly cut romaine, parmesan, caesar croutons. Creamy or vinaigrette caesar dressing.", img: caesarSalad.url },
   { name: "House Salad", body: "Green leaf lettuce, grape tomatoes, onions, cucumbers, shredded carrots. Choice of dressings.", img: houseSalad },
-  { name: "Fresh Fruit & Veggie Platter", body: "An assortment of seasonal fruit and vegetables with ranch dip.", img: fruitVeggie },
+  { name: "Fresh Fruit & Veggie Platter", body: "An assortment of seasonal fruit and vegetables with ranch dip.", img: fruitVeggie.url },
   { name: "Bruschetta with Garlic Crostini", body: "Vine-ripe tomato, basil and garlic over toasted crostini.", img: bruschetta },
   { name: "Roasted Asparagus & Feta Salad", body: "Roasted asparagus, feta and grape tomatoes finished with lemon.", img: asparagusFeta },
 ];
