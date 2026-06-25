@@ -48,6 +48,7 @@ import creamPuffsImg from "@/assets/dishes/cream-puffs.jpg";
 import whitePetitFoursImg from "@/assets/dishes/white-petit-fours.jpg";
 import tuxedoPetitFoursImg from "@/assets/dishes/tuxedo-petit-fours.jpg";
 import coffeeStationImg from "@/assets/dishes/coffee-station.jpg";
+import drinkChoiceImg from "@/assets/dishes/drink-choice.avif";
 
 type Dish = { name: string; body?: string; note?: string; img: string };
 
