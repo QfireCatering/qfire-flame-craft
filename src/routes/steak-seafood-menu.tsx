@@ -301,7 +301,8 @@ function SteakSeafoodMenuPage() {
         <div className="container-luxe">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <div className="text-3xl mb-5">✨</div>
-            <h3 className="heading-md text-bone mb-4">Choose the Dining Experience That Fits Your Event</h3>
+            <p className="eyebrow justify-center mb-6">Phoenix Metro Pricing</p>
+            <h3 className="heading-md text-bone mb-4">Choose the Dining Experience That Fits Your Phoenix Metro Event</h3>
           </div>
           <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
             <div className="bg-ink/60 border border-white/5 p-8 lg:p-10 flex flex-col">
