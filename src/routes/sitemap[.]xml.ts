@@ -22,6 +22,8 @@ export const Route = createFileRoute("/sitemap.xml")({
           "/corporate-catering-phoenix",
           "/corporate-catering-san-diego",
           "/private-parties",
+          "/private-party-catering-phoenix",
+          "/private-party-catering-san-diego",
           "/menus",
           "/pricing",
           "/wood-fired",
