@@ -27,6 +27,18 @@ export const Route = createFileRoute("/quote")({
   component: QuotePage,
 });
 
+function getRedirectUrl(region: string, menu: string): string | null {
+  const isPhx = region === "Phoenix Metro";
+  const isSD = region === "San Diego County";
+  const isBBQ = menu === "Wood-Fired BBQ";
+  const isSteak = menu === "Steakhouse";
+  if (isPhx && isBBQ) return "https://fs17.formsite.com/matthews3404/BBQDADDYLLC/index";
+  if (isSD && isBBQ) return "https://fs17.formsite.com/matthews3404/SanDiego/index";
+  if (isPhx && isSteak) return "/steak-seafood-menu";
+  if (isSD && isSteak) return "/steak-seafood-menu-san-diego";
+  return null;
+}
+
 function QuotePage() {
   const [state, setState] = useState<"idle" | "sending" | "sent" | "error">("idle");
   const [error, setError] = useState<string | null>(null);
