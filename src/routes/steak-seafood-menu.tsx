@@ -21,7 +21,7 @@ import ribeyeImg from "@/assets/dishes/ribeye.jpg";
 import nyStripImg from "@/assets/dishes/ny-strip.jpg";
 import beefTenderloinImg from "@/assets/dishes/beef-tenderloin.jpg";
 import filetMignonAsset from "@/assets/dishes/filet-mignon.png.asset.json";
-import topSirloinImg from "@/assets/dishes/top-sirloin.jpg";
+import topSirloinAsset from "@/assets/dishes/top-sirloin.png.asset.json";
 import primeRibImg from "@/assets/dishes/prime-rib.jpg";
 import triTipImg from "@/assets/dishes/tri-tip.jpg";
 import mahiMahiImg from "@/assets/dishes/mahi-mahi.jpg";
@@ -78,7 +78,7 @@ const meats: Dish[] = [
   { name: "New York Strip", body: "Cut from the short loin. Bold, beefy taste with the perfect balance of fat and lean.", img: nyStripImg },
   { name: "Beef Tenderloin", body: "The most tender cut of beef. Buttery texture, mild flavor, luxurious.", img: beefTenderloinImg },
   { name: "Filet Mignon", body: "Premium tenderloin cut, buttery and delicate.", note: "+ $10/steak", img: filetMignonAsset.url },
-  { name: "Top Sirloin (10 oz)", body: "Lean, flavorful, tender, with a rich beefy taste.", img: topSirloinImg },
+  { name: "Top Sirloin (10 oz) — also known as Picanha", body: "Lean, flavorful, tender, with a rich beefy taste.", img: topSirloinAsset.url },
   { name: "Smoked Prime Rib Roast", body: "Slow-smoked to perfection. Smoky crust, perfectly pink center, deep savory flavor.", img: primeRibImg },
   { name: "Beef Tri-Tip", body: "Triangular cut from the bottom sirloin. Savory crust, juicy interior, robust beefy flavor.", img: triTipImg },
   { name: "Grilled Mahi Mahi (8 oz)", body: "Firm, mild-flavored fish with a slightly sweet taste and flaky texture.", img: mahiMahiImg },
