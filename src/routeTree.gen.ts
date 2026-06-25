@@ -23,6 +23,8 @@ import { Route as SanDiegoRouteImport } from './routes/san-diego'
 import { Route as ReviewsRouteImport } from './routes/reviews'
 import { Route as RentalsRouteImport } from './routes/rentals'
 import { Route as QuoteRouteImport } from './routes/quote'
+import { Route as PrivatePartyCateringSanDiegoRouteImport } from './routes/private-party-catering-san-diego'
+import { Route as PrivatePartyCateringPhoenixRouteImport } from './routes/private-party-catering-phoenix'
 import { Route as PrivatePartiesRouteImport } from './routes/private-parties'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as PricingRouteImport } from './routes/pricing'
@@ -116,6 +118,18 @@ const QuoteRoute = QuoteRouteImport.update({
   path: '/quote',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PrivatePartyCateringSanDiegoRoute =
+  PrivatePartyCateringSanDiegoRouteImport.update({
+    id: '/private-party-catering-san-diego',
+    path: '/private-party-catering-san-diego',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const PrivatePartyCateringPhoenixRoute =
+  PrivatePartyCateringPhoenixRouteImport.update({
+    id: '/private-party-catering-phoenix',
+    path: '/private-party-catering-phoenix',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const PrivatePartiesRoute = PrivatePartiesRouteImport.update({
   id: '/private-parties',
   path: '/private-parties',
@@ -247,6 +261,8 @@ export interface FileRoutesByFullPath {
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
   '/private-parties': typeof PrivatePartiesRoute
+  '/private-party-catering-phoenix': typeof PrivatePartyCateringPhoenixRoute
+  '/private-party-catering-san-diego': typeof PrivatePartyCateringSanDiegoRoute
   '/quote': typeof QuoteRoute
   '/rentals': typeof RentalsRoute
   '/reviews': typeof ReviewsRoute
@@ -284,6 +300,8 @@ export interface FileRoutesByTo {
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
   '/private-parties': typeof PrivatePartiesRoute
+  '/private-party-catering-phoenix': typeof PrivatePartyCateringPhoenixRoute
+  '/private-party-catering-san-diego': typeof PrivatePartyCateringSanDiegoRoute
   '/quote': typeof QuoteRoute
   '/rentals': typeof RentalsRoute
   '/reviews': typeof ReviewsRoute
@@ -322,6 +340,8 @@ export interface FileRoutesById {
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
   '/private-parties': typeof PrivatePartiesRoute
+  '/private-party-catering-phoenix': typeof PrivatePartyCateringPhoenixRoute
+  '/private-party-catering-san-diego': typeof PrivatePartyCateringSanDiegoRoute
   '/quote': typeof QuoteRoute
   '/rentals': typeof RentalsRoute
   '/reviews': typeof ReviewsRoute
@@ -362,6 +382,8 @@ export interface FileRouteTypes {
     | '/pricing'
     | '/privacy'
     | '/private-parties'
+    | '/private-party-catering-phoenix'
+    | '/private-party-catering-san-diego'
     | '/quote'
     | '/rentals'
     | '/reviews'
@@ -399,6 +421,8 @@ export interface FileRouteTypes {
     | '/pricing'
     | '/privacy'
     | '/private-parties'
+    | '/private-party-catering-phoenix'
+    | '/private-party-catering-san-diego'
     | '/quote'
     | '/rentals'
     | '/reviews'
@@ -436,6 +460,8 @@ export interface FileRouteTypes {
     | '/pricing'
     | '/privacy'
     | '/private-parties'
+    | '/private-party-catering-phoenix'
+    | '/private-party-catering-san-diego'
     | '/quote'
     | '/rentals'
     | '/reviews'
@@ -475,6 +501,8 @@ export interface RootRouteChildren {
   PricingRoute: typeof PricingRoute
   PrivacyRoute: typeof PrivacyRoute
   PrivatePartiesRoute: typeof PrivatePartiesRoute
+  PrivatePartyCateringPhoenixRoute: typeof PrivatePartyCateringPhoenixRoute
+  PrivatePartyCateringSanDiegoRoute: typeof PrivatePartyCateringSanDiegoRoute
   QuoteRoute: typeof QuoteRoute
   RentalsRoute: typeof RentalsRoute
   ReviewsRoute: typeof ReviewsRoute
@@ -589,6 +617,20 @@ declare module '@tanstack/react-router' {
       path: '/quote'
       fullPath: '/quote'
       preLoaderRoute: typeof QuoteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/private-party-catering-san-diego': {
+      id: '/private-party-catering-san-diego'
+      path: '/private-party-catering-san-diego'
+      fullPath: '/private-party-catering-san-diego'
+      preLoaderRoute: typeof PrivatePartyCateringSanDiegoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/private-party-catering-phoenix': {
+      id: '/private-party-catering-phoenix'
+      path: '/private-party-catering-phoenix'
+      fullPath: '/private-party-catering-phoenix'
+      preLoaderRoute: typeof PrivatePartyCateringPhoenixRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/private-parties': {
@@ -803,6 +845,8 @@ const rootRouteChildren: RootRouteChildren = {
   PricingRoute: PricingRoute,
   PrivacyRoute: PrivacyRoute,
   PrivatePartiesRoute: PrivatePartiesRoute,
+  PrivatePartyCateringPhoenixRoute: PrivatePartyCateringPhoenixRoute,
+  PrivatePartyCateringSanDiegoRoute: PrivatePartyCateringSanDiegoRoute,
   QuoteRoute: QuoteRoute,
   RentalsRoute: RentalsRoute,
   ReviewsRoute: ReviewsRoute,
