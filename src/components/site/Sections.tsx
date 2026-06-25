@@ -8,6 +8,7 @@ export function PageHero({
   subtitle,
   image,
   imageClassName,
+  imageStyle,
   children,
 }: {
   eyebrow?: string;
