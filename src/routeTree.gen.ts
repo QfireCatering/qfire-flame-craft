@@ -14,6 +14,7 @@ import { Route as WhyQfireRouteImport } from './routes/why-qfire'
 import { Route as WeddingsRouteImport } from './routes/weddings'
 import { Route as TermsRouteImport } from './routes/terms'
 import { Route as SteakhouseRouteImport } from './routes/steakhouse'
+import { Route as SteakSeafoodMenuRouteImport } from './routes/steak-seafood-menu'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ServiceAreasRouteImport } from './routes/service-areas'
 import { Route as SanDiegoRouteImport } from './routes/san-diego'
@@ -64,6 +65,11 @@ const TermsRoute = TermsRouteImport.update({
 const SteakhouseRoute = SteakhouseRouteImport.update({
   id: '/steakhouse',
   path: '/steakhouse',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SteakSeafoodMenuRoute = SteakSeafoodMenuRouteImport.update({
+  id: '/steak-seafood-menu',
+  path: '/steak-seafood-menu',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
@@ -219,6 +225,7 @@ export interface FileRoutesByFullPath {
   '/san-diego': typeof SanDiegoRouteWithChildren
   '/service-areas': typeof ServiceAreasRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/steak-seafood-menu': typeof SteakSeafoodMenuRoute
   '/steakhouse': typeof SteakhouseRoute
   '/terms': typeof TermsRoute
   '/weddings': typeof WeddingsRoute
@@ -250,6 +257,7 @@ export interface FileRoutesByTo {
   '/reviews': typeof ReviewsRoute
   '/service-areas': typeof ServiceAreasRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/steak-seafood-menu': typeof SteakSeafoodMenuRoute
   '/steakhouse': typeof SteakhouseRoute
   '/terms': typeof TermsRoute
   '/weddings': typeof WeddingsRoute
@@ -284,6 +292,7 @@ export interface FileRoutesById {
   '/san-diego': typeof SanDiegoRouteWithChildren
   '/service-areas': typeof ServiceAreasRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/steak-seafood-menu': typeof SteakSeafoodMenuRoute
   '/steakhouse': typeof SteakhouseRoute
   '/terms': typeof TermsRoute
   '/weddings': typeof WeddingsRoute
@@ -319,6 +328,7 @@ export interface FileRouteTypes {
     | '/san-diego'
     | '/service-areas'
     | '/sitemap.xml'
+    | '/steak-seafood-menu'
     | '/steakhouse'
     | '/terms'
     | '/weddings'
@@ -350,6 +360,7 @@ export interface FileRouteTypes {
     | '/reviews'
     | '/service-areas'
     | '/sitemap.xml'
+    | '/steak-seafood-menu'
     | '/steakhouse'
     | '/terms'
     | '/weddings'
@@ -383,6 +394,7 @@ export interface FileRouteTypes {
     | '/san-diego'
     | '/service-areas'
     | '/sitemap.xml'
+    | '/steak-seafood-menu'
     | '/steakhouse'
     | '/terms'
     | '/weddings'
@@ -417,6 +429,7 @@ export interface RootRouteChildren {
   SanDiegoRoute: typeof SanDiegoRouteWithChildren
   ServiceAreasRoute: typeof ServiceAreasRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  SteakSeafoodMenuRoute: typeof SteakSeafoodMenuRoute
   SteakhouseRoute: typeof SteakhouseRoute
   TermsRoute: typeof TermsRoute
   WeddingsRoute: typeof WeddingsRoute
@@ -459,6 +472,13 @@ declare module '@tanstack/react-router' {
       path: '/steakhouse'
       fullPath: '/steakhouse'
       preLoaderRoute: typeof SteakhouseRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/steak-seafood-menu': {
+      id: '/steak-seafood-menu'
+      path: '/steak-seafood-menu'
+      fullPath: '/steak-seafood-menu'
+      preLoaderRoute: typeof SteakSeafoodMenuRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/sitemap.xml': {
@@ -705,6 +725,7 @@ const rootRouteChildren: RootRouteChildren = {
   SanDiegoRoute: SanDiegoRouteWithChildren,
   ServiceAreasRoute: ServiceAreasRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
+  SteakSeafoodMenuRoute: SteakSeafoodMenuRoute,
   SteakhouseRoute: SteakhouseRoute,
   TermsRoute: TermsRoute,
   WeddingsRoute: WeddingsRoute,

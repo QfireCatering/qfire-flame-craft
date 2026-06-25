@@ -20,7 +20,7 @@ export const Route = createFileRoute("/menus")({
 function MenusPage() {
   const menus = [
     { img: bbqPlatter1.url, label: "Wood-Fired", body: "Slow-smoked brisket, tri-tip, pulled meats and comfort sides. Backyard elegance.", href: "/wood-fired" as const },
-    { img: steakhouseMenu.url, label: "Steakhouse", body: "Ribeye, filet, picanha, prime rib. Plated dinners and family-style service.", href: "/steakhouse" as const },
+    { img: steakhouseMenu.url, label: "Steakhouse", body: "Ribeye, filet, picanha, prime rib. Plated dinners and family-style service.", href: "/steak-seafood-menu" as const },
   ];
   return (
     <>
