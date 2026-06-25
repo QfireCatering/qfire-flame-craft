@@ -99,14 +99,17 @@ function Home() {
       </section>
 
       {/* TWO REGIONS */}
-      <section className="relative py-24 lg:py-36 bg-onyx">
-        <div className="container-luxe">
-          <div className="text-center mb-16 lg:mb-20">
+      <section className="relative py-28 lg:py-44 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-onyx via-charcoal/40 to-onyx" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_oklch(0.78_0.13_82_/_6%)_0%,_transparent_70%)]" />
+
+        <div className="container-luxe relative z-10">
+          <div className="text-center mb-20 lg:mb-24">
             <div className="eyebrow justify-center mb-6">Serving Two Regions</div>
             <h2 className="heading-lg text-bone">Where shall we cater?</h2>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-10">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-12">
             {[
               { key: "phoenix", img: phoenix.url, name: "Phoenix Metro", state: "Arizona",
                 cities: "Phoenix · Scottsdale · Mesa · Chandler · Gilbert · Glendale · Surprise · Avondale · Goodyear · Peoria",
@@ -115,14 +118,14 @@ function Home() {
                 cities: "San Diego · Carlsbad · Encinitas · Del Mar · Rancho Santa Fe · Poway · La Jolla · Escondido · Vista · Oceanside",
                 href: "/san-diego" as const },
             ].map((r) => (
-              <Link key={r.key} to={r.href} className="group relative block aspect-[4/5] lg:aspect-[5/6] overflow-hidden border border-white/5">
+              <Link key={r.key} to={r.href} className="group relative block aspect-[4/5] lg:aspect-[5/6] overflow-hidden rounded-sm ring-1 ring-white/15 ring-offset-4 ring-offset-onyx transition-all duration-500 hover:ring-gold/60 hover:shadow-[0_0_60px_-15px_oklch(0.78_0.13_82_/_25%)]">
                 <img src={r.img} alt={r.name} loading="lazy" width={1600} height={1100}
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1500ms] group-hover:scale-105" />
-                <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-ink/10" />
                 <div className="absolute inset-0 p-8 lg:p-12 flex flex-col justify-end">
                   <div className="text-[0.65rem] tracking-[0.35em] uppercase text-gold mb-4">{r.state}</div>
                   <div className="heading-md text-bone group-hover:text-gold transition-colors duration-500">{r.name}</div>
-                  <p className="mt-5 text-sm text-bone/70 leading-relaxed max-w-md">{r.cities}</p>
+                  <p className="mt-5 text-sm text-bone/80 leading-relaxed max-w-md">{r.cities}</p>
                   <div className="mt-8 inline-flex items-center gap-3 text-[0.7rem] tracking-[0.25em] uppercase text-bone group-hover:text-gold transition-colors">
                     Enter {r.name === "Phoenix Metro" ? "Phoenix" : "San Diego"} Site
                     <ArrowUpRight className="size-4 transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1" />
