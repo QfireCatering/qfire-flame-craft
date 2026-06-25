@@ -23,7 +23,7 @@ import tboneAsset from "@/assets/dishes/tbone-steak.avif.asset.json";
 import beefTenderloinImg from "@/assets/dishes/beef-tenderloin.jpg";
 import filetMignonAsset from "@/assets/dishes/filet-mignon.png.asset.json";
 import topSirloinAsset from "@/assets/dishes/top-sirloin.png.asset.json";
-import primeRibImg from "@/assets/dishes/prime-rib.jpg";
+import primeRibAsset from "@/assets/dishes/prime-rib-roast.png.asset.json";
 import triTipImg from "@/assets/dishes/tri-tip.jpg";
 import mahiMahiImg from "@/assets/dishes/mahi-mahi.jpg";
 import snapperImg from "@/assets/dishes/snapper.jpg";
