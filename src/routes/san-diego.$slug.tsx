@@ -13,6 +13,8 @@ const titles: Record<string, { t: string; d: string }> = {
   gallery: { t: "San Diego Gallery", d: "Photos from recent San Diego County events catered by Qfire." },
   reviews: { t: "San Diego Reviews", d: "Five-star San Diego County reviews from Qfire Catering clients." },
   blog: { t: "San Diego Journal", d: "Wedding tips, venue spotlights and catering guides for San Diego County." },
+  holiday: { t: "San Diego County Holiday Catering", d: "Office holiday parties, family dinners and client appreciation events across San Diego County." },
+  backyard: { t: "San Diego County Backyard Catering", d: "Graduations, birthdays and milestone backyard parties across San Diego County." },
   venues: { t: "San Diego Venues", d: "Beautiful event venues across San Diego County where we cater regularly." },
 };
 

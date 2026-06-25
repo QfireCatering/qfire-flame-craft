@@ -13,6 +13,8 @@ const titles: Record<string, { t: string; d: string }> = {
   gallery: { t: "Phoenix Gallery", d: "Photos from recent Phoenix Metro events catered by Qfire." },
   reviews: { t: "Phoenix Reviews", d: "Five-star Phoenix Metro reviews from Qfire Catering clients." },
   blog: { t: "Phoenix Journal", d: "Wedding tips, venue spotlights and catering guides for Phoenix Metro." },
+  holiday: { t: "Phoenix Metro Holiday Catering", d: "Office holiday parties, family dinners and client appreciation events across Phoenix Metro." },
+  backyard: { t: "Phoenix Metro Backyard Catering", d: "Graduations, birthdays and milestone backyard parties across Phoenix Metro." },
   venues: { t: "Phoenix Venues", d: "Beautiful event venues across Phoenix Metro where we cater regularly." },
 };
 
