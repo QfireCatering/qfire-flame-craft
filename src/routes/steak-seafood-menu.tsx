@@ -171,6 +171,7 @@ function DishCard({ d }: { d: Dish }) {
           width={1024}
           height={1024}
           className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105"
+          style={{ filter: 'contrast(1.1) saturate(1.15) brightness(1.05)', imageRendering: '-webkit-optimize-contrast' }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/10 to-transparent pointer-events-none" />
       </div>
