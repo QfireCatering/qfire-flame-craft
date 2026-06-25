@@ -430,7 +430,7 @@ function SteakSeafoodMenuPage() {
               <span className="eyebrow">Choose 2</span>
             </div>
             <h2 className="heading-lg text-bone">Drinks</h2>
-            <p className="mt-5 text-bone/65 leading-relaxed">Refreshing non-alcoholic options served from elegant dispensers. Full bar and bartending service available as an add-on.</p>
+            <p className="mt-5 text-bone/65 leading-relaxed">Refreshing non-alcoholic options served from elegant dispensers at your Phoenix Metro event. Full bar and bartending service available as an add-on.</p>
           </div>
           <div className="mb-10 overflow-hidden border border-white/5">
             <img src={drinkChoiceImg} alt="Refreshing non-alcoholic beverage selections" loading="lazy" className="w-full h-64 lg:h-96 object-cover" />
