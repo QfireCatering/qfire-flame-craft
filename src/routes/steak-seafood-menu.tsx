@@ -9,7 +9,7 @@ import antipastoKabob from "@/assets/dishes/antipasto-kabob.jpg";
 import antipastoPlatter from "@/assets/dishes/charcuterie.png.asset.json";
 import caesarSalad from "@/assets/dishes/caesar-salad.png.asset.json";
 import houseSalad from "@/assets/dishes/house-salad.jpg";
-import fruitVeggie from "@/assets/dishes/fruit-veggie-platter.jpg";
+import fruitVeggie from "@/assets/dishes/fruit-veggie-platter.png.asset.json";
 import bruschetta from "@/assets/dishes/bruschetta.jpg";
 import teriyakiSkewer from "@/assets/dishes/teriyaki-chicken-skewer.jpg";
 import shrimpSkewers from "@/assets/dishes/grilled-shrimp-skewers.jpg";
