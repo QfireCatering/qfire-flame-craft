@@ -14,7 +14,7 @@ export const Route = createFileRoute("/steakhouse-experience-san-diego")({
   head: () => ({
     meta: [
       { title: "Steakhouse Catering San Diego — Surf & Turf, Onsite Charcoal Grilling | Qfire" },
-      { name: "description", content: "Luxury steakhouse catering across San Diego County. Ribeye, filet mignon, prime rib, salmon and lobster — grilled live onsite at La Jolla, Del Mar, Rancho Santa Fe and Coronado weddings, corporate events and private parties. Buffet from $74/pp · Plated from $128/pp." },
+      { name: "description", content: "Luxury steakhouse catering across San Diego County. Ribeye, filet mignon, prime rib, salmon and lobster — grilled live onsite at La Jolla, Del Mar, Rancho Santa Fe and Coronado weddings, corporate events and private parties. Buffet from $79/pp · Plated from $133/pp." },
       { property: "og:title", content: "Steakhouse Catering San Diego | Qfire" },
       { property: "og:description", content: "Live charcoal grilling, surf & turf and white-glove service across San Diego County — weddings, corporate dinners and luxury private parties." },
       { property: "og:url", content: "/steakhouse-experience-san-diego" },
@@ -45,9 +45,9 @@ export const Route = createFileRoute("/steakhouse-experience-san-diego")({
             { "@type": "City", name: "Chula Vista" },
           ],
           offers: [
-            { "@type": "Offer", name: "Buffet Style", price: "74", priceCurrency: "USD", description: "Per person — restaurant-quality buffet steakhouse catering in San Diego." },
-            { "@type": "Offer", name: "Family Style", price: "89", priceCurrency: "USD", description: "Per person — shared platter steakhouse experience in San Diego County." },
-            { "@type": "Offer", name: "Plated Service", price: "128", priceCurrency: "USD", description: "Per person — fully plated luxury steakhouse catering in San Diego." },
+            { "@type": "Offer", name: "Buffet Style", price: "79", priceCurrency: "USD", description: "Per person — restaurant-quality buffet steakhouse catering in San Diego." },
+            { "@type": "Offer", name: "Family Style", price: "94", priceCurrency: "USD", description: "Per person — shared platter steakhouse experience in San Diego County." },
+            { "@type": "Offer", name: "Plated Service", price: "133", priceCurrency: "USD", description: "Per person — fully plated luxury steakhouse catering in San Diego." },
           ],
         }),
       },
