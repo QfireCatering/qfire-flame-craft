@@ -10,6 +10,8 @@ const bartender = bartenderAsset.url;
 import corporateAsset from "@/assets/corporate-catering.png.asset.json";
 const corporate = corporateAsset.url;
 import privateParty from "@/assets/private-party.jpg";
+import privatePartyHeroAsset from "@/assets/private-parties-hero.png.asset.json";
+const privatePartyHero = privatePartyHeroAsset.url;
 import type { ServicePageConfig } from "@/components/site/ServicePage";
 
 const galleryAll = [weddingTable, brisket, steak, buffet, heroFire, corporate, privateParty, weddingTable];
