@@ -14,6 +14,7 @@ import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Nav } from "../components/site/Nav";
 import { Footer } from "../components/site/Footer";
 import { StickyMobileCTA } from "../components/site/StickyMobileCTA";
+import { FloatingQuoteCTA } from "../components/site/FloatingQuoteCTA";
 
 function NotFoundComponent() {
   return (
@@ -163,6 +164,7 @@ function RootComponent() {
       </main>
       <Footer />
       <StickyMobileCTA />
+      <FloatingQuoteCTA />
     </QueryClientProvider>
   );
 }
