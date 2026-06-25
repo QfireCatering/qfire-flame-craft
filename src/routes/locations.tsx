@@ -39,13 +39,13 @@ function LocationsPage() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-10 max-w-6xl mx-auto">
           {regions.map((r) => (
-            <Link key={r.key} to={r.href} className="group relative block aspect-[4/5] overflow-hidden border border-white/5">
+            <Link key={r.key} to={r.href} className="group relative block aspect-[4/3] overflow-hidden border border-white/5">
               <img src={r.img} alt={r.name} loading="lazy" width={1600} height={1100}
-                className={`absolute inset-0 w-full h-full object-cover transition-transform duration-[1500ms] group-hover:scale-105 ${r.key === "san-diego" ? "object-center" : ""}`} />
+                className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-[1500ms] group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent" />
-              <div className="absolute inset-0 p-10 lg:p-14 flex flex-col justify-end">
+              <div className="absolute inset-0 p-8 lg:p-10 flex flex-col justify-end">
                 <div className="text-[0.65rem] tracking-[0.35em] uppercase text-gold mb-4">{r.state}</div>
                 <div className="heading-lg text-bone group-hover:text-gold transition-colors duration-500">{r.name}</div>
                 <p className="mt-6 text-sm text-bone/70 leading-relaxed">{r.cities.join(" · ")}</p>
