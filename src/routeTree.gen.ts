@@ -12,22 +12,28 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as WoodFiredRouteImport } from './routes/wood-fired'
 import { Route as WhyQfireRouteImport } from './routes/why-qfire'
 import { Route as WeddingsRouteImport } from './routes/weddings'
+import { Route as TermsRouteImport } from './routes/terms'
 import { Route as SteakhouseRouteImport } from './routes/steakhouse'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as ServiceAreasRouteImport } from './routes/service-areas'
 import { Route as SanDiegoRouteImport } from './routes/san-diego'
 import { Route as ReviewsRouteImport } from './routes/reviews'
 import { Route as RentalsRouteImport } from './routes/rentals'
 import { Route as QuoteRouteImport } from './routes/quote'
 import { Route as PrivatePartiesRouteImport } from './routes/private-parties'
 import { Route as PrivateChefRouteImport } from './routes/private-chef'
+import { Route as PrivacyRouteImport } from './routes/privacy'
+import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as PicturesRouteImport } from './routes/pictures'
 import { Route as PhoenixRouteImport } from './routes/phoenix'
 import { Route as MenusRouteImport } from './routes/menus'
 import { Route as LocationsRouteImport } from './routes/locations'
 import { Route as FaqRouteImport } from './routes/faq'
 import { Route as CorporateRouteImport } from './routes/corporate'
+import { Route as ContactRouteImport } from './routes/contact'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as BartendingRouteImport } from './routes/bartending'
+import { Route as AccessibilityRouteImport } from './routes/accessibility'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as SanDiegoIndexRouteImport } from './routes/san-diego.index'
@@ -50,6 +56,11 @@ const WeddingsRoute = WeddingsRouteImport.update({
   path: '/weddings',
   getParentRoute: () => rootRouteImport,
 } as any)
+const TermsRoute = TermsRouteImport.update({
+  id: '/terms',
+  path: '/terms',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SteakhouseRoute = SteakhouseRouteImport.update({
   id: '/steakhouse',
   path: '/steakhouse',
@@ -58,6 +69,11 @@ const SteakhouseRoute = SteakhouseRouteImport.update({
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServiceAreasRoute = ServiceAreasRouteImport.update({
+  id: '/service-areas',
+  path: '/service-areas',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SanDiegoRoute = SanDiegoRouteImport.update({
@@ -90,6 +106,16 @@ const PrivateChefRoute = PrivateChefRouteImport.update({
   path: '/private-chef',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PricingRoute = PricingRouteImport.update({
+  id: '/pricing',
+  path: '/pricing',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PicturesRoute = PicturesRouteImport.update({
   id: '/pictures',
   path: '/pictures',
@@ -120,6 +146,11 @@ const CorporateRoute = CorporateRouteImport.update({
   path: '/corporate',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BlogRoute = BlogRouteImport.update({
   id: '/blog',
   path: '/blog',
@@ -128,6 +159,11 @@ const BlogRoute = BlogRouteImport.update({
 const BartendingRoute = BartendingRouteImport.update({
   id: '/bartending',
   path: '/bartending',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AccessibilityRoute = AccessibilityRouteImport.update({
+  id: '/accessibility',
+  path: '/accessibility',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AboutRoute = AboutRouteImport.update({
@@ -164,22 +200,28 @@ const PhoenixSlugRoute = PhoenixSlugRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/accessibility': typeof AccessibilityRoute
   '/bartending': typeof BartendingRoute
   '/blog': typeof BlogRoute
+  '/contact': typeof ContactRoute
   '/corporate': typeof CorporateRoute
   '/faq': typeof FaqRoute
   '/locations': typeof LocationsRoute
   '/menus': typeof MenusRoute
   '/phoenix': typeof PhoenixRouteWithChildren
   '/pictures': typeof PicturesRoute
+  '/pricing': typeof PricingRoute
+  '/privacy': typeof PrivacyRoute
   '/private-chef': typeof PrivateChefRoute
   '/private-parties': typeof PrivatePartiesRoute
   '/quote': typeof QuoteRoute
   '/rentals': typeof RentalsRoute
   '/reviews': typeof ReviewsRoute
   '/san-diego': typeof SanDiegoRouteWithChildren
+  '/service-areas': typeof ServiceAreasRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/steakhouse': typeof SteakhouseRoute
+  '/terms': typeof TermsRoute
   '/weddings': typeof WeddingsRoute
   '/why-qfire': typeof WhyQfireRoute
   '/wood-fired': typeof WoodFiredRoute
@@ -191,20 +233,26 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/accessibility': typeof AccessibilityRoute
   '/bartending': typeof BartendingRoute
   '/blog': typeof BlogRoute
+  '/contact': typeof ContactRoute
   '/corporate': typeof CorporateRoute
   '/faq': typeof FaqRoute
   '/locations': typeof LocationsRoute
   '/menus': typeof MenusRoute
   '/pictures': typeof PicturesRoute
+  '/pricing': typeof PricingRoute
+  '/privacy': typeof PrivacyRoute
   '/private-chef': typeof PrivateChefRoute
   '/private-parties': typeof PrivatePartiesRoute
   '/quote': typeof QuoteRoute
   '/rentals': typeof RentalsRoute
   '/reviews': typeof ReviewsRoute
+  '/service-areas': typeof ServiceAreasRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/steakhouse': typeof SteakhouseRoute
+  '/terms': typeof TermsRoute
   '/weddings': typeof WeddingsRoute
   '/why-qfire': typeof WhyQfireRoute
   '/wood-fired': typeof WoodFiredRoute
@@ -217,22 +265,28 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/accessibility': typeof AccessibilityRoute
   '/bartending': typeof BartendingRoute
   '/blog': typeof BlogRoute
+  '/contact': typeof ContactRoute
   '/corporate': typeof CorporateRoute
   '/faq': typeof FaqRoute
   '/locations': typeof LocationsRoute
   '/menus': typeof MenusRoute
   '/phoenix': typeof PhoenixRouteWithChildren
   '/pictures': typeof PicturesRoute
+  '/pricing': typeof PricingRoute
+  '/privacy': typeof PrivacyRoute
   '/private-chef': typeof PrivateChefRoute
   '/private-parties': typeof PrivatePartiesRoute
   '/quote': typeof QuoteRoute
   '/rentals': typeof RentalsRoute
   '/reviews': typeof ReviewsRoute
   '/san-diego': typeof SanDiegoRouteWithChildren
+  '/service-areas': typeof ServiceAreasRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/steakhouse': typeof SteakhouseRoute
+  '/terms': typeof TermsRoute
   '/weddings': typeof WeddingsRoute
   '/why-qfire': typeof WhyQfireRoute
   '/wood-fired': typeof WoodFiredRoute
@@ -246,22 +300,28 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/about'
+    | '/accessibility'
     | '/bartending'
     | '/blog'
+    | '/contact'
     | '/corporate'
     | '/faq'
     | '/locations'
     | '/menus'
     | '/phoenix'
     | '/pictures'
+    | '/pricing'
+    | '/privacy'
     | '/private-chef'
     | '/private-parties'
     | '/quote'
     | '/rentals'
     | '/reviews'
     | '/san-diego'
+    | '/service-areas'
     | '/sitemap.xml'
     | '/steakhouse'
+    | '/terms'
     | '/weddings'
     | '/why-qfire'
     | '/wood-fired'
@@ -273,20 +333,26 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/about'
+    | '/accessibility'
     | '/bartending'
     | '/blog'
+    | '/contact'
     | '/corporate'
     | '/faq'
     | '/locations'
     | '/menus'
     | '/pictures'
+    | '/pricing'
+    | '/privacy'
     | '/private-chef'
     | '/private-parties'
     | '/quote'
     | '/rentals'
     | '/reviews'
+    | '/service-areas'
     | '/sitemap.xml'
     | '/steakhouse'
+    | '/terms'
     | '/weddings'
     | '/why-qfire'
     | '/wood-fired'
@@ -298,22 +364,28 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/about'
+    | '/accessibility'
     | '/bartending'
     | '/blog'
+    | '/contact'
     | '/corporate'
     | '/faq'
     | '/locations'
     | '/menus'
     | '/phoenix'
     | '/pictures'
+    | '/pricing'
+    | '/privacy'
     | '/private-chef'
     | '/private-parties'
     | '/quote'
     | '/rentals'
     | '/reviews'
     | '/san-diego'
+    | '/service-areas'
     | '/sitemap.xml'
     | '/steakhouse'
+    | '/terms'
     | '/weddings'
     | '/why-qfire'
     | '/wood-fired'
@@ -326,22 +398,28 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
+  AccessibilityRoute: typeof AccessibilityRoute
   BartendingRoute: typeof BartendingRoute
   BlogRoute: typeof BlogRoute
+  ContactRoute: typeof ContactRoute
   CorporateRoute: typeof CorporateRoute
   FaqRoute: typeof FaqRoute
   LocationsRoute: typeof LocationsRoute
   MenusRoute: typeof MenusRoute
   PhoenixRoute: typeof PhoenixRouteWithChildren
   PicturesRoute: typeof PicturesRoute
+  PricingRoute: typeof PricingRoute
+  PrivacyRoute: typeof PrivacyRoute
   PrivateChefRoute: typeof PrivateChefRoute
   PrivatePartiesRoute: typeof PrivatePartiesRoute
   QuoteRoute: typeof QuoteRoute
   RentalsRoute: typeof RentalsRoute
   ReviewsRoute: typeof ReviewsRoute
   SanDiegoRoute: typeof SanDiegoRouteWithChildren
+  ServiceAreasRoute: typeof ServiceAreasRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   SteakhouseRoute: typeof SteakhouseRoute
+  TermsRoute: typeof TermsRoute
   WeddingsRoute: typeof WeddingsRoute
   WhyQfireRoute: typeof WhyQfireRoute
   WoodFiredRoute: typeof WoodFiredRoute
@@ -370,6 +448,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof WeddingsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/terms': {
+      id: '/terms'
+      path: '/terms'
+      fullPath: '/terms'
+      preLoaderRoute: typeof TermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/steakhouse': {
       id: '/steakhouse'
       path: '/steakhouse'
@@ -382,6 +467,13 @@ declare module '@tanstack/react-router' {
       path: '/sitemap.xml'
       fullPath: '/sitemap.xml'
       preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/service-areas': {
+      id: '/service-areas'
+      path: '/service-areas'
+      fullPath: '/service-areas'
+      preLoaderRoute: typeof ServiceAreasRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/san-diego': {
@@ -426,6 +518,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PrivateChefRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pricing': {
+      id: '/pricing'
+      path: '/pricing'
+      fullPath: '/pricing'
+      preLoaderRoute: typeof PricingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/pictures': {
       id: '/pictures'
       path: '/pictures'
@@ -468,6 +574,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CorporateRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog': {
       id: '/blog'
       path: '/blog'
@@ -480,6 +593,13 @@ declare module '@tanstack/react-router' {
       path: '/bartending'
       fullPath: '/bartending'
       preLoaderRoute: typeof BartendingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/accessibility': {
+      id: '/accessibility'
+      path: '/accessibility'
+      fullPath: '/accessibility'
+      preLoaderRoute: typeof AccessibilityRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about': {
@@ -557,22 +677,28 @@ const SanDiegoRouteWithChildren = SanDiegoRoute._addFileChildren(
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
+  AccessibilityRoute: AccessibilityRoute,
   BartendingRoute: BartendingRoute,
   BlogRoute: BlogRoute,
+  ContactRoute: ContactRoute,
   CorporateRoute: CorporateRoute,
   FaqRoute: FaqRoute,
   LocationsRoute: LocationsRoute,
   MenusRoute: MenusRoute,
   PhoenixRoute: PhoenixRouteWithChildren,
   PicturesRoute: PicturesRoute,
+  PricingRoute: PricingRoute,
+  PrivacyRoute: PrivacyRoute,
   PrivateChefRoute: PrivateChefRoute,
   PrivatePartiesRoute: PrivatePartiesRoute,
   QuoteRoute: QuoteRoute,
   RentalsRoute: RentalsRoute,
   ReviewsRoute: ReviewsRoute,
   SanDiegoRoute: SanDiegoRouteWithChildren,
+  ServiceAreasRoute: ServiceAreasRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   SteakhouseRoute: SteakhouseRoute,
+  TermsRoute: TermsRoute,
   WeddingsRoute: WeddingsRoute,
   WhyQfireRoute: WhyQfireRoute,
   WoodFiredRoute: WoodFiredRoute,
