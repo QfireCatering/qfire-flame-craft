@@ -21,7 +21,7 @@ export const Route = createFileRoute("/menus")({
 
 function MenusPage() {
   const menus = [
-    { img: brisket, label: "Wood-Fired", body: "Slow-smoked brisket, tri-tip, pulled meats and comfort sides. Backyard elegance.", href: "/wood-fired" as const },
+    { img: bbqPlatter1.url, label: "Wood-Fired", body: "Slow-smoked brisket, tri-tip, pulled meats and comfort sides. Backyard elegance.", href: "/wood-fired" as const },
     { img: steak, label: "Steakhouse", body: "Ribeye, filet, picanha, prime rib. Plated dinners and family-style service.", href: "/steakhouse" as const },
     { img: chefTerry.url, label: "Private Chef", body: "Intimate, multi-course chef's dinners in your home or venue.", href: "/private-chef" as const },
     { img: buffet, label: "Buffet & Stations", body: "Live-fire stations and full buffet packages for large gatherings.", href: "/wood-fired" as const },
