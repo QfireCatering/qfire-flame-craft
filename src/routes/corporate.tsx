@@ -56,7 +56,7 @@ function CorporateHub() {
               { to: "/corporate-catering-san-diego", img: sanDiego, name: "San Diego County", cities: "La Jolla · Del Mar · Carlsbad · Rancho Santa Fe · Coronado · Encinitas · Mission Valley · Poway" },
             ].map((r) => (
               <Link key={r.to} to={r.to} className="group relative aspect-[4/3] overflow-hidden block border border-white/10 hover:border-gold/60 transition-colors">
-                <img src={r.img} alt={`${r.name} corporate catering`} className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
+                <img src={r.img} alt={`${r.name} corporate catering`} className="absolute inset-0 w-full h-full object-cover object-[center_55%] transition-transform duration-700 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/50 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-8 lg:p-10">
                   <h3 className="font-display text-4xl lg:text-5xl text-bone">{r.name}</h3>
