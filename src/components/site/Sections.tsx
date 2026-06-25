@@ -3,6 +3,8 @@ import { Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import { RegionKey } from "@/lib/site";
 import { PhoenixPricingBanner } from "./PhoenixPricingBanner";
+import { SanDiegoPricingBanner } from "./SanDiegoPricingBanner";
+
 
 export function PageHero({
   eyebrow,
