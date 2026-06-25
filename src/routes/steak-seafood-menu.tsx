@@ -21,7 +21,7 @@ import ribeyeImg from "@/assets/dishes/ribeye.jpg";
 import nyStripImg from "@/assets/dishes/ny-strip.jpg";
 import beefTenderloinImg from "@/assets/dishes/beef-tenderloin.jpg";
 import filetMignonAsset from "@/assets/dishes/filet-mignon.png.asset.json";
-import topSirloinImg from "@/assets/dishes/top-sirloin.jpg";
+import topSirloinAsset from "@/assets/dishes/top-sirloin.png.asset.json";
 import primeRibImg from "@/assets/dishes/prime-rib.jpg";
 import triTipImg from "@/assets/dishes/tri-tip.jpg";
 import mahiMahiImg from "@/assets/dishes/mahi-mahi.jpg";
