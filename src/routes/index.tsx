@@ -121,7 +121,7 @@ function Home() {
               <Link key={r.key} to={r.href} className="group relative aspect-[4/5] overflow-hidden block border border-gold/20 hover:border-gold transition-colors">
                 <img src={r.img} alt={r.name} loading="lazy" width={1600} height={1100}
                   className={`absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 ${r.key === "san-diego" ? "" : ""}`}
-                  style={r.key === "san-diego" ? { objectPosition: "center center" } : undefined} />
+                  style={r.key === "san-diego" ? { objectPosition: "85% center" } : undefined} />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/60 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-10">
                   <div className="eyebrow text-gold mb-3">Catering Region</div>
