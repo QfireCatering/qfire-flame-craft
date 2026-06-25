@@ -55,14 +55,15 @@ function WeddingsHub() {
               { to: "/wedding-catering-phoenix", img: phoenix, name: "Phoenix Metro", cities: "Scottsdale · Paradise Valley · Mesa · Chandler · Gilbert · Tempe · Queen Creek" },
               { to: "/wedding-catering-san-diego", img: sanDiego, name: "San Diego County", cities: "La Jolla · Del Mar · Carlsbad · Rancho Santa Fe · Coronado · Encinitas" },
             ].map((r) => (
-              <Link key={r.to} to={r.to} className="group relative aspect-[5/4] overflow-hidden block border border-white/10 hover:border-gold/60 transition-colors">
-                <img src={r.img} alt={`${r.name} wedding catering`} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/50 to-transparent" />
+              <Link key={r.to} to={r.to} className="group relative aspect-[4/5] overflow-hidden block border border-gold/20 hover:border-gold transition-colors">
+                <img src={r.img} alt={`${r.name} wedding catering`} className={`absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 ${r.name === "San Diego County" ? "object-right" : ""}`} />
+                <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/60 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-10">
-                  <h3 className="font-display text-4xl lg:text-5xl text-bone">{r.name}</h3>
-                  <p className="mt-3 text-bone/80 font-light">{r.cities}</p>
+                  <div className="eyebrow text-gold mb-3">Wedding Catering</div>
+                  <h3 className="font-display text-4xl md:text-5xl text-bone">{r.name}</h3>
+                  <p className="mt-4 text-bone/80 font-light">{r.cities}</p>
                   <div className="mt-6 inline-flex items-center gap-2 text-[0.7rem] tracking-[0.28em] uppercase text-gold border-b border-gold/40 pb-1">
-                    View Wedding Catering <ArrowRight className="size-3" />
+                    Enter {r.name} <ArrowRight className="size-3" />
                   </div>
                 </div>
               </Link>
