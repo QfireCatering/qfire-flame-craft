@@ -2,15 +2,13 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import bbqPlatter1 from "@/assets/bbq-platter1.png.asset.json";
 import steakhouseMenu from "@/assets/steakhouse-menu.png.asset.json";
-import chefTerry from "@/assets/chef-terry.jpg.asset.json";
-import buffet from "@/assets/buffet.jpg";
 import { CTASection } from "@/components/site/Sections";
 
 export const Route = createFileRoute("/menus")({
   head: () => ({
     meta: [
-      { title: "Catering Menus — Wood-Fired BBQ, Steakhouse & Private Chef | Qfire" },
-      { name: "description", content: "Explore Qfire Catering menus: slow-smoked wood-fired BBQ, hand-cut steakhouse plates, intimate private chef dinners, live-fire stations and premium buffet packages. Every menu custom-built around your guests, venue and vision." },
+      { title: "Catering Menus — Wood-Fired BBQ & Steakhouse | Qfire" },
+      { name: "description", content: "Explore Qfire Catering menus: slow-smoked wood-fired BBQ and hand-cut steakhouse plates. Every menu custom-built around your guests, venue and vision." },
       { property: "og:title", content: "Menus — Qfire" },
       { property: "og:url", content: "/menus" },
     ],
@@ -23,15 +21,13 @@ function MenusPage() {
   const menus = [
     { img: bbqPlatter1.url, label: "Wood-Fired", body: "Slow-smoked brisket, tri-tip, pulled meats and comfort sides. Backyard elegance.", href: "/wood-fired" as const },
     { img: steakhouseMenu.url, label: "Steakhouse", body: "Ribeye, filet, picanha, prime rib. Plated dinners and family-style service.", href: "/steakhouse" as const },
-    { img: chefTerry.url, label: "Private Chef", body: "Intimate, multi-course chef's dinners in your home or venue.", href: "/private-chef" as const },
-    { img: buffet, label: "Buffet & Stations", body: "Live-fire stations and full buffet packages for large gatherings.", href: "/wood-fired" as const },
   ];
   return (
     <>
       <section className="pt-32 lg:pt-40 pb-16">
         <div className="container-luxe max-w-4xl">
           <div className="eyebrow mb-6">Menus</div>
-          <h1 className="heading-xl text-bone">Four ways to set the table.</h1>
+          <h1 className="heading-xl text-bone">Two ways to set the table.</h1>
           <p className="mt-8 text-xl text-bone/70 leading-relaxed font-light">
             Choose a starting point. Every Qfire menu is fully customized to your event, your guests and your vision.
           </p>

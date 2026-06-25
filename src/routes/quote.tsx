@@ -127,7 +127,7 @@ function QuotePage() {
                 <SelectField
                   label="Event Type"
                   name="type"
-                  options={["Wedding", "Corporate", "Private Party", "Private Chef", "Other"]}
+                  options={["Wedding", "Corporate", "Private Party", "Other"]}
                 />
               </div>
               <SelectField

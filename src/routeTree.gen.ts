@@ -21,7 +21,6 @@ import { Route as ReviewsRouteImport } from './routes/reviews'
 import { Route as RentalsRouteImport } from './routes/rentals'
 import { Route as QuoteRouteImport } from './routes/quote'
 import { Route as PrivatePartiesRouteImport } from './routes/private-parties'
-import { Route as PrivateChefRouteImport } from './routes/private-chef'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as PicturesRouteImport } from './routes/pictures'
@@ -100,11 +99,6 @@ const QuoteRoute = QuoteRouteImport.update({
 const PrivatePartiesRoute = PrivatePartiesRouteImport.update({
   id: '/private-parties',
   path: '/private-parties',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PrivateChefRoute = PrivateChefRouteImport.update({
-  id: '/private-chef',
-  path: '/private-chef',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PrivacyRoute = PrivacyRouteImport.update({
@@ -218,7 +212,6 @@ export interface FileRoutesByFullPath {
   '/pictures': typeof PicturesRoute
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
-  '/private-chef': typeof PrivateChefRoute
   '/private-parties': typeof PrivatePartiesRoute
   '/quote': typeof QuoteRoute
   '/rentals': typeof RentalsRoute
@@ -251,7 +244,6 @@ export interface FileRoutesByTo {
   '/pictures': typeof PicturesRoute
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
-  '/private-chef': typeof PrivateChefRoute
   '/private-parties': typeof PrivatePartiesRoute
   '/quote': typeof QuoteRoute
   '/rentals': typeof RentalsRoute
@@ -285,7 +277,6 @@ export interface FileRoutesById {
   '/pictures': typeof PicturesRoute
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
-  '/private-chef': typeof PrivateChefRoute
   '/private-parties': typeof PrivatePartiesRoute
   '/quote': typeof QuoteRoute
   '/rentals': typeof RentalsRoute
@@ -321,7 +312,6 @@ export interface FileRouteTypes {
     | '/pictures'
     | '/pricing'
     | '/privacy'
-    | '/private-chef'
     | '/private-parties'
     | '/quote'
     | '/rentals'
@@ -354,7 +344,6 @@ export interface FileRouteTypes {
     | '/pictures'
     | '/pricing'
     | '/privacy'
-    | '/private-chef'
     | '/private-parties'
     | '/quote'
     | '/rentals'
@@ -387,7 +376,6 @@ export interface FileRouteTypes {
     | '/pictures'
     | '/pricing'
     | '/privacy'
-    | '/private-chef'
     | '/private-parties'
     | '/quote'
     | '/rentals'
@@ -422,7 +410,6 @@ export interface RootRouteChildren {
   PicturesRoute: typeof PicturesRoute
   PricingRoute: typeof PricingRoute
   PrivacyRoute: typeof PrivacyRoute
-  PrivateChefRoute: typeof PrivateChefRoute
   PrivatePartiesRoute: typeof PrivatePartiesRoute
   QuoteRoute: typeof QuoteRoute
   RentalsRoute: typeof RentalsRoute
@@ -521,13 +508,6 @@ declare module '@tanstack/react-router' {
       path: '/private-parties'
       fullPath: '/private-parties'
       preLoaderRoute: typeof PrivatePartiesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/private-chef': {
-      id: '/private-chef'
-      path: '/private-chef'
-      fullPath: '/private-chef'
-      preLoaderRoute: typeof PrivateChefRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/privacy': {
@@ -718,7 +698,6 @@ const rootRouteChildren: RootRouteChildren = {
   PicturesRoute: PicturesRoute,
   PricingRoute: PricingRoute,
   PrivacyRoute: PrivacyRoute,
-  PrivateChefRoute: PrivateChefRoute,
   PrivatePartiesRoute: PrivatePartiesRoute,
   QuoteRoute: QuoteRoute,
   RentalsRoute: RentalsRoute,
