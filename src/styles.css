@@ -46,10 +46,11 @@
 :root {
   --radius: 0.25rem;
 
-  /* Brand palette — black, charcoal, gold, deep burgundy */
-  --ink: oklch(0.08 0.005 60);
-  --onyx: oklch(0.13 0.005 60);
-  --charcoal: oklch(0.18 0.006 60);
+  /* Brand palette — dark maroon, charcoal, gold, deep burgundy */
+  --void: oklch(0.08 0.005 60);
+  --ink: oklch(0.12 0.05 25);
+  --onyx: oklch(0.16 0.06 25);
+  --charcoal: oklch(0.22 0.05 25);
   --bone: oklch(0.95 0.008 80);
   --gold: oklch(0.78 0.13 82);
   --gold-soft: oklch(0.88 0.08 88);
@@ -63,13 +64,13 @@
   --popover: var(--onyx);
   --popover-foreground: var(--bone);
   --primary: var(--gold);
-  --primary-foreground: var(--ink);
+  --primary-foreground: var(--void);
   --secondary: var(--charcoal);
   --secondary-foreground: var(--bone);
   --muted: var(--charcoal);
   --muted-foreground: oklch(0.65 0.01 80);
   --accent: var(--gold-deep);
-  --accent-foreground: var(--ink);
+  --accent-foreground: var(--void);
   --destructive: var(--burgundy);
   --destructive-foreground: var(--bone);
   --border: oklch(1 0 0 / 8%);
@@ -113,7 +114,7 @@
   }
   ::selection {
     background: var(--gold);
-    color: var(--ink);
+    color: var(--void);
   }
 }
 
