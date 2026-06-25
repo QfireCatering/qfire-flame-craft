@@ -1,7 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowUpRight } from "lucide-react";
-import phoenix from "@/assets/phoenix.jpg";
-import sanDiego from "@/assets/san-diego.jpg";
+import phoenixAsset from "@/assets/phoenix.png.asset.json";
+import sanDiegoAsset from "@/assets/san-diego.png.asset.json";
+const phoenix = phoenixAsset.url;
+const sanDiego = sanDiegoAsset.url;
 
 export const Route = createFileRoute("/locations")({
   head: () => ({

@@ -12,6 +12,19 @@ export const Route = createFileRoute("/reviews")({
       { property: "og:url", content: "/reviews" },
     ],
     links: [{ rel: "canonical", href: "/reviews" }],
+    scripts: [{
+      type: "application/ld+json",
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        name: "Qfire Catering",
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "5.0",
+          reviewCount: "400",
+        },
+      }),
+    }],
   }),
   component: ReviewsPage,
 });
