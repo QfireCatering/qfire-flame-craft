@@ -15,6 +15,7 @@ export function PageHero({
   subtitle?: ReactNode;
   image: string;
   imageClassName?: string;
+  imageStyle?: React.CSSProperties;
   children?: ReactNode;
 }) {
   return (
@@ -24,6 +25,7 @@ export function PageHero({
           src={image}
           alt=""
           className={`absolute inset-0 w-full h-full object-cover slow-zoom ${imageClassName ?? ""}`}
+          style={imageStyle}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/70 to-ink/20" />
         <div className="absolute inset-0 bg-gradient-to-r from-ink/80 via-transparent to-transparent" />
