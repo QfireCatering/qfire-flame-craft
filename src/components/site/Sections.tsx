@@ -7,12 +7,14 @@ export function PageHero({
   title,
   subtitle,
   image,
+  imageClassName,
   children,
 }: {
   eyebrow?: string;
   title: ReactNode;
   subtitle?: ReactNode;
   image: string;
+  imageClassName?: string;
   children?: ReactNode;
 }) {
   return (
@@ -21,7 +23,7 @@ export function PageHero({
         <img
           src={image}
           alt=""
-          className="absolute inset-0 w-full h-full object-cover slow-zoom"
+          className={`absolute inset-0 w-full h-full object-cover slow-zoom ${imageClassName ?? ""}`}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/70 to-ink/20" />
         <div className="absolute inset-0 bg-gradient-to-r from-ink/80 via-transparent to-transparent" />
