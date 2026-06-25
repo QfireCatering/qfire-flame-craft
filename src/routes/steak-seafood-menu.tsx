@@ -126,10 +126,10 @@ const upcharges = [
 export const Route = createFileRoute("/steak-seafood-menu")({
   head: () => ({
     meta: [
-      { title: "Steak & Seafood Catering Menu — Phoenix Metro | Qfire" },
-      { name: "description", content: "Phoenix Metro's premier five-course steakhouse catering menu — ribeye, filet, prime rib, lobster, salmon and more — grilled live at your event. Premium plated steak dinner catering in Phoenix, Scottsdale, Gilbert, Mesa, Tempe and surrounding areas." },
-      { property: "og:title", content: "Steak & Seafood Menu — Phoenix Metro | Qfire Catering" },
-      { property: "og:description", content: "Five-course steakhouse catering in Phoenix Metro: cold starter, warm hors d'oeuvre, choose-3 steaks/seafood, choose-3 sides, dessert and drinks. Live on-site grilling for weddings, corporate events and private parties." },
+      { title: "Phoenix Metro Steak & Seafood Catering Menu | Qfire Catering" },
+      { name: "description", content: "Phoenix Metro's premier five-course steakhouse catering menu — ribeye, filet mignon, prime rib, lobster, salmon and more — grilled live at your Phoenix, Scottsdale, Gilbert, Mesa, Tempe, Chandler, Glendale, Peoria, Paradise Valley, Cave Creek, Fountain Hills or Ahwatukee event. Premium plated steak dinner catering throughout the Phoenix Metro area." },
+      { property: "og:title", content: "Phoenix Metro Steak & Seafood Catering Menu | Qfire Catering" },
+      { property: "og:description", content: "Five-course steakhouse catering in Phoenix Metro: cold starter, warm hors d'oeuvre, choose-3 steaks/seafood, choose-3 sides, dessert and drinks. Live on-site grilling for weddings, corporate events and private parties across Phoenix, Scottsdale, Gilbert, Mesa and Tempe." },
       { property: "og:url", content: "/steak-seafood-menu" },
       { property: "og:image", content: steakhouseBackyard.url },
     ],
@@ -209,13 +209,22 @@ function SteakSeafoodMenuPage() {
   return (
     <>
       <PageHero
-        eyebrow="Steakhouse Catering — Phoenix Metro"
-        title="The Steak & Seafood Menu"
+        eyebrow="Phoenix Metro Steakhouse Catering"
+        title={<>The Phoenix Metro<br />Steak & Seafood Menu</>}
         subtitle="A five-course steakhouse experience — cold starter, warm hors d'oeuvre, your choice of premium steaks and seafood, sides, dessert and drinks. Grilled live at your Phoenix Metro event."
         image={steakhouseBackyard.url}
       >
-        <Link to="/quote" className="btn-primary">Request Your Quote <ArrowRight className="size-4" /></Link>
-        <a href="#menu" className="btn-ghost">View the Menu</a>
+        <div className="w-full flex flex-col items-start gap-6">
+          <div className="inline-flex items-center gap-3 px-5 py-2.5 border-2 border-gold/60 bg-gold/5">
+            <span className="w-2.5 h-2.5 bg-gold rotate-45" />
+            <span className="font-sans text-[0.7rem] font-semibold tracking-[0.35em] uppercase text-gold">Phoenix Metro Exclusive</span>
+            <span className="w-2.5 h-2.5 bg-gold rotate-45" />
+          </div>
+          <div className="flex flex-wrap gap-4">
+            <Link to="/quote" className="btn-primary">Request Your Phoenix Quote <ArrowRight className="size-4" /></Link>
+            <a href="#menu" className="btn-ghost">View the Phoenix Menu</a>
+          </div>
+        </div>
       </PageHero>
 
       <section className="py-20 lg:py-28 border-t border-white/5">
@@ -226,9 +235,9 @@ function SteakSeafoodMenuPage() {
             More Than Catering. A Private Steakhouse Experience Created Exclusively for Your Guests.
           </p>
           <div className="space-y-6 text-bone/70 text-base lg:text-lg leading-relaxed">
-            <p>If you're looking for something beyond the traditional buffet in the Phoenix Metro area, this is where our clients naturally gravitate.</p>
-            <p>Our Surf & Turf Steakhouse Experience combines the energy of live-fire cooking with the elegance of fine dining—bringing the atmosphere of an upscale steakhouse directly to your Phoenix, Scottsdale, Gilbert, Mesa or Tempe wedding, corporate event, or private celebration.</p>
-            <p>This isn't just dinner. It's the experience your guests will remember long after the last bite.</p>
+            <p>If you're looking for something beyond the traditional buffet in the Phoenix Metro area — from downtown Phoenix to Scottsdale, Gilbert, Mesa, Tempe, Chandler, Glendale, Peoria, Paradise Valley, Cave Creek and beyond — this is where our most discerning clients naturally gravitate.</p>
+            <p>Our Phoenix Metro Surf & Turf Steakhouse Experience combines the energy of live-fire cooking with the elegance of fine dining — bringing the atmosphere of an upscale steakhouse directly to your Phoenix, Scottsdale, Gilbert, Mesa or Tempe wedding, corporate event, or private celebration.</p>
+            <p>From Ahwatukee to Anthem, Carefree to Queen Creek, we bring restaurant-quality steakhouse catering to every corner of the Phoenix Metro. This isn't just dinner. It's the experience your guests will remember long after the last bite.</p>
           </div>
         </div>
       </section>
@@ -292,7 +301,8 @@ function SteakSeafoodMenuPage() {
         <div className="container-luxe">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <div className="text-3xl mb-5">✨</div>
-            <h3 className="heading-md text-bone mb-4">Choose the Dining Experience That Fits Your Event</h3>
+            <p className="eyebrow justify-center mb-6">Phoenix Metro Pricing</p>
+            <h3 className="heading-md text-bone mb-4">Choose the Dining Experience That Fits Your Phoenix Metro Event</h3>
           </div>
           <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
             <div className="bg-ink/60 border border-white/5 p-8 lg:p-10 flex flex-col">
@@ -323,14 +333,15 @@ function SteakSeafoodMenuPage() {
             </div>
           </div>
           <p className="mt-10 text-sm text-bone/55 italic text-center">
-            Per-person pricing is built around your guest count, venue and menu selections. Request a quote for current rates — we respond within 24 hours.
+            Per-person Phoenix Metro pricing is built around your guest count, venue and menu selections. Request a quote for current rates — we respond within 24 hours.
           </p>
         </div>
       </section>
 
       <section className="py-20 lg:py-28 border-t border-white/5">
         <div className="container-luxe max-w-4xl">
-          <h3 className="heading-md text-bone mb-10 text-center">Why Clients Choose This Experience</h3>
+          <p className="eyebrow justify-center mb-6">Phoenix Metro's #1 Choice</p>
+          <h3 className="heading-md text-bone mb-10 text-center">Why Phoenix Metro Clients Choose This Experience</h3>
           <div className="grid sm:grid-cols-2 gap-x-12 gap-y-5 text-bone/70">
             <div className="flex items-start gap-3">
               <span className="text-gold mt-1">✔</span>
@@ -362,39 +373,51 @@ function SteakSeafoodMenuPage() {
 
       <div id="menu" />
 
+      <section className="py-16 lg:py-24 border-t border-white/5">
+        <div className="container-luxe text-center">
+          <div className="inline-flex items-center gap-4 px-8 py-4 border-2 border-gold/40 bg-gold/5 mb-6">
+            <span className="w-3 h-3 bg-gold rotate-45" />
+            <span className="font-sans text-[0.75rem] font-semibold tracking-[0.4em] uppercase text-gold">Phoenix Metro Steakhouse Menu</span>
+            <span className="w-3 h-3 bg-gold rotate-45" />
+          </div>
+          <h2 className="heading-lg text-bone mb-4">Your Phoenix Metro Menu Selections</h2>
+          <p className="text-bone/65 text-lg max-w-2xl mx-auto">Every dish below is prepared fresh at your Phoenix, Scottsdale, Gilbert, Mesa, Tempe, Chandler, Glendale or Peoria venue by our live-fire grill team.</p>
+        </div>
+      </section>
+
       <Course
         number="01"
         eyebrow="Choose 1"
         title="First Course — Cold Starters"
-        sub="A bright, elegant opening before the grill fires up."
+        sub="A bright, elegant opening before the Phoenix Metro grill fires up."
         items={cold}
       />
       <Course
         number="02"
         eyebrow="Choose 1"
         title="Second Course — Warm Hors d'oeuvres"
-        sub="Tray-passed or stationed, finished hot off the fire."
+        sub="Tray-passed or stationed at your Phoenix Metro event, finished hot off the fire."
         items={warm}
       />
       <Course
         number="03"
         eyebrow="Choose 3"
         title="Third Course — Dinner: Steaks & Seafood"
-        sub="One selection per guest. Minimum 3 servings per selection. Additional protein selections + $32/serving."
+        sub="One selection per guest at your Phoenix Metro event. Minimum 3 servings per selection. Additional protein selections + $32/serving."
         items={meats}
       />
       <Course
         number="04"
         eyebrow="Choose 3"
         title="Sides"
-        sub="Classic steakhouse accompaniments, scratch-made for your event."
+        sub="Classic steakhouse accompaniments, scratch-made for your Phoenix Metro event."
         items={sides}
       />
       <Course
         number="05"
         eyebrow="Choose 2"
         title="Final Course — Dessert"
-        sub="One serving per guest. Coffee station available."
+        sub="One serving per guest at your Phoenix Metro celebration. Coffee station available."
         items={desserts}
       />
 
@@ -407,7 +430,7 @@ function SteakSeafoodMenuPage() {
               <span className="eyebrow">Choose 2</span>
             </div>
             <h2 className="heading-lg text-bone">Drinks</h2>
-            <p className="mt-5 text-bone/65 leading-relaxed">Refreshing non-alcoholic options served from elegant dispensers. Full bar and bartending service available as an add-on.</p>
+            <p className="mt-5 text-bone/65 leading-relaxed">Refreshing non-alcoholic options served from elegant dispensers at your Phoenix Metro event. Full bar and bartending service available as an add-on.</p>
           </div>
           <div className="mb-10 overflow-hidden border border-white/5">
             <img src={drinkChoiceImg} alt="Refreshing non-alcoholic beverage selections" loading="lazy" className="w-full h-64 lg:h-96 object-cover" />
