@@ -57,6 +57,7 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
           </div>
         </div>
       </section>
+      {regionKey === "phoenix" && <PhoenixPricingBanner />}
 
       {/* Services grid */}
       <section className="py-24 lg:py-32 bg-onyx">
@@ -135,12 +136,12 @@ export function RegionSlugPage({ regionKey, slug }: { regionKey: RegionKey; slug
   const opts = { region: r.name, regionShort: r.shortName };
 
   switch (slug) {
-    case "weddings": return <ServicePage config={weddingConfig(opts)} />;
-    case "corporate": return <ServicePage config={corporateConfig(opts)} />;
-    case "private-parties": return <ServicePage config={privatePartyConfig(opts)} />;
-    case "wood-fired": return <ServicePage config={woodFiredConfig(opts)} />;
-    case "steakhouse": return <ServicePage config={steakhouseConfig(opts)} />;
-    case "bartending": return <ServicePage config={bartendingConfig(opts)} />;
+    case "weddings": return <ServicePage config={weddingConfig(opts)} regionKey={regionKey} />;
+    case "corporate": return <ServicePage config={corporateConfig(opts)} regionKey={regionKey} />;
+    case "private-parties": return <ServicePage config={privatePartyConfig(opts)} regionKey={regionKey} />;
+    case "wood-fired": return <ServicePage config={woodFiredConfig(opts)} regionKey={regionKey} />;
+    case "steakhouse": return <ServicePage config={steakhouseConfig(opts)} regionKey={regionKey} />;
+    case "bartending": return <ServicePage config={bartendingConfig(opts)} regionKey={regionKey} />;
     case "gallery": return <RegionGallery regionKey={regionKey} />;
     case "reviews": return <RegionReviews regionKey={regionKey} />;
     case "faq": return <RegionFAQ regionKey={regionKey} />;
