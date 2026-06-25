@@ -128,6 +128,9 @@ function QuotePage() {
                 </a>
                 .
               </p>
+              <p className="text-bone/50 text-sm mt-6">
+                Redirecting you to the next step…
+              </p>
             </div>
           ) : (
             <form onSubmit={onSubmit} className="space-y-6" noValidate>
