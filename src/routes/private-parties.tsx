@@ -51,7 +51,7 @@ function PrivatePartyChooser() {
               <Link key={r.to} to={r.to} className="group relative aspect-[3/2] overflow-hidden block border border-gold/20 hover:border-gold transition-colors">
                 <img src={r.img} alt={`${r.title} private party catering`} className="absolute inset-0 w-full h-full object-cover object-[center_35%] transition-transform duration-700 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/60 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-8 lg:p-10">
+                <div className="absolute bottom-0 left-0 right-0 px-8 lg:px-10 pt-8 lg:pt-10 pb-4 lg:pb-5">
                   <div className="eyebrow text-gold mb-3">Private Party Catering</div>
                   <h3 className="font-display text-4xl md:text-5xl text-bone">{r.title}</h3>
                   <p className="mt-4 text-bone/80 font-light">{r.body}</p>
