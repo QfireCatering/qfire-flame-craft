@@ -15,7 +15,7 @@ import chefAsset from "@/assets/chef-terry.jpg.asset.json";
 import heroFire from "@/assets/hero-fire.jpg";
 import buffet from "@/assets/buffet.jpg";
 
-const officeHero = corporateRealAsset.url;
+const officeHero = corpHeroAsset.url;
 const officeAlt = corporateAsset.url;
 const steak = steakAsset.url;
 const steakMenu = steakMenuAsset.url;
