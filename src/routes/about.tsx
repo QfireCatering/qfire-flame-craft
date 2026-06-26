@@ -1,8 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import chefTerry from "@/assets/chef-terry.jpg.asset.json";
+import heroCollage from "@/assets/chef-terry-hero-collage.jpg.asset.json";
 import heroFire from "@/assets/hero-fire.jpg";
 import brisket from "@/assets/brisket.jpg";
 import { CTASection } from "@/components/site/Sections";
+
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -23,9 +25,9 @@ function AboutPage() {
     <>
       <section className="relative min-h-[70vh] flex items-end overflow-hidden grain-overlay">
         <div className="absolute inset-0">
-          <img src={chefTerry.url} alt="Chef Terry Matthews" className="absolute inset-0 w-full h-full object-cover object-top" />
-          <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/60 to-ink/30" />
-          <div className="absolute inset-0 bg-gradient-to-r from-ink/85 via-transparent to-transparent" />
+          <img src={heroCollage.url} alt="Qfire Catering collage — Food Network, wood-fired smoker, wedding reception, corporate catering, Phoenix and San Diego" className="absolute inset-0 w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/70 to-ink/40" />
+          <div className="absolute inset-0 bg-gradient-to-r from-ink/85 via-ink/30 to-transparent" />
         </div>
         <div className="container-luxe relative z-10 pt-40 pb-20">
           <div className="eyebrow mb-6">Meet The Chef</div>
@@ -39,10 +41,12 @@ function AboutPage() {
       </section>
 
       <section className="py-24 lg:py-32">
-        <div className="container-luxe grid lg:grid-cols-[1fr_1.5fr] gap-12 lg:gap-20">
+        <div className="container-luxe grid lg:grid-cols-[1fr_1.5fr] gap-12 lg:gap-20 items-start">
           <div>
-            <div className="gold-rule mb-8" />
-            <h2 className="heading-md text-bone">From the pit to the plate.</h2>
+            <div className="relative aspect-[4/5] overflow-hidden border border-gold/20">
+              <img src={chefTerry.url} alt="Chef Terry Matthews — The BBQ Daddy" className="absolute inset-0 w-full h-full object-cover object-top" />
+            </div>
+            <div className="gold-rule mt-8" />
           </div>
           <div className="space-y-6 text-lg text-bone/75 leading-relaxed font-light">
             <p>
@@ -72,6 +76,7 @@ function AboutPage() {
           </div>
         </div>
       </section>
+
 
       <section className="py-20 bg-onyx">
         <div className="container-luxe">
