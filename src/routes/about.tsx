@@ -1,8 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import chefTerry from "@/assets/chef-terry.jpg.asset.json";
+import heroCollage from "@/assets/chef-terry-hero-collage.jpg.asset.json";
 import heroFire from "@/assets/hero-fire.jpg";
 import brisket from "@/assets/brisket.jpg";
 import { CTASection } from "@/components/site/Sections";
+
 
 export const Route = createFileRoute("/about")({
   head: () => ({
