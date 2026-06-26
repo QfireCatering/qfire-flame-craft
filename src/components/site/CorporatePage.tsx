@@ -3,7 +3,7 @@ import { ArrowRight, Check, Flame, Award, Users, Star, Clock, Sparkles, Briefcas
 import { PhoenixPricingBanner } from "./PhoenixPricingBanner";
 import { SanDiegoPricingBanner } from "./SanDiegoPricingBanner";
 import { GuestScaleStat } from "./GuestScaleStat";
-import corporateRealAsset from "@/assets/corporate-real.jpg.asset.json";
+import corpHeroAsset from "@/assets/corp-hero.png.asset.json";
 import corporateAsset from "@/assets/corporate-catering.png.asset.json";
 import steakAsset from "@/assets/steakhouse-backyard.png.asset.json";
 import steakMenuAsset from "@/assets/steakhouse-menu.png.asset.json";

@@ -2,11 +2,11 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import phoenixAsset from "@/assets/phoenix-metro.png.asset.json";
 import sanDiegoAsset from "@/assets/san-diego.png.asset.json";
-import corporateRealAsset from "@/assets/corporate-real.jpg.asset.json";
+import corpHeroAsset from "@/assets/corp-hero.png.asset.json";
 
 const phoenix = phoenixAsset.url;
 const sanDiego = sanDiegoAsset.url;
-const hero = corporateRealAsset.url;
+const hero = corpHeroAsset.url;
 
 export const Route = createFileRoute("/corporate")({
   head: () => ({
