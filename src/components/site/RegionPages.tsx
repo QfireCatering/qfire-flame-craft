@@ -28,6 +28,16 @@ import buffet from "@/assets/buffet.jpg";
 import bartenderAsset from "@/assets/bartender.png.asset.json";
 const bartender = bartenderAsset.url;
 import heroFire from "@/assets/hero-fire.jpg";
+import pxG1 from "@/assets/gallery/phoenix/px-poolside-dinner.png.asset.json";
+import pxG2 from "@/assets/gallery/phoenix/px-backyard-buffet.png.asset.json";
+import pxG3 from "@/assets/gallery/phoenix/px-corp-luncheon.jpg.asset.json";
+import pxG4 from "@/assets/gallery/phoenix/px-corp-retirement.jpg.asset.json";
+import pxG5 from "@/assets/gallery/phoenix/px-wedding-buffet-line.jpg.asset.json";
+import pxG6 from "@/assets/gallery/phoenix/px-corp-jobsite.jpg.asset.json";
+import pxG7 from "@/assets/gallery/phoenix/px-prime-rib.jpg.asset.json";
+import pxG8 from "@/assets/gallery/phoenix/px-fruit-setup.jpg.asset.json";
+import pxG9 from "@/assets/gallery/phoenix/px-chafing-setup.jpg.asset.json";
+import pxG10 from "@/assets/gallery/phoenix/px-backyard-buffet-2.jpeg.asset.json";
 
 const regionHero: Record<RegionKey, string> = {
   phoenix: phoenixImg,
@@ -434,7 +444,9 @@ function RegionBackyard({ regionKey }: { regionKey: RegionKey }) {
 
 function RegionGallery({ regionKey }: { regionKey: RegionKey }) {
   const r = regions[regionKey];
-  const imgs = [weddingTable, brisket, steak, corporate, buffet, privateParty, heroFire, weddingTable, brisket, buffet, steak, corporate];
+  const imgs = regionKey === "phoenix"
+    ? [pxG1.url, pxG2.url, pxG3.url, pxG4.url, pxG5.url, pxG6.url, pxG7.url, pxG8.url, pxG9.url, pxG10.url]
+    : [weddingTable, brisket, steak, corporate, buffet, privateParty, heroFire, weddingTable, brisket, buffet, steak, corporate];
   return (
     <>
       <PageHero regionKey={regionKey}
