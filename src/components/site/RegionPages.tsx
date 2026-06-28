@@ -73,8 +73,8 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
           </div>
           <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
             {[
-              { name: "Simple", price: "$12.99", per: "per guest", desc: "Two proteins, two sides, dinner rolls, full service crew. Built for backyard celebrations and casual gatherings." },
-              { name: "Most Popular", price: "$17.99", per: "per guest", desc: "Three proteins, three sides, salad, dinner rolls, premium serviceware. Our most-booked package for weddings and corporate events.", featured: true },
+              { name: "1 Meat", price: "$12.99", per: "per guest", desc: "Two proteins, two sides, dinner rolls, full service crew. Built for backyard celebrations and casual gatherings." },
+              { name: "2 Meat", price: "$17.99", per: "per guest", desc: "Three proteins, three sides, salad, dinner rolls, premium serviceware. Our most-booked package for weddings and corporate events.", featured: true },
               { name: "Premium", price: "$25.99", per: "per guest", desc: "Four proteins including brisket & ribs, four chef-curated sides, salad, dessert, full white-glove service." },
             ].map((tier) => (
               <article
