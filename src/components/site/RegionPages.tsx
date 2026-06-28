@@ -11,7 +11,8 @@ import {
 import { regions, services, extraPages, type RegionKey } from "@/lib/site";
 import phoenixAsset from "@/assets/phoenix-metro.png.asset.json";
 const phoenixImg = phoenixAsset.url;
-import sanDiegoImg from "@/assets/san-diego.jpg";
+import sanDiegoHeroAsset from "@/assets/san-diego-hero-bg.png.asset.json";
+const sanDiegoImg = sanDiegoHeroAsset.url;
 import weddingCoupleAsset from "@/assets/wedding-couple.png.asset.json";
 const weddingTable = weddingCoupleAsset.url;
 import bbqPlatterAsset from "@/assets/bbq-platter.png.asset.json";
