@@ -81,10 +81,12 @@ function QuotePage() {
   }
 
   return (
-    <div className="min-h-screen grid lg:grid-cols-[1.1fr_1fr]">
-      <div className="relative hidden lg:block">
-        <img src={heroFire} alt="" className="absolute inset-0 w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-r from-ink/40 to-ink/80" />
+    <div className="min-h-screen grid lg:grid-cols-[1.1fr_1fr] relative">
+      <div className="absolute inset-0 z-0">
+        <img src={meatPageBg.url} alt="" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-black/90" />
+      </div>
+      <div className="relative z-10 hidden lg:block">
         <div className="absolute inset-0 flex items-end p-16">
           <div>
             <div className="eyebrow mb-8">Request a Quote</div>
