@@ -95,9 +95,10 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
               </article>
             ))}
           </div>
-          <p className="text-center mt-10 text-xs text-bone/45 tracking-wider uppercase">
-            Pricing varies by region, guest count and customization. Final proposals are built one-to-one.
+          <p className="text-center mt-10 text-xs text-bone/55 tracking-wider uppercase">
+            Want to add more food or extra services? Easy — just à la carte add-ons to any package. Final pricing built around your guest count, venue, and choices.
           </p>
+
         </div>
       </section>
 
