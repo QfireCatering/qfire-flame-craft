@@ -63,42 +63,93 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
       {/* WOOD-FIRE PRICING SUMMARY */}
       <section className="py-20 lg:py-28 bg-onyx border-t border-white/5">
         <div className="container-luxe">
-          <div className="text-center max-w-2xl mx-auto mb-12">
+          <div className="text-center max-w-2xl mx-auto mb-14">
             <div className="eyebrow justify-center mb-6">Wood-Fire Catering — Pricing</div>
             <h2 className="heading-lg text-bone">
-              Wood-fire catering starting at <span className="text-gold italic font-light">$15.99/guest.</span>
+              Wood-fire catering starting at <span className="text-gold italic font-light">{regionKey === "phoenix" ? "$12.99" : "$15.99"}/guest.</span>
             </h2>
             <p className="mt-5 text-bone/65 text-base font-light">
-              Pick your package. Pick your meats. We bring the fire, the food, and the team. À la carte add-ons available anytime.
+              Pick your package. Pick your meats. We bring the fire, the food, and the team.
             </p>
           </div>
+
           <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
-            {[
-              { name: "1 Meat", price: "$15.99", per: "per guest", desc: "Everyone gets 1 meat — or you can offer your guests a choice between 2 meats. Comes with sides, rolls, and our full service crew." },
-              { name: "2 Meat", price: "$21.99", per: "per guest", desc: "Everyone gets 2 meats — or everyone gets 1 meat plus a choice between 2 more meats. Sides, rolls, and full service included." },
-              { name: "Premium", price: "$33.99", per: "per guest", desc: "Everything in the 2 Meat package, plus 1 extra side and 2 appetizers. Our most complete wood-fire spread." },
+            {/* 1 Meat */}
+            <article className="relative p-8 lg:p-10 flex flex-col bg-ink/60 border border-white/10">
+              <div className="text-[0.7rem] tracking-[0.3em] uppercase text-gold mb-3">1 Meat Package</div>
+              <div className="flex items-baseline gap-2 mb-6">
+                <span className="text-4xl font-display text-bone tracking-tight">{regionKey === "phoenix" ? "$12.99" : "$15.99"}</span>
+                <span className="text-bone/55 text-sm">per person</span>
+              </div>
+              <div className="flex-1">
+                <p className="text-sm text-bone/80 font-medium mb-3">Includes:</p>
+                <ul className="space-y-2 text-bone/70 text-sm leading-relaxed mb-4">
+                  <li className="flex gap-2"><Check className="size-3.5 text-gold shrink-0 mt-0.5" /> 1 meat for each guest, or your guests can choose between 2 meat options</li>
+                  <li className="flex gap-2"><Check className="size-3.5 text-gold shrink-0 mt-0.5" /> 2 side dishes</li>
+                </ul>
+                <p className="text-sm text-bone/60 italic border-l-2 border-gold/30 pl-3">
+                  Example: Choose Tri-Tip only, or let your guests choose between Tri-Tip and Grilled Chicken.
+                </p>
+              </div>
+              <Link to="/quote" className="btn-ghost mt-8">Request a Quote</Link>
+            </article>
 
-            ].map((tier) => (
-              <article
-                key={tier.name}
-                className="relative p-9 lg:p-10 flex flex-col bg-ink/60 border border-white/10"
-              >
-                <div className="text-[0.7rem] tracking-[0.3em] uppercase text-gold mb-4">{tier.name}</div>
-                <div className="flex items-baseline gap-2">
-                  <span className="text-5xl font-display text-bone tracking-tight">{tier.price}</span>
-                  <span className="text-bone/55 text-sm">{tier.per}</span>
-                </div>
-                <p className="mt-6 text-bone/70 leading-relaxed font-light flex-1">{tier.desc}</p>
-                <Link to="/quote" className="btn-ghost mt-8">
-                  Request a Quote
-                </Link>
-              </article>
-            ))}
+            {/* 2 Meat */}
+            <article className="relative p-8 lg:p-10 flex flex-col bg-ink/60 border border-white/10">
+              <div className="text-[0.7rem] tracking-[0.3em] uppercase text-gold mb-3">2 Meat Package</div>
+              <div className="flex items-baseline gap-2 mb-6">
+                <span className="text-4xl font-display text-bone tracking-tight">{regionKey === "phoenix" ? "$17.99" : "$21.99"}</span>
+                <span className="text-bone/55 text-sm">per person</span>
+              </div>
+              <div className="flex-1">
+                <p className="text-sm text-bone/80 font-medium mb-3">Includes:</p>
+                <ul className="space-y-2 text-bone/70 text-sm leading-relaxed mb-4">
+                  <li className="flex gap-2"><Check className="size-3.5 text-gold shrink-0 mt-0.5" /> 2 meats for each guest, or 1 meat for everyone plus a choice between 2 additional meats</li>
+                  <li className="flex gap-2"><Check className="size-3.5 text-gold shrink-0 mt-0.5" /> 3 side dishes</li>
+                </ul>
+                <p className="text-sm text-bone/60 italic border-l-2 border-gold/30 pl-3">
+                  Example: Everyone gets Pulled Pork, then each guest chooses either Brisket or Chicken.
+                </p>
+              </div>
+              <Link to="/quote" className="btn-ghost mt-8">Request a Quote</Link>
+            </article>
+
+            {/* Premium */}
+            <article className="relative p-8 lg:p-10 flex flex-col bg-ink/60 border border-white/10">
+              <div className="text-[0.7rem] tracking-[0.3em] uppercase text-gold mb-3">Premium Package</div>
+              <div className="flex items-baseline gap-2 mb-6">
+                <span className="text-4xl font-display text-bone tracking-tight">{regionKey === "phoenix" ? "$25.99" : "$33.99"}</span>
+                <span className="text-bone/55 text-sm">per person</span>
+              </div>
+              <div className="flex-1">
+                <p className="text-sm text-bone/80 font-medium mb-3">Includes everything in the 2 Meat Package, plus:</p>
+                <ul className="space-y-2 text-bone/70 text-sm leading-relaxed mb-4">
+                  <li className="flex gap-2"><Check className="size-3.5 text-gold shrink-0 mt-0.5" /> Any salad option</li>
+                  <li className="flex gap-2"><Check className="size-3.5 text-gold shrink-0 mt-0.5" /> 2 appetizers</li>
+                </ul>
+                <p className="text-sm text-bone/85 font-medium">
+                  This is our most popular package for weddings, corporate events, and larger celebrations.
+                </p>
+              </div>
+              <Link to="/quote" className="btn-ghost mt-8">Request a Quote</Link>
+            </article>
           </div>
-          <p className="text-center mt-10 text-xs text-bone/55 tracking-wider uppercase">
-            Want to add more food or extra services? Easy — just à la carte add-ons to any package. Final pricing built around your guest count, venue, and choices.
-          </p>
 
+          {/* Want More? */}
+          <div className="mt-14 max-w-3xl mx-auto text-center">
+            <div className="inline-block border border-gold/30 bg-gold/5 px-8 py-8">
+              <h3 className="text-lg font-display text-gold mb-4">Want More?</h3>
+              <p className="text-bone/80 leading-relaxed mb-3">
+                Need more meat, extra sides, appetizers, desserts, drinks, staffing, bartending, rentals, or other services?
+              </p>
+              <p className="text-bone/80 leading-relaxed mb-3">
+                No problem! You can add anything you'd like. We'll build a custom quote based on exactly what you want for your event.
+              </p>
+              <p className="text-bone/60 text-sm italic">
+                À la carte items and additional services are available for an additional charge.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
