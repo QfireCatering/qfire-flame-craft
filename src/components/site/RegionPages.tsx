@@ -68,7 +68,7 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
               Wood-fire catering starting at <span className="text-gold italic font-light">$13/guest.</span>
             </h2>
             <p className="mt-5 text-bone/65 text-base font-light">
-              Steakhouse plated experiences begin at $74/guest. Custom proposals built around your guest count and venue.
+              Custom proposals built around your guest count and venue.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
@@ -99,8 +99,45 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
         </div>
       </section>
 
-      {regionKey === "phoenix" && <PhoenixPricingBanner />}
-      {regionKey === "san-diego" && <SanDiegoPricingBanner />}
+      {/* STEAKHOUSE PRICING SUMMARY */}
+      <section className="py-20 lg:py-28 bg-ink border-t border-white/5">
+        <div className="container-luxe">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <div className="eyebrow justify-center mb-6">Steakhouse Experience — Pricing</div>
+            <h2 className="heading-lg text-bone">
+              Surf &amp; Turf steakhouse catering starting at <span className="text-gold italic font-light">{regionKey === "phoenix" ? "$74" : "$79"}/guest.</span>
+            </h2>
+            <p className="mt-5 text-bone/65 text-base font-light">
+              Live charcoal grilling, white-glove service, and restaurant-quality presentation at your {r.shortName} venue.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
+            {[
+              { name: "Buffet Style", price: regionKey === "phoenix" ? "$74" : "$79", per: "/ person", desc: "Smooth. Efficient. Elegant. Restaurant-quality buffet presentation. Ideal for " + r.shortName + " weddings, corporate events and private parties." },
+              { name: "Family Style", price: regionKey === "phoenix" ? "$89" : "$94", per: "/ person", desc: "Shared dining. Passed platters. Connected guest experience. Luxury presentation, end to end." },
+              { name: "Plated Service", price: regionKey === "phoenix" ? "$128" : "$133", per: "/ person", desc: "Restaurant-style service. Each course individually served. Our most luxurious dining experience." },
+            ].map((tier) => (
+              <article
+                key={tier.name}
+                className="relative p-9 lg:p-10 flex flex-col bg-ink/60 border border-white/10"
+              >
+                <div className="text-[0.7rem] tracking-[0.3em] uppercase text-gold mb-4">{tier.name}</div>
+                <div className="flex items-baseline gap-2">
+                  <span className="text-5xl font-display text-bone tracking-tight">{tier.price}</span>
+                  <span className="text-bone/55 text-sm">{tier.per}</span>
+                </div>
+                <p className="mt-6 text-bone/70 leading-relaxed font-light flex-1">{tier.desc}</p>
+                <Link to={regionKey === "phoenix" ? "/steak-seafood-menu" : "/steak-seafood-menu-san-diego"} className="btn-ghost mt-8">
+                  View Full Menu
+                </Link>
+              </article>
+            ))}
+          </div>
+          <p className="text-center mt-10 text-xs text-bone/45 tracking-wider uppercase">
+            Pricing varies by guest count, menu selections and venue specifics. Final proposals are built one-to-one.
+          </p>
+        </div>
+      </section>
 
       {/* Services grid */}
       <section className="py-24 lg:py-32 bg-onyx">
