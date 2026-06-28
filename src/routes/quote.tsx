@@ -134,8 +134,8 @@ function QuotePage() {
             </div>
           ) : (
             <form onSubmit={onSubmit} className="space-y-6" noValidate>
-              <div className="bg-gold/10 border border-gold/40 rounded-md p-4 shadow-[0_0_20px_rgba(199,168,102,0.15)]">
-                <p className="text-bone font-bold text-base leading-relaxed">
+              <div className="bg-red-950/30 border-2 border-red-500 rounded-md p-5 shadow-[0_0_24px_rgba(239,68,68,0.25)]">
+                <p className="text-bone font-bold text-base leading-relaxed text-center">
                   Complete the form below to continue to our full menu and pricing page. You'll be able to build your ideal menu and request a detailed quote based on your exact selections.
                 </p>
               </div>
