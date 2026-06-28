@@ -210,8 +210,6 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
           </div>
         </div>
       </section>
-      {config.regionSlug === "phoenix" && <PhoenixPricingBanner />}
-      {config.regionSlug === "san-diego" && <SanDiegoPricingBanner />}
 
       <GuestScaleStat regionKey={config.regionSlug} />
 
