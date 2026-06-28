@@ -66,17 +66,18 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="eyebrow justify-center mb-6">Wood-Fire Catering — Pricing</div>
             <h2 className="heading-lg text-bone">
-              Wood-fire catering starting at <span className="text-gold italic font-light">$13/guest.</span>
+              Wood-fire catering starting at <span className="text-gold italic font-light">$15.99/guest.</span>
             </h2>
             <p className="mt-5 text-bone/65 text-base font-light">
-              Custom proposals built around your guest count and venue.
+              Pick your package. Pick your meats. We bring the fire, the food, and the team. À la carte add-ons available anytime.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
             {[
-              { name: "1 Meat", price: "$12.99", per: "per guest", desc: "Two proteins, two sides, dinner rolls, full service crew. Built for backyard celebrations and casual gatherings." },
-              { name: "2 Meat", price: "$17.99", per: "per guest", desc: "Three proteins, three sides, salad, dinner rolls, premium serviceware. Our most-booked package for weddings and corporate events." },
-              { name: "Premium", price: "$25.99", per: "per guest", desc: "Four proteins including brisket & ribs, four chef-curated sides, salad, dessert, full white-glove service." },
+              { name: "1 Meat", price: "$15.99", per: "per guest", desc: "Everyone gets 1 meat — or you can offer your guests a choice between 2 meats. Comes with sides, rolls, and our full service crew." },
+              { name: "2 Meat", price: "$21.99", per: "per guest", desc: "Everyone gets 2 meats — or everyone gets 1 meat plus a choice between 2 more meats. Sides, rolls, and full service included." },
+              { name: "Premium", price: "$33.99", per: "per guest", desc: "Everything in the 2 Meat package, plus 1 extra side and 2 appetizers. Our most complete wood-fire spread." },
+
             ].map((tier) => (
               <article
                 key={tier.name}
@@ -94,9 +95,10 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
               </article>
             ))}
           </div>
-          <p className="text-center mt-10 text-xs text-bone/45 tracking-wider uppercase">
-            Pricing varies by region, guest count and customization. Final proposals are built one-to-one.
+          <p className="text-center mt-10 text-xs text-bone/55 tracking-wider uppercase">
+            Want to add more food or extra services? Easy — just à la carte add-ons to any package. Final pricing built around your guest count, venue, and choices.
           </p>
+
         </div>
       </section>
 
