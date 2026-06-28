@@ -3,7 +3,7 @@ import { ArrowRight, Check, Flame, Award, Users, Star, Clock, Sparkles } from "l
 import { GuestScaleStat } from "./GuestScaleStat";
 import weddingCoupleAsset from "@/assets/wedding-couple.png.asset.json";
 import weddingRealAsset from "@/assets/wedding-real.jpg.asset.json";
-import weddingGrillingAsset from "@/assets/hero-wedding-grilling.png.asset.json";
+import weddingGrillingAsset from "@/assets/gallery/onsite-grill-v2.png.asset.json";
 import steakAsset from "@/assets/steakhouse-backyard.png.asset.json";
 import steakMenuAsset from "@/assets/steakhouse-menu.png.asset.json";
 import bbqPlatterAsset from "@/assets/bbq-platter.png.asset.json";
