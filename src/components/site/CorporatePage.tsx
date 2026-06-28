@@ -1,7 +1,5 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowRight, Check, Flame, Award, Users, Star, Clock, Sparkles, Briefcase, Building2, ShieldCheck, Truck } from "lucide-react";
-import { PhoenixPricingBanner } from "./PhoenixPricingBanner";
-import { SanDiegoPricingBanner } from "./SanDiegoPricingBanner";
 import { GuestScaleStat } from "./GuestScaleStat";
 import corpHeroAsset from "@/assets/corp-hero.png.asset.json";
 import corporateAsset from "@/assets/corporate-catering.png.asset.json";
@@ -211,8 +209,6 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
           </div>
         </div>
       </section>
-      {config.regionSlug === "phoenix" && <PhoenixPricingBanner />}
-      {config.regionSlug === "san-diego" && <SanDiegoPricingBanner />}
 
       <GuestScaleStat regionKey={config.regionSlug} />
 
