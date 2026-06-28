@@ -320,6 +320,14 @@ function Home() {
       {/* CHEF TERRY */}
       <section className="py-24 lg:py-36">
         <div className="container-luxe">
+          <div className="mb-16 lg:mb-20 grid grid-cols-2 gap-6 lg:gap-10 max-w-3xl mx-auto">
+            <div className="aspect-[4/5] overflow-hidden border border-white/10 bg-ink">
+              <img src={bobbyFlayTerry.url} alt="Chef Terry Matthews with Bobby Flay" loading="lazy" className="w-full h-full object-cover" />
+            </div>
+            <div className="aspect-[4/5] overflow-hidden border border-white/10 bg-ink">
+              <img src={chefTerryWhite.url} alt="Chef Terry Matthews — The BBQ Daddy" loading="lazy" className="w-full h-full object-cover" />
+            </div>
+          </div>
           <div className="grid lg:grid-cols-[1fr_1.1fr] gap-12 lg:gap-20 items-center">
             <div className="relative aspect-[4/5] overflow-hidden max-w-[16rem] mx-auto lg:max-w-[18rem]">
               <img src={chefTerry.url} alt="Chef Terry Matthews" loading="lazy" width={1024} height={1280}
