@@ -286,7 +286,7 @@ function Home() {
           </div>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-1">
-          {[buffet, weddingTable, brisket, corporate, steak, privateParty, heroFire, weddingTable].map((img, i) => (
+          {[g1.url, g2.url, g3.url, g4.url, g5.url, g6.url, g7.url, g8.url].map((img, i) => (
             <div key={i} className="relative aspect-square overflow-hidden group">
               <img src={img} alt="" loading="lazy" width={800} height={800}
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
