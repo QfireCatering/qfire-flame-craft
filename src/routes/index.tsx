@@ -11,6 +11,14 @@ import chefTerry from "@/assets/chef-terry.jpg.asset.json";
 import bobbyFlayTerry from "@/assets/bobby-flay-terry.png.asset.json";
 import chefTerryWhite from "@/assets/chef-terry-white.jpg.asset.json";
 import buffet from "@/assets/buffet.jpg";
+import g1 from "@/assets/gallery/bbq-platter.avif.asset.json";
+import g2 from "@/assets/gallery/couple.avif.asset.json";
+import g3 from "@/assets/gallery/wedding-buffet.jpg.asset.json";
+import g4 from "@/assets/gallery/sunset-table.jpg.asset.json";
+import g5 from "@/assets/gallery/buffet-line.jpg.asset.json";
+import g6 from "@/assets/gallery/corporate-crowd.jpg.asset.json";
+import g7 from "@/assets/gallery/onsite-grill.avif.asset.json";
+import g8 from "@/assets/gallery/setup.avif.asset.json";
 import phoenix from "@/assets/phoenix-metro.png.asset.json";
 import sanDiego from "@/assets/san-diego.png.asset.json";
 import corporateAsset from "@/assets/corporate-catering.png.asset.json";
@@ -278,7 +286,7 @@ function Home() {
           </div>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-1">
-          {[buffet, weddingTable, brisket, corporate, steak, privateParty, heroFire, weddingTable].map((img, i) => (
+          {[g1.url, g2.url, g3.url, g4.url, g5.url, g6.url, g7.url, g8.url].map((img, i) => (
             <div key={i} className="relative aspect-square overflow-hidden group">
               <img src={img} alt="" loading="lazy" width={800} height={800}
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
