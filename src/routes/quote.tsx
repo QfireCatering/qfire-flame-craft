@@ -134,6 +134,9 @@ function QuotePage() {
             </div>
           ) : (
             <form onSubmit={onSubmit} className="space-y-6" noValidate>
+              <p className="text-bone/80 text-sm leading-relaxed border-l-2 border-gold pl-4">
+                Complete the form below to continue to our full menu and pricing page. You'll be able to build your ideal menu and request a detailed quote based on your exact selections.
+              </p>
               <Field label="Your Name" name="name" required maxLength={120} />
               <div className="grid sm:grid-cols-2 gap-6">
                 <Field label="Email" name="email" type="email" required maxLength={255} />
