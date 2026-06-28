@@ -5,11 +5,11 @@ import heroFire from "@/assets/hero-fire.jpg";
 
 const tiers = [
   {
-    name: "Wood-Fired Wood-Fire",
+    name: "Wood-Fired",
     href: "/wood-fired",
-    headline: "From $24.99 / guest",
+    headline: "From $12.99 / guest (Phoenix) · From $15.99 / guest (San Diego)",
     blurb:
-      "Charcoal-smoked brisket, St. Louis ribs, pulled pork, hand-pulled chicken. Two sides. Cornbread. Sauces.",
+      "Slow-smoked brisket, tri-tip, pulled pork, and wood-fired chicken. Comfort sides. Fresh-baked rolls. House sauces.",
     bullets: [
       "Onsite live-fire grilling",
       "Buffet, family-style, or plated",
