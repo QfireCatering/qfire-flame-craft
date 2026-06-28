@@ -3,6 +3,7 @@ import chefTerry from "@/assets/chef-terry.jpg.asset.json";
 import heroCollage from "@/assets/chef-terry-hero-collage.jpg.asset.json";
 import heroFire from "@/assets/hero-fire.jpg";
 import brisket from "@/assets/brisket.jpg";
+import bobbyFlay from "@/assets/bobby-flay.png.asset.json";
 import { CTASection } from "@/components/site/Sections";
 
 
