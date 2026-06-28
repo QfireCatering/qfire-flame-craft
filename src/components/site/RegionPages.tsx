@@ -73,8 +73,8 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
           </div>
           <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
             {[
-              { name: "Simple", price: "$12.99", per: "per guest", desc: "Two proteins, two sides, dinner rolls, full service crew. Built for backyard celebrations and casual gatherings." },
-              { name: "Most Popular", price: "$17.99", per: "per guest", desc: "Three proteins, three sides, salad, dinner rolls, premium serviceware. Our most-booked package for weddings and corporate events.", featured: true },
+              { name: "1 Meat", price: "$12.99", per: "per guest", desc: "Two proteins, two sides, dinner rolls, full service crew. Built for backyard celebrations and casual gatherings." },
+              { name: "2 Meat", price: "$17.99", per: "per guest", desc: "Three proteins, three sides, salad, dinner rolls, premium serviceware. Our most-booked package for weddings and corporate events.", featured: true },
               { name: "Premium", price: "$25.99", per: "per guest", desc: "Four proteins including brisket & ribs, four chef-curated sides, salad, dessert, full white-glove service." },
             ].map((tier) => (
               <article
@@ -87,7 +87,7 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
               >
                 {tier.featured && (
                   <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 px-4 py-1 bg-gold text-ink text-[0.6rem] tracking-[0.3em] uppercase font-semibold">
-                    Most Popular
+                    2 Meat
                   </div>
                 )}
                 <div className="text-[0.7rem] tracking-[0.3em] uppercase text-gold mb-4">{tier.name}</div>
