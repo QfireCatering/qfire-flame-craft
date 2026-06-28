@@ -17,7 +17,7 @@ import g3 from "@/assets/gallery/wedding-buffet.jpg.asset.json";
 import g4 from "@/assets/gallery/sunset-table.jpg.asset.json";
 import g5 from "@/assets/gallery/buffet-line.jpg.asset.json";
 import g6 from "@/assets/gallery/corporate-crowd.jpg.asset.json";
-import g7 from "@/assets/gallery/onsite-grill.png.asset.json";
+import g7 from "@/assets/gallery/onsite-grill-v2.png.asset.json";
 import g8 from "@/assets/gallery/setup.avif.asset.json";
 import phoenix from "@/assets/phoenix-metro.png.asset.json";
 import sanDiego from "@/assets/san-diego.png.asset.json";
