@@ -12,7 +12,7 @@ import bobbyFlayTerry from "@/assets/bobby-flay-terry.png.asset.json";
 import chefTerryWhite from "@/assets/chef-terry-white.jpg.asset.json";
 import buffet from "@/assets/buffet.jpg";
 import g1 from "@/assets/gallery/bbq-platter.avif.asset.json";
-import g2 from "@/assets/gallery/couple.avif.asset.json";
+import g2 from "@/assets/gallery/couple-eating.avif.asset.json";
 import g3 from "@/assets/gallery/wedding-buffet.jpg.asset.json";
 import g4 from "@/assets/gallery/sunset-table.jpg.asset.json";
 import g5 from "@/assets/gallery/buffet-line.jpg.asset.json";
