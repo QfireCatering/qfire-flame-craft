@@ -8,6 +8,8 @@ const steak = steakAsset.url;
 import brisket from "@/assets/brisket.jpg";
 import brisketVideo from "@/assets/brisket-slice.mp4.asset.json";
 import chefTerry from "@/assets/chef-terry.jpg.asset.json";
+import bobbyFlayTerry from "@/assets/bobby-flay-terry.png.asset.json";
+import chefTerryWhite from "@/assets/chef-terry-white.jpg.asset.json";
 import buffet from "@/assets/buffet.jpg";
 import phoenix from "@/assets/phoenix-metro.png.asset.json";
 import sanDiego from "@/assets/san-diego.png.asset.json";
