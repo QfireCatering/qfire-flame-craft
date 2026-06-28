@@ -1,7 +1,5 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowRight, Check, Flame, Award, Users, Star, Clock, Sparkles } from "lucide-react";
-import { PhoenixPricingBanner } from "./PhoenixPricingBanner";
-import { SanDiegoPricingBanner } from "./SanDiegoPricingBanner";
 import { GuestScaleStat } from "./GuestScaleStat";
 import weddingCoupleAsset from "@/assets/wedding-couple.png.asset.json";
 import weddingRealAsset from "@/assets/wedding-real.jpg.asset.json";
@@ -295,8 +293,6 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
           </div>
         </div>
       </section>
-      {config.regionSlug === "phoenix" && <PhoenixPricingBanner />}
-      {config.regionSlug === "san-diego" && <SanDiegoPricingBanner />}
 
       <GuestScaleStat regionKey={config.regionSlug} />
 

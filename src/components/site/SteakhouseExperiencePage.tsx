@@ -1,7 +1,5 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowRight, Flame, UtensilsCrossed, Beef, Candy } from "lucide-react";
-import { PhoenixPricingBanner } from "./PhoenixPricingBanner";
-import { SanDiegoPricingBanner } from "./SanDiegoPricingBanner";
 import steakhouseBackyard from "@/assets/steakhouse-backyard.png.asset.json";
 import steakhousePlatter from "@/assets/steakhouse-platter.png.asset.json";
 import steakhouseMenu from "@/assets/steakhouse-menu.png.asset.json";
@@ -90,8 +88,6 @@ export function SteakhouseExperiencePage({ r }: { r: RegionCopy }) {
         </div>
       </section>
 
-      {r.city === "Phoenix" && <PhoenixPricingBanner />}
-      {r.city === "San Diego" && <SanDiegoPricingBanner />}
 
       {/* CREAM/IVORY STEAKHOUSE SECTION */}
       <section className="bg-[#f5f0e6] text-[#111] relative">

@@ -2,8 +2,6 @@ import type { ReactNode } from "react";
 import { Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import { RegionKey } from "@/lib/site";
-import { PhoenixPricingBanner } from "./PhoenixPricingBanner";
-import { SanDiegoPricingBanner } from "./SanDiegoPricingBanner";
 
 
 export function PageHero({
@@ -45,8 +43,6 @@ export function PageHero({
           {children && <div className="mt-10 flex flex-wrap gap-4">{children}</div>}
         </div>
       </section>
-      {regionKey === "phoenix" && <PhoenixPricingBanner />}
-      {regionKey === "san-diego" && <SanDiegoPricingBanner />}
     </>
   );
 }

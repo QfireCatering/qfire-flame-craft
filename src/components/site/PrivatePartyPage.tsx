@@ -1,7 +1,5 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowRight, Check, Flame, Award, Users, Star, Clock, Sparkles, Heart, Home, PartyPopper, Music } from "lucide-react";
-import { PhoenixPricingBanner } from "./PhoenixPricingBanner";
-import { SanDiegoPricingBanner } from "./SanDiegoPricingBanner";
 import { GuestScaleStat } from "./GuestScaleStat";
 import privatePartyHero from "@/assets/private-parties-hero.png.asset.json";
 import privatePartyAsset from "@/assets/private-party-setting.png.asset.json";
@@ -212,8 +210,6 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
           </div>
         </div>
       </section>
-      {config.regionSlug === "phoenix" && <PhoenixPricingBanner />}
-      {config.regionSlug === "san-diego" && <SanDiegoPricingBanner />}
 
       <GuestScaleStat regionKey={config.regionSlug} />
 
