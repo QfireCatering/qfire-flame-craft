@@ -97,13 +97,18 @@ function AboutPage() {
         </div>
       </section>
 
-      <section className="py-24 lg:py-32">
-        <div className="container-luxe grid lg:grid-cols-2 gap-2">
-          <div className="relative aspect-[4/5] overflow-hidden">
-            <img src={heroFire} alt="Chef Terry at the fire" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
-          </div>
-          <div className="relative aspect-[4/5] overflow-hidden">
-            <img src={brisket} alt="Brisket" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
+      <section className="py-16 lg:py-24">
+        <div className="container-luxe">
+          <div className="flex flex-wrap justify-center gap-4 lg:gap-6">
+            <div className="relative w-48 h-64 sm:w-56 sm:h-72 lg:w-64 lg:h-80 overflow-hidden border border-white/10">
+              <img src={heroFire} alt="Chef Terry at the fire" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
+            </div>
+            <div className="relative w-48 h-64 sm:w-56 sm:h-72 lg:w-64 lg:h-80 overflow-hidden border border-white/10">
+              <img src={bobbyFlay.url} alt="Chef Terry Matthews with Bobby Flay" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
+            </div>
+            <div className="relative w-48 h-64 sm:w-56 sm:h-72 lg:w-64 lg:h-80 overflow-hidden border border-white/10">
+              <img src={brisket} alt="Brisket" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
+            </div>
           </div>
         </div>
       </section>
