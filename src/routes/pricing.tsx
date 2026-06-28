@@ -5,11 +5,11 @@ import heroFire from "@/assets/hero-fire.jpg";
 
 const tiers = [
   {
-    name: "Wood-Fired Wood-Fire",
+    name: "Wood-Fired",
     href: "/wood-fired",
-    headline: "From $24.99 / guest",
+    headline: "From $12.99 / guest (Phoenix) · From $15.99 / guest (San Diego)",
     blurb:
-      "Charcoal-smoked brisket, St. Louis ribs, pulled pork, hand-pulled chicken. Two sides. Cornbread. Sauces.",
+      "Slow-smoked brisket, tri-tip, pulled pork, and wood-fired chicken. Comfort sides. Fresh-baked rolls. House sauces.",
     bullets: [
       "Onsite live-fire grilling",
       "Buffet, family-style, or plated",
@@ -39,7 +39,7 @@ export const Route = createFileRoute("/pricing")({
       {
         name: "description",
         content:
-          "Transparent catering pricing. Wood-fired Wood-Fire from $24.99/guest. Steakhouse buffet from $74/guest, plated from $128/guest.",
+          "Transparent catering pricing. Wood-fired catering from $12.99/guest (Phoenix) and $15.99/guest (San Diego). Steakhouse buffet from $74/guest, plated from $128/guest.",
       },
       { property: "og:title", content: "Catering Pricing — Qfire Catering" },
       { property: "og:description", content: "What it actually costs to cater your event with Qfire." },
