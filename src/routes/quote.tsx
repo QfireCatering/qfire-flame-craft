@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useServerFn } from "@tanstack/react-start";
 import { useState } from "react";
 import { ArrowRight, Check, Phone, Mail } from "lucide-react";
-import heroFire from "@/assets/hero-fire-no-person.jpg";
+import meatPageBg from "@/assets/meat-page-bg.png.asset.json";
 import { submitLead } from "@/lib/leads.functions";
 import { contact } from "@/lib/contact";
 
@@ -81,10 +81,12 @@ function QuotePage() {
   }
 
   return (
-    <div className="min-h-screen grid lg:grid-cols-[1.1fr_1fr]">
-      <div className="relative hidden lg:block">
-        <img src={heroFire} alt="" className="absolute inset-0 w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-r from-ink/40 to-ink/80" />
+    <div className="min-h-screen grid lg:grid-cols-[1.1fr_1fr] relative">
+      <div className="absolute inset-0 z-0">
+        <img src={meatPageBg.url} alt="" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-black/90" />
+      </div>
+      <div className="relative z-10 hidden lg:block">
         <div className="absolute inset-0 flex items-end p-16">
           <div>
             <div className="eyebrow mb-8">Request a Quote</div>
@@ -115,7 +117,7 @@ function QuotePage() {
         </div>
       </div>
 
-      <div className="flex items-center justify-center p-8 lg:p-16 bg-ink pt-32 lg:pt-16">
+      <div className="relative z-10 flex items-center justify-center p-8 lg:p-16 pt-32 lg:pt-16">
         <div className="w-full max-w-lg mt-24">
           {state === "sent" ? (
             <div className="border border-gold/40 p-10 text-center">
