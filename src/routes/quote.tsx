@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useServerFn } from "@tanstack/react-start";
 import { useState } from "react";
 import { ArrowRight, Check, Phone, Mail } from "lucide-react";
-import heroFire from "@/assets/hero-fire-no-person.jpg";
+import meatPageBg from "@/assets/meat-page-bg.png.asset.json";
 import { submitLead } from "@/lib/leads.functions";
 import { contact } from "@/lib/contact";
 
