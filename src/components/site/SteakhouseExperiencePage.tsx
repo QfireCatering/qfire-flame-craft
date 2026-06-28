@@ -40,6 +40,56 @@ export function SteakhouseExperiencePage({ r }: { r: RegionCopy }) {
           </div>
         </div>
       </section>
+
+      {/* STEAKHOUSE PRICING SUMMARY */}
+      <section className="py-20 lg:py-28 bg-onyx border-t border-white/5">
+        <div className="container-luxe">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <div className="eyebrow justify-center mb-6">The Steakhouse Experience — Pricing</div>
+            <h2 className="heading-lg text-bone">
+              Steakhouse catering starting at <span className="text-gold italic font-light">{r.city === "San Diego" ? "$79" : "$74"}/guest.</span>
+            </h2>
+            <p className="mt-5 text-bone/65 text-base font-light">
+              Live charcoal grilling, white-glove service, and restaurant-quality presentation at your {r.region} venue.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
+            {[
+              { name: "Buffet Style", price: r.city === "San Diego" ? "$79" : "$74", per: "/ person", desc: "Smooth. Efficient. Elegant. Restaurant-quality buffet presentation. Ideal for " + r.city + " weddings, corporate events and private parties." },
+              { name: "Family Style", price: r.city === "San Diego" ? "$94" : "$89", per: "/ person", desc: "Shared dining. Passed platters. Connected guest experience. Luxury presentation, end to end." },
+              { name: "Plated Service", price: r.city === "San Diego" ? "$133" : "$128", per: "/ person", desc: "Restaurant-style service. Each course individually served. Our most luxurious dining experience.", featured: true },
+            ].map((tier) => (
+              <article
+                key={tier.name}
+                className={`relative p-9 lg:p-10 flex flex-col ${
+                  tier.featured
+                    ? "bg-ink border border-gold/40 shadow-[0_0_40px_rgba(212,175,55,0.08)]"
+                    : "bg-ink/60 border border-white/10"
+                }`}
+              >
+                {tier.featured && (
+                  <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 px-4 py-1 bg-gold text-ink text-[0.6rem] tracking-[0.3em] uppercase font-semibold">
+                    Most Premium
+                  </div>
+                )}
+                <div className="text-[0.7rem] tracking-[0.3em] uppercase text-gold mb-4">{tier.name}</div>
+                <div className="flex items-baseline gap-2">
+                  <span className="text-5xl font-display text-bone tracking-tight">{tier.price}</span>
+                  <span className="text-bone/55 text-sm">{tier.per}</span>
+                </div>
+                <p className="mt-6 text-bone/70 leading-relaxed font-light flex-1">{tier.desc}</p>
+                <Link to="/quote" className={tier.featured ? "btn-primary mt-8" : "btn-ghost mt-8"}>
+                  Request a Quote
+                </Link>
+              </article>
+            ))}
+          </div>
+          <p className="text-center mt-10 text-xs text-bone/45 tracking-wider uppercase">
+            Pricing varies by guest count, menu selections and venue specifics. Final proposals are built one-to-one.
+          </p>
+        </div>
+      </section>
+
       {r.city === "Phoenix" && <PhoenixPricingBanner />}
       {r.city === "San Diego" && <SanDiegoPricingBanner />}
 
