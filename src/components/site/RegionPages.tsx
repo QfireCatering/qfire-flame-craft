@@ -74,29 +74,20 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
           <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
             {[
               { name: "1 Meat", price: "$12.99", per: "per guest", desc: "Two proteins, two sides, dinner rolls, full service crew. Built for backyard celebrations and casual gatherings." },
-              { name: "2 Meat", price: "$17.99", per: "per guest", desc: "Three proteins, three sides, salad, dinner rolls, premium serviceware. Our most-booked package for weddings and corporate events.", featured: true },
+              { name: "2 Meat", price: "$17.99", per: "per guest", desc: "Three proteins, three sides, salad, dinner rolls, premium serviceware. Our most-booked package for weddings and corporate events." },
               { name: "Premium", price: "$25.99", per: "per guest", desc: "Four proteins including brisket & ribs, four chef-curated sides, salad, dessert, full white-glove service." },
             ].map((tier) => (
               <article
                 key={tier.name}
-                className={`relative p-9 lg:p-10 flex flex-col ${
-                  tier.featured
-                    ? "bg-ink border border-gold/40 shadow-[0_0_40px_rgba(212,175,55,0.08)]"
-                    : "bg-ink/60 border border-white/10"
-                }`}
+                className="relative p-9 lg:p-10 flex flex-col bg-ink/60 border border-white/10"
               >
-                {tier.featured && (
-                  <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 px-4 py-1 bg-gold text-ink text-[0.6rem] tracking-[0.3em] uppercase font-semibold">
-                    2 Meat
-                  </div>
-                )}
                 <div className="text-[0.7rem] tracking-[0.3em] uppercase text-gold mb-4">{tier.name}</div>
                 <div className="flex items-baseline gap-2">
                   <span className="text-5xl font-display text-bone tracking-tight">{tier.price}</span>
                   <span className="text-bone/55 text-sm">{tier.per}</span>
                 </div>
                 <p className="mt-6 text-bone/70 leading-relaxed font-light flex-1">{tier.desc}</p>
-                <Link to="/quote" className={tier.featured ? "btn-primary mt-8" : "btn-ghost mt-8"}>
+                <Link to="/quote" className="btn-ghost mt-8">
                   Request a Quote
                 </Link>
               </article>
