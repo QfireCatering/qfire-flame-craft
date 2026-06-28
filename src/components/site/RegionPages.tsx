@@ -444,7 +444,9 @@ function RegionBackyard({ regionKey }: { regionKey: RegionKey }) {
 
 function RegionGallery({ regionKey }: { regionKey: RegionKey }) {
   const r = regions[regionKey];
-  const imgs = [weddingTable, brisket, steak, corporate, buffet, privateParty, heroFire, weddingTable, brisket, buffet, steak, corporate];
+  const imgs = regionKey === "phoenix"
+    ? [pxG1.url, pxG2.url, pxG3.url, pxG4.url, pxG5.url, pxG6.url, pxG7.url, pxG8.url, pxG9.url, pxG10.url]
+    : [weddingTable, brisket, steak, corporate, buffet, privateParty, heroFire, weddingTable, brisket, buffet, steak, corporate];
   return (
     <>
       <PageHero regionKey={regionKey}
