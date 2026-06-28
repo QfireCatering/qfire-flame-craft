@@ -87,7 +87,7 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
               >
                 {tier.featured && (
                   <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 px-4 py-1 bg-gold text-ink text-[0.6rem] tracking-[0.3em] uppercase font-semibold">
-                    Most Popular
+                    2 Meat
                   </div>
                 )}
                 <div className="text-[0.7rem] tracking-[0.3em] uppercase text-gold mb-4">{tier.name}</div>

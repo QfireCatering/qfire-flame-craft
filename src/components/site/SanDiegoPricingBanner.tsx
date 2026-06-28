@@ -5,7 +5,7 @@ export function SanDiegoPricingBanner() {
     <section className="w-full relative">
       <img
         src={sanDiegoPricingBanner.url}
-        alt="Simple, Transparent Pricing — Wood-Fired Catering Packages and Steakhouse & Surf + Turf options for San Diego County"
+        alt="1 Meat & 2 Meat, Transparent Pricing — Wood-Fired Catering Packages and Steakhouse & Surf + Turf options for San Diego County"
         className="w-full h-auto"
         loading="eager"
         width={1920}
