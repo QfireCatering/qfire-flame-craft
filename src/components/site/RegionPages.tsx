@@ -552,23 +552,38 @@ function RegionGallery({ regionKey }: { regionKey: RegionKey }) {
       />
       <section className="py-16">
         <div className="container-luxe">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-2 gap-y-8">
             {imgs.map((img, i) => {
-              const types = ["wedding reception", "corporate dinner", "private party", "live-fire grilling station", "wood-fire buffet", "plated steakhouse dinner"];
-              const type = types[i % types.length];
+              const slug = regionKey === "phoenix" ? "phoenix" : "san-diego";
+              const captions = [
+                { type: "wedding reception", caption: `Black-tie wedding reception — ${r.metro}`, to: `/wedding-catering-${slug}` },
+                { type: "corporate dinner", caption: `Executive corporate dinner — ${r.shortName}`, to: `/corporate-catering-${slug}` },
+                { type: "private party", caption: `Backyard luxury private party — ${r.shortName}`, to: `/private-party-catering-${slug}` },
+                { type: "live-fire grilling station", caption: `Live-fire grilling station — ${r.metro}`, to: `/steakhouse-experience-${slug}` },
+                { type: "wood-fire buffet", caption: `Wood-fire buffet spread — ${r.shortName}`, to: `/${slug}/wood-fired-catering` },
+                { type: "plated steakhouse dinner", caption: `Plated steakhouse dinner — ${r.shortName}`, to: `/steakhouse-experience-${slug}` },
+              ];
+              const c = captions[i % captions.length];
               return (
-                <div key={i} className="relative aspect-square overflow-hidden group">
-                  <img
-                    src={img}
-                    alt={`${r.shortName} ${type} catered by Qfire Catering — ${r.metro} luxury event photo ${i + 1}`}
-                    loading="lazy"
-                    decoding="async"
-                    fetchPriority="low"
-                    width={800}
-                    height={800}
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
-                </div>
+                <figure key={i} className="group">
+                  <div className="relative aspect-square overflow-hidden">
+                    <img
+                      src={img}
+                      alt={`${r.shortName} ${c.type} catered by Qfire Catering — ${r.metro} luxury event photo ${i + 1}`}
+                      loading="lazy"
+                      decoding="async"
+                      fetchPriority="low"
+                      width={800}
+                      height={800}
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                  </div>
+                  <figcaption className="mt-3 text-[0.7rem] tracking-[0.22em] uppercase text-bone/70">
+                    <Link to={c.to} className="hover:text-gold transition-colors">
+                      {c.caption} <span className="text-gold/70">→</span>
+                    </Link>
+                  </figcaption>
+                </figure>
               );
             })}
           </div>
