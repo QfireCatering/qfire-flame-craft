@@ -297,7 +297,7 @@ export function bartendingConfig(o: ServiceTemplateOptions = {}): ServicePageCon
     galleryImages: [bartender, weddingTable, corporate, privateParty],
     ctaTitle: "Design your bar program.",
     definitiveKey: "bartending",
-    definitiveTopic: "Bartending ctaTitle: "Design your bar program.", Bar Programs",
+    definitiveTopic: "Bartending & Bar Programs",
   };
 }
 
