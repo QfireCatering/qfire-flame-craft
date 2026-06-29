@@ -28,7 +28,7 @@ function TermsPage() {
           },
           {
             h: "Quotes & Bookings",
-            p: "Quotes are valid for 30 days. Dates are confirmed only on receipt of a signed contract and 25% retainer. Final guest counts are due 14 days before the event.",
+            p: "Quotes are valid for 30 days. Dates are confirmed only on receipt of a signed contract and a 35% non-refundable Date Charge, which secures your event date and is applied directly to your final invoice. Final guest counts are due 14 days before the event.",
           },
           {
             h: "Cancellation",
