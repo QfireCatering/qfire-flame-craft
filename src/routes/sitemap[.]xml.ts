@@ -3,9 +3,8 @@ import type {} from "@tanstack/react-start";
 import { services, extraPages } from "@/lib/site";
 import { blogPosts } from "@/lib/blog-posts";
 
-// Relative <loc> values stay correct under whatever host the project is served from.
-// Replace with absolute base when a custom domain is set.
-const BASE_URL = "";
+// Absolute base URL for the published site. Update when a custom domain is set.
+const BASE_URL = "https://qfire-flame-craft.lovable.app";
 
 export const Route = createFileRoute("/sitemap.xml")({
   server: {
