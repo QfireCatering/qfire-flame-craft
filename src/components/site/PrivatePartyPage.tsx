@@ -289,15 +289,18 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
             </p>
           </div>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-1">
-            {partyTypes.map((e) => (
-              <div key={e.title} className="relative aspect-square overflow-hidden bg-ink group">
-                <img src={e.img} alt={`${e.title} catering in ${regionShort} by Qfire`} className="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity duration-500" />
-                <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <div className="text-bone font-display text-sm lg:text-base leading-tight">{e.title}</div>
+            {partyTypes.map((e, idx) => {
+              const img = regionShort === "Phoenix" ? phoenixPrivateImgs[idx % phoenixPrivateImgs.length] : e.img;
+              return (
+                <div key={e.title} className="relative aspect-square overflow-hidden bg-ink group">
+                  <img src={img} alt={`${e.title} catering in ${regionShort} by Qfire`} className="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-4">
+                    <div className="text-bone font-display text-sm lg:text-base leading-tight">{e.title}</div>
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
