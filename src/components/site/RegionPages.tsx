@@ -224,9 +224,12 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
                   </div>
                 </>
               );
-              if (regionKey === "phoenix" && s.slug === "wood-fired") {
+              if (s.slug === "wood-fired") {
+                const woodFiredUrl = regionKey === "phoenix"
+                  ? "https://fs17.formsite.com/matthews3404/BBQDADDYLLC/index"
+                  : "https://fs17.formsite.com/matthews3404/SanDiego/index";
                 return (
-                  <a key={s.slug} href="https://fs17.formsite.com/matthews3404/BBQDADDYLLC/index" target="_blank" rel="noopener noreferrer" className={cardClass}>
+                  <a key={s.slug} href={woodFiredUrl} target="_blank" rel="noopener noreferrer" className={cardClass}>
                     {cardBody}
                   </a>
                 );
