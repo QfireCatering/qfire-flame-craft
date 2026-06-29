@@ -213,7 +213,7 @@ function Field({
 }) {
   return (
     <div>
-      <label className="block text-[0.65rem] tracking-[0.3em] uppercase text-bone/60 mb-3">
+      <label className="block text-[0.65rem] tracking-[0.3em] uppercase text-bone mb-3">
         {label}
       </label>
       <input
