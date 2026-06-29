@@ -6,6 +6,8 @@ import { PhoenixPricingBanner } from "./PhoenixPricingBanner";
 import { SanDiegoPricingBanner } from "./SanDiegoPricingBanner";
 import { TrustBar } from "./TrustBar";
 import { FAQSection } from "./FAQSection";
+import { DefinitiveContent } from "./DefinitiveContent";
+import { definitiveCopy } from "@/lib/definitive-copy";
 import { AnswerBox } from "./AnswerBox";
 import { AtAGlance } from "./AtAGlance";
 import { ServiceStyleComparison } from "./ServiceStyleComparison";
