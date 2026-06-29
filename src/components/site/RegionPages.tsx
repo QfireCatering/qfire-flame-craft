@@ -711,6 +711,7 @@ function RegionBlog({ regionKey }: { regionKey: RegionKey }) {
           ))}
         </div>
       </section>
+      <DefinitiveContent {...definitiveCopy.blog} topic={`${r.shortName} Journal`} region={r.metro} />
       <CTASection />
     </>
   );
