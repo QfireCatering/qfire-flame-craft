@@ -65,9 +65,9 @@ export function weddingConfig(o: ServiceTemplateOptions = {}): ServicePageConfig
     menu: {
       heading: "Sample wedding menu.",
       columns: [
-        { title: "Cocktail Hour", items: ["Brisket sliders with house pickles", "Wood-fired flatbreads", "Charcuterie board, local & imported", "Bacon-wrapped jalapeños", "Smoked deviled eggs"] },
-        { title: "Plated or Stations", items: ["Center-cut ribeye, herb butter", "Smoked beef tri-tip", "Cedar-plank salmon", "Brick chicken with chimichurri", "Picanha carved tableside", "Surf & turf upgrade"] },
-        { title: "Sides & Bread", items: ["Truffle mac and cheese", "Smoked baked beans", "Southern green beans", "Charred street corn", "Roasted heirloom carrots", "Fresh-baked rolls"] },
+        { title: "Choose Your Meats", items: ["Hickory Smoked Pulled Pork", "Smoked Pulled Chicken", "Grilled Chicken Breast", "BBQ Chicken (Leg & Thigh)", "Premium 1/3 lb All-Beef Burgers", "Premium All-Beef Hot Dogs", "Premium: Smoked Sliced Beef Brisket (+$3)", "Premium: Beef Tri-Tip (+$4)", "Premium: BBQ Beef Ribs (+$5)", "Premium: Pork Spare Ribs (+$2)", "Premium: Grilled Pork Tenderloin (+$2)", "Premium: Hot Links (+$2)"] },
+        { title: "Sides & Bread", items: ["Gourmet Mac & Cheese", "BBQ Daddy Baked Beans", "Potato Salad, herb-infused dressing", "Gourmet Macaroni Pasta Salad", "Elotes (Mexican Street Corn Salad)", "Southern Smothered Cabbage", "Collard Greens", "Garden Salad / Caesar Salad", "Mashed Potatoes", "Spanish Rice & Frijoles Negros", "Loaded Red Mashed Potatoes (+$2)", "Grilled Asparagus (+$2)", "Buttered Bread Rolls (+$1.99)"] },
+        { title: "Appetizers & Desserts", items: ["Fruit Platter", "Veggie Platter", "Assorted Cheese & Crackers", "BBQ Daddy Meatballs", "Bacon-Wrapped Italian Meatballs (+$3)", "Chips, Salsa, Guac & Pico (+$2)", "Peach Cobbler", "German Chocolate Cake", "Chocolate Cake / Vanilla Cake", "Double Fudge Brownies", "Assorted Fresh-Baked Cookies", "Sweet Tea, Lemonade, Arnold Palmer"] },
       ],
     },
     galleryImages: o.regionShort === "Phoenix" ? phoenixWeddingGallery : galleryAll.slice(0, 8),
