@@ -158,6 +158,10 @@ export function ServicePage({ config, regionKey }: { config: ServicePageConfig; 
                   src={img}
                   alt={`${config.eyebrow} by Qfire Catering${regionKey ? ` in ${regionKey === "phoenix" ? "Phoenix Metro" : "San Diego County"}` : ""} — recent event photo ${i + 1}`}
                   loading="lazy"
+                  decoding="async"
+                  fetchPriority="low"
+                  width={800}
+                  height={800}
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
               </div>

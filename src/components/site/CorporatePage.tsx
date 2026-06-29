@@ -282,7 +282,7 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
           <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-1">
             {businessEvents.map((e) => (
               <div key={e.title} className="relative aspect-square overflow-hidden bg-ink group">
-                <img src={e.img} alt={`${e.title} catering in ${regionShort} by Qfire`} className="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity duration-500" />
+                <img src={e.img} alt={`${e.title} catering in ${regionShort} by Qfire`} loading="lazy" decoding="async" fetchPriority="low" width={600} height={600} className="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-4">
                   <div className="text-bone font-display text-sm lg:text-base leading-tight">{e.title}</div>
@@ -443,7 +443,7 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
               { img: platter1, title: "Carving Stations", body: "Chef-attended live carving — picanha, brisket, prime rib, lamb.", to: "/menus" },
             ].map((m) => (
               <Link key={m.title} to={m.to} className="group relative aspect-[4/5] overflow-hidden block">
-                <img src={m.img} alt={`${m.title} for ${regionShort} corporate events`} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <img src={m.img} alt={`${m.title} for ${regionShort} corporate events`} loading="lazy" decoding="async" fetchPriority="low" width={800} height={1000} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-8">
                   <h3 className="font-display text-2xl text-bone">{m.title}</h3>
