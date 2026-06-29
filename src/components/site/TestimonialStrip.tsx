@@ -19,7 +19,7 @@ const REVIEWS: Record<RegionKey, Review[]> = {
       source: "Yelp",
     },
     {
-      q: "Backyard 60th birthday in Paradise Valley. Chef Terry built us a custom menu, set up a live wood-fire station and treated our family like his own. Felt like Mastro's came to the house. Highest recommendation.",
+      q: "Backyard 60th birthday in Paradise Valley. Chef Terry built us a custom menu, set up a live wood-fire station and treated our family like his own. Felt like a true steakhouse came to the house. Highest recommendation.",
       a: "Jean Laber",
       e: "Private Party · Paradise Valley",
       source: "Google",
