@@ -4,6 +4,7 @@ import { ServicePage } from "@/components/site/ServicePage";
 import { PageHero, CTASection } from "@/components/site/Sections";
 import { PhoenixPricingBanner } from "./PhoenixPricingBanner";
 import { SanDiegoPricingBanner } from "./SanDiegoPricingBanner";
+import { RegionalPricing } from "./RegionalPricing";
 import { TrustBar } from "./TrustBar";
 import { FAQSection } from "./FAQSection";
 import { BookingProcess } from "./BookingProcess";
