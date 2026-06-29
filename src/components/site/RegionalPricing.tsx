@@ -7,19 +7,22 @@ export function RegionalPricing({ regionKey }: { regionKey: RegionKey }) {
   const r = regions[regionKey];
   const isPhx = regionKey === "phoenix";
   const steakMenuPath = isPhx ? "/steak-seafood-menu" : "/steak-seafood-menu-san-diego";
+  const woodMin = isPhx ? "20 guest minimum" : "50 guest minimum";
+  const steakMin = isPhx ? "15 guest minimum" : "40 guest minimum";
   return (
     <>
       {/* WOOD-FIRE PRICING SUMMARY */}
       <section className="py-20 lg:py-28 bg-onyx border-t border-white/5">
         <div className="container-luxe">
           <div className="text-center max-w-2xl mx-auto mb-14">
-            <div className="eyebrow justify-center mb-6">Wood-Fire Catering — Pricing</div>
+            <div className="eyebrow justify-center mb-6">Wood-Fire BBQ Catering — Pricing</div>
             <h2 className="heading-lg text-bone">
               Wood-fire catering starting at <span className="text-gold italic font-light">{isPhx ? "$12.99" : "$15.99"}/guest.</span>
             </h2>
             <p className="mt-5 text-bone/65 text-base font-light">
               Pick your package. Pick your meats. We bring the fire, the food, and the team.
             </p>
+            <p className="mt-3 text-gold/90 text-xs tracking-[0.25em] uppercase">{r.shortName} — {woodMin}</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
@@ -113,6 +116,7 @@ export function RegionalPricing({ regionKey }: { regionKey: RegionKey }) {
             <p className="mt-5 text-bone/65 text-base font-light">
               Live charcoal grilling, white-glove service, and restaurant-quality presentation at your {r.shortName} venue.
             </p>
+            <p className="mt-3 text-gold/90 text-xs tracking-[0.25em] uppercase">{r.shortName} — {steakMin}</p>
           </div>
           <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
             {[

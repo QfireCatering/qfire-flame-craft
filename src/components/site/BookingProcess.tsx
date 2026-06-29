@@ -23,14 +23,14 @@ const STEPS = [
   {
     icon: Utensils,
     n: "03",
-    t: "Optional tasting & menu refinement",
-    b: "Booked clients get a private tasting. We fine-tune flavors, courses, dietary needs and presentation until the menu is exactly right.",
+    t: "Menu refinement",
+    b: "We fine-tune flavors, courses, dietary needs and presentation. You have until 2 weeks before the event to finalize menu and guest count — no penalty for normal adjustments.",
   },
   {
     icon: CalendarCheck,
     n: "04",
     t: "Lock your date",
-    b: "A simple deposit secures your event. Final guest count and last-minute changes lock in the week of — no penalty for normal adjustments.",
+    b: "A 35% Date Charge secures your event and credits 100% toward your final invoice. Rescheduling stays flexible — your deposit holds as a credit toward one future event within a year (minimum 80% of original value).",
   },
   {
     icon: Sparkles,

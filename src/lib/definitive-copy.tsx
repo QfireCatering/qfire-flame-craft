@@ -49,7 +49,7 @@ const privateExtraFaqs = [
 
 const steakhouseExtraFaqs = [
   { q: "What cuts are featured in the steakhouse experience?", a: "Center-cut filet mignon, prime ribeye, New York strip, T-bone, picanha, prime rib, surf & turf with cold-water lobster tail or jumbo shrimp, and Atlantic salmon. All charcoal-grilled over real hardwood." },
-  { q: "How is this different from a regular catering buffet?", a: "Steaks are grilled to order, sliced in front of guests, and plated with restaurant-style presentation. Service staff wear chef coats. The room feels like Mastro's, in your venue." },
+  { q: "How is this different from a regular catering buffet?", a: "Steaks are grilled to order, sliced in front of guests, and plated with restaurant-style presentation. Service staff wear chef coats. The room feels like a true steakhouse, in your venue." },
   { q: "Can you do steaks cooked to temperature for each guest?", a: "Yes — chef-attended carving stations let guests request their preferred doneness in real time. For plated service we coordinate doneness counts during your final menu meeting." },
   { q: "What's included with the steakhouse package?", a: "Premium proteins, three signature sides, fresh-baked breads, butter board, salad course, sauces, fully attended grilling, plating staff, and full breakdown. Add bar, rentals, and dessert as needed." },
   { q: "How many guests can you scale this for?", a: "From 30-guest intimate dinners to 1,000+ guest galas. Phoenix can scale to 2,000 guests. San Diego scales to 2,500. Larger events are quoted with additional grill stations and staff." },
@@ -137,7 +137,7 @@ export const definitiveCopy: Record<string, Preset> = {
     differentiators: [
       { title: "Chef Terry actually designs your menu", body: "You aren't handed to a junior sales rep. The Food Network chef whose name is on the door reads your inquiry, builds your proposal, and is at most weddings personally." },
       { title: "Real wood, real fire", body: "We don't fake it with gas. Oak, hickory, mesquite, and pecan over live coals — the depth of flavor restaurants try and fail to copy." },
-      { title: "Steakhouse-quality plating, anywhere", body: "Polished service, chef coats, real presentation. We bring the Mastro's energy to lawns, vineyards, and venues that weren't built to feel that way." },
+      { title: "Steakhouse-quality plating, anywhere", body: "Polished service, chef coats, real presentation. We bring true steakhouse energy to lawns, vineyards, and venues that weren't built to feel that way." },
       { title: "No hidden fees", body: "Your proposal lists every line. No day-of upsells, no surprise gratuity, no pricing games when you're three weeks out and stressed." },
     ],
     confidence: baseConfidence,
@@ -284,7 +284,7 @@ export const definitiveCopy: Record<string, Preset> = {
   },
   steakhouse: {
     explainer:
-      "The Signature Live Fire Steakhouse Experience is what happens when a Food Network chef builds a Mastro's-caliber dinner service around your venue. Center-cut filet, prime ribeye, New York strip, T-bone, picanha, prime rib, and surf & turf — all charcoal-grilled over real hardwood, sliced in front of your guests, and plated with restaurant-grade presentation.",
+      "The Signature Live Fire Steakhouse Experience is what happens when a Food Network chef builds a premium steakhouse dinner service around your venue. Center-cut filet, prime ribeye, New York strip, T-bone, picanha, prime rib, and surf & turf — all charcoal-grilled over real hardwood, sliced in front of your guests, and plated with restaurant-grade presentation.",
     explainerLong:
       "This isn't a fancier buffet. It's a portable steakhouse: chef-attended grilling stations, polished service staff in chef coats, three signature sides, fresh-baked breads, butter board, salad course, and sauces. The room feels different the moment the first plate goes down.",
     included: [
@@ -313,18 +313,16 @@ export const definitiveCopy: Record<string, Preset> = {
       { title: "Inquiry", body: "Share date, venue, guest count, and protein direction." },
       { title: "Discovery call", body: "15–20 minute call with Chef Terry to align on menu and service style." },
       { title: "Itemized proposal", body: "Sent within a few business days — food, service, rentals, travel, gratuity all transparent." },
-      { title: "Reserve the date", body: "Date-charge applied directly to your final invoice." },
-      { title: "Tasting (optional)", body: "Private tasting at our chef's table for couples and clients on larger events." },
-      { title: "Final menu lock (30 days out)", body: "Confirm protein mix, sides, sauces, and doneness counts." },
+      { title: "Reserve the date", body: "35% Date Charge secures your event date and credits to your final invoice." },
+      { title: "Final menu lock (2 weeks out)", body: "Final guest count, protein mix, sides, sauces, and doneness counts locked in 2 weeks prior to your event." },
       { title: "Event night", body: "On-time arrival, calm grill line, restaurant-grade plating, full breakdown." },
     ],
     expectations: {
       before: [
         "Quote within 3–5 business days",
-        "Tasting available on request",
         "Menu refined across multiple touches",
         "Site visit for unfamiliar venues",
-        "Final doneness counts confirmed 30 days out",
+        "Final doneness counts confirmed 2 weeks out",
       ],
       during: [
         "Live charcoal grills running on-site",
@@ -342,7 +340,7 @@ export const definitiveCopy: Record<string, Preset> = {
       ],
     },
     differentiators: [
-      { title: "Mastro's energy, your venue", body: "Real chef-coat service, real wood-fire grilling, real steakhouse presentation. Restaurants try to copy this." },
+      { title: "True steakhouse energy, your venue", body: "Real chef-coat service, real wood-fire grilling, real steakhouse presentation. Restaurants try to copy this." },
       { title: "Center-cut, hand-selected", body: "Premium cuts hand-selected for each event. We don't trim our standards for catering — the steak you eat is the steak you'd order in a restaurant." },
       { title: "Chef-attended, not buffet-attended", body: "Real cooking happens on-site. Not warmed up, not held in chafers, not pre-sliced hours earlier." },
       { title: "Scales from 30 to 2,500", body: "Intimate private dinners through luxury weddings, galas, and large-format events — same standards, more stations." },
@@ -543,7 +541,7 @@ definitiveCopy.region = {
   differentiators: [
     { title: "Chef Terry designs every menu", body: "Television-tested standards. Personally built proposals. Not handed off to a junior coordinator." },
     { title: "Real wood, real fire", body: "Oak, hickory, mesquite, pecan over live coals. No gas shortcuts, no liquid smoke." },
-    { title: "Restaurant-grade plating, any venue", body: "Polished service staff in chef coats. Mastro's-caliber presentation in your venue." },
+    { title: "Restaurant-grade plating, any venue", body: "Polished service staff in chef coats. True steakhouse presentation in your venue." },
     { title: "Two-region operation", body: "Phoenix Metro and San Diego County fully staffed — one chef, one team, one set of standards." },
   ],
   confidence: baseConfidence,

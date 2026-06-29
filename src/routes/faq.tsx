@@ -72,7 +72,7 @@ const sections: Section[] = [
       },
       {
         q: "What are your minimums?",
-        a: "Wood-Fired Menu: 20 guest minimum. Signature Live Fire Steakhouse Menu: 15 guest minimum. Private Chef Services: 4 guest minimum.",
+        a: "Wood-Fired Menu: 20 guest minimum in Phoenix Metro; 50 guest minimum in San Diego County. Signature Live Fire Steakhouse Menu: 15 guest minimum in Phoenix Metro; 40 guest minimum in San Diego County. Private Chef Services: 4 guest minimum.",
       },
     ],
   },
@@ -80,12 +80,12 @@ const sections: Section[] = [
     title: "Tastings",
     faqs: [
       {
-        q: "🍖 Are tastings available prior to booking?",
-        a: "Yes, based on availability. Wood-Fired Tastings: $200 investment, designed to serve approximately 5 guests, includes 3 meats (excluding steakhouse cuts), 3 sides, and 2 appetizers or 1 dessert. Extra guests are $40 per person, additional meats $8.49 per selection, additional sides $5.99 per serving (minimum of 5). Available Wednesdays & Thursdays (Friday & Saturday availability varies).",
+        q: "Are tastings available?",
+        a: "Tastings are available upon request, subject to schedule availability — they are not part of our standard booking process. If we have availability, our Wood-Fired Tasting is $200, designed to serve approximately 5 guests, and includes 3 meats (excluding steakhouse cuts), 3 sides, and 2 appetizers or 1 dessert. Extra guests $40 per person, additional meats $8.49 per selection, additional sides $5.99 per serving (minimum 5). Call 877-848-7211 to check the calendar.",
       },
       {
-        q: "🥩 What's included in the Steakhouse Tasting Experience?",
-        a: "Our Steakhouse Tastings give you a true preview of the full Qfire Steakhouse experience — not just samples, but an intimate private chef evening tailored to your event vision. Chef Terry personally comes to your home or location and prepares your selections fresh onsite, letting you experience the quality, presentation, timing, and atmosphere that make our steakhouse service unique. Your tasting includes 2 cold appetizers, 2 warm appetizers, 3 premium steakhouse entrées, 3 signature sides, and 2 desserts. Priced at $175 per person with a 2-person minimum. Call 877-848-7211 to schedule.",
+        q: "Is a Steakhouse Tasting available?",
+        a: "Steakhouse Tastings are available upon request, based on availability only. When booked, Chef Terry personally comes to your home and prepares 2 cold appetizers, 2 warm appetizers, 3 premium steakhouse entrées, 3 signature sides, and 2 desserts. $175 per person, 2-person minimum. Call 877-848-7211 to check availability.",
       },
     ],
   },
