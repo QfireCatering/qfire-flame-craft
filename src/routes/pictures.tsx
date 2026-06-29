@@ -33,8 +33,10 @@ export const Route = createFileRoute("/pictures")({
 const masonry: { src: string; tall?: boolean; wide?: boolean }[] = [
   { src: weddingSd.url, wide: true }, { src: bbqPlatter.url }, { src: privateGroup.url, tall: true },
   { src: steakLobster.url }, { src: ribPlate.url }, { src: bbqMeal.url, wide: true },
-  { src: bbqPlate.url }, { src: steakPlate.url, tall: true }, { src: weddingSd.url },
-  { src: bbqPlatter.url, wide: true }, { src: steakLobster.url }, { src: bbqMeal.url },
+  { src: bbqPlate.url }, { src: steakPlate.url, tall: true }, { src: onsiteGrillMahi.url },
+  { src: buffetSet2.url, wide: true }, { src: fromGrill.url }, { src: vegInCup.url },
+  { src: setUp1.url, wide: true }, { src: parkSetup.url }, { src: jobsiteTacos.url, tall: true },
+  { src: setUp2.url }, { src: bbqMeal.url }, { src: weddingSd.url, wide: true },
 ];
 
 function PicturesPage() {
