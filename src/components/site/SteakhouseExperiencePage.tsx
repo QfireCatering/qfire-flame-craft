@@ -9,6 +9,8 @@ import { TrustBar } from "./TrustBar";
 import { FAQSection } from "./FAQSection";
 import { DefinitiveContent } from "./DefinitiveContent";
 import { definitiveCopy } from "@/lib/definitive-copy";
+import { BookingProcess } from "./BookingProcess";
+import { ObjectionBuster } from "./ObjectionBuster";
 
 export type RegionCopy = {
   city: string;            // "Phoenix" | "San Diego"
