@@ -79,7 +79,7 @@ function PricingPage() {
         image={heroFire}
       >
         <Link to="/quote" className="btn-primary">
-          Request Custom Quote <ArrowRight className="size-4" />
+          Get My Itemized Proposal <ArrowRight className="size-4" />
         </Link>
       </PageHero>
 
