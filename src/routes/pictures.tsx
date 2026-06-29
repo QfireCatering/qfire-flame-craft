@@ -8,6 +8,14 @@ import bbqPlate from "@/assets/gallery/pictures-page/bbq-plate.avif.asset.json";
 import steakPlate from "@/assets/gallery/pictures-page/steak-plate.avif.asset.json";
 import bbqMeal from "@/assets/gallery/pictures-page/bbq-meal.avif.asset.json";
 import steakLobster from "@/assets/gallery/pictures-page/steak-lobster.avif.asset.json";
+import parkSetup from "@/assets/gallery/pictures-page/park-setup.avif.asset.json";
+import fromGrill from "@/assets/gallery/pictures-page/from-grill.avif.asset.json";
+import vegInCup from "@/assets/gallery/pictures-page/veg-in-cup.avif.asset.json";
+import buffetSet2 from "@/assets/gallery/pictures-page/buffet-set-2.avif.asset.json";
+import onsiteGrillMahi from "@/assets/gallery/pictures-page/onsite-grill-mahi.avif.asset.json";
+import setUp1 from "@/assets/gallery/pictures-page/set-up-1.avif.asset.json";
+import setUp2 from "@/assets/gallery/pictures-page/set-up-2.avif.asset.json";
+import jobsiteTacos from "@/assets/gallery/pictures-page/jobsite-tacos.jpg.asset.json";
 
 export const Route = createFileRoute("/pictures")({
   head: () => ({
