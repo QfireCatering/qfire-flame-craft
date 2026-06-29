@@ -577,6 +577,25 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
         </div>
       </section>
 
+      <ObjectionBuster
+        eyebrow={`Before You Book Your ${regionShort} Party`}
+        title="Real questions backyard hosts ask — answered upfront."
+        ctaLabel={`Get My ${regionShort} Party Quote`}
+        items={[
+          { q: "Can you really cook in my backyard?", a: "Yes — that's what we do best. We bring portable wood-fire grills, prep stations, water, power if needed, and tarps. No kitchen required. Pool decks, patios, side yards, driveways — all fair game." },
+          { q: "What's the minimum guest count?", a: "Most private parties start around 25 guests for full-service catering. Smaller intimate dinners are possible — call us and we'll tell you exactly what works for your group." },
+          { q: "Will you clean up — or do I have to?", a: "We pack out everything we brought in, wipe down service areas, and bag trash. You wake up the next morning to a clean yard, not a disaster zone." },
+          { q: "What if it rains, or my date moves?", a: "We've cooked through monsoons, heat waves, and beach winds. If your date or venue has to move, we'll work with you to reschedule — most of the time at no extra cost." },
+          { q: "Can the menu be totally custom?", a: "100%. Family recipes, dietary needs, cultural dishes, kids' favorites — your menu is built around your guests, not a fixed sheet." },
+          { q: "How much will it actually cost?", a: "Your itemized proposal lists food, staff, travel and any add-ons separately. The number you sign is the number you pay — no surprise day-of fees." },
+        ]}
+      />
+
+      <BookingProcess
+        eyebrow="Party Booking Is Simple"
+        title="From first call to last bite — exactly what to expect."
+      />
+
       {/* FINAL CTA */}
       <section className="py-32 lg:py-40 relative overflow-hidden">
         <img src={lifestyle} alt={`${regionShort} private party catering by Qfire`} className="absolute inset-0 w-full h-full object-cover opacity-30" />
