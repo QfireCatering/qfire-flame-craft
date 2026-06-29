@@ -42,6 +42,12 @@ const chefGallery = [
   { src: bf6.url, alt: "Chef Terry with bride and groom on the dance floor — Qfire wedding catering" },
   { src: bf7.url, alt: "Chef Terry with newlyweds at an elegant reception — Qfire Catering" },
   { src: bf8.url, alt: "Chef Terry with bride and groom at an Arizona backyard wedding — Qfire Catering" },
+  { src: bf9.url, alt: "Chef Terry with bride and groom under string lights at an evening reception — Qfire wedding catering" },
+  { src: bf10.url, alt: "Chef Terry celebrating beside the wedding cake with the newlyweds — Qfire Catering" },
+  { src: bf11.url, alt: "Chef Terry with bride, groom and ring bearer under twinkle lights — Qfire wedding catering" },
+  { src: bf12.url, alt: "Chef Terry with bride and groom at a rustic barn wedding — Qfire Catering" },
+  { src: bf13.url, alt: "Chef Terry lifted by bride and groom on the dance floor — Qfire wedding catering" },
+  { src: bf14.url, alt: "Chef Terry with bride and groom at an outdoor destination reception — Qfire Catering" },
 ];
 
 
