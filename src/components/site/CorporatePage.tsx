@@ -36,6 +36,7 @@ export interface CorporateRegionConfig {
   path: string;
   cities: string[];
   reviewCities: string[];
+  heroImage?: string;
 }
 
 const baseFaqs = [
