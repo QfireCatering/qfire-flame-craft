@@ -503,7 +503,7 @@ definitiveCopy.region = {
     { title: "Match service style to the room", body: "Buffet for energy, plated for elegance, family-style for intimacy, stations for movement. Tell us the room — we'll match it." },
     { title: "Pick one signature moment", body: "A live carving station, a chef-attended raw bar, a late-night brisket slider drop. One memorable beat beats six average ones." },
     { title: "Plan the dietary minority up front", body: "GF, vegetarian, vegan, allergy-specific — built in from day one, not patched on at the end." },
-    { title: "Reserve early", body: "Premium dates fill 6–14 months out. Lock the date with a small deposit and refine the menu over time." },
+    { title: "Reserve early", body: "Premium dates fill 6–14 months out. Lock the date with a 35% non-refundable Date Charge (applied to your final invoice) and refine the menu over time." },
     { title: "Use one vendor for food, bar, rentals", body: "One contract, one team, one timeline. Easier to coordinate, cleaner to budget, calmer on event day." },
   ],
   bookingSteps: [
