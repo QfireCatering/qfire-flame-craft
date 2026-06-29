@@ -6,10 +6,10 @@ const phoenix = phoenixAsset.url;
 export const Route = createFileRoute("/phoenix/")({
   head: () => ({
     meta: [
-      { title: "Phoenix Catering — Wedding, Corporate & Private Event Catering | Qfire" },
-      { name: "description", content: "Full-service wood-fired catering across Phoenix Metro — Phoenix, Scottsdale, Mesa, Chandler, Gilbert and surrounding communities. Featured on Food Network." },
-      { property: "og:title", content: "Phoenix Catering — Qfire" },
-      { property: "og:description", content: "Wood-fired catering across Phoenix Metro." },
+      { title: "BBQ Catering Phoenix | Wedding, Corporate & Private Party Catering — Qfire" },
+      { name: "description", content: "BBQ catering Phoenix, wood-fired catering and live-fire steakhouse catering across Phoenix Metro — Phoenix, Scottsdale, Mesa, Tempe, Chandler, Gilbert, Glendale, Peoria, Sedona, Flagstaff and Tucson. Weddings, corporate events and private parties. Featured on Food Network. BBQ catering near me, done right." },
+      { property: "og:title", content: "BBQ & Wood-Fire Catering Phoenix — Qfire Catering" },
+      { property: "og:description", content: "BBQ catering, wood-fired catering and steakhouse catering across Phoenix Metro. Weddings, corporate, private parties. Chef Terry Matthews — Food Network." },
       { property: "og:url", content: "https://qfire-flame-craft.lovable.app/phoenix" },
       { property: "og:image", content: phoenix },
     ],
