@@ -47,9 +47,9 @@ export const Route = createFileRoute("/pricing")({
       },
       { property: "og:title", content: "Catering Pricing — Qfire Catering" },
       { property: "og:description", content: "What it actually costs to cater your event with Qfire." },
-      { property: "og:url", content: "/pricing" },
+      { property: "og:url", content: "https://qfire-flame-craft.lovable.app/pricing" },
     ],
-    links: [{ rel: "canonical", href: "/pricing" }],
+    links: [{ rel: "canonical", href: "https://qfire-flame-craft.lovable.app/pricing" }],
     scripts: [
       {
         type: "application/ld+json",

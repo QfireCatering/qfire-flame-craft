@@ -17,10 +17,10 @@ export const Route = createFileRoute("/steakhouse-experience-san-diego")({
       { name: "description", content: "Luxury premium steakhouse catering across San Diego County. Ribeye, filet mignon, prime rib, salmon and lobster — grilled live onsite at La Jolla, Del Mar, Rancho Santa Fe and Coronado weddings, corporate events and private parties. Buffet from $79/pp · Plated from $133/pp." },
       { property: "og:title", content: "live-fire steakhouse experience San Diego | Qfire" },
       { property: "og:description", content: "Live charcoal grilling, surf & turf and white-glove service across San Diego County — weddings, corporate dinners and luxury private parties." },
-      { property: "og:url", content: "/steakhouse-experience-san-diego" },
+      { property: "og:url", content: "https://qfire-flame-craft.lovable.app/steakhouse-experience-san-diego" },
       { property: "og:image", content: steakhouseBackyard.url },
     ],
-    links: [{ rel: "canonical", href: "/steakhouse-experience-san-diego" }],
+    links: [{ rel: "canonical", href: "https://qfire-flame-craft.lovable.app/steakhouse-experience-san-diego" }],
     scripts: [
       {
         type: "application/ld+json",

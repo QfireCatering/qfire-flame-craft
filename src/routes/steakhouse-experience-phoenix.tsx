@@ -17,10 +17,10 @@ export const Route = createFileRoute("/steakhouse-experience-phoenix")({
       { name: "description", content: "Luxury premium steakhouse catering in the Phoenix Metro. Ribeye, filet mignon, prime rib, salmon and lobster — grilled live onsite at Phoenix, Scottsdale and Paradise Valley weddings, corporate events and private parties. Buffet from $74/pp · Plated from $128/pp." },
       { property: "og:title", content: "live-fire steakhouse experience Phoenix | Qfire" },
       { property: "og:description", content: "Live charcoal grilling, surf & turf and white-glove service across the Phoenix Metro — weddings, corporate dinners and luxury private parties." },
-      { property: "og:url", content: "/steakhouse-experience-phoenix" },
+      { property: "og:url", content: "https://qfire-flame-craft.lovable.app/steakhouse-experience-phoenix" },
       { property: "og:image", content: steakhouseBackyard.url },
     ],
-    links: [{ rel: "canonical", href: "/steakhouse-experience-phoenix" }],
+    links: [{ rel: "canonical", href: "https://qfire-flame-craft.lovable.app/steakhouse-experience-phoenix" }],
     scripts: [
       {
         type: "application/ld+json",

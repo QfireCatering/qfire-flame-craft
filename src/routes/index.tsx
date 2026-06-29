@@ -51,11 +51,11 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "Qfire Catering by Chef Terry Matthews — full-service luxury catering for weddings, corporate dinners, private parties and intimate chef's tables across Phoenix Metro and San Diego County. Wood-fired flavors, Signature Live Fire Steakhouse Catering polish, white-glove service, stress-free execution." },
       { property: "og:title", content: "Qfire Catering — Wood-Fired Luxury, Signature Live Fire Steakhouse Catering Polish" },
       { property: "og:description", content: "Wood-fired flavors. Premium Steakhouse Catering polish. Stress-free execution. Luxury catering for weddings, corporate events and private parties — Phoenix Metro & San Diego County." },
-      { property: "og:url", content: "/" },
+      { property: "og:url", content: "https://qfire-flame-craft.lovable.app/" },
       { property: "og:image", content: heroImage.url },
       { name: "twitter:image", content: heroImage.url },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [{ rel: "canonical", href: "https://qfire-flame-craft.lovable.app/" }],
     scripts: [
       {
         type: "application/ld+json",

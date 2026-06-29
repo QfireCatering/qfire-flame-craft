@@ -154,9 +154,9 @@ export const Route = createFileRoute("/faq")({
         content:
           "Pricing tiers, service styles, tastings, deposits, minimums and logistics — every question we hear, answered honestly.",
       },
-      { property: "og:url", content: "/faq" },
+      { property: "og:url", content: "https://qfire-flame-craft.lovable.app/faq" },
     ],
-    links: [{ rel: "canonical", href: "/faq" }],
+    links: [{ rel: "canonical", href: "https://qfire-flame-craft.lovable.app/faq" }],
     scripts: [
       {
         type: "application/ld+json",

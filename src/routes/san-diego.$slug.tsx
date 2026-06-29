@@ -27,9 +27,9 @@ export const Route = createFileRoute("/san-diego/$slug")({
         { name: "description", content: meta.d },
         { property: "og:title", content: meta.t },
         { property: "og:description", content: meta.d },
-        { property: "og:url", content: `/san-diego/${params.slug}` },
+        { property: "og:url", content: `https://qfire-flame-craft.lovable.app/san-diego/${params.slug}` },
       ],
-      links: [{ rel: "canonical", href: `/san-diego/${params.slug}` }],
+      links: [{ rel: "canonical", href: `https://qfire-flame-craft.lovable.app/san-diego/${params.slug}` }],
     };
   },
   component: function SanDiegoSlug() {

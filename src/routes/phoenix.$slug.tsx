@@ -27,9 +27,9 @@ export const Route = createFileRoute("/phoenix/$slug")({
         { name: "description", content: meta.d },
         { property: "og:title", content: meta.t },
         { property: "og:description", content: meta.d },
-        { property: "og:url", content: `/phoenix/${params.slug}` },
+        { property: "og:url", content: `https://qfire-flame-craft.lovable.app/phoenix/${params.slug}` },
       ],
-      links: [{ rel: "canonical", href: `/phoenix/${params.slug}` }],
+      links: [{ rel: "canonical", href: `https://qfire-flame-craft.lovable.app/phoenix/${params.slug}` }],
     };
   },
   component: function PhoenixSlug() {

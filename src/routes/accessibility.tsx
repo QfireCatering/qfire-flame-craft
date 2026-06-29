@@ -6,9 +6,9 @@ export const Route = createFileRoute("/accessibility")({
       { title: "Accessibility — Qfire Catering" },
       { name: "description", content: "Qfire Catering's commitment to digital and event accessibility for all guests." },
       { property: "og:title", content: "Accessibility — Qfire Catering" },
-      { property: "og:url", content: "/accessibility" },
+      { property: "og:url", content: "https://qfire-flame-craft.lovable.app/accessibility" },
     ],
-    links: [{ rel: "canonical", href: "/accessibility" }],
+    links: [{ rel: "canonical", href: "https://qfire-flame-craft.lovable.app/accessibility" }],
   }),
   component: AccessibilityPage,
 });

@@ -11,9 +11,9 @@ export const Route = createFileRoute("/why-qfire")({
       { title: "Why Qfire — Luxury Catering with Stress-Free Execution" },
       { name: "description", content: "Why luxury hosts choose Qfire: Food Network pedigree, white-glove hospitality, custom menus, full-service staffing, licensed bar program, rentals coordination and 2,000+ events of disciplined execution across Phoenix Metro and San Diego County." },
       { property: "og:title", content: "Why Qfire" },
-      { property: "og:url", content: "/why-qfire" },
+      { property: "og:url", content: "https://qfire-flame-craft.lovable.app/why-qfire" },
     ],
-    links: [{ rel: "canonical", href: "/why-qfire" }],
+    links: [{ rel: "canonical", href: "https://qfire-flame-craft.lovable.app/why-qfire" }],
   }),
   component: WhyPage,
 });

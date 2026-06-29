@@ -11,9 +11,9 @@ export const Route = createFileRoute("/private-parties")({
       { name: "description", content: "Luxury private party catering for birthdays, backyard BBQs, anniversaries, graduations, holidays, and family reunions across Phoenix Metro and San Diego County. Live charcoal grilling, premium Signature Live Fire Steakhouse Catering plates, and full-service hosting by Chef Terry Matthews." },
       { property: "og:title", content: "Private Party Catering — Qfire | Phoenix & San Diego" },
       { property: "og:description", content: "Restaurant-quality private party catering for birthdays, backyard parties, anniversaries, and private celebrations. Choose your region to begin." },
-      { property: "og:url", content: "/private-parties" },
+      { property: "og:url", content: "https://qfire-flame-craft.lovable.app/private-parties" },
     ],
-    links: [{ rel: "canonical", href: "/private-parties" }],
+    links: [{ rel: "canonical", href: "https://qfire-flame-craft.lovable.app/private-parties" }],
   }),
   component: PrivatePartyChooser,
 });

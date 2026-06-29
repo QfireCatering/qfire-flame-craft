@@ -7,9 +7,9 @@ export const Route = createFileRoute("/privacy")({
       { name: "description", content: "How Qfire Catering collects, uses, and protects information from visitors and clients." },
       { name: "robots", content: "index, follow" },
       { property: "og:title", content: "Privacy Policy — Qfire Catering" },
-      { property: "og:url", content: "/privacy" },
+      { property: "og:url", content: "https://qfire-flame-craft.lovable.app/privacy" },
     ],
-    links: [{ rel: "canonical", href: "/privacy" }],
+    links: [{ rel: "canonical", href: "https://qfire-flame-craft.lovable.app/privacy" }],
   }),
   component: PrivacyPage,
 });

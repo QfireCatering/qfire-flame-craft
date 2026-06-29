@@ -9,9 +9,9 @@ export const Route = createFileRoute("/steakhouse")({
       { name: "description", content: "The Signature Live Fire Steakhouse Catering experience, brought to you. Hand-cut ribeye, New York strip, filet mignon, picanha, slow-roasted prime rib, salmon and surf & turf — plated under candlelight with white-glove service for luxury weddings, corporate dinners and private events." },
       { property: "og:title", content: "premium steakhouse catering — Qfire" },
       { property: "og:description", content: "Hand-cut steaks, charcoal-finished, plated tableside. The live-fire steakhouse experience experience anywhere you need it." },
-      { property: "og:url", content: "/steakhouse" },
+      { property: "og:url", content: "https://qfire-flame-craft.lovable.app/steakhouse" },
     ],
-    links: [{ rel: "canonical", href: "/steakhouse" }],
+    links: [{ rel: "canonical", href: "https://qfire-flame-craft.lovable.app/steakhouse" }],
   }),
   component: () => <ServicePage config={steakhouseConfig()} />,
 });
