@@ -340,7 +340,7 @@ export const definitiveCopy: Record<string, Preset> = {
       ],
     },
     differentiators: [
-      { title: "Mastro's energy, your venue", body: "Real chef-coat service, real wood-fire grilling, real steakhouse presentation. Restaurants try to copy this." },
+      { title: "True steakhouse energy, your venue", body: "Real chef-coat service, real wood-fire grilling, real steakhouse presentation. Restaurants try to copy this." },
       { title: "Center-cut, hand-selected", body: "Premium cuts hand-selected for each event. We don't trim our standards for catering — the steak you eat is the steak you'd order in a restaurant." },
       { title: "Chef-attended, not buffet-attended", body: "Real cooking happens on-site. Not warmed up, not held in chafers, not pre-sliced hours earlier." },
       { title: "Scales from 30 to 2,500", body: "Intimate private dinners through luxury weddings, galas, and large-format events — same standards, more stations." },
