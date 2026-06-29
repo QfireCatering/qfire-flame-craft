@@ -9,6 +9,7 @@ export function PageHero({
   title,
   subtitle,
   image,
+  imageAlt,
   children,
   regionKey,
   objectPosition,
@@ -17,17 +18,23 @@ export function PageHero({
   title: ReactNode;
   subtitle?: ReactNode;
   image: string;
+  imageAlt?: string;
   children?: ReactNode;
   regionKey?: RegionKey;
   objectPosition?: string;
 }) {
+  const resolvedAlt =
+    imageAlt ||
+    (eyebrow
+      ? `${eyebrow} — Qfire Catering luxury wood-fire and steakhouse catering`
+      : "Qfire Catering — luxury wood-fire and live-fire steakhouse catering across Phoenix Metro and San Diego County");
   return (
     <>
       <section className="relative min-h-[78vh] flex items-end overflow-hidden grain-overlay">
         <div className="absolute inset-0">
           <img
             src={image}
-            alt=""
+            alt={resolvedAlt}
             className="absolute inset-0 w-full h-full object-cover slow-zoom"
             style={{ objectPosition: objectPosition || "50% 50%", filter: 'contrast(1.08) saturate(1.12) brightness(1.03)', imageRendering: '-webkit-optimize-contrast' }}
           />
