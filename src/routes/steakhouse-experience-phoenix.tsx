@@ -14,7 +14,7 @@ export const Route = createFileRoute("/steakhouse-experience-phoenix")({
   head: () => ({
     meta: [
       { title: "Signature Live Fire Steakhouse Catering Phoenix — Surf & Turf, Onsite Charcoal Grilling | Qfire" },
-      { name: "description", content: "Luxury premium steakhouse catering in the Phoenix Metro. Ribeye, filet mignon, prime rib, salmon and lobster — grilled live onsite at Phoenix, Scottsdale and Paradise Valley weddings, corporate events and private parties. Buffet from $74/pp · Plated from $128/pp." },
+      { name: "description", content: "Luxury Signature Steakhouse Catering in the Phoenix Metro. Ribeye, filet mignon, prime rib, salmon and lobster — grilled live onsite at Phoenix, Scottsdale and Paradise Valley weddings, corporate events and private parties. Buffet from $74/pp · Plated from $128/pp." },
       { property: "og:title", content: "live-fire steakhouse experience Phoenix | Qfire" },
       { property: "og:description", content: "Live charcoal grilling, surf & turf and white-glove service across the Phoenix Metro — weddings, corporate dinners and luxury private parties." },
       { property: "og:url", content: "https://qfire-flame-craft.lovable.app/steakhouse-experience-phoenix" },
@@ -44,7 +44,7 @@ export const Route = createFileRoute("/steakhouse-experience-phoenix")({
             { "@type": "City", name: "Fountain Hills" },
           ],
           offers: [
-            { "@type": "Offer", name: "Buffet Style", price: "74", priceCurrency: "USD", description: "Per person — restaurant-quality buffet luxury steakhouse dining in Phoenix." },
+            { "@type": "Offer", name: "Buffet Style", price: "74", priceCurrency: "USD", description: "Per person — restaurant-quality buffet steakhouse dining in Phoenix." },
             { "@type": "Offer", name: "Family Style", price: "89", priceCurrency: "USD", description: "Per person — shared platter chef-attended steakhouse buffet experience in Phoenix Metro." },
             { "@type": "Offer", name: "Plated Service", price: "128", priceCurrency: "USD", description: "Per person — fully plated luxury upscale steakhouse catering in Phoenix." },
           ],

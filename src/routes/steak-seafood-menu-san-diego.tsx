@@ -80,7 +80,7 @@ const warm: Dish[] = [
 const meats: Dish[] = [
   { name: "Ribeye Steak", body: "The Signature Live Fire Steakhouse Catering classic — heavily marbled, char-grilled over live fire to a crusted finish with a juicy, buttery, melt-in-your-mouth center.", img: ribeyeAsset.url },
   { name: "New York Strip", body: "Cut from the short loin. Bold, beefy flavor with a firm, satisfying bite and the perfect balance of fat and lean — a true Signature Live Fire Steakhouse Catering staple.", img: nyStripAsset.url },
-  { name: "T-Bone Steak", body: "Two premium cuts on one bone — the tender filet on one side, the bold New York strip on the other. Char-grilled over live fire for the ultimate premium steakhouse catering experience.", img: tboneAsset.url },
+  { name: "T-Bone Steak", body: "Two premium cuts on one bone — the tender filet on one side, the bold New York strip on the other. Char-grilled over live fire for the ultimate Signature Steakhouse Catering experience.", img: tboneAsset.url },
   { name: "Beef Tenderloin", body: "The most tender cut of beef. Buttery texture, mild flavor, luxurious.", note: "+ $5 / steak", img: beefTenderloinAsset.url },
   { name: "Filet Mignon", body: "Premium tenderloin cut, buttery and delicate.", note: "+ $10/steak", img: filetMignonAsset.url },
   { name: "Top Sirloin (10 oz) — also known as Picanha", body: "Lean, flavorful, tender, with a rich beefy taste.", img: topSirloinAsset.url },
@@ -129,7 +129,7 @@ export const Route = createFileRoute("/steak-seafood-menu-san-diego")({
   head: () => ({
     meta: [
       { title: "San Diego County Steak & Seafood Catering Menu | Qfire Catering" },
-      { name: "description", content: "San Diego County's premier five-course luxury steakhouse dining menu — ribeye, filet mignon, prime rib, lobster, salmon and more — grilled live at your La Jolla, Del Mar, Rancho Santa Fe, Coronado, Carmel Valley, Encinitas, Solana Beach, Carlsbad, Oceanside, Poway, Chula Vista or Downtown San Diego event. Premium plated steak dinner catering throughout San Diego County." },
+      { name: "description", content: "San Diego County's premier five-course steakhouse tasting menu — ribeye, filet mignon, prime rib, lobster, salmon and more — grilled live at your La Jolla, Del Mar, Rancho Santa Fe, Coronado, Carmel Valley, Encinitas, Solana Beach, Carlsbad, Oceanside, Poway, Chula Vista or Downtown San Diego event. Premium plated steak dinner catering throughout San Diego County." },
       { property: "og:title", content: "San Diego County Steak & Seafood Catering Menu | Qfire Catering" },
       { property: "og:description", content: "Five-course chef-attended steakhouse buffet in San Diego County: cold starter, warm hors d'oeuvre, choose-3 steaks/seafood, choose-3 sides, dessert and drinks. Live on-site grilling for weddings, corporate events and private parties across La Jolla, Del Mar, Rancho Santa Fe, Coronado and Carlsbad." },
       { property: "og:url", content: "https://qfire-flame-craft.lovable.app/steak-seafood-menu-san-diego" },
@@ -241,7 +241,7 @@ function SteakSeafoodMenuSanDiegoPage() {
           <div className="space-y-6 text-bone/70 text-base lg:text-lg leading-relaxed">
             <p>If you're looking for something beyond the traditional buffet in San Diego County — from La Jolla and Del Mar to Rancho Santa Fe, Coronado, Carmel Valley, Encinitas, Solana Beach, Carlsbad, Oceanside, Poway, Chula Vista and Downtown San Diego — this is where our most discerning coastal clients naturally gravitate.</p>
             <p>Our San Diego County Surf & Turf signature steakhouse experience Experience combines the energy of live-fire cooking with the elegance of fine dining — bringing the atmosphere of an upscale live-fire dinner service directly to your La Jolla estate, Del Mar beachfront, Rancho Santa Fe ranch, or Coronado celebration.</p>
-            <p>From oceanfront weddings to corporate dinners and luxury private parties, we bring restaurant-quality premium steakhouse catering to every corner of San Diego County. This isn't just dinner. It's the experience your guests will remember long after the last bite.</p>
+            <p>From oceanfront weddings to corporate dinners and luxury private parties, we bring restaurant-quality Signature Steakhouse Catering to every corner of San Diego County. This isn't just dinner. It's the experience your guests will remember long after the last bite.</p>
           </div>
         </div>
       </section>
@@ -285,7 +285,7 @@ function SteakSeafoodMenuSanDiegoPage() {
                 <div>
                   <p className="font-display text-bone text-lg mb-1">Signature Surf & Turf Entrée</p>
                   <p>Indulge in three premium proteins expertly prepared over live charcoal alongside three carefully selected gourmet sides designed to complement every bite.</p>
-                  <p className="mt-2">Every plate is crafted to deliver the flavor, presentation, and quality you'd expect from a high-end luxury steakhouse dining.</p>
+                  <p className="mt-2">Every plate is crafted to deliver the flavor, presentation, and quality you'd expect from a high-end steakhouse.</p>
                 </div>
                 <div>
                   <p className="font-display text-bone text-lg mb-1">Gourmet Desserts</p>

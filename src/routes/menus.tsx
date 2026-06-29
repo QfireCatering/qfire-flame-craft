@@ -13,7 +13,7 @@ export const Route = createFileRoute("/menus")({
   head: () => ({
     meta: [
       { title: "Catering Menus — Wood-Fired BBQ & Signature Live Fire Steakhouse Catering | Qfire" },
-      { name: "description", content: "Explore Qfire Catering menus: slow-smoked wood-fired Wood-Fire and hand-cut Signature Live Fire Steakhouse Catering plates. Phoenix Metro & San Diego County." },
+      { name: "description", content: "Explore Qfire Catering menus: slow-smoked wood-fired and hand-cut Signature Live Fire Steakhouse Catering plates. Phoenix Metro & San Diego County." },
       { property: "og:title", content: "Menus — Qfire" },
       { property: "og:url", content: "https://qfire-flame-craft.lovable.app/menus" },
     ],

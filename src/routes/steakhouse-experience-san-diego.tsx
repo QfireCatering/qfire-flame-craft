@@ -14,7 +14,7 @@ export const Route = createFileRoute("/steakhouse-experience-san-diego")({
   head: () => ({
     meta: [
       { title: "Signature Live Fire Steakhouse Catering San Diego — Surf & Turf, Onsite Charcoal Grilling | Qfire" },
-      { name: "description", content: "Luxury premium steakhouse catering across San Diego County. Ribeye, filet mignon, prime rib, salmon and lobster — grilled live onsite at La Jolla, Del Mar, Rancho Santa Fe and Coronado weddings, corporate events and private parties. Buffet from $79/pp · Plated from $133/pp." },
+      { name: "description", content: "Luxury Signature Steakhouse Catering across San Diego County. Ribeye, filet mignon, prime rib, salmon and lobster — grilled live onsite at La Jolla, Del Mar, Rancho Santa Fe and Coronado weddings, corporate events and private parties. Buffet from $79/pp · Plated from $133/pp." },
       { property: "og:title", content: "live-fire steakhouse experience San Diego | Qfire" },
       { property: "og:description", content: "Live charcoal grilling, surf & turf and white-glove service across San Diego County — weddings, corporate dinners and luxury private parties." },
       { property: "og:url", content: "https://qfire-flame-craft.lovable.app/steakhouse-experience-san-diego" },
@@ -45,7 +45,7 @@ export const Route = createFileRoute("/steakhouse-experience-san-diego")({
             { "@type": "City", name: "Chula Vista" },
           ],
           offers: [
-            { "@type": "Offer", name: "Buffet Style", price: "79", priceCurrency: "USD", description: "Per person — restaurant-quality buffet luxury steakhouse dining in San Diego." },
+            { "@type": "Offer", name: "Buffet Style", price: "79", priceCurrency: "USD", description: "Per person — restaurant-quality buffet steakhouse dining in San Diego." },
             { "@type": "Offer", name: "Family Style", price: "94", priceCurrency: "USD", description: "Per person — shared platter chef-attended steakhouse buffet experience in San Diego County." },
             { "@type": "Offer", name: "Plated Service", price: "133", priceCurrency: "USD", description: "Per person — fully plated luxury upscale steakhouse catering in San Diego." },
           ],

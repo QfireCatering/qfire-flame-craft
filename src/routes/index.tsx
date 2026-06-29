@@ -64,7 +64,7 @@ export const Route = createFileRoute("/")({
           "@type": ["LocalBusiness", "CateringService", "FoodEstablishment"],
           name: "Qfire Catering",
           alternateName: "The BBQ Daddy",
-          description: "Full-service wood-fired and premium steakhouse catering for weddings, corporate events and private parties across Phoenix Metro and San Diego County.",
+          description: "Full-service wood-fired and Signature Steakhouse Catering for weddings, corporate events and private parties across Phoenix Metro and San Diego County.",
           url: "/",
           telephone: "+1-877-848-7211",
           email: "Eat@QfireCatering.com",
@@ -93,7 +93,7 @@ export const Route = createFileRoute("/")({
           aggregateRating: {
             "@type": "AggregateRating",
             ratingValue: "4.9",
-            reviewCount: "287",
+            reviewCount: "400",
             bestRating: "5",
             worstRating: "1",
           },
@@ -164,7 +164,6 @@ function Home() {
           </div>
 
           <div className="mt-20 lg:mt-28 flex flex-wrap items-center gap-x-10 gap-y-4">
-            <img src={asSeenOnBadge.url} alt="As seen on Food Network" className="w-16 h-16 rounded-full" />
             <div className="text-[0.6rem] tracking-[0.35em] uppercase text-bone/50">As Seen On</div>
             <div className="flex flex-wrap items-center gap-x-8 gap-y-3">
               {["Food Network", "BBQ Brawl", "Cutthroat Kitchen", "Camp Cutthroat"].map((logo) => (
@@ -174,6 +173,7 @@ function Home() {
               ))}
             </div>
           </div>
+
         </div>
 
         {/* Scroll indicator */}
@@ -349,7 +349,7 @@ function Home() {
           </div>
           <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-4">
             {[
-              "Experienced wood-fire & live-fire steakhouse experience-trained team",
+              "Trained on both wood-fire grilling and live-fire steakhouse plating",
               "Beautifully styled buffets, stations and plated service",
               "Professional, uniformed service staff",
               "Generous, restaurant-grade portions every time",
@@ -408,7 +408,7 @@ function Home() {
             {[
               { q: "Chef Terry — 'The BBQ Daddy' — and his team turned our wedding into the meal everyone is still talking about. Brisket, ribeye, the whole spread. Flawless.", a: "Lauren & Mark", e: "Scottsdale Wedding · 220 guests" },
               { q: "We hired Qfire for our company's annual partner dinner. Plated steaks for 140, served hot, served perfectly. Worth every penny.", a: "David K.", e: "Corporate Event · La Jolla" },
-              { q: "Backyard 50th birthday. Wood-fired everything. Guests thought we'd flown in a luxury steakhouse dining. Absolutely premium.", a: "Sandra T.", e: "Private Party · Gilbert" },
+              { q: "Backyard 50th birthday. Wood-fired everything. Guests thought we'd flown in a luxury steakhouse. Absolutely premium.", a: "Sandra T.", e: "Private Party · Gilbert" },
             ].map((r, i) => (
               <figure key={i} className="bg-ink border border-white/5 p-8 lg:p-10 relative">
                 <div className="text-gold text-5xl font-display leading-none mb-4">"</div>

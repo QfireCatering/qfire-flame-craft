@@ -125,7 +125,7 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
 
   const reviews = [
     { q: `Qfire has been our recurring lunch caterer for over a year. Every drop-off is on time, hot, and beautifully presented. Our ${regionShort} office team genuinely looks forward to lunch days.`, a: "Rachel S., HR Director", e: `${reviewCities[0]} · Tech Company` },
-    { q: `We brought Qfire in for a 240-person executive holiday party in ${regionShort}. Polished, professional, and the premium steakhouse catering plated dinner was unforgettable.`, a: "Daniel M., COO", e: `${reviewCities[1] ?? reviewCities[0]} · Financial Firm` },
+    { q: `We brought Qfire in for a 240-person executive holiday party in ${regionShort}. Polished, professional, and the Signature Steakhouse plated dinner was unforgettable.`, a: "Daniel M., COO", e: `${reviewCities[1] ?? reviewCities[0]} · Financial Firm` },
     { q: "The live charcoal grilling station at our employee appreciation event was the talk of the office for weeks. Easily the best vendor decision we made all year.", a: "Patricia L., Facilities Director", e: `${reviewCities[2] ?? reviewCities[0]} · Healthcare` },
     { q: "We needed lunch for 180 construction workers across three job sites — same day, hot, on time. Qfire delivered flawlessly. They're now our standing vendor.", a: "Marcus T., Project Manager", e: `${region} · General Contractor` },
     { q: "From COI to invoicing to setup, every detail was handled. As an EA who books a lot of corporate catering, Qfire is the easiest vendor I work with.", a: "Allison K., Executive Assistant", e: `${reviewCities[0]} · Real Estate` },
@@ -142,7 +142,7 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
     priceRange: "$$$",
     servesCuisine: ["Wood-Fire", "live-fire steakhouse experience", "American", "Corporate Catering", "Office Catering"],
     areaServed: cities.map((c) => ({ "@type": "City", name: c })),
-    aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "247" },
+    aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "400" },
   };
 
   const breadcrumb = {
@@ -362,7 +362,7 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
       <section className="py-24 lg:py-32">
         <div className="container-luxe grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="order-2 lg:order-1">
-            <div className="eyebrow mb-6">Executive luxury steakhouse dining Experience</div>
+            <div className="eyebrow mb-6">Executive Steakhouse Experience</div>
             <h2 className="heading-lg text-bone">A chef-attended steakhouse buffet — brought to your boardroom.</h2>
             <div className="mt-8 space-y-5 text-bone/80 text-lg font-light leading-relaxed">
               <p>Charcoal-grilled ribeye, New York strip, filet mignon, picanha, prime rib, salmon, and surf & turf — served under candlelight with polished service for executive dinners, board retreats, and client appreciation events across {region}.</p>
@@ -435,7 +435,7 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
         <div className="container-luxe">
           <div className="max-w-2xl mb-14">
             <div className="eyebrow mb-6">Corporate Menu Options</div>
-            <h2 className="heading-lg text-bone">Wood-fired Wood-Fire. Premium charcoal-grilled steakhouse experience. Breakfast to banquet.</h2>
+            <h2 className="heading-lg text-bone">Wood-fired. Premium charcoal-grilled steakhouse experience. Breakfast to banquet.</h2>
             <p className="mt-6 text-bone/70 text-lg leading-relaxed font-light">
               Whatever your {regionShort} team eats — it comes off our live-fire grill or our scratch kitchen.
             </p>

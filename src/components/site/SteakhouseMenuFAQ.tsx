@@ -20,7 +20,7 @@ function buildFaqs(regionKey: RegionKey) {
     },
     {
       q: "Is there a minimum guest count?",
-      a: "The premium steakhouse catering Experience is built for events of 30 guests or more. For intimate dinners under 30, we'll build a custom proposal — reach out and we'll quote your event directly.",
+      a: "The Signature Live Fire Steakhouse Experience is built for events of 30 guests or more. For intimate dinners under 30, we'll build a custom proposal — reach out and we'll quote your event directly.",
     },
     {
       q: "Can you accommodate dietary restrictions and allergies?",

@@ -146,7 +146,7 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
-    slug: "premium steakhouse catering-at-home-private-dinners",
+    slug: "signature-steakhouse-at-home-private-dinners",
     title: "live-fire steakhouse experience at home: a guide to upscale catering for private dinners.",
     category: "Planning Guides",
     date: "January 2026",
@@ -157,7 +157,7 @@ export const blogPosts: BlogPost[] = [
     image: steak,
     body: [
       {
-        h2: "What a private luxury steakhouse dining dinner actually requires",
+        h2: "What a private steakhouse experience dinner actually requires",
         p: [
           "A workable kitchen counter, 220V if you want a flat-top brought in, and a clear path from prep to the dining table. Most Phoenix and San Diego homes already qualify.",
           "For groups of 8 to 24, we bring everything else: china, linens, glassware, the chef, the captain, and the proteins.",

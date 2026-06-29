@@ -235,7 +235,7 @@ export function woodFiredConfig(o: ServiceTemplateOptions = {}): ServicePageConf
 export function steakhouseConfig(o: ServiceTemplateOptions = {}): ServicePageConfig {
   const r = o.region;
   return {
-    eyebrow: r ? `${r} premium steakhouse catering` : "live-fire steakhouse experience",
+    eyebrow: r ? `${r} Signature Steakhouse Catering` : "live-fire steakhouse experience",
     title: r ? <>{o.regionShort} <span className="italic text-gold font-light">Luxury Steakhouse Dining</span> catering.</> : <>The chef-attended steakhouse buffet Experience... <span className="italic text-gold font-light">Brought To You.</span></>,
     subtitle: r
       ? `Charcoal-grilled ribeye, New York strip, filet mignon, picanha, prime rib, salmon, and surf & turf served under candlelight with polished service and unforgettable presentation across ${r}. Perfect for luxury weddings, corporate dinners, and private events.`

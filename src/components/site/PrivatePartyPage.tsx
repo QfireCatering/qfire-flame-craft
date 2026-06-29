@@ -67,7 +67,7 @@ const baseFaqs = [
   { q: "Can you cater parks?", a: "Yes. We regularly cater park gatherings, family reunions, and outdoor celebrations with permits, generators, and self-contained setups." },
   { q: "Can you cater private homes?", a: "Yes — private estates, vacation rentals, condos, and luxury homes. We work cleanly, professionally, and discreetly in any home environment." },
   { q: "Can you handle large guest counts?", a: "Yes. We routinely execute private parties from 20 intimate guests to 500+ family reunions and milestone celebrations." },
-  { q: "What service style is best?", a: "It depends on the vibe. Casual backyards love buffet or family style. Milestone birthdays and anniversaries love plated premium steakhouse catering. Pool parties love drop-off + bartender. We'll help you choose." },
+  { q: "What service style is best?", a: "It depends on the vibe. Casual backyards love buffet or family style. Milestone birthdays and anniversaries love plated Signature Steakhouse Catering. Pool parties love drop-off + bartender. We'll help you choose." },
 ];
 
 const whyChoose = [
@@ -110,7 +110,7 @@ const serviceStyles = [
   { name: "Delivery / Drop-Off", tag: "Most Casual", bullets: ["Perfect for casual gatherings & birthdays", "Professional, restaurant-quality drop-off", "Hot and ready when we arrive", "Beautiful, photo-worthy presentation", "Minimal setup, maximum flavor", "Great for office and pool parties"] },
   { name: "Full-Service Buffet", tag: "Most Popular", bullets: ["Perfect for birthdays, holidays & reunions", "Professional uniformed attendants", "Beautiful, abundant buffet displays", "Continuous buffet maintenance", "Carving and grilling stations available", "Ideal for 30–300+ guests"] },
   { name: "Family Style", tag: "Most Connected", bullets: ["Perfect for anniversaries & family dinners", "Shared platters at every table", "Warm, communal atmosphere", "Elegant table presentation", "Encourages conversation", "Great for 16–80 intimate guests"] },
-  { name: "Plated Dinner Service", tag: "Most Elegant", bullets: ["Perfect for luxury birthdays & estate parties", "Restaurant-style synchronized service", "Highest level of formality", "Coursed dining with captains", "White-glove guest experience", "The luxury steakhouse dining — at your home"] },
+  { name: "Plated Dinner Service", tag: "Most Elegant", bullets: ["Perfect for luxury birthdays & estate parties", "Restaurant-style synchronized service", "Highest level of formality", "Coursed dining with captains", "White-glove guest experience", "The steakhouse experience — at your home"] },
 ];
 
 const timelineSteps = [
@@ -151,7 +151,7 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
     priceRange: "$$$",
     servesCuisine: ["Wood-Fire", "wood-fired steakhouse experience", "American", "Private Party Catering", "Backyard Catering"],
     areaServed: cities.map((c) => ({ "@type": "City", name: c })),
-    aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "247" },
+    aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "400" },
   };
 
   const breadcrumb = {
@@ -377,7 +377,7 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
             <div className="eyebrow mb-6">Wood-Fire + live-fire dinner service Experience</div>
             <h2 className="heading-lg text-bone">Most caterers offer one style. We bring both.</h2>
             <div className="mt-8 space-y-5 text-bone/80 text-lg font-light leading-relaxed">
-              <p>Qfire is the rare caterer that fluently speaks both languages — authentic, slow-smoked Wood-Fire and a true premium steakhouse catering experience. Charcoal-grilled ribeye, NY strip, filet mignon, picanha, prime rib, salmon, surf & turf alongside brisket, ribs, pulled pork, and smoked chicken.</p>
+              <p>Qfire is the rare caterer that fluently speaks both languages — authentic, slow-smoked Wood-Fire and a true Signature Steakhouse Catering experience. Charcoal-grilled ribeye, NY strip, filet mignon, picanha, prime rib, salmon, surf & turf alongside brisket, ribs, pulled pork, and smoked chicken.</p>
               <p>That gives you more flexibility, more creativity in your menu, and the ability to design a party that doesn't feel like every other catered event in {region}.</p>
             </div>
             <div className="mt-10 flex flex-wrap gap-4">
@@ -451,7 +451,7 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
         <div className="container-luxe">
           <div className="max-w-2xl mb-14">
             <div className="eyebrow mb-6">Private Party Menu Options</div>
-            <h2 className="heading-lg text-bone">Wood-fired Wood-Fire. Premium luxury steakhouse dining. Built around your party.</h2>
+            <h2 className="heading-lg text-bone">Wood-fired. Premium Steakhouse. Built around your party.</h2>
             <p className="mt-6 text-bone/70 text-lg leading-relaxed font-light">
               Whatever your {regionShort} guests love — it comes off our live-fire grill or our scratch kitchen.
             </p>

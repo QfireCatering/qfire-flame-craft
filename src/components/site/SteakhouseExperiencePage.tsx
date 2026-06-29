@@ -70,7 +70,7 @@ export function SteakhouseExperiencePage({ r }: { r: RegionCopy }) {
         <div className="container-luxe relative z-10 pt-40 pb-24 lg:pb-32">
           <div className="eyebrow mb-8">Signature Live Fire Steakhouse Catering · {r.region}</div>
           <h1 className="heading-xl text-bone max-w-4xl">
-            The Surf &amp; Turf premium steakhouse catering Experience<br />
+            The Surf &amp; Turf Signature Live Fire Steakhouse Experience<br />
             <span className="text-gold/90 italic font-light">brought to {r.city}.</span>
           </h1>
           <p className="mt-8 max-w-2xl text-lg lg:text-xl text-bone/75 leading-relaxed font-light">
@@ -302,7 +302,7 @@ export function SteakhouseExperiencePage({ r }: { r: RegionCopy }) {
             <div className="grid md:grid-cols-3 gap-6">
               {[
                 { src: steakhouseMenu.url, alt: `Live charcoal grilling at a ${r.region} live-fire dinner service catered event` },
-                { src: weddingCouple.url, alt: `Luxury ${r.city} wedding premium steakhouse catering reception` },
+                { src: weddingCouple.url, alt: `Luxury ${r.city} wedding Signature Steakhouse Catering reception` },
                 { src: steakhouseBackyard.url, alt: `Backyard ${r.region} live-fire steakhouse experience and surf & turf catering` },
               ].map((img) => (
                 <div key={img.alt} className="aspect-[4/5] overflow-hidden shadow-[0_30px_80px_-30px_rgba(0,0,0,0.35)]">
@@ -336,7 +336,7 @@ export function SteakhouseExperiencePage({ r }: { r: RegionCopy }) {
 
       <FAQSection
         eyebrow={`${r.region} Steakhouse Catering FAQ`}
-        title="The premium steakhouse experience — answered."
+        title="The Signature Steakhouse Experience — answered."
         faqs={steakFaqs}
       />
 
