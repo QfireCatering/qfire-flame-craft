@@ -28,6 +28,8 @@ export const Route = createFileRoute("/sitemap.xml")({
           "/wood-fired",
           "/steakhouse",
           "/steak-seafood-menu",
+          "/steak-seafood-menu-san-diego",
+          "/media",
           "/steakhouse-experience-phoenix",
           "/steakhouse-experience-san-diego",
           "/bartending",
