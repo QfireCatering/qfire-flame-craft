@@ -17,6 +17,7 @@ export interface ServicePageConfig {
   reviews?: { q: string; a: string; e: string }[];
   faqs?: { q: string; a: string }[];
   ctaTitle?: string;
+  showGalleryLink?: boolean;
 }
 
 export function ServicePage({ config, regionKey }: { config: ServicePageConfig; regionKey?: RegionKey }) {
@@ -33,7 +34,9 @@ export function ServicePage({ config, regionKey }: { config: ServicePageConfig; 
         <Link to="/quote" className="btn-primary">
           Request a Quote <ArrowRight className="size-4" />
         </Link>
-        <Link to="/pictures" className="btn-ghost">View Pictures</Link>
+        {config.showGalleryLink !== false && (
+          <Link to="/pictures" className="btn-ghost">View Pictures</Link>
+        )}
       </PageHero>
 
       {/* Intro */}
