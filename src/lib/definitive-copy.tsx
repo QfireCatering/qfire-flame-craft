@@ -244,7 +244,7 @@ export const definitiveCopy: Record<string, Preset> = {
       { title: "Inquiry", body: "Date, guest count, location, and the type of moment you're planning." },
       { title: "Discovery call", body: "Quick call to align on menu, service style, and your home's layout." },
       { title: "Custom proposal", body: "Itemized proposal within a few business days." },
-      { title: "Deposit holds the date", body: "Standard deposit applied to your final invoice." },
+      { title: "Date Charge holds the date", body: "A 35% non-refundable Date Charge secures your event date and is applied directly to your final invoice." },
       { title: "Menu refinement", body: "Refine your menu over the next few weeks. We'll finalize 14 days before the event." },
       { title: "Final headcount", body: "Lock guest count, dietary needs, and layout details one to two weeks out." },
       { title: "Event night", body: "We arrive, set quietly, cook brilliantly, serve calmly, and leave your home spotless." },
