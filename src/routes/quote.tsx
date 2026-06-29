@@ -181,7 +181,7 @@ function QuotePage() {
                 disabled={state === "sending"}
                 className="btn-primary w-full disabled:opacity-60"
               >
-                {state === "sending" ? "Sending…" : "Send Inquiry"}{" "}
+                {state === "sending" ? "Sending…" : "Submit"}{" "}
                 <ArrowRight className="size-4" />
               </button>
               <p className="text-xs text-muted-foreground text-center">
