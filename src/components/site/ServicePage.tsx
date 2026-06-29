@@ -252,6 +252,13 @@ export function ServicePage({ config, regionKey }: { config: ServicePageConfig; 
         </>
       )}
 
+      {config.definitiveKey && definitiveCopy[config.definitiveKey] && (
+        <DefinitiveContent
+          topic={config.definitiveTopic ?? config.eyebrow}
+          {...definitiveCopy[config.definitiveKey]}
+        />
+      )}
+
       <CTASection title={config.ctaTitle ?? "Let's plan something unforgettable."} />
     </>
   );
