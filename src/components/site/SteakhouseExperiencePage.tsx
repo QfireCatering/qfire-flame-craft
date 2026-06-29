@@ -7,6 +7,8 @@ import privatePartySetting from "@/assets/private-party-setting.png.asset.json";
 import weddingCouple from "@/assets/wedding-couple.png.asset.json";
 import { TrustBar } from "./TrustBar";
 import { FAQSection } from "./FAQSection";
+import { DefinitiveContent } from "./DefinitiveContent";
+import { definitiveCopy } from "@/lib/definitive-copy";
 
 export type RegionCopy = {
   city: string;            // "Phoenix" | "San Diego"
