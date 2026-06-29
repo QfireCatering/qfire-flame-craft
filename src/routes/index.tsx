@@ -378,9 +378,18 @@ function Home() {
           </div>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-1">
-          {[g1.url, g2.url, g3.url, g4.url, g5.url, g6.url, g7.url, g8.url].map((img, i) => (
+          {[
+            { src: g1.url, alt: "Wood-fire catering platter — Texas-style brisket, pulled pork and smoked sausage by Chef Terry Matthews of Qfire Catering" },
+            { src: g2.url, alt: "Couple enjoying dinner at a Qfire Catering luxury wedding reception in Phoenix Metro" },
+            { src: g3.url, alt: "Elegant wedding buffet line styled by Qfire Catering with floral and gold accents" },
+            { src: g4.url, alt: "Sunset reception table set for a luxury San Diego County wedding catered by Qfire" },
+            { src: g5.url, alt: "Restaurant-quality buffet line at a Qfire Catering corporate dinner across Phoenix and San Diego" },
+            { src: g6.url, alt: "Large corporate crowd dining at a Qfire Catering executive event" },
+            { src: g7.url, alt: "Live charcoal onsite grilling station with Chef Terry — signature Qfire Catering wood-fire experience" },
+            { src: g8.url, alt: "Qfire Catering luxury tablescape with black chafers and gold accents for a private event" },
+          ].map(({ src, alt }, i) => (
             <div key={i} className="relative aspect-square overflow-hidden group">
-              <img src={img} alt="" loading="lazy" width={800} height={800}
+              <img src={src} alt={alt} loading="lazy" width={800} height={800}
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 bg-ink/30 group-hover:bg-transparent transition-colors" />
             </div>
