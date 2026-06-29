@@ -19,7 +19,7 @@ export const Route = createFileRoute("/private-party-catering-phoenix")({
   head: () => ({
     meta: [
       { title: "Phoenix Private Party Catering | Birthday, Backyard & Anniversary Catering — Qfire" },
-      { name: "description", content: "Premium Phoenix private party catering by Chef Terry Matthews (Food Network's BBQ Brawl). Birthdays, backyard BBQs, anniversaries, graduations, holidays, family reunions & luxury private dinners across Scottsdale, Mesa, Tempe, Chandler, Gilbert, Paradise Valley & all of Phoenix Metro. Live charcoal grilling, steakhouse plates, full bar." },
+      { name: "description", content: "Premium Phoenix private party catering by Chef Terry Matthews (Food Network's BBQ Brawl). Birthdays, backyard BBQs, anniversaries, graduations, holidays, family reunions & luxury private dinners across Scottsdale, Mesa, Tempe, Chandler, Gilbert, Paradise Valley & all of Phoenix Metro. Live charcoal grilling, Signature Live Fire Steakhouse Catering plates, full bar." },
       { property: "og:title", content: "Phoenix Private Party Catering — Qfire | Backyard, Birthday & Anniversary Catering" },
       { property: "og:description", content: "Restaurant-quality private party catering across Phoenix Metro. Live charcoal grilling, premium steaks, authentic Wood-Fire, professional service." },
       { property: "og:url", content: "/private-party-catering-phoenix" },

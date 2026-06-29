@@ -35,8 +35,8 @@ export interface PrivatePartyRegionConfig {
 }
 
 const baseFaqs = [
-  { q: "How much does private party catering cost?", a: "Most Qfire private parties land between $48 and $165 per guest depending on menu (Wood-Fire buffet vs. plated steakhouse vs. surf & turf), staffing, live-fire grilling, bar service, and rentals. Every proposal is fully itemized — no hidden fees, no surprise gratuity tricks." },
-  { q: "Can I customize my menu?", a: "Yes — completely. Chef Terry designs every menu around your guests, your dietary needs, your budget, and the vibe you want. Wood-Fire, steakhouse, surf & turf, taco bar, brunch, late-night bites — you choose, we build." },
+  { q: "How much does private party catering cost?", a: "Most Qfire private parties land between $48 and $165 per guest depending on menu (Wood-Fire buffet vs. plated Signature Live Fire Steakhouse Catering vs. surf & turf), staffing, live-fire grilling, bar service, and rentals. Every proposal is fully itemized — no hidden fees, no surprise gratuity tricks." },
+  { q: "Can I customize my menu?", a: "Yes — completely. Chef Terry designs every menu around your guests, your dietary needs, your budget, and the vibe you want. Wood-Fire, Signature Live Fire Steakhouse Catering, surf & turf, taco bar, brunch, late-night bites — you choose, we build." },
   { q: "Do you grill onsite?", a: "Yes. Live charcoal grilling is our signature. We bring the wood-fired grill to your backyard, pool deck, estate, park, rooftop, or rental venue and cook fresh steaks, brisket, chicken, salmon, and burgers right in front of your guests." },
   { q: "Do you travel?", a: "Yes. We cater private parties across the entire region — backyards, private homes, estates, rented venues, parks, and vacation rentals. Travel fees only apply for events well outside our standard service area." },
   { q: "Can you accommodate dietary restrictions?", a: "Always. Vegetarian, vegan, gluten-free, dairy-free, kosher-style, and halal-friendly options are standard. For nut and shellfish allergies we run a dedicated prep line and clearly label every dish." },
@@ -53,12 +53,12 @@ const baseFaqs = [
   { q: "Can you cater parks?", a: "Yes. We regularly cater park gatherings, family reunions, and outdoor celebrations with permits, generators, and self-contained setups." },
   { q: "Can you cater private homes?", a: "Yes — private estates, vacation rentals, condos, and luxury homes. We work cleanly, professionally, and discreetly in any home environment." },
   { q: "Can you handle large guest counts?", a: "Yes. We routinely execute private parties from 20 intimate guests to 500+ family reunions and milestone celebrations." },
-  { q: "What service style is best?", a: "It depends on the vibe. Casual backyards love buffet or family style. Milestone birthdays and anniversaries love plated steakhouse. Pool parties love drop-off + bartender. We'll help you choose." },
+  { q: "What service style is best?", a: "It depends on the vibe. Casual backyards love buffet or family style. Milestone birthdays and anniversaries love plated Signature Live Fire Steakhouse Catering. Pool parties love drop-off + bartender. We'll help you choose." },
 ];
 
 const whyChoose = [
   { icon: Flame, title: "Live Charcoal Grilling", body: "The grill becomes the centerpiece. Guests gather, the aroma drifts, and the party levels up before dinner is even served." },
-  { icon: Sparkles, title: "Restaurant-Quality Food", body: "Fresh off the grill, plated like a steakhouse — not steam-pan party food. The kind of food guests text you about the next day." },
+  { icon: Sparkles, title: "Restaurant-Quality Food", body: "Fresh off the grill, plated like a Signature Live Fire Steakhouse Catering — not steam-pan party food. The kind of food guests text you about the next day." },
   { icon: Users, title: "Professional Staff", body: "Uniformed, friendly, polished. Servers, bartenders, and chefs who know how to read a room and elevate the energy." },
   { icon: Heart, title: "Stress-Free Hosting", body: "You won't touch a chafer, a trash bag, or a cocktail shaker. Show up, hug your guests, and actually enjoy your own party." },
   { icon: Star, title: "Beautiful Presentation", body: "Buffets, carving stations, and plated courses built to be photographed — the party looks as good as it tastes." },
@@ -96,20 +96,20 @@ const serviceStyles = [
   { name: "Delivery / Drop-Off", tag: "Most Casual", bullets: ["Perfect for casual gatherings & birthdays", "Professional, restaurant-quality drop-off", "Hot and ready when we arrive", "Beautiful, photo-worthy presentation", "Minimal setup, maximum flavor", "Great for office and pool parties"] },
   { name: "Full-Service Buffet", tag: "Most Popular", bullets: ["Perfect for birthdays, holidays & reunions", "Professional uniformed attendants", "Beautiful, abundant buffet displays", "Continuous buffet maintenance", "Carving and grilling stations available", "Ideal for 30–300+ guests"] },
   { name: "Family Style", tag: "Most Connected", bullets: ["Perfect for anniversaries & family dinners", "Shared platters at every table", "Warm, communal atmosphere", "Elegant table presentation", "Encourages conversation", "Great for 16–80 intimate guests"] },
-  { name: "Plated Dinner Service", tag: "Most Elegant", bullets: ["Perfect for luxury birthdays & estate parties", "Restaurant-style synchronized service", "Highest level of formality", "Coursed dining with captains", "White-glove guest experience", "The steakhouse — at your home"] },
+  { name: "Plated Dinner Service", tag: "Most Elegant", bullets: ["Perfect for luxury birthdays & estate parties", "Restaurant-style synchronized service", "Highest level of formality", "Coursed dining with captains", "White-glove guest experience", "The Signature Live Fire Steakhouse Catering — at your home"] },
 ];
 
 const timelineSteps = [
   { n: "01", title: "Request Your Quote", body: "Send your date, headcount, and party vibe — takes about 90 seconds." },
   { n: "02", title: "We'll Contact You Personally", body: "A real person — not a chatbot — calls or emails within 24 hours." },
-  { n: "03", title: "Customize Your Menu", body: "Wood-Fire, steakhouse, surf & turf, bar program — designed around your party." },
+  { n: "03", title: "Customize Your Menu", body: "Wood-Fire, Signature Live Fire Steakhouse Catering, surf & turf, bar program — designed around your party." },
   { n: "04", title: "Reserve Your Date", body: "35% Date Charge holds the date and the team — applied to your final invoice." },
   { n: "05", title: "Finalize Guest Count Later", body: "Headcount and menu adjustments lock 7–14 days before your party." },
   { n: "06", title: "Enjoy Your Party", body: "Setup, service, live-fire grilling, bar, breakdown — handled. You just host." },
 ];
 
 const menuOptions = [
-  "Wood-Fire Catering", "Steakhouse Catering", "Surf & Turf", "Live Charcoal Grilling", "Carving Stations",
+  "Wood-Fire Catering", "Signature Live Fire Signature Live Fire Steakhouse Catering Catering", "Surf & Turf", "Live Charcoal Grilling", "Carving Stations",
   "Taco & Street-Food Bars", "Brunch Catering", "Dinner Catering", "Passed Hors d'oeuvres",
   "Dessert & Coffee Service", "Vegetarian Menus", "Vegan Menus", "Gluten-Free & Allergy Menus",
   "Premium Steaks & Prime Rib", "Smoked Brisket & Ribs", "Grazing & Charcuterie Displays",
@@ -119,10 +119,10 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
   const { region, regionShort, cities, reviewCities, path } = config;
 
   const reviews = [
-    { q: `Qfire turned my 50th birthday into the party of the year. The live grilling out back, the steakhouse plates, the bartender — every guest is still talking about it.`, a: "Lauren P.", e: `${reviewCities[0]} · 50th Birthday` },
+    { q: `Qfire turned my 50th birthday into the party of the year. The live grilling out back, the Signature Live Fire Steakhouse Catering plates, the bartender — every guest is still talking about it.`, a: "Lauren P.", e: `${reviewCities[0]} · 50th Birthday` },
     { q: `We hosted a 140-person family reunion in ${regionShort}. The buffet was beautiful, the food was incredible, and not one of us lifted a finger. Worth every penny.`, a: "The Alvarez Family", e: `${reviewCities[1] ?? reviewCities[0]} · Family Reunion` },
     { q: "The live charcoal grilling at our backyard anniversary party was magical. Guests gathered around the grill all night. Chef Terry is the real deal.", a: "Michael & Diana K.", e: `${reviewCities[2] ?? reviewCities[0]} · 25th Anniversary` },
-    { q: "Plated dinner for my husband's surprise 60th. Twenty-six guests, full steakhouse service in our home. It felt like Mastro's came to us.", a: "Jennifer S.", e: `${reviewCities[3] ?? reviewCities[0]} · Milestone Birthday` },
+    { q: "Plated dinner for my husband's surprise 60th. Twenty-six guests, full Signature Live Fire Steakhouse Catering service in our home. It felt like Mastro's came to us.", a: "Jennifer S.", e: `${reviewCities[3] ?? reviewCities[0]} · Milestone Birthday` },
     { q: "From quote to cleanup, the entire team was unbelievably professional. My graduation party for our daughter was flawless.", a: "Robert M.", e: `${reviewCities[0]} · Graduation Party` },
     { q: "We've used Qfire three times now — pool party, holiday party, and our anniversary. They never miss. Easiest hosting we've ever done.", a: "The Whitfield Family", e: `${region} · Repeat Client` },
   ];
@@ -135,7 +135,7 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
     url: path,
     telephone: "+1-602-555-0123",
     priceRange: "$$$",
-    servesCuisine: ["Wood-Fire", "Steakhouse", "American", "Private Party Catering", "Backyard Catering"],
+    servesCuisine: ["Wood-Fire", "Signature Live Fire Steakhouse Catering", "American", "Private Party Catering", "Backyard Catering"],
     areaServed: cities.map((c) => ({ "@type": "City", name: c })),
     aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "247" },
   };
@@ -162,7 +162,7 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
     serviceType: "Private Party Catering",
     provider: { "@type": "LocalBusiness", name: "Qfire Catering" },
     areaServed: cities.join(", "),
-    description: `Premium private party catering across ${region} — birthdays, anniversaries, graduations, holidays, family reunions, bachelor/bachelorette parties, pool parties, and luxury private dinners with live charcoal grilling, steakhouse plates, and full bar service.`,
+    description: `Premium private party catering across ${region} — birthdays, anniversaries, graduations, holidays, family reunions, bachelor/bachelorette parties, pool parties, and luxury private dinners with live charcoal grilling, Signature Live Fire Steakhouse Catering plates, and full bar service.`,
   };
 
   const reviewSchema = {
@@ -357,10 +357,10 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
       <section className="py-24 lg:py-32">
         <div className="container-luxe grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="order-2 lg:order-1">
-            <div className="eyebrow mb-6">Wood-Fire + Steakhouse Experience</div>
+            <div className="eyebrow mb-6">Wood-Fire + Signature Live Fire Steakhouse Catering Experience</div>
             <h2 className="heading-lg text-bone">Most caterers offer one style. We bring both.</h2>
             <div className="mt-8 space-y-5 text-bone/80 text-lg font-light leading-relaxed">
-              <p>Qfire is the rare caterer that fluently speaks both languages — authentic, slow-smoked Wood-Fire and a true steakhouse experience. Charcoal-grilled ribeye, NY strip, filet mignon, picanha, prime rib, salmon, surf & turf alongside brisket, ribs, pulled pork, and smoked chicken.</p>
+              <p>Qfire is the rare caterer that fluently speaks both languages — authentic, slow-smoked Wood-Fire and a true Signature Live Fire Steakhouse Catering experience. Charcoal-grilled ribeye, NY strip, filet mignon, picanha, prime rib, salmon, surf & turf alongside brisket, ribs, pulled pork, and smoked chicken.</p>
               <p>That gives you more flexibility, more creativity in your menu, and the ability to design a party that doesn't feel like every other catered event in {region}.</p>
             </div>
             <div className="mt-10 flex flex-wrap gap-4">
@@ -369,7 +369,7 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
             </div>
           </div>
           <div className="order-1 lg:order-2 relative aspect-[4/5] overflow-hidden">
-            <img src={steak} alt={`Premium steakhouse plates served at a ${regionShort} private party`} className="absolute inset-0 w-full h-full object-cover" />
+            <img src={steak} alt={`Premium Signature Live Fire Steakhouse Catering plates served at a ${regionShort} private party`} className="absolute inset-0 w-full h-full object-cover" />
           </div>
         </div>
       </section>
@@ -434,7 +434,7 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
         <div className="container-luxe">
           <div className="max-w-2xl mb-14">
             <div className="eyebrow mb-6">Private Party Menu Options</div>
-            <h2 className="heading-lg text-bone">Wood-fired Wood-Fire. Premium steakhouse. Built around your party.</h2>
+            <h2 className="heading-lg text-bone">Wood-fired Wood-Fire. Premium Signature Live Fire Steakhouse Catering. Built around your party.</h2>
             <p className="mt-6 text-bone/70 text-lg leading-relaxed font-light">
               Whatever your {regionShort} guests love — it comes off our live-fire grill or our scratch kitchen.
             </p>

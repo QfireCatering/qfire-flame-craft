@@ -10,8 +10,8 @@ import { CTASection } from "@/components/site/Sections";
 export const Route = createFileRoute("/menus")({
   head: () => ({
     meta: [
-      { title: "Catering Menus — Wood-Fired Wood-Fire & Steakhouse | Qfire" },
-      { name: "description", content: "Explore Qfire Catering menus: slow-smoked wood-fired Wood-Fire and hand-cut steakhouse plates. Phoenix Metro & San Diego County." },
+      { title: "Catering Menus — Wood-Fired Wood-Fire & Signature Live Fire Steakhouse Catering | Qfire" },
+      { name: "description", content: "Explore Qfire Catering menus: slow-smoked wood-fired Wood-Fire and hand-cut Signature Live Fire Steakhouse Catering plates. Phoenix Metro & San Diego County." },
       { property: "og:title", content: "Menus — Qfire" },
       { property: "og:url", content: "/menus" },
     ],

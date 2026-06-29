@@ -18,7 +18,7 @@ export const Route = createFileRoute("/quote")({
       { property: "og:title", content: "Request a Quote — Qfire Catering" },
       {
         property: "og:description",
-        content: "Custom proposal within 24 hours. Wood-fired Wood-Fire + steakhouse catering.",
+        content: "Custom proposal within 24 hours. Wood-fired Wood-Fire + Signature Live Fire Signature Live Fire Steakhouse Catering Catering.",
       },
       { property: "og:url", content: "/quote" },
     ],
@@ -28,10 +28,10 @@ export const Route = createFileRoute("/quote")({
 });
 
 function getRedirectUrl(region: string, menu: string): string | null {
-  const isPhx = region === "Phoenix Metro";
+  const isPhx = region === "Arizona";
   const isSD = region === "San Diego County";
-  const isBBQ = menu === "Wood-Fired Wood-Fire";
-  const isSteak = menu === "Steakhouse";
+  const isBBQ = menu === "Wood-Fired Catering";
+  const isSteak = menu === "Signature Live Fire Signature Live Fire Signature Live Fire Steakhouse Catering Catering";
   if (isPhx && isBBQ) return "https://fs17.formsite.com/matthews3404/BBQDADDYLLC/index";
   if (isSD && isBBQ) return "https://fs17.formsite.com/matthews3404/SanDiego/index";
   if (isPhx && isSteak) return "/steak-seafood-menu";
@@ -141,35 +141,28 @@ function QuotePage() {
                   Complete the form below to continue to our full menu and pricing page. You'll be able to build your ideal menu and request a detailed quote based on your exact selections.
                 </p>
               </div>
-              <Field label="Your Name" name="name" required maxLength={120} />
+              <Field label="First and Last Name" name="name" required maxLength={120} />
               <div className="grid sm:grid-cols-2 gap-6">
                 <Field label="Email" name="email" type="email" required maxLength={255} />
-                <Field label="Phone" name="phone" type="tel" maxLength={40} />
+                <Field label="Cell Phone" name="phone" type="tel" maxLength={40} />
               </div>
               <div className="grid sm:grid-cols-2 gap-6">
                 <Field label="Event Date" name="date" type="date" />
-                <Field label="Guest Count" name="guests" type="number" />
+                <Field label="Approx Guest Count" name="guests" type="number" />
               </div>
-              <div className="grid sm:grid-cols-2 gap-6">
-                <SelectField
-                  label="Region"
-                  name="region"
-                  options={["Phoenix Metro", "San Diego County", "Destination / Other"]}
-                />
-                <SelectField
-                  label="Event Type"
-                  name="type"
-                  options={["Wedding", "Corporate", "Private Party", "Other"]}
-                />
-              </div>
+              <SelectField
+                label="Region"
+                name="region"
+                options={["Arizona", "San Diego County", "Destination / Other"]}
+              />
               <SelectField
                 label="Menu Interest"
                 name="menu"
-                options={["Wood-Fired Wood-Fire", "Steakhouse", "Not sure yet"]}
+                options={["Wood-Fired Catering", "Signature Live Fire Signature Live Fire Signature Live Fire Steakhouse Catering Catering", "Not sure yet"]}
               />
               <div>
-                <label className="block text-[0.65rem] tracking-[0.3em] uppercase text-bone/60 mb-3">
-                  Tell us about your event
+                <label className="block text-[0.65rem] tracking-[0.3em] uppercase text-bone mb-3">
+                  What Question(s) may we help you with?
                 </label>
                 <textarea
                   name="message"
@@ -188,15 +181,14 @@ function QuotePage() {
                 disabled={state === "sending"}
                 className="btn-primary w-full disabled:opacity-60"
               >
-                {state === "sending" ? "Sending…" : "Send Inquiry"}{" "}
+                {state === "sending" ? "Sending…" : "Submit"}{" "}
                 <ArrowRight className="size-4" />
               </button>
-              <p className="text-xs text-muted-foreground text-center">
-                We respond personally within 24 hours. Or call{" "}
+              <p className="text-sm text-bone font-bold text-center">
+                Feel free to call RIGHT NOW, for faster service{" "}
                 <a href={contact.phoneHref} className="text-gold">
                   {contact.phone}
                 </a>
-                .
               </p>
             </form>
           )}
@@ -221,7 +213,7 @@ function Field({
 }) {
   return (
     <div>
-      <label className="block text-[0.65rem] tracking-[0.3em] uppercase text-bone/60 mb-3">
+      <label className="block text-[0.65rem] tracking-[0.3em] uppercase text-bone mb-3">
         {label}
       </label>
       <input
@@ -246,7 +238,7 @@ function SelectField({
 }) {
   return (
     <div>
-      <label className="block text-[0.65rem] tracking-[0.3em] uppercase text-bone/60 mb-3">
+      <label className="block text-[0.65rem] tracking-[0.3em] uppercase text-bone mb-3">
         {label}
       </label>
       <select

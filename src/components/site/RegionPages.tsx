@@ -167,9 +167,9 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
       <section className="py-20 lg:py-28 bg-ink border-t border-white/5">
         <div className="container-luxe">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <div className="eyebrow justify-center mb-6">Steakhouse Experience — Pricing</div>
+            <div className="eyebrow justify-center mb-6">Signature Live Fire Steakhouse Catering Experience — Pricing</div>
             <h2 className="heading-lg text-bone">
-              Surf &amp; Turf steakhouse catering starting at <span className="text-gold italic font-light">{regionKey === "phoenix" ? "$74" : "$79"}/guest.</span>
+              Surf &amp; Turf Signature Live Fire Signature Live Fire Steakhouse Catering Catering starting at <span className="text-gold italic font-light">{regionKey === "phoenix" ? "$74" : "$79"}/guest.</span>
             </h2>
             <p className="mt-5 text-bone/65 text-base font-light">
               Live charcoal grilling, white-glove service, and restaurant-quality presentation at your {r.shortName} venue.
@@ -284,7 +284,7 @@ export function RegionSlugPage({ regionKey, slug }: { regionKey: RegionKey; slug
     case "corporate": return <ServicePage config={corporateConfig(opts)} regionKey={regionKey} />;
     case "private-parties": return <ServicePage config={privatePartyConfig(opts)} regionKey={regionKey} />;
     case "wood-fired": return <ServicePage config={woodFiredConfig(opts)} regionKey={regionKey} />;
-    case "steakhouse": return <ServicePage config={steakhouseConfig(opts)} regionKey={regionKey} />;
+    case "Signature Live Fire Steakhouse Catering": return <ServicePage config={steakhouseConfig(opts)} regionKey={regionKey} />;
     case "bartending": return <ServicePage config={bartendingConfig(opts)} regionKey={regionKey} />;
     case "gallery": return <RegionGallery regionKey={regionKey} />;
     case "reviews": return <RegionReviews regionKey={regionKey} />;
@@ -326,9 +326,9 @@ function RegionHoliday({ regionKey }: { regionKey: RegionKey }) {
           <h2 className="heading-md text-bone mb-10">Three ways we run a holiday.</h2>
           <div className="grid md:grid-cols-3 gap-px bg-white/5 border border-white/5">
             {[
-              { t: "Office Holiday Party", b: "Buffet or stations. 30–500 guests. Wood-fired Wood-Fire or steakhouse menu. Bar and rentals available." },
+              { t: "Office Holiday Party", b: "Buffet or stations. 30–500 guests. Wood-fired Wood-Fire or Signature Live Fire Steakhouse Catering menu. Bar and rentals available." },
               { t: "Family Holiday Dinner", b: "Smoked turkey, prime rib, classic sides. Drop-off or full service in your home. 10–60 guests." },
-              { t: "Client Appreciation", b: "Plated steakhouse dinner with tableside carving. White-glove staff. 20–150 guests." },
+              { t: "Client Appreciation", b: "Plated Signature Live Fire Steakhouse Catering dinner with tableside carving. White-glove staff. 20–150 guests." },
             ].map((c) => (
               <div key={c.t} className="bg-ink p-10">
                 <div className="text-2xl font-display text-bone mb-3">{c.t}</div>
@@ -384,7 +384,7 @@ function RegionBackyard({ regionKey }: { regionKey: RegionKey }) {
   const r = regions[regionKey];
   const occasions = [
     { t: "Graduation Parties", b: "Brisket, pulled pork, sliders, all the sides. Casual menu, polished service, 40–200 guests." },
-    { t: "Milestone Birthdays", b: "Plated steakhouse dinners or wood-fired stations. We make the night feel like the restaurant came to you." },
+    { t: "Milestone Birthdays", b: "Plated Signature Live Fire Steakhouse Catering dinners or wood-fired stations. We make the night feel like the restaurant came to you." },
     { t: "Anniversary & Retirement", b: "Intimate seated dinners for 12–60. Multi-course, wine pairings, full staff." },
     { t: "Engagement & Rehearsal", b: "The night before the big night. Family-style on long tables under string lights." },
     { t: "Reunions & Welcome BBQs", b: "Out-of-town family, full smoker setup, kids run the yard, you don't lift a finger." },
@@ -552,7 +552,7 @@ function RegionBlog({ regionKey }: { regionKey: RegionKey }) {
     { img: corporate, cat: "Corporate", title: `The ${r.shortName} investor-dinner playbook.` },
     { img: privateParty, cat: "Private Parties", title: `Backyard luxury in ${r.shortName}.` },
     { img: buffet, cat: "Venue Spotlights", title: `Favorite outdoor venues across ${r.metro}.` },
-    { img: steak, cat: "Planning Guides", title: `Steakhouse at home — a ${r.shortName} guide.` },
+    { img: steak, cat: "Planning Guides", title: `Signature Live Fire Steakhouse Catering at home — a ${r.shortName} guide.` },
   ];
   return (
     <>

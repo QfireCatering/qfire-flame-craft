@@ -8,7 +8,7 @@ export const Route = createFileRoute("/private-parties")({
   head: () => ({
     meta: [
       { title: "Private Party Catering in Phoenix & San Diego — Qfire" },
-      { name: "description", content: "Luxury private party catering for birthdays, backyard BBQs, anniversaries, graduations, holidays, and family reunions across Phoenix Metro and San Diego County. Live charcoal grilling, premium steakhouse plates, and full-service hosting by Chef Terry Matthews." },
+      { name: "description", content: "Luxury private party catering for birthdays, backyard BBQs, anniversaries, graduations, holidays, and family reunions across Phoenix Metro and San Diego County. Live charcoal grilling, premium Signature Live Fire Steakhouse Catering plates, and full-service hosting by Chef Terry Matthews." },
       { property: "og:title", content: "Private Party Catering — Qfire | Phoenix & San Diego" },
       { property: "og:description", content: "Restaurant-quality private party catering for birthdays, backyard parties, anniversaries, and private celebrations. Choose your region to begin." },
       { property: "og:url", content: "/private-parties" },
@@ -31,7 +31,7 @@ function PrivatePartyChooser() {
               The party caterer <span className="italic text-gold font-light">guests talk about for years.</span>
             </h1>
             <p className="mt-8 text-xl md:text-2xl text-bone/85 font-light leading-relaxed max-w-2xl">
-              Live charcoal grilling, premium steakhouse plates, authentic Wood-Fire, full-service hosting. Choose your region to get started.
+              Live charcoal grilling, premium Signature Live Fire Steakhouse Catering plates, authentic Wood-Fire, full-service hosting. Choose your region to get started.
             </p>
           </div>
         </div>
