@@ -153,7 +153,7 @@ export const blogPosts: BlogPost[] = [
     isoDate: "2026-01-22",
     readMinutes: 5,
     excerpt:
-      "A Mastro's-caliber dinner in your dining room is not a fantasy. It is a logistics exercise — and we have run it a few hundred times.",
+      "A true steakhouse-caliber dinner in your dining room is not a fantasy. It is a logistics exercise — and we have run it a few hundred times.",
     image: steak,
     body: [
       {
