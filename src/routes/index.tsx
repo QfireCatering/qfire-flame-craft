@@ -101,6 +101,7 @@ export const Route = createFileRoute("/")({
             { "@type": "Offer", name: "Wood-Fired Catering (3-Meat)", priceCurrency: "USD", price: "25.99" },
             { "@type": "Offer", name: "Signature Live Fire Steakhouse Experience", priceCurrency: "USD", price: "74.00" },
           ],
+        }),
       },
       {
         type: "application/ld+json",
