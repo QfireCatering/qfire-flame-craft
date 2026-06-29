@@ -2,6 +2,8 @@ import { Link } from "@tanstack/react-router";
 import { ArrowRight, Check, Flame, Award, Users, Star, Clock, Sparkles, Heart, Home, PartyPopper, Music } from "lucide-react";
 import { DefinitiveContent } from "./DefinitiveContent";
 import { definitiveCopy } from "@/lib/definitive-copy";
+import { BookingProcess } from "./BookingProcess";
+import { ObjectionBuster } from "./ObjectionBuster";
 import asSeenOnBadge from "@/assets/as-seen-on-food-network.png.asset.json";
 import { GuestScaleStat } from "./GuestScaleStat";
 import privatePartyHero from "@/assets/private-parties-hero.png.asset.json";
