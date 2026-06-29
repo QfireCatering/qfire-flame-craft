@@ -194,7 +194,10 @@ function Home() {
         ]}
       />
 
-      <AtAGlance />
+      <AtAGlance
+        priceFrom="Phoenix from $12.99 / guest (wood-fired) · San Diego from $15.99 / guest · Steakhouse from $74–$79 / guest"
+        guestCount="20 guests (Phoenix) · 50 guests (San Diego)"
+      />
 
       <ReviewsSection />
 
