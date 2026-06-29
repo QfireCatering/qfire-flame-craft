@@ -541,6 +541,7 @@ function RegionBackyard({ regionKey }: { regionKey: RegionKey }) {
         </div>
       </section>
 
+      <DefinitiveContent {...definitiveCopy.backyard} topic={`${r.shortName} Backyard Catering`} region={r.metro} />
       <CTASection title="The neighbors will be jealous." />
     </>
   );
