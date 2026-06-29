@@ -532,6 +532,12 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
         </div>
       </section>
 
+      <DefinitiveContent
+        topic={`${regionShort} Corporate Catering`}
+        region={`${regionShort} teams`}
+        {...definitiveCopy.corporate}
+      />
+
       {/* FAQ */}
       <section className="py-24 lg:py-32 bg-onyx">
         <div className="container-luxe">
