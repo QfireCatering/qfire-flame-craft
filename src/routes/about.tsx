@@ -127,6 +127,12 @@ function AboutPage() {
         </div>
       </section>
 
+      <DefinitiveContent
+        topic="Chef Terry & Qfire Catering"
+        region="every client we work with"
+        {...definitiveCopy.about}
+      />
+
       <CTASection title="Hire the chef behind the camera." subtitle="Tell us about your event. Chef Terry's team will be in touch within 24 hours." />
     </>
   );
