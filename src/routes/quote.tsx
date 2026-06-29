@@ -141,14 +141,14 @@ function QuotePage() {
                   Complete the form below to continue to our full menu and pricing page. You'll be able to build your ideal menu and request a detailed quote based on your exact selections.
                 </p>
               </div>
-              <Field label="Your Name" name="name" required maxLength={120} />
+              <Field label="First and Last Name" name="name" required maxLength={120} />
               <div className="grid sm:grid-cols-2 gap-6">
                 <Field label="Email" name="email" type="email" required maxLength={255} />
-                <Field label="Phone" name="phone" type="tel" maxLength={40} />
+                <Field label="Cell Phone" name="phone" type="tel" maxLength={40} />
               </div>
               <div className="grid sm:grid-cols-2 gap-6">
                 <Field label="Event Date" name="date" type="date" />
-                <Field label="Guest Count" name="guests" type="number" />
+                <Field label="Approx Guest Count" name="guests" type="number" />
               </div>
               <div className="grid sm:grid-cols-2 gap-6">
                 <SelectField
