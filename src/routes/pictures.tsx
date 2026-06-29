@@ -41,6 +41,8 @@ const masonry: { src: string; tall?: boolean; wide?: boolean }[] = [
   { src: buffetSet2.url, wide: true }, { src: fromGrill.url }, { src: vegInCup.url },
   { src: setUp1.url, wide: true }, { src: parkSetup.url }, { src: jobsiteTacos.url, tall: true },
   { src: setUp2.url }, { src: bbqMeal.url }, { src: weddingSd.url, wide: true },
+  { src: weddingBuffetTower.url, tall: true }, { src: kabob.url }, { src: peachCobbler.url },
+  { src: setUp6.url, wide: true }, { src: kabob.url }, { src: peachCobbler.url },
 ];
 
 function PicturesPage() {
