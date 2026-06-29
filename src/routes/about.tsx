@@ -9,6 +9,8 @@ import g5 from "@/assets/gallery/about-chef/bbq_dddy_3.avif.asset.json";
 import g6 from "@/assets/gallery/about-chef/onsite_grill_4.avif.asset.json";
 import g7 from "@/assets/gallery/about-chef/park_set_up-3.avif.asset.json";
 import { CTASection } from "@/components/site/Sections";
+import { DefinitiveContent } from "@/components/site/DefinitiveContent";
+import { definitiveCopy } from "@/lib/definitive-copy";
 
 const chefGallery = [
   { src: g1.url, alt: "Chef Terry Matthews with a wedding couple — Qfire Catering" },
@@ -124,6 +126,12 @@ function AboutPage() {
           </div>
         </div>
       </section>
+
+      <DefinitiveContent
+        topic="Chef Terry & Qfire Catering"
+        region="every client we work with"
+        {...definitiveCopy.about}
+      />
 
       <CTASection title="Hire the chef behind the camera." subtitle="Tell us about your event. Chef Terry's team will be in touch within 24 hours." />
     </>

@@ -7,6 +7,8 @@ import privatePartySetting from "@/assets/private-party-setting.png.asset.json";
 import weddingCouple from "@/assets/wedding-couple.png.asset.json";
 import { TrustBar } from "./TrustBar";
 import { FAQSection } from "./FAQSection";
+import { DefinitiveContent } from "./DefinitiveContent";
+import { definitiveCopy } from "@/lib/definitive-copy";
 
 export type RegionCopy = {
   city: string;            // "Phoenix" | "San Diego"
@@ -323,6 +325,12 @@ export function SteakhouseExperiencePage({ r }: { r: RegionCopy }) {
           </div>
         </div>
       </section>
+
+      <DefinitiveContent
+        topic={`${r.region} Signature Live Fire Steakhouse Catering`}
+        region={`${r.region} events`}
+        {...definitiveCopy.steakhouse}
+      />
 
       <FAQSection
         eyebrow={`${r.region} Steakhouse Catering FAQ`}

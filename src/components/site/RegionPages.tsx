@@ -6,6 +6,8 @@ import { PhoenixPricingBanner } from "./PhoenixPricingBanner";
 import { SanDiegoPricingBanner } from "./SanDiegoPricingBanner";
 import { TrustBar } from "./TrustBar";
 import { FAQSection } from "./FAQSection";
+import { DefinitiveContent } from "./DefinitiveContent";
+import { definitiveCopy } from "@/lib/definitive-copy";
 import { AnswerBox } from "./AnswerBox";
 import { AtAGlance } from "./AtAGlance";
 import { ServiceStyleComparison } from "./ServiceStyleComparison";
@@ -363,6 +365,12 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
         title={`Common ${r.shortName} catering questions.`}
         intro={`Everything you need to know before requesting a quote for your ${r.name} event.`}
         faqs={regionFaqs}
+      />
+
+      <DefinitiveContent
+        topic={`${r.shortName} Catering`}
+        region={r.name}
+        {...definitiveCopy.region}
       />
 
       <CTASection title={`Let's plan your ${r.shortName} event.`} />

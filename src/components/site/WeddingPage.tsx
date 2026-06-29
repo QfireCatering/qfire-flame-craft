@@ -1,5 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowRight, Check, Flame, Award, Users, Star, Clock, Sparkles } from "lucide-react";
+import { DefinitiveContent } from "./DefinitiveContent";
+import { definitiveCopy } from "@/lib/definitive-copy";
 import asSeenOnBadge from "@/assets/as-seen-on-food-network.png.asset.json";
 import { GuestScaleStat } from "./GuestScaleStat";
 import weddingCoupleAsset from "@/assets/wedding-couple.png.asset.json";
@@ -625,6 +627,12 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
           </div>
         </div>
       </section>
+
+      <DefinitiveContent
+        topic={`${regionShort} Wedding Catering`}
+        region={`${regionShort} couples`}
+        {...definitiveCopy.wedding}
+      />
 
       {/* FAQ */}
       <section className="py-24 lg:py-32">

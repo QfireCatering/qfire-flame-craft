@@ -4,6 +4,8 @@ import type { ReactNode } from "react";
 import { RegionKey } from "@/lib/site";
 import { PageHero, BulletGrid, CTASection } from "@/components/site/Sections";
 import { TrustBar } from "@/components/site/TrustBar";
+import { DefinitiveContent } from "@/components/site/DefinitiveContent";
+import { definitiveCopy } from "@/lib/definitive-copy";
 
 export interface ServicePageConfig {
   eyebrow: string;
@@ -19,6 +21,8 @@ export interface ServicePageConfig {
   faqs?: { q: string; a: string }[];
   ctaTitle?: string;
   showGalleryLink?: boolean;
+  definitiveTopic?: string;
+  definitiveKey?: keyof typeof definitiveCopy;
 }
 
 export function ServicePage({ config, regionKey }: { config: ServicePageConfig; regionKey?: RegionKey }) {
@@ -246,6 +250,13 @@ export function ServicePage({ config, regionKey }: { config: ServicePageConfig; 
             }}
           />
         </>
+      )}
+
+      {config.definitiveKey && definitiveCopy[config.definitiveKey] && (
+        <DefinitiveContent
+          topic={config.definitiveTopic ?? config.eyebrow}
+          {...definitiveCopy[config.definitiveKey]}
+        />
       )}
 
       <CTASection title={config.ctaTitle ?? "Let's plan something unforgettable."} />
