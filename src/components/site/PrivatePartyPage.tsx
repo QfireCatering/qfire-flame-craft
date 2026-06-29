@@ -6,6 +6,7 @@ import { BookingProcess } from "./BookingProcess";
 import { ObjectionBuster } from "./ObjectionBuster";
 import asSeenOnBadge from "@/assets/as-seen-on-food-network.png.asset.json";
 import { GuestScaleStat } from "./GuestScaleStat";
+import { PricingHero } from "./PricingHero";
 import privatePartyHero from "@/assets/private-parties-hero.png.asset.json";
 import privatePartyAsset from "@/assets/private-party-setting.png.asset.json";
 import privateRealAsset from "@/assets/private-real.jpg.asset.json";
@@ -225,7 +226,10 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
         </div>
       </section>
 
+      <PricingHero regionKey={config.regionSlug} />
+
       <GuestScaleStat regionKey={config.regionSlug} />
+
 
       {/* TRUST STRIP */}
       <section className="border-y border-white/10 bg-onyx py-10">

@@ -6,6 +6,7 @@ import bourbonSteakTips from "@/assets/dishes/bourbon-glazed-steak-tips.png.asse
 import { PageHero, CTASection } from "@/components/site/Sections";
 import { TestimonialStrip } from "@/components/site/TestimonialStrip";
 import { SteakhouseMenuFAQ } from "@/components/site/SteakhouseMenuFAQ";
+import { PricingHero } from "@/components/site/PricingHero";
 
 import antipastoKabobAsset from "@/assets/dishes/antipasto-kabob.png.asset.json";
 const antipastoKabob = antipastoKabobAsset.url;
@@ -230,6 +231,10 @@ function SteakSeafoodMenuSanDiegoPage() {
           </div>
         </div>
       </PageHero>
+
+      <PricingHero regionKey="san-diego" />
+
+
 
       <section className="py-20 lg:py-28 border-t border-white/5">
         <div className="container-luxe max-w-4xl">

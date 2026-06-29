@@ -4,6 +4,7 @@ import { DefinitiveContent } from "./DefinitiveContent";
 import { definitiveCopy } from "@/lib/definitive-copy";
 import { BookingProcess } from "./BookingProcess";
 import { ObjectionBuster } from "./ObjectionBuster";
+import { PricingHero } from "./PricingHero";
 import asSeenOnBadge from "@/assets/as-seen-on-food-network.png.asset.json";
 import { GuestScaleStat } from "./GuestScaleStat";
 import corpSetupBg from "@/assets/corporate/corp-setup-bg.png.asset.json";
@@ -221,7 +222,10 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
         </div>
       </section>
 
+      <PricingHero regionKey={config.regionSlug} />
+
       <GuestScaleStat regionKey={config.regionSlug} />
+
 
       {/* TRUST STRIP */}
       <section className="border-y border-white/10 bg-onyx py-10">
