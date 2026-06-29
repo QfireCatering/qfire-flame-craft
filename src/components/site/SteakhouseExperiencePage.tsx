@@ -23,7 +23,7 @@ export function SteakhouseExperiencePage({ r }: { r: RegionCopy }) {
   const isSD = r.city === "San Diego";
   const buffet = isSD ? "$79" : "$74";
   const family = isSD ? "$94" : "$89";
-  const plated = isSD ? "$128" : "$133";
+  const plated = isSD ? "$133" : "$128";
   const steakMenuPath = isSD ? "/steak-seafood-menu-san-diego" : "/steak-seafood-menu";
   const steakFaqs = [
     { q: `How much does the ${r.region} live-fire steakhouse experience cost?`, a: `Pricing starts at ${buffet} per guest for the chef-attended buffet, ${family} family style, and ${plated} for plated service. Every package includes a live charcoal Grill Master, three premium proteins, three gourmet sides, two desserts, polished dinnerware, and full setup and cleanup.` },
