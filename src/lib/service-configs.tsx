@@ -20,7 +20,17 @@ import privateRealAsset from "@/assets/private-real.jpg.asset.json";
 const privateReal = privateRealAsset.url;
 import type { ServicePageConfig } from "@/components/site/ServicePage";
 
+import pxwBg from "@/assets/gallery/phoenix-weddings/set_up_background.png.asset.json";
+import pxwCouple from "@/assets/gallery/phoenix-weddings/couple_eating-2.avif.asset.json";
+import pxwBride from "@/assets/gallery/phoenix-weddings/couple_bride_groom-3.avif.asset.json";
+import pxwGrill from "@/assets/gallery/phoenix-weddings/onsite_grill2-2.avif.asset.json";
+import pxwFruit from "@/assets/gallery/phoenix-weddings/fruit_veggie_platter.avif.asset.json";
+import pxwSetup6 from "@/assets/gallery/phoenix-weddings/set_up6.avif.asset.json";
+import pxwBuffet from "@/assets/gallery/phoenix-weddings/buffet_set_4.avif.asset.json";
+import pxwSetup4 from "@/assets/gallery/phoenix-weddings/set_up_4.avif.asset.json";
+
 const galleryAll = [weddingReal, brisket, steak, buffet, heroFire, corporateReal, privateReal, weddingTable];
+const phoenixWeddingGallery = [pxwBg.url, pxwCouple.url, pxwBride.url, pxwGrill.url, pxwFruit.url, pxwSetup6.url, pxwBuffet.url, pxwSetup4.url];
 
 export interface ServiceTemplateOptions {
   region?: string;       // e.g. "Phoenix Metro" or undefined
@@ -60,7 +70,7 @@ export function weddingConfig(o: ServiceTemplateOptions = {}): ServicePageConfig
         { title: "Sides & Bread", items: ["Truffle mac and cheese", "Smoked baked beans", "Southern green beans", "Charred street corn", "Roasted heirloom carrots", "Fresh-baked rolls"] },
       ],
     },
-    galleryImages: galleryAll.slice(0, 8),
+    galleryImages: o.regionShort === "Phoenix" ? phoenixWeddingGallery : galleryAll.slice(0, 8),
     reviews: [
       { q: "Chef Terry and his team made our wedding night unforgettable. The brisket and steaks were perfect, and the service was flawless from start to finish.", a: "Lauren & Mark", e: r ? `${r} · 220 guests` : "Scottsdale · 220 guests" },
       { q: "We did a plated dinner for 180 and not a single thing went wrong. Worth every dollar and then some.", a: "Megan & Ryan", e: r ? `${r} Wedding` : "Carlsbad Wedding" },
