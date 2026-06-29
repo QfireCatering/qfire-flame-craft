@@ -161,8 +161,8 @@ function QuotePage() {
                 options={["Wood-Fired Catering", "Signature Live Fire Steakhouse Catering", "Not sure yet"]}
               />
               <div>
-                <label className="block text-[0.65rem] tracking-[0.3em] uppercase text-bone/60 mb-3">
-                  Tell us about your event
+                <label className="block text-[0.65rem] tracking-[0.3em] uppercase text-bone mb-3">
+                  What Question(s) may we help you with?
                 </label>
                 <textarea
                   name="message"
