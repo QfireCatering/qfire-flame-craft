@@ -671,7 +671,7 @@ function RegionBlog({ regionKey }: { regionKey: RegionKey }) {
           {posts.map((p, i) => (
             <div key={i} className="group">
               <div className="relative aspect-[4/3] overflow-hidden mb-5">
-                <img src={p.img} alt="" loading="lazy" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <img src={p.img} alt={`${p.cat} — ${p.title} | Qfire Catering ${r.shortName}`} loading="lazy" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               </div>
               <div className="text-[0.6rem] tracking-[0.3em] uppercase text-gold mb-3">{p.cat}</div>
               <h3 className="text-2xl font-display text-bone group-hover:text-gold transition-colors">{p.title}</h3>
