@@ -128,6 +128,7 @@ function MenusPage() {
           </div>
         </div>
       </section>
+      <RegionalPricing regionKey={region} />
       <DefinitiveContent topic="Catering Menus" region="every event we cater" {...definitiveCopy.menus} />
       <CTASection />
     </>
