@@ -175,7 +175,7 @@ export const definitiveCopy: Record<string, Preset> = {
       { title: "Inquiry or quick call", body: "Share event type, date, headcount, location, and the goal of the event." },
       { title: "Proposal in 24–48 hours", body: "Itemized PDF proposal sent to you and your finance team — food, service, rentals, gratuity all listed separately." },
       { title: "Vendor onboarding (if needed)", body: "W-9, COI naming your company as additional insured, and any procurement documents handled fast." },
-      { title: "Confirm and pay deposit", body: "Standard deposit reserves the date. Final balance invoiced post-event for many corporate clients." },
+      { title: "Confirm and pay Date Charge", body: "A 35% non-refundable Date Charge secures your event date and is applied directly to your final invoice. Final balance invoiced post-event for many corporate clients." },
       { title: "Final headcount (10–14 days out)", body: "Lock guest count, dietary count, and layout. We confirm the run-of-show with your planner." },
       { title: "Event day execution", body: "Early arrival, clean setup, on-time service, full breakdown, no fingerprints left behind." },
       { title: "Post-event invoice + recap", body: "Clean invoice for AP, plus a short recap email noting what worked and what we'd refine next time." },
