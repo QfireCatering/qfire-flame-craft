@@ -7,6 +7,7 @@ export function RegionalPricing({ regionKey }: { regionKey: RegionKey }) {
   const r = regions[regionKey];
   const isPhx = regionKey === "phoenix";
   const steakMenuPath = isPhx ? "/steak-seafood-menu" : "/steak-seafood-menu-san-diego";
+  const woodMenuUrl = isPhx ? "https://fs17.formsite.com/matthews3404/BBQDADDYLLC/index" : "https://fs17.formsite.com/matthews3404/SanDiego/index";
   const woodMin = isPhx ? "20 guest minimum" : "50 guest minimum";
   const steakMin = isPhx ? "15 guest minimum" : "40 guest minimum";
   return (
