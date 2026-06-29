@@ -293,7 +293,7 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
               const img = regionShort === "Phoenix" || regionShort === "San Diego" ? phoenixPrivateImgs[idx % phoenixPrivateImgs.length] : e.img;
               return (
                 <div key={e.title} className="relative aspect-square overflow-hidden bg-ink group">
-                  <img src={img} alt={`${e.title} catering in ${regionShort} by Qfire`} className="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity duration-500" />
+                  <img src={img} alt={`${e.title} catering in ${regionShort} by Qfire`} loading="lazy" decoding="async" fetchPriority="low" width={600} height={600} className="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity duration-500" />
                   <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-4">
                     <div className="text-bone font-display text-sm lg:text-base leading-tight">{e.title}</div>
@@ -459,7 +459,7 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
               { img: platter1, title: "Carving Stations", body: "Chef-attended live carving — picanha, brisket, prime rib, lamb.", to: "/menus" },
             ].map((m) => (
               <Link key={m.title} to={m.to} className="group relative aspect-[4/5] overflow-hidden block">
-                <img src={m.img} alt={`${m.title} for ${regionShort} private parties`} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <img src={m.img} alt={`${m.title} for ${regionShort} private parties`} loading="lazy" decoding="async" fetchPriority="low" width={800} height={1000} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-8">
                   <h3 className="font-display text-2xl text-bone">{m.title}</h3>

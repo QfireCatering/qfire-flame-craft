@@ -277,7 +277,7 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
               const cardClass = "group relative block aspect-[4/5] overflow-hidden bg-ink";
               const cardBody = (
                 <>
-                  <img src={img} alt={s.label} loading="lazy" className="absolute inset-0 w-full h-full object-cover opacity-60 transition-all duration-700 group-hover:opacity-90 group-hover:scale-105" />
+                  <img src={img} alt={s.label} loading="lazy" decoding="async" fetchPriority="low" width={800} height={1000} className="absolute inset-0 w-full h-full object-cover opacity-60 transition-all duration-700 group-hover:opacity-90 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/60 to-transparent" />
                   <div className="absolute inset-0 p-8 flex flex-col justify-end">
                     <div className="text-[0.6rem] tracking-[0.3em] uppercase text-gold/80 mb-3">{r.shortName}</div>
@@ -562,6 +562,10 @@ function RegionGallery({ regionKey }: { regionKey: RegionKey }) {
                     src={img}
                     alt={`${r.shortName} ${type} catered by Qfire Catering — ${r.metro} luxury event photo ${i + 1}`}
                     loading="lazy"
+                    decoding="async"
+                    fetchPriority="low"
+                    width={800}
+                    height={800}
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                 </div>
@@ -671,7 +675,7 @@ function RegionBlog({ regionKey }: { regionKey: RegionKey }) {
           {posts.map((p, i) => (
             <div key={i} className="group">
               <div className="relative aspect-[4/3] overflow-hidden mb-5">
-                <img src={p.img} alt={`${p.cat} — ${p.title} | Qfire Catering ${r.shortName}`} loading="lazy" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <img src={p.img} alt={`${p.cat} — ${p.title} | Qfire Catering ${r.shortName}`} loading="lazy" decoding="async" fetchPriority="low" width={800} height={600} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               </div>
               <div className="text-[0.6rem] tracking-[0.3em] uppercase text-gold mb-3">{p.cat}</div>
               <h3 className="text-2xl font-display text-bone group-hover:text-gold transition-colors">{p.title}</h3>

@@ -544,7 +544,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
               { img: platter1, title: "Carving Stations", body: "Chef-attended live carving — picanha, brisket, prime rib, lamb.", to: "/menus" },
             ].map((m) => (
               <Link key={m.title} to={m.to} className="group relative aspect-[4/5] overflow-hidden block">
-                <img src={m.img} alt={`${m.title} for ${regionShort} weddings`} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <img src={m.img} alt={`${m.title} for ${regionShort} weddings`} loading="lazy" decoding="async" fetchPriority="low" width={800} height={1000} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-8">
                   <h3 className="font-display text-2xl text-bone">{m.title}</h3>
@@ -562,7 +562,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
               { img: heroFire, title: "Onsite Grilling" },
             ].map((m) => (
               <div key={m.title} className="relative aspect-square overflow-hidden bg-ink">
-                <img src={m.img} alt={`${m.title} for ${regionShort} weddings`} className="absolute inset-0 w-full h-full object-cover" />
+                <img src={m.img} alt={`${m.title} for ${regionShort} weddings`} loading="lazy" decoding="async" fetchPriority="low" width={600} height={600} className="absolute inset-0 w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink/95 via-ink/30 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-5">
                   <div className="text-bone font-display text-lg">{m.title}</div>
