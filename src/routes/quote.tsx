@@ -204,6 +204,12 @@ function QuotePage() {
         </div>
       </div>
     </div>
+    <BookingProcess
+      eyebrow="What Happens Next"
+      title="Your quote — step by step."
+      variant="onyx"
+    />
+    </>
   );
 }
 
