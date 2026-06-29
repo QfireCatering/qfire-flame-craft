@@ -49,7 +49,7 @@ const privateExtraFaqs = [
 
 const steakhouseExtraFaqs = [
   { q: "What cuts are featured in the steakhouse experience?", a: "Center-cut filet mignon, prime ribeye, New York strip, T-bone, picanha, prime rib, surf & turf with cold-water lobster tail or jumbo shrimp, and Atlantic salmon. All charcoal-grilled over real hardwood." },
-  { q: "How is this different from a regular catering buffet?", a: "Steaks are grilled to order, sliced in front of guests, and plated with restaurant-style presentation. Service staff wear chef coats. The room feels like Mastro's, in your venue." },
+  { q: "How is this different from a regular catering buffet?", a: "Steaks are grilled to order, sliced in front of guests, and plated with restaurant-style presentation. Service staff wear chef coats. The room feels like a true steakhouse, in your venue." },
   { q: "Can you do steaks cooked to temperature for each guest?", a: "Yes — chef-attended carving stations let guests request their preferred doneness in real time. For plated service we coordinate doneness counts during your final menu meeting." },
   { q: "What's included with the steakhouse package?", a: "Premium proteins, three signature sides, fresh-baked breads, butter board, salad course, sauces, fully attended grilling, plating staff, and full breakdown. Add bar, rentals, and dessert as needed." },
   { q: "How many guests can you scale this for?", a: "From 30-guest intimate dinners to 1,000+ guest galas. Phoenix can scale to 2,000 guests. San Diego scales to 2,500. Larger events are quoted with additional grill stations and staff." },
