@@ -23,7 +23,23 @@ const DEFAULT_OBJECTIONS: Objection[] = [
   },
   {
     q: "What does the deposit look like? Is it refundable?",
-    a: "A modest deposit secures your date. The deposit credits 100% toward your final balance, and our cancellation terms are clearly stated in your proposal — no surprise fees, ever.",
+    a: "A 35% Date Charge secures your event date and credits 100% toward your final invoice. If you need to reschedule due to weather or emergency, your payment holds as a credit toward one future event within a year (minimum 80% of original contracted value). No surprise fees, ever.",
+  },
+  {
+    q: "Will there be enough food — and will it stay hot?",
+    a: "We carefully calculate portions and actively manage service so every guest is fully accommodated. Professional-grade equipment and timing protocols hold optimal food quality throughout service — nothing sits in a chafer drying out.",
+  },
+  {
+    q: "How do you keep the buffet from being picked clean by guest #50?",
+    a: "Staffed service controls portion flow and balances distribution across the entire guest list. We replenish on cue so the last guest in line gets the same plate as the first.",
+  },
+  {
+    q: "Who handles setup and cleanup?",
+    a: "We do. Setup, full-service execution, breakdown, and complete cleanup are included. Our team manages every operational component so you stay fully present at your own event.",
+  },
+  {
+    q: "What if something unexpected happens day-of?",
+    a: "Thousands of events across two regions, zero missed dates. We operate with contingency planning for weather, venue changes, and last-minute scope shifts — structured processes, not improvisation.",
   },
   {
     q: "What's included — do I have to rent plates, staff, anything else?",
