@@ -349,7 +349,7 @@ function Home() {
           </div>
           <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-4">
             {[
-              "Experienced wood-fire & live-fire steakhouse experience-trained team",
+              "Trained on both wood-fire grilling and live-fire steakhouse plating",
               "Beautifully styled buffets, stations and plated service",
               "Professional, uniformed service staff",
               "Generous, restaurant-grade portions every time",
@@ -408,7 +408,7 @@ function Home() {
             {[
               { q: "Chef Terry — 'The BBQ Daddy' — and his team turned our wedding into the meal everyone is still talking about. Brisket, ribeye, the whole spread. Flawless.", a: "Lauren & Mark", e: "Scottsdale Wedding · 220 guests" },
               { q: "We hired Qfire for our company's annual partner dinner. Plated steaks for 140, served hot, served perfectly. Worth every penny.", a: "David K.", e: "Corporate Event · La Jolla" },
-              { q: "Backyard 50th birthday. Wood-fired everything. Guests thought we'd flown in a luxury steakhouse dining. Absolutely premium.", a: "Sandra T.", e: "Private Party · Gilbert" },
+              { q: "Backyard 50th birthday. Wood-fired everything. Guests thought we'd flown in a luxury steakhouse. Absolutely premium.", a: "Sandra T.", e: "Private Party · Gilbert" },
             ].map((r, i) => (
               <figure key={i} className="bg-ink border border-white/5 p-8 lg:p-10 relative">
                 <div className="text-gold text-5xl font-display leading-none mb-4">"</div>
