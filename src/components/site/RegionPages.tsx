@@ -202,7 +202,7 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
                   This is our most popular package for weddings, corporate events, and larger celebrations.
                 </p>
               </div>
-              <Link to="/quote" className="btn-ghost mt-8">Request a Quote</Link>
+              <Link to="/quote" className="btn-ghost mt-8">Reserve the Premium Experience</Link>
             </article>
           </div>
 
