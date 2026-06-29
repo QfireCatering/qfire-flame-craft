@@ -12,7 +12,7 @@ export interface ServicePageConfig {
   heroObjectPosition?: string;
   intro: { heading: string; body: string[] };
   highlights: { title: string; body: string }[];
-  menu?: { heading: string; columns: { title: string; items: string[] }[] };
+  menu?: { heading: string; columns: { title: string; items: string[] }[]; ctaLabel?: string; ctaUrl?: string };
   galleryImages: string[];
   reviews?: { q: string; a: string; e: string }[];
   faqs?: { q: string; a: string }[];
