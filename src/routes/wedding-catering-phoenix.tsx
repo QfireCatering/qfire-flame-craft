@@ -11,6 +11,7 @@ const config: WeddingRegionConfig = {
     "Queen Creek", "Goodyear", "Avondale", "Surprise", "Peoria",
     "Paradise Valley", "Glendale", "Buckeye", "Litchfield Park",
     "Cave Creek", "Fountain Hills", "Apache Junction",
+    "Sedona", "Tucson", "Flagstaff", "Pinetop",
   ],
   venues: [
     "The Wrigley Mansion", "El Chorro", "The Royal Palms Resort",
