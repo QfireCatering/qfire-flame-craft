@@ -26,7 +26,7 @@ export function AtAGlance({
 }: AtAGlanceProps) {
   const rows = [
     { icon: MapPin, label: "Service area", value: region },
-    { icon: Users, label: "Guest count", value: `${minGuests}–${maxGuests.toLocaleString()} guests` },
+    { icon: Users, label: "Guest count", value: guestCount ?? `${minGuests}–${maxGuests.toLocaleString()} guests` },
     { icon: DollarSign, label: "Starting price", value: priceFrom },
     { icon: Clock, label: "Lead time", value: leadTime },
     { icon: Flame, label: "Cooking style", value: "Live-fire charcoal · wood-smoked · onsite grilling" },
