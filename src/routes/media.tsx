@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Award, Tv, Trophy, Flame } from "lucide-react";
 import { PageHero, CTASection } from "@/components/site/Sections";
+import asSeenOnBadge from "@/assets/as-seen-on-food-network.png.asset.json";
 import chefTerry from "@/assets/chef-terry.jpg.asset.json";
 
 export const Route = createFileRoute("/media")({
@@ -34,7 +35,9 @@ function MediaPage() {
         title={<>As seen on <span className="text-gold italic font-light">Food Network.</span></>}
         subtitle="A national television run, a Bobby Flay kitchen stretch and 25+ years of live-fire mastery — the credentials behind every Qfire event."
         image={chefTerry.url}
-      />
+      >
+        <img src={asSeenOnBadge.url} alt="As seen on Food Network" className="w-20 h-20 rounded-full" />
+      </PageHero>
 
       <section className="py-24 lg:py-32">
         <div className="container-luxe">
