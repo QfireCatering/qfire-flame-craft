@@ -58,9 +58,9 @@ function AboutPage() {
       </section>
 
       <section className="py-24 lg:py-32">
-        <div className="container-luxe grid lg:grid-cols-[minmax(0,22rem)_1fr] gap-12 lg:gap-20 items-start">
-          <div className="lg:justify-self-center">
-            <div className="relative aspect-[4/5] overflow-hidden border border-gold/20 max-w-md mx-auto lg:mx-0">
+        <div className="container-luxe grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+          <div>
+            <div className="relative aspect-[4/5] overflow-hidden border border-gold/20">
               <img src={chefTerry.url} alt="Chef Terry Matthews — The BBQ Daddy" className="absolute inset-0 w-full h-full object-cover object-top" />
             </div>
             <div className="gold-rule mt-8 mx-auto lg:mx-0 w-12" />
