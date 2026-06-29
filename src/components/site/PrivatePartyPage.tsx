@@ -290,7 +290,7 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
           </div>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-1">
             {partyTypes.map((e, idx) => {
-              const img = regionShort === "Phoenix" ? phoenixPrivateImgs[idx % phoenixPrivateImgs.length] : e.img;
+              const img = regionShort === "Phoenix" || regionShort === "San Diego" ? phoenixPrivateImgs[idx % phoenixPrivateImgs.length] : e.img;
               return (
                 <div key={e.title} className="relative aspect-square overflow-hidden bg-ink group">
                   <img src={img} alt={`${e.title} catering in ${regionShort} by Qfire`} className="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity duration-500" />
