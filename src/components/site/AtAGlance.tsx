@@ -9,6 +9,7 @@ export interface AtAGlanceProps {
   region?: "Phoenix Metro" | "San Diego County" | "Phoenix Metro & San Diego County";
   minGuests?: number;
   maxGuests?: number;
+  guestCount?: string;
   leadTime?: string;
   priceFrom?: string;
   className?: string;
@@ -18,6 +19,7 @@ export function AtAGlance({
   region = "Phoenix Metro & San Diego County",
   minGuests = 25,
   maxGuests = 2500,
+  guestCount,
   leadTime = "24–72 hrs (drop-off) · 4–8 weeks (full-service) · 6–12 months (peak weddings)",
   priceFrom = "$12.99 / guest (wood-fired) · $74 / guest (steakhouse)",
   className = "",
