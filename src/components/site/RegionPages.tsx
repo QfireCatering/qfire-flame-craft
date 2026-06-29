@@ -599,6 +599,7 @@ function RegionGallery({ regionKey }: { regionKey: RegionKey }) {
           </div>
         </div>
       </section>
+      <DefinitiveContent {...definitiveCopy.gallery} topic={`${r.shortName} Event Gallery`} region={r.metro} />
       <CTASection />
     </>
   );
