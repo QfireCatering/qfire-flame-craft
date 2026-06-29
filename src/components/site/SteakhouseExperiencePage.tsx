@@ -326,6 +326,12 @@ export function SteakhouseExperiencePage({ r }: { r: RegionCopy }) {
         </div>
       </section>
 
+      <DefinitiveContent
+        topic={`${r.region} Signature Live Fire Steakhouse Catering`}
+        region={`${r.region} events`}
+        {...definitiveCopy.steakhouse}
+      />
+
       <FAQSection
         eyebrow={`${r.region} Steakhouse Catering FAQ`}
         title="The premium steakhouse experience — answered."
