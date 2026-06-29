@@ -69,6 +69,10 @@ export function weddingConfig(o: ServiceTemplateOptions = {}): ServicePageConfig
         { title: "Sides & Bread", items: ["Gourmet Mac & Cheese", "BBQ Daddy Baked Beans", "Potato Salad, herb-infused dressing", "Gourmet Macaroni Pasta Salad", "Elotes (Mexican Street Corn Salad)", "Southern Smothered Cabbage", "Collard Greens", "Garden Salad / Caesar Salad", "Mashed Potatoes", "Spanish Rice & Frijoles Negros", "Loaded Red Mashed Potatoes (+$2)", "Grilled Asparagus (+$2)", "Buttered Bread Rolls (+$1.99)"] },
         { title: "Appetizers & Desserts", items: ["Fruit Platter", "Veggie Platter", "Assorted Cheese & Crackers", "BBQ Daddy Meatballs", "Bacon-Wrapped Italian Meatballs (+$3)", "Chips, Salsa, Guac & Pico (+$2)", "Peach Cobbler", "German Chocolate Cake", "Chocolate Cake / Vanilla Cake", "Double Fudge Brownies", "Assorted Fresh-Baked Cookies", "Sweet Tea, Lemonade, Arnold Palmer"] },
       ],
+      ctaLabel: "Click Here to View Menu and Pricing",
+      ctaUrl: o.regionShort === "San Diego"
+        ? "https://fs17.formsite.com/matthews3404/SanDiego/index"
+        : "https://fs17.formsite.com/matthews3404/BBQDADDYLLC/index",
     },
     galleryImages: o.regionShort === "Phoenix" ? phoenixWeddingGallery : galleryAll.slice(0, 8),
     reviews: [
