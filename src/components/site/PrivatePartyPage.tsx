@@ -14,6 +14,15 @@ import weddingAsset from "@/assets/wedding-couple.png.asset.json";
 import chefAsset from "@/assets/chef-terry.jpg.asset.json";
 import heroFire from "@/assets/hero-fire.jpg";
 import buffet from "@/assets/buffet.jpg";
+import pxp1 from "@/assets/gallery/phoenix-private/IMG_5806.jpg.asset.json";
+import pxp2 from "@/assets/gallery/phoenix-private/IMG_5809.jpg.asset.json";
+import pxp3 from "@/assets/gallery/phoenix-private/IMG_5811.jpg.asset.json";
+import pxp4 from "@/assets/gallery/phoenix-private/IMG_5812.jpg.asset.json";
+import pxp5 from "@/assets/gallery/phoenix-private/IMG_5814.jpg.asset.json";
+import pxp6 from "@/assets/gallery/phoenix-private/IMG_5815.jpg.asset.json";
+import pxp7 from "@/assets/gallery/phoenix-private/IMG_5816.jpg.asset.json";
+import pxp8 from "@/assets/gallery/phoenix-private/private.png.asset.json";
+const phoenixPrivateImgs = [pxp1.url, pxp2.url, pxp3.url, pxp4.url, pxp5.url, pxp6.url, pxp7.url, pxp8.url];
 
 const hero = privatePartyHero.url;
 const setting = privatePartyAsset.url;
