@@ -16,6 +16,12 @@ import bf5 from "@/assets/behind-fire/bf5.jpg.asset.json";
 import bf6 from "@/assets/behind-fire/bf6.jpg.asset.json";
 import bf7 from "@/assets/behind-fire/bf7.jpg.asset.json";
 import bf8 from "@/assets/behind-fire/bf8.jpg.asset.json";
+import bf9 from "@/assets/behind-fire/IMG_0862.jpg.asset.json";
+import bf10 from "@/assets/behind-fire/IMG_0863.jpg.asset.json";
+import bf11 from "@/assets/behind-fire/IMG_0873.jpg.asset.json";
+import bf12 from "@/assets/behind-fire/IMG_0874.jpg.asset.json";
+import bf13 from "@/assets/behind-fire/IMG_2395.jpg.asset.json";
+import bf14 from "@/assets/behind-fire/IMG_5739.jpg.asset.json";
 import { CTASection } from "@/components/site/Sections";
 import { DefinitiveContent } from "@/components/site/DefinitiveContent";
 import { definitiveCopy } from "@/lib/definitive-copy";
@@ -36,6 +42,12 @@ const chefGallery = [
   { src: bf6.url, alt: "Chef Terry with bride and groom on the dance floor — Qfire wedding catering" },
   { src: bf7.url, alt: "Chef Terry with newlyweds at an elegant reception — Qfire Catering" },
   { src: bf8.url, alt: "Chef Terry with bride and groom at an Arizona backyard wedding — Qfire Catering" },
+  { src: bf9.url, alt: "Chef Terry with bride and groom under string lights at an evening reception — Qfire wedding catering" },
+  { src: bf10.url, alt: "Chef Terry celebrating beside the wedding cake with the newlyweds — Qfire Catering" },
+  { src: bf11.url, alt: "Chef Terry with bride, groom and ring bearer under twinkle lights — Qfire wedding catering" },
+  { src: bf12.url, alt: "Chef Terry with bride and groom at a rustic barn wedding — Qfire Catering" },
+  { src: bf13.url, alt: "Chef Terry lifted by bride and groom on the dance floor — Qfire wedding catering" },
+  { src: bf14.url, alt: "Chef Terry with bride and groom at an outdoor destination reception — Qfire Catering" },
 ];
 
 
