@@ -124,7 +124,7 @@ export function corporateConfig(o: ServiceTemplateOptions = {}): ServicePageConf
       { title: "Holiday Parties", body: "End-of-year galas with full beverage service." },
       { title: "Box Lunches & Drop-Off", body: "Premium daytime catering for board meetings and retreats." },
     ],
-    galleryImages: [corporateReal, corporate, steak, buffet, brisket, weddingReal, heroFire, weddingTable],
+    galleryImages: o.regionShort === "Phoenix" ? phoenixCorporateGallery : [corporateReal, corporate, steak, buffet, brisket, weddingReal, heroFire, weddingTable],
     showGalleryLink: false,
     reviews: [
       { q: "Our annual partner dinner — 140 plated steaks, served hot, served right. Qfire raised the bar permanently.", a: "David K.", e: r ? `${r} Investment Firm` : "La Jolla Investment Firm" },
