@@ -553,11 +553,20 @@ function RegionGallery({ regionKey }: { regionKey: RegionKey }) {
       <section className="py-16">
         <div className="container-luxe">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
-            {imgs.map((img, i) => (
-              <div key={i} className="relative aspect-square overflow-hidden group">
-                <img src={img} alt="" loading="lazy" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-              </div>
-            ))}
+            {imgs.map((img, i) => {
+              const types = ["wedding reception", "corporate dinner", "private party", "live-fire grilling station", "wood-fire buffet", "plated steakhouse dinner"];
+              const type = types[i % types.length];
+              return (
+                <div key={i} className="relative aspect-square overflow-hidden group">
+                  <img
+                    src={img}
+                    alt={`${r.shortName} ${type} catered by Qfire Catering — ${r.metro} luxury event photo ${i + 1}`}
+                    loading="lazy"
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
