@@ -479,3 +479,70 @@ export const definitiveCopy: Record<string, Preset> = {
     ctaLabel: "Talk With Chef Terry",
   },
 };
+
+// Generic regional preset — covers all services for region root pages.
+definitiveCopy.region = {
+  explainer:
+    "Qfire is a chef-led, Food-Network-pedigreed catering company built around real fire, real proteins, and real service. We cater weddings, corporate events, private parties, and large-format galas with the same standards top steakhouses run their dining rooms by — and we do it in your venue, your home, or your office.",
+  explainerLong:
+    "Every event is personally menu-designed by Chef Terry Matthews. Every kitchen line is led by a senior chef. Every proposal is itemized. Every event ends with a clean venue and a follow-up note. That consistency is the whole product.",
+  included: [
+    "Custom menu personally designed by Chef Terry",
+    "Premium proteins (Wood-Fire BBQ, Live-Fire Steakhouse, surf & turf)",
+    "Buffet, family-style, plated, or stationed service",
+    "Chef-attended live-fire grilling on-site",
+    "Uniformed, polished service staff",
+    "Full setup, refresh, and breakdown",
+    "Disposable Dinnerware or upgraded china/glassware rentals",
+    "Linen-draped buffet and chafing equipment",
+    "Optional bar program with licensed bartenders",
+    "Travel and on-site logistics handled end-to-end",
+    "Dietary coverage built into every menu",
+    "Single point of contact through event day",
+  ],
+  planningTips: [
+    { title: "Tell us the goal of the event", body: "An anniversary feels different from a launch party. The right menu and service style start from what the night is supposed to feel like." },
+    { title: "Match service style to the room", body: "Buffet for energy, plated for elegance, family-style for intimacy, stations for movement. Tell us the room — we'll match it." },
+    { title: "Pick one signature moment", body: "A live carving station, a chef-attended raw bar, a late-night brisket slider drop. One memorable beat beats six average ones." },
+    { title: "Plan the dietary minority up front", body: "GF, vegetarian, vegan, allergy-specific — built in from day one, not patched on at the end." },
+    { title: "Reserve early", body: "Premium dates fill 6–14 months out. Lock the date with a small deposit and refine the menu over time." },
+    { title: "Use one vendor for food, bar, rentals", body: "One contract, one team, one timeline. Easier to coordinate, cleaner to budget, calmer on event day." },
+  ],
+  bookingSteps: [
+    { title: "Inquiry", body: "Share date, venue, headcount, and the vibe you want." },
+    { title: "Discovery call", body: "Quick call with our team — and often Chef Terry directly — to align on menu and service style." },
+    { title: "Custom proposal", body: "Itemized PDF proposal in a few business days." },
+    { title: "Reserve the date", body: "Deposit applied directly to your final invoice." },
+    { title: "Refine the menu", body: "Refine over the next weeks or months as planning evolves." },
+    { title: "Lock final details", body: "Final headcount, dietary counts, and timeline 7–14 days out." },
+    { title: "Event day", body: "On-time arrival, calm execution, restaurant-grade plating, full breakdown." },
+  ],
+  expectations: {
+    before: [
+      "Inquiry response within 24 hours",
+      "Itemized proposal within a few business days",
+      "Menu refinement across multiple touches",
+      "Site visit available for unfamiliar venues",
+      "Final lock 14 days before the event",
+    ],
+    during: [
+      "On-time arrival and clean setup",
+      "Chef-attended grilling and plating",
+      "Polished, uniformed service staff",
+      "Hot food on cue and on standard",
+      "Calm kitchen energy at any scale",
+    ],
+    after: [
+      "Buffet broken down without disruption",
+      "All Qfire equipment removed",
+      "Trash bagged and hauled per venue policy",
+      "Final walkthrough with you or your planner",
+      "Follow-up email within 48 hours",
+    ],
+  },
+  differentiators: baseRegionDifferentiators,
+  confidence: baseConfidence,
+  extraFaqs: regionExtraFaqs,
+  ctaLabel: "Request a Quote",
+};
+
