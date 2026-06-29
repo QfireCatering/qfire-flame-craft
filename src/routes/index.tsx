@@ -143,14 +143,14 @@ function Home() {
             <div className="eyebrow">Featured on Food Network</div>
           </div>
           <h1 className="heading-xl text-bone max-w-5xl">
-            <span className="text-gold italic font-light">Qfire</span> Catering.
+            <span className="text-gold italic font-light">BBQ</span> & Wood-Fire Catering.
             <br />
-            Wood-fired,
+            Steakhouse polish,
             <br />
             <span className="text-bone/70">unforgettable.</span>
           </h1>
-          <p className="mt-10 max-w-xl text-xl text-bone/80 leading-relaxed font-light">
-            Full-service catering for weddings, corporate events and private parties.
+          <p className="mt-10 max-w-2xl text-xl text-bone/80 leading-relaxed font-light">
+            Full-service BBQ catering, wood-fired catering and steakhouse catering for weddings, corporate events and private parties — Phoenix Metro &amp; San Diego County.
           </p>
           <p className="mt-3 max-w-xl text-base text-bone/60 italic">
             Wood-fired flavors. Professional service. Stress-free execution.
