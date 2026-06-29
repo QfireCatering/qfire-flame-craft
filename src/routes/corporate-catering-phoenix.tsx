@@ -12,6 +12,7 @@ const config: CorporateRegionConfig = {
     "Glendale", "Peoria", "Goodyear", "Avondale", "Surprise",
     "Queen Creek", "Paradise Valley", "Buckeye", "Litchfield Park",
     "Cave Creek", "Fountain Hills", "Apache Junction",
+    "Sedona", "Tucson", "Flagstaff", "Pinetop",
   ],
   reviewCities: ["Scottsdale", "Tempe", "Phoenix", "Chandler"],
   heroImage: phoenixCorpHero.url,
