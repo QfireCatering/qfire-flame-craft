@@ -137,7 +137,7 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
     { q: `Qfire turned my 50th birthday into the party of the year. The live grilling out back, the charcoal-grilled steakhouse experience plates, the bartender — every guest is still talking about it.`, a: "Lauren P.", e: `${reviewCities[0]} · 50th Birthday` },
     { q: `We hosted a 140-person family reunion in ${regionShort}. The buffet was beautiful, the food was incredible, and not one of us lifted a finger. Worth every penny.`, a: "The Alvarez Family", e: `${reviewCities[1] ?? reviewCities[0]} · Family Reunion` },
     { q: "The live charcoal grilling at our backyard anniversary party was magical. Guests gathered around the grill all night. Chef Terry is the real deal.", a: "Michael & Diana K.", e: `${reviewCities[2] ?? reviewCities[0]} · 25th Anniversary` },
-    { q: "Plated dinner for my husband's surprise 60th. Twenty-six guests, full premium live-fire dining service in our home. It felt like Mastro's came to us.", a: "Jennifer S.", e: `${reviewCities[3] ?? reviewCities[0]} · Milestone Birthday` },
+    { q: "Plated dinner for my husband's surprise 60th. Twenty-six guests, full premium live-fire dining service in our home. It felt like a true steakhouse came to us.", a: "Jennifer S.", e: `${reviewCities[3] ?? reviewCities[0]} · Milestone Birthday` },
     { q: "From quote to cleanup, the entire team was unbelievably professional. My graduation party for our daughter was flawless.", a: "Robert M.", e: `${reviewCities[0]} · Graduation Party` },
     { q: "We've used Qfire three times now — pool party, holiday party, and our anniversary. They never miss. Easiest hosting we've ever done.", a: "The Whitfield Family", e: `${region} · Repeat Client` },
   ];
