@@ -478,6 +478,7 @@ function RegionHoliday({ regionKey }: { regionKey: RegionKey }) {
         </div>
       </section>
 
+      <DefinitiveContent {...definitiveCopy.holiday} topic={`${r.shortName} Holiday Catering`} region={r.metro} />
       <CTASection title="Make this holiday the one they remember." />
     </>
   );
