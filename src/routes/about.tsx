@@ -112,12 +112,15 @@ function AboutPage() {
       </section>
 
       <section className="py-24 lg:py-32">
-        <div className="container-luxe grid lg:grid-cols-2 gap-2">
-          <div className="relative aspect-[4/5] overflow-hidden">
-            <img src={heroFire} alt="Chef Terry at the fire" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
-          </div>
-          <div className="relative aspect-[4/5] overflow-hidden">
-            <img src={brisket} alt="Brisket" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="container-luxe">
+          <div className="eyebrow mb-6">Behind The Fire</div>
+          <h2 className="heading-lg text-bone mb-12 max-w-3xl">A look at <span className="italic font-light text-gold">Chef Terry</span> in his element.</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+            {chefGallery.map((img, i) => (
+              <div key={i} className={`relative overflow-hidden ${i === 0 ? "col-span-2 row-span-2 aspect-square" : "aspect-[4/5]"}`}>
+                <img src={img.src} alt={img.alt} loading="lazy" decoding="async" className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+              </div>
+            ))}
           </div>
         </div>
       </section>
