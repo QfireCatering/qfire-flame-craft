@@ -375,6 +375,17 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
         {...definitiveCopy.region}
       />
 
+      <ObjectionBuster
+        eyebrow={`Before You Book In ${r.shortName}`}
+        title="The hesitations every client mentions — handled."
+        ctaLabel={`Request My ${r.shortName} Quote`}
+      />
+
+      <BookingProcess
+        eyebrow={`${r.shortName} Booking Is Simple`}
+        title="From request to event day — exactly what happens."
+      />
+
       <CTASection title={`Let's plan your ${r.shortName} event.`} />
     </>
   );
