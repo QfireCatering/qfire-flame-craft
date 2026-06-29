@@ -7,6 +7,7 @@ const tiers = [
   {
     name: "Wood-Fired",
     href: "/wood-fired",
+    cta: "See the Wood-Fire Menu",
     headline: "From $12.99 / guest (Phoenix) · From $15.99 / guest (San Diego)",
     blurb:
       "Slow-smoked brisket, tri-tip, pulled pork, and wood-fired chicken. Comfort sides. Fresh-baked rolls. House sauces.",
@@ -20,6 +21,7 @@ const tiers = [
   {
     name: "Signature Live Fire Steakhouse Catering Experience",
     href: "/steakhouse",
+    cta: "Tour the Steakhouse Experience",
     headline: "From $74 / guest (Buffet) · $128 / guest (Plated)",
     blurb:
       "Charcoal-grilled ribeye, NY strip, filet, picanha, salmon, surf & turf. White-glove plating.",
@@ -77,7 +79,7 @@ function PricingPage() {
         image={heroFire}
       >
         <Link to="/quote" className="btn-primary">
-          Request Custom Quote <ArrowRight className="size-4" />
+          Get My Itemized Proposal <ArrowRight className="size-4" />
         </Link>
       </PageHero>
 
@@ -97,7 +99,7 @@ function PricingPage() {
                   ))}
                 </ul>
                 <Link to={t.href} className="btn-ghost mt-auto">
-                  See Full Menu <ArrowRight className="size-4" />
+                  {t.cta} <ArrowRight className="size-4" />
                 </Link>
               </div>
             ))}
