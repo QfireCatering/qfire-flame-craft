@@ -340,6 +340,25 @@ export function SteakhouseExperiencePage({ r }: { r: RegionCopy }) {
         faqs={steakFaqs}
       />
 
+      <ObjectionBuster
+        eyebrow={`Before You Book Your ${r.region} Steakhouse Experience`}
+        title="What every client wonders before stepping into prime cuts — answered."
+        ctaLabel={`Request My ${r.region} Steakhouse Quote`}
+        items={[
+          { q: "Are the steaks really cooked on-site?", a: "Yes — every ribeye, NY strip, filet, T-bone and picanha is grilled live over charcoal at your venue. Guests watch, smell and taste the difference." },
+          { q: "Is this a real steakhouse menu, or just nicer BBQ?", a: "Real steakhouse. Prime and Choice cuts, surf & turf, sides like truffle mac, lobster mashed, asparagus, and a full chef-served line — built to rival Mastro's, Ruth's Chris and Capital Grille at your event." },
+          { q: "What's the price per person, and what's included?", a: "Three clear tiers cover most events. Each includes uniformed staff, on-site grilling, full setup, service and cleanup. Upgrades (lobster, oysters, premium bar) are itemized — no surprise add-ons." },
+          { q: "What's the minimum guest count?", a: "Most steakhouse experiences start around 25 guests. Smaller VIP dinners are possible — just call and we'll tell you what's realistic for your group." },
+          { q: "Can the menu accommodate dietary restrictions?", a: "Always. Gluten-free, pescatarian, vegetarian, allergen-aware courses are built into every proposal at no extra charge." },
+          { q: "Are you licensed, insured and venue-approved?", a: "Fully licensed, fully insured, COI-ready for any country club, resort, estate or HOA. Venues across both regions already know our name." },
+        ]}
+      />
+
+      <BookingProcess
+        eyebrow="Booking The Steakhouse Experience"
+        title="From first inquiry to first cut — exactly how it works."
+      />
+
       {/* DARK CTA */}
       <section className="relative py-32 lg:py-40 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-ink via-charcoal/40 to-ink" />
