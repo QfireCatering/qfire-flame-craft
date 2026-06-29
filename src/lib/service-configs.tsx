@@ -22,7 +22,7 @@ import type { ServicePageConfig } from "@/components/site/ServicePage";
 
 import pxwBg from "@/assets/gallery/phoenix-weddings/set_up_background.png.asset.json";
 import pxwCouple from "@/assets/gallery/phoenix-weddings/couple_eating-2.avif.asset.json";
-import pxwBride from "@/assets/gallery/phoenix-weddings/couple_bride_groom-3.avif.asset.json";
+import pxwBride from "@/assets/gallery/phoenix-weddings/smoked_brisket_station.avif.asset.json";
 import pxwGrill from "@/assets/gallery/phoenix-weddings/onsite_grill2-2.avif.asset.json";
 import pxwFruit from "@/assets/gallery/phoenix-weddings/fruit_veggie_platter.avif.asset.json";
 import pxwSetup6 from "@/assets/gallery/phoenix-weddings/set_up6.avif.asset.json";
