@@ -553,11 +553,20 @@ function RegionGallery({ regionKey }: { regionKey: RegionKey }) {
       <section className="py-16">
         <div className="container-luxe">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
-            {imgs.map((img, i) => (
-              <div key={i} className="relative aspect-square overflow-hidden group">
-                <img src={img} alt="" loading="lazy" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-              </div>
-            ))}
+            {imgs.map((img, i) => {
+              const types = ["wedding reception", "corporate dinner", "private party", "live-fire grilling station", "wood-fire buffet", "plated steakhouse dinner"];
+              const type = types[i % types.length];
+              return (
+                <div key={i} className="relative aspect-square overflow-hidden group">
+                  <img
+                    src={img}
+                    alt={`${r.shortName} ${type} catered by Qfire Catering — ${r.metro} luxury event photo ${i + 1}`}
+                    loading="lazy"
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -662,7 +671,7 @@ function RegionBlog({ regionKey }: { regionKey: RegionKey }) {
           {posts.map((p, i) => (
             <div key={i} className="group">
               <div className="relative aspect-[4/3] overflow-hidden mb-5">
-                <img src={p.img} alt="" loading="lazy" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <img src={p.img} alt={`${p.cat} — ${p.title} | Qfire Catering ${r.shortName}`} loading="lazy" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               </div>
               <div className="text-[0.6rem] tracking-[0.3em] uppercase text-gold mb-3">{p.cat}</div>
               <h3 className="text-2xl font-display text-bone group-hover:text-gold transition-colors">{p.title}</h3>

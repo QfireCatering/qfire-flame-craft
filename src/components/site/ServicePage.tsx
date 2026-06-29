@@ -154,7 +154,12 @@ export function ServicePage({ config, regionKey }: { config: ServicePageConfig; 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-1">
             {config.galleryImages.map((img, i) => (
               <div key={i} className="relative aspect-square overflow-hidden group">
-                <img src={img} alt="" loading="lazy" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                <img
+                  src={img}
+                  alt={`${config.eyebrow} by Qfire Catering${regionKey ? ` in ${regionKey === "phoenix" ? "Phoenix Metro" : "San Diego County"}` : ""} — recent event photo ${i + 1}`}
+                  loading="lazy"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
               </div>
             ))}
           </div>
