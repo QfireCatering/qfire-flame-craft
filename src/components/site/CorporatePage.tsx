@@ -4,6 +4,7 @@ import { DefinitiveContent } from "./DefinitiveContent";
 import { definitiveCopy } from "@/lib/definitive-copy";
 import { BookingProcess } from "./BookingProcess";
 import { ObjectionBuster } from "./ObjectionBuster";
+import { RegionalPricing } from "./RegionalPricing";
 import asSeenOnBadge from "@/assets/as-seen-on-food-network.png.asset.json";
 import { GuestScaleStat } from "./GuestScaleStat";
 import corpSetupBg from "@/assets/corporate/corp-setup-bg.png.asset.json";
