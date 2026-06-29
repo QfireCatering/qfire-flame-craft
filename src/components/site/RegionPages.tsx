@@ -268,7 +268,7 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
                   </a>
                 );
               }
-              if (s.slug === "Signature Live Fire Steakhouse Catering") {
+              if (s.slug === "steakhouse") {
                 return (
                   <Link key={s.slug} to={regionKey === "phoenix" ? "/steak-seafood-menu" : "/steak-seafood-menu-san-diego"} className={cardClass}>
                     {cardBody}
