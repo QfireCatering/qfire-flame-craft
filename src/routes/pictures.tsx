@@ -16,6 +16,10 @@ import onsiteGrillMahi from "@/assets/gallery/pictures-page/onsite-grill-mahi.av
 import setUp1 from "@/assets/gallery/pictures-page/set-up-1.avif.asset.json";
 import setUp2 from "@/assets/gallery/pictures-page/set-up-2.avif.asset.json";
 import jobsiteTacos from "@/assets/gallery/pictures-page/jobsite-tacos.jpg.asset.json";
+import kabob from "@/assets/gallery/pictures-page/kabob.png.asset.json";
+import peachCobbler from "@/assets/gallery/pictures-page/peach-cobbler.avif.asset.json";
+import setUp6 from "@/assets/gallery/pictures-page/set-up-6.avif.asset.json";
+import weddingBuffetTower from "@/assets/gallery/pictures-page/wedding-buffet-tower.jpg.asset.json";
 
 export const Route = createFileRoute("/pictures")({
   head: () => ({
