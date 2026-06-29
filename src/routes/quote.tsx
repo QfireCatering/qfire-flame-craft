@@ -86,10 +86,10 @@ function QuotePage() {
     <div className="min-h-screen grid lg:grid-cols-[1.1fr_1fr] relative">
       <div className="absolute inset-0 z-0">
         <img src={meatPageBg.url} alt="" className="absolute inset-0 w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-black/75" />
+        <div className="absolute inset-0 bg-black/90" />
       </div>
       <div className="relative z-10 hidden lg:block">
-        <div className="absolute inset-0 flex items-end p-16">
+        <div className="absolute inset-0 flex items-start p-16 pt-20">
           <div>
             <div className="eyebrow mb-8">Request a Quote</div>
             <h1 className="heading-lg text-bone max-w-md">Tell us about your event.</h1>
@@ -120,7 +120,7 @@ function QuotePage() {
       </div>
 
       <div className="relative z-10 flex items-center justify-center p-8 lg:p-16 pt-32 lg:pt-16">
-        <div className="w-full max-w-lg mt-24">
+        <div className="w-full max-w-2xl mt-10">
           {state === "sent" ? (
             <div className="border border-gold/40 p-10 text-center">
               <div className="text-gold text-5xl font-display mb-4">Thank you.</div>
