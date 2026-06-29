@@ -313,18 +313,16 @@ export const definitiveCopy: Record<string, Preset> = {
       { title: "Inquiry", body: "Share date, venue, guest count, and protein direction." },
       { title: "Discovery call", body: "15–20 minute call with Chef Terry to align on menu and service style." },
       { title: "Itemized proposal", body: "Sent within a few business days — food, service, rentals, travel, gratuity all transparent." },
-      { title: "Reserve the date", body: "Date-charge applied directly to your final invoice." },
-      { title: "Tasting (optional)", body: "Private tasting at our chef's table for couples and clients on larger events." },
-      { title: "Final menu lock (30 days out)", body: "Confirm protein mix, sides, sauces, and doneness counts." },
+      { title: "Reserve the date", body: "35% Date Charge secures your event date and credits to your final invoice." },
+      { title: "Final menu lock (2 weeks out)", body: "Final guest count, protein mix, sides, sauces, and doneness counts locked in 2 weeks prior to your event." },
       { title: "Event night", body: "On-time arrival, calm grill line, restaurant-grade plating, full breakdown." },
     ],
     expectations: {
       before: [
         "Quote within 3–5 business days",
-        "Tasting available on request",
         "Menu refined across multiple touches",
         "Site visit for unfamiliar venues",
-        "Final doneness counts confirmed 30 days out",
+        "Final doneness counts confirmed 2 weeks out",
       ],
       during: [
         "Live charcoal grills running on-site",
