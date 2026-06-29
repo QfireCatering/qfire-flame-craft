@@ -82,21 +82,21 @@ const TermsRoute = TermsRouteImport.update({
   path: '/terms',
   getParentRoute: () => rootRouteImport,
 } as any)
-const Signature Live Fire Steakhouse CateringExperienceSanDiegoRoute =
-  Signature Live Fire Steakhouse CateringExperienceSanDiegoRouteImport.update({
-    id: '/Signature Live Fire Steakhouse Catering-experience-san-diego',
-    path: '/Signature Live Fire Steakhouse Catering-experience-san-diego',
+const SteakhouseExperienceSanDiegoRoute =
+  SteakhouseExperienceSanDiegoRouteImport.update({
+    id: '/steakhouse-experience-san-diego',
+    path: '/steakhouse-experience-san-diego',
     getParentRoute: () => rootRouteImport,
   } as any)
-const Signature Live Fire Steakhouse CateringExperiencePhoenixRoute =
-  Signature Live Fire Steakhouse CateringExperiencePhoenixRouteImport.update({
-    id: '/Signature Live Fire Steakhouse Catering-experience-phoenix',
-    path: '/Signature Live Fire Steakhouse Catering-experience-phoenix',
+const SteakhouseExperiencePhoenixRoute =
+  SteakhouseExperiencePhoenixRouteImport.update({
+    id: '/steakhouse-experience-phoenix',
+    path: '/steakhouse-experience-phoenix',
     getParentRoute: () => rootRouteImport,
   } as any)
-const Signature Live Fire Steakhouse CateringRoute = Signature Live Fire Steakhouse CateringRouteImport.update({
-  id: '/Signature Live Fire Steakhouse Catering',
-  path: '/Signature Live Fire Steakhouse Catering',
+const SteakhouseRoute = SteakhouseRouteImport.update({
+  id: '/steakhouse',
+  path: '/steakhouse',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SteakSeafoodMenuSanDiegoRoute =
@@ -299,9 +299,9 @@ export interface FileRoutesByFullPath {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/steak-seafood-menu': typeof SteakSeafoodMenuRoute
   '/steak-seafood-menu-san-diego': typeof SteakSeafoodMenuSanDiegoRoute
-  '/Signature Live Fire Steakhouse Catering': typeof Signature Live Fire Steakhouse CateringRoute
-  '/Signature Live Fire Steakhouse Catering-experience-phoenix': typeof Signature Live Fire Steakhouse CateringExperiencePhoenixRoute
-  '/Signature Live Fire Steakhouse Catering-experience-san-diego': typeof Signature Live Fire Steakhouse CateringExperienceSanDiegoRoute
+  '/steakhouse': typeof SteakhouseRoute
+  '/steakhouse-experience-phoenix': typeof SteakhouseExperiencePhoenixRoute
+  '/steakhouse-experience-san-diego': typeof SteakhouseExperienceSanDiegoRoute
   '/terms': typeof TermsRoute
   '/wedding-catering-phoenix': typeof WeddingCateringPhoenixRoute
   '/wedding-catering-san-diego': typeof WeddingCateringSanDiegoRoute
@@ -341,9 +341,9 @@ export interface FileRoutesByTo {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/steak-seafood-menu': typeof SteakSeafoodMenuRoute
   '/steak-seafood-menu-san-diego': typeof SteakSeafoodMenuSanDiegoRoute
-  '/Signature Live Fire Steakhouse Catering': typeof Signature Live Fire Steakhouse CateringRoute
-  '/Signature Live Fire Steakhouse Catering-experience-phoenix': typeof Signature Live Fire Steakhouse CateringExperiencePhoenixRoute
-  '/Signature Live Fire Steakhouse Catering-experience-san-diego': typeof Signature Live Fire Steakhouse CateringExperienceSanDiegoRoute
+  '/steakhouse': typeof SteakhouseRoute
+  '/steakhouse-experience-phoenix': typeof SteakhouseExperiencePhoenixRoute
+  '/steakhouse-experience-san-diego': typeof SteakhouseExperienceSanDiegoRoute
   '/terms': typeof TermsRoute
   '/wedding-catering-phoenix': typeof WeddingCateringPhoenixRoute
   '/wedding-catering-san-diego': typeof WeddingCateringSanDiegoRoute
@@ -386,9 +386,9 @@ export interface FileRoutesById {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/steak-seafood-menu': typeof SteakSeafoodMenuRoute
   '/steak-seafood-menu-san-diego': typeof SteakSeafoodMenuSanDiegoRoute
-  '/Signature Live Fire Steakhouse Catering': typeof Signature Live Fire Steakhouse CateringRoute
-  '/Signature Live Fire Steakhouse Catering-experience-phoenix': typeof Signature Live Fire Steakhouse CateringExperiencePhoenixRoute
-  '/Signature Live Fire Steakhouse Catering-experience-san-diego': typeof Signature Live Fire Steakhouse CateringExperienceSanDiegoRoute
+  '/steakhouse': typeof SteakhouseRoute
+  '/steakhouse-experience-phoenix': typeof SteakhouseExperiencePhoenixRoute
+  '/steakhouse-experience-san-diego': typeof SteakhouseExperienceSanDiegoRoute
   '/terms': typeof TermsRoute
   '/wedding-catering-phoenix': typeof WeddingCateringPhoenixRoute
   '/wedding-catering-san-diego': typeof WeddingCateringSanDiegoRoute
@@ -432,9 +432,9 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/steak-seafood-menu'
     | '/steak-seafood-menu-san-diego'
-    | '/Signature Live Fire Steakhouse Catering'
-    | '/Signature Live Fire Steakhouse Catering-experience-phoenix'
-    | '/Signature Live Fire Steakhouse Catering-experience-san-diego'
+    | '/steakhouse'
+    | '/steakhouse-experience-phoenix'
+    | '/steakhouse-experience-san-diego'
     | '/terms'
     | '/wedding-catering-phoenix'
     | '/wedding-catering-san-diego'
@@ -474,9 +474,9 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/steak-seafood-menu'
     | '/steak-seafood-menu-san-diego'
-    | '/Signature Live Fire Steakhouse Catering'
-    | '/Signature Live Fire Steakhouse Catering-experience-phoenix'
-    | '/Signature Live Fire Steakhouse Catering-experience-san-diego'
+    | '/steakhouse'
+    | '/steakhouse-experience-phoenix'
+    | '/steakhouse-experience-san-diego'
     | '/terms'
     | '/wedding-catering-phoenix'
     | '/wedding-catering-san-diego'
@@ -518,9 +518,9 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/steak-seafood-menu'
     | '/steak-seafood-menu-san-diego'
-    | '/Signature Live Fire Steakhouse Catering'
-    | '/Signature Live Fire Steakhouse Catering-experience-phoenix'
-    | '/Signature Live Fire Steakhouse Catering-experience-san-diego'
+    | '/steakhouse'
+    | '/steakhouse-experience-phoenix'
+    | '/steakhouse-experience-san-diego'
     | '/terms'
     | '/wedding-catering-phoenix'
     | '/wedding-catering-san-diego'
@@ -563,9 +563,9 @@ export interface RootRouteChildren {
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   SteakSeafoodMenuRoute: typeof SteakSeafoodMenuRoute
   SteakSeafoodMenuSanDiegoRoute: typeof SteakSeafoodMenuSanDiegoRoute
-  Signature Live Fire Steakhouse CateringRoute: typeof Signature Live Fire Steakhouse CateringRoute
-  Signature Live Fire Steakhouse CateringExperiencePhoenixRoute: typeof Signature Live Fire Steakhouse CateringExperiencePhoenixRoute
-  Signature Live Fire Steakhouse CateringExperienceSanDiegoRoute: typeof Signature Live Fire Steakhouse CateringExperienceSanDiegoRoute
+  SteakhouseRoute: typeof SteakhouseRoute
+  SteakhouseExperiencePhoenixRoute: typeof SteakhouseExperiencePhoenixRoute
+  SteakhouseExperienceSanDiegoRoute: typeof SteakhouseExperienceSanDiegoRoute
   TermsRoute: typeof TermsRoute
   WeddingCateringPhoenixRoute: typeof WeddingCateringPhoenixRoute
   WeddingCateringSanDiegoRoute: typeof WeddingCateringSanDiegoRoute
@@ -618,25 +618,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof TermsRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/Signature Live Fire Steakhouse Catering-experience-san-diego': {
-      id: '/Signature Live Fire Steakhouse Catering-experience-san-diego'
-      path: '/Signature Live Fire Steakhouse Catering-experience-san-diego'
-      fullPath: '/Signature Live Fire Steakhouse Catering-experience-san-diego'
-      preLoaderRoute: typeof Signature Live Fire Steakhouse CateringExperienceSanDiegoRouteImport
+    '/steakhouse-experience-san-diego': {
+      id: '/steakhouse-experience-san-diego'
+      path: '/steakhouse-experience-san-diego'
+      fullPath: '/steakhouse-experience-san-diego'
+      preLoaderRoute: typeof SteakhouseExperienceSanDiegoRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/Signature Live Fire Steakhouse Catering-experience-phoenix': {
-      id: '/Signature Live Fire Steakhouse Catering-experience-phoenix'
-      path: '/Signature Live Fire Steakhouse Catering-experience-phoenix'
-      fullPath: '/Signature Live Fire Steakhouse Catering-experience-phoenix'
-      preLoaderRoute: typeof Signature Live Fire Steakhouse CateringExperiencePhoenixRouteImport
+    '/steakhouse-experience-phoenix': {
+      id: '/steakhouse-experience-phoenix'
+      path: '/steakhouse-experience-phoenix'
+      fullPath: '/steakhouse-experience-phoenix'
+      preLoaderRoute: typeof SteakhouseExperiencePhoenixRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/Signature Live Fire Steakhouse Catering': {
-      id: '/Signature Live Fire Steakhouse Catering'
-      path: '/Signature Live Fire Steakhouse Catering'
-      fullPath: '/Signature Live Fire Steakhouse Catering'
-      preLoaderRoute: typeof Signature Live Fire Steakhouse CateringRouteImport
+    '/steakhouse': {
+      id: '/steakhouse'
+      path: '/steakhouse'
+      fullPath: '/steakhouse'
+      preLoaderRoute: typeof SteakhouseRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/steak-seafood-menu-san-diego': {
@@ -939,9 +939,9 @@ const rootRouteChildren: RootRouteChildren = {
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   SteakSeafoodMenuRoute: SteakSeafoodMenuRoute,
   SteakSeafoodMenuSanDiegoRoute: SteakSeafoodMenuSanDiegoRoute,
-  Signature Live Fire Steakhouse CateringRoute: Signature Live Fire Steakhouse CateringRoute,
-  Signature Live Fire Steakhouse CateringExperiencePhoenixRoute: Signature Live Fire Steakhouse CateringExperiencePhoenixRoute,
-  Signature Live Fire Steakhouse CateringExperienceSanDiegoRoute: Signature Live Fire Steakhouse CateringExperienceSanDiegoRoute,
+  SteakhouseRoute: SteakhouseRoute,
+  SteakhouseExperiencePhoenixRoute: SteakhouseExperiencePhoenixRoute,
+  SteakhouseExperienceSanDiegoRoute: SteakhouseExperienceSanDiegoRoute,
   TermsRoute: TermsRoute,
   WeddingCateringPhoenixRoute: WeddingCateringPhoenixRoute,
   WeddingCateringSanDiegoRoute: WeddingCateringSanDiegoRoute,
@@ -952,3 +952,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
