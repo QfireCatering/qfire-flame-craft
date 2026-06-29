@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { CorporatePage, type CorporateRegionConfig } from "@/components/site/CorporatePage";
+import phoenixCorpHero from "@/assets/corp-catering-split-phoenix.png.asset.json";
 
 const config: CorporateRegionConfig = {
   region: "Phoenix Metro",
