@@ -109,7 +109,7 @@ function BlogPostPage() {
         <div className="relative aspect-[16/8] overflow-hidden">
           <img
             src={post.image}
-            alt=""
+            alt={`${post.title} — Qfire Catering ${post.category} feature image`}
             className="absolute inset-0 w-full h-full object-cover"
           />
         </div>
