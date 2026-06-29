@@ -24,7 +24,7 @@ export function SteakhouseExperiencePage({ r }: { r: RegionCopy }) {
           <div className="absolute inset-0 bg-gradient-to-r from-ink/85 via-transparent to-transparent" />
         </div>
         <div className="container-luxe relative z-10 pt-40 pb-24 lg:pb-32">
-          <div className="eyebrow mb-8">Signature Live Fire Signature Live Fire Steakhouse Catering Catering · {r.region}</div>
+          <div className="eyebrow mb-8">Signature Live Fire Steakhouse Catering · {r.region}</div>
           <h1 className="heading-xl text-bone max-w-4xl">
             The Surf &amp; Turf Signature Live Fire Steakhouse Catering Experience<br />
             <span className="text-gold/90 italic font-light">brought to {r.city}.</span>
@@ -256,7 +256,7 @@ export function SteakhouseExperiencePage({ r }: { r: RegionCopy }) {
             <div className="grid md:grid-cols-3 gap-6">
               {[
                 { src: steakhouseMenu.url, alt: `Live charcoal grilling at a ${r.region} Signature Live Fire Steakhouse Catering catered event` },
-                { src: weddingCouple.url, alt: `Luxury ${r.city} wedding Signature Live Fire Signature Live Fire Steakhouse Catering Catering reception` },
+                { src: weddingCouple.url, alt: `Luxury ${r.city} wedding Signature Live Fire Steakhouse Catering reception` },
                 { src: steakhouseBackyard.url, alt: `Backyard ${r.region} Signature Live Fire Steakhouse Catering and surf & turf catering` },
               ].map((img) => (
                 <div key={img.alt} className="aspect-[4/5] overflow-hidden shadow-[0_30px_80px_-30px_rgba(0,0,0,0.35)]">
@@ -271,7 +271,7 @@ export function SteakhouseExperiencePage({ r }: { r: RegionCopy }) {
         <div className="border-t border-[#d9cdb3] bg-[#efe7d4]">
           <div className="container-luxe py-16 lg:py-20 text-center">
             <div className="eyebrow text-[#8a6a2a] justify-center mb-5">Proudly Serving</div>
-            <h3 className="font-display text-3xl md:text-4xl text-[#0d0d0d]">Signature Live Fire Signature Live Fire Steakhouse Catering Catering Across {r.region}</h3>
+            <h3 className="font-display text-3xl md:text-4xl text-[#0d0d0d]">Signature Live Fire Steakhouse Catering Across {r.region}</h3>
             <p className="mt-5 max-w-3xl mx-auto text-[#2a2a2a]/85 leading-relaxed">{r.serviceAreas}</p>
             <div className="mt-8 flex flex-wrap justify-center gap-2">
               {r.shortAreas.map((a) => (

@@ -194,7 +194,7 @@ export function woodFiredConfig(o: ServiceTemplateOptions = {}): ServicePageConf
 export function steakhouseConfig(o: ServiceTemplateOptions = {}): ServicePageConfig {
   const r = o.region;
   return {
-    eyebrow: r ? `${r} Signature Live Fire Signature Live Fire Steakhouse Catering Catering` : "Signature Live Fire Signature Live Fire Steakhouse Catering Catering",
+    eyebrow: r ? `${r} Signature Live Fire Steakhouse Catering` : "Signature Live Fire Steakhouse Catering",
     title: r ? <>{o.regionShort} <span className="italic text-gold font-light">Signature Live Fire Steakhouse Catering</span> catering.</> : <>The Signature Live Fire Steakhouse Catering Experience... <span className="italic text-gold font-light">Brought To You.</span></>,
     subtitle: r
       ? `Charcoal-grilled ribeye, New York strip, filet mignon, picanha, prime rib, salmon, and surf & turf served under candlelight with polished service and unforgettable presentation across ${r}. Perfect for luxury weddings, corporate dinners, and private events.`

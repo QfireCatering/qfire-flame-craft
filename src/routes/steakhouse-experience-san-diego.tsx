@@ -13,9 +13,9 @@ const r: RegionCopy = {
 export const Route = createFileRoute("/steakhouse-experience-san-diego")({
   head: () => ({
     meta: [
-      { title: "Signature Live Fire Signature Live Fire Steakhouse Catering Catering San Diego — Surf & Turf, Onsite Charcoal Grilling | Qfire" },
-      { name: "description", content: "Luxury Signature Live Fire Signature Live Fire Steakhouse Catering Catering across San Diego County. Ribeye, filet mignon, prime rib, salmon and lobster — grilled live onsite at La Jolla, Del Mar, Rancho Santa Fe and Coronado weddings, corporate events and private parties. Buffet from $79/pp · Plated from $133/pp." },
-      { property: "og:title", content: "Signature Live Fire Signature Live Fire Steakhouse Catering Catering San Diego | Qfire" },
+      { title: "Signature Live Fire Steakhouse Catering San Diego — Surf & Turf, Onsite Charcoal Grilling | Qfire" },
+      { name: "description", content: "Luxury Signature Live Fire Steakhouse Catering across San Diego County. Ribeye, filet mignon, prime rib, salmon and lobster — grilled live onsite at La Jolla, Del Mar, Rancho Santa Fe and Coronado weddings, corporate events and private parties. Buffet from $79/pp · Plated from $133/pp." },
+      { property: "og:title", content: "Signature Live Fire Steakhouse Catering San Diego | Qfire" },
       { property: "og:description", content: "Live charcoal grilling, surf & turf and white-glove service across San Diego County — weddings, corporate dinners and luxury private parties." },
       { property: "og:url", content: "/steakhouse-experience-san-diego" },
       { property: "og:image", content: steakhouseBackyard.url },
@@ -27,8 +27,8 @@ export const Route = createFileRoute("/steakhouse-experience-san-diego")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Service",
-          name: "Signature Live Fire Signature Live Fire Steakhouse Catering Catering — San Diego County",
-          serviceType: "Surf & Turf Signature Live Fire Signature Live Fire Steakhouse Catering Catering",
+          name: "Signature Live Fire Steakhouse Catering — San Diego County",
+          serviceType: "Surf & Turf Signature Live Fire Steakhouse Catering",
           provider: { "@type": "FoodEstablishment", name: "Qfire Catering" },
           areaServed: [
             { "@type": "City", name: "San Diego" },
@@ -45,9 +45,9 @@ export const Route = createFileRoute("/steakhouse-experience-san-diego")({
             { "@type": "City", name: "Chula Vista" },
           ],
           offers: [
-            { "@type": "Offer", name: "Buffet Style", price: "79", priceCurrency: "USD", description: "Per person — restaurant-quality buffet Signature Live Fire Signature Live Fire Steakhouse Catering Catering in San Diego." },
+            { "@type": "Offer", name: "Buffet Style", price: "79", priceCurrency: "USD", description: "Per person — restaurant-quality buffet Signature Live Fire Steakhouse Catering in San Diego." },
             { "@type": "Offer", name: "Family Style", price: "94", priceCurrency: "USD", description: "Per person — shared platter Signature Live Fire Steakhouse Catering experience in San Diego County." },
-            { "@type": "Offer", name: "Plated Service", price: "133", priceCurrency: "USD", description: "Per person — fully plated luxury Signature Live Fire Signature Live Fire Steakhouse Catering Catering in San Diego." },
+            { "@type": "Offer", name: "Plated Service", price: "133", priceCurrency: "USD", description: "Per person — fully plated luxury Signature Live Fire Steakhouse Catering in San Diego." },
           ],
         }),
       },

@@ -109,7 +109,7 @@ const timelineSteps = [
 ];
 
 const menuOptions = [
-  "Wood-Fire Catering", "Signature Live Fire Signature Live Fire Steakhouse Catering Catering", "Surf & Turf", "Live Charcoal Grilling", "Carving Stations",
+  "Wood-Fire Catering", "Signature Live Fire Steakhouse Catering", "Surf & Turf", "Live Charcoal Grilling", "Carving Stations",
   "Taco & Street-Food Bars", "Brunch Catering", "Dinner Catering", "Passed Hors d'oeuvres",
   "Dessert & Coffee Service", "Vegetarian Menus", "Vegan Menus", "Gluten-Free & Allergy Menus",
   "Premium Steaks & Prime Rib", "Smoked Brisket & Ribs", "Grazing & Charcuterie Displays",
