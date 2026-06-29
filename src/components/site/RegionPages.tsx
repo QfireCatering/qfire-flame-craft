@@ -238,9 +238,9 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
           </div>
           <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
             {[
-              { name: "Buffet Style", price: regionKey === "phoenix" ? "$74" : "$79", per: "/ person", desc: "Smooth. Efficient. Elegant. Restaurant-quality buffet presentation. Ideal for " + r.shortName + " weddings, corporate events and private parties." },
-              { name: "Family Style", price: regionKey === "phoenix" ? "$89" : "$94", per: "/ person", desc: "Shared dining. Passed platters. Connected guest experience. Luxury presentation, end to end." },
-              { name: "Plated Service", price: regionKey === "phoenix" ? "$128" : "$133", per: "/ person", desc: "Restaurant-style service. Each course individually served. Our most luxurious dining experience." },
+              { name: "Buffet Style", price: regionKey === "phoenix" ? "$74" : "$79", per: "/ person", desc: "Smooth. Efficient. Elegant. Restaurant-quality buffet presentation. Ideal for " + r.shortName + " weddings, corporate events and private parties.", cta: "Explore the Buffet Menu" },
+              { name: "Family Style", price: regionKey === "phoenix" ? "$89" : "$94", per: "/ person", desc: "Shared dining. Passed platters. Connected guest experience. Luxury presentation, end to end.", cta: "See Family-Style Details" },
+              { name: "Plated Service", price: regionKey === "phoenix" ? "$128" : "$133", per: "/ person", desc: "Restaurant-style service. Each course individually served. Our most luxurious dining experience.", cta: "Preview the Plated Tasting" },
             ].map((tier) => (
               <article
                 key={tier.name}
@@ -253,7 +253,7 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
                 </div>
                 <p className="mt-6 text-bone/70 leading-relaxed font-light flex-1">{tier.desc}</p>
                 <Link to={regionKey === "phoenix" ? "/steak-seafood-menu" : "/steak-seafood-menu-san-diego"} className="btn-ghost mt-8">
-                  View Full Menu
+                  {tier.cta}
                 </Link>
               </article>
             ))}
