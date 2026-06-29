@@ -21,15 +21,34 @@ const titles: Record<string, { t: string; d: string }> = {
 export const Route = createFileRoute("/phoenix/$slug")({
   head: ({ params }) => {
     const meta = titles[params.slug] ?? { t: `Phoenix ${params.slug}`, d: "" };
+    const url = `https://qfire-flame-craft.lovable.app/phoenix/${params.slug}`;
     return {
       meta: [
         { title: `${meta.t} | Qfire Catering` },
         { name: "description", content: meta.d },
         { property: "og:title", content: meta.t },
         { property: "og:description", content: meta.d },
-        { property: "og:url", content: `https://qfire-flame-craft.lovable.app/phoenix/${params.slug}` },
+        { property: "og:url", content: url },
+        { property: "og:type", content: "website" },
+        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:title", content: meta.t },
+        { name: "twitter:description", content: meta.d },
       ],
-      links: [{ rel: "canonical", href: `https://qfire-flame-craft.lovable.app/phoenix/${params.slug}` }],
+      links: [{ rel: "canonical", href: url }],
+      scripts: [
+        {
+          type: "application/ld+json",
+          children: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://qfire-flame-craft.lovable.app/" },
+              { "@type": "ListItem", position: 2, name: "Phoenix Metro", item: "https://qfire-flame-craft.lovable.app/phoenix" },
+              { "@type": "ListItem", position: 3, name: meta.t, item: url },
+            ],
+          }),
+        },
+      ],
     };
   },
   component: function PhoenixSlug() {
