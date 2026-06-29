@@ -34,15 +34,31 @@ export const Route = createFileRoute("/pictures")({
   component: PicturesPage,
 });
 
-const masonry: { src: string; tall?: boolean; wide?: boolean }[] = [
-  { src: weddingSd.url, wide: true }, { src: bbqPlatter.url }, { src: privateGroup.url, tall: true },
-  { src: steakLobster.url }, { src: ribPlate.url }, { src: bbqMeal.url, wide: true },
-  { src: bbqPlate.url }, { src: steakPlate.url, tall: true }, { src: onsiteGrillMahi.url },
-  { src: buffetSet2.url, wide: true }, { src: fromGrill.url }, { src: vegInCup.url },
-  { src: setUp1.url, wide: true }, { src: parkSetup.url }, { src: jobsiteTacos.url, tall: true },
-  { src: setUp2.url }, { src: bbqMeal.url }, { src: weddingSd.url, wide: true },
-  { src: weddingBuffetTower.url, tall: true }, { src: kabob.url }, { src: peachCobbler.url },
-  { src: setUp6.url, wide: true }, { src: kabob.url }, { src: peachCobbler.url },
+const masonry: { src: string; alt: string; tall?: boolean; wide?: boolean }[] = [
+  { src: weddingSd.url, alt: "San Diego County luxury wedding reception catered by Qfire Catering — long candlelit head table under string lights", wide: true },
+  { src: bbqPlatter.url, alt: "Wood-fired catering platter — Texas-style brisket, pulled pork and smoked sausage by Chef Terry Matthews, The BBQ Daddy" },
+  { src: privateGroup.url, alt: "Private party guests gathered around a Qfire Catering live-fire grill in Phoenix Metro Arizona", tall: true },
+  { src: steakLobster.url, alt: "Surf and turf plate — charcoal-grilled ribeye and cold-water lobster tail from the Signature Live Fire Steakhouse Experience" },
+  { src: ribPlate.url, alt: "Slow-smoked St. Louis-style ribs plated with coleslaw and cornbread for a Phoenix backyard catering event" },
+  { src: bbqMeal.url, alt: "Wood-fire catering buffet plate — sliced brisket, smoked chicken and house sides served family-style by Qfire Catering", wide: true },
+  { src: bbqPlate.url, alt: "Catered wood-fire dinner plate with brisket, baked beans and mac and cheese at a Qfire Catering private event" },
+  { src: steakPlate.url, alt: "Plated steakhouse course — hand-cut filet mignon with garlic mashed potatoes and grilled asparagus by Qfire Catering", tall: true },
+  { src: onsiteGrillMahi.url, alt: "Onsite live-fire grilling — fresh mahi-mahi seared over charcoal by Chef Terry at a San Diego County coastal event" },
+  { src: buffetSet2.url, alt: "Restaurant-quality wedding catering buffet line styled by the Qfire Catering team across Phoenix Metro and San Diego County", wide: true },
+  { src: fromGrill.url, alt: "Pitmaster's view from the live-fire grill — wood-fired steaks and chicken catered on-site by Qfire Catering" },
+  { src: vegInCup.url, alt: "Chilled vegetable crudité cups passed at a Qfire Catering corporate reception" },
+  { src: setUp1.url, alt: "Qfire Catering buffet setup with black chafing dishes, gold accents and elegant signage for a Phoenix Metro luxury event", wide: true },
+  { src: parkSetup.url, alt: "Outdoor park catering setup — full live-fire mobile kitchen, buffet, and staff by Qfire Catering" },
+  { src: jobsiteTacos.url, alt: "Corporate jobsite taco catering for a 100-guest crew lunch in Phoenix Arizona by Qfire Catering", tall: true },
+  { src: setUp2.url, alt: "Wedding catering setup — linen-draped buffet with floral accents at a Qfire Catering event" },
+  { src: bbqMeal.url, alt: "Wood-fire dinner plate with smoked brisket, ribs and signature sides plated by Qfire Catering" },
+  { src: weddingSd.url, alt: "San Diego County wedding reception under string lights with the Qfire Catering team plating dinner", wide: true },
+  { src: weddingBuffetTower.url, alt: "Tiered wedding buffet centerpiece tower — premium presentation by Qfire Catering for a luxury reception", tall: true },
+  { src: kabob.url, alt: "Antipasto kabob hors d'oeuvre — passed appetizer from the Signature Live Fire Steakhouse Catering menu by Qfire" },
+  { src: peachCobbler.url, alt: "Warm Southern peach cobbler dessert served at a Qfire Catering wood-fire dinner" },
+  { src: setUp6.url, alt: "Elegant Qfire Catering tablescape with charger plates, glassware and gold flatware for a luxury wedding reception", wide: true },
+  { src: kabob.url, alt: "Caprese antipasto skewer with cherry tomato, mozzarella and basil — passed appetizer by Qfire Catering" },
+  { src: peachCobbler.url, alt: "Individual peach cobbler dessert cup plated for a private party catered by Qfire Catering" },
 ];
 
 function PicturesPage() {
@@ -53,13 +69,14 @@ function PicturesPage() {
         title={<>A look at <span className="text-gold italic font-light">the table.</span></>}
         subtitle="Weddings. Corporate evenings. Private parties. The fire, the food, the rooms."
         image={weddingSd.url}
+        imageAlt="Qfire Catering event gallery — luxury weddings, corporate dinners and private parties catered across Phoenix Metro and San Diego County"
       />
       <section className="py-20">
         <div className="container-luxe">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 auto-rows-[200px] md:auto-rows-[260px] gap-2">
             {masonry.map((m, i) => (
               <div key={i} className={`relative overflow-hidden group ${m.tall ? "row-span-2" : ""} ${m.wide ? "md:col-span-2" : ""}`}>
-                <img src={m.src} alt="" loading="lazy" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                <img src={m.src} alt={m.alt} loading="lazy" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
               </div>
             ))}
           </div>
