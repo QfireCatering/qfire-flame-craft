@@ -182,7 +182,7 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
                   Example: Everyone gets Pulled Pork, then each guest chooses either Brisket or Chicken.
                 </p>
               </div>
-              <Link to="/quote" className="btn-ghost mt-8">Request a Quote</Link>
+              <Link to="/quote" className="btn-ghost mt-8">Build My 2-Meat Menu</Link>
             </article>
 
             {/* Premium */}
