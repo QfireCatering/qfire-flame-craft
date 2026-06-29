@@ -89,7 +89,7 @@ export const REVIEW_SCHEMA = {
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.9",
-    reviewCount: "287",
+    reviewCount: "400",
     bestRating: "5",
   },
   review: REVIEWS.map((r) => ({

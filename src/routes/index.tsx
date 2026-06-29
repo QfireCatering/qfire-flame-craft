@@ -64,7 +64,7 @@ export const Route = createFileRoute("/")({
           "@type": ["LocalBusiness", "CateringService", "FoodEstablishment"],
           name: "Qfire Catering",
           alternateName: "The BBQ Daddy",
-          description: "Full-service wood-fired and premium steakhouse catering for weddings, corporate events and private parties across Phoenix Metro and San Diego County.",
+          description: "Full-service wood-fired and Signature Steakhouse Catering for weddings, corporate events and private parties across Phoenix Metro and San Diego County.",
           url: "/",
           telephone: "+1-877-848-7211",
           email: "Eat@QfireCatering.com",
@@ -93,7 +93,7 @@ export const Route = createFileRoute("/")({
           aggregateRating: {
             "@type": "AggregateRating",
             ratingValue: "4.9",
-            reviewCount: "287",
+            reviewCount: "400",
             bestRating: "5",
             worstRating: "1",
           },

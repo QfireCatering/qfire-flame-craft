@@ -99,7 +99,7 @@ const warm: Dish[] = [
 const meats: Dish[] = [
   { name: "Ribeye Steak", body: "The Signature Live Fire Steakhouse Catering classic — heavily marbled, char-grilled over live fire to a crusted finish with a juicy, buttery, melt-in-your-mouth center.", img: ribeyeAsset.url },
   { name: "New York Strip", body: "Cut from the short loin. Bold, beefy flavor with a firm, satisfying bite and the perfect balance of fat and lean — a true Signature Live Fire Steakhouse Catering staple.", img: nyStripAsset.url },
-  { name: "T-Bone Steak", body: "Two premium cuts on one bone — the tender filet on one side, the bold New York strip on the other. Char-grilled over live fire for the ultimate premium steakhouse catering experience.", img: tboneAsset.url },
+  { name: "T-Bone Steak", body: "Two premium cuts on one bone — the tender filet on one side, the bold New York strip on the other. Char-grilled over live fire for the ultimate Signature Steakhouse Catering experience.", img: tboneAsset.url },
   { name: "Beef Tenderloin", body: "The most tender cut of beef. Buttery texture, mild flavor, luxurious.", note: "+ $5 / steak", img: beefTenderloinAsset.url },
   { name: "Filet Mignon", body: "Premium tenderloin cut, buttery and delicate.", note: "+ $10/steak", img: filetMignonAsset.url },
   { name: "Top Sirloin (10 oz) — also known as Picanha", body: "Lean, flavorful, tender, with a rich beefy taste.", img: topSirloinAsset.url },
@@ -266,7 +266,7 @@ function SteakSeafoodMenuPage() {
           <div className="space-y-6 text-bone/70 text-base lg:text-lg leading-relaxed">
             <p>If you're looking for something beyond the traditional buffet in the Phoenix Metro area — from downtown Phoenix to Scottsdale, Gilbert, Mesa, Tempe, Chandler, Glendale, Peoria, Paradise Valley, Cave Creek and beyond — this is where our most discerning clients naturally gravitate.</p>
             <p>Our Phoenix Metro Surf & Turf signature steakhouse experience Experience combines the energy of live-fire cooking with the elegance of fine dining — bringing the atmosphere of an upscale live-fire dinner service directly to your Phoenix, Scottsdale, Gilbert, Mesa or Tempe wedding, corporate event, or private celebration.</p>
-            <p>From Ahwatukee to Anthem, Carefree to Queen Creek, we bring restaurant-quality premium steakhouse catering to every corner of the Phoenix Metro. This isn't just dinner. It's the experience your guests will remember long after the last bite.</p>
+            <p>From Ahwatukee to Anthem, Carefree to Queen Creek, we bring restaurant-quality Signature Steakhouse Catering to every corner of the Phoenix Metro. This isn't just dinner. It's the experience your guests will remember long after the last bite.</p>
           </div>
         </div>
       </section>

@@ -236,7 +236,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
     priceRange: "$$$",
     servesCuisine: ["Wood-Fire", "Signature Live Fire Steakhouse Catering", "American", "Wedding Catering"],
     areaServed: cities.map((c) => ({ "@type": "City", name: c })),
-    aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "247" },
+    aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "400" },
   };
 
   const breadcrumb = {
@@ -426,7 +426,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
       <section className="py-24 lg:py-32 bg-onyx">
         <div className="container-luxe grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="order-2 lg:order-1">
-            <div className="eyebrow mb-6">The premium steakhouse catering Experience</div>
+            <div className="eyebrow mb-6">The Signature Live Fire Steakhouse Experience</div>
             <h2 className="heading-lg text-bone">A live-fire steakhouse experience — brought to your venue.</h2>
             <div className="mt-8 space-y-5 text-bone/80 text-lg font-light leading-relaxed">
               <p>Charcoal-grilled ribeye, New York strip, filet mignon, picanha, prime rib, salmon, and surf & turf — served under candlelight with polished service and unforgettable presentation.</p>
@@ -536,7 +536,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         <div className="container-luxe">
           <div className="max-w-2xl mb-14">
             <div className="eyebrow mb-6">Menu Options</div>
-            <h2 className="heading-lg text-bone">Wood-fired Wood-Fire. Premium upscale steakhouse catering. Surf & turf.</h2>
+            <h2 className="heading-lg text-bone">Wood-fired. Premium upscale steakhouse catering. Surf & turf.</h2>
             <p className="mt-6 text-bone/70 text-lg leading-relaxed font-light">
               Whatever you serve at your {regionShort} wedding, it comes off our live-fire grill.
             </p>

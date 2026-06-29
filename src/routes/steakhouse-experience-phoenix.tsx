@@ -14,7 +14,7 @@ export const Route = createFileRoute("/steakhouse-experience-phoenix")({
   head: () => ({
     meta: [
       { title: "Signature Live Fire Steakhouse Catering Phoenix — Surf & Turf, Onsite Charcoal Grilling | Qfire" },
-      { name: "description", content: "Luxury premium steakhouse catering in the Phoenix Metro. Ribeye, filet mignon, prime rib, salmon and lobster — grilled live onsite at Phoenix, Scottsdale and Paradise Valley weddings, corporate events and private parties. Buffet from $74/pp · Plated from $128/pp." },
+      { name: "description", content: "Luxury Signature Steakhouse Catering in the Phoenix Metro. Ribeye, filet mignon, prime rib, salmon and lobster — grilled live onsite at Phoenix, Scottsdale and Paradise Valley weddings, corporate events and private parties. Buffet from $74/pp · Plated from $128/pp." },
       { property: "og:title", content: "live-fire steakhouse experience Phoenix | Qfire" },
       { property: "og:description", content: "Live charcoal grilling, surf & turf and white-glove service across the Phoenix Metro — weddings, corporate dinners and luxury private parties." },
       { property: "og:url", content: "https://qfire-flame-craft.lovable.app/steakhouse-experience-phoenix" },

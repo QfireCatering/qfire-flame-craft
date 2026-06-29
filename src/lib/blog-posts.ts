@@ -146,7 +146,7 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
-    slug: "premium steakhouse catering-at-home-private-dinners",
+    slug: "Signature Steakhouse Catering-at-home-private-dinners",
     title: "live-fire steakhouse experience at home: a guide to upscale catering for private dinners.",
     category: "Planning Guides",
     date: "January 2026",

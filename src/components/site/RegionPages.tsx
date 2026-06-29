@@ -442,7 +442,7 @@ function RegionHoliday({ regionKey }: { regionKey: RegionKey }) {
           <h2 className="heading-md text-bone mb-10">Three ways we run a holiday.</h2>
           <div className="grid md:grid-cols-3 gap-px bg-white/5 border border-white/5">
             {[
-              { t: "Office Holiday Party", b: "Buffet or stations. 30–500 guests. Wood-fired Wood-Fire or luxury steakhouse dining menu. Bar and rentals available." },
+              { t: "Office Holiday Party", b: "Buffet or stations. 30–500 guests. Wood-fired or luxury steakhouse dining menu. Bar and rentals available." },
               { t: "Family Holiday Dinner", b: "Smoked turkey, prime rib, classic sides. Drop-off or full service in your home. 10–60 guests." },
               { t: "Client Appreciation", b: "Plated chef-attended steakhouse buffet dinner with tableside carving. White-glove staff. 20–150 guests." },
             ].map((c) => (

@@ -19,7 +19,7 @@ export const Route = createFileRoute("/quote")({
       { property: "og:title", content: "Request a Quote — Qfire Catering" },
       {
         property: "og:description",
-        content: "Custom proposal within 24 hours. Wood-fired Wood-Fire + Signature Live Fire Steakhouse Catering.",
+        content: "Custom proposal within 24 hours. Wood-fired + Signature Live Fire Steakhouse Catering.",
       },
       { property: "og:url", content: "https://qfire-flame-craft.lovable.app/quote" },
     ],
@@ -168,7 +168,7 @@ function QuotePage() {
               <SelectField
                 label="Menu Interest"
                 name="menu"
-                options={["Wood-Fired Catering", "premium steakhouse catering", "Not sure yet"]}
+                options={["Wood-Fired Catering", "Signature Steakhouse Catering", "Not sure yet"]}
               />
               <div>
       <label className="block text-[0.65rem] tracking-[0.3em] uppercase text-white mb-3">
