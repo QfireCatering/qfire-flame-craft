@@ -324,6 +324,12 @@ export function SteakhouseExperiencePage({ r }: { r: RegionCopy }) {
         </div>
       </section>
 
+      <FAQSection
+        eyebrow={`${r.region} Steakhouse Catering FAQ`}
+        title="The premium steakhouse experience — answered."
+        faqs={steakFaqs}
+      />
+
       {/* DARK CTA */}
       <section className="relative py-32 lg:py-40 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-ink via-charcoal/40 to-ink" />
