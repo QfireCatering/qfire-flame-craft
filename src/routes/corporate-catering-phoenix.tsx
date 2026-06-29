@@ -19,7 +19,7 @@ export const Route = createFileRoute("/corporate-catering-phoenix")({
   head: () => ({
     meta: [
       { title: "Phoenix Corporate Catering | Office, Executive & Holiday Party Catering — Qfire" },
-      { name: "description", content: "Premium Phoenix corporate catering by Chef Terry Matthews (Food Network's BBQ Brawl). Office lunches, executive dinners, holiday parties, construction-site catering & live-fire grilling across Scottsdale, Mesa, Tempe, Chandler, Gilbert, Glendale, Peoria & all of Phoenix Metro. 2,000+ events · 4.9★ · COI-ready · Net-30 billing." },
+      { name: "description", content: "Premium Phoenix corporate catering by Chef Terry Matthews (Food Network's BBQ Brawl). Office lunches, executive dinners, holiday parties, construction-site catering & live-fire grilling across Scottsdale, Mesa, Tempe, Chandler, Gilbert, Glendale, Peoria & all of Phoenix Metro. 2,000+ events · 4.9★ · COI-ready." },
       { property: "og:title", content: "Phoenix Corporate Catering — Qfire | Reliable Office & Executive Catering" },
       { property: "og:description", content: "On-time, professional, restaurant-quality corporate catering across Phoenix Metro. Office lunches, executive dinners, holiday parties, construction-site lunches, live-fire grilling." },
       { property: "og:url", content: "/corporate-catering-phoenix" },

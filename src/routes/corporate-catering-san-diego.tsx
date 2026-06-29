@@ -19,7 +19,7 @@ export const Route = createFileRoute("/corporate-catering-san-diego")({
   head: () => ({
     meta: [
       { title: "San Diego Corporate Catering | Office, Executive & Holiday Party Catering — Qfire" },
-      { name: "description", content: "Premium San Diego corporate catering by Chef Terry Matthews (Food Network's BBQ Brawl). Office lunches, executive dinners, holiday parties, construction-site catering & live-fire grilling across La Jolla, Carlsbad, Del Mar, Rancho Santa Fe, Coronado, Encinitas & all of San Diego County. 2,000+ events · 4.9★ · COI-ready · Net-30 billing." },
+      { name: "description", content: "Premium San Diego corporate catering by Chef Terry Matthews (Food Network's BBQ Brawl). Office lunches, executive dinners, holiday parties, construction-site catering & live-fire grilling across La Jolla, Carlsbad, Del Mar, Rancho Santa Fe, Coronado, Encinitas & all of San Diego County. 2,000+ events · 4.9★ · COI-ready." },
       { property: "og:title", content: "San Diego Corporate Catering — Qfire | Reliable Office & Executive Catering" },
       { property: "og:description", content: "On-time, professional, restaurant-quality corporate catering across San Diego County. Office lunches, executive dinners, holiday parties, construction-site lunches, live-fire grilling." },
       { property: "og:url", content: "/corporate-catering-san-diego" },

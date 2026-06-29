@@ -110,7 +110,6 @@ export function corporateConfig(o: ServiceTemplateOptions = {}): ServicePageConf
     highlights: [
       { title: "Single Account Manager", body: "One contact from quote to final wrap-up." },
       { title: "Volume Pricing", body: "Tiered pricing for repeat corporate clients." },
-      { title: "Net-30 Billing", body: "Established billing for qualified corporate accounts." },
       { title: "On-Site Chefs", body: "Live-fire stations and chef-driven action stations." },
       { title: "Holiday Parties", body: "End-of-year galas with full beverage service." },
       { title: "Box Lunches & Drop-Off", body: "Premium daytime catering for board meetings and retreats." },
@@ -120,7 +119,7 @@ export function corporateConfig(o: ServiceTemplateOptions = {}): ServicePageConf
       { q: "Our annual partner dinner — 140 plated steaks, served hot, served right. Qfire raised the bar permanently.", a: "David K.", e: r ? `${r} Investment Firm` : "La Jolla Investment Firm" },
     ],
     faqs: [
-      { q: "Do you offer net-30 billing and corporate accounts?", a: "Yes. Qualified corporate clients are set up with a dedicated account manager, master service agreements, COIs on request, and net-30 billing on all invoices. Repeat clients also receive tiered volume pricing across the calendar year." },
+      { q: "Do you offer corporate accounts and invoicing?", a: "Yes. Qualified corporate clients are set up with a dedicated account manager, master service agreements, COIs on request, and detailed invoicing on all events. Repeat clients also receive tiered volume pricing across the calendar year." },
       { q: "Can you handle a full-day company offsite or multi-day event?", a: "Routinely. We've executed multi-day partner retreats, sales kickoffs, and board offsites with breakfast, lunch, breaks, and plated dinners across multiple venues — all coordinated by a single point of contact." },
       { q: "What is your minimum guest count for corporate catering?", a: "Drop-off catering starts at 15 guests. Staffed buffets and plated dinners typically start at 25 guests. There is no functional ceiling — we have plated and served events of 600+ with the same standard as a chef's-table dinner for 12." },
       { q: "Do you accommodate dietary restrictions and allergies?", a: "Always. Every proposal includes vegetarian, vegan, gluten-free, and dairy-free options. For peanut, tree-nut, and shellfish allergies we run a dedicated prep line and label every plate at the pass." },

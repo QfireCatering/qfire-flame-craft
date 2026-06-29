@@ -54,7 +54,7 @@ const baseFaqs = [
   { q: "Can you serve multiple shifts?", a: "Yes. We handle multi-shift hospitals, manufacturing facilities, warehouses, and 24-hour operations with staggered drop-offs or on-site service across the day." },
   { q: "Can we mix service styles?", a: "Yes. Many corporate events combine passed hors d'oeuvres, a live-fire grilling station, a buffet, and a plated dessert — we'll design the right blend for your event." },
   { q: "Can we change our menu later?", a: "Yes. Your 35% Date Charge holds the date and the team. Menus, guest counts, and service styles stay flexible until roughly 14 days before the event." },
-  { q: "Do you provide invoicing and Net-30 billing?", a: "Yes. We work with AP departments, PO systems, COIs, and W-9s. Net-30 billing available for established corporate accounts." },
+  { q: "Do you provide invoicing and corporate accounts?", a: "Yes. We work with AP departments, PO systems, COIs, and W-9s. Detailed invoicing available for established corporate accounts." },
 ];
 
 const whyChoose = [
@@ -226,7 +226,7 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
             <div>
               <div className="text-[0.65rem] tracking-[0.3em] text-gold uppercase mb-2">Credentials</div>
               <div className="text-bone font-display text-lg">Licensed & Insured</div>
-              <div className="text-xs text-bone/60 mt-1">COI-ready · Net-30 billing</div>
+              <div className="text-xs text-bone/60 mt-1">COI-ready</div>
             </div>
             <div>
               <div className="text-[0.65rem] tracking-[0.3em] text-gold uppercase mb-2">Reputation</div>
@@ -415,7 +415,6 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
                 "Service style can evolve",
                 "Bar package can evolve",
                 "Most planning happens after booking",
-                "Net-30 billing available on the balance",
               ].map((x) => (
                 <li key={x} className="flex items-start gap-3 text-bone/85 text-base">
                   <Check className="size-5 text-gold mt-0.5 shrink-0" strokeWidth={1.5} /> {x}
