@@ -628,6 +628,12 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         </div>
       </section>
 
+      <DefinitiveContent
+        topic={`${regionShort} Wedding Catering`}
+        region={`${regionShort} couples`}
+        {...definitiveCopy.wedding}
+      />
+
       {/* FAQ */}
       <section className="py-24 lg:py-32">
         <div className="container-luxe">
