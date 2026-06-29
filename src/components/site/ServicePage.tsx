@@ -21,6 +21,8 @@ export interface ServicePageConfig {
   faqs?: { q: string; a: string }[];
   ctaTitle?: string;
   showGalleryLink?: boolean;
+  definitiveTopic?: string;
+  definitiveKey?: keyof typeof definitiveCopy;
 }
 
 export function ServicePage({ config, regionKey }: { config: ServicePageConfig; regionKey?: RegionKey }) {
