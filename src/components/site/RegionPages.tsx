@@ -213,19 +213,39 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-white/5 border border-white/5">
             {services.map((s, i) => {
               const img = [weddingTable, corporate, privateParty, bbqPlatter, steak, bartender][i % 6];
-              return (
-                <Link
-                  key={s.slug}
-                  to={regionKey === "phoenix" ? "/phoenix/$slug" : "/san-diego/$slug"}
-                  params={{ slug: s.slug }}
-                  className="group relative block aspect-[4/5] overflow-hidden bg-ink"
-                >
+              const cardClass = "group relative block aspect-[4/5] overflow-hidden bg-ink";
+              const cardBody = (
+                <>
                   <img src={img} alt={s.label} loading="lazy" className="absolute inset-0 w-full h-full object-cover opacity-60 transition-all duration-700 group-hover:opacity-90 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/60 to-transparent" />
                   <div className="absolute inset-0 p-8 flex flex-col justify-end">
                     <div className="text-[0.6rem] tracking-[0.3em] uppercase text-gold/80 mb-3">{r.shortName}</div>
                     <h3 className="text-2xl font-display text-bone group-hover:text-gold transition-colors">{s.short}</h3>
                   </div>
+                </>
+              );
+              if (regionKey === "phoenix" && s.slug === "wood-fired") {
+                return (
+                  <a key={s.slug} href="https://fs17.formsite.com/matthews3404/BBQDADDYLLC/index" target="_blank" rel="noopener noreferrer" className={cardClass}>
+                    {cardBody}
+                  </a>
+                );
+              }
+              if (s.slug === "Signature Live Fire Steakhouse Catering") {
+                return (
+                  <Link key={s.slug} to={regionKey === "phoenix" ? "/steak-seafood-menu" : "/steak-seafood-menu-san-diego"} className={cardClass}>
+                    {cardBody}
+                  </Link>
+                );
+              }
+              return (
+                <Link
+                  key={s.slug}
+                  to={regionKey === "phoenix" ? "/phoenix/$slug" : "/san-diego/$slug"}
+                  params={{ slug: s.slug }}
+                  className={cardClass}
+                >
+                  {cardBody}
                 </Link>
               );
             })}
