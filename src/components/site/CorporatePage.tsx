@@ -2,27 +2,28 @@ import { Link } from "@tanstack/react-router";
 import { ArrowRight, Check, Flame, Award, Users, Star, Clock, Sparkles, Briefcase, Building2, ShieldCheck, Truck } from "lucide-react";
 import asSeenOnBadge from "@/assets/as-seen-on-food-network.png.asset.json";
 import { GuestScaleStat } from "./GuestScaleStat";
-import corpHeroAsset from "@/assets/corp-hero.png.asset.json";
-import corporateAsset from "@/assets/corporate-catering.png.asset.json";
-import steakAsset from "@/assets/steakhouse-backyard.png.asset.json";
-import steakMenuAsset from "@/assets/steakhouse-menu.png.asset.json";
-import bbqPlatterAsset from "@/assets/bbq-platter.png.asset.json";
-import bbqPlatter1Asset from "@/assets/bbq-platter1.png.asset.json";
-import bartenderAsset from "@/assets/bartender.png.asset.json";
-import privatePartyAsset from "@/assets/private-party-setting.png.asset.json";
-import chefAsset from "@/assets/chef-terry.jpg.asset.json";
-import heroFire from "@/assets/hero-fire.jpg";
-import buffet from "@/assets/buffet.jpg";
+import corpSetupBg from "@/assets/corporate/corp-setup-bg.png.asset.json";
+import corpLuncheon from "@/assets/corporate/corp-luncheon-crowd.jpg.asset.json";
+import corpRetirement from "@/assets/corporate/corp-retirement.jpg.asset.json";
+import corpBuffetLine from "@/assets/corporate/corp-buffet-line.jpg.asset.json";
+import corpJobsiteTacos from "@/assets/corporate/corp-jobsite-tacos.jpg.asset.json";
+import corpJobsiteCrew from "@/assets/corporate/corp-jobsite-crew.jpg.asset.json";
+import corpBbqBuffet from "@/assets/corporate/corp-bbq-buffet.png.asset.json";
+import corpJobsiteSpread from "@/assets/corporate/corp-jobsite-spread.jpg.asset.json";
+import corpBuffetSet from "@/assets/corporate/corp-buffet-set.avif.asset.json";
+import corpParkSetup from "@/assets/corporate/corp-park-setup.avif.asset.json";
 
-const officeHero = corpHeroAsset.url;
-const officeAlt = corporateAsset.url;
-const steak = steakAsset.url;
-const steakMenu = steakMenuAsset.url;
-const platter = bbqPlatterAsset.url;
-const platter1 = bbqPlatter1Asset.url;
-const bartender = bartenderAsset.url;
-const setting = privatePartyAsset.url;
-const chef = chefAsset.url;
+const officeHero = corpSetupBg.url;
+const officeAlt = corpLuncheon.url;
+const steak = corpBbqBuffet.url;
+const steakMenu = corpBuffetSet.url;
+const platter = corpJobsiteSpread.url;
+const platter1 = corpBbqBuffet.url;
+const bartender = corpParkSetup.url;
+const setting = corpBuffetLine.url;
+const chef = corpRetirement.url;
+const heroFire = corpJobsiteTacos.url;
+const buffet = corpJobsiteCrew.url;
 
 export interface CorporateRegionConfig {
   region: string; // "Phoenix Metro" / "San Diego County"
