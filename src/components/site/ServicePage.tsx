@@ -17,6 +17,7 @@ export interface ServicePageConfig {
   reviews?: { q: string; a: string; e: string }[];
   faqs?: { q: string; a: string }[];
   ctaTitle?: string;
+  showGalleryLink?: boolean;
 }
 
 export function ServicePage({ config, regionKey }: { config: ServicePageConfig; regionKey?: RegionKey }) {
