@@ -1,6 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import buffet from "@/assets/buffet.jpg";
 import { PageHero, CTASection } from "@/components/site/Sections";
+import { DefinitiveContent } from "@/components/site/DefinitiveContent";
+import { definitiveCopy } from "@/lib/definitive-copy";
 import { contact } from "@/lib/contact";
 
 type FAQ = { q: string; a: string };
@@ -231,6 +233,7 @@ function FAQPage() {
         </div>
       </section>
 
+      <DefinitiveContent topic="Qfire Catering FAQ" region="couples, planners & corporate buyers" {...definitiveCopy.faq} />
       <CTASection />
     </>
   );

@@ -2,6 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Check } from "lucide-react";
 import buffet from "@/assets/buffet.jpg";
 import { PageHero, CTASection } from "@/components/site/Sections";
+import { DefinitiveContent } from "@/components/site/DefinitiveContent";
+import { definitiveCopy } from "@/lib/definitive-copy";
 
 export const Route = createFileRoute("/why-qfire")({
   head: () => ({
@@ -53,6 +55,7 @@ function WhyPage() {
           </div>
         </div>
       </section>
+      <DefinitiveContent topic="Why Qfire Catering" region="luxury hosts in Phoenix & San Diego" {...definitiveCopy.whyQfire} />
       <CTASection />
     </>
   );

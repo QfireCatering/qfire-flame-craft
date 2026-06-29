@@ -1,5 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowUpRight } from "lucide-react";
+import { DefinitiveContent } from "@/components/site/DefinitiveContent";
+import { definitiveCopy } from "@/lib/definitive-copy";
 import phoenixAsset from "@/assets/phoenix-metro.png.asset.json";
 import sanDiegoAsset from "@/assets/san-diego.png.asset.json";
 const phoenix = phoenixAsset.url;
@@ -57,6 +59,7 @@ function LocationsPage() {
           ))}
         </div>
       </div>
+      <DefinitiveContent topic="Qfire Service Regions" region="Phoenix Metro & San Diego County" {...definitiveCopy.locations} />
     </div>
   );
 }
