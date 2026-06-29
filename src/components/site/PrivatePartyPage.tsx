@@ -548,6 +548,12 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
         </div>
       </section>
 
+      <DefinitiveContent
+        topic={`${regionShort} Private Party Catering`}
+        region={`${regionShort} hosts`}
+        {...definitiveCopy.private}
+      />
+
       {/* FAQ */}
       <section className="py-24 lg:py-32 bg-onyx">
         <div className="container-luxe">
