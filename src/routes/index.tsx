@@ -29,6 +29,7 @@ const corporate = corporateAsset.url;
 const privateParty = privatePartyAsset.url;
 import { CTASection } from "@/components/site/Sections";
 import { TrustBar } from "@/components/site/TrustBar";
+import { ConfidenceBar } from "@/components/site/ConfidenceBar";
 
 const HOME_FAQS = [
   { q: "How far in advance should we book Qfire Catering?", a: "Most weddings book 6–12 months out for peak Saturdays. Corporate and private events are usually comfortable inside 4–8 weeks. Drop-off office catering can often be turned around in 24–72 hours. Call us — we move quickly whenever the date is open." },
