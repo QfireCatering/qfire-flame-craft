@@ -178,6 +178,18 @@ function Home() {
 
       <TrustBar />
 
+      <AnswerBox
+        question="What is Qfire Catering and where do you cater?"
+        answer="Qfire Catering is a full-service luxury catering company led by Chef Terry Matthews — featured on Food Network's BBQ Brawl, Cutthroat Kitchen, and Camp Cutthroat. We specialize in wood-fired and live-fire steakhouse catering for weddings, corporate events, and private parties across Phoenix Metro, Arizona and San Diego County, California. 2,000+ events catered since 2011, 4.9★ rated, fully licensed and insured."
+        bullets={[
+          "Wood-fired catering from $12.99 / guest · Steakhouse experience from $74 / guest",
+          "Scales from intimate 25-guest dinners up to 2,500-guest galas",
+          "Full service: menu design, staff, setup, service, and breakdown",
+        ]}
+      />
+
+      <AtAGlance />
+
       {/* TWO REGIONS */}
       <section className="relative py-28 lg:py-44 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-onyx via-charcoal/40 to-onyx" />
