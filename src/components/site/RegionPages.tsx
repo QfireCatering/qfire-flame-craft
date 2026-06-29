@@ -98,9 +98,9 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
         <div className="container-luxe relative z-10 pt-40 pb-20">
           <div className="eyebrow mb-8">{r.state}</div>
           <h1 className="heading-xl text-bone max-w-4xl">
-            {r.shortName} <span className="text-gold italic font-light">catering.</span>
+            {r.shortName} <span className="text-gold italic font-light">BBQ &amp; wood-fire</span> catering.
             <br />
-            <span className="text-bone/70">Wood-fired. Full-service.</span>
+            <span className="text-bone/70">Steakhouse polish. Full-service.</span>
           </h1>
           <p className="mt-8 max-w-2xl text-xl text-bone/75 leading-relaxed font-light">{r.tagline}</p>
           <p className="mt-4 max-w-2xl text-base text-bone/55">{r.description}</p>

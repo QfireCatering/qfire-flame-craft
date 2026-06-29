@@ -47,10 +47,10 @@ const HOME_FAQS = [
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Qfire Catering — Luxury Wedding, Corporate & Private Event Catering | Phoenix & San Diego" },
-      { name: "description", content: "Qfire Catering by Chef Terry Matthews — full-service luxury catering for weddings, corporate dinners, private parties and intimate chef's tables across Phoenix Metro and San Diego County. Wood-fired flavors, Signature Live Fire Steakhouse Catering polish, white-glove service, stress-free execution." },
-      { property: "og:title", content: "Qfire Catering — Wood-Fired Luxury, Signature Live Fire Steakhouse Catering Polish" },
-      { property: "og:description", content: "Wood-fired flavors. Premium Steakhouse Catering polish. Stress-free execution. Luxury catering for weddings, corporate events and private parties — Phoenix Metro & San Diego County." },
+      { title: "BBQ & Wood-Fire Catering — Wedding, Corporate & Private Party Catering | Qfire Catering Phoenix & San Diego" },
+      { name: "description", content: "Qfire Catering by Chef Terry Matthews (The BBQ Daddy) — full-service BBQ catering, wood-fired catering and live-fire steakhouse catering for weddings, corporate events and private parties across Phoenix Metro and San Diego County. Featured on Food Network. 4.9★ rated. BBQ catering near me, wedding catering, corporate catering, private party catering — all in one team." },
+      { property: "og:title", content: "BBQ & Wood-Fire Catering Phoenix & San Diego — Qfire Catering" },
+      { property: "og:description", content: "BBQ, wood-fired and steakhouse catering for weddings, corporate events and private parties. Phoenix Metro & San Diego County. Chef Terry Matthews — Food Network." },
       { property: "og:url", content: "https://qfire-flame-craft.lovable.app/" },
       { property: "og:image", content: heroImage.url },
       { name: "twitter:image", content: heroImage.url },
@@ -143,14 +143,14 @@ function Home() {
             <div className="eyebrow">Featured on Food Network</div>
           </div>
           <h1 className="heading-xl text-bone max-w-5xl">
-            <span className="text-gold italic font-light">Qfire</span> Catering.
+            <span className="text-gold italic font-light">BBQ</span> & Wood-Fire Catering.
             <br />
-            Wood-fired,
+            Steakhouse polish,
             <br />
             <span className="text-bone/70">unforgettable.</span>
           </h1>
-          <p className="mt-10 max-w-xl text-xl text-bone/80 leading-relaxed font-light">
-            Full-service catering for weddings, corporate events and private parties.
+          <p className="mt-10 max-w-2xl text-xl text-bone/80 leading-relaxed font-light">
+            Full-service BBQ catering, wood-fired catering and steakhouse catering for weddings, corporate events and private parties — Phoenix Metro &amp; San Diego County.
           </p>
           <p className="mt-3 max-w-xl text-base text-bone/60 italic">
             Wood-fired flavors. Professional service. Stress-free execution.
@@ -493,6 +493,49 @@ function Home() {
           </div>
         </div>
       </section>
+
+      {/* CREDENTIALS STRIP */}
+      <section className="py-20 lg:py-24 border-t border-white/5 bg-onyx/40">
+        <div className="container-luxe text-center">
+          <div className="eyebrow justify-center mb-6">The Resume</div>
+          <h2 className="heading-md text-bone max-w-3xl mx-auto">
+            The <span className="text-gold italic font-light">#1 Rated</span> Full-Service Steak &amp; BBQ Catering Co. in the State.
+          </h2>
+          <ul className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-4 max-w-4xl mx-auto text-left">
+            {[
+              "Food Network Veteran",
+              "Cooked alongside Bobby Flay",
+              "Winner — Food Network's Cutthroat Kitchen",
+              "Winner — Food Network's Camp Cutthroat",
+              "Featured on BBQ Brawl Season 2",
+              "International Chef Competition Host",
+              "Catering Coach & Mentor",
+              "25+ Years Behind the Fire",
+              "4.9★ rating across ALL platforms",
+            ].map((line) => (
+              <li key={line} className="flex items-start gap-3 text-bone/85 leading-relaxed">
+                <Check className="size-5 text-gold shrink-0 mt-0.5" strokeWidth={1.5} />
+                <span>{line}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* SHORT-NOTICE CTA */}
+      <section className="py-16 border-t border-gold/20 bg-gradient-to-r from-ink via-onyx to-ink">
+        <div className="container-luxe text-center">
+          <div className="text-[0.7rem] tracking-[0.35em] uppercase text-gold mb-4">Need Phoenix or San Diego Catering on Short Notice?</div>
+          <h3 className="heading-md text-bone max-w-2xl mx-auto">
+            We might be able to help. Call us right now.
+          </h3>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+            <a href="tel:8778487211" className="btn-primary">Call 877.848.7211</a>
+            <Link to="/quote" className="btn-ghost">Request a Quote</Link>
+          </div>
+        </div>
+      </section>
+
       <ConfidenceBar tone="ink" />
 
       <CTASection />
