@@ -5,6 +5,7 @@ import { ArrowRight, Check, Phone, Mail } from "lucide-react";
 import meatPageBg from "@/assets/meat-page-bg.png.asset.json";
 import { submitLead } from "@/lib/leads.functions";
 import { contact } from "@/lib/contact";
+import { BookingProcess } from "@/components/site/BookingProcess";
 
 export const Route = createFileRoute("/quote")({
   head: () => ({
