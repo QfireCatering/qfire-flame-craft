@@ -5,6 +5,8 @@ import steakhousePlatter from "@/assets/steakhouse-platter.png.asset.json";
 import steakhouseMenu from "@/assets/steakhouse-menu.png.asset.json";
 import privatePartySetting from "@/assets/private-party-setting.png.asset.json";
 import weddingCouple from "@/assets/wedding-couple.png.asset.json";
+import { TrustBar } from "./TrustBar";
+import { FAQSection } from "./FAQSection";
 
 export type RegionCopy = {
   city: string;            // "Phoenix" | "San Diego"
@@ -14,8 +16,46 @@ export type RegionCopy = {
 };
 
 export function SteakhouseExperiencePage({ r }: { r: RegionCopy }) {
+  const isSD = r.city === "San Diego";
+  const buffet = isSD ? "$79" : "$74";
+  const family = isSD ? "$94" : "$89";
+  const plated = isSD ? "$128" : "$133";
+  const steakFaqs = [
+    { q: `How much does the ${r.region} live-fire steakhouse experience cost?`, a: `Pricing starts at ${buffet} per guest for the chef-attended buffet, ${family} family style, and ${plated} for plated service. Every package includes a live charcoal Grill Master, three premium proteins, three gourmet sides, two desserts, polished dinnerware, and full setup and cleanup.` },
+    { q: `What cuts of steak do you offer?`, a: `Ribeye, New York strip, T-bone, filet mignon, top sirloin, prime rib, tri-tip and picanha — charcoal-grilled over live fire to order. Beef tenderloin is available as a +$5 per steak upgrade. Surf and turf options pair steak with lobster tails, salmon, snapper, or bacon-wrapped scallops.` },
+    { q: `Is everything grilled fresh on-site?`, a: `Yes. We bring the live charcoal grill to your venue and cook every steak to order in front of your guests. Nothing is reheated, nothing sits — the aroma alone changes the energy of the room.` },
+    { q: `Can guests choose their steak temperature?`, a: `Yes. For plated and family-style service we collect temperature preferences in advance or fire to order tableside. For buffet service our Grill Master cooks a continuous rotation of rare through well-done so every guest gets exactly what they want.` },
+    { q: `Is this a buffet or a plated experience?`, a: `Both — you choose. The buffet is chef-attended with a live grilling station and feels like an upscale steakhouse line. Family style sends shared platters down the center of each table. Plated service is fully coursed, restaurant-style, with captains and synchronized service.` },
+    { q: `Can you accommodate dietary restrictions?`, a: `Yes. Every menu adapts for vegetarian, vegan, gluten-free, dairy-free, and Halal needs. For peanut, tree-nut and shellfish allergies we run a dedicated prep line and label each plate at the pass.` },
+    { q: `What's the minimum guest count?`, a: `The live-fire steakhouse experience is built for events of 30 or more. For intimate ${r.city} dinners under 30 we'll build a custom proposal — reach out and we'll quote it directly.` },
+    { q: `How far in advance should we book?`, a: `${r.region} peak Saturdays (spring through fall) typically book 6–12 months out. Off-peak weeknights and Sundays can often be accommodated inside 60–90 days. A 35% Date Charge locks your date and is applied to your final invoice.` },
+  ];
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "/" },
+      { "@type": "ListItem", position: 2, name: r.region, item: `/${isSD ? "san-diego" : "phoenix"}` },
+      { "@type": "ListItem", position: 3, name: "Signature Live Fire Steakhouse Catering", item: `/steakhouse-experience-${isSD ? "san-diego" : "phoenix"}` },
+    ],
+  };
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    serviceType: "Live-Fire Steakhouse Catering",
+    provider: { "@type": "LocalBusiness", name: "Qfire Catering", telephone: "+1-877-848-7211" },
+    areaServed: { "@type": "AdministrativeArea", name: r.region },
+    description: `Premium live-fire steakhouse catering across ${r.region} — charcoal-grilled ribeye, filet mignon, prime rib, salmon and surf & turf served under candlelight with white-glove service.`,
+    offers: [
+      { "@type": "Offer", name: "Buffet", price: buffet.replace("$", ""), priceCurrency: "USD", description: "Chef-attended buffet with live charcoal grill" },
+      { "@type": "Offer", name: "Family Style", price: family.replace("$", ""), priceCurrency: "USD", description: "Shared platters at every table" },
+      { "@type": "Offer", name: "Plated Service", price: plated.replace("$", ""), priceCurrency: "USD", description: "Coursed, restaurant-style plated dinner" },
+    ],
+  };
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       {/* HERO (dark) */}
       <section className="relative min-h-[82vh] flex items-end overflow-hidden grain-overlay">
         <div className="absolute inset-0">
@@ -38,6 +78,8 @@ export function SteakhouseExperiencePage({ r }: { r: RegionCopy }) {
           </div>
         </div>
       </section>
+
+      <TrustBar />
 
       {/* STEAKHOUSE PRICING SUMMARY */}
       <section className="py-20 lg:py-28 bg-onyx border-t border-white/5">
@@ -281,6 +323,12 @@ export function SteakhouseExperiencePage({ r }: { r: RegionCopy }) {
           </div>
         </div>
       </section>
+
+      <FAQSection
+        eyebrow={`${r.region} Steakhouse Catering FAQ`}
+        title="The premium steakhouse experience — answered."
+        faqs={steakFaqs}
+      />
 
       {/* DARK CTA */}
       <section className="relative py-32 lg:py-40 overflow-hidden">

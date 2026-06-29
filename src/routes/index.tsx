@@ -28,6 +28,16 @@ const weddingTable = weddingTableAsset.url;
 const corporate = corporateAsset.url;
 const privateParty = privatePartyAsset.url;
 import { CTASection } from "@/components/site/Sections";
+import { TrustBar } from "@/components/site/TrustBar";
+
+const HOME_FAQS = [
+  { q: "How far in advance should we book Qfire Catering?", a: "Most weddings book 6–12 months out for peak Saturdays. Corporate and private events are usually comfortable inside 4–8 weeks. Drop-off office catering can often be turned around in 24–72 hours. Call us — we move quickly whenever the date is open." },
+  { q: "Do you handle full service from setup to cleanup?", a: "Yes. Our team arrives early, stages the kitchen and buffet, runs service with uniformed staff, and handles full breakdown — trash bagged, surfaces wiped, equipment removed. You enjoy your event." },
+  { q: "Can you accommodate dietary needs and allergies?", a: "Absolutely. Vegetarian, vegan, gluten-free, dairy-free, kosher-style, and Halal-friendly menus are standard. For peanut, tree-nut, and shellfish allergies we run a dedicated prep line and label every plate at the pass." },
+  { q: "Do you travel to our venue?", a: "Yes. We cater across Phoenix Metro and San Diego County, and travel to destination venues, vineyards, ranches, and private estates within driving distance. Travel and lodging are quoted transparently inside your proposal." },
+  { q: "What makes Qfire different from other caterers?", a: "Chef Terry Matthews — featured on Food Network's BBQ Brawl with Bobby Flay, Camp Cutthroat, and a Cutthroat Kitchen champion — personally designs every menu. 2,000+ events, $10M+ catered since 2011, 4.9★ rated, fully licensed and insured, with live charcoal grilling at your venue." },
+  { q: "What happens after I request a quote?", a: "A real person — usually Chef Terry or your account lead — calls or emails within 24 hours. We send an itemized proposal, refine the menu together, and lock the date with a 35% Date Charge applied directly to your final invoice." },
+];
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -41,18 +51,41 @@ export const Route = createFileRoute("/")({
       { name: "twitter:image", content: heroImage.url },
     ],
     links: [{ rel: "canonical", href: "/" }],
-    scripts: [{
-      type: "application/ld+json",
-      children: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "FoodEstablishment",
-        name: "Qfire Catering",
-        description: "Full-service wood-fired and Signature Live Fire Steakhouse Catering for weddings, corporate events and private parties.",
-        areaServed: ["Phoenix Metro, AZ", "San Diego County, CA"],
-        servesCuisine: ["American", "Barbecue", "Signature Live Fire Steakhouse Catering"],
-        priceRange: "$$$",
-      }),
-    }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": ["LocalBusiness", "CateringService", "FoodEstablishment"],
+          name: "Qfire Catering",
+          alternateName: "The BBQ Daddy",
+          description: "Full-service wood-fired and premium steakhouse catering for weddings, corporate events and private parties across Phoenix Metro and San Diego County.",
+          url: "/",
+          telephone: "+1-877-848-7211",
+          email: "Eat@QfireCatering.com",
+          areaServed: [
+            { "@type": "AdministrativeArea", name: "Phoenix Metro, AZ" },
+            { "@type": "AdministrativeArea", name: "San Diego County, CA" },
+          ],
+          servesCuisine: ["American", "Wood-Fired", "Steakhouse"],
+          priceRange: "$$$",
+          founder: { "@type": "Person", name: "Terry Matthews", alternateName: "The BBQ Daddy", jobTitle: "Executive Chef & Founder" },
+          foundingDate: "2011",
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: HOME_FAQS.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
+        }),
+      },
+    ],
   }),
   component: Home,
 });
@@ -112,6 +145,8 @@ function Home() {
           Scroll
         </div>
       </section>
+
+      <TrustBar />
 
       {/* TWO REGIONS */}
       <section className="relative py-28 lg:py-44 overflow-hidden">
@@ -382,12 +417,7 @@ function Home() {
             <Link to="/faq" className="btn-ghost mt-8">All Questions</Link>
           </div>
           <div className="divide-y divide-white/5 border-y border-white/5">
-            {[
-              { q: "How far in advance should we book?", a: "Most weddings book 6–12 months out. Corporate and private events: 4–8 weeks is comfortable." },
-              { q: "Do you handle full service?", a: "Yes. Staffing, rentals, bartending, setup and breakdown. You enjoy your event." },
-              { q: "Can you accommodate dietary needs?", a: "Absolutely. Vegan, gluten-free, kosher-style and allergen-aware menus are part of how we plan." },
-              { q: "Do you travel?", a: "Across Phoenix Metro and San Diego County, with destination service available on request." },
-            ].map((f) => (
+            {HOME_FAQS.slice(0, 4).map((f) => (
               <details key={f.q} className="group py-6">
                 <summary className="flex items-center justify-between cursor-pointer list-none">
                   <span className="text-lg font-display text-bone group-hover:text-gold transition-colors pr-6">{f.q}</span>
