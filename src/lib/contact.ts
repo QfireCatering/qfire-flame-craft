@@ -2,7 +2,7 @@
 export const contact = {
   brand: "Qfire Catering",
   legalName: "Qfire Catering LLC",
-  tagline: "Wood-fired catering. Mastro's-tier Signature Live Fire Steakhouse Catering service. One team, two coasts.",
+  tagline: "Wood-fired catering. Mastro's-tier steakhouse service. One team, two coasts.",
   phone: "(877) 848-7211",
   phoneHref: "tel:+18778487211",
   email: "Eat@QfireCatering.com",

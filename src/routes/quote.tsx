@@ -18,7 +18,7 @@ export const Route = createFileRoute("/quote")({
       { property: "og:title", content: "Request a Quote — Qfire Catering" },
       {
         property: "og:description",
-        content: "Custom proposal within 24 hours. Wood-fired Wood-Fire + Signature Live Fire Signature Live Fire Steakhouse Catering Catering.",
+        content: "Custom proposal within 24 hours. Wood-fired Wood-Fire + steakhouse catering.",
       },
       { property: "og:url", content: "/quote" },
     ],
@@ -31,7 +31,7 @@ function getRedirectUrl(region: string, menu: string): string | null {
   const isPhx = region === "Arizona";
   const isSD = region === "San Diego County";
   const isBBQ = menu === "Wood-Fired Catering";
-  const isSteak = menu === "Signature Live Fire Signature Live Fire Signature Live Fire Steakhouse Catering Catering";
+  const isSteak = menu === "Signature Live Fire Steakhouse Catering";
   if (isPhx && isBBQ) return "https://fs17.formsite.com/matthews3404/BBQDADDYLLC/index";
   if (isSD && isBBQ) return "https://fs17.formsite.com/matthews3404/SanDiego/index";
   if (isPhx && isSteak) return "/steak-seafood-menu";
@@ -158,7 +158,7 @@ function QuotePage() {
               <SelectField
                 label="Menu Interest"
                 name="menu"
-                options={["Wood-Fired Catering", "Signature Live Fire Signature Live Fire Signature Live Fire Steakhouse Catering Catering", "Not sure yet"]}
+                options={["Wood-Fired Catering", "Signature Live Fire Steakhouse Catering", "Not sure yet"]}
               />
               <div>
                 <label className="block text-[0.65rem] tracking-[0.3em] uppercase text-bone mb-3">

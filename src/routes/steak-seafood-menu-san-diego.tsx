@@ -77,9 +77,9 @@ const warm: Dish[] = [
 ];
 
 const meats: Dish[] = [
-  { name: "Ribeye Steak", body: "The Signature Live Fire Steakhouse Catering classic — heavily marbled, char-grilled over live fire to a crusted finish with a juicy, buttery, melt-in-your-mouth center.", img: ribeyeAsset.url },
-  { name: "New York Strip", body: "Cut from the short loin. Bold, beefy flavor with a firm, satisfying bite and the perfect balance of fat and lean — a true Signature Live Fire Steakhouse Catering staple.", img: nyStripAsset.url },
-  { name: "T-Bone Steak", body: "Two premium cuts on one bone — the tender filet on one side, the bold New York strip on the other. Char-grilled over live fire for the ultimate Signature Live Fire Steakhouse Catering experience.", img: tboneAsset.url },
+  { name: "Ribeye Steak", body: "The steakhouse classic — heavily marbled, char-grilled over live fire to a crusted finish with a juicy, buttery, melt-in-your-mouth center.", img: ribeyeAsset.url },
+  { name: "New York Strip", body: "Cut from the short loin. Bold, beefy flavor with a firm, satisfying bite and the perfect balance of fat and lean — a true steakhouse staple.", img: nyStripAsset.url },
+  { name: "T-Bone Steak", body: "Two premium cuts on one bone — the tender filet on one side, the bold New York strip on the other. Char-grilled over live fire for the ultimate steakhouse experience.", img: tboneAsset.url },
   { name: "Beef Tenderloin", body: "The most tender cut of beef. Buttery texture, mild flavor, luxurious.", note: "+ $5 / steak", img: beefTenderloinAsset.url },
   { name: "Filet Mignon", body: "Premium tenderloin cut, buttery and delicate.", note: "+ $10/steak", img: filetMignonAsset.url },
   { name: "Top Sirloin (10 oz) — also known as Picanha", body: "Lean, flavorful, tender, with a rich beefy taste.", img: topSirloinAsset.url },
@@ -101,7 +101,7 @@ const sides: Dish[] = [
   { name: "Grilled Asparagus", body: "Lightly seasoned, brushed with natural butter, grilled to perfection.", img: grilledAsparagusAsset.url },
   { name: "Grilled Squash & Zucchini", body: "Vegetable crunch with char from the grill.", img: squashZucchiniImg.url },
   { name: "Grilled Sweet Corn", body: "Steamed, then grilled on-site.", img: grilledCornImg },
-  { name: "Roasted Broccoli", body: "A Signature Live Fire Steakhouse Catering staple.", img: roastedBroccoliAsset.url },
+  { name: "Roasted Broccoli", body: "A steakhouse staple.", img: roastedBroccoliAsset.url },
   { name: "Macaroni & Cheese", body: "A meal within itself.", img: macCheeseAsset.url },
   { name: "Alfredo Penne Pasta", body: "Our signature alfredo sauce will have you licking the plate.", img: alfredoPenneAsset.url },
   { name: "Sautéed Mushrooms & Onions", body: "A great addition to any steak.", img: mushroomsOnionsImg },
@@ -128,11 +128,11 @@ export const Route = createFileRoute("/steak-seafood-menu-san-diego")({
   head: () => ({
     meta: [
       { title: "San Diego County Steak & Seafood Catering Menu | Qfire Catering" },
-      { name: "description", content: "San Diego County's premier five-course Signature Live Fire Signature Live Fire Steakhouse Catering Catering menu — ribeye, filet mignon, prime rib, lobster, salmon and more — grilled live at your La Jolla, Del Mar, Rancho Santa Fe, Coronado, Carmel Valley, Encinitas, Solana Beach, Carlsbad, Oceanside, Poway, Chula Vista or Downtown San Diego event. Premium plated steak dinner catering throughout San Diego County." },
+      { name: "description", content: "San Diego County's premier five-course steakhouse catering menu — ribeye, filet mignon, prime rib, lobster, salmon and more — grilled live at your La Jolla, Del Mar, Rancho Santa Fe, Coronado, Carmel Valley, Encinitas, Solana Beach, Carlsbad, Oceanside, Poway, Chula Vista or Downtown San Diego event. Premium plated steak dinner catering throughout San Diego County." },
       { property: "og:title", content: "San Diego County Steak & Seafood Catering Menu | Qfire Catering" },
-      { property: "og:description", content: "Five-course Signature Live Fire Signature Live Fire Steakhouse Catering Catering in San Diego County: cold starter, warm hors d'oeuvre, choose-3 steaks/seafood, choose-3 sides, dessert and drinks. Live on-site grilling for weddings, corporate events and private parties across La Jolla, Del Mar, Rancho Santa Fe, Coronado and Carlsbad." },
+      { property: "og:description", content: "Five-course steakhouse catering in San Diego County: cold starter, warm hors d'oeuvre, choose-3 steaks/seafood, choose-3 sides, dessert and drinks. Live on-site grilling for weddings, corporate events and private parties across La Jolla, Del Mar, Rancho Santa Fe, Coronado and Carlsbad." },
       { property: "og:url", content: "/steak-seafood-menu-san-diego" },
-      { property: "og:image", content: Signature Live Fire Steakhouse CateringBackyard.url },
+      { property: "og:image", content: steakhouseBackyard.url },
     ],
     links: [{ rel: "canonical", href: "/steak-seafood-menu-san-diego" }],
     scripts: [
@@ -211,9 +211,9 @@ function SteakSeafoodMenuSanDiegoPage() {
   return (
     <>
       <PageHero
-        eyebrow="San Diego County Signature Live Fire Signature Live Fire Steakhouse Catering Catering"
+        eyebrow="San Diego County Steakhouse Catering"
         title={<>The San Diego County<br />Steak & Seafood Menu</>}
-        subtitle="A five-course Signature Live Fire Steakhouse Catering experience — cold starter, warm hors d'oeuvre, your choice of premium steaks and seafood, sides, dessert and drinks. Grilled live at your San Diego County event."
+        subtitle="A five-course steakhouse experience — cold starter, warm hors d'oeuvre, your choice of premium steaks and seafood, sides, dessert and drinks. Grilled live at your San Diego County event."
         image={sanDiegoHeroBg.url}
         regionKey="san-diego"
       >
@@ -233,21 +233,21 @@ function SteakSeafoodMenuSanDiegoPage() {
       <section className="py-20 lg:py-28 border-t border-white/5">
         <div className="container-luxe max-w-4xl">
           <p className="eyebrow mb-5">The Experience</p>
-          <h2 className="heading-lg text-bone mb-6">The Surf & Turf Signature Live Fire Steakhouse Catering Experience</h2>
+          <h2 className="heading-lg text-bone mb-6">The Surf & Turf Steakhouse Experience</h2>
           <p className="text-xl lg:text-2xl text-bone/80 font-display leading-relaxed mb-8">
-            More Than Catering. A Private Signature Live Fire Steakhouse Catering Experience Created Exclusively for Your San Diego Guests.
+            More Than Catering. A Private Steakhouse Experience Created Exclusively for Your San Diego Guests.
           </p>
           <div className="space-y-6 text-bone/70 text-base lg:text-lg leading-relaxed">
             <p>If you're looking for something beyond the traditional buffet in San Diego County — from La Jolla and Del Mar to Rancho Santa Fe, Coronado, Carmel Valley, Encinitas, Solana Beach, Carlsbad, Oceanside, Poway, Chula Vista and Downtown San Diego — this is where our most discerning coastal clients naturally gravitate.</p>
-            <p>Our San Diego County Surf & Turf Signature Live Fire Steakhouse Catering Experience combines the energy of live-fire cooking with the elegance of fine dining — bringing the atmosphere of an upscale Signature Live Fire Steakhouse Catering directly to your La Jolla estate, Del Mar beachfront, Rancho Santa Fe ranch, or Coronado celebration.</p>
-            <p>From oceanfront weddings to corporate dinners and luxury private parties, we bring restaurant-quality Signature Live Fire Signature Live Fire Steakhouse Catering Catering to every corner of San Diego County. This isn't just dinner. It's the experience your guests will remember long after the last bite.</p>
+            <p>Our San Diego County Surf & Turf Steakhouse Experience combines the energy of live-fire cooking with the elegance of fine dining — bringing the atmosphere of an upscale steakhouse directly to your La Jolla estate, Del Mar beachfront, Rancho Santa Fe ranch, or Coronado celebration.</p>
+            <p>From oceanfront weddings to corporate dinners and luxury private parties, we bring restaurant-quality steakhouse catering to every corner of San Diego County. This isn't just dinner. It's the experience your guests will remember long after the last bite.</p>
           </div>
         </div>
       </section>
 
       <section className="py-20 lg:py-28 border-t border-white/5">
         <div className="container-luxe">
-          <h3 className="heading-md text-bone mb-16 text-center">Included With Every Signature Live Fire Steakhouse Catering Experience</h3>
+          <h3 className="heading-md text-bone mb-16 text-center">Included With Every Steakhouse Experience</h3>
           <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
             <div>
               <div className="text-3xl mb-5">🔥</div>
@@ -284,7 +284,7 @@ function SteakSeafoodMenuSanDiegoPage() {
                 <div>
                   <p className="font-display text-bone text-lg mb-1">Signature Surf & Turf Entrée</p>
                   <p>Indulge in three premium proteins expertly prepared over live charcoal alongside three carefully selected gourmet sides designed to complement every bite.</p>
-                  <p className="mt-2">Every plate is crafted to deliver the flavor, presentation, and quality you'd expect from a high-end Signature Live Fire Steakhouse Catering.</p>
+                  <p className="mt-2">Every plate is crafted to deliver the flavor, presentation, and quality you'd expect from a high-end steakhouse.</p>
                 </div>
                 <div>
                   <p className="font-display text-bone text-lg mb-1">Gourmet Desserts</p>
@@ -321,7 +321,7 @@ function SteakSeafoodMenuSanDiegoPage() {
               <div className="font-display text-bone text-4xl lg:text-5xl mb-2">$94</div>
               <div className="text-bone/50 text-sm mb-8">per guest</div>
               <h4 className="font-display text-bone text-xl mb-3">Family-Style Experience</h4>
-              <p className="text-bone/65 leading-relaxed mb-6 flex-1">Warm. Interactive. Memorable. Beautiful serving platters are placed directly on each table, encouraging conversation, connection, and a shared dining experience reminiscent of an upscale family-owned Signature Live Fire Steakhouse Catering.</p>
+              <p className="text-bone/65 leading-relaxed mb-6 flex-1">Warm. Interactive. Memorable. Beautiful serving platters are placed directly on each table, encouraging conversation, connection, and a shared dining experience reminiscent of an upscale family-owned steakhouse.</p>
               <p className="text-sm text-bone/50">Ideal for guests who enjoy lingering around the table together.</p>
             </div>
             <div className="bg-ink/60 border border-gold/30 p-8 lg:p-10 flex flex-col relative">
@@ -329,10 +329,10 @@ function SteakSeafoodMenuSanDiegoPage() {
               <div className="text-[0.65rem] tracking-[0.3em] uppercase text-gold mb-6">Plated Service</div>
               <div className="font-display text-bone text-4xl lg:text-5xl mb-2">$133</div>
               <div className="text-bone/50 text-sm mb-8">per guest</div>
-              <h4 className="font-display text-bone text-xl mb-3">Plated Signature Live Fire Steakhouse Catering Service</h4>
+              <h4 className="font-display text-bone text-xl mb-3">Plated Steakhouse Service</h4>
               <p className="text-bone/65 leading-relaxed mb-6 flex-1">Our most luxurious dining experience. Each course is individually plated and professionally served to every guest with restaurant-style precision.</p>
               <p className="text-sm text-bone/50">Designed for black-tie weddings, luxury San Diego receptions, executive dinners, and events where every detail matters.</p>
-              <p className="text-sm text-bone/50 mt-3">For hosts who want their guests to feel like they've just dined at one of the finest Signature Live Fire Steakhouse Caterings in the country—without ever leaving the venue.</p>
+              <p className="text-sm text-bone/50 mt-3">For hosts who want their guests to feel like they've just dined at one of the finest steakhouses in the country—without ever leaving the venue.</p>
             </div>
           </div>
           <p className="mt-10 text-sm text-bone/55 italic text-center">
@@ -347,7 +347,7 @@ function SteakSeafoodMenuSanDiegoPage() {
           <h3 className="heading-md text-bone mb-10 text-center">Why San Diego County Clients Choose This Experience</h3>
           <div className="grid sm:grid-cols-2 gap-x-12 gap-y-5 text-bone/70">
             <div className="flex items-start gap-3"><span className="text-gold mt-1">✔</span><span>Live charcoal grilling performed in front of your guests</span></div>
-            <div className="flex items-start gap-3"><span className="text-gold mt-1">✔</span><span>Premium Signature Live Fire Steakhouse Catering-quality ingredients</span></div>
+            <div className="flex items-start gap-3"><span className="text-gold mt-1">✔</span><span>Premium steakhouse-quality ingredients</span></div>
             <div className="flex items-start gap-3"><span className="text-gold mt-1">✔</span><span>Restaurant-level presentation and service</span></div>
             <div className="flex items-start gap-3"><span className="text-gold mt-1">✔</span><span>Luxury dinnerware, linens, and glassware included</span></div>
             <div className="flex items-start gap-3"><span className="text-gold mt-1">✔</span><span>Experienced culinary and service professionals</span></div>
@@ -362,7 +362,7 @@ function SteakSeafoodMenuSanDiegoPage() {
         <div className="container-luxe text-center">
           <div className="inline-flex items-center gap-4 px-8 py-4 border-2 border-gold/40 bg-gold/5 mb-6">
             <span className="w-3 h-3 bg-gold rotate-45" />
-            <span className="font-sans text-[0.75rem] font-semibold tracking-[0.4em] uppercase text-gold">San Diego County Signature Live Fire Steakhouse Catering Menu</span>
+            <span className="font-sans text-[0.75rem] font-semibold tracking-[0.4em] uppercase text-gold">San Diego County Steakhouse Menu</span>
             <span className="w-3 h-3 bg-gold rotate-45" />
           </div>
           <h2 className="heading-lg text-bone mb-4">Your San Diego County Menu Selections</h2>
@@ -395,7 +395,7 @@ function SteakSeafoodMenuSanDiegoPage() {
         number="04"
         eyebrow="Choose 3"
         title="Sides"
-        sub="Classic Signature Live Fire Steakhouse Catering accompaniments, scratch-made for your San Diego County event."
+        sub="Classic steakhouse accompaniments, scratch-made for your San Diego County event."
         items={sides}
       />
       <Course
@@ -434,10 +434,10 @@ function SteakSeafoodMenuSanDiegoPage() {
       </section>
 
       <TestimonialStrip regionKey="san-diego" />
-      <Signature Live Fire Steakhouse CateringMenuFAQ regionKey="san-diego" />
+      <SteakhouseMenuFAQ regionKey="san-diego" />
 
       <CTASection
-        title="Bring the Signature Live Fire Steakhouse Catering to your San Diego County event."
+        title="Bring the steakhouse to your San Diego County event."
         subtitle="Serving La Jolla, Del Mar, Rancho Santa Fe, Coronado, Carmel Valley, Encinitas, Carlsbad and surrounding areas. Tell us your date, guest count and venue — we'll send a custom proposal within 24 hours."
       />
     </>

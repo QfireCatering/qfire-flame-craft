@@ -6,7 +6,7 @@ const titles: Record<string, { t: string; d: string }> = {
   corporate: { t: "Phoenix Corporate Catering", d: "Executive dinners, holiday parties and corporate events across Phoenix Metro." },
   "private-parties": { t: "Phoenix Private Party Catering", d: "Backyard luxury catering for milestone events across Phoenix Metro." },
   "wood-fired": { t: "Phoenix Wood-Fired Catering", d: "Slow-smoked, live-fire catering across Phoenix Metro." },
-  Signature Live Fire Steakhouse Catering: { t: "Phoenix Signature Live Fire Signature Live Fire Steakhouse Catering Catering", d: "Plated Signature Live Fire Signature Live Fire Steakhouse Catering Catering for weddings and corporate dinners across Phoenix Metro." },
+  steakhouse: { t: "Phoenix Steakhouse Catering", d: "Plated steakhouse catering for weddings and corporate dinners across Phoenix Metro." },
   bartending: { t: "Phoenix Bartending Services", d: "Licensed and insured bartending across Phoenix Metro." },
   rentals: { t: "Phoenix Event Rentals", d: "Linens, china, glassware and event rentals across Phoenix Metro." },
   faq: { t: "Phoenix Catering FAQ", d: "Frequently asked questions about catering across Phoenix Metro." },

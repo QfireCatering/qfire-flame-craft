@@ -5,7 +5,7 @@ export function PhoenixPricingBanner() {
     <section className="w-full relative">
       <img
         src={phoenixPricingBanner.url}
-        alt="1 Meat & 2 Meat, Transparent Pricing — Wood-Fired Catering Packages and Signature Live Fire Steakhouse Catering & Surf + Turf options for Phoenix Metro"
+        alt="1 Meat & 2 Meat, Transparent Pricing — Wood-Fired Catering Packages and Steakhouse & Surf + Turf options for Phoenix Metro"
         className="w-full h-auto"
         loading="eager"
         width={1920}

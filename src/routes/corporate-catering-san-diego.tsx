@@ -24,7 +24,7 @@ export const Route = createFileRoute("/corporate-catering-san-diego")({
       { property: "og:description", content: "On-time, professional, restaurant-quality corporate catering across San Diego County. Office lunches, executive dinners, holiday parties, construction-site lunches, live-fire grilling." },
       { property: "og:url", content: "/corporate-catering-san-diego" },
       { property: "og:type", content: "website" },
-      { name: "keywords", content: "San Diego corporate catering, La Jolla corporate caterer, office catering San Diego, executive catering La Jolla, holiday party catering San Diego, employee appreciation catering San Diego, construction site catering San Diego, business catering Carlsbad, company catering Del Mar, corporate Wood-Fire catering San Diego, corporate Signature Live Fire Signature Live Fire Steakhouse Catering Catering La Jolla, office lunch catering Mission Valley, conference catering San Diego, Rancho Santa Fe corporate catering, Coronado corporate catering" },
+      { name: "keywords", content: "San Diego corporate catering, La Jolla corporate caterer, office catering San Diego, executive catering La Jolla, holiday party catering San Diego, employee appreciation catering San Diego, construction site catering San Diego, business catering Carlsbad, company catering Del Mar, corporate Wood-Fire catering San Diego, corporate steakhouse catering La Jolla, office lunch catering Mission Valley, conference catering San Diego, Rancho Santa Fe corporate catering, Coronado corporate catering" },
     ],
     links: [{ rel: "canonical", href: "/corporate-catering-san-diego" }],
   }),

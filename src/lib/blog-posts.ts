@@ -85,7 +85,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        h2: "How to plate it like a Signature Live Fire Steakhouse Catering",
+        h2: "How to plate it like a steakhouse",
         p: [
           "Slice against the grain at pencil thickness. Fan three slices off-center on warm white china. Add a smear of horseradish creme, a pinch of finishing salt, and a microgreen — that is it. No sauce drowning the bark.",
           "For family-style, carve at the table on a maple board. The smell hits the room before the first fork.",
@@ -126,7 +126,7 @@ export const blogPosts: BlogPost[] = [
       {
         h2: "Menu architecture for serious conversations",
         p: [
-          "Three courses, not five. A shared crudo or charcuterie to break the ice, a Signature Live Fire Steakhouse Catering main (filet, ribeye, or surf and turf), and a single dessert with espresso. Nothing that requires a fork-and-knife performance while someone is mid-pitch.",
+          "Three courses, not five. A shared crudo or charcuterie to break the ice, a steakhouse main (filet, ribeye, or surf and turf), and a single dessert with espresso. Nothing that requires a fork-and-knife performance while someone is mid-pitch.",
           "Pre-select the menu. Choice is great for weddings and terrible for term sheets.",
         ],
       },
@@ -146,8 +146,8 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
-    slug: "Signature Live Fire Steakhouse Catering-at-home-private-dinners",
-    title: "Signature Live Fire Steakhouse Catering at home: a guide to upscale catering for private dinners.",
+    slug: "steakhouse-at-home-private-dinners",
+    title: "Steakhouse at home: a guide to upscale catering for private dinners.",
     category: "Planning Guides",
     date: "January 2026",
     isoDate: "2026-01-22",
@@ -157,7 +157,7 @@ export const blogPosts: BlogPost[] = [
     image: steak,
     body: [
       {
-        h2: "What a private Signature Live Fire Steakhouse Catering dinner actually requires",
+        h2: "What a private steakhouse dinner actually requires",
         p: [
           "A workable kitchen counter, 220V if you want a flat-top brought in, and a clear path from prep to the dining table. Most Phoenix and San Diego homes already qualify.",
           "For groups of 8 to 24, we bring everything else: china, linens, glassware, the chef, the captain, and the proteins.",
@@ -166,7 +166,7 @@ export const blogPosts: BlogPost[] = [
       {
         h2: "The menu we recommend",
         p: [
-          "A passed canape, a chilled first course (oysters or crudo), a Signature Live Fire Steakhouse Catering main course (a 16oz bone-in ribeye, a 10oz filet, or a 24oz porterhouse for two), three shared sides, and a single dessert.",
+          "A passed canape, a chilled first course (oysters or crudo), a steakhouse main course (a 16oz bone-in ribeye, a 10oz filet, or a 24oz porterhouse for two), three shared sides, and a single dessert.",
           "Add wine pairings or let us coordinate with your own cellar.",
         ],
       },

@@ -67,7 +67,7 @@ function AboutPage() {
             </ul>
             <p>
               Friends, family and clients know him as "The BBQ Daddy" — a nickname earned one perfect brisket at a time.
-              But the company he built is Qfire: a full-service catering operation that brings wood-fired flavor and Signature Live Fire Steakhouse Catering polish to weddings,
+              But the company he built is Qfire: a full-service catering operation that brings wood-fired flavor and steakhouse polish to weddings,
               corporate events and private parties across Phoenix Metro and San Diego County.
             </p>
             <p>

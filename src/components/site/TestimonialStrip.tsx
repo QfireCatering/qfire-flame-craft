@@ -13,7 +13,7 @@ const REVIEWS: Record<RegionKey, Review[]> = {
       source: "WeddingWire",
     },
     {
-      q: "Hired Qfire for our company's annual partner dinner — 200+ guests, plated Signature Live Fire Steakhouse Catering service in Phoenix. Hot food, perfect timing, the staff was impeccable. Worth every dollar. We are already booking next year.",
+      q: "Hired Qfire for our company's annual partner dinner — 200+ guests, plated steakhouse service in Phoenix. Hot food, perfect timing, the staff was impeccable. Worth every dollar. We are already booking next year.",
       a: "Yara Patino",
       e: "Corporate · Phoenix",
       source: "Yelp",
@@ -33,13 +33,13 @@ const REVIEWS: Record<RegionKey, Review[]> = {
       source: "WeddingWire",
     },
     {
-      q: "Brand activation in Del Mar — Chef Terry's team kept the food coming all night for 2,200 people and never missed a beat. Signature Live Fire Steakhouse Catering-grade food at festival scale. Incredible operation.",
+      q: "Brand activation in Del Mar — Chef Terry's team kept the food coming all night for 2,200 people and never missed a beat. Steakhouse-grade food at festival scale. Incredible operation.",
       a: "Yara Patino",
       e: "Corporate · Del Mar",
       source: "Yelp",
     },
     {
-      q: "Coronado beachfront plated dinner for 90 guests. White-glove service, gorgeous presentation, and the filet was better than any Signature Live Fire Steakhouse Catering we've been to in San Diego. 5 stars, every category.",
+      q: "Coronado beachfront plated dinner for 90 guests. White-glove service, gorgeous presentation, and the filet was better than any steakhouse we've been to in San Diego. 5 stars, every category.",
       a: "Jean Laber",
       e: "Private Party · Coronado",
       source: "Google",

@@ -21,7 +21,7 @@ const credits = [
   { icon: Trophy, title: "Cutthroat Kitchen", sub: "Winner — Food Network", detail: "Crowned champion in head-to-head sabotage cooking — proof of Chef Terry's range under pressure." },
   { icon: Trophy, title: "Camp Cutthroat", sub: "Winner — Food Network", detail: "Outdoor live-fire competition victory across multiple wilderness challenges." },
   { icon: Tv, title: "BBQ Brawl Season 2", sub: "Featured Pitmaster — Food Network", detail: "Selected to compete against the country's top pitmasters for the title of America's Master of 'Cue." },
-  { icon: Flame, title: "Bobby Flay's Kitchen", sub: "Featured Cook", detail: "Cooked alongside Bobby Flay — sharpening the Signature Live Fire Steakhouse Catering technique that defines Qfire today." },
+  { icon: Flame, title: "Bobby Flay's Kitchen", sub: "Featured Cook", detail: "Cooked alongside Bobby Flay — sharpening the steakhouse technique that defines Qfire today." },
   { icon: Award, title: "International Chef Competition", sub: "Host & Judge", detail: "Tapped to host and judge international culinary competitions and live-fire showcases." },
   { icon: Award, title: "Catering Coach & Mentor", sub: "Industry Leadership", detail: "Mentors caterers and pitmasters nationwide on event execution, fire technique and hospitality standards." },
 ];

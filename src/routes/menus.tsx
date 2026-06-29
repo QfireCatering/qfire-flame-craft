@@ -10,8 +10,8 @@ import { CTASection } from "@/components/site/Sections";
 export const Route = createFileRoute("/menus")({
   head: () => ({
     meta: [
-      { title: "Catering Menus — Wood-Fired Wood-Fire & Signature Live Fire Steakhouse Catering | Qfire" },
-      { name: "description", content: "Explore Qfire Catering menus: slow-smoked wood-fired Wood-Fire and hand-cut Signature Live Fire Steakhouse Catering plates. Phoenix Metro & San Diego County." },
+      { title: "Catering Menus — Wood-Fired Wood-Fire & Steakhouse | Qfire" },
+      { name: "description", content: "Explore Qfire Catering menus: slow-smoked wood-fired Wood-Fire and hand-cut steakhouse plates. Phoenix Metro & San Diego County." },
       { property: "og:title", content: "Menus — Qfire" },
       { property: "og:url", content: "/menus" },
     ],
@@ -25,11 +25,11 @@ type Region = "phoenix" | "san-diego";
 const MENUS_BY_REGION: Record<Region, { img: string; label: string; body: string; href: string }[]> = {
   phoenix: [
     { img: bbqPlatter1.url, label: "Wood-Fired — Phoenix Metro", body: "Slow-smoked brisket, tri-tip, pulled meats and comfort sides. Backyard elegance across the Valley.", href: "https://fs17.formsite.com/matthews3404/BBQDADDYLLC/index" },
-    { img: Signature Live Fire Steakhouse CateringMenu.url, label: "Signature Live Fire Steakhouse Catering — Phoenix Metro", body: "Ribeye, filet, picanha, prime rib. Plated dinners and family-style service. Phoenix pricing.", href: "/steak-seafood-menu" },
+    { img: steakhouseMenu.url, label: "Steakhouse — Phoenix Metro", body: "Ribeye, filet, picanha, prime rib. Plated dinners and family-style service. Phoenix pricing.", href: "/steak-seafood-menu" },
   ],
   "san-diego": [
     { img: bbqPlatter1.url, label: "Wood-Fired — San Diego County", body: "Slow-smoked brisket, tri-tip, pulled meats and comfort sides. Coastal backyard elegance.", href: "https://fs17.formsite.com/matthews3404/SanDiego/index" },
-    { img: Signature Live Fire Steakhouse CateringMenu.url, label: "Signature Live Fire Steakhouse Catering — San Diego County", body: "Ribeye, filet, picanha, prime rib. Plated dinners and family-style service. San Diego pricing.", href: "/steak-seafood-menu-san-diego" },
+    { img: steakhouseMenu.url, label: "Steakhouse — San Diego County", body: "Ribeye, filet, picanha, prime rib. Plated dinners and family-style service. San Diego pricing.", href: "/steak-seafood-menu-san-diego" },
   ],
 };
 

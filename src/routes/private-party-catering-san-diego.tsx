@@ -19,7 +19,7 @@ export const Route = createFileRoute("/private-party-catering-san-diego")({
   head: () => ({
     meta: [
       { title: "San Diego Private Party Catering | Birthday, Backyard & Anniversary Catering — Qfire" },
-      { name: "description", content: "Premium San Diego County private party catering by Chef Terry Matthews (Food Network's BBQ Brawl). Birthdays, backyard parties, anniversaries, graduations, family reunions & luxury private dinners across La Jolla, Del Mar, Carlsbad, Encinitas, Rancho Santa Fe, Coronado, Poway & all of San Diego County. Live charcoal grilling, Signature Live Fire Steakhouse Catering plates, full bar service." },
+      { name: "description", content: "Premium San Diego County private party catering by Chef Terry Matthews (Food Network's BBQ Brawl). Birthdays, backyard parties, anniversaries, graduations, family reunions & luxury private dinners across La Jolla, Del Mar, Carlsbad, Encinitas, Rancho Santa Fe, Coronado, Poway & all of San Diego County. Live charcoal grilling, steakhouse plates, full bar service." },
       { property: "og:title", content: "San Diego Private Party Catering — Qfire | Backyard, Birthday & Anniversary Catering" },
       { property: "og:description", content: "Restaurant-quality private party catering across San Diego County. Live charcoal grilling, premium steaks, authentic Wood-Fire, professional service." },
       { property: "og:url", content: "/private-party-catering-san-diego" },
