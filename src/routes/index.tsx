@@ -30,6 +30,8 @@ const privateParty = privatePartyAsset.url;
 import { CTASection } from "@/components/site/Sections";
 import { TrustBar } from "@/components/site/TrustBar";
 import { ConfidenceBar } from "@/components/site/ConfidenceBar";
+import { AnswerBox } from "@/components/site/AnswerBox";
+import { AtAGlance } from "@/components/site/AtAGlance";
 
 const HOME_FAQS = [
   { q: "How far in advance should we book Qfire Catering?", a: "Most weddings book 6–12 months out for peak Saturdays. Corporate and private events are usually comfortable inside 4–8 weeks. Drop-off office catering can often be turned around in 24–72 hours. Call us — we move quickly whenever the date is open." },
@@ -72,6 +74,33 @@ export const Route = createFileRoute("/")({
           priceRange: "$$$",
           founder: { "@type": "Person", name: "Terry Matthews", alternateName: "The BBQ Daddy", jobTitle: "Executive Chef & Founder" },
           foundingDate: "2011",
+          sameAs: [
+            "https://www.thebbqdaddy.com",
+            "https://www.instagram.com/thebbqdaddy",
+            "https://www.facebook.com/thebbqdaddy",
+            "https://www.foodnetwork.com/shows/bbq-brawl",
+          ],
+          contactPoint: [{
+            "@type": "ContactPoint",
+            telephone: "+1-877-848-7211",
+            email: "Eat@QfireCatering.com",
+            contactType: "Sales",
+            areaServed: ["US-AZ", "US-CA"],
+            availableLanguage: ["English", "Spanish"],
+          }],
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "287",
+            bestRating: "5",
+            worstRating: "1",
+          },
+          makesOffer: [
+            { "@type": "Offer", name: "Wood-Fired Catering (1-Meat)", priceCurrency: "USD", price: "12.99", priceSpecification: { "@type": "UnitPriceSpecification", price: "12.99", priceCurrency: "USD", unitText: "per guest" } },
+            { "@type": "Offer", name: "Wood-Fired Catering (2-Meat)", priceCurrency: "USD", price: "17.99" },
+            { "@type": "Offer", name: "Wood-Fired Catering (3-Meat)", priceCurrency: "USD", price: "25.99" },
+            { "@type": "Offer", name: "Signature Live Fire Steakhouse Experience", priceCurrency: "USD", price: "74.00" },
+          ],
         }),
       },
       {
@@ -148,6 +177,18 @@ function Home() {
       </section>
 
       <TrustBar />
+
+      <AnswerBox
+        question="What is Qfire Catering and where do you cater?"
+        answer="Qfire Catering is a full-service luxury catering company led by Chef Terry Matthews — featured on Food Network's BBQ Brawl, Cutthroat Kitchen, and Camp Cutthroat. We specialize in wood-fired and live-fire steakhouse catering for weddings, corporate events, and private parties across Phoenix Metro, Arizona and San Diego County, California. 2,000+ events catered since 2011, 4.9★ rated, fully licensed and insured."
+        bullets={[
+          "Wood-fired catering from $12.99 / guest · Steakhouse experience from $74 / guest",
+          "Scales from intimate 25-guest dinners up to 2,500-guest galas",
+          "Full service: menu design, staff, setup, service, and breakdown",
+        ]}
+      />
+
+      <AtAGlance />
 
       {/* TWO REGIONS */}
       <section className="relative py-28 lg:py-44 overflow-hidden">
