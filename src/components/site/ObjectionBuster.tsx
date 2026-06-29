@@ -51,7 +51,7 @@ const DEFAULT_OBJECTIONS: Objection[] = [
   },
   {
     q: "Can I customize the menu, or am I stuck with a fixed list?",
-    a: "Every menu is 100% customizable. Dietary needs (gluten-free, vegan, kosher-style, allergies), regional favorites, and family recipes are all on the table. Booked clients get a private tasting to finalize.",
+    a: "Every menu is 100% customizable. Dietary needs (gluten-free, vegan, kosher-style, allergies), regional favorites, and family recipes are all on the table. You have until 2 weeks before the event to finalize the menu and guest count.",
   },
   {
     q: "What if it rains, the venue changes, or my date moves?",
