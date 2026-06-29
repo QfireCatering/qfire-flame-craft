@@ -184,12 +184,11 @@ function QuotePage() {
                 {state === "sending" ? "Sending…" : "Submit"}{" "}
                 <ArrowRight className="size-4" />
               </button>
-              <p className="text-xs text-muted-foreground text-center">
-                We respond personally within 24 hours. Or call{" "}
+              <p className="text-sm text-bone font-bold text-center">
+                Feel free to call RIGHT NOW, for faster service{" "}
                 <a href={contact.phoneHref} className="text-gold">
                   {contact.phone}
                 </a>
-                .
               </p>
             </form>
           )}
