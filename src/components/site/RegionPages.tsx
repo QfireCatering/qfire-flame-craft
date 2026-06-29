@@ -8,6 +8,8 @@ import { TrustBar } from "./TrustBar";
 import { FAQSection } from "./FAQSection";
 import { AnswerBox } from "./AnswerBox";
 import { AtAGlance } from "./AtAGlance";
+import { ServiceStyleComparison } from "./ServiceStyleComparison";
+import { ReviewsSection } from "./ReviewsSection";
 import {
   weddingConfig, corporateConfig, privatePartyConfig,
   woodFiredConfig, steakhouseConfig, bartendingConfig,
@@ -351,6 +353,10 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
           </div>
         </div>
       </section>
+
+      <ServiceStyleComparison />
+
+      <ReviewsSection />
 
       <FAQSection
         eyebrow={`${r.shortName} Catering FAQ`}

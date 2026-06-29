@@ -32,6 +32,8 @@ import { TrustBar } from "@/components/site/TrustBar";
 import { ConfidenceBar } from "@/components/site/ConfidenceBar";
 import { AnswerBox } from "@/components/site/AnswerBox";
 import { AtAGlance } from "@/components/site/AtAGlance";
+import { ServiceStyleComparison } from "@/components/site/ServiceStyleComparison";
+import { ReviewsSection, REVIEW_SCHEMA } from "@/components/site/ReviewsSection";
 
 const HOME_FAQS = [
   { q: "How far in advance should we book Qfire Catering?", a: "Most weddings book 6–12 months out for peak Saturdays. Corporate and private events are usually comfortable inside 4–8 weeks. Drop-off office catering can often be turned around in 24–72 hours. Call us — we move quickly whenever the date is open." },
@@ -115,6 +117,10 @@ export const Route = createFileRoute("/")({
           })),
         }),
       },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(REVIEW_SCHEMA),
+      },
     ],
   }),
   component: Home,
@@ -189,6 +195,10 @@ function Home() {
       />
 
       <AtAGlance />
+
+      <ReviewsSection />
+
+      <ServiceStyleComparison />
 
       {/* TWO REGIONS */}
       <section className="relative py-28 lg:py-44 overflow-hidden">
