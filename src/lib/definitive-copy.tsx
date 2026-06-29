@@ -284,7 +284,7 @@ export const definitiveCopy: Record<string, Preset> = {
   },
   steakhouse: {
     explainer:
-      "The Signature Live Fire Steakhouse Experience is what happens when a Food Network chef builds a Mastro's-caliber dinner service around your venue. Center-cut filet, prime ribeye, New York strip, T-bone, picanha, prime rib, and surf & turf — all charcoal-grilled over real hardwood, sliced in front of your guests, and plated with restaurant-grade presentation.",
+      "The Signature Live Fire Steakhouse Experience is what happens when a Food Network chef builds a premium steakhouse dinner service around your venue. Center-cut filet, prime ribeye, New York strip, T-bone, picanha, prime rib, and surf & turf — all charcoal-grilled over real hardwood, sliced in front of your guests, and plated with restaurant-grade presentation.",
     explainerLong:
       "This isn't a fancier buffet. It's a portable steakhouse: chef-attended grilling stations, polished service staff in chef coats, three signature sides, fresh-baked breads, butter board, salad course, and sauces. The room feels different the moment the first plate goes down.",
     included: [
