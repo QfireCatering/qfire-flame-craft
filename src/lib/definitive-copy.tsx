@@ -540,9 +540,21 @@ definitiveCopy.region = {
       "Follow-up email within 48 hours",
     ],
   },
-  differentiators: baseRegionDifferentiators,
+  differentiators: [
+    { title: "Chef Terry designs every menu", body: "Television-tested standards. Personally built proposals. Not handed off to a junior coordinator." },
+    { title: "Real wood, real fire", body: "Oak, hickory, mesquite, pecan over live coals. No gas shortcuts, no liquid smoke." },
+    { title: "Restaurant-grade plating, any venue", body: "Polished service staff in chef coats. Mastro's-caliber presentation in your venue." },
+    { title: "Two-region operation", body: "Phoenix Metro and San Diego County fully staffed — one chef, one team, one set of standards." },
+  ],
   confidence: baseConfidence,
-  extraFaqs: regionExtraFaqs,
+  extraFaqs: [
+    { q: "Which areas do you cater in this region?", a: "We cover the full metro area and most reasonable drive-time destinations from our home base. Travel is quoted transparently inside your proposal." },
+    { q: "Do you handle weddings, corporate, and private parties?", a: "Yes — all three are core service lines, with dedicated regional pages for each. One vendor, one team, all event types." },
+    { q: "Can you scale a large event in this region?", a: "Phoenix scales to 2,000 guests. San Diego scales to 2,500. Larger events are quoted with additional grill stations and staff." },
+    { q: "Do you have an approved-vendor list with local venues?", a: "Yes — we're on the approved-vendor list at many premium venues in both regions. Tell us your venue and we'll likely already know the kitchen." },
+    { q: "What's the fastest you can turn a quote?", a: "For smaller drop-offs and meeting catering, often 24–48 hours. For weddings and large events, 3–5 business days for a fully itemized proposal." },
+  ],
   ctaLabel: "Request a Quote",
 };
+
 
