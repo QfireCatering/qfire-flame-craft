@@ -354,6 +354,10 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
         </div>
       </section>
 
+      <ServiceStyleComparison />
+
+      <ReviewsSection />
+
       <FAQSection
         eyebrow={`${r.shortName} Catering FAQ`}
         title={`Common ${r.shortName} catering questions.`}
