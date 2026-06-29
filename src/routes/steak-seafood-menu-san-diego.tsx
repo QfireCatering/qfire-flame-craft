@@ -7,7 +7,8 @@ import { PageHero, CTASection } from "@/components/site/Sections";
 import { TestimonialStrip } from "@/components/site/TestimonialStrip";
 import { SteakhouseMenuFAQ } from "@/components/site/SteakhouseMenuFAQ";
 
-import antipastoKabob from "@/assets/dishes/antipasto-kabob.jpg";
+import antipastoKabobAsset from "@/assets/dishes/antipasto-kabob.png.asset.json";
+const antipastoKabob = antipastoKabobAsset.url;
 import antipastoPlatter from "@/assets/dishes/charcuterie.png.asset.json";
 import caesarSalad from "@/assets/dishes/caesar-salad.png.asset.json";
 import houseSalad from "@/assets/dishes/house-salad.jpg";
