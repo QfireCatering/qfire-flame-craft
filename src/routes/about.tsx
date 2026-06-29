@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import chefTerry from "@/assets/chef-terry.jpg.asset.json";
+import chefTerry from "@/assets/chef-terry-maroon.png.asset.json";
 import heroCollage from "@/assets/chef-terry-hero-collage.jpg.asset.json";
 import g1 from "@/assets/gallery/about-chef/me_couple.avif.asset.json";
 import g2 from "@/assets/gallery/about-chef/me_couple_3.avif.asset.json";
