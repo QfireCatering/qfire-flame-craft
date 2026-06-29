@@ -111,7 +111,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
               telephone: "+1-877-848-7211",
               email: "Eat@QfireCatering.com",
               priceRange: "$$$",
-              servesCuisine: ["Wood-Fired Wood-Fire", "Steakhouse", "American"],
+              servesCuisine: ["Wood-Fired Wood-Fire", "Signature Live Fire Steakhouse Catering", "American"],
               areaServed: [
                 { "@type": "AdministrativeArea", name: "Phoenix Metro, Arizona" },
                 { "@type": "AdministrativeArea", name: "San Diego County, California" },

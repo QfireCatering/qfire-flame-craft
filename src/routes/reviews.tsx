@@ -32,7 +32,7 @@ export const Route = createFileRoute("/reviews")({
 const reviews = [
   { q: "Chef Terry — 'The BBQ Daddy' — and his team turned our wedding into the meal everyone is still talking about. Brisket, ribeye, the whole spread. Flawless from start to finish.", a: "Tene Layman", e: "Wedding · 220 guests", source: "WeddingWire" },
   { q: "We hired Qfire for our annual partner dinner. Plated steaks for 140, served hot, served perfectly. The team made it look easy. Worth every penny.", a: "Yara Patino", e: "Corporate · La Jolla", source: "Yelp" },
-  { q: "Backyard 50th birthday. Wood-fired everything. Guests thought we'd flown in a steakhouse. Absolutely premium top to bottom.", a: "Jean Laber", e: "Private Party · Gilbert", source: "Google" },
+  { q: "Backyard 50th birthday. Wood-fired everything. Guests thought we'd flown in a Signature Live Fire Steakhouse Catering. Absolutely premium top to bottom.", a: "Jean Laber", e: "Private Party · Gilbert", source: "Google" },
   { q: "From the first phone call to the last guest leaving, Qfire was effortless. The kind of caterer you only have to hire once because you know who you're calling next time.", a: "Megan & Ryan", e: "Carlsbad Wedding · 180 guests", source: "The Knot" },
   { q: "We've worked with Qfire on three company events. Each one better than the last. The bar program is also excellent.", a: "Tara M.", e: "Phoenix Tech Co.", source: "Google" },
   { q: "The BBQ Daddy made the brisket of a lifetime. My husband still talks about the bark. Service was equally impressive.", a: "Allison P.", e: "Mesa Anniversary Party", source: "Yelp" },

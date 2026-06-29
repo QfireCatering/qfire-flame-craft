@@ -33,7 +33,7 @@ export interface CorporateRegionConfig {
 }
 
 const baseFaqs = [
-  { q: "How much does corporate catering cost?", a: "Most Qfire corporate events land between $32 and $145 per guest depending on menu (drop-off vs. buffet vs. plated steakhouse), staffing, live-fire stations, bar service, and rentals. Every proposal is itemized — no hidden fees, no surprise service charges, and clean invoicing your AP team will appreciate." },
+  { q: "How much does corporate catering cost?", a: "Most Qfire corporate events land between $32 and $145 per guest depending on menu (drop-off vs. buffet vs. plated Signature Live Fire Steakhouse Catering), staffing, live-fire stations, bar service, and rentals. Every proposal is itemized — no hidden fees, no surprise service charges, and clean invoicing your AP team will appreciate." },
   { q: "Can you accommodate last-minute orders?", a: "Yes. Drop-off office catering can often be turned around in 24–72 hours depending on guest count. Full-service events with staffing and live-fire grilling generally require 1–2 weeks. Call us — we move quickly for executive teams." },
   { q: "Do you deliver?", a: "Yes. We deliver hot, ready-to-serve corporate catering across the entire region with uniformed delivery staff, professional presentation, and chafing setup on request. Delivery windows are guaranteed to the minute." },
   { q: "Do you offer recurring office lunches?", a: "Yes. We run weekly, bi-weekly, and monthly recurring lunch programs for HR teams, real-estate offices, healthcare groups, and tech companies. One contact, one invoice, rotating menus, predictable schedule." },
@@ -108,7 +108,7 @@ const timelineSteps = [
 ];
 
 const menuOptions = [
-  "Wood-Fire Catering", "Steakhouse Catering", "Surf & Turf", "Breakfast Catering", "Brunch Catering",
+  "Wood-Fire Catering", "Signature Live Fire Signature Live Fire Steakhouse Catering Catering", "Surf & Turf", "Breakfast Catering", "Brunch Catering",
   "Lunch Catering", "Dinner Catering", "Appetizers & Passed Hors d'oeuvres", "Desserts & Coffee Service",
   "Vegetarian Menus", "Vegan Menus", "Gluten-Free & Allergy Menus", "Live Charcoal Grilling Stations",
   "Premium Steaks & Carving Stations", "Boxed Executive Lunches", "Continental & Working Breakfasts",
@@ -119,7 +119,7 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
 
   const reviews = [
     { q: `Qfire has been our recurring lunch caterer for over a year. Every drop-off is on time, hot, and beautifully presented. Our ${regionShort} office team genuinely looks forward to lunch days.`, a: "Rachel S., HR Director", e: `${reviewCities[0]} · Tech Company` },
-    { q: `We brought Qfire in for a 240-person executive holiday party in ${regionShort}. Polished, professional, and the steakhouse plated dinner was unforgettable.`, a: "Daniel M., COO", e: `${reviewCities[1] ?? reviewCities[0]} · Financial Firm` },
+    { q: `We brought Qfire in for a 240-person executive holiday party in ${regionShort}. Polished, professional, and the Signature Live Fire Steakhouse Catering plated dinner was unforgettable.`, a: "Daniel M., COO", e: `${reviewCities[1] ?? reviewCities[0]} · Financial Firm` },
     { q: "The live charcoal grilling station at our employee appreciation event was the talk of the office for weeks. Easily the best vendor decision we made all year.", a: "Patricia L., Facilities Director", e: `${reviewCities[2] ?? reviewCities[0]} · Healthcare` },
     { q: "We needed lunch for 180 construction workers across three job sites — same day, hot, on time. Qfire delivered flawlessly. They're now our standing vendor.", a: "Marcus T., Project Manager", e: `${region} · General Contractor` },
     { q: "From COI to invoicing to setup, every detail was handled. As an EA who books a lot of corporate catering, Qfire is the easiest vendor I work with.", a: "Allison K., Executive Assistant", e: `${reviewCities[0]} · Real Estate` },
@@ -134,7 +134,7 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
     url: path,
     telephone: "+1-602-555-0123",
     priceRange: "$$$",
-    servesCuisine: ["Wood-Fire", "Steakhouse", "American", "Corporate Catering", "Office Catering"],
+    servesCuisine: ["Wood-Fire", "Signature Live Fire Steakhouse Catering", "American", "Corporate Catering", "Office Catering"],
     areaServed: cities.map((c) => ({ "@type": "City", name: c })),
     aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "247" },
   };
@@ -356,11 +356,11 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
       <section className="py-24 lg:py-32">
         <div className="container-luxe grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="order-2 lg:order-1">
-            <div className="eyebrow mb-6">Executive Steakhouse Experience</div>
-            <h2 className="heading-lg text-bone">A steakhouse — brought to your boardroom.</h2>
+            <div className="eyebrow mb-6">Executive Signature Live Fire Steakhouse Catering Experience</div>
+            <h2 className="heading-lg text-bone">A Signature Live Fire Steakhouse Catering — brought to your boardroom.</h2>
             <div className="mt-8 space-y-5 text-bone/80 text-lg font-light leading-relaxed">
               <p>Charcoal-grilled ribeye, New York strip, filet mignon, picanha, prime rib, salmon, and surf & turf — served under candlelight with polished service for executive dinners, board retreats, and client appreciation events across {region}.</p>
-              <p>The food, the atmosphere, the service. The luxury of a great steakhouse, without leaving your venue.</p>
+              <p>The food, the atmosphere, the service. The luxury of a great Signature Live Fire Steakhouse Catering, without leaving your venue.</p>
             </div>
             <Link to="/steak-seafood-menu" className="inline-flex items-center gap-2 mt-10 text-[0.7rem] tracking-[0.28em] uppercase text-gold border-b border-gold/40 pb-1 hover:border-gold">View the Steakhouse Menu <ArrowRight className="size-3" /></Link>
           </div>
@@ -430,7 +430,7 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
         <div className="container-luxe">
           <div className="max-w-2xl mb-14">
             <div className="eyebrow mb-6">Corporate Menu Options</div>
-            <h2 className="heading-lg text-bone">Wood-fired Wood-Fire. Premium steakhouse. Breakfast to banquet.</h2>
+            <h2 className="heading-lg text-bone">Wood-fired Wood-Fire. Premium Signature Live Fire Steakhouse Catering. Breakfast to banquet.</h2>
             <p className="mt-6 text-bone/70 text-lg leading-relaxed font-light">
               Whatever your {regionShort} team eats — it comes off our live-fire grill or our scratch kitchen.
             </p>

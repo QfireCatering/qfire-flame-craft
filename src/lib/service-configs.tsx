@@ -34,7 +34,7 @@ export function weddingConfig(o: ServiceTemplateOptions = {}): ServicePageConfig
     title: r ? <>{o.regionShort} <span className="italic text-gold font-light">wedding</span> catering.</> : <>A wedding meal <span className="italic text-gold font-light">they'll remember.</span></>,
     subtitle: r
       ? `Full-service wedding catering across ${r}. Wood-fired flavors, refined presentation, stress-free execution — from rehearsal to last dance.`
-      : "Full-service wedding catering with the warmth of a backyard and the polish of a steakhouse. Plated dinners, live-fire stations, buffets and family-style — built around your day.",
+      : "Full-service wedding catering with the warmth of a backyard and the polish of a Signature Live Fire Steakhouse Catering. Plated dinners, live-fire stations, buffets and family-style — built around your day.",
     heroImage: weddingTable,
     intro: {
       heading: "Your day, plated.",
@@ -129,7 +129,7 @@ export function privatePartyConfig(o: ServiceTemplateOptions = {}): ServicePageC
     intro: {
       heading: "Your home. Our kitchen.",
       body: [
-        "We bring the wood-fired grill to your backyard, the steakhouse to your dining room, and a full team to keep everything running.",
+        "We bring the wood-fired grill to your backyard, the Signature Live Fire Steakhouse Catering to your dining room, and a full team to keep everything running.",
         "Small enough to feel personal. Polished enough to feel professional.",
       ],
     },
@@ -194,8 +194,8 @@ export function woodFiredConfig(o: ServiceTemplateOptions = {}): ServicePageConf
 export function steakhouseConfig(o: ServiceTemplateOptions = {}): ServicePageConfig {
   const r = o.region;
   return {
-    eyebrow: r ? `${r} Steakhouse Catering` : "Steakhouse Catering",
-    title: r ? <>{o.regionShort} <span className="italic text-gold font-light">steakhouse</span> catering.</> : <>The Steakhouse Experience... <span className="italic text-gold font-light">Brought To You.</span></>,
+    eyebrow: r ? `${r} Signature Live Fire Signature Live Fire Steakhouse Catering Catering` : "Signature Live Fire Signature Live Fire Steakhouse Catering Catering",
+    title: r ? <>{o.regionShort} <span className="italic text-gold font-light">Signature Live Fire Steakhouse Catering</span> catering.</> : <>The Signature Live Fire Steakhouse Catering Experience... <span className="italic text-gold font-light">Brought To You.</span></>,
     subtitle: r
       ? `Charcoal-grilled ribeye, New York strip, filet mignon, picanha, prime rib, salmon, and surf & turf served under candlelight with polished service and unforgettable presentation across ${r}. Perfect for luxury weddings, corporate dinners, and private events.`
       : "Charcoal-grilled ribeye, New York strip, filet mignon, picanha, prime rib, salmon, and surf & turf served under candlelight with polished service and unforgettable presentation. Perfect for luxury weddings, corporate dinners, and private events.",
@@ -203,7 +203,7 @@ export function steakhouseConfig(o: ServiceTemplateOptions = {}): ServicePageCon
     intro: {
       heading: "A separate identity. A separate standard.",
       body: [
-        "When the night calls for a true steakhouse experience, our Steakhouse menu is a different brand of catering altogether. Dark room. Candlelight. Hand-cut steaks, finished over live fire, plated and served with white-glove discipline.",
+        "When the night calls for a true Signature Live Fire Steakhouse Catering experience, our Signature Live Fire Steakhouse Catering menu is a different brand of catering altogether. Dark room. Candlelight. Hand-cut steaks, finished over live fire, plated and served with white-glove discipline.",
         "Built for the moments where every plate has to land like the best meal of someone's year.",
       ],
     },
@@ -216,7 +216,7 @@ export function steakhouseConfig(o: ServiceTemplateOptions = {}): ServicePageCon
       { title: "Wine Pairings", body: "Sommelier-built pairings available through our beverage program." },
     ],
     menu: {
-      heading: "Sample steakhouse menu.",
+      heading: "Sample Signature Live Fire Steakhouse Catering menu.",
       columns: [
         { title: "The Steaks", items: ["Center-cut ribeye", "New York strip", "Filet mignon", "Picanha, carved tableside", "Slow-roasted prime rib", "Surf & turf upgrade"] },
         { title: "From The Sea", items: ["Cedar-plank salmon", "Butter-poached lobster", "Jumbo shrimp cocktail", "Seared scallops"] },
@@ -224,7 +224,7 @@ export function steakhouseConfig(o: ServiceTemplateOptions = {}): ServicePageCon
       ],
     },
     galleryImages: [steak, weddingTable, corporate, buffet, heroFire, brisket],
-    ctaTitle: "Plan a steakhouse evening.",
+    ctaTitle: "Plan a Signature Live Fire Steakhouse Catering evening.",
   };
 }
 

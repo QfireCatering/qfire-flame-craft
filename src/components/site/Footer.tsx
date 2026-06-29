@@ -11,7 +11,7 @@ export function Footer() {
           <div>
             <img src={qfireLogo.url} alt="Qfire Catering" className="h-20 w-auto" />
             <p className="mt-5 text-sm leading-relaxed text-muted-foreground max-w-sm">
-              Full-service wood-fired catering and steakhouse-grade plated dinners for
+              Full-service wood-fired catering and Signature Live Fire Steakhouse Catering-grade plated dinners for
               weddings, corporate events and private parties across Phoenix Metro and San Diego County.
             </p>
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-[0.65rem] tracking-[0.25em] uppercase text-muted-foreground">
