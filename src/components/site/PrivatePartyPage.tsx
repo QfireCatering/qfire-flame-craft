@@ -4,6 +4,7 @@ import { DefinitiveContent } from "./DefinitiveContent";
 import { definitiveCopy } from "@/lib/definitive-copy";
 import { BookingProcess } from "./BookingProcess";
 import { ObjectionBuster } from "./ObjectionBuster";
+import { RegionalPricing } from "./RegionalPricing";
 import asSeenOnBadge from "@/assets/as-seen-on-food-network.png.asset.json";
 import { GuestScaleStat } from "./GuestScaleStat";
 import privatePartyHero from "@/assets/private-parties-hero.png.asset.json";
@@ -254,6 +255,8 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
           </div>
         </div>
       </section>
+
+      <RegionalPricing regionKey={config.regionSlug} />
 
       {/* WHY PEOPLE CHOOSE QFIRE */}
       <section className="py-24 lg:py-32">

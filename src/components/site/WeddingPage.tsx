@@ -4,6 +4,7 @@ import { DefinitiveContent } from "./DefinitiveContent";
 import { definitiveCopy } from "@/lib/definitive-copy";
 import { BookingProcess } from "./BookingProcess";
 import { ObjectionBuster } from "./ObjectionBuster";
+import { RegionalPricing } from "./RegionalPricing";
 import asSeenOnBadge from "@/assets/as-seen-on-food-network.png.asset.json";
 import { GuestScaleStat } from "./GuestScaleStat";
 import weddingCoupleAsset from "@/assets/wedding-couple.png.asset.json";
@@ -329,6 +330,8 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
           </div>
         </div>
       </section>
+
+      <RegionalPricing regionKey={config.regionSlug} />
 
       {/* WHY COUPLES CHOOSE QFIRE */}
       <section className="py-24 lg:py-32">
