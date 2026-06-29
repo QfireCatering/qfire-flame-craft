@@ -150,18 +150,11 @@ function QuotePage() {
                 <Field label="Event Date" name="date" type="date" />
                 <Field label="Approx Guest Count" name="guests" type="number" />
               </div>
-              <div className="grid sm:grid-cols-2 gap-6">
-                <SelectField
-                  label="Region"
-                  name="region"
-                  options={["Phoenix Metro", "San Diego County", "Destination / Other"]}
-                />
-                <SelectField
-                  label="Event Type"
-                  name="type"
-                  options={["Wedding", "Corporate", "Private Party", "Other"]}
-                />
-              </div>
+              <SelectField
+                label="Region"
+                name="region"
+                options={["Arizona", "San Diego County", "Destination / Other"]}
+              />
               <SelectField
                 label="Menu Interest"
                 name="menu"
