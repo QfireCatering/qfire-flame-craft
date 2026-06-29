@@ -137,7 +137,7 @@ export const definitiveCopy: Record<string, Preset> = {
     differentiators: [
       { title: "Chef Terry actually designs your menu", body: "You aren't handed to a junior sales rep. The Food Network chef whose name is on the door reads your inquiry, builds your proposal, and is at most weddings personally." },
       { title: "Real wood, real fire", body: "We don't fake it with gas. Oak, hickory, mesquite, and pecan over live coals — the depth of flavor restaurants try and fail to copy." },
-      { title: "Steakhouse-quality plating, anywhere", body: "Polished service, chef coats, real presentation. We bring the Mastro's energy to lawns, vineyards, and venues that weren't built to feel that way." },
+      { title: "Steakhouse-quality plating, anywhere", body: "Polished service, chef coats, real presentation. We bring true steakhouse energy to lawns, vineyards, and venues that weren't built to feel that way." },
       { title: "No hidden fees", body: "Your proposal lists every line. No day-of upsells, no surprise gratuity, no pricing games when you're three weeks out and stressed." },
     ],
     confidence: baseConfidence,
