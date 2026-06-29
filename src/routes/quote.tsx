@@ -161,7 +161,7 @@ function QuotePage() {
                 options={["Wood-Fired Catering", "Signature Live Fire Steakhouse Catering", "Not sure yet"]}
               />
               <div>
-                <label className="block text-[0.65rem] tracking-[0.3em] uppercase text-bone mb-3">
+      <label className="block text-[0.65rem] tracking-[0.3em] uppercase text-white mb-3">
                   What Question(s) may we help you with?
                 </label>
                 <textarea
@@ -213,7 +213,7 @@ function Field({
 }) {
   return (
     <div>
-      <label className="block text-[0.65rem] tracking-[0.3em] uppercase text-bone mb-3">
+      <label className="block text-[0.65rem] tracking-[0.3em] uppercase text-white mb-3">
         {label}
       </label>
       <input
@@ -238,7 +238,7 @@ function SelectField({
 }) {
   return (
     <div>
-      <label className="block text-[0.65rem] tracking-[0.3em] uppercase text-bone mb-3">
+      <label className="block text-[0.65rem] tracking-[0.3em] uppercase text-white mb-3">
         {label}
       </label>
       <select
