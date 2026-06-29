@@ -1,9 +1,24 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import chefTerry from "@/assets/chef-terry.jpg.asset.json";
 import heroCollage from "@/assets/chef-terry-hero-collage.jpg.asset.json";
-import heroFire from "@/assets/hero-fire.jpg";
-import brisket from "@/assets/brisket.jpg";
+import g1 from "@/assets/gallery/about-chef/me_couple.avif.asset.json";
+import g2 from "@/assets/gallery/about-chef/me_couple_3.avif.asset.json";
+import g3 from "@/assets/gallery/about-chef/bbq_daddy.avif.asset.json";
+import g4 from "@/assets/gallery/about-chef/bbq_daddy_3.avif.asset.json";
+import g5 from "@/assets/gallery/about-chef/bbq_dddy_3.avif.asset.json";
+import g6 from "@/assets/gallery/about-chef/onsite_grill_4.avif.asset.json";
+import g7 from "@/assets/gallery/about-chef/park_set_up-3.avif.asset.json";
 import { CTASection } from "@/components/site/Sections";
+
+const chefGallery = [
+  { src: g1.url, alt: "Chef Terry Matthews with a wedding couple — Qfire Catering" },
+  { src: g2.url, alt: "Chef Terry celebrating with newlyweds after a wood-fired reception" },
+  { src: g3.url, alt: "The BBQ Daddy in red chef coat at a Qfire event" },
+  { src: g4.url, alt: "Chef Terry Matthews working the live fire at a Qfire wedding" },
+  { src: g5.url, alt: "The BBQ Daddy plating signature wood-fired entrées" },
+  { src: g6.url, alt: "Qfire on-site grilling station with Chef Terry" },
+  { src: g7.url, alt: "Qfire Catering park setup — Phoenix Metro private event" },
+];
 
 
 export const Route = createFileRoute("/about")({
@@ -97,12 +112,15 @@ function AboutPage() {
       </section>
 
       <section className="py-24 lg:py-32">
-        <div className="container-luxe grid lg:grid-cols-2 gap-2">
-          <div className="relative aspect-[4/5] overflow-hidden">
-            <img src={heroFire} alt="Chef Terry at the fire" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
-          </div>
-          <div className="relative aspect-[4/5] overflow-hidden">
-            <img src={brisket} alt="Brisket" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="container-luxe">
+          <div className="eyebrow mb-6">Behind The Fire</div>
+          <h2 className="heading-lg text-bone mb-12 max-w-3xl">A look at <span className="italic font-light text-gold">Chef Terry</span> in his element.</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+            {chefGallery.map((img, i) => (
+              <div key={i} className={`relative overflow-hidden ${i === 0 ? "col-span-2 row-span-2 aspect-square" : "aspect-[4/5]"}`}>
+                <img src={img.src} alt={img.alt} loading="lazy" decoding="async" className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+              </div>
+            ))}
           </div>
         </div>
       </section>
