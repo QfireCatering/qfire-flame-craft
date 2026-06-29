@@ -95,9 +95,9 @@ export function SteakhouseExperiencePage({ r }: { r: RegionCopy }) {
           </div>
           <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
             {[
-              { name: "Buffet Style", price: r.city === "San Diego" ? "$79" : "$74", per: "/ person", desc: "Smooth. Efficient. Elegant. Restaurant-quality buffet presentation. Ideal for " + r.city + " weddings, corporate events and private parties." },
-              { name: "Family Style", price: r.city === "San Diego" ? "$94" : "$89", per: "/ person", desc: "Shared dining. Passed platters. Connected guest experience. Luxury presentation, end to end." },
-              { name: "Plated Service", price: r.city === "San Diego" ? "$133" : "$128", per: "/ person", desc: "Restaurant-style service. Each course individually served. Our most luxurious dining experience.", featured: true },
+              { name: "Buffet Style", price: r.city === "San Diego" ? "$79" : "$74", per: "/ person", desc: "Smooth. Efficient. Elegant. Restaurant-quality buffet presentation. Ideal for " + r.city + " weddings, corporate events and private parties.", cta: "Price My Buffet Dinner" },
+              { name: "Family Style", price: r.city === "San Diego" ? "$94" : "$89", per: "/ person", desc: "Shared dining. Passed platters. Connected guest experience. Luxury presentation, end to end.", cta: "Plan My Family-Style Night" },
+              { name: "Plated Service", price: r.city === "San Diego" ? "$133" : "$128", per: "/ person", desc: "Restaurant-style service. Each course individually served. Our most luxurious dining experience.", featured: true, cta: "Book the Plated Experience" },
             ].map((tier) => (
               <article
                 key={tier.name}
@@ -119,7 +119,7 @@ export function SteakhouseExperiencePage({ r }: { r: RegionCopy }) {
                 </div>
                 <p className="mt-6 text-bone/70 leading-relaxed font-light flex-1">{tier.desc}</p>
                 <Link to="/quote" className={tier.featured ? "btn-primary mt-8" : "btn-ghost mt-8"}>
-                  Request a Quote
+                  {tier.cta}
                 </Link>
               </article>
             ))}
