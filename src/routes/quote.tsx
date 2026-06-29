@@ -81,6 +81,7 @@ function QuotePage() {
   }
 
   return (
+    <>
     <div className="min-h-screen grid lg:grid-cols-[1.1fr_1fr] relative">
       <div className="absolute inset-0 z-0">
         <img src={meatPageBg.url} alt="" className="absolute inset-0 w-full h-full object-cover" />
