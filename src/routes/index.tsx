@@ -430,6 +430,7 @@ function Home() {
           </div>
         </div>
       </section>
+      <ConfidenceBar tone="ink" />
 
       <CTASection />
     </>
