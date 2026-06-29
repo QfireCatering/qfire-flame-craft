@@ -300,7 +300,11 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         </div>
       </section>
 
+      <PricingHero regionKey={config.regionSlug} />
+
       <GuestScaleStat regionKey={config.regionSlug} />
+
+
 
 
       {/* TRUST STRIP */}
