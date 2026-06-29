@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowRight, Check, Flame, Award, Users, Star, Clock, Sparkles, Briefcase, Building2, ShieldCheck, Truck } from "lucide-react";
+import asSeenOnBadge from "@/assets/as-seen-on-food-network.png.asset.json";
 import { GuestScaleStat } from "./GuestScaleStat";
 import corpHeroAsset from "@/assets/corp-hero.png.asset.json";
 import corporateAsset from "@/assets/corporate-catering.png.asset.json";
@@ -218,7 +219,7 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-[0.65rem] tracking-[0.3em] text-gold uppercase mb-2">As Seen On</div>
-              <div className="text-bone font-display text-lg">Food Network</div>
+              <img src={asSeenOnBadge.url} alt="As seen on Food Network" className="w-16 h-16 rounded-full mx-auto mb-2" />
               <div className="text-xs text-bone/60 mt-1">BBQ Brawl with Bobby Flay</div>
             </div>
             <div>

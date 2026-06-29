@@ -9,6 +9,7 @@ export interface ServicePageConfig {
   title: ReactNode;
   subtitle: string;
   heroImage: string;
+  heroObjectPosition?: string;
   intro: { heading: string; body: string[] };
   highlights: { title: string; body: string }[];
   menu?: { heading: string; columns: { title: string; items: string[] }[] };
@@ -26,6 +27,7 @@ export function ServicePage({ config, regionKey }: { config: ServicePageConfig; 
         title={config.title}
         subtitle={config.subtitle}
         image={config.heroImage}
+        objectPosition={config.heroObjectPosition}
         regionKey={regionKey}
       >
         <Link to="/quote" className="btn-primary">

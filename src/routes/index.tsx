@@ -10,6 +10,7 @@ import brisketVideo from "@/assets/brisket-slice.mp4.asset.json";
 import chefTerry from "@/assets/chef-terry.jpg.asset.json";
 import bobbyFlayTerry from "@/assets/bobby-flay-terry.png.asset.json";
 import chefTerryWhite from "@/assets/chef-terry-white.jpg.asset.json";
+import asSeenOnBadge from "@/assets/as-seen-on-food-network.png.asset.json";
 import buffet from "@/assets/buffet.jpg";
 import g1 from "@/assets/gallery/bbq-platter.avif.asset.json";
 import g2 from "@/assets/gallery/couple-eating.avif.asset.json";
@@ -68,7 +69,10 @@ function Home() {
         </div>
 
         <div className="container-luxe relative z-10 pt-32 pb-20">
-          <div className="eyebrow mb-10">Featured on Food Network</div>
+          <div className="mb-10 flex items-center gap-4">
+            <img src={asSeenOnBadge.url} alt="As seen on Food Network" className="w-16 h-16 rounded-full" />
+            <div className="eyebrow">Featured on Food Network</div>
+          </div>
           <h1 className="heading-xl text-bone max-w-5xl">
             <span className="text-gold italic font-light">Qfire</span> Catering.
             <br />
@@ -91,6 +95,7 @@ function Home() {
           </div>
 
           <div className="mt-20 lg:mt-28 flex flex-wrap items-center gap-x-10 gap-y-4">
+            <img src={asSeenOnBadge.url} alt="As seen on Food Network" className="w-16 h-16 rounded-full" />
             <div className="text-[0.6rem] tracking-[0.35em] uppercase text-bone/50">As Seen On</div>
             <div className="flex flex-wrap items-center gap-x-8 gap-y-3">
               {["Food Network", "BBQ Brawl", "Cutthroat Kitchen", "Camp Cutthroat"].map((logo) => (

@@ -163,6 +163,7 @@ export function woodFiredConfig(o: ServiceTemplateOptions = {}): ServicePageConf
       ? `Slow-smoked brisket, tri-tip and live-fire stations across ${r}.`
       : "Slow-smoked brisket and tri-tip. Pulled pork. Pulled chicken. Hot links. Comfort sides built around the fire.",
     heroImage: brisket,
+    heroObjectPosition: "center 35%",
     intro: {
       heading: "Cooked over hardwood. Served at its peak.",
       body: [
