@@ -151,21 +151,38 @@ export function ServicePage({ config, regionKey }: { config: ServicePageConfig; 
               </Link>
             </div>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-1">
-            {config.galleryImages.map((img, i) => (
-              <div key={i} className="relative aspect-square overflow-hidden group">
-                <img
-                  src={img}
-                  alt={`${config.eyebrow} by Qfire Catering${regionKey ? ` in ${regionKey === "phoenix" ? "Phoenix Metro" : "San Diego County"}` : ""} — recent event photo ${i + 1}`}
-                  loading="lazy"
-                  decoding="async"
-                  fetchPriority="low"
-                  width={800}
-                  height={800}
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-              </div>
-            ))}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-1 gap-y-6">
+            {config.galleryImages.map((img, i) => {
+              const regionLabel = regionKey === "phoenix" ? "Phoenix Metro" : regionKey === "san-diego" ? "San Diego County" : "";
+              const captions = [
+                `Live-fire carving station${regionLabel ? ` — ${regionLabel}` : ""}`,
+                `Wood-fire buffet line${regionLabel ? ` — ${regionLabel}` : ""}`,
+                `Plated tasting course${regionLabel ? ` — ${regionLabel}` : ""}`,
+                `Backyard luxury setup${regionLabel ? ` — ${regionLabel}` : ""}`,
+              ];
+              const caption = captions[i % captions.length];
+              return (
+                <figure key={i} className="group">
+                  <div className="relative aspect-square overflow-hidden">
+                    <img
+                      src={img}
+                      alt={`${config.eyebrow} by Qfire Catering${regionLabel ? ` in ${regionLabel}` : ""} — recent event photo ${i + 1}`}
+                      loading="lazy"
+                      decoding="async"
+                      fetchPriority="low"
+                      width={800}
+                      height={800}
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                  </div>
+                  <figcaption className="mt-3 text-[0.7rem] tracking-[0.22em] uppercase text-bone/70">
+                    <Link to="/quote" className="hover:text-gold transition-colors">
+                      {caption} <span className="text-gold/70">→</span>
+                    </Link>
+                  </figcaption>
+                </figure>
+              );
+            })}
           </div>
         </section>
       )}
