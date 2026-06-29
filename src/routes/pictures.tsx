@@ -1,15 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHero, CTASection } from "@/components/site/Sections";
-import heroFire from "@/assets/hero-fire.jpg";
-import weddingCoupleAsset from "@/assets/wedding-couple.png.asset.json";
-const weddingTable = weddingCoupleAsset.url;
-import brisket from "@/assets/brisket.jpg";
-import steak from "@/assets/steak.jpg";
-import corporateAsset from "@/assets/corporate-catering.png.asset.json";
-const corporate = corporateAsset.url;
-import privateParty from "@/assets/private-party.jpg";
-import buffet from "@/assets/buffet.jpg";
-import chefTerry from "@/assets/chef-terry.jpg.asset.json";
+import privateGroup from "@/assets/gallery/pictures-page/private-group.png.asset.json";
+import weddingSd from "@/assets/gallery/pictures-page/wedding-sd.png.asset.json";
+import bbqPlatter from "@/assets/gallery/pictures-page/bbq-platter.avif.asset.json";
+import ribPlate from "@/assets/gallery/pictures-page/rib-plate.avif.asset.json";
+import bbqPlate from "@/assets/gallery/pictures-page/bbq-plate.avif.asset.json";
+import steakPlate from "@/assets/gallery/pictures-page/steak-plate.avif.asset.json";
+import bbqMeal from "@/assets/gallery/pictures-page/bbq-meal.avif.asset.json";
+import steakLobster from "@/assets/gallery/pictures-page/steak-lobster.avif.asset.json";
 
 export const Route = createFileRoute("/pictures")({
   head: () => ({
@@ -25,10 +23,10 @@ export const Route = createFileRoute("/pictures")({
 });
 
 const masonry: { src: string; tall?: boolean; wide?: boolean }[] = [
-  { src: weddingTable, wide: true }, { src: brisket }, { src: chefTerry.url, tall: true },
-  { src: steak }, { src: corporate }, { src: buffet, wide: true },
-  { src: privateParty }, { src: heroFire, tall: true }, { src: weddingTable },
-  { src: brisket, wide: true }, { src: steak }, { src: buffet },
+  { src: weddingSd.url, wide: true }, { src: bbqPlatter.url }, { src: privateGroup.url, tall: true },
+  { src: steakLobster.url }, { src: ribPlate.url }, { src: bbqMeal.url, wide: true },
+  { src: bbqPlate.url }, { src: steakPlate.url, tall: true }, { src: weddingSd.url },
+  { src: bbqPlatter.url, wide: true }, { src: steakLobster.url }, { src: bbqMeal.url },
 ];
 
 function PicturesPage() {
@@ -38,7 +36,7 @@ function PicturesPage() {
         eyebrow="Gallery"
         title={<>A look at <span className="text-gold italic font-light">the table.</span></>}
         subtitle="Weddings. Corporate evenings. Private parties. The fire, the food, the rooms."
-        image={weddingTable}
+        image={weddingSd.url}
       />
       <section className="py-20">
         <div className="container-luxe">
