@@ -11,6 +11,7 @@ const config: PrivatePartyRegionConfig = {
     "Queen Creek", "Goodyear", "Avondale", "Surprise", "Peoria", "Glendale",
     "Paradise Valley", "Buckeye", "Litchfield Park", "Cave Creek",
     "Fountain Hills", "Apache Junction",
+    "Sedona", "Tucson", "Flagstaff", "Pinetop",
   ],
   reviewCities: ["Scottsdale", "Paradise Valley", "Gilbert", "Chandler"],
 };
