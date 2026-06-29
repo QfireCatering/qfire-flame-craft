@@ -331,6 +331,8 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         </div>
       </section>
 
+      <RegionalPricing regionKey={config.regionSlug} />
+
       {/* WHY COUPLES CHOOSE QFIRE */}
       <section className="py-24 lg:py-32">
         <div className="container-luxe">
