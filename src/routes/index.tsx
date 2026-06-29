@@ -47,10 +47,10 @@ const HOME_FAQS = [
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Qfire Catering — Luxury Wedding, Corporate & Private Event Catering | Phoenix & San Diego" },
-      { name: "description", content: "Qfire Catering by Chef Terry Matthews — full-service luxury catering for weddings, corporate dinners, private parties and intimate chef's tables across Phoenix Metro and San Diego County. Wood-fired flavors, Signature Live Fire Steakhouse Catering polish, white-glove service, stress-free execution." },
-      { property: "og:title", content: "Qfire Catering — Wood-Fired Luxury, Signature Live Fire Steakhouse Catering Polish" },
-      { property: "og:description", content: "Wood-fired flavors. Premium Steakhouse Catering polish. Stress-free execution. Luxury catering for weddings, corporate events and private parties — Phoenix Metro & San Diego County." },
+      { title: "BBQ & Wood-Fire Catering — Wedding, Corporate & Private Party Catering | Qfire Catering Phoenix & San Diego" },
+      { name: "description", content: "Qfire Catering by Chef Terry Matthews (The BBQ Daddy) — full-service BBQ catering, wood-fired catering and live-fire steakhouse catering for weddings, corporate events and private parties across Phoenix Metro and San Diego County. Featured on Food Network. 4.9★ rated. BBQ catering near me, wedding catering, corporate catering, private party catering — all in one team." },
+      { property: "og:title", content: "BBQ & Wood-Fire Catering Phoenix & San Diego — Qfire Catering" },
+      { property: "og:description", content: "BBQ, wood-fired and steakhouse catering for weddings, corporate events and private parties. Phoenix Metro & San Diego County. Chef Terry Matthews — Food Network." },
       { property: "og:url", content: "https://qfire-flame-craft.lovable.app/" },
       { property: "og:image", content: heroImage.url },
       { name: "twitter:image", content: heroImage.url },
