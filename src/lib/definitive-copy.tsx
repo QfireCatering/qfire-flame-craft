@@ -541,7 +541,7 @@ definitiveCopy.region = {
   differentiators: [
     { title: "Chef Terry designs every menu", body: "Television-tested standards. Personally built proposals. Not handed off to a junior coordinator." },
     { title: "Real wood, real fire", body: "Oak, hickory, mesquite, pecan over live coals. No gas shortcuts, no liquid smoke." },
-    { title: "Restaurant-grade plating, any venue", body: "Polished service staff in chef coats. Mastro's-caliber presentation in your venue." },
+    { title: "Restaurant-grade plating, any venue", body: "Polished service staff in chef coats. True steakhouse presentation in your venue." },
     { title: "Two-region operation", body: "Phoenix Metro and San Diego County fully staffed — one chef, one team, one set of standards." },
   ],
   confidence: baseConfidence,
