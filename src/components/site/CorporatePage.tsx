@@ -16,18 +16,22 @@ import corpBbqBuffet from "@/assets/corporate/corp-bbq-buffet.png.asset.json";
 import corpJobsiteSpread from "@/assets/corporate/corp-jobsite-spread.jpg.asset.json";
 import corpBuffetSet from "@/assets/corporate/corp-buffet-set.avif.asset.json";
 import corpParkSetup from "@/assets/corporate/corp-park-setup.avif.asset.json";
+import cardWoodFired from "@/assets/corporate/corp-card-wood-fired.png.asset.json";
+import cardSteakhouse from "@/assets/corporate/corp-card-steakhouse.png.asset.json";
+import cardCarving from "@/assets/corporate/corp-card-carving.avif.asset.json";
 
 const officeHero = corpSetupBg.url;
 const officeAlt = corpLuncheon.url;
 const steak = corpBbqBuffet.url;
-const steakMenu = corpBuffetSet.url;
-const platter = corpJobsiteSpread.url;
-const platter1 = corpBbqBuffet.url;
+const steakMenu = cardSteakhouse.url;
+const platter = cardWoodFired.url;
+const platter1 = cardCarving.url;
 const bartender = corpParkSetup.url;
 const setting = corpBuffetLine.url;
 const chef = corpRetirement.url;
 const heroFire = corpJobsiteTacos.url;
 const buffet = corpJobsiteCrew.url;
+
 
 export interface CorporateRegionConfig {
   region: string; // "Phoenix Metro" / "San Diego County"
