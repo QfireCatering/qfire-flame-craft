@@ -883,3 +883,250 @@ definitiveCopy.faq = {
   confidence: baseConfidence,
   ctaLabel: "Ask Chef Terry",
 };
+
+// Holiday preset (regional sub-route)
+definitiveCopy.holiday = {
+  explainer:
+    "Holiday catering is its own discipline. The calendar is short, the kitchen is busy, and the night needs to feel warm without feeling rushed. Qfire builds office holiday parties, family Thanksgivings, Christmas dinners, and end-of-year client events around carved centerpieces, comforting sides, and disciplined service that lands on time.",
+  explainerLong:
+    "We run holidays as full-service productions: prime rib carved tableside, whole brined turkeys, wood-fired brisket, classic sides, hot drinks, and a bar program tuned to the season. Whether it's a 30-person family Thanksgiving in your home or a 500-person company gala at a hotel ballroom, the standard is the same.",
+  included: [
+    "Carved centerpiece (prime rib, turkey, brisket, or ham)",
+    "Three to five seasonal sides",
+    "Fresh-baked breads and butter board",
+    "Pies and seasonal desserts",
+    "Hot toddy, mulled wine, or cider station (optional)",
+    "Uniformed service staff and captain",
+    "Buffet, family-style, stationed, or plated formats",
+    "Full setup, refresh, breakdown, and trash haul",
+  ],
+  planningTips: [
+    { title: "Lock the date early", body: "November and December weekends fill 90+ days out. Friday and Saturday nights go first." },
+    { title: "Decide the format up front", body: "Buffet feels casual and abundant. Plated feels formal and slow. Stations feel like a party. Pick the vibe first, the menu second." },
+    { title: "Account for short daylight", body: "Outdoor setups need lighting earlier than you'd think. We factor heaters and lighting into winter proposals." },
+    { title: "Add a hot drink station", body: "Spiced cider, hot toddies, and mulled wine cost very little and change the whole feel of the room." },
+    { title: "Mind the dietary mix", body: "Holiday tables almost always include guests with gluten-free, vegetarian, or allergy needs. Build those in from day one." },
+  ],
+  bookingSteps: [
+    { title: "Inquire by early October", body: "Peak holiday dates are typically gone by Halloween." },
+    { title: "Confirm format and headcount", body: "Buffet vs plated, indoor vs outdoor, seated vs flowing." },
+    { title: "Lock the menu 30 days out", body: "Final menu, dietary counts, and bar tier confirmed." },
+    { title: "Final headcount + timeline 14 days out", body: "Run-of-show shared with you and your venue." },
+    { title: "Enjoy the night", body: "We arrive early, set quietly, serve on time, and break down cleanly." },
+  ],
+  expectations: {
+    before: ["Menu and bar confirmed 30 days out", "Dietary needs gathered", "Venue and timeline coordinated"],
+    during: ["On-time arrival and setup", "Hot food on time", "Uniformed, attentive service", "Bar paced for the crowd"],
+    after: ["Full breakdown and trash haul", "Kitchen left spotless", "Follow-up thank-you"],
+  },
+  differentiators: [
+    { title: "Holiday-trained kitchen", body: "Carving stations, brined birds, and seasonal sides are core to our menu — not a once-a-year experiment." },
+    { title: "Decor-aware service", body: "We work around your florals, candles, and tablescape — never on top of them." },
+    { title: "Family-feel hospitality", body: "Our staff greet guests, refill drinks, and read the room like restaurant captains." },
+  ],
+  confidence: baseConfidence,
+  ctaLabel: "Book Your Holiday Date",
+};
+
+// Backyard preset (regional sub-route)
+definitiveCopy.backyard = {
+  explainer:
+    "Backyard catering is where Qfire shines hardest. We bring the smokers, the live-fire grills, the staff, the bar, and the cleanup crew — and we run your driveway like it's our restaurant. You hand us a guest count and a vibe. We hand you back the easiest party you've ever hosted.",
+  explainerLong:
+    "From graduations and milestone birthdays to anniversaries, engagements, and reunions, our backyard package scales from 25 guests to several hundred. Wood-fired brisket and tri-tip, charcoal-grilled steaks, fresh sides, dessert stations, and a full bar — all served with restaurant-quality presentation in the comfort of your home.",
+  included: [
+    "Live-fire smokers and charcoal grills",
+    "Full kitchen and service team",
+    "Buffet, stationed, or family-style setup",
+    "Disposable or upgraded serviceware",
+    "Optional bar program with licensed bartenders",
+    "Optional rentals (tables, linens, lounge, dance floor)",
+    "Full setup and complete breakdown",
+    "Kitchen and yard left cleaner than we found it",
+  ],
+  planningTips: [
+    { title: "Walk us through the yard first", body: "We need to see grill placement, prep space, and guest flow before we quote." },
+    { title: "Plan for shade and seating", body: "Even 50 guests need somewhere to land. Rentals make a bigger difference than people expect." },
+    { title: "Pick one statement protein", body: "Brisket, prime rib, picanha, or surf & turf — anchor the menu around one wow item." },
+    { title: "Add a kids' setup", body: "A separate kid-friendly plate and a quiet corner make a long event much easier on families." },
+    { title: "Don't forget the neighbors", body: "A heads-up note (and sometimes a plate) makes the night smoother for everyone." },
+  ],
+  bookingSteps: [
+    { title: "Send date, headcount, and address", body: "We confirm reach and grill access." },
+    { title: "Discovery call", body: "Menu, format, bar, rentals — we build the proposal together." },
+    { title: "Lock the proposal and date", body: "Itemized, transparent, no surprise fees." },
+    { title: "Final headcount 14 days out", body: "Menu and timeline confirmed." },
+    { title: "Event day", body: "We show up early, run the night, and pack out clean." },
+  ],
+  expectations: {
+    before: ["Site walk-through or detailed photos", "Final menu and timeline 14 days out", "Bar and rental list confirmed"],
+    during: ["Live-fire cooking visible to guests", "Hot food, paced service", "Friendly captain managing the floor"],
+    after: ["Yard reset and bagged trash", "Kitchen wiped down", "Leftover food packaged for you"],
+  },
+  differentiators: [
+    { title: "Real fire in your driveway", body: "We bring competition-grade smokers and charcoal grills — not propane warmers." },
+    { title: "Restaurant-grade plating", body: "Stations look like a chef's table, not a backyard cookout." },
+    { title: "You don't lift a finger", body: "From setup through cleanup, the night is fully run." },
+  ],
+  confidence: baseConfidence,
+  ctaLabel: "Quote My Backyard",
+};
+
+// Gallery preset
+definitiveCopy.gallery = {
+  explainer:
+    "Every photo in this gallery is a real Qfire event — real fire, real plating, real guests. Use it to picture how a wedding, corporate dinner, or backyard party with us actually looks and feels before you book.",
+  explainerLong:
+    "We update the gallery regularly with weddings, executive dinners, private parties, and large-format galas across Phoenix Metro and San Diego County. If you want to see something specific (a venue, a service style, a guest count), ask — we likely have more photos than we've published.",
+  included: [
+    "Wedding receptions and welcome dinners",
+    "Corporate galas and executive dinners",
+    "Backyard luxury private parties",
+    "Live-fire grilling stations and chef-attended carving",
+    "Plated steakhouse dining",
+    "Wood-fired buffets and family-style spreads",
+    "Bar setups and signature cocktail programs",
+    "Setup, service, and breakdown moments",
+  ],
+  planningTips: [
+    { title: "Look for the format you want", body: "Buffet, plated, stations, family-style — each has a different feel. Pick the vibe, then the menu." },
+    { title: "Notice the staff", body: "Uniformed, calm, attentive. That's the standard on every event." },
+    { title: "Watch the fire", body: "We cook over real hardwood and charcoal. The smoke is part of the show." },
+  ],
+  bookingSteps: [
+    { title: "Browse the gallery", body: "Identify the format and feel you want." },
+    { title: "Submit an inquiry", body: "Date, region, headcount, style." },
+    { title: "Request more photos", body: "Ask for venue-specific or style-specific shots." },
+    { title: "Book the date", body: "Lock your date before someone else does." },
+  ],
+  expectations: {
+    before: ["Photo walk-through if requested", "Style reference shared with your captain"],
+    during: ["Photo-worthy plating and stations", "Discreet photographer coordination"],
+    after: ["High-resolution event photos shared (when our photographer is on-site)"],
+  },
+  differentiators: [
+    { title: "Every photo is ours", body: "No stock imagery. No staged shoots. Real events, real clients, real food." },
+    { title: "Consistency across years", body: "Look at any event from any year — the standard is the same." },
+    { title: "Plating is the proof", body: "Anyone can post one good plate. We can show 200." },
+  ],
+  confidence: baseConfidence,
+  ctaLabel: "Request a Quote",
+};
+
+// Reviews preset
+definitiveCopy.reviews = {
+  explainer:
+    "Qfire is built on repeat clients and word-of-mouth. Our reviews come from real weddings, corporate dinners, and private parties — and they're consistent for a reason. We do the work the same way every time, and our clients notice.",
+  explainerLong:
+    "We collect feedback after every event. The reviews here are representative — not cherry-picked. If you want to talk to a past client directly, ask. We'll connect you with someone who hosted an event close in size and style to yours.",
+  included: [
+    "Five-star Google and The Knot reviews",
+    "Referral relationships with top planners",
+    "Approved-vendor status at premium venues",
+    "Repeat clients across multiple events",
+    "Direct introductions to past clients on request",
+  ],
+  planningTips: [
+    { title: "Read for consistency, not just stars", body: "Anyone can have a great night. Look for the same words showing up over and over." },
+    { title: "Check service style match", body: "A great buffet caterer isn't always a great plated one. Look for reviews in your format." },
+    { title: "Ask for a reference call", body: "We're happy to connect you with a past client similar to your event." },
+  ],
+  bookingSteps: [
+    { title: "Read the reviews", body: "Top to bottom, recent first." },
+    { title: "Ask for references", body: "We'll connect you with a past client." },
+    { title: "Inquire", body: "Submit the form with date and headcount." },
+    { title: "Book", body: "Lock the date with a transparent deposit." },
+  ],
+  expectations: {
+    before: ["Honest reference calls if requested", "Full proposal in writing"],
+    during: ["The same service the reviews describe"],
+    after: ["A follow-up note and an invitation to leave honest feedback"],
+  },
+  differentiators: [
+    { title: "Real reviews, real names", body: "No fake names, no purchased reviews. Verify on Google and The Knot." },
+    { title: "Repeat business", body: "Most of our calendar is repeat clients and referrals." },
+    { title: "Reference-ready", body: "We'll put you on the phone with someone who hosted a similar event." },
+  ],
+  confidence: baseConfidence,
+  ctaLabel: "Request a Quote",
+};
+
+// Blog / journal preset
+definitiveCopy.blog = {
+  explainer:
+    "The Qfire journal is where Chef Terry and our team share planning guides, venue spotlights, menu ideas, and field notes from real events. If you're researching a wedding, corporate dinner, or private party, start here — most of the questions you have, we've already answered in writing.",
+  explainerLong:
+    "Posts are organized by region and by topic. Phoenix and San Diego each have their own venue spotlights and local guides. Cross-regional posts cover menu design, service style, pricing strategy, and the why behind how we cook.",
+  included: [
+    "Wedding planning guides",
+    "Venue spotlights by region",
+    "Corporate event playbooks",
+    "Backyard luxury inspiration",
+    "Menu and pairing ideas",
+    "Pricing and budgeting guides",
+    "Behind-the-scenes from Chef Terry",
+  ],
+  planningTips: [
+    { title: "Start with your format", body: "Buffet, plated, stations — read the post that matches the night you want." },
+    { title: "Read the venue spotlight", body: "If you've picked a venue, there's a good chance we've worked there." },
+    { title: "Save the pricing guide", body: "It will save you three calls with three other caterers." },
+  ],
+  bookingSteps: [
+    { title: "Read the relevant guide", body: "Pick the topic closest to your event." },
+    { title: "Note your questions", body: "Bring them to the discovery call." },
+    { title: "Inquire", body: "Submit the form with date, region, headcount." },
+    { title: "Book", body: "Lock the date with confidence." },
+  ],
+  expectations: {
+    before: ["Educational content that helps you plan smarter"],
+    during: ["The execution matches the standards described in the posts"],
+    after: ["More posts as we run more events"],
+  },
+  differentiators: [
+    { title: "Written by the chef", body: "Most posts are dictated by Chef Terry, not outsourced." },
+    { title: "Region-specific", body: "Phoenix advice and San Diego advice are not the same advice." },
+    { title: "Updated regularly", body: "New posts after meaningful events and seasons." },
+  ],
+  confidence: baseConfidence,
+  ctaLabel: "Request a Quote",
+};
+
+// Venues preset
+definitiveCopy.venues = {
+  explainer:
+    "Qfire is on the approved-vendor list at most premium venues across Phoenix Metro and San Diego County. We've cooked at resorts, vineyards, museums, hangars, ballrooms, estates, and outdoor ranches — and we know how each one runs.",
+  explainerLong:
+    "Working with a caterer who already knows your venue saves hours of coordination. We know the kitchen access, the load-in rules, the grill placement, the noise ordinances, and the timeline preferences of every venue manager we've worked with. If you've picked a venue, ask — we likely have a checklist for it.",
+  included: [
+    "Approved-vendor relationships with premium venues",
+    "Venue-specific load-in and setup checklists",
+    "Direct coordination with venue managers",
+    "On-site cooking permits and insurance handled",
+    "Equipment sized to each venue's footprint",
+    "Timeline tuned to venue rules (noise, end-time, clean-out)",
+  ],
+  planningTips: [
+    { title: "Confirm caterer approval first", body: "Before booking a venue, confirm we're approved (or that outside catering is allowed)." },
+    { title: "Ask about kitchen access", body: "Hot prep, water, electricity — each venue is different." },
+    { title: "Walk the load-in path", body: "Long carries, stairs, and elevator timing change setup logistics." },
+    { title: "Mind the noise ordinance", body: "Outdoor venues often have hard end-times. We plan service around them." },
+  ],
+  bookingSteps: [
+    { title: "Tell us your venue", body: "We'll confirm familiarity and approval status." },
+    { title: "Get the venue-specific proposal", body: "Pricing reflects the actual logistics of your space." },
+    { title: "We coordinate with the venue", body: "Load-in, timeline, breakdown — handled directly." },
+    { title: "Lock the date", body: "And the venue manager hears from us, not you." },
+  ],
+  expectations: {
+    before: ["Venue walk-through if needed", "Direct communication with venue manager"],
+    during: ["On-time load-in", "Respect for venue rules and floors", "Clean, quiet breakdown"],
+    after: ["Venue left in original condition or better", "Final walk-through with venue manager"],
+  },
+  differentiators: [
+    { title: "Already approved", body: "We're on the preferred list at most premium venues — no friction." },
+    { title: "Venue-specific playbooks", body: "We don't show up to learn your venue. We already know it." },
+    { title: "Manager-friendly", body: "Venue managers ask for us by name." },
+  ],
+  confidence: baseConfidence,
+  ctaLabel: "Request a Quote",
+};

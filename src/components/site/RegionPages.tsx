@@ -478,6 +478,7 @@ function RegionHoliday({ regionKey }: { regionKey: RegionKey }) {
         </div>
       </section>
 
+      <DefinitiveContent {...definitiveCopy.holiday} topic={`${r.shortName} Holiday Catering`} region={r.metro} />
       <CTASection title="Make this holiday the one they remember." />
     </>
   );
@@ -540,6 +541,7 @@ function RegionBackyard({ regionKey }: { regionKey: RegionKey }) {
         </div>
       </section>
 
+      <DefinitiveContent {...definitiveCopy.backyard} topic={`${r.shortName} Backyard Catering`} region={r.metro} />
       <CTASection title="The neighbors will be jealous." />
     </>
   );
@@ -597,6 +599,7 @@ function RegionGallery({ regionKey }: { regionKey: RegionKey }) {
           </div>
         </div>
       </section>
+      <DefinitiveContent {...definitiveCopy.gallery} topic={`${r.shortName} Event Gallery`} region={r.metro} />
       <CTASection />
     </>
   );
@@ -632,6 +635,7 @@ function RegionReviews({ regionKey }: { regionKey: RegionKey }) {
           ))}
         </div>
       </section>
+      <DefinitiveContent {...definitiveCopy.reviews} topic={`${r.shortName} Reviews`} region={r.metro} />
       <CTASection />
     </>
   );
@@ -670,6 +674,7 @@ function RegionFAQ({ regionKey }: { regionKey: RegionKey }) {
           </div>
         </div>
       </section>
+      <DefinitiveContent {...definitiveCopy.faq} topic={`${r.shortName} Catering FAQ`} region={r.metro} />
       <CTASection />
     </>
   );
@@ -706,6 +711,7 @@ function RegionBlog({ regionKey }: { regionKey: RegionKey }) {
           ))}
         </div>
       </section>
+      <DefinitiveContent {...definitiveCopy.blog} topic={`${r.shortName} Journal`} region={r.metro} />
       <CTASection />
     </>
   );
@@ -734,6 +740,7 @@ function RegionVenues({ regionKey }: { regionKey: RegionKey }) {
           </div>
         </div>
       </section>
+      <DefinitiveContent {...definitiveCopy.venues} topic={`${r.shortName} Venues`} region={r.metro} />
       <CTASection />
     </>
   );
