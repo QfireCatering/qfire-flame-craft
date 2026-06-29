@@ -256,6 +256,12 @@ function SteakSeafoodMenuPage() {
         </div>
       </PageHero>
 
+      <div className="w-full text-center py-4 bg-ink/80 backdrop-blur-sm border-b border-white/5">
+        <span className="text-gold/90 text-xs tracking-[0.3em] uppercase animate-pulse">
+          Scroll down to view menu
+        </span>
+      </div>
+
       <section className="py-20 lg:py-28 border-t border-white/5">
         <div className="container-luxe max-w-4xl">
           <p className="eyebrow mb-5">The Experience</p>
