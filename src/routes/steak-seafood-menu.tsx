@@ -99,7 +99,7 @@ const warm: Dish[] = [
 const meats: Dish[] = [
   { name: "Ribeye Steak", body: "The Signature Live Fire Steakhouse Catering classic — heavily marbled, char-grilled over live fire to a crusted finish with a juicy, buttery, melt-in-your-mouth center.", img: ribeyeAsset.url },
   { name: "New York Strip", body: "Cut from the short loin. Bold, beefy flavor with a firm, satisfying bite and the perfect balance of fat and lean — a true Signature Live Fire Steakhouse Catering staple.", img: nyStripAsset.url },
-  { name: "T-Bone Steak", body: "Two premium cuts on one bone — the tender filet on one side, the bold New York strip on the other. Char-grilled over live fire for the ultimate Signature Live Fire Steakhouse Catering experience.", img: tboneAsset.url },
+  { name: "T-Bone Steak", body: "Two premium cuts on one bone — the tender filet on one side, the bold New York strip on the other. Char-grilled over live fire for the ultimate premium steakhouse catering experience.", img: tboneAsset.url },
   { name: "Beef Tenderloin", body: "The most tender cut of beef. Buttery texture, mild flavor, luxurious.", note: "+ $5 / steak", img: beefTenderloinAsset.url },
   { name: "Filet Mignon", body: "Premium tenderloin cut, buttery and delicate.", note: "+ $10/steak", img: filetMignonAsset.url },
   { name: "Top Sirloin (10 oz) — also known as Picanha", body: "Lean, flavorful, tender, with a rich beefy taste.", img: topSirloinAsset.url },
@@ -121,7 +121,7 @@ const sides: Dish[] = [
   { name: "Grilled Asparagus", body: "Lightly seasoned, brushed with natural butter, grilled to perfection.", img: grilledAsparagusImg },
   { name: "Grilled Squash & Zucchini", body: "Vegetable crunch with char from the grill.", img: squashZucchiniImg.url },
   { name: "Grilled Sweet Corn", body: "Steamed, then grilled on-site.", img: grilledCornImg },
-  { name: "Roasted Broccoli", body: "A Signature Live Fire Steakhouse Catering staple.", img: roastedBroccoliImg },
+  { name: "Roasted Broccoli", body: "A live-fire steakhouse experience staple.", img: roastedBroccoliImg },
   { name: "Macaroni & Cheese", body: "A meal within itself.", img: macCheeseImg },
   { name: "Alfredo Penne Pasta", body: "Our signature alfredo sauce will have you licking the plate.", img: alfredoPenneImg },
   { name: "Sautéed Mushrooms & Onions", body: "A great addition to any steak.", img: mushroomsOnionsImg },
@@ -154,9 +154,9 @@ export const Route = createFileRoute("/steak-seafood-menu")({
   head: () => ({
     meta: [
       { title: "Phoenix Metro Steak & Seafood Catering Menu | Qfire Catering" },
-      { name: "description", content: "Phoenix Metro's premier five-course Signature Live Fire Steakhouse Catering menu — ribeye, filet mignon, prime rib, lobster, salmon and more — grilled live at your Phoenix, Scottsdale, Gilbert, Mesa, Tempe, Chandler, Glendale, Peoria, Paradise Valley, Cave Creek, Fountain Hills or Ahwatukee event. Premium plated steak dinner catering throughout the Phoenix Metro area." },
+      { name: "description", content: "Phoenix Metro's premier five-course luxury steakhouse dining menu — ribeye, filet mignon, prime rib, lobster, salmon and more — grilled live at your Phoenix, Scottsdale, Gilbert, Mesa, Tempe, Chandler, Glendale, Peoria, Paradise Valley, Cave Creek, Fountain Hills or Ahwatukee event. Premium plated steak dinner catering throughout the Phoenix Metro area." },
       { property: "og:title", content: "Phoenix Metro Steak & Seafood Catering Menu | Qfire Catering" },
-      { property: "og:description", content: "Five-course Signature Live Fire Steakhouse Catering in Phoenix Metro: cold starter, warm hors d'oeuvre, choose-3 steaks/seafood, choose-3 sides, dessert and drinks. Live on-site grilling for weddings, corporate events and private parties across Phoenix, Scottsdale, Gilbert, Mesa and Tempe." },
+      { property: "og:description", content: "Five-course chef-attended steakhouse buffet in Phoenix Metro: cold starter, warm hors d'oeuvre, choose-3 steaks/seafood, choose-3 sides, dessert and drinks. Live on-site grilling for weddings, corporate events and private parties across Phoenix, Scottsdale, Gilbert, Mesa and Tempe." },
       { property: "og:url", content: "/steak-seafood-menu" },
       { property: "og:image", content: steakhouseBackyard.url },
     ],
@@ -237,9 +237,9 @@ function SteakSeafoodMenuPage() {
   return (
     <>
       <PageHero
-        eyebrow="Phoenix Metro Signature Live Fire Steakhouse Catering"
+        eyebrow="Phoenix Metro upscale steakhouse catering"
         title={<>The Phoenix Metro<br />Steak & Seafood Menu</>}
-        subtitle="A five-course Signature Live Fire Steakhouse Catering experience — cold starter, warm hors d'oeuvre, your choice of premium steaks and seafood, sides, dessert and drinks. Grilled live at your Phoenix Metro event."
+        subtitle="A five-course charcoal-grilled steakhouse experience experience — cold starter, warm hors d'oeuvre, your choice of premium steaks and seafood, sides, dessert and drinks. Grilled live at your Phoenix Metro event."
         image={phoenixHeroBg.url}
         regionKey="phoenix"
       >
@@ -259,21 +259,21 @@ function SteakSeafoodMenuPage() {
       <section className="py-20 lg:py-28 border-t border-white/5">
         <div className="container-luxe max-w-4xl">
           <p className="eyebrow mb-5">The Experience</p>
-          <h2 className="heading-lg text-bone mb-6">The Surf & Turf Signature Live Fire Steakhouse Catering Experience</h2>
+          <h2 className="heading-lg text-bone mb-6">The Surf & Turf premium live-fire dining Experience</h2>
           <p className="text-xl lg:text-2xl text-bone/80 font-display leading-relaxed mb-8">
-            More Than Catering. A Private Signature Live Fire Steakhouse Catering Experience Created Exclusively for Your Guests.
+            More Than Catering. A Private wood-fired steakhouse experience Experience Created Exclusively for Your Guests.
           </p>
           <div className="space-y-6 text-bone/70 text-base lg:text-lg leading-relaxed">
             <p>If you're looking for something beyond the traditional buffet in the Phoenix Metro area — from downtown Phoenix to Scottsdale, Gilbert, Mesa, Tempe, Chandler, Glendale, Peoria, Paradise Valley, Cave Creek and beyond — this is where our most discerning clients naturally gravitate.</p>
-            <p>Our Phoenix Metro Surf & Turf Signature Live Fire Steakhouse Catering Experience combines the energy of live-fire cooking with the elegance of fine dining — bringing the atmosphere of an upscale Signature Live Fire Steakhouse Catering directly to your Phoenix, Scottsdale, Gilbert, Mesa or Tempe wedding, corporate event, or private celebration.</p>
-            <p>From Ahwatukee to Anthem, Carefree to Queen Creek, we bring restaurant-quality Signature Live Fire Steakhouse Catering to every corner of the Phoenix Metro. This isn't just dinner. It's the experience your guests will remember long after the last bite.</p>
+            <p>Our Phoenix Metro Surf & Turf signature steakhouse experience Experience combines the energy of live-fire cooking with the elegance of fine dining — bringing the atmosphere of an upscale live-fire dinner service directly to your Phoenix, Scottsdale, Gilbert, Mesa or Tempe wedding, corporate event, or private celebration.</p>
+            <p>From Ahwatukee to Anthem, Carefree to Queen Creek, we bring restaurant-quality premium steakhouse catering to every corner of the Phoenix Metro. This isn't just dinner. It's the experience your guests will remember long after the last bite.</p>
           </div>
         </div>
       </section>
 
       <section className="py-20 lg:py-28 border-t border-white/5">
         <div className="container-luxe">
-          <h3 className="heading-md text-bone mb-16 text-center">Included With Every Signature Live Fire Steakhouse Catering Experience</h3>
+          <h3 className="heading-md text-bone mb-16 text-center">Included With Every live-fire steakhouse experience Experience</h3>
           <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
             <div>
               <div className="text-3xl mb-5">🔥</div>
@@ -310,7 +310,7 @@ function SteakSeafoodMenuPage() {
                 <div>
                   <p className="font-display text-bone text-lg mb-1">Signature Surf & Turf Entrée</p>
                   <p>Indulge in three premium proteins expertly prepared over live charcoal alongside three carefully selected gourmet sides designed to complement every bite.</p>
-                  <p className="mt-2">Every plate is crafted to deliver the flavor, presentation, and quality you'd expect from a high-end Signature Live Fire Steakhouse Catering.</p>
+                  <p className="mt-2">Every plate is crafted to deliver the flavor, presentation, and quality you'd expect from a high-end luxury steakhouse dining.</p>
                 </div>
                 <div>
                   <p className="font-display text-bone text-lg mb-1">Gourmet Desserts</p>
@@ -347,7 +347,7 @@ function SteakSeafoodMenuPage() {
               <div className="font-display text-bone text-4xl lg:text-5xl mb-2">$89</div>
               <div className="text-bone/50 text-sm mb-8">per guest</div>
               <h4 className="font-display text-bone text-xl mb-3">Family-Style Experience</h4>
-              <p className="text-bone/65 leading-relaxed mb-6 flex-1">Warm. Interactive. Memorable. Beautiful serving platters are placed directly on each table, encouraging conversation, connection, and a shared dining experience reminiscent of an upscale family-owned Signature Live Fire Steakhouse Catering.</p>
+              <p className="text-bone/65 leading-relaxed mb-6 flex-1">Warm. Interactive. Memorable. Beautiful serving platters are placed directly on each table, encouraging conversation, connection, and a shared dining experience reminiscent of an upscale family-owned chef-attended steakhouse buffet.</p>
               <p className="text-sm text-bone/50">Ideal for guests who enjoy lingering around the table together.</p>
             </div>
             <div className="bg-ink/60 border border-gold/30 p-8 lg:p-10 flex flex-col relative">
@@ -355,7 +355,7 @@ function SteakSeafoodMenuPage() {
               <div className="text-[0.65rem] tracking-[0.3em] uppercase text-gold mb-6">Plated Service</div>
               <div className="font-display text-bone text-4xl lg:text-5xl mb-2">$128</div>
               <div className="text-bone/50 text-sm mb-8">per guest</div>
-              <h4 className="font-display text-bone text-xl mb-3">Plated Signature Live Fire Steakhouse Catering Service</h4>
+              <h4 className="font-display text-bone text-xl mb-3">Plated upscale steakhouse catering Service</h4>
               <p className="text-bone/65 leading-relaxed mb-6 flex-1">Our most luxurious dining experience. Each course is individually plated and professionally served to every guest with restaurant-style precision.</p>
               <p className="text-sm text-bone/50">Designed for black-tie weddings, luxury receptions, executive dinners, and events where every detail matters.</p>
               <p className="text-sm text-bone/50 mt-3">For hosts who want their guests to feel like they've just dined at one of the finest steakhouses in the country—without ever leaving the venue.</p>
@@ -378,7 +378,7 @@ function SteakSeafoodMenuPage() {
             </div>
             <div className="flex items-start gap-3">
               <span className="text-gold mt-1">✔</span>
-              <span>Premium Signature Live Fire Steakhouse Catering-quality ingredients</span>
+              <span>Premium charcoal-grilled steakhouse experience-quality ingredients</span>
             </div>
             <div className="flex items-start gap-3">
               <span className="text-gold mt-1">✔</span>
@@ -406,7 +406,7 @@ function SteakSeafoodMenuPage() {
         <div className="container-luxe text-center">
           <div className="inline-flex items-center gap-4 px-8 py-4 border-2 border-gold/40 bg-gold/5 mb-6">
             <span className="w-3 h-3 bg-gold rotate-45" />
-            <span className="font-sans text-[0.75rem] font-semibold tracking-[0.4em] uppercase text-gold">Phoenix Metro Signature Live Fire Steakhouse Catering Menu</span>
+            <span className="font-sans text-[0.75rem] font-semibold tracking-[0.4em] uppercase text-gold">Phoenix Metro premium live-fire dining Menu</span>
             <span className="w-3 h-3 bg-gold rotate-45" />
           </div>
           <h2 className="heading-lg text-bone mb-4">Your Phoenix Metro Menu Selections</h2>
@@ -439,7 +439,7 @@ function SteakSeafoodMenuPage() {
         number="04"
         eyebrow="Choose 3"
         title="Sides"
-        sub="Classic Signature Live Fire Steakhouse Catering accompaniments, scratch-made for your Phoenix Metro event."
+        sub="Classic wood-fired steakhouse experience accompaniments, scratch-made for your Phoenix Metro event."
         items={sides}
       />
       <Course
@@ -481,7 +481,7 @@ function SteakSeafoodMenuPage() {
       <SteakhouseMenuFAQ regionKey="phoenix" />
 
       <CTASection
-        title="Bring the Signature Live Fire Steakhouse Catering to your Phoenix Metro event."
+        title="Bring the signature steakhouse experience to your Phoenix Metro event."
         subtitle="Serving Phoenix, Scottsdale, Gilbert, Mesa, Tempe and surrounding areas. Tell us your date, guest count and venue — we'll send a custom proposal within 24 hours."
       />
     </>

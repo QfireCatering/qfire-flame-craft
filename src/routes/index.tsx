@@ -29,6 +29,7 @@ const corporate = corporateAsset.url;
 const privateParty = privatePartyAsset.url;
 import { CTASection } from "@/components/site/Sections";
 import { TrustBar } from "@/components/site/TrustBar";
+import { ConfidenceBar } from "@/components/site/ConfidenceBar";
 
 const HOME_FAQS = [
   { q: "How far in advance should we book Qfire Catering?", a: "Most weddings book 6–12 months out for peak Saturdays. Corporate and private events are usually comfortable inside 4–8 weeks. Drop-off office catering can often be turned around in 24–72 hours. Call us — we move quickly whenever the date is open." },
@@ -45,7 +46,7 @@ export const Route = createFileRoute("/")({
       { title: "Qfire Catering — Luxury Wedding, Corporate & Private Event Catering | Phoenix & San Diego" },
       { name: "description", content: "Qfire Catering by Chef Terry Matthews — full-service luxury catering for weddings, corporate dinners, private parties and intimate chef's tables across Phoenix Metro and San Diego County. Wood-fired flavors, Signature Live Fire Steakhouse Catering polish, white-glove service, stress-free execution." },
       { property: "og:title", content: "Qfire Catering — Wood-Fired Luxury, Signature Live Fire Steakhouse Catering Polish" },
-      { property: "og:description", content: "Wood-fired flavors. Signature Live Fire Steakhouse Catering polish. Stress-free execution. Luxury catering for weddings, corporate events and private parties — Phoenix Metro & San Diego County." },
+      { property: "og:description", content: "Wood-fired flavors. Premium Steakhouse Catering polish. Stress-free execution. Luxury catering for weddings, corporate events and private parties — Phoenix Metro & San Diego County." },
       { property: "og:url", content: "/" },
       { property: "og:image", content: heroImage.url },
       { name: "twitter:image", content: heroImage.url },
@@ -297,7 +298,7 @@ function Home() {
           </div>
           <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-4">
             {[
-              "Experienced wood-fire & Signature Live Fire Steakhouse Catering-trained team",
+              "Experienced wood-fire & live-fire steakhouse experience-trained team",
               "Beautifully styled buffets, stations and plated service",
               "Professional, uniformed service staff",
               "Generous, restaurant-grade portions every time",
@@ -347,7 +348,7 @@ function Home() {
             {[
               { q: "Chef Terry — 'The BBQ Daddy' — and his team turned our wedding into the meal everyone is still talking about. Brisket, ribeye, the whole spread. Flawless.", a: "Lauren & Mark", e: "Scottsdale Wedding · 220 guests" },
               { q: "We hired Qfire for our company's annual partner dinner. Plated steaks for 140, served hot, served perfectly. Worth every penny.", a: "David K.", e: "Corporate Event · La Jolla" },
-              { q: "Backyard 50th birthday. Wood-fired everything. Guests thought we'd flown in a Signature Live Fire Steakhouse Catering. Absolutely premium.", a: "Sandra T.", e: "Private Party · Gilbert" },
+              { q: "Backyard 50th birthday. Wood-fired everything. Guests thought we'd flown in a luxury steakhouse dining. Absolutely premium.", a: "Sandra T.", e: "Private Party · Gilbert" },
             ].map((r, i) => (
               <figure key={i} className="bg-ink border border-white/5 p-8 lg:p-10 relative">
                 <div className="text-gold text-5xl font-display leading-none mb-4">"</div>
@@ -429,6 +430,7 @@ function Home() {
           </div>
         </div>
       </section>
+      <ConfidenceBar tone="ink" />
 
       <CTASection />
     </>

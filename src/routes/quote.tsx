@@ -166,7 +166,7 @@ function QuotePage() {
               <SelectField
                 label="Menu Interest"
                 name="menu"
-                options={["Wood-Fired Catering", "Signature Live Fire Steakhouse Catering", "Not sure yet"]}
+                options={["Wood-Fired Catering", "premium steakhouse catering", "Not sure yet"]}
               />
               <div>
       <label className="block text-[0.65rem] tracking-[0.3em] uppercase text-white mb-3">

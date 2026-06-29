@@ -422,14 +422,14 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
       <section className="py-24 lg:py-32 bg-onyx">
         <div className="container-luxe grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="order-2 lg:order-1">
-            <div className="eyebrow mb-6">The Signature Live Fire Steakhouse Catering Experience</div>
-            <h2 className="heading-lg text-bone">A Signature Live Fire Steakhouse Catering — brought to your venue.</h2>
+            <div className="eyebrow mb-6">The premium steakhouse catering Experience</div>
+            <h2 className="heading-lg text-bone">A live-fire steakhouse experience — brought to your venue.</h2>
             <div className="mt-8 space-y-5 text-bone/80 text-lg font-light leading-relaxed">
               <p>Charcoal-grilled ribeye, New York strip, filet mignon, picanha, prime rib, salmon, and surf & turf — served under candlelight with polished service and unforgettable presentation.</p>
-              <p>The food, the atmosphere, the service. The luxury of a great Signature Live Fire Steakhouse Catering, without leaving your venue. Perfect for luxury weddings, black-tie receptions, and rehearsal dinners across {region}.</p>
+              <p>The food, the atmosphere, the service. The luxury of a great luxury steakhouse dining, without leaving your venue. Perfect for luxury weddings, black-tie receptions, and rehearsal dinners across {region}.</p>
             </div>
             <Link to="/steak-seafood-menu" className="inline-flex items-center gap-2 mt-10 text-[0.7rem] tracking-[0.28em] uppercase text-gold border-b border-gold/40 pb-1 hover:border-gold">
-              View the Signature Live Fire Steakhouse Catering Menu <ArrowRight className="size-3" />
+              View the chef-attended steakhouse buffet Menu <ArrowRight className="size-3" />
             </Link>
           </div>
           <div className="order-1 lg:order-2 relative aspect-[4/5] overflow-hidden">
@@ -532,7 +532,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         <div className="container-luxe">
           <div className="max-w-2xl mb-14">
             <div className="eyebrow mb-6">Menu Options</div>
-            <h2 className="heading-lg text-bone">Wood-fired Wood-Fire. Premium Signature Live Fire Steakhouse Catering. Surf & turf.</h2>
+            <h2 className="heading-lg text-bone">Wood-fired Wood-Fire. Premium upscale steakhouse catering. Surf & turf.</h2>
             <p className="mt-6 text-bone/70 text-lg leading-relaxed font-light">
               Whatever you serve at your {regionShort} wedding, it comes off our live-fire grill.
             </p>
