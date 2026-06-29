@@ -1033,7 +1033,7 @@ definitiveCopy.reviews = {
     { title: "Read the reviews", body: "Top to bottom, recent first." },
     { title: "Ask for references", body: "We'll connect you with a past client." },
     { title: "Inquire", body: "Submit the form with date and headcount." },
-    { title: "Book", body: "Lock the date with a transparent deposit." },
+    { title: "Book", body: "Lock the date with a 35% non-refundable Date Charge — applied directly to your final invoice." },
   ],
   expectations: {
     before: ["Honest reference calls if requested", "Full proposal in writing"],
