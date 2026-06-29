@@ -121,9 +121,9 @@ export function RegionalPricing({ regionKey }: { regionKey: RegionKey }) {
           </div>
           <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
             {[
-              { name: "Buffet Style", price: isPhx ? "$74" : "$79", per: "/ person", desc: "Smooth. Efficient. Elegant. Restaurant-quality buffet presentation. Ideal for " + r.shortName + " weddings, corporate events and private parties.", cta: "Explore the Buffet Menu" },
-              { name: "Family Style", price: isPhx ? "$89" : "$94", per: "/ person", desc: "Shared dining. Passed platters. Connected guest experience. Luxury presentation, end to end.", cta: "See Family-Style Details" },
-              { name: "Plated Service", price: isPhx ? "$128" : "$133", per: "/ person", desc: "Restaurant-style service. Each course individually served. Our most luxurious dining experience.", cta: "Preview the Plated Tasting" },
+              { name: "Buffet Style", price: isPhx ? "$74" : "$79", per: "/ person", desc: "Smooth. Efficient. Elegant. Restaurant-quality buffet presentation. Ideal for " + r.shortName + " weddings, corporate events and private parties.", cta: "View Menu" },
+              { name: "Family Style", price: isPhx ? "$89" : "$94", per: "/ person", desc: "Shared dining. Passed platters. Connected guest experience. Luxury presentation, end to end.", cta: "View Menu" },
+              { name: "Plated Service", price: isPhx ? "$128" : "$133", per: "/ person", desc: "Restaurant-style service. Each course individually served. Our most luxurious dining experience.", cta: "View Menu" },
             ].map((tier) => (
               <article
                 key={tier.name}
