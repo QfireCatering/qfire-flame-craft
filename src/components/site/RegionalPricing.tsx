@@ -44,7 +44,7 @@ export function RegionalPricing({ regionKey }: { regionKey: RegionKey }) {
                   Example: Choose Tri-Tip only, or let your guests choose between Tri-Tip and Grilled Chicken.
                 </p>
               </div>
-              <Link to="/quote" className="btn-ghost mt-8">Start My 1-Meat Quote</Link>
+              <a href={woodMenuUrl} target="_blank" rel="noopener noreferrer" className="btn-ghost mt-8">View Menu</a>
             </article>
 
             {/* 2 Meat */}
@@ -64,7 +64,7 @@ export function RegionalPricing({ regionKey }: { regionKey: RegionKey }) {
                   Example: Everyone gets Pulled Pork, then each guest chooses either Brisket or Chicken.
                 </p>
               </div>
-              <Link to="/quote" className="btn-ghost mt-8">Build My 2-Meat Menu</Link>
+              <a href={woodMenuUrl} target="_blank" rel="noopener noreferrer" className="btn-ghost mt-8">View Menu</a>
             </article>
 
             {/* Premium */}
@@ -84,7 +84,7 @@ export function RegionalPricing({ regionKey }: { regionKey: RegionKey }) {
                   This is our most popular package for weddings, corporate events, and larger celebrations.
                 </p>
               </div>
-              <Link to="/quote" className="btn-ghost mt-8">Reserve the Premium Experience</Link>
+              <a href={woodMenuUrl} target="_blank" rel="noopener noreferrer" className="btn-ghost mt-8">View Menu</a>
             </article>
           </div>
 
