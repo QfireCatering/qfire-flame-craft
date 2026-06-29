@@ -7,6 +7,7 @@ export function RegionalPricing({ regionKey }: { regionKey: RegionKey }) {
   const r = regions[regionKey];
   const isPhx = regionKey === "phoenix";
   const steakMenuPath = isPhx ? "/steak-seafood-menu" : "/steak-seafood-menu-san-diego";
+  const woodMenuUrl = isPhx ? "https://fs17.formsite.com/matthews3404/BBQDADDYLLC/index" : "https://fs17.formsite.com/matthews3404/SanDiego/index";
   const woodMin = isPhx ? "20 guest minimum" : "50 guest minimum";
   const steakMin = isPhx ? "15 guest minimum" : "40 guest minimum";
   return (
@@ -43,7 +44,7 @@ export function RegionalPricing({ regionKey }: { regionKey: RegionKey }) {
                   Example: Choose Tri-Tip only, or let your guests choose between Tri-Tip and Grilled Chicken.
                 </p>
               </div>
-              <Link to="/quote" className="btn-ghost mt-8">Start My 1-Meat Quote</Link>
+              <a href={woodMenuUrl} target="_blank" rel="noopener noreferrer" className="btn-ghost mt-8">View Menu</a>
             </article>
 
             {/* 2 Meat */}
@@ -63,7 +64,7 @@ export function RegionalPricing({ regionKey }: { regionKey: RegionKey }) {
                   Example: Everyone gets Pulled Pork, then each guest chooses either Brisket or Chicken.
                 </p>
               </div>
-              <Link to="/quote" className="btn-ghost mt-8">Build My 2-Meat Menu</Link>
+              <a href={woodMenuUrl} target="_blank" rel="noopener noreferrer" className="btn-ghost mt-8">View Menu</a>
             </article>
 
             {/* Premium */}
@@ -83,7 +84,7 @@ export function RegionalPricing({ regionKey }: { regionKey: RegionKey }) {
                   This is our most popular package for weddings, corporate events, and larger celebrations.
                 </p>
               </div>
-              <Link to="/quote" className="btn-ghost mt-8">Reserve the Premium Experience</Link>
+              <a href={woodMenuUrl} target="_blank" rel="noopener noreferrer" className="btn-ghost mt-8">View Menu</a>
             </article>
           </div>
 
@@ -120,9 +121,9 @@ export function RegionalPricing({ regionKey }: { regionKey: RegionKey }) {
           </div>
           <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
             {[
-              { name: "Buffet Style", price: isPhx ? "$74" : "$79", per: "/ person", desc: "Smooth. Efficient. Elegant. Restaurant-quality buffet presentation. Ideal for " + r.shortName + " weddings, corporate events and private parties.", cta: "Explore the Buffet Menu" },
-              { name: "Family Style", price: isPhx ? "$89" : "$94", per: "/ person", desc: "Shared dining. Passed platters. Connected guest experience. Luxury presentation, end to end.", cta: "See Family-Style Details" },
-              { name: "Plated Service", price: isPhx ? "$128" : "$133", per: "/ person", desc: "Restaurant-style service. Each course individually served. Our most luxurious dining experience.", cta: "Preview the Plated Tasting" },
+              { name: "Buffet Style", price: isPhx ? "$74" : "$79", per: "/ person", desc: "Smooth. Efficient. Elegant. Restaurant-quality buffet presentation. Ideal for " + r.shortName + " weddings, corporate events and private parties.", cta: "View Menu" },
+              { name: "Family Style", price: isPhx ? "$89" : "$94", per: "/ person", desc: "Shared dining. Passed platters. Connected guest experience. Luxury presentation, end to end.", cta: "View Menu" },
+              { name: "Plated Service", price: isPhx ? "$128" : "$133", per: "/ person", desc: "Restaurant-style service. Each course individually served. Our most luxurious dining experience.", cta: "View Menu" },
             ].map((tier) => (
               <article
                 key={tier.name}
