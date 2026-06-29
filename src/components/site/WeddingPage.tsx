@@ -657,6 +657,17 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         </div>
       </section>
 
+      <ObjectionBuster
+        eyebrow={`Before You Book Your ${regionShort} Wedding`}
+        title="Every question we hear from brides — answered before you ask."
+        ctaLabel={`Request My ${regionShort} Wedding Quote`}
+      />
+
+      <BookingProcess
+        eyebrow="Booking Your Wedding Is Simple"
+        title={`From inquiry to "I do" — exactly what happens.`}
+      />
+
       {/* FINAL CTA */}
       <section className="py-32 lg:py-40 relative overflow-hidden">
         <img src={reception} alt={`Luxury ${regionShort} wedding reception by Qfire`} className="absolute inset-0 w-full h-full object-cover opacity-30" />
