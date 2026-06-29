@@ -9,6 +9,7 @@ export interface AtAGlanceProps {
   region?: "Phoenix Metro" | "San Diego County" | "Phoenix Metro & San Diego County";
   minGuests?: number;
   maxGuests?: number;
+  guestCount?: string;
   leadTime?: string;
   priceFrom?: string;
   className?: string;
@@ -18,13 +19,14 @@ export function AtAGlance({
   region = "Phoenix Metro & San Diego County",
   minGuests = 25,
   maxGuests = 2500,
+  guestCount,
   leadTime = "24–72 hrs (drop-off) · 4–8 weeks (full-service) · 6–12 months (peak weddings)",
   priceFrom = "$12.99 / guest (wood-fired) · $74 / guest (steakhouse)",
   className = "",
 }: AtAGlanceProps) {
   const rows = [
     { icon: MapPin, label: "Service area", value: region },
-    { icon: Users, label: "Guest count", value: `${minGuests}–${maxGuests.toLocaleString()} guests` },
+    { icon: Users, label: "Guest count", value: guestCount ?? `${minGuests}–${maxGuests.toLocaleString()} guests` },
     { icon: DollarSign, label: "Starting price", value: priceFrom },
     { icon: Clock, label: "Lead time", value: leadTime },
     { icon: Flame, label: "Cooking style", value: "Live-fire charcoal · wood-smoked · onsite grilling" },
