@@ -36,6 +36,7 @@ export interface CorporateRegionConfig {
   path: string;
   cities: string[];
   reviewCities: string[];
+  heroImage?: string;
 }
 
 const baseFaqs = [
@@ -136,7 +137,7 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: `Qfire Catering — ${region} Corporate Catering`,
-    image: officeHero,
+    image: config.heroImage || officeHero,
     url: path,
     telephone: "+1-602-555-0123",
     priceRange: "$$$",
@@ -183,7 +184,7 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
     <>
       {/* HERO */}
       <section className="relative min-h-[88vh] flex items-end overflow-hidden">
-        <img src={officeHero} alt={`Executive corporate catering for ${regionShort} office buffet by Qfire Catering`} className="absolute inset-0 w-full h-full object-cover" />
+        <img src={config.heroImage || officeHero} alt={`Executive corporate catering for ${regionShort} office buffet by Qfire Catering`} className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/75 to-ink/40" />
         <div className="container-luxe relative z-10 pb-20 lg:pb-28 pt-32">
           <nav aria-label="Breadcrumb" className="mb-6 text-xs tracking-[0.2em] uppercase text-bone/60">
