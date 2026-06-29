@@ -1,9 +1,24 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import chefTerry from "@/assets/chef-terry.jpg.asset.json";
 import heroCollage from "@/assets/chef-terry-hero-collage.jpg.asset.json";
-import heroFire from "@/assets/hero-fire.jpg";
-import brisket from "@/assets/brisket.jpg";
+import g1 from "@/assets/gallery/about-chef/me_couple.avif.asset.json";
+import g2 from "@/assets/gallery/about-chef/me_couple_3.avif.asset.json";
+import g3 from "@/assets/gallery/about-chef/bbq_daddy.avif.asset.json";
+import g4 from "@/assets/gallery/about-chef/bbq_daddy_3.avif.asset.json";
+import g5 from "@/assets/gallery/about-chef/bbq_dddy_3.avif.asset.json";
+import g6 from "@/assets/gallery/about-chef/onsite_grill_4.avif.asset.json";
+import g7 from "@/assets/gallery/about-chef/park_set_up-3.avif.asset.json";
 import { CTASection } from "@/components/site/Sections";
+
+const chefGallery = [
+  { src: g1.url, alt: "Chef Terry Matthews with a wedding couple — Qfire Catering" },
+  { src: g2.url, alt: "Chef Terry celebrating with newlyweds after a wood-fired reception" },
+  { src: g3.url, alt: "The BBQ Daddy in red chef coat at a Qfire event" },
+  { src: g4.url, alt: "Chef Terry Matthews working the live fire at a Qfire wedding" },
+  { src: g5.url, alt: "The BBQ Daddy plating signature wood-fired entrées" },
+  { src: g6.url, alt: "Qfire on-site grilling station with Chef Terry" },
+  { src: g7.url, alt: "Qfire Catering park setup — Phoenix Metro private event" },
+];
 
 
 export const Route = createFileRoute("/about")({
