@@ -89,7 +89,7 @@ function QuotePage() {
         <div className="absolute inset-0 bg-black/90" />
       </div>
       <div className="relative z-10 hidden lg:block">
-        <div className="absolute inset-0 flex items-end p-16">
+        <div className="absolute inset-0 flex items-start p-16 pt-20">
           <div>
             <div className="eyebrow mb-8">Request a Quote</div>
             <h1 className="heading-lg text-bone max-w-md">Tell us about your event.</h1>
