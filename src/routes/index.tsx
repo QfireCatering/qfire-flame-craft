@@ -493,6 +493,49 @@ function Home() {
           </div>
         </div>
       </section>
+
+      {/* CREDENTIALS STRIP */}
+      <section className="py-20 lg:py-24 border-t border-white/5 bg-onyx/40">
+        <div className="container-luxe text-center">
+          <div className="eyebrow justify-center mb-6">The Resume</div>
+          <h2 className="heading-md text-bone max-w-3xl mx-auto">
+            The <span className="text-gold italic font-light">#1 Rated</span> Full-Service Steak &amp; BBQ Catering Co. in the State.
+          </h2>
+          <ul className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-4 max-w-4xl mx-auto text-left">
+            {[
+              "Food Network Veteran",
+              "Cooked alongside Bobby Flay",
+              "Winner — Food Network's Cutthroat Kitchen",
+              "Winner — Food Network's Camp Cutthroat",
+              "Featured on BBQ Brawl Season 2",
+              "International Chef Competition Host",
+              "Catering Coach & Mentor",
+              "25+ Years Behind the Fire",
+              "4.9★ rating across ALL platforms",
+            ].map((line) => (
+              <li key={line} className="flex items-start gap-3 text-bone/85 leading-relaxed">
+                <Check className="size-5 text-gold shrink-0 mt-0.5" strokeWidth={1.5} />
+                <span>{line}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* SHORT-NOTICE CTA */}
+      <section className="py-16 border-t border-gold/20 bg-gradient-to-r from-ink via-onyx to-ink">
+        <div className="container-luxe text-center">
+          <div className="text-[0.7rem] tracking-[0.35em] uppercase text-gold mb-4">Need Phoenix or San Diego Catering on Short Notice?</div>
+          <h3 className="heading-md text-bone max-w-2xl mx-auto">
+            We might be able to help. Call us right now.
+          </h3>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+            <a href="tel:8778487211" className="btn-primary">Call 877.848.7211</a>
+            <Link to="/quote" className="btn-ghost">Request a Quote</Link>
+          </div>
+        </div>
+      </section>
+
       <ConfidenceBar tone="ink" />
 
       <CTASection />
