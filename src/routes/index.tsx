@@ -146,6 +146,8 @@ function Home() {
         </div>
       </section>
 
+      <TrustBar />
+
       {/* TWO REGIONS */}
       <section className="relative py-28 lg:py-44 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-onyx via-charcoal/40 to-onyx" />
@@ -415,12 +417,7 @@ function Home() {
             <Link to="/faq" className="btn-ghost mt-8">All Questions</Link>
           </div>
           <div className="divide-y divide-white/5 border-y border-white/5">
-            {[
-              { q: "How far in advance should we book?", a: "Most weddings book 6–12 months out. Corporate and private events: 4–8 weeks is comfortable." },
-              { q: "Do you handle full service?", a: "Yes. Staffing, rentals, bartending, setup and breakdown. You enjoy your event." },
-              { q: "Can you accommodate dietary needs?", a: "Absolutely. Vegan, gluten-free, kosher-style and allergen-aware menus are part of how we plan." },
-              { q: "Do you travel?", a: "Across Phoenix Metro and San Diego County, with destination service available on request." },
-            ].map((f) => (
+            {HOME_FAQS.slice(0, 4).map((f) => (
               <details key={f.q} className="group py-6">
                 <summary className="flex items-center justify-between cursor-pointer list-none">
                   <span className="text-lg font-display text-bone group-hover:text-gold transition-colors pr-6">{f.q}</span>
