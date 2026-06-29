@@ -740,6 +740,7 @@ function RegionVenues({ regionKey }: { regionKey: RegionKey }) {
           </div>
         </div>
       </section>
+      <DefinitiveContent {...definitiveCopy.venues} topic={`${r.shortName} Venues`} region={r.metro} />
       <CTASection />
     </>
   );
