@@ -348,7 +348,7 @@ export function RegionSlugPage({ regionKey, slug }: { regionKey: RegionKey; slug
     case "corporate": return <ServicePage config={corporateConfig(opts)} regionKey={regionKey} />;
     case "private-parties": return <ServicePage config={privatePartyConfig(opts)} regionKey={regionKey} />;
     case "wood-fired": return <ServicePage config={woodFiredConfig(opts)} regionKey={regionKey} />;
-    case "live-fire steakhouse experience": return <ServicePage config={steakhouseConfig(opts)} regionKey={regionKey} />;
+    case "steakhouse": return <ServicePage config={steakhouseConfig(opts)} regionKey={regionKey} />;
     case "bartending": return <ServicePage config={bartendingConfig(opts)} regionKey={regionKey} />;
     case "gallery": return <RegionGallery regionKey={regionKey} />;
     case "reviews": return <RegionReviews regionKey={regionKey} />;
