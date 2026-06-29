@@ -24,9 +24,10 @@ export const regions: Record<RegionKey, RegionData> = {
     cities: [
       "Phoenix", "Scottsdale", "Mesa", "Chandler", "Gilbert",
       "Glendale", "Surprise", "Avondale", "Goodyear", "Peoria",
+      "Sedona", "Tucson", "Flagstaff", "Pinetop",
     ],
     description:
-      "Serving Phoenix, Scottsdale, Mesa, Chandler, Gilbert, Glendale, Surprise, Avondale, Goodyear, Peoria and surrounding communities.",
+      "Serving Phoenix, Scottsdale, Mesa, Chandler, Gilbert, Glendale, Surprise, Avondale, Goodyear, Peoria, Sedona, Tucson, Flagstaff, Pinetop and surrounding Arizona communities.",
     heroImage: "phoenix",
     venues: [
       { name: "The Wright House", city: "Mesa", blurb: "Garden weddings with covered courtyard." },
