@@ -136,6 +136,14 @@ function QuotePage() {
             </div>
           ) : (
             <form onSubmit={onSubmit} className="space-y-6" noValidate>
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-center gap-3 sm:gap-6 text-center">
+                <a href={contact.phoneHref} className="inline-flex items-center justify-center gap-2 text-gold font-bold text-lg hover:underline">
+                  <Phone className="size-5" /> {contact.phone}
+                </a>
+                <a href={contact.emailHref} className="inline-flex items-center justify-center gap-2 text-gold font-bold text-base hover:underline break-all">
+                  <Mail className="size-5" /> {contact.email}
+                </a>
+              </div>
               <div className="bg-red-950/30 border-2 border-red-500 rounded-md p-5 shadow-[0_0_24px_rgba(239,68,68,0.25)]">
                 <p className="text-bone font-bold text-base leading-relaxed text-center">
                   Complete the form below to continue to our full menu and pricing page. You'll be able to build your ideal menu and request a detailed quote based on your exact selections.
