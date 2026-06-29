@@ -164,7 +164,6 @@ function Home() {
           </div>
 
           <div className="mt-20 lg:mt-28 flex flex-wrap items-center gap-x-10 gap-y-4">
-            <img src={asSeenOnBadge.url} alt="As seen on Food Network" className="w-16 h-16 rounded-full" />
             <div className="text-[0.6rem] tracking-[0.35em] uppercase text-bone/50">As Seen On</div>
             <div className="flex flex-wrap items-center gap-x-8 gap-y-3">
               {["Food Network", "BBQ Brawl", "Cutthroat Kitchen", "Camp Cutthroat"].map((logo) => (
@@ -174,6 +173,7 @@ function Home() {
               ))}
             </div>
           </div>
+
         </div>
 
         {/* Scroll indicator */}
