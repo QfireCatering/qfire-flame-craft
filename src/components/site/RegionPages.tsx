@@ -674,6 +674,7 @@ function RegionFAQ({ regionKey }: { regionKey: RegionKey }) {
           </div>
         </div>
       </section>
+      <DefinitiveContent {...definitiveCopy.faq} topic={`${r.shortName} Catering FAQ`} region={r.metro} />
       <CTASection />
     </>
   );
