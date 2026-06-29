@@ -20,14 +20,14 @@ function buildFaqs(regionKey: RegionKey) {
     },
     {
       q: "Is there a minimum guest count?",
-      a: "The Signature Live Fire Steakhouse Catering Experience is built for events of 30 guests or more. For intimate dinners under 30, we'll build a custom proposal — reach out and we'll quote your event directly.",
+      a: "The premium steakhouse catering Experience is built for events of 30 guests or more. For intimate dinners under 30, we'll build a custom proposal — reach out and we'll quote your event directly.",
     },
     {
       q: "Can you accommodate dietary restrictions and allergies?",
       a: "Yes. Every menu can be adapted for vegetarian, vegan, gluten-free, dairy-free, and Halal needs. For serious allergies (peanut, tree-nut, shellfish), we run a dedicated prep line and label each plate at the pass.",
     },
     {
-      q: "How far in advance should we book the Signature Live Fire Steakhouse Catering Experience?",
+      q: "How far in advance should we book the live-fire steakhouse experience Experience?",
       a: "Peak Saturdays (March–November) typically book 6–12 months out. Off-peak weeknights and Sundays can often be accommodated inside 60–90 days. Premium dates lock in with a 35% Date Charge applied to your final invoice.",
     },
     {
@@ -64,7 +64,7 @@ export function SteakhouseMenuFAQ({ regionKey }: { regionKey: RegionKey }) {
     <section className="py-20 lg:py-28 border-t border-white/5">
       <div className="container-luxe max-w-4xl">
         <div className="text-center mb-12">
-          <p className="eyebrow justify-center mb-5 text-gold">Signature Live Fire Steakhouse Catering Experience FAQs</p>
+          <p className="eyebrow justify-center mb-5 text-gold">Luxury Steakhouse Dining Experience FAQs</p>
           <h2 className="heading-md text-bone">Questions about pricing, dietary needs & booking.</h2>
         </div>
         <Accordion type="single" collapsible className="w-full">

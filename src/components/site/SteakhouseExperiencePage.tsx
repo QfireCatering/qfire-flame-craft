@@ -66,7 +66,7 @@ export function SteakhouseExperiencePage({ r }: { r: RegionCopy }) {
         <div className="container-luxe relative z-10 pt-40 pb-24 lg:pb-32">
           <div className="eyebrow mb-8">Signature Live Fire Steakhouse Catering · {r.region}</div>
           <h1 className="heading-xl text-bone max-w-4xl">
-            The Surf &amp; Turf Signature Live Fire Steakhouse Catering Experience<br />
+            The Surf &amp; Turf premium steakhouse catering Experience<br />
             <span className="text-gold/90 italic font-light">brought to {r.city}.</span>
           </h1>
           <p className="mt-8 max-w-2xl text-lg lg:text-xl text-bone/75 leading-relaxed font-light">
@@ -85,9 +85,9 @@ export function SteakhouseExperiencePage({ r }: { r: RegionCopy }) {
       <section className="py-20 lg:py-28 bg-onyx border-t border-white/5">
         <div className="container-luxe">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <div className="eyebrow justify-center mb-6">The Signature Live Fire Steakhouse Catering Experience — Pricing</div>
+            <div className="eyebrow justify-center mb-6">The live-fire steakhouse experience Experience — Pricing</div>
             <h2 className="heading-lg text-bone">
-              Signature Live Fire Steakhouse Catering catering starting at <span className="text-gold italic font-light">{r.city === "San Diego" ? "$79" : "$74"}/guest.</span>
+              Luxury Steakhouse Dining catering starting at <span className="text-gold italic font-light">{r.city === "San Diego" ? "$79" : "$74"}/guest.</span>
             </h2>
             <p className="mt-5 text-bone/65 text-base font-light">
               Live charcoal grilling, white-glove service, and restaurant-quality presentation at your {r.region} venue.
@@ -144,14 +144,14 @@ export function SteakhouseExperiencePage({ r }: { r: RegionCopy }) {
               <span className="h-px w-10 bg-[#bfa15a]" />
             </div>
             <h2 className="font-display text-4xl md:text-6xl leading-[1.05] text-[#0d0d0d]">
-              The Surf &amp; Turf<br />Signature Live Fire Steakhouse Catering Experience
+              The Surf &amp; Turf<br />Chef-attended Steakhouse Buffet Experience
             </h2>
             <div className="mt-8 mx-auto h-px w-24 bg-[#bfa15a]" />
             <p className="mt-8 text-lg md:text-xl leading-relaxed text-[#2a2a2a] font-light">
               If you're looking for something that feels more elevated than traditional catering, this is where our {r.city} clients usually lean.
             </p>
             <p className="mt-4 text-lg md:text-xl leading-relaxed text-[#2a2a2a] font-light">
-              We don't simply serve dinner. We create a live Signature Live Fire Steakhouse Catering dining experience your guests will remember long after the event ends.
+              We don't simply serve dinner. We create a live upscale steakhouse catering dining experience your guests will remember long after the event ends.
             </p>
           </div>
 
@@ -176,7 +176,7 @@ export function SteakhouseExperiencePage({ r }: { r: RegionCopy }) {
               {
                 Icon: Candy,
                 title: "Elevated Dining Atmosphere",
-                body: `Every detail — from plating to pacing to service cadence — is designed to feel like an upscale ${r.city} Signature Live Fire Steakhouse Catering, not a catered event.`,
+                body: `Every detail — from plating to pacing to service cadence — is designed to feel like an upscale ${r.city} charcoal-grilled steakhouse experience, not a catered event.`,
               },
             ].map(({ Icon, title, body }) => (
               <div key={title} className="bg-[#f5f0e6] p-10 lg:p-14">
@@ -214,11 +214,11 @@ export function SteakhouseExperiencePage({ r }: { r: RegionCopy }) {
               <h3 className="font-display text-4xl md:text-5xl text-[#0d0d0d] leading-tight">Cloth napkins.<br />Polished silver. Candlelight.</h3>
               <div className="mt-6 h-px w-16 bg-[#bfa15a]" />
               <p className="mt-6 text-lg leading-relaxed text-[#2a2a2a] font-light">
-                Four-piece dinnerware, glassware, polished flatware, linen napkins and elegant chafer presentation. Whether it's a {r.city} wedding, a corporate dinner or a private celebration, your tables look like the dining room of a fine Signature Live Fire Steakhouse Catering.
+                Four-piece dinnerware, glassware, polished flatware, linen napkins and elegant chafer presentation. Whether it's a {r.city} wedding, a corporate dinner or a private celebration, your tables look like the dining room of a fine premium live-fire dining.
               </p>
             </div>
             <div className="order-1 lg:order-2 relative aspect-[4/5] overflow-hidden shadow-[0_30px_80px_-30px_rgba(0,0,0,0.35)]">
-              <img src={privatePartySetting.url} alt={`Elegant ${r.region} reception table set for a luxury Signature Live Fire Steakhouse Catering catered dinner`} className="w-full h-full object-cover" />
+              <img src={privatePartySetting.url} alt={`Elegant ${r.region} reception table set for a luxury wood-fired steakhouse experience catered dinner`} className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
@@ -256,7 +256,7 @@ export function SteakhouseExperiencePage({ r }: { r: RegionCopy }) {
           <div className="container-luxe py-24 lg:py-32">
             <div className="max-w-3xl mx-auto text-center">
               <div className="eyebrow text-[#8a6a2a] justify-center mb-6">Choose Your Service Style</div>
-              <h2 className="font-display text-4xl md:text-5xl text-[#0d0d0d]">Three Ways to Experience the Signature Live Fire Steakhouse Catering</h2>
+              <h2 className="font-display text-4xl md:text-5xl text-[#0d0d0d]">Three Ways to Experience the signature steakhouse experience</h2>
               <p className="mt-6 text-[#2a2a2a]/80 text-lg font-light">All three include live on-site charcoal grilling, full setup, service staff and breakdown.</p>
             </div>
 
@@ -297,9 +297,9 @@ export function SteakhouseExperiencePage({ r }: { r: RegionCopy }) {
           <div className="container-luxe py-20 lg:py-24">
             <div className="grid md:grid-cols-3 gap-6">
               {[
-                { src: steakhouseMenu.url, alt: `Live charcoal grilling at a ${r.region} Signature Live Fire Steakhouse Catering catered event` },
-                { src: weddingCouple.url, alt: `Luxury ${r.city} wedding Signature Live Fire Steakhouse Catering reception` },
-                { src: steakhouseBackyard.url, alt: `Backyard ${r.region} Signature Live Fire Steakhouse Catering and surf & turf catering` },
+                { src: steakhouseMenu.url, alt: `Live charcoal grilling at a ${r.region} live-fire dinner service catered event` },
+                { src: weddingCouple.url, alt: `Luxury ${r.city} wedding premium steakhouse catering reception` },
+                { src: steakhouseBackyard.url, alt: `Backyard ${r.region} live-fire steakhouse experience and surf & turf catering` },
               ].map((img) => (
                 <div key={img.alt} className="aspect-[4/5] overflow-hidden shadow-[0_30px_80px_-30px_rgba(0,0,0,0.35)]">
                   <img src={img.src} alt={img.alt} className="w-full h-full object-cover" />
@@ -313,7 +313,7 @@ export function SteakhouseExperiencePage({ r }: { r: RegionCopy }) {
         <div className="border-t border-[#d9cdb3] bg-[#efe7d4]">
           <div className="container-luxe py-16 lg:py-20 text-center">
             <div className="eyebrow text-[#8a6a2a] justify-center mb-5">Proudly Serving</div>
-            <h3 className="font-display text-3xl md:text-4xl text-[#0d0d0d]">Signature Live Fire Steakhouse Catering Across {r.region}</h3>
+            <h3 className="font-display text-3xl md:text-4xl text-[#0d0d0d]">Luxury Steakhouse Dining Across {r.region}</h3>
             <p className="mt-5 max-w-3xl mx-auto text-[#2a2a2a]/85 leading-relaxed">{r.serviceAreas}</p>
             <div className="mt-8 flex flex-wrap justify-center gap-2">
               {r.shortAreas.map((a) => (
@@ -338,10 +338,10 @@ export function SteakhouseExperiencePage({ r }: { r: RegionCopy }) {
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 rounded-full bg-burgundy/30 blur-[140px]" />
         </div>
         <div className="container-luxe relative text-center">
-          <div className="eyebrow justify-center mb-8">Bring the Signature Live Fire Steakhouse Catering to {r.city}</div>
-          <h2 className="heading-lg text-bone max-w-3xl mx-auto">Ready to Bring the Signature Live Fire Steakhouse Catering to Your Event?</h2>
+          <div className="eyebrow justify-center mb-8">Bring the chef-attended steakhouse buffet to {r.city}</div>
+          <h2 className="heading-lg text-bone max-w-3xl mx-auto">Ready to Bring the upscale steakhouse catering to Your Event?</h2>
           <p className="mt-6 max-w-2xl mx-auto text-bone/70 text-lg">
-            Whether you're planning an intimate dinner, an elegant {r.city} wedding, an upscale corporate event or a luxury private celebration, we'll bring the Signature Live Fire Steakhouse Catering experience directly to your {r.region} venue.
+            Whether you're planning an intimate dinner, an elegant {r.city} wedding, an upscale corporate event or a luxury private celebration, we'll bring the charcoal-grilled steakhouse experience experience directly to your {r.region} venue.
           </p>
           <div className="mt-12 flex flex-wrap justify-center gap-4">
             <Link to="/quote" className="btn-primary">Request Your Custom Quote <ArrowRight className="size-4" /></Link>

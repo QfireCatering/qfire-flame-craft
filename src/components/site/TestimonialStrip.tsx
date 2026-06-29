@@ -39,7 +39,7 @@ const REVIEWS: Record<RegionKey, Review[]> = {
       source: "Yelp",
     },
     {
-      q: "Coronado beachfront plated dinner for 90 guests. White-glove service, gorgeous presentation, and the filet was better than any Signature Live Fire Steakhouse Catering we've been to in San Diego. 5 stars, every category.",
+      q: "Coronado beachfront plated dinner for 90 guests. White-glove service, gorgeous presentation, and the filet was better than any premium steakhouse catering we've been to in San Diego. 5 stars, every category.",
       a: "Jean Laber",
       e: "Private Party · Coronado",
       source: "Google",

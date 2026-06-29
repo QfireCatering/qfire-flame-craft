@@ -268,7 +268,7 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
                   </a>
                 );
               }
-              if (s.slug === "Signature Live Fire Steakhouse Catering") {
+              if (s.slug === "premium steakhouse catering") {
                 return (
                   <Link key={s.slug} to={regionKey === "phoenix" ? "/steak-seafood-menu" : "/steak-seafood-menu-san-diego"} className={cardClass}>
                     {cardBody}
@@ -348,7 +348,7 @@ export function RegionSlugPage({ regionKey, slug }: { regionKey: RegionKey; slug
     case "corporate": return <ServicePage config={corporateConfig(opts)} regionKey={regionKey} />;
     case "private-parties": return <ServicePage config={privatePartyConfig(opts)} regionKey={regionKey} />;
     case "wood-fired": return <ServicePage config={woodFiredConfig(opts)} regionKey={regionKey} />;
-    case "Signature Live Fire Steakhouse Catering": return <ServicePage config={steakhouseConfig(opts)} regionKey={regionKey} />;
+    case "live-fire steakhouse experience": return <ServicePage config={steakhouseConfig(opts)} regionKey={regionKey} />;
     case "bartending": return <ServicePage config={bartendingConfig(opts)} regionKey={regionKey} />;
     case "gallery": return <RegionGallery regionKey={regionKey} />;
     case "reviews": return <RegionReviews regionKey={regionKey} />;
@@ -390,9 +390,9 @@ function RegionHoliday({ regionKey }: { regionKey: RegionKey }) {
           <h2 className="heading-md text-bone mb-10">Three ways we run a holiday.</h2>
           <div className="grid md:grid-cols-3 gap-px bg-white/5 border border-white/5">
             {[
-              { t: "Office Holiday Party", b: "Buffet or stations. 30–500 guests. Wood-fired Wood-Fire or Signature Live Fire Steakhouse Catering menu. Bar and rentals available." },
+              { t: "Office Holiday Party", b: "Buffet or stations. 30–500 guests. Wood-fired Wood-Fire or luxury steakhouse dining menu. Bar and rentals available." },
               { t: "Family Holiday Dinner", b: "Smoked turkey, prime rib, classic sides. Drop-off or full service in your home. 10–60 guests." },
-              { t: "Client Appreciation", b: "Plated Signature Live Fire Steakhouse Catering dinner with tableside carving. White-glove staff. 20–150 guests." },
+              { t: "Client Appreciation", b: "Plated chef-attended steakhouse buffet dinner with tableside carving. White-glove staff. 20–150 guests." },
             ].map((c) => (
               <div key={c.t} className="bg-ink p-10">
                 <div className="text-2xl font-display text-bone mb-3">{c.t}</div>
@@ -448,7 +448,7 @@ function RegionBackyard({ regionKey }: { regionKey: RegionKey }) {
   const r = regions[regionKey];
   const occasions = [
     { t: "Graduation Parties", b: "Brisket, pulled pork, sliders, all the sides. Casual menu, polished service, 40–200 guests." },
-    { t: "Milestone Birthdays", b: "Plated Signature Live Fire Steakhouse Catering dinners or wood-fired stations. We make the night feel like the restaurant came to you." },
+    { t: "Milestone Birthdays", b: "Plated upscale steakhouse catering dinners or wood-fired stations. We make the night feel like the restaurant came to you." },
     { t: "Anniversary & Retirement", b: "Intimate seated dinners for 12–60. Multi-course, wine pairings, full staff." },
     { t: "Engagement & Rehearsal", b: "The night before the big night. Family-style on long tables under string lights." },
     { t: "Reunions & Welcome BBQs", b: "Out-of-town family, full smoker setup, kids run the yard, you don't lift a finger." },
@@ -616,7 +616,7 @@ function RegionBlog({ regionKey }: { regionKey: RegionKey }) {
     { img: corporate, cat: "Corporate", title: `The ${r.shortName} investor-dinner playbook.` },
     { img: privateParty, cat: "Private Parties", title: `Backyard luxury in ${r.shortName}.` },
     { img: buffet, cat: "Venue Spotlights", title: `Favorite outdoor venues across ${r.metro}.` },
-    { img: steak, cat: "Planning Guides", title: `Signature Live Fire Steakhouse Catering at home — a ${r.shortName} guide.` },
+    { img: steak, cat: "Planning Guides", title: `charcoal-grilled steakhouse experience at home — a ${r.shortName} guide.` },
   ];
   return (
     <>
