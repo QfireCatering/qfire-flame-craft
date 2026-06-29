@@ -222,7 +222,10 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
         </div>
       </section>
 
+      <PricingHero regionKey={config.regionSlug} />
+
       <GuestScaleStat regionKey={config.regionSlug} />
+
 
       {/* TRUST STRIP */}
       <section className="border-y border-white/10 bg-onyx py-10">
