@@ -46,7 +46,7 @@ export const Route = createFileRoute("/")({
         "@context": "https://schema.org",
         "@type": "FoodEstablishment",
         name: "Qfire Catering",
-        description: "Full-service wood-fired and Signature Live Fire Signature Live Fire Steakhouse Catering Catering for weddings, corporate events and private parties.",
+        description: "Full-service wood-fired and Signature Live Fire Steakhouse Catering for weddings, corporate events and private parties.",
         areaServed: ["Phoenix Metro, AZ", "San Diego County, CA"],
         servesCuisine: ["American", "Barbecue", "Signature Live Fire Steakhouse Catering"],
         priceRange: "$$$",

@@ -13,9 +13,9 @@ const r: RegionCopy = {
 export const Route = createFileRoute("/steakhouse-experience-phoenix")({
   head: () => ({
     meta: [
-      { title: "Signature Live Fire Signature Live Fire Steakhouse Catering Catering Phoenix — Surf & Turf, Onsite Charcoal Grilling | Qfire" },
-      { name: "description", content: "Luxury Signature Live Fire Signature Live Fire Steakhouse Catering Catering in the Phoenix Metro. Ribeye, filet mignon, prime rib, salmon and lobster — grilled live onsite at Phoenix, Scottsdale and Paradise Valley weddings, corporate events and private parties. Buffet from $74/pp · Plated from $128/pp." },
-      { property: "og:title", content: "Signature Live Fire Signature Live Fire Steakhouse Catering Catering Phoenix | Qfire" },
+      { title: "Signature Live Fire Steakhouse Catering Phoenix — Surf & Turf, Onsite Charcoal Grilling | Qfire" },
+      { name: "description", content: "Luxury Signature Live Fire Steakhouse Catering in the Phoenix Metro. Ribeye, filet mignon, prime rib, salmon and lobster — grilled live onsite at Phoenix, Scottsdale and Paradise Valley weddings, corporate events and private parties. Buffet from $74/pp · Plated from $128/pp." },
+      { property: "og:title", content: "Signature Live Fire Steakhouse Catering Phoenix | Qfire" },
       { property: "og:description", content: "Live charcoal grilling, surf & turf and white-glove service across the Phoenix Metro — weddings, corporate dinners and luxury private parties." },
       { property: "og:url", content: "/steakhouse-experience-phoenix" },
       { property: "og:image", content: steakhouseBackyard.url },
@@ -27,8 +27,8 @@ export const Route = createFileRoute("/steakhouse-experience-phoenix")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Service",
-          name: "Signature Live Fire Signature Live Fire Steakhouse Catering Catering — Phoenix Metro",
-          serviceType: "Surf & Turf Signature Live Fire Signature Live Fire Steakhouse Catering Catering",
+          name: "Signature Live Fire Steakhouse Catering — Phoenix Metro",
+          serviceType: "Surf & Turf Signature Live Fire Steakhouse Catering",
           provider: { "@type": "FoodEstablishment", name: "Qfire Catering" },
           areaServed: [
             { "@type": "City", name: "Phoenix" },
@@ -44,9 +44,9 @@ export const Route = createFileRoute("/steakhouse-experience-phoenix")({
             { "@type": "City", name: "Fountain Hills" },
           ],
           offers: [
-            { "@type": "Offer", name: "Buffet Style", price: "74", priceCurrency: "USD", description: "Per person — restaurant-quality buffet Signature Live Fire Signature Live Fire Steakhouse Catering Catering in Phoenix." },
+            { "@type": "Offer", name: "Buffet Style", price: "74", priceCurrency: "USD", description: "Per person — restaurant-quality buffet Signature Live Fire Steakhouse Catering in Phoenix." },
             { "@type": "Offer", name: "Family Style", price: "89", priceCurrency: "USD", description: "Per person — shared platter Signature Live Fire Steakhouse Catering experience in Phoenix Metro." },
-            { "@type": "Offer", name: "Plated Service", price: "128", priceCurrency: "USD", description: "Per person — fully plated luxury Signature Live Fire Signature Live Fire Steakhouse Catering Catering in Phoenix." },
+            { "@type": "Offer", name: "Plated Service", price: "128", priceCurrency: "USD", description: "Per person — fully plated luxury Signature Live Fire Steakhouse Catering in Phoenix." },
           ],
         }),
       },

@@ -128,9 +128,9 @@ export const Route = createFileRoute("/steak-seafood-menu-san-diego")({
   head: () => ({
     meta: [
       { title: "San Diego County Steak & Seafood Catering Menu | Qfire Catering" },
-      { name: "description", content: "San Diego County's premier five-course Signature Live Fire Signature Live Fire Steakhouse Catering Catering menu — ribeye, filet mignon, prime rib, lobster, salmon and more — grilled live at your La Jolla, Del Mar, Rancho Santa Fe, Coronado, Carmel Valley, Encinitas, Solana Beach, Carlsbad, Oceanside, Poway, Chula Vista or Downtown San Diego event. Premium plated steak dinner catering throughout San Diego County." },
+      { name: "description", content: "San Diego County's premier five-course Signature Live Fire Steakhouse Catering menu — ribeye, filet mignon, prime rib, lobster, salmon and more — grilled live at your La Jolla, Del Mar, Rancho Santa Fe, Coronado, Carmel Valley, Encinitas, Solana Beach, Carlsbad, Oceanside, Poway, Chula Vista or Downtown San Diego event. Premium plated steak dinner catering throughout San Diego County." },
       { property: "og:title", content: "San Diego County Steak & Seafood Catering Menu | Qfire Catering" },
-      { property: "og:description", content: "Five-course Signature Live Fire Signature Live Fire Steakhouse Catering Catering in San Diego County: cold starter, warm hors d'oeuvre, choose-3 steaks/seafood, choose-3 sides, dessert and drinks. Live on-site grilling for weddings, corporate events and private parties across La Jolla, Del Mar, Rancho Santa Fe, Coronado and Carlsbad." },
+      { property: "og:description", content: "Five-course Signature Live Fire Steakhouse Catering in San Diego County: cold starter, warm hors d'oeuvre, choose-3 steaks/seafood, choose-3 sides, dessert and drinks. Live on-site grilling for weddings, corporate events and private parties across La Jolla, Del Mar, Rancho Santa Fe, Coronado and Carlsbad." },
       { property: "og:url", content: "/steak-seafood-menu-san-diego" },
       { property: "og:image", content: steakhouseBackyard.url },
     ],
@@ -211,7 +211,7 @@ function SteakSeafoodMenuSanDiegoPage() {
   return (
     <>
       <PageHero
-        eyebrow="San Diego County Signature Live Fire Signature Live Fire Steakhouse Catering Catering"
+        eyebrow="San Diego County Signature Live Fire Steakhouse Catering"
         title={<>The San Diego County<br />Steak & Seafood Menu</>}
         subtitle="A five-course Signature Live Fire Steakhouse Catering experience — cold starter, warm hors d'oeuvre, your choice of premium steaks and seafood, sides, dessert and drinks. Grilled live at your San Diego County event."
         image={sanDiegoHeroBg.url}
@@ -240,7 +240,7 @@ function SteakSeafoodMenuSanDiegoPage() {
           <div className="space-y-6 text-bone/70 text-base lg:text-lg leading-relaxed">
             <p>If you're looking for something beyond the traditional buffet in San Diego County — from La Jolla and Del Mar to Rancho Santa Fe, Coronado, Carmel Valley, Encinitas, Solana Beach, Carlsbad, Oceanside, Poway, Chula Vista and Downtown San Diego — this is where our most discerning coastal clients naturally gravitate.</p>
             <p>Our San Diego County Surf & Turf Signature Live Fire Steakhouse Catering Experience combines the energy of live-fire cooking with the elegance of fine dining — bringing the atmosphere of an upscale Signature Live Fire Steakhouse Catering directly to your La Jolla estate, Del Mar beachfront, Rancho Santa Fe ranch, or Coronado celebration.</p>
-            <p>From oceanfront weddings to corporate dinners and luxury private parties, we bring restaurant-quality Signature Live Fire Signature Live Fire Steakhouse Catering Catering to every corner of San Diego County. This isn't just dinner. It's the experience your guests will remember long after the last bite.</p>
+            <p>From oceanfront weddings to corporate dinners and luxury private parties, we bring restaurant-quality Signature Live Fire Steakhouse Catering to every corner of San Diego County. This isn't just dinner. It's the experience your guests will remember long after the last bite.</p>
           </div>
         </div>
       </section>

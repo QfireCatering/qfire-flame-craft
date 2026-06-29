@@ -153,9 +153,9 @@ export const Route = createFileRoute("/steak-seafood-menu")({
   head: () => ({
     meta: [
       { title: "Phoenix Metro Steak & Seafood Catering Menu | Qfire Catering" },
-      { name: "description", content: "Phoenix Metro's premier five-course Signature Live Fire Signature Live Fire Steakhouse Catering Catering menu — ribeye, filet mignon, prime rib, lobster, salmon and more — grilled live at your Phoenix, Scottsdale, Gilbert, Mesa, Tempe, Chandler, Glendale, Peoria, Paradise Valley, Cave Creek, Fountain Hills or Ahwatukee event. Premium plated steak dinner catering throughout the Phoenix Metro area." },
+      { name: "description", content: "Phoenix Metro's premier five-course Signature Live Fire Steakhouse Catering menu — ribeye, filet mignon, prime rib, lobster, salmon and more — grilled live at your Phoenix, Scottsdale, Gilbert, Mesa, Tempe, Chandler, Glendale, Peoria, Paradise Valley, Cave Creek, Fountain Hills or Ahwatukee event. Premium plated steak dinner catering throughout the Phoenix Metro area." },
       { property: "og:title", content: "Phoenix Metro Steak & Seafood Catering Menu | Qfire Catering" },
-      { property: "og:description", content: "Five-course Signature Live Fire Signature Live Fire Steakhouse Catering Catering in Phoenix Metro: cold starter, warm hors d'oeuvre, choose-3 steaks/seafood, choose-3 sides, dessert and drinks. Live on-site grilling for weddings, corporate events and private parties across Phoenix, Scottsdale, Gilbert, Mesa and Tempe." },
+      { property: "og:description", content: "Five-course Signature Live Fire Steakhouse Catering in Phoenix Metro: cold starter, warm hors d'oeuvre, choose-3 steaks/seafood, choose-3 sides, dessert and drinks. Live on-site grilling for weddings, corporate events and private parties across Phoenix, Scottsdale, Gilbert, Mesa and Tempe." },
       { property: "og:url", content: "/steak-seafood-menu" },
       { property: "og:image", content: steakhouseBackyard.url },
     ],
@@ -236,7 +236,7 @@ function SteakSeafoodMenuPage() {
   return (
     <>
       <PageHero
-        eyebrow="Phoenix Metro Signature Live Fire Signature Live Fire Steakhouse Catering Catering"
+        eyebrow="Phoenix Metro Signature Live Fire Steakhouse Catering"
         title={<>The Phoenix Metro<br />Steak & Seafood Menu</>}
         subtitle="A five-course Signature Live Fire Steakhouse Catering experience — cold starter, warm hors d'oeuvre, your choice of premium steaks and seafood, sides, dessert and drinks. Grilled live at your Phoenix Metro event."
         image={phoenixHeroBg.url}
@@ -265,7 +265,7 @@ function SteakSeafoodMenuPage() {
           <div className="space-y-6 text-bone/70 text-base lg:text-lg leading-relaxed">
             <p>If you're looking for something beyond the traditional buffet in the Phoenix Metro area — from downtown Phoenix to Scottsdale, Gilbert, Mesa, Tempe, Chandler, Glendale, Peoria, Paradise Valley, Cave Creek and beyond — this is where our most discerning clients naturally gravitate.</p>
             <p>Our Phoenix Metro Surf & Turf Signature Live Fire Steakhouse Catering Experience combines the energy of live-fire cooking with the elegance of fine dining — bringing the atmosphere of an upscale Signature Live Fire Steakhouse Catering directly to your Phoenix, Scottsdale, Gilbert, Mesa or Tempe wedding, corporate event, or private celebration.</p>
-            <p>From Ahwatukee to Anthem, Carefree to Queen Creek, we bring restaurant-quality Signature Live Fire Signature Live Fire Steakhouse Catering Catering to every corner of the Phoenix Metro. This isn't just dinner. It's the experience your guests will remember long after the last bite.</p>
+            <p>From Ahwatukee to Anthem, Carefree to Queen Creek, we bring restaurant-quality Signature Live Fire Steakhouse Catering to every corner of the Phoenix Metro. This isn't just dinner. It's the experience your guests will remember long after the last bite.</p>
           </div>
         </div>
       </section>

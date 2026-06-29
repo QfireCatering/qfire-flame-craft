@@ -108,7 +108,7 @@ const timelineSteps = [
 ];
 
 const menuOptions = [
-  "Wood-Fire Catering", "Signature Live Fire Signature Live Fire Steakhouse Catering Catering", "Surf & Turf", "Breakfast Catering", "Brunch Catering",
+  "Wood-Fire Catering", "Signature Live Fire Steakhouse Catering", "Surf & Turf", "Breakfast Catering", "Brunch Catering",
   "Lunch Catering", "Dinner Catering", "Appetizers & Passed Hors d'oeuvres", "Desserts & Coffee Service",
   "Vegetarian Menus", "Vegan Menus", "Gluten-Free & Allergy Menus", "Live Charcoal Grilling Stations",
   "Premium Steaks & Carving Stations", "Boxed Executive Lunches", "Continental & Working Breakfasts",
