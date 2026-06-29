@@ -4,6 +4,8 @@ import { ServicePage } from "@/components/site/ServicePage";
 import { PageHero, CTASection } from "@/components/site/Sections";
 import { PhoenixPricingBanner } from "./PhoenixPricingBanner";
 import { SanDiegoPricingBanner } from "./SanDiegoPricingBanner";
+import { TrustBar } from "./TrustBar";
+import { FAQSection } from "./FAQSection";
 import {
   weddingConfig, corporateConfig, privatePartyConfig,
   woodFiredConfig, steakhouseConfig, bartendingConfig,
@@ -46,8 +48,38 @@ const regionHero: Record<RegionKey, string> = {
 
 export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
   const r = regions[regionKey];
+  const regionFaqs = [
+    { q: `How much does ${r.shortName} catering cost?`, a: `Wood-fire catering in ${r.shortName} starts at ${regionKey === "phoenix" ? "$12.99" : "$15.99"} per guest. Our premium live-fire dinner experience starts at ${regionKey === "phoenix" ? "$74" : "$79"} per guest with the buffet, ${regionKey === "phoenix" ? "$89" : "$94"} family style, and ${regionKey === "phoenix" ? "$128" : "$133"} plated. Every proposal is itemized, fully customizable, and built one-to-one with you.` },
+    { q: `How far in advance should we book?`, a: `${r.shortName} weddings typically book 6–12 months out for peak Saturdays. Corporate and private events are usually comfortable inside 4–8 weeks. Drop-off office catering can often be turned around in 24–72 hours. Call us — we move quickly when we can.` },
+    { q: `Do you bring everything to the venue?`, a: `Yes. We arrive with chefs, uniformed servers, live-fire grills, hot-holding equipment, buffet displays, serviceware, and any rentals you've added. Setup is done before guests arrive and full breakdown is included — your venue manager will ask for our card.` },
+    { q: `Are you licensed and insured in ${r.state}?`, a: `Yes — fully licensed and insured, COI-ready for any ${r.shortName} venue, including liquor liability for our bartending services.` },
+    { q: `Can our menu be customized?`, a: `Always. Every Qfire menu is built from scratch around your taste, your dietary needs, your guest list, and your venue. Wood-Fire, premium steakhouse, surf & turf, brunch, late-night bites — Chef Terry designs it with you, and revisions are expected up until final lock.` },
+    { q: `What happens after I request a quote?`, a: `A real person — usually Chef Terry or your account lead — calls or emails within 24 hours. We talk through your event, send an itemized proposal, refine the menu together, and lock the date with a 35% Date Charge that's applied directly to your final invoice.` },
+  ];
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": ["LocalBusiness", "CateringService"],
+    name: `Qfire Catering — ${r.name}`,
+    image: regionHero[regionKey],
+    url: `/${regionKey}`,
+    telephone: "+1-877-848-7211",
+    email: "Eat@QfireCatering.com",
+    priceRange: "$$$",
+    servesCuisine: ["Wood-Fired", "American", "Steakhouse"],
+    areaServed: r.cities.map((c) => ({ "@type": "City", name: c })),
+  };
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "/" },
+      { "@type": "ListItem", position: 2, name: r.name, item: `/${regionKey}` },
+    ],
+  };
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <section className="relative min-h-[85vh] flex items-end overflow-hidden grain-overlay">
         <div className="absolute inset-0">
           <img src={regionHero[regionKey]} alt={r.name} className="absolute inset-0 w-full h-full object-cover slow-zoom" />
@@ -69,6 +101,8 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
           </div>
         </div>
       </section>
+
+      <TrustBar />
 
       {/* WOOD-FIRE PRICING SUMMARY */}
       <section className="py-20 lg:py-28 bg-onyx border-t border-white/5">
@@ -292,6 +326,13 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
           </div>
         </div>
       </section>
+
+      <FAQSection
+        eyebrow={`${r.shortName} Catering FAQ`}
+        title={`Common ${r.shortName} catering questions.`}
+        intro={`Everything you need to know before requesting a quote for your ${r.name} event.`}
+        faqs={regionFaqs}
+      />
 
       <CTASection title={`Let's plan your ${r.shortName} event.`} />
     </>
