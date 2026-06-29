@@ -74,7 +74,25 @@ export function Footer() {
         </div>
 
         <div className="hairline mt-16" />
-        <div className="mt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
+
+        {/* SEO service-area paragraph */}
+        <p className="mt-10 text-xs leading-relaxed text-muted-foreground/80 max-w-5xl">
+          Qfire Catering provides full-service catering in Phoenix, Arizona specializing in BBQ catering,
+          wood-fired catering, steakhouse catering, and wedding catering across Phoenix, Scottsdale, Mesa,
+          Tempe, Chandler, Gilbert, Glendale, Peoria, Surprise, Avondale, Goodyear, Paradise Valley, Sedona,
+          Flagstaff, Tucson and the entire Phoenix Metro — as well as San Diego, La Jolla, Carlsbad,
+          Encinitas, Del Mar, Rancho Santa Fe, Poway, Escondido, Vista, Oceanside, Coronado and surrounding
+          San Diego County. We offer catering for weddings, corporate events, private parties, business
+          events, and social gatherings with options including BBQ buffet catering, steakhouse plated
+          dinners, family-style service, live grilling catering, on-site wood-fire stations, and upscale
+          event catering services. Whether you are searching for Phoenix wedding catering, San Diego wedding
+          catering, BBQ catering near me, corporate catering in Phoenix, BBQ catering San Diego, or private
+          party catering near me — Qfire Catering, led by Chef Terry Matthews (The BBQ Daddy), delivers
+          restaurant-quality food, professional service, and a seamless catering experience from setup to
+          cleanup.
+        </p>
+
+        <div className="mt-10 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
           <div>© {new Date().getFullYear()} {contact.legalName}. All rights reserved.</div>
           <div className="flex gap-6">
             <Link to="/privacy" className="hover:text-gold transition-colors">Privacy</Link>
