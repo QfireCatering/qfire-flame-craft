@@ -116,6 +116,7 @@ export function RegionalPricing({ regionKey }: { regionKey: RegionKey }) {
             <p className="mt-5 text-bone/65 text-base font-light">
               Live charcoal grilling, white-glove service, and restaurant-quality presentation at your {r.shortName} venue.
             </p>
+            <p className="mt-3 text-gold/90 text-xs tracking-[0.25em] uppercase">{r.shortName} — {steakMin}</p>
           </div>
           <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
             {[
