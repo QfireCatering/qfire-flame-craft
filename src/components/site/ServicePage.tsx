@@ -3,6 +3,7 @@ import { ArrowRight, Check } from "lucide-react";
 import type { ReactNode } from "react";
 import { RegionKey } from "@/lib/site";
 import { PageHero, BulletGrid, CTASection } from "@/components/site/Sections";
+import { TrustBar } from "@/components/site/TrustBar";
 
 export interface ServicePageConfig {
   eyebrow: string;
@@ -38,6 +39,9 @@ export function ServicePage({ config, regionKey }: { config: ServicePageConfig; 
           <Link to="/pictures" className="btn-ghost">View Pictures</Link>
         )}
       </PageHero>
+
+      <TrustBar />
+
 
       {/* Intro */}
       <section className="py-24 lg:py-32">
