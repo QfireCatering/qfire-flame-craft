@@ -14,6 +14,7 @@ const config: CorporateRegionConfig = {
     "Cave Creek", "Fountain Hills", "Apache Junction",
   ],
   reviewCities: ["Scottsdale", "Tempe", "Phoenix", "Chandler"],
+  heroImage: phoenixCorpHero.url,
 };
 
 export const Route = createFileRoute("/corporate-catering-phoenix")({
