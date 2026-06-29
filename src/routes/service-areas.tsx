@@ -1,6 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import { regions } from "@/lib/site";
+import { DefinitiveContent } from "@/components/site/DefinitiveContent";
+import { definitiveCopy } from "@/lib/definitive-copy";
 
 export const Route = createFileRoute("/service-areas")({
   head: () => ({
@@ -66,6 +68,7 @@ function ServiceAreasPage() {
           </Link>
         </div>
       </div>
+      <DefinitiveContent topic="Qfire Service Areas" region="Phoenix Metro & San Diego County" {...definitiveCopy.locations} />
     </div>
   );
 }

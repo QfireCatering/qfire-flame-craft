@@ -558,3 +558,328 @@ definitiveCopy.region = {
 };
 
 
+
+// Menus preset
+definitiveCopy.menus = {
+  explainer:
+    "Our menus are not templates. Every Qfire menu is custom-built by Chef Terry around your guests, your venue, and the feeling you want the night to have. What's published here is a starting point — the real menu is the one we design together.",
+  explainerLong:
+    "We run two distinct culinary programs: Wood-Fired (slow-smoked brisket, tri-tip, pulled meats, comfort sides) and Signature Live Fire Steakhouse Catering (charcoal-grilled ribeye, filet, picanha, surf & turf). Either can be served buffet, family-style, plated, or stationed — and either can scale from a 25-guest backyard dinner to a 2,500-guest gala.",
+  included: [
+    "Personally designed menu PDF",
+    "Itemized pricing on every line",
+    "Service-style recommendation per menu",
+    "GF, vegetarian, vegan, allergen coverage",
+    "Sample tasting once contracted (weddings & large events)",
+    "Menu refinement up to 30 days out",
+    "Pairing suggestions for bar program",
+    "Plating and presentation notes",
+  ],
+  planningTips: [
+    { title: "Start with one signature moment", body: "Anchor the menu around a chef-attended carving station, a live-fire ribeye line, or a raw-bar opener. Everything else supports that." },
+    { title: "Match service style to the room", body: "Buffet = energy. Plated = elegance. Family-style = intimacy. Stations = movement. The room tells us which to recommend." },
+    { title: "Don't over-order proteins", body: "Two proteins covers 90% of events. Three is a stretch. Four is wasted food and budget." },
+    { title: "Plan the side balance", body: "One starch, one vegetable, one slaw or salad. Variety beats volume." },
+    { title: "Book the tasting after the proposal", body: "Tastings happen once your date is held — that's when the menu deserves the time investment." },
+    { title: "Ask about regional pricing", body: "Phoenix and San Diego have different pricing tiers. We'll quote the correct region from your inquiry." },
+  ],
+  bookingSteps: [
+    { title: "Pick a starting menu", body: "Wood-Fired or Steakhouse — or a blend of both." },
+    { title: "Submit the inquiry form", body: "Date, region, headcount, style." },
+    { title: "Review the custom proposal", body: "Fully itemized PDF within a few business days." },
+    { title: "Refine with Chef Terry", body: "Swap proteins, add a station, adjust sides." },
+    { title: "Lock the menu", body: "Final menu confirmed 14–30 days before event." },
+  ],
+  expectations: {
+    before: ["Menu PDF delivered with proposal", "Two rounds of refinement included", "Tasting offered for qualified weddings"],
+    during: ["Menu executed exactly as plated in proposal", "Hot food on cue, cold food properly chilled", "Allergen meals plated and labeled"],
+    after: ["Leftover policy reviewed in advance", "Menu archived for future event reference"],
+  },
+  differentiators: [
+    { title: "Custom over template", body: "No two Qfire menus are identical. Yours is built from scratch." },
+    { title: "Two full programs, one team", body: "Wood-Fired and Steakhouse run by the same chef, same standard." },
+    { title: "Honest portioning", body: "We portion for full plates, not skinny servings — but not for waste either." },
+  ],
+  confidence: baseConfidence,
+  extraFaqs: [
+    { q: "Can I combine Wood-Fired and Steakhouse on one menu?", a: "Yes — many weddings and corporate events feature a wood-fired buffet with a chef-attended steak carving station as the signature moment." },
+    { q: "Do you publish a full menu with prices online?", a: "Pricing is regional and quoted per inquiry to stay accurate. The wood-fired menu form and steakhouse menu pages cover the most common items." },
+    { q: "Will the published menu items change?", a: "Seasonally, yes. Sides rotate. Proteins stay consistent. Your contracted menu is locked once signed." },
+  ],
+  ctaLabel: "Request a Custom Menu",
+};
+
+// Pricing preset
+definitiveCopy.pricing = {
+  explainer:
+    "Qfire pricing is itemized and transparent. You see exactly what the food costs, what the service costs, what the rentals cost, and what travel costs — before you sign. The number on your proposal is the number on your final invoice.",
+  explainerLong:
+    "Pricing varies by region, service style, guest count, and menu. Wood-Fired starts at $12.99/guest in Phoenix and $15.99/guest in San Diego. Signature Live Fire Steakhouse Catering starts at $74/guest buffet and $128/guest plated. Most full-service weddings and corporate events land between $65 and $145 per guest, all-in.",
+  included: [
+    "Food and beverage line items",
+    "Service staff hours by role",
+    "Live-fire grilling equipment fee (when applicable)",
+    "Rentals (china, glassware, linens) if added",
+    "Travel and on-site logistics",
+    "Service charge and gratuity (shown separately)",
+    "Sales tax (when applicable)",
+    "Optional bar program",
+  ],
+  planningTips: [
+    { title: "Set a per-guest budget, not a total", body: "Per-guest pricing scales with your headcount. Tell us your target — we'll build to it." },
+    { title: "Service style drives 30% of cost", body: "Plated is more labor than buffet. Stations are more equipment than family-style. Choose intentionally." },
+    { title: "Rentals can double your budget", body: "China-and-glass weddings cost meaningfully more than disposable-dinnerware ones. Both are beautiful — pick on purpose." },
+    { title: "Don't forget gratuity", body: "Service charge and gratuity together typically run 20–22% on top of food and labor. Always budget for them." },
+    { title: "Lock final count 14 days out", body: "Pricing is per the final guaranteed count. Drops below contract minimums are billed at the minimum." },
+    { title: "Ask about off-peak dates", body: "Fridays, Sundays, and off-season dates often unlock pricing flexibility." },
+  ],
+  bookingSteps: [
+    { title: "Share scope", body: "Date, region, headcount, menu interest, service style." },
+    { title: "Receive itemized proposal", body: "Every line broken out, in plain language." },
+    { title: "Negotiate transparently", body: "Trim where you want, upgrade where it matters." },
+    { title: "Reserve with date charge", body: "35% applied directly to your final invoice." },
+    { title: "Final invoice 14 days out", body: "Adjusted for final guest count and any add-ons." },
+  ],
+  expectations: {
+    before: ["Itemized proposal within a few business days", "No surprise fees added later", "Free revisions during the proposal stage"],
+    during: ["Service delivered exactly as priced", "Add-ons logged and quoted before execution"],
+    after: ["Final invoice matches signed proposal", "Receipts and W-9 provided on request"],
+  },
+  differentiators: [
+    { title: "All-in, line-itemed", body: "Everything broken out. Nothing buried." },
+    { title: "Honest minimums", body: "Stated up front — not discovered at signature." },
+    { title: "Two regions, two real price books", body: "Phoenix and San Diego are quoted on their actual local cost basis." },
+  ],
+  confidence: baseConfidence,
+  extraFaqs: [
+    { q: "Is there a deposit?", a: "Yes — a 35% Date Charge holds your date and is applied directly to your final invoice. It is not a separate fee." },
+    { q: "What payment methods do you accept?", a: "ACH, wire, all major credit cards, and corporate check. Card processing fees are passed through transparently." },
+    { q: "Are gratuity and service charge the same?", a: "No. Service charge covers staff and operational overhead. Gratuity goes directly to the team. Both are shown separately on your proposal." },
+  ],
+  ctaLabel: "Get a Custom Quote",
+};
+
+// Bartending preset
+definitiveCopy.bartending = {
+  explainer:
+    "Qfire's bar program is licensed, insured, and fully managed. We build the cocktail list around your menu and your guests, stock to the right par, staff to the right ratios, and run the bar like a hospitality room — not a beverage table.",
+  explainerLong:
+    "We offer beer-and-wine bars, full open bars, premium and luxury tiers, signature cocktail programs, and zero-proof menus. Bartenders arrive uniformed, friendly, and disciplined. Glassware, mixers, garnishes, and ice are coordinated as part of the package.",
+  included: [
+    "Licensed, insured bartenders",
+    "Mobile bar setup (or your existing bar)",
+    "Custom cocktail menu",
+    "Mixers, juices, syrups, garnishes",
+    "Ice, glassware (or eco disposable)",
+    "Bar tools, shakers, jiggers",
+    "Pre-event consultation and pour plan",
+    "Full setup and breakdown",
+  ],
+  planningTips: [
+    { title: "Pick one signature cocktail", body: "Two max. More than that slows the bar and confuses the guest experience." },
+    { title: "Plan ratios honestly", body: "One bartender per 75 guests for beer/wine, one per 50 for full bar, one per 35 for premium cocktails." },
+    { title: "Stock for the front half", body: "Most consumption happens in the first 90 minutes. We stock the bar accordingly." },
+    { title: "Always offer zero-proof", body: "A real mocktail program — not just soda water — has become a true luxury standard." },
+    { title: "Decide BYO vs full service", body: "We can pour your alcohol or supply everything. The math usually favors letting us handle it end-to-end." },
+  ],
+  bookingSteps: [
+    { title: "Share guest count and bar style", body: "Beer/wine, full bar, premium, luxury, or signature." },
+    { title: "Custom bar proposal", body: "Itemized with staffing, supplies, and cocktail list." },
+    { title: "Refine the cocktail menu", body: "Two rounds of refinement included." },
+    { title: "Lock final headcount", body: "14 days out, with adjustments allowed for late RSVPs." },
+    { title: "Event day", body: "Bar set 90 minutes before service. Polished, calm, and on time." },
+  ],
+  expectations: {
+    before: ["Custom cocktail menu PDF", "Licensed bartender confirmation", "Insurance certificate for venue"],
+    during: ["Sharp uniforms, warm hospitality", "Consistent pours, no over-service", "Bar restocked silently throughout the night"],
+    after: ["Full breakdown and trash removal", "Glassware returned (if rented)", "Leftover alcohol re-packed and handed off"],
+  },
+  differentiators: [
+    { title: "Licensed and insured", body: "Real liquor liability coverage. COI provided to your venue." },
+    { title: "Hospitality, not just pours", body: "Our bartenders are part of the show — friendly, fast, and gracious." },
+    { title: "Built into one invoice", body: "Food, service, and bar on a single proposal, single point of contact." },
+  ],
+  confidence: baseConfidence,
+  extraFaqs: [
+    { q: "Do you provide the alcohol?", a: "We can supply alcohol or pour what you provide — both are common. We'll recommend the cleaner option based on your venue rules." },
+    { q: "Can you do a cash bar?", a: "Yes, where permits allow. Most luxury hosts choose hosted bars or hybrid (hosted beer/wine, cash spirits)." },
+    { q: "Do you carry liquor liability insurance?", a: "Yes — full liquor liability coverage with COI delivered to your venue in advance." },
+  ],
+  ctaLabel: "Plan Your Bar Program",
+};
+
+// Rentals preset
+definitiveCopy.rentals = {
+  explainer:
+    "Qfire coordinates every rental that touches your event — china, glassware, flatware, linens, chafing equipment, bars, and lounge furniture — at honest pass-through pricing. One vendor, one timeline, one invoice. You don't manage three different rental companies.",
+  explainerLong:
+    "We work with the top rental houses in Phoenix and San Diego and select pieces that match your venue and aesthetic. Setup, swap-outs, and pickup are coordinated with your venue manager directly so you never have to broker between vendors.",
+  included: [
+    "China, glassware, flatware coordination",
+    "Linens and napkins in your color palette",
+    "Chafing equipment and serving pieces",
+    "Bar setups and back-bar coolers",
+    "Lounge furniture, high-tops, dance floors",
+    "Heaters, fans, and weather contingencies",
+    "Setup, swap-out, and pickup logistics",
+    "Damage waiver coordination",
+  ],
+  planningTips: [
+    { title: "Decide china vs disposable early", body: "It's the single biggest rental cost lever. Both look great — one costs roughly 3x the other." },
+    { title: "Match linen to venue color", body: "Tell us the venue floor and wall colors. We'll suggest linens that read clean on camera." },
+    { title: "Order 10% over count", body: "Last-minute RSVPs, breakage, and re-sets always happen. The 10% buffer prevents shortfalls." },
+    { title: "Bundle the bar", body: "Bar setup with matching back-bar pieces reads more polished than mismatched rentals." },
+  ],
+  bookingSteps: [
+    { title: "Share venue and aesthetic", body: "Photos help. So do existing planner mood boards." },
+    { title: "Rentals proposal", body: "Itemized pass-through pricing with our coordination fee shown separately." },
+    { title: "Lock 30 days out", body: "Rental houses confirm pulls 21 days out. Earlier is better for premium pieces." },
+    { title: "Setup the day prior or morning of", body: "Coordinated directly with your venue manager." },
+  ],
+  expectations: {
+    before: ["Itemized rentals list with photos when relevant", "Linen samples available on request"],
+    during: ["On-time delivery and setup", "Quiet refresh and replacement throughout the night"],
+    after: ["Full repack and pickup", "Damage walkthrough handled by us, not you"],
+  },
+  differentiators: [
+    { title: "Pass-through pricing", body: "We don't mark up rentals — we charge a clear coordination fee instead." },
+    { title: "One coordinator, all vendors", body: "You don't manage three different rental houses." },
+    { title: "Venue-aware selections", body: "We know what works at most premium venues in both regions." },
+  ],
+  confidence: baseConfidence,
+  extraFaqs: [
+    { q: "Can I use my own rental company?", a: "Yes. We'll coordinate with them on setup timing and table layouts at no extra cost." },
+    { q: "What if something breaks?", a: "Damage waivers are built into every rental order. Normal-use breakage is covered." },
+    { q: "Do you handle setup and breakdown?", a: "Yes. Rentals arrive set, are refreshed during service, and broken down at the end of the night." },
+  ],
+  ctaLabel: "Plan Your Rentals",
+};
+
+// Locations preset
+definitiveCopy.locations = {
+  explainer:
+    "Qfire operates two fully staffed regional kitchens: Phoenix Metro (Arizona) and San Diego County (California). Same chef. Same standards. Same level of service. Two separate teams, two separate proposals, two real local price books.",
+  explainerLong:
+    "Phoenix covers the full Valley — Scottsdale, Mesa, Chandler, Gilbert, Glendale, and outlying venues. San Diego covers the coast and inland — La Jolla, Del Mar, Carlsbad, Rancho Santa Fe, Encinitas, and the surrounding wine country. Travel beyond core metro is quoted transparently inside your proposal.",
+  included: [
+    "Local team based in your region",
+    "Region-specific pricing",
+    "Approved-vendor relationships with premium venues",
+    "Local rental and bar coordination",
+    "Permit and insurance handling per municipality",
+    "Travel logistics for outlying venues",
+  ],
+  planningTips: [
+    { title: "Tell us the venue early", body: "We likely already know the kitchen, the load-in, and the timing rules." },
+    { title: "Ask about outlying venues", body: "Sedona, Prescott, Temecula, Julian — we cater there often. Travel is quoted clearly." },
+    { title: "Cross-region events are possible", body: "We've coordinated multi-city activations and roadshow tours across both regions." },
+  ],
+  bookingSteps: [
+    { title: "Pick a region", body: "Phoenix or San Diego — your inquiry routes to that team." },
+    { title: "Region-specific proposal", body: "Local pricing, local logistics, local team." },
+    { title: "Region-specific service", body: "Executed by the team that lives and works there." },
+  ],
+  expectations: {
+    before: ["Quote from your regional team", "Local venue knowledge applied to logistics"],
+    during: ["Local team on-site, not flown in"],
+    after: ["Local pickup, local cleanup, local follow-up"],
+  },
+  differentiators: [
+    { title: "Two real operations", body: "Not one team driving 6 hours. Two separate full kitchens." },
+    { title: "One chef, both regions", body: "Chef Terry sets the standard across both. Same plates in both states." },
+    { title: "Region-true pricing", body: "Phoenix and San Diego have different cost bases. We quote each region honestly." },
+  ],
+  confidence: baseConfidence,
+  extraFaqs: [
+    { q: "Do you cater outside core metro?", a: "Yes — Sedona, Prescott, Temecula, Palm Springs, and other outlying venues are common. Travel is quoted in the proposal." },
+    { q: "Can you handle a destination wedding across regions?", a: "Yes. Pick the closer region for primary logistics; we'll handle travel for the other." },
+    { q: "Do you have approved-vendor status at my venue?", a: "Often yes. Share the venue name in your inquiry — we'll confirm immediately." },
+  ],
+  ctaLabel: "Choose Your Region",
+};
+
+// Why Qfire preset
+definitiveCopy.whyQfire = {
+  explainer:
+    "Most catering companies are operations companies that happen to cook. Qfire is a chef-led hospitality company that happens to scale. The difference shows up in three places: who designs your menu, who runs your kitchen line, and how your venue looks when we leave.",
+  explainerLong:
+    "Chef Terry Matthews — Food Network competitor on Cutthroat Kitchen, BBQ Brawl, and Camp Cutthroat — personally designs every menu. Senior chefs trained by Terry run every kitchen line. Uniformed captains run every service. Two thousand events later, that hasn't changed.",
+  included: [
+    "Chef-designed custom menu",
+    "Senior chef on every kitchen line",
+    "Uniformed captains and service staff",
+    "Live-fire grilling on-site",
+    "Restaurant-grade plating standards",
+    "Full setup, refresh, and breakdown",
+    "Licensed bar program option",
+    "Rentals coordination option",
+    "Single point of contact, end to end",
+    "Two-region operation (Phoenix + San Diego)",
+  ],
+  planningTips: [
+    { title: "Vet your caterer's kitchen leadership", body: "Ask who is on the line. If the answer is vague, the food usually is too." },
+    { title: "Ask about staff ratios", body: "We run 1 server per 25 guests for plated and 1 per 35 for buffet. Most competitors run leaner — and you can taste it." },
+    { title: "Ask for the breakdown plan", body: "How your venue looks at midnight matters. A good caterer leaves it cleaner than they found it." },
+    { title: "Read the post-event reviews", body: "Pre-event sales is one thing. Post-event reviews tell the truth." },
+  ],
+  bookingSteps: [
+    { title: "Inquiry", body: "Share date, venue, headcount, and goal." },
+    { title: "Discovery", body: "Real conversation — often with Chef Terry himself." },
+    { title: "Proposal", body: "Itemized, custom, transparent." },
+    { title: "Tasting", body: "For weddings and large events." },
+    { title: "Execution", body: "On time, on standard, every event." },
+  ],
+  expectations: {
+    before: ["Direct chef involvement during design", "Itemized proposal, no surprises"],
+    during: ["Calm, disciplined kitchen energy", "Polished service throughout"],
+    after: ["Clean venue, real follow-up, repeat-client relationship"],
+  },
+  differentiators: [
+    { title: "Food Network pedigree", body: "Television-tested standards on every plate." },
+    { title: "Real wood, real fire", body: "Oak, hickory, mesquite, pecan over live coals." },
+    { title: "Hospitality discipline", body: "Restaurant standards executed in event venues." },
+    { title: "Two-region operation", body: "Phoenix and San Diego fully staffed with local teams." },
+  ],
+  confidence: baseConfidence,
+  ctaLabel: "Talk With Chef Terry",
+};
+
+// FAQ preset
+definitiveCopy.faq = {
+  explainer:
+    "Most of what couples, planners, and corporate buyers need to know about Qfire is on this page. If something isn't covered, the fastest path is to call or text our team directly — most questions get answered in a single conversation.",
+  included: [
+    "Pricing & investment FAQ",
+    "Service style & menu FAQ",
+    "Booking & scheduling FAQ",
+    "Staffing & service FAQ",
+    "Rentals & logistics FAQ",
+    "Bar program FAQ",
+    "Dietary & allergen FAQ",
+    "Travel & venue FAQ",
+  ],
+  planningTips: [
+    { title: "Start with the inquiry form", body: "Even partial details produce a useful proposal. Refinement happens after." },
+    { title: "Send venue and date first", body: "Those two data points unlock 80% of the planning conversation." },
+    { title: "Bring your planner into the first call", body: "If you have a planner, looping them in early saves three rounds of back-and-forth." },
+    { title: "Ask the hard questions early", body: "Pricing, ratios, insurance, breakdown — get answers in writing before you sign." },
+  ],
+  bookingSteps: [
+    { title: "Read the FAQ", body: "Most pre-sale questions are answered here." },
+    { title: "Submit the inquiry form", body: "Date, region, headcount, style." },
+    { title: "Get on a quick call", body: "Discovery call with our team — often Chef Terry directly." },
+    { title: "Receive your proposal", body: "Itemized, custom, transparent." },
+  ],
+  expectations: {
+    before: ["Answers in plain language", "Itemized pricing on request"],
+    during: ["Calm, disciplined service"],
+    after: ["Post-event follow-up email"],
+  },
+  differentiators: [
+    { title: "Real chef, real answers", body: "Chef Terry personally reads inquiries and weighs in on menu questions." },
+    { title: "No hidden fees", body: "What's quoted is what's invoiced." },
+    { title: "Transparent process", body: "Pricing, ratios, insurance, breakdown — all in writing." },
+  ],
+  confidence: baseConfidence,
+  ctaLabel: "Ask Chef Terry",
+};

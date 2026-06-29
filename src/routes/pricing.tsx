@@ -1,6 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Check } from "lucide-react";
 import { PageHero, CTASection } from "@/components/site/Sections";
+import { DefinitiveContent } from "@/components/site/DefinitiveContent";
+import { definitiveCopy } from "@/lib/definitive-copy";
 import heroFire from "@/assets/hero-fire.jpg";
 
 const tiers = [
@@ -135,6 +137,7 @@ function PricingPage() {
         </div>
       </section>
 
+      <DefinitiveContent topic="Catering Pricing" region="weddings, corporate & private events" {...definitiveCopy.pricing} />
       <CTASection
         title="Want a number for your event?"
         subtitle="Send us the date and guest count. Custom proposal back within 24 hours."

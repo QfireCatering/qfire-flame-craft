@@ -296,6 +296,8 @@ export function bartendingConfig(o: ServiceTemplateOptions = {}): ServicePageCon
     ],
     galleryImages: [bartender, weddingTable, corporate, privateParty],
     ctaTitle: "Design your bar program.",
+    definitiveKey: "bartending",
+    definitiveTopic: "Bartending & Bar Programs",
   };
 }
 
@@ -324,5 +326,7 @@ export function rentalsConfig(o: ServiceTemplateOptions = {}): ServicePageConfig
     ],
     galleryImages: [weddingTable, buffet, corporate, privateParty],
     ctaTitle: "Request a rentals quote.",
+    definitiveKey: "rentals",
+    definitiveTopic: "Event Rentals",
   };
 }

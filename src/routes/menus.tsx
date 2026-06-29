@@ -6,6 +6,8 @@ import steakhouseMenu from "@/assets/steakhouse-menu.png.asset.json";
 import phoenixMetro from "@/assets/phoenix-metro.png.asset.json";
 import sanDiego from "@/assets/san-diego.png.asset.json";
 import { CTASection } from "@/components/site/Sections";
+import { DefinitiveContent } from "@/components/site/DefinitiveContent";
+import { definitiveCopy } from "@/lib/definitive-copy";
 
 export const Route = createFileRoute("/menus")({
   head: () => ({
@@ -125,6 +127,7 @@ function MenusPage() {
           </div>
         </div>
       </section>
+      <DefinitiveContent topic="Catering Menus" region="every event we cater" {...definitiveCopy.menus} />
       <CTASection />
     </>
   );
