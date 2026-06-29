@@ -120,7 +120,7 @@ function QuotePage() {
       </div>
 
       <div className="relative z-10 flex items-center justify-center p-8 lg:p-16 pt-32 lg:pt-16">
-        <div className="w-full max-w-lg mt-24">
+        <div className="w-full max-w-2xl mt-10">
           {state === "sent" ? (
             <div className="border border-gold/40 p-10 text-center">
               <div className="text-gold text-5xl font-display mb-4">Thank you.</div>
