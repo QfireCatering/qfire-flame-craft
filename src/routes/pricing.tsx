@@ -18,8 +18,8 @@ const tiers = [
     ],
   },
   {
-    name: "Steakhouse Experience",
-    href: "/steakhouse",
+    name: "Signature Live Fire Steakhouse Catering Experience",
+    href: "/Signature Live Fire Steakhouse Catering",
     headline: "From $74 / guest (Buffet) · $128 / guest (Plated)",
     blurb:
       "Charcoal-grilled ribeye, NY strip, filet, picanha, salmon, surf & turf. White-glove plating.",
@@ -39,7 +39,7 @@ export const Route = createFileRoute("/pricing")({
       {
         name: "description",
         content:
-          "Transparent catering pricing. Wood-fired catering from $12.99/guest (Phoenix) and $15.99/guest (San Diego). Steakhouse buffet from $74/guest, plated from $128/guest.",
+          "Transparent catering pricing. Wood-fired catering from $12.99/guest (Phoenix) and $15.99/guest (San Diego). Signature Live Fire Steakhouse Catering buffet from $74/guest, plated from $128/guest.",
       },
       { property: "og:title", content: "Catering Pricing — Qfire Catering" },
       { property: "og:description", content: "What it actually costs to cater your event with Qfire." },

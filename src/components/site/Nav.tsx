@@ -14,7 +14,7 @@ const primary = [
 
 const secondary = [
   { to: "/wood-fired", label: "Wood-Fired" },
-  { to: "/steakhouse", label: "Steakhouse" },
+  { to: "/Signature Live Fire Steakhouse Catering", label: "Signature Live Fire Steakhouse Catering" },
   { to: "/bartending", label: "Bartending" },
   { to: "/rentals", label: "Rentals" },
   { to: "/pictures", label: "Pictures" },

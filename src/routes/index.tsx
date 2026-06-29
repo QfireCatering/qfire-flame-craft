@@ -32,9 +32,9 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Qfire Catering — Luxury Wedding, Corporate & Private Event Catering | Phoenix & San Diego" },
-      { name: "description", content: "Qfire Catering by Chef Terry Matthews — full-service luxury catering for weddings, corporate dinners, private parties and intimate chef's tables across Phoenix Metro and San Diego County. Wood-fired flavors, steakhouse polish, white-glove service, stress-free execution." },
-      { property: "og:title", content: "Qfire Catering — Wood-Fired Luxury, Steakhouse Polish" },
-      { property: "og:description", content: "Wood-fired flavors. Steakhouse polish. Stress-free execution. Luxury catering for weddings, corporate events and private parties — Phoenix Metro & San Diego County." },
+      { name: "description", content: "Qfire Catering by Chef Terry Matthews — full-service luxury catering for weddings, corporate dinners, private parties and intimate chef's tables across Phoenix Metro and San Diego County. Wood-fired flavors, Signature Live Fire Steakhouse Catering polish, white-glove service, stress-free execution." },
+      { property: "og:title", content: "Qfire Catering — Wood-Fired Luxury, Signature Live Fire Steakhouse Catering Polish" },
+      { property: "og:description", content: "Wood-fired flavors. Signature Live Fire Steakhouse Catering polish. Stress-free execution. Luxury catering for weddings, corporate events and private parties — Phoenix Metro & San Diego County." },
       { property: "og:url", content: "/" },
       { property: "og:image", content: heroImage.url },
       { name: "twitter:image", content: heroImage.url },
@@ -46,9 +46,9 @@ export const Route = createFileRoute("/")({
         "@context": "https://schema.org",
         "@type": "FoodEstablishment",
         name: "Qfire Catering",
-        description: "Full-service wood-fired and steakhouse catering for weddings, corporate events and private parties.",
+        description: "Full-service wood-fired and Signature Live Fire Signature Live Fire Steakhouse Catering Catering for weddings, corporate events and private parties.",
         areaServed: ["Phoenix Metro, AZ", "San Diego County, CA"],
-        servesCuisine: ["American", "Barbecue", "Steakhouse"],
+        servesCuisine: ["American", "Barbecue", "Signature Live Fire Steakhouse Catering"],
         priceRange: "$$$",
       }),
     }],
@@ -188,7 +188,7 @@ function Home() {
       <section className="relative">
           {[
             { video: brisketVideo.url, eyebrow: "Wood-Fired", title: "Smoke. Hardwood. Live fire.", body: "Slow-smoked brisket and tri-tip. Pulled pork and chicken. Comfort sides built around the fire — mac and cheese, baked beans, southern green beans, street corn. Backyard elegance, elevated.", href: "/wood-fired" as const, reverse: false },
-            { img: steak, eyebrow: "Steakhouse", title: "The Steakhouse Experience... Brought To You", body: "Charcoal-grilled ribeye, New York strip, filet mignon, picanha, prime rib, salmon, and surf & turf served under candlelight with polished service and unforgettable presentation. Perfect for luxury weddings, corporate dinners, and private events.", href: "/steakhouse" as const, reverse: true },
+            { img: steak, eyebrow: "Signature Live Fire Steakhouse Catering", title: "The Signature Live Fire Steakhouse Catering Experience... Brought To You", body: "Charcoal-grilled ribeye, New York strip, filet mignon, picanha, prime rib, salmon, and surf & turf served under candlelight with polished service and unforgettable presentation. Perfect for luxury weddings, corporate dinners, and private events.", href: "/Signature Live Fire Steakhouse Catering" as const, reverse: true },
           ].map((s, i) => (
             <div key={s.eyebrow} className={`grid lg:grid-cols-2 ${i % 2 ? "lg:[direction:rtl]" : ""}`}>
               <div className="relative aspect-[4/3] lg:aspect-auto overflow-hidden">
@@ -257,7 +257,7 @@ function Home() {
           </div>
           <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-4">
             {[
-              "Experienced wood-fire & steakhouse-trained team",
+              "Experienced wood-fire & Signature Live Fire Steakhouse Catering-trained team",
               "Beautifully styled buffets, stations and plated service",
               "Professional, uniformed service staff",
               "Generous, restaurant-grade portions every time",
@@ -307,7 +307,7 @@ function Home() {
             {[
               { q: "Chef Terry — 'The BBQ Daddy' — and his team turned our wedding into the meal everyone is still talking about. Brisket, ribeye, the whole spread. Flawless.", a: "Lauren & Mark", e: "Scottsdale Wedding · 220 guests" },
               { q: "We hired Qfire for our company's annual partner dinner. Plated steaks for 140, served hot, served perfectly. Worth every penny.", a: "David K.", e: "Corporate Event · La Jolla" },
-              { q: "Backyard 50th birthday. Wood-fired everything. Guests thought we'd flown in a steakhouse. Absolutely premium.", a: "Sandra T.", e: "Private Party · Gilbert" },
+              { q: "Backyard 50th birthday. Wood-fired everything. Guests thought we'd flown in a Signature Live Fire Steakhouse Catering. Absolutely premium.", a: "Sandra T.", e: "Private Party · Gilbert" },
             ].map((r, i) => (
               <figure key={i} className="bg-ink border border-white/5 p-8 lg:p-10 relative">
                 <div className="text-gold text-5xl font-display leading-none mb-4">"</div>
