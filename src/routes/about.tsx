@@ -29,10 +29,10 @@ export const Route = createFileRoute("/about")({
       { title: "About Chef Terry Matthews — The BBQ Daddy | Qfire Catering" },
       { name: "description", content: "Chef Terry Matthews — known as The BBQ Daddy — is the founder and executive chef of Qfire Catering. Bringing the fire since 2001, with 25+ years experience, 2,000+ events, a 4.9-star rating across every platform, and Food Network credits including Cutthroat Kitchen (Winner), Camp Cutthroat (Winner), BBQ Brawl Season 2 and the kitchen of Bobby Flay." },
       { property: "og:title", content: "Chef Terry Matthews — Qfire" },
-      { property: "og:url", content: "/about" },
+      { property: "og:url", content: "https://qfire-flame-craft.lovable.app/about" },
       { property: "og:image", content: chefTerry.url },
     ],
-    links: [{ rel: "canonical", href: "/about" }],
+    links: [{ rel: "canonical", href: "https://qfire-flame-craft.lovable.app/about" }],
   }),
   component: AboutPage,
 });

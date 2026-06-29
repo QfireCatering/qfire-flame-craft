@@ -21,9 +21,9 @@ export const Route = createFileRoute("/quote")({
         property: "og:description",
         content: "Custom proposal within 24 hours. Wood-fired Wood-Fire + Signature Live Fire Steakhouse Catering.",
       },
-      { property: "og:url", content: "/quote" },
+      { property: "og:url", content: "https://qfire-flame-craft.lovable.app/quote" },
     ],
-    links: [{ rel: "canonical", href: "/quote" }],
+    links: [{ rel: "canonical", href: "https://qfire-flame-craft.lovable.app/quote" }],
   }),
   component: QuotePage,
 });

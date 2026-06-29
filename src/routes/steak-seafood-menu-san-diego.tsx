@@ -132,10 +132,10 @@ export const Route = createFileRoute("/steak-seafood-menu-san-diego")({
       { name: "description", content: "San Diego County's premier five-course luxury steakhouse dining menu — ribeye, filet mignon, prime rib, lobster, salmon and more — grilled live at your La Jolla, Del Mar, Rancho Santa Fe, Coronado, Carmel Valley, Encinitas, Solana Beach, Carlsbad, Oceanside, Poway, Chula Vista or Downtown San Diego event. Premium plated steak dinner catering throughout San Diego County." },
       { property: "og:title", content: "San Diego County Steak & Seafood Catering Menu | Qfire Catering" },
       { property: "og:description", content: "Five-course chef-attended steakhouse buffet in San Diego County: cold starter, warm hors d'oeuvre, choose-3 steaks/seafood, choose-3 sides, dessert and drinks. Live on-site grilling for weddings, corporate events and private parties across La Jolla, Del Mar, Rancho Santa Fe, Coronado and Carlsbad." },
-      { property: "og:url", content: "/steak-seafood-menu-san-diego" },
+      { property: "og:url", content: "https://qfire-flame-craft.lovable.app/steak-seafood-menu-san-diego" },
       { property: "og:image", content: steakhouseBackyard.url },
     ],
-    links: [{ rel: "canonical", href: "/steak-seafood-menu-san-diego" }],
+    links: [{ rel: "canonical", href: "https://qfire-flame-craft.lovable.app/steak-seafood-menu-san-diego" }],
     scripts: [
       {
         type: "application/ld+json",

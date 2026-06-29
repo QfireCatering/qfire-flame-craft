@@ -14,9 +14,9 @@ export const Route = createFileRoute("/service-areas")({
           "Wood-fired catering across Phoenix Metro and San Diego County. Scottsdale, Mesa, Chandler, La Jolla, Del Mar, Carlsbad, Encinitas and every city in between.",
       },
       { property: "og:title", content: "Service Areas — Qfire Catering" },
-      { property: "og:url", content: "/service-areas" },
+      { property: "og:url", content: "https://qfire-flame-craft.lovable.app/service-areas" },
     ],
-    links: [{ rel: "canonical", href: "/service-areas" }],
+    links: [{ rel: "canonical", href: "https://qfire-flame-craft.lovable.app/service-areas" }],
   }),
   component: ServiceAreasPage,
 });

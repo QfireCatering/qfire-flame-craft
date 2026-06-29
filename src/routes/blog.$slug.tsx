@@ -24,11 +24,11 @@ export const Route = createFileRoute("/blog/$slug")({
         { property: "og:description", content: post.excerpt },
         { property: "og:type", content: "article" },
         { property: "og:image", content: post.image },
-        { property: "og:url", content: `/blog/${params.slug}` },
+        { property: "og:url", content: `https://qfire-flame-craft.lovable.app/blog/${params.slug}` },
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:image", content: post.image },
       ],
-      links: [{ rel: "canonical", href: `/blog/${params.slug}` }],
+      links: [{ rel: "canonical", href: `https://qfire-flame-craft.lovable.app/blog/${params.slug}` }],
       scripts: [
         {
           type: "application/ld+json",

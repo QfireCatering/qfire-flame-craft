@@ -13,9 +13,9 @@ export const Route = createFileRoute("/locations")({
       { title: "Catering Service Areas — Phoenix Metro & San Diego County | Qfire" },
       { name: "description", content: "Qfire Catering serves Phoenix Metro, Arizona and San Diego County, California — Scottsdale, Mesa, Chandler, Gilbert, La Jolla, Del Mar, Carlsbad, Rancho Santa Fe and every city in between. Choose your region for local wedding, corporate and private party catering." },
       { property: "og:title", content: "Choose Your Location — Qfire Catering" },
-      { property: "og:url", content: "/locations" },
+      { property: "og:url", content: "https://qfire-flame-craft.lovable.app/locations" },
     ],
-    links: [{ rel: "canonical", href: "/locations" }],
+    links: [{ rel: "canonical", href: "https://qfire-flame-craft.lovable.app/locations" }],
   }),
   component: LocationsPage,
 });

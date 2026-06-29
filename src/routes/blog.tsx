@@ -20,9 +20,9 @@ export const Route = createFileRoute("/blog")({
         content:
           "Wedding, corporate and private party catering insight from Chef Terry Matthews — written for the host who wants every detail right.",
       },
-      { property: "og:url", content: "/blog" },
+      { property: "og:url", content: "https://qfire-flame-craft.lovable.app/blog" },
     ],
-    links: [{ rel: "canonical", href: "/blog" }],
+    links: [{ rel: "canonical", href: "https://qfire-flame-craft.lovable.app/blog" }],
   }),
   component: BlogPage,
 });

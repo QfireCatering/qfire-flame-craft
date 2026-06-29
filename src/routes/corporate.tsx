@@ -15,9 +15,9 @@ export const Route = createFileRoute("/corporate")({
       { name: "description", content: "Premium corporate catering by Qfire — office lunches, executive dinners, holiday parties, construction-site catering and live-fire grilling across Phoenix Metro and San Diego County. 2,000+ events · 4.9★ · COI-ready." },
       { property: "og:title", content: "Corporate Catering — Qfire | Phoenix & San Diego" },
       { property: "og:description", content: "Reliable, on-time, restaurant-quality corporate catering across Phoenix and San Diego — executive dinners, holiday parties, employee appreciation, construction sites." },
-      { property: "og:url", content: "/corporate" },
+      { property: "og:url", content: "https://qfire-flame-craft.lovable.app/corporate" },
     ],
-    links: [{ rel: "canonical", href: "/corporate" }],
+    links: [{ rel: "canonical", href: "https://qfire-flame-craft.lovable.app/corporate" }],
   }),
   component: CorporateHub,
 });

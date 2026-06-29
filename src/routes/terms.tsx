@@ -6,9 +6,9 @@ export const Route = createFileRoute("/terms")({
       { title: "Terms of Service — Qfire Catering" },
       { name: "description", content: "Terms governing use of the Qfire Catering website and catering services." },
       { property: "og:title", content: "Terms of Service — Qfire Catering" },
-      { property: "og:url", content: "/terms" },
+      { property: "og:url", content: "https://qfire-flame-craft.lovable.app/terms" },
     ],
-    links: [{ rel: "canonical", href: "/terms" }],
+    links: [{ rel: "canonical", href: "https://qfire-flame-craft.lovable.app/terms" }],
   }),
   component: TermsPage,
 });

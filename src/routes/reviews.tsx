@@ -9,9 +9,9 @@ export const Route = createFileRoute("/reviews")({
       { title: "Client Reviews — 5-Star Wedding & Corporate Catering | Qfire" },
       { name: "description", content: "Five-star reviews from wedding couples, corporate clients, holiday party hosts and private chef guests across Phoenix Metro and San Diego County. 400+ verified reviews, 5.0 average rating, the same Chef Terry standard every event." },
       { property: "og:title", content: "Reviews — Qfire" },
-      { property: "og:url", content: "/reviews" },
+      { property: "og:url", content: "https://qfire-flame-craft.lovable.app/reviews" },
     ],
-    links: [{ rel: "canonical", href: "/reviews" }],
+    links: [{ rel: "canonical", href: "https://qfire-flame-craft.lovable.app/reviews" }],
     scripts: [{
       type: "application/ld+json",
       children: JSON.stringify({

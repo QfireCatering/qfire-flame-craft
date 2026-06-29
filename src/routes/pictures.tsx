@@ -27,9 +27,9 @@ export const Route = createFileRoute("/pictures")({
       { title: "Event Gallery — Weddings, Corporate, Private Parties | Qfire" },
       { name: "description", content: "A curated photo gallery of recent Qfire Catering events — plated wedding dinners, backyard live-fire parties, corporate dinners under candlelight, hand-cut steaks, slow-smoked brisket and the team behind the fire across Phoenix and San Diego." },
       { property: "og:title", content: "Gallery — Qfire" },
-      { property: "og:url", content: "/pictures" },
+      { property: "og:url", content: "https://qfire-flame-craft.lovable.app/pictures" },
     ],
-    links: [{ rel: "canonical", href: "/pictures" }],
+    links: [{ rel: "canonical", href: "https://qfire-flame-craft.lovable.app/pictures" }],
   }),
   component: PicturesPage,
 });

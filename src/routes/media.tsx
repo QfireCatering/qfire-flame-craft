@@ -10,10 +10,10 @@ export const Route = createFileRoute("/media")({
       { title: "Press & Media — Food Network Chef Terry Matthews | Qfire Catering" },
       { name: "description", content: "Chef Terry Matthews — The BBQ Daddy — featured on Food Network: Cutthroat Kitchen (Winner), Camp Cutthroat (Winner), BBQ Brawl Season 2, and the kitchen of Bobby Flay. Press appearances, television credits and media features behind Qfire Catering." },
       { property: "og:title", content: "Press & Media — Qfire Catering" },
-      { property: "og:url", content: "/media" },
+      { property: "og:url", content: "https://qfire-flame-craft.lovable.app/media" },
       { property: "og:image", content: chefTerry.url },
     ],
-    links: [{ rel: "canonical", href: "/media" }],
+    links: [{ rel: "canonical", href: "https://qfire-flame-craft.lovable.app/media" }],
   }),
   component: MediaPage,
 });

@@ -12,9 +12,9 @@ export const Route = createFileRoute("/contact")({
           "Call (877) 848-7211 or email Eat@QfireCatering.com to design your wedding, corporate event or private party menu. Wood-fired and Signature Live Fire Steakhouse Catering across Phoenix Metro and San Diego County — every inquiry answered within 24 hours by a real human.",
       },
       { property: "og:title", content: "Contact Qfire Catering" },
-      { property: "og:url", content: "/contact" },
+      { property: "og:url", content: "https://qfire-flame-craft.lovable.app/contact" },
     ],
-    links: [{ rel: "canonical", href: "/contact" }],
+    links: [{ rel: "canonical", href: "https://qfire-flame-craft.lovable.app/contact" }],
   }),
   component: ContactPage,
 });

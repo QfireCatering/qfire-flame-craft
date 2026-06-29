@@ -15,9 +15,9 @@ export const Route = createFileRoute("/weddings")({
       { name: "description", content: "Luxury wedding catering by Qfire — live charcoal grilling, premium steaks, full-service buffets and plated dinners across Phoenix Metro and San Diego County. 2,000+ weddings · 4.9★ · Featured on Food Network." },
       { property: "og:title", content: "Luxury Wedding Catering — Qfire" },
       { property: "og:description", content: "Wood-fired flavors, Signature Live Fire Steakhouse Catering polish. Full-service wedding catering by Chef Terry Matthews — Phoenix & San Diego." },
-      { property: "og:url", content: "/weddings" },
+      { property: "og:url", content: "https://qfire-flame-craft.lovable.app/weddings" },
     ],
-    links: [{ rel: "canonical", href: "/weddings" }],
+    links: [{ rel: "canonical", href: "https://qfire-flame-craft.lovable.app/weddings" }],
   }),
   component: WeddingsHub,
 });

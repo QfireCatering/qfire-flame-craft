@@ -157,10 +157,10 @@ export const Route = createFileRoute("/steak-seafood-menu")({
       { name: "description", content: "Phoenix Metro's premier five-course luxury steakhouse dining menu — ribeye, filet mignon, prime rib, lobster, salmon and more — grilled live at your Phoenix, Scottsdale, Gilbert, Mesa, Tempe, Chandler, Glendale, Peoria, Paradise Valley, Cave Creek, Fountain Hills or Ahwatukee event. Premium plated steak dinner catering throughout the Phoenix Metro area." },
       { property: "og:title", content: "Phoenix Metro Steak & Seafood Catering Menu | Qfire Catering" },
       { property: "og:description", content: "Five-course chef-attended steakhouse buffet in Phoenix Metro: cold starter, warm hors d'oeuvre, choose-3 steaks/seafood, choose-3 sides, dessert and drinks. Live on-site grilling for weddings, corporate events and private parties across Phoenix, Scottsdale, Gilbert, Mesa and Tempe." },
-      { property: "og:url", content: "/steak-seafood-menu" },
+      { property: "og:url", content: "https://qfire-flame-craft.lovable.app/steak-seafood-menu" },
       { property: "og:image", content: steakhouseBackyard.url },
     ],
-    links: [{ rel: "canonical", href: "/steak-seafood-menu" }],
+    links: [{ rel: "canonical", href: "https://qfire-flame-craft.lovable.app/steak-seafood-menu" }],
     scripts: [
       {
         type: "application/ld+json",
