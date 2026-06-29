@@ -6,6 +6,8 @@ import { PhoenixPricingBanner } from "./PhoenixPricingBanner";
 import { SanDiegoPricingBanner } from "./SanDiegoPricingBanner";
 import { TrustBar } from "./TrustBar";
 import { FAQSection } from "./FAQSection";
+import { BookingProcess } from "./BookingProcess";
+import { ObjectionBuster } from "./ObjectionBuster";
 import { DefinitiveContent } from "./DefinitiveContent";
 import { definitiveCopy } from "@/lib/definitive-copy";
 import { AnswerBox } from "./AnswerBox";
@@ -371,6 +373,17 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
         topic={`${r.shortName} Catering`}
         region={r.name}
         {...definitiveCopy.region}
+      />
+
+      <ObjectionBuster
+        eyebrow={`Before You Book In ${r.shortName}`}
+        title="The hesitations every client mentions — handled."
+        ctaLabel={`Request My ${r.shortName} Quote`}
+      />
+
+      <BookingProcess
+        eyebrow={`${r.shortName} Booking Is Simple`}
+        title="From request to event day — exactly what happens."
       />
 
       <CTASection title={`Let's plan your ${r.shortName} event.`} />

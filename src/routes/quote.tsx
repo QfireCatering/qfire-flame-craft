@@ -5,6 +5,7 @@ import { ArrowRight, Check, Phone, Mail } from "lucide-react";
 import meatPageBg from "@/assets/meat-page-bg.png.asset.json";
 import { submitLead } from "@/lib/leads.functions";
 import { contact } from "@/lib/contact";
+import { BookingProcess } from "@/components/site/BookingProcess";
 
 export const Route = createFileRoute("/quote")({
   head: () => ({
@@ -81,6 +82,7 @@ function QuotePage() {
   }
 
   return (
+    <>
     <div className="min-h-screen grid lg:grid-cols-[1.1fr_1fr] relative">
       <div className="absolute inset-0 z-0">
         <img src={meatPageBg.url} alt="" className="absolute inset-0 w-full h-full object-cover" />
@@ -203,6 +205,12 @@ function QuotePage() {
         </div>
       </div>
     </div>
+    <BookingProcess
+      eyebrow="What Happens Next"
+      title="Your quote — step by step."
+      variant="onyx"
+    />
+    </>
   );
 }
 

@@ -2,6 +2,8 @@ import { Link } from "@tanstack/react-router";
 import { ArrowRight, Check, Flame, Award, Users, Star, Clock, Sparkles } from "lucide-react";
 import { DefinitiveContent } from "./DefinitiveContent";
 import { definitiveCopy } from "@/lib/definitive-copy";
+import { BookingProcess } from "./BookingProcess";
+import { ObjectionBuster } from "./ObjectionBuster";
 import asSeenOnBadge from "@/assets/as-seen-on-food-network.png.asset.json";
 import { GuestScaleStat } from "./GuestScaleStat";
 import weddingCoupleAsset from "@/assets/wedding-couple.png.asset.json";
@@ -654,6 +656,17 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
           </div>
         </div>
       </section>
+
+      <ObjectionBuster
+        eyebrow={`Before You Book Your ${regionShort} Wedding`}
+        title="Every question we hear from brides — answered before you ask."
+        ctaLabel={`Request My ${regionShort} Wedding Quote`}
+      />
+
+      <BookingProcess
+        eyebrow="Booking Your Wedding Is Simple"
+        title={`From inquiry to "I do" — exactly what happens.`}
+      />
 
       {/* FINAL CTA */}
       <section className="py-32 lg:py-40 relative overflow-hidden">

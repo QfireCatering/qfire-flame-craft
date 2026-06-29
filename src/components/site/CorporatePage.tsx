@@ -2,6 +2,8 @@ import { Link } from "@tanstack/react-router";
 import { ArrowRight, Check, Flame, Award, Users, Star, Clock, Sparkles, Briefcase, Building2, ShieldCheck, Truck } from "lucide-react";
 import { DefinitiveContent } from "./DefinitiveContent";
 import { definitiveCopy } from "@/lib/definitive-copy";
+import { BookingProcess } from "./BookingProcess";
+import { ObjectionBuster } from "./ObjectionBuster";
 import asSeenOnBadge from "@/assets/as-seen-on-food-network.png.asset.json";
 import { GuestScaleStat } from "./GuestScaleStat";
 import corpSetupBg from "@/assets/corporate/corp-setup-bg.png.asset.json";
@@ -558,6 +560,25 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
           </div>
         </div>
       </section>
+
+      <ObjectionBuster
+        eyebrow={`Before You Book Your ${regionShort} Corporate Event`}
+        title="The questions every office manager and EA asks — handled."
+        ctaLabel={`Request ${regionShort} Corporate Pricing`}
+        items={[
+          { q: "Do you invoice companies / accept POs?", a: "Yes. We invoice directly, accept POs, ACH, corporate cards, and provide W-9 + COI on request. Set up once and re-book in minutes." },
+          { q: "How fast can you respond to a short-notice corporate event?", a: "Recurring clients regularly book inside 7 days. Even tighter requests get a same-day reply — call us and we'll tell you yes or no on the spot." },
+          { q: "Are you licensed, insured, and venue-approved?", a: "Fully licensed and insured in both regions. We provide a Certificate of Insurance (COI) naming your office, building, or off-site venue at no charge." },
+          { q: "What if our headcount changes the week of?", a: "Adjust your final guest count up or down right up to a few business days out. We staff and prep to your live number — no fight, no fee for normal changes." },
+          { q: "Can you handle dietary restrictions for an entire team?", a: "Gluten-free, vegan, vegetarian, halal-friendly, allergen-aware — built into every proposal. We label every dish on-site." },
+          { q: "What's actually included in the price?", a: "Uniformed staff, on-site cooking, full setup, service throughout your event, and complete cleanup. Disposables included; premium dinnerware, linens and bar service available as add-ons." },
+        ]}
+      />
+
+      <BookingProcess
+        eyebrow="Corporate Booking Is Simple"
+        title="From request to recurring catering partner."
+      />
 
       {/* FINAL CTA */}
       <section className="py-32 lg:py-40 relative overflow-hidden">
