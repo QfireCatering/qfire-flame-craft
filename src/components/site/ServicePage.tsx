@@ -4,6 +4,8 @@ import type { ReactNode } from "react";
 import { RegionKey } from "@/lib/site";
 import { PageHero, BulletGrid, CTASection } from "@/components/site/Sections";
 import { TrustBar } from "@/components/site/TrustBar";
+import { DefinitiveContent } from "@/components/site/DefinitiveContent";
+import { definitiveCopy } from "@/lib/definitive-copy";
 
 export interface ServicePageConfig {
   eyebrow: string;
