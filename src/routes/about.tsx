@@ -8,6 +8,14 @@ import g4 from "@/assets/gallery/about-chef/bbq_daddy_3.avif.asset.json";
 import g5 from "@/assets/gallery/about-chef/bbq_dddy_3.avif.asset.json";
 import g6 from "@/assets/gallery/about-chef/onsite_grill_4.avif.asset.json";
 import g7 from "@/assets/gallery/about-chef/park_set_up-3.avif.asset.json";
+import bf1 from "@/assets/behind-fire/bf1.jpg.asset.json";
+import bf2 from "@/assets/behind-fire/bf2.jpg.asset.json";
+import bf3 from "@/assets/behind-fire/bf3.jpg.asset.json";
+import bf4 from "@/assets/behind-fire/bf4.jpg.asset.json";
+import bf5 from "@/assets/behind-fire/bf5.jpg.asset.json";
+import bf6 from "@/assets/behind-fire/bf6.jpg.asset.json";
+import bf7 from "@/assets/behind-fire/bf7.jpg.asset.json";
+import bf8 from "@/assets/behind-fire/bf8.jpg.asset.json";
 import { CTASection } from "@/components/site/Sections";
 import { DefinitiveContent } from "@/components/site/DefinitiveContent";
 import { definitiveCopy } from "@/lib/definitive-copy";
@@ -20,6 +28,14 @@ const chefGallery = [
   { src: g5.url, alt: "The BBQ Daddy plating signature wood-fired entrées" },
   { src: g6.url, alt: "Qfire on-site grilling station with Chef Terry" },
   { src: g7.url, alt: "Qfire Catering park setup — Phoenix Metro private event" },
+  { src: bf1.url, alt: "Chef Terry with bride and groom under string lights — Arizona desert wedding catering by Qfire" },
+  { src: bf2.url, alt: "Chef Terry celebrating with newlyweds at an evening reception — Qfire wedding catering" },
+  { src: bf3.url, alt: "The BBQ Daddy with bride and groom at a Qfire-catered reception" },
+  { src: bf4.url, alt: "Chef Terry posing with bride and groom at a barn wedding — Qfire Catering" },
+  { src: bf5.url, alt: "Chef Terry with bride and groom after a wood-fired wedding dinner" },
+  { src: bf6.url, alt: "Chef Terry with bride and groom on the dance floor — Qfire wedding catering" },
+  { src: bf7.url, alt: "Chef Terry with newlyweds at an elegant reception — Qfire Catering" },
+  { src: bf8.url, alt: "Chef Terry with bride and groom at an Arizona backyard wedding — Qfire Catering" },
 ];
 
 
