@@ -29,8 +29,18 @@ import pxwSetup6 from "@/assets/gallery/phoenix-weddings/set_up6.avif.asset.json
 import pxwBuffet from "@/assets/gallery/phoenix-weddings/buffet_set_4.avif.asset.json";
 import pxwSetup4 from "@/assets/gallery/phoenix-weddings/set_up_4.avif.asset.json";
 
+import pxc1 from "@/assets/gallery/phoenix-corporate/pxc-1.jpg.asset.json";
+import pxc2 from "@/assets/gallery/phoenix-corporate/pxc-2.png.asset.json";
+import pxc3 from "@/assets/gallery/phoenix-corporate/pxc-3.jpg.asset.json";
+import pxc4 from "@/assets/gallery/phoenix-corporate/pxc-4.jpg.asset.json";
+import pxc5 from "@/assets/gallery/phoenix-corporate/pxc-5.jpg.asset.json";
+import pxc6 from "@/assets/gallery/phoenix-corporate/pxc-6.jpg.asset.json";
+import pxc7 from "@/assets/gallery/phoenix-corporate/pxc-7.jpg.asset.json";
+import pxc8 from "@/assets/gallery/phoenix-corporate/pxc-8.png.asset.json";
+
 const galleryAll = [weddingReal, brisket, steak, buffet, heroFire, corporateReal, privateReal, weddingTable];
 const phoenixWeddingGallery = [pxwBg.url, pxwCouple.url, pxwBride.url, pxwGrill.url, pxwFruit.url, pxwSetup6.url, pxwBuffet.url, pxwSetup4.url];
+const phoenixCorporateGallery = [pxc1.url, pxc2.url, pxc3.url, pxc4.url, pxc5.url, pxc6.url, pxc7.url, pxc8.url];
 
 export interface ServiceTemplateOptions {
   region?: string;       // e.g. "Phoenix Metro" or undefined
@@ -114,7 +124,7 @@ export function corporateConfig(o: ServiceTemplateOptions = {}): ServicePageConf
       { title: "Holiday Parties", body: "End-of-year galas with full beverage service." },
       { title: "Box Lunches & Drop-Off", body: "Premium daytime catering for board meetings and retreats." },
     ],
-    galleryImages: [corporateReal, corporate, steak, buffet, brisket, weddingReal, heroFire, weddingTable],
+    galleryImages: o.regionShort === "Phoenix" ? phoenixCorporateGallery : [corporateReal, corporate, steak, buffet, brisket, weddingReal, heroFire, weddingTable],
     showGalleryLink: false,
     reviews: [
       { q: "Our annual partner dinner — 140 plated steaks, served hot, served right. Qfire raised the bar permanently.", a: "David K.", e: r ? `${r} Investment Firm` : "La Jolla Investment Firm" },
