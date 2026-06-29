@@ -257,6 +257,10 @@ function SteakSeafoodMenuPage() {
         </div>
       </PageHero>
 
+      <PricingHero regionKey="phoenix" />
+
+
+
       <section className="py-20 lg:py-28 border-t border-white/5">
         <div className="container-luxe max-w-4xl">
           <p className="eyebrow mb-5">The Experience</p>
