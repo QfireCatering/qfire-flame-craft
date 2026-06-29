@@ -635,6 +635,7 @@ function RegionReviews({ regionKey }: { regionKey: RegionKey }) {
           ))}
         </div>
       </section>
+      <DefinitiveContent {...definitiveCopy.reviews} topic={`${r.shortName} Reviews`} region={r.metro} />
       <CTASection />
     </>
   );
