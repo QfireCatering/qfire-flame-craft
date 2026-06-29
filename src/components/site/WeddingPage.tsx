@@ -3,6 +3,7 @@ import { ArrowRight, Check, Flame, Award, Users, Star, Clock, Sparkles } from "l
 import { DefinitiveContent } from "./DefinitiveContent";
 import { definitiveCopy } from "@/lib/definitive-copy";
 import { BookingProcess } from "./BookingProcess";
+import { PricingHero } from "./PricingHero";
 import { ObjectionBuster } from "./ObjectionBuster";
 import asSeenOnBadge from "@/assets/as-seen-on-food-network.png.asset.json";
 import { GuestScaleStat } from "./GuestScaleStat";
