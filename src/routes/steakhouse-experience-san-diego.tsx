@@ -45,7 +45,7 @@ export const Route = createFileRoute("/steakhouse-experience-san-diego")({
             { "@type": "City", name: "Chula Vista" },
           ],
           offers: [
-            { "@type": "Offer", name: "Buffet Style", price: "79", priceCurrency: "USD", description: "Per person — restaurant-quality buffet luxury steakhouse dining in San Diego." },
+            { "@type": "Offer", name: "Buffet Style", price: "79", priceCurrency: "USD", description: "Per person — restaurant-quality buffet steakhouse dining in San Diego." },
             { "@type": "Offer", name: "Family Style", price: "94", priceCurrency: "USD", description: "Per person — shared platter chef-attended steakhouse buffet experience in San Diego County." },
             { "@type": "Offer", name: "Plated Service", price: "133", priceCurrency: "USD", description: "Per person — fully plated luxury upscale steakhouse catering in San Diego." },
           ],

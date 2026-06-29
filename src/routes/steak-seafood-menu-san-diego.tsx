@@ -129,7 +129,7 @@ export const Route = createFileRoute("/steak-seafood-menu-san-diego")({
   head: () => ({
     meta: [
       { title: "San Diego County Steak & Seafood Catering Menu | Qfire Catering" },
-      { name: "description", content: "San Diego County's premier five-course luxury steakhouse dining menu — ribeye, filet mignon, prime rib, lobster, salmon and more — grilled live at your La Jolla, Del Mar, Rancho Santa Fe, Coronado, Carmel Valley, Encinitas, Solana Beach, Carlsbad, Oceanside, Poway, Chula Vista or Downtown San Diego event. Premium plated steak dinner catering throughout San Diego County." },
+      { name: "description", content: "San Diego County's premier five-course steakhouse tasting menu — ribeye, filet mignon, prime rib, lobster, salmon and more — grilled live at your La Jolla, Del Mar, Rancho Santa Fe, Coronado, Carmel Valley, Encinitas, Solana Beach, Carlsbad, Oceanside, Poway, Chula Vista or Downtown San Diego event. Premium plated steak dinner catering throughout San Diego County." },
       { property: "og:title", content: "San Diego County Steak & Seafood Catering Menu | Qfire Catering" },
       { property: "og:description", content: "Five-course chef-attended steakhouse buffet in San Diego County: cold starter, warm hors d'oeuvre, choose-3 steaks/seafood, choose-3 sides, dessert and drinks. Live on-site grilling for weddings, corporate events and private parties across La Jolla, Del Mar, Rancho Santa Fe, Coronado and Carlsbad." },
       { property: "og:url", content: "https://qfire-flame-craft.lovable.app/steak-seafood-menu-san-diego" },
@@ -285,7 +285,7 @@ function SteakSeafoodMenuSanDiegoPage() {
                 <div>
                   <p className="font-display text-bone text-lg mb-1">Signature Surf & Turf Entrée</p>
                   <p>Indulge in three premium proteins expertly prepared over live charcoal alongside three carefully selected gourmet sides designed to complement every bite.</p>
-                  <p className="mt-2">Every plate is crafted to deliver the flavor, presentation, and quality you'd expect from a high-end luxury steakhouse dining.</p>
+                  <p className="mt-2">Every plate is crafted to deliver the flavor, presentation, and quality you'd expect from a high-end steakhouse.</p>
                 </div>
                 <div>
                   <p className="font-display text-bone text-lg mb-1">Gourmet Desserts</p>

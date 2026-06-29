@@ -110,7 +110,7 @@ const serviceStyles = [
   { name: "Delivery / Drop-Off", tag: "Most Casual", bullets: ["Perfect for casual gatherings & birthdays", "Professional, restaurant-quality drop-off", "Hot and ready when we arrive", "Beautiful, photo-worthy presentation", "Minimal setup, maximum flavor", "Great for office and pool parties"] },
   { name: "Full-Service Buffet", tag: "Most Popular", bullets: ["Perfect for birthdays, holidays & reunions", "Professional uniformed attendants", "Beautiful, abundant buffet displays", "Continuous buffet maintenance", "Carving and grilling stations available", "Ideal for 30–300+ guests"] },
   { name: "Family Style", tag: "Most Connected", bullets: ["Perfect for anniversaries & family dinners", "Shared platters at every table", "Warm, communal atmosphere", "Elegant table presentation", "Encourages conversation", "Great for 16–80 intimate guests"] },
-  { name: "Plated Dinner Service", tag: "Most Elegant", bullets: ["Perfect for luxury birthdays & estate parties", "Restaurant-style synchronized service", "Highest level of formality", "Coursed dining with captains", "White-glove guest experience", "The luxury steakhouse dining — at your home"] },
+  { name: "Plated Dinner Service", tag: "Most Elegant", bullets: ["Perfect for luxury birthdays & estate parties", "Restaurant-style synchronized service", "Highest level of formality", "Coursed dining with captains", "White-glove guest experience", "The steakhouse experience — at your home"] },
 ];
 
 const timelineSteps = [
@@ -451,7 +451,7 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
         <div className="container-luxe">
           <div className="max-w-2xl mb-14">
             <div className="eyebrow mb-6">Private Party Menu Options</div>
-            <h2 className="heading-lg text-bone">Wood-fired. Premium luxury steakhouse dining. Built around your party.</h2>
+            <h2 className="heading-lg text-bone">Wood-fired. Premium Steakhouse. Built around your party.</h2>
             <p className="mt-6 text-bone/70 text-lg leading-relaxed font-light">
               Whatever your {regionShort} guests love — it comes off our live-fire grill or our scratch kitchen.
             </p>

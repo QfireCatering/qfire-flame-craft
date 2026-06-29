@@ -336,7 +336,7 @@ export function SteakhouseExperiencePage({ r }: { r: RegionCopy }) {
 
       <FAQSection
         eyebrow={`${r.region} Steakhouse Catering FAQ`}
-        title="The premium steakhouse experience — answered."
+        title="The Signature Steakhouse Experience — answered."
         faqs={steakFaqs}
       />
 

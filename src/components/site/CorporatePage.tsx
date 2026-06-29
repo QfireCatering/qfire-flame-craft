@@ -362,7 +362,7 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
       <section className="py-24 lg:py-32">
         <div className="container-luxe grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="order-2 lg:order-1">
-            <div className="eyebrow mb-6">Executive luxury steakhouse dining Experience</div>
+            <div className="eyebrow mb-6">Executive Steakhouse Experience</div>
             <h2 className="heading-lg text-bone">A chef-attended steakhouse buffet — brought to your boardroom.</h2>
             <div className="mt-8 space-y-5 text-bone/80 text-lg font-light leading-relaxed">
               <p>Charcoal-grilled ribeye, New York strip, filet mignon, picanha, prime rib, salmon, and surf & turf — served under candlelight with polished service for executive dinners, board retreats, and client appreciation events across {region}.</p>

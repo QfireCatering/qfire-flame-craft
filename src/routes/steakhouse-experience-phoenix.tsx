@@ -44,7 +44,7 @@ export const Route = createFileRoute("/steakhouse-experience-phoenix")({
             { "@type": "City", name: "Fountain Hills" },
           ],
           offers: [
-            { "@type": "Offer", name: "Buffet Style", price: "74", priceCurrency: "USD", description: "Per person — restaurant-quality buffet luxury steakhouse dining in Phoenix." },
+            { "@type": "Offer", name: "Buffet Style", price: "74", priceCurrency: "USD", description: "Per person — restaurant-quality buffet steakhouse dining in Phoenix." },
             { "@type": "Offer", name: "Family Style", price: "89", priceCurrency: "USD", description: "Per person — shared platter chef-attended steakhouse buffet experience in Phoenix Metro." },
             { "@type": "Offer", name: "Plated Service", price: "128", priceCurrency: "USD", description: "Per person — fully plated luxury upscale steakhouse catering in Phoenix." },
           ],

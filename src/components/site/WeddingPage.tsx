@@ -430,7 +430,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
             <h2 className="heading-lg text-bone">A live-fire steakhouse experience — brought to your venue.</h2>
             <div className="mt-8 space-y-5 text-bone/80 text-lg font-light leading-relaxed">
               <p>Charcoal-grilled ribeye, New York strip, filet mignon, picanha, prime rib, salmon, and surf & turf — served under candlelight with polished service and unforgettable presentation.</p>
-              <p>The food, the atmosphere, the service. The luxury of a great luxury steakhouse dining, without leaving your venue. Perfect for luxury weddings, black-tie receptions, and rehearsal dinners across {region}.</p>
+              <p>The food, the atmosphere, the service. The luxury of a great steakhouse, without leaving your venue. Perfect for luxury weddings, black-tie receptions, and rehearsal dinners across {region}.</p>
             </div>
             <Link to="/steak-seafood-menu" className="inline-flex items-center gap-2 mt-10 text-[0.7rem] tracking-[0.28em] uppercase text-gold border-b border-gold/40 pb-1 hover:border-gold">
               View the chef-attended steakhouse buffet Menu <ArrowRight className="size-3" />
