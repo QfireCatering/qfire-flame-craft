@@ -99,7 +99,7 @@ function PricingPage() {
                   ))}
                 </ul>
                 <Link to={t.href} className="btn-ghost mt-auto">
-                  See Full Menu <ArrowRight className="size-4" />
+                  {t.cta} <ArrowRight className="size-4" />
                 </Link>
               </div>
             ))}
