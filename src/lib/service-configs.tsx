@@ -98,6 +98,8 @@ export function weddingConfig(o: ServiceTemplateOptions = {}): ServicePageConfig
       { q: "What is the average price per guest for a Qfire wedding?", a: "Most full-service Qfire weddings land between $95 and $185 per guest depending on protein selection, service style, bar package, and rentals coordination. Every proposal is custom — there are no hidden fees, no per-server gratuity surprises, and every line item is itemized." },
     ],
     ctaTitle: "Let's design your wedding menu.",
+    definitiveKey: "wedding",
+    definitiveTopic: "Wedding Catering",
   };
 }
 
@@ -138,6 +140,8 @@ export function corporateConfig(o: ServiceTemplateOptions = {}): ServicePageConf
       { q: "How do you handle holiday party season bookings?", a: "Holiday party season (Nov 15 – Dec 23) books out by late September. Reserve your date early — a non-refundable date hold secures your slot, and the menu can be finalized up to 30 days before the event." },
     ],
     ctaTitle: "Plan your corporate event.",
+    definitiveKey: "corporate",
+    definitiveTopic: "Corporate Catering",
   };
 }
 
@@ -175,6 +179,8 @@ export function privatePartyConfig(o: ServiceTemplateOptions = {}): ServicePageC
       { q: "How early should I book a private party?", a: "30 to 90 days is comfortable for most weekends. Major holidays (NYE, July 4th, Thanksgiving weekend) and graduation season fill 4 to 6 months out. Short-notice parties are accepted when our calendar allows — call directly for last-minute dates." },
     ],
     ctaTitle: "Let's plan your party.",
+    definitiveKey: "private",
+    definitiveTopic: "Private Party Catering",
   };
 }
 
@@ -221,6 +227,8 @@ export function woodFiredConfig(o: ServiceTemplateOptions = {}): ServicePageConf
     },
     galleryImages: [brisket, heroFire, buffet, privateParty, weddingTable, steak],
     ctaTitle: "Let's design your wood-fired menu.",
+    definitiveKey: "woodFired",
+    definitiveTopic: "Wood-Fired Catering",
   };
 }
 
@@ -258,6 +266,8 @@ export function steakhouseConfig(o: ServiceTemplateOptions = {}): ServicePageCon
     },
     galleryImages: [steak, weddingTable, corporate, buffet, heroFire, brisket],
     ctaTitle: "Plan a wood-fired steakhouse experience evening.",
+    definitiveKey: "steakhouse",
+    definitiveTopic: "Signature Live Fire Steakhouse Catering",
   };
 }
 
