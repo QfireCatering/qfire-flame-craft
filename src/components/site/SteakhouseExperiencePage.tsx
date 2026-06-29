@@ -79,6 +79,8 @@ export function SteakhouseExperiencePage({ r }: { r: RegionCopy }) {
         </div>
       </section>
 
+      <TrustBar />
+
       {/* STEAKHOUSE PRICING SUMMARY */}
       <section className="py-20 lg:py-28 bg-onyx border-t border-white/5">
         <div className="container-luxe">
