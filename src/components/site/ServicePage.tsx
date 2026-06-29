@@ -116,6 +116,19 @@ export function ServicePage({ config, regionKey }: { config: ServicePageConfig; 
                 </div>
               ))}
             </div>
+            {config.menu.ctaUrl && (
+              <div className="mt-16 flex justify-center">
+                <a
+                  href={config.menu.ctaUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3 px-10 py-5 bg-gold text-ink font-display text-lg tracking-wide uppercase border-2 border-gold hover:bg-transparent hover:text-gold transition-colors shadow-[0_0_40px_rgba(212,175,55,0.35)]"
+                >
+                  {config.menu.ctaLabel || "Click Here to View Menu and Pricing"}
+                  <ArrowRight className="size-5" />
+                </a>
+              </div>
+            )}
           </div>
         </section>
       )}
