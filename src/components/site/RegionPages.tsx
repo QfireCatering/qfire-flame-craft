@@ -370,7 +370,7 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
       <DefinitiveContent
         topic={`${r.shortName} Catering`}
         region={r.name}
-        {...definitiveCopy.wedding}
+        {...definitiveCopy.region}
       />
 
       <CTASection title={`Let's plan your ${r.shortName} event.`} />
