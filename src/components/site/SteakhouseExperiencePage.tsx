@@ -11,6 +11,8 @@ import { DefinitiveContent } from "./DefinitiveContent";
 import { definitiveCopy } from "@/lib/definitive-copy";
 import { BookingProcess } from "./BookingProcess";
 import { ObjectionBuster } from "./ObjectionBuster";
+import { GuestScaleStat } from "./GuestScaleStat";
+
 
 export type RegionCopy = {
   city: string;            // "Phoenix" | "San Diego"
@@ -134,6 +136,11 @@ export function SteakhouseExperiencePage({ r }: { r: RegionCopy }) {
           </p>
         </div>
       </section>
+
+      {/* BUILT FOR SCALE — directly below Steakhouse pricing */}
+      <GuestScaleStat regionKey={isSD ? "san-diego" : "phoenix"} />
+
+
 
 
       {/* CREAM/IVORY STEAKHOUSE SECTION */}
