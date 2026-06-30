@@ -4,9 +4,10 @@ import { DefinitiveContent } from "./DefinitiveContent";
 import { definitiveCopy } from "@/lib/definitive-copy";
 import { BookingProcess } from "./BookingProcess";
 import { ObjectionBuster } from "./ObjectionBuster";
-import { RegionalPricing } from "./RegionalPricing";
+import { MenusOpener } from "./MenusOpener";
+import { SectionNav } from "./SectionNav";
 import asSeenOnBadge from "@/assets/as-seen-on-food-network.png.asset.json";
-import { GuestScaleStat } from "./GuestScaleStat";
+
 import weddingCoupleAsset from "@/assets/wedding-couple.png.asset.json";
 import weddingRealAsset from "@/assets/wedding-real.jpg.asset.json";
 import weddingGrillingAsset from "@/assets/gallery/onsite-grill-v2.png.asset.json";
