@@ -41,7 +41,7 @@ const HOME_FAQS = [
   { q: "Can you accommodate dietary needs and allergies?", a: "Absolutely. Vegetarian, vegan, gluten-free, dairy-free, kosher-style, and Halal-friendly menus are standard. For peanut, tree-nut, and shellfish allergies we run a dedicated prep line and label every plate at the pass." },
   { q: "Do you travel to our venue?", a: "Yes. We cater across Phoenix Metro and San Diego County, and travel to destination venues, vineyards, ranches, and private estates within driving distance. Travel and lodging are quoted transparently inside your proposal." },
   { q: "What makes Qfire different from other caterers?", a: "Chef Terry Matthews — featured on Food Network's BBQ Brawl with Bobby Flay, Camp Cutthroat, and a Cutthroat Kitchen champion — personally designs every menu. 2,000+ events, $10M+ catered since 2011, 4.9★ rated, fully licensed and insured, with live charcoal grilling at your venue." },
-  { q: "What happens after I request a quote?", a: "A real person — usually Chef Terry or your account lead — calls or emails within 24 hours. We send an itemized proposal, refine the menu together, and lock the date with a 35% Date Charge applied directly to your final invoice." },
+  { q: "What happens after I request a quote?", a: "A real person — usually Chef Terry or your account lead — calls or emails within 24 hours. We send an itemized proposal, refine the menu together, and lock the date with a 35% Date Retainer applied directly to your final invoice." },
 ];
 
 export const Route = createFileRoute("/")({
@@ -64,7 +64,7 @@ export const Route = createFileRoute("/")({
           "@type": ["LocalBusiness", "CateringService", "FoodEstablishment"],
           name: "Qfire Catering",
           alternateName: "The BBQ Daddy",
-          description: "Full-service wood-fired and Signature Steakhouse Catering for weddings, corporate events and private parties across Phoenix Metro and San Diego County.",
+          description: "Full-service wood-fired and Steakhouse Experience for weddings, corporate events and private parties across Phoenix Metro and San Diego County.",
           url: "/",
           telephone: "+1-877-848-7211",
           email: "Eat@QfireCatering.com",
@@ -101,7 +101,7 @@ export const Route = createFileRoute("/")({
             { "@type": "Offer", name: "Wood-Fired Catering (1-Meat)", priceCurrency: "USD", price: "12.99", priceSpecification: { "@type": "UnitPriceSpecification", price: "12.99", priceCurrency: "USD", unitText: "per guest" } },
             { "@type": "Offer", name: "Wood-Fired Catering (2-Meat)", priceCurrency: "USD", price: "17.99" },
             { "@type": "Offer", name: "Wood-Fired Catering (3-Meat)", priceCurrency: "USD", price: "25.99" },
-            { "@type": "Offer", name: "Signature Live Fire Steakhouse Experience", priceCurrency: "USD", price: "74.00" },
+            { "@type": "Offer", name: "Steakhouse Experience", priceCurrency: "USD", price: "74.00" },
           ],
         }),
       },

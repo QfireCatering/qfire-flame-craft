@@ -6,7 +6,10 @@ import { BookingProcess } from "./BookingProcess";
 import { ObjectionBuster } from "./ObjectionBuster";
 import { MenusOpener } from "./MenusOpener";
 import { SectionNav } from "./SectionNav";
+import { WeddingBuffetEstimator } from "./WeddingBuffetEstimator";
+import { contact } from "@/lib/contact";
 import asSeenOnBadge from "@/assets/as-seen-on-food-network.png.asset.json";
+
 
 import weddingCoupleAsset from "@/assets/wedding-couple.png.asset.json";
 import weddingRealAsset from "@/assets/wedding-real.jpg.asset.json";
@@ -53,7 +56,7 @@ export interface WeddingRegionConfig {
 const baseFaqs = [
   {
     q: "How much does luxury wedding catering cost?",
-    a: "Most full-service Qfire weddings land between $95 and $185 per guest depending on protein selection (Wood-Fire vs. Signature Live Fire Steakhouse Catering vs. surf & turf), service style, bar package, rentals, and staffing. Every proposal is itemized — no hidden fees, no surprise gratuities.",
+    a: "Most full-service Qfire weddings land between $95 and $185 per guest depending on protein selection (Wood-Fire vs. Steakhouse Experience vs. surf & turf), service style, bar package, rentals, and staffing. Every proposal is itemized — no hidden fees, no surprise gratuities.",
   },
   {
     q: "Can our wedding menu be fully customized?",
@@ -68,12 +71,12 @@ const baseFaqs = [
     a: "Absolutely. Couples seriously considering Qfire are invited to a private chef's-table tasting with Chef Terry. You'll sample your proposed entrees, sides, and a signature cocktail, then refine the menu in real time before contracts are finalized.",
   },
   {
-    q: "How does the 35% Date Charge work?",
-    a: "Your wedding date is reserved with a 35% Date Charge applied directly to your final invoice. It locks in your date and our team — it does NOT lock in your menu, guest count, or service style. Those can all change as your planning evolves.",
+    q: "How does the 35% Date Retainer work?",
+    a: "Your wedding date is reserved with a 35% Date Retainer applied directly to your final invoice. It locks in your date and our team — it does NOT lock in your menu, guest count, or service style. Those can all change as your planning evolves.",
   },
   {
     q: "Can we change our menu after we book?",
-    a: "Yes. Most couples refine their menu several times between booking and the final tasting. We expect it. Your Date Charge holds the date and the team — the menu is a living document until roughly 30 days out.",
+    a: "Yes. Most couples refine their menu several times between booking and the final tasting. We expect it. Your Date Retainer holds the date and the team — the menu is a living document until roughly 30 days out.",
   },
   {
     q: "Can we update our guest count later?",
@@ -81,7 +84,7 @@ const baseFaqs = [
   },
   {
     q: "Do you grill onsite at the venue?",
-    a: "Yes — live charcoal grilling is one of our signature offerings. We roll in the wood-fired grill and cook ribeyes, picanha, brisket, salmon, and chicken right in front of your guests. The aroma, the visual, the freshness — it's the moment people remember.",
+    a: "Yes — live charcoal grilling is one of our signature offerings. We roll in the wood-fired grill and cook ribeyes, picanha (Brazilian top sirloin cap), brisket, salmon, and chicken right in front of your guests. The aroma, the visual, the freshness — it's the moment people remember.",
   },
   {
     q: "Do you provide bartenders?",
@@ -192,7 +195,7 @@ const timelineSteps = [
   { n: "01", title: "Request a Quote", body: "Submit your date, venue, and rough guest count. Takes about 90 seconds." },
   { n: "02", title: "We Personally Contact You", body: "A real person — usually Chef Terry or your account lead — calls within 24 hours." },
   { n: "03", title: "Customize Your Menu", body: "We design a proposal around your taste, venue, and guest list. Revise as much as you want." },
-  { n: "04", title: "Reserve Your Date", body: "Lock in your wedding with a 35% Date Charge — applied directly to your final invoice." },
+  { n: "04", title: "Reserve Your Date", body: "Lock in your wedding with a 35% Date Retainer — applied directly to your final invoice." },
   { n: "05", title: "Finalize Guest Count Later", body: "Final headcount and menu adjustments lock 14–30 days before the wedding." },
   { n: "06", title: "Enjoy Your Wedding", body: "We handle setup, service, live-fire grilling, bar, and cleanup. You spend the night with your guests." },
 ];
@@ -236,7 +239,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
     url: path,
     telephone: "+1-602-555-0123",
     priceRange: "$$$",
-    servesCuisine: ["Wood-Fire", "Signature Live Fire Steakhouse Catering", "American", "Wedding Catering"],
+    servesCuisine: ["Wood-Fire", "Steakhouse Experience", "American", "Wedding Catering"],
     areaServed: cities.map((c) => ({ "@type": "City", name: c })),
     aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "400" },
   };
@@ -272,18 +275,21 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
 
   const sectionNavItems = [
     { id: "menus", label: "Menus" },
+    { id: "estimator", label: "100-Guest Estimate" },
+    { id: "included", label: "What's Included" },
     { id: "pricing", label: "Pricing" },
     { id: "scale", label: "Built for Scale" },
-    { id: "included", label: "What's Included" },
     { id: "why-qfire", label: "Why Qfire" },
     { id: "service-styles", label: "Service Styles" },
     { id: "live-fire", label: "Live Fire" },
     { id: "steakhouse", label: "Steakhouse" },
     { id: "process", label: "Process" },
+    { id: "real-reviews", label: "Real Reviews" },
     { id: "menu-options", label: "Menu Options" },
     { id: "chef", label: "Chef Terry" },
     { id: "faq", label: "FAQ" },
   ];
+
 
   return (
     <>
@@ -301,10 +307,16 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
             <p className="mt-8 text-xl md:text-2xl text-bone/85 font-light leading-relaxed max-w-2xl">
               Live charcoal grilling, premium steaks, professional staff, and a stress-free experience — trusted by thousands of couples across {region}.
             </p>
-            <div className="mt-10 flex flex-wrap gap-4">
+            <p className="mt-8 text-xl md:text-2xl text-bone/85 font-light leading-relaxed max-w-2xl">
+              Live charcoal grilling, premium steaks, professional staff, and a stress-free experience — trusted by thousands of couples across {region}.
+            </p>
+            <div className="mt-10 flex flex-wrap items-center gap-4">
               <a href="#pricing" className="btn-primary">
                 View Prices <ArrowRight className="size-4" />
               </a>
+              <span className="inline-flex items-center gap-2 text-[0.7rem] tracking-[0.22em] uppercase text-gold/90 border border-gold/30 px-4 py-2.5 bg-gold/5">
+                <Clock className="size-3.5" /> Usually responds within 4 business hours
+              </span>
             </div>
 
             <div className="mt-10 flex flex-wrap gap-8 text-sm text-bone/70">
@@ -313,11 +325,19 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
               <div><span className="text-gold font-display text-2xl">4.9★</span> Couple-Rated</div>
               <div><span className="text-gold font-display text-2xl">Food Network</span> Featured Chef</div>
             </div>
+            <div className="mt-6 text-xs tracking-[0.2em] uppercase text-bone/55">
+              <span className="text-gold/80">Local {regionShort} Team</span> · <a href={contact.phoneHref} className="text-bone hover:text-gold transition-colors">{contact.phone}</a>
+            </div>
           </div>
         </div>
       </section>
 
+
       <MenusOpener regionKey={config.regionSlug} pageType="Wedding" />
+
+      <WeddingBuffetEstimator region={region} regionShort={regionShort as "Phoenix" | "San Diego"} />
+
+
 
       {/* TRUST STRIP */}
       <section className="border-y border-white/10 bg-onyx py-10">
@@ -426,7 +446,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
             <h2 className="heading-lg text-bone">The aroma. The fire. The moment guests remember.</h2>
             <div className="mt-8 space-y-5 text-bone/80 text-lg font-light leading-relaxed">
               <p>Most wedding food is reheated in a back kitchen. Ours is grilled in front of your guests over real hardwood charcoal — the way steak is supposed to be cooked.</p>
-              <p>Ribeyes. New York strips. Picanha. Brick chicken. Fresh seafood. Burgers seared to order. The aroma drifts across the venue. Guests gather. Photos happen. The night levels up.</p>
+              <p>Ribeyes. New York strips. Picanha (the prized Brazilian top sirloin cap). Brick chicken. Fresh seafood. Burgers seared to order. The aroma drifts across the venue. Guests gather. Photos happen. The night levels up.</p>
             </div>
             <ul className="mt-8 grid sm:grid-cols-2 gap-3">
               {["Freshly grilled steaks", "Wood-fired chicken", "Seared fresh seafood", "Live-action carving", "Visual centerpiece", "Restaurant-quality char"].map((x) => (
@@ -444,10 +464,10 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
       <section id="steakhouse" className="py-24 lg:py-32 bg-onyx scroll-mt-32">
         <div className="container-luxe grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="order-2 lg:order-1">
-            <div className="eyebrow mb-6">The Signature Live Fire Steakhouse Experience</div>
-            <h2 className="heading-lg text-bone">A live-fire steakhouse experience — brought to your venue.</h2>
+            <div className="eyebrow mb-6">The Steakhouse Experience</div>
+            <h2 className="heading-lg text-bone">A Steakhouse Experience — brought to your venue.</h2>
             <div className="mt-8 space-y-5 text-bone/80 text-lg font-light leading-relaxed">
-              <p>Charcoal-grilled ribeye, New York strip, filet mignon, picanha, prime rib, salmon, and surf & turf — served under candlelight with polished service and unforgettable presentation.</p>
+              <p>Charcoal-grilled ribeye, New York strip, filet mignon, picanha (Brazilian top sirloin cap), prime rib, salmon, and surf & turf — served under candlelight with polished service and unforgettable presentation.</p>
               <p>The food, the atmosphere, the service. The luxury of a great steakhouse, without leaving your venue. Perfect for luxury weddings, black-tie receptions, and rehearsal dinners across {region}.</p>
             </div>
             <Link to="/steak-seafood-menu" className="inline-flex items-center gap-2 mt-10 text-[0.7rem] tracking-[0.28em] uppercase text-gold border-b border-gold/40 pb-1 hover:border-gold">
@@ -489,12 +509,12 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         <div className="container-luxe grid lg:grid-cols-[1fr_1.4fr] gap-12 lg:gap-20">
           <div>
             <div className="gold-rule mb-8" />
-            <div className="eyebrow mb-6">The 35% Date Charge</div>
+            <div className="eyebrow mb-6">The 35% Date Retainer</div>
             <h2 className="heading-md text-bone">Lock the date. Not the menu.</h2>
           </div>
           <div>
             <p className="text-bone/85 text-lg font-light leading-relaxed">
-              Your wedding date is secured with a <strong className="text-gold">35% Date Charge</strong> — applied directly to your final invoice. It reserves our team for your day and nothing more.
+              Your wedding date is secured with a <strong className="text-gold">35% Date Retainer</strong> — applied directly to your final invoice. It reserves our team for your day and nothing more.
             </p>
             <ul className="mt-8 space-y-4">
               {[
@@ -653,6 +673,48 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         region={`${regionShort} couples`}
         {...definitiveCopy.wedding}
       />
+
+      {/* REAL REVIEWS — independent third-party platforms */}
+      <section id="real-reviews" className="py-20 lg:py-28 bg-onyx border-y border-white/10 scroll-mt-32">
+        <div className="container-luxe">
+          <div className="max-w-2xl mx-auto text-center mb-12">
+            <div className="eyebrow justify-center mb-6">Real Couples · Verified Reviews</div>
+            <h2 className="heading-lg text-bone">Don't take our word for it.</h2>
+            <p className="mt-5 text-bone/70 text-lg font-light">
+              Read verified reviews from real Qfire couples on the two platforms brides trust most.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+            <a
+              href="https://www.weddingwire.com/reviews/qfire-catering/4c33661ea8bcf7a8.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group p-8 lg:p-10 border border-gold/30 bg-ink/70 hover:bg-ink hover:border-gold transition-all text-center"
+            >
+              <div className="text-[0.65rem] tracking-[0.3em] uppercase text-gold mb-3">WeddingWire</div>
+              <div className="font-display text-2xl text-bone group-hover:text-gold transition-colors">Read Verified Reviews</div>
+              <div className="flex justify-center gap-1 mt-4">
+                {[0,1,2,3,4].map((i) => <Star key={i} className="size-4 fill-gold text-gold" />)}
+              </div>
+              <div className="mt-4 text-xs tracking-[0.2em] uppercase text-bone/60">View on WeddingWire →</div>
+            </a>
+            <a
+              href="https://www.theknot.com/marketplace/qfire-catering-san-diego-ca-531715"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group p-8 lg:p-10 border border-gold/30 bg-ink/70 hover:bg-ink hover:border-gold transition-all text-center"
+            >
+              <div className="text-[0.65rem] tracking-[0.3em] uppercase text-gold mb-3">The Knot</div>
+              <div className="font-display text-2xl text-bone group-hover:text-gold transition-colors">Read Verified Reviews</div>
+              <div className="flex justify-center gap-1 mt-4">
+                {[0,1,2,3,4].map((i) => <Star key={i} className="size-4 fill-gold text-gold" />)}
+              </div>
+              <div className="mt-4 text-xs tracking-[0.2em] uppercase text-bone/60">View on The Knot →</div>
+            </a>
+          </div>
+        </div>
+      </section>
+
 
       {/* FAQ */}
       <section id="faq" className="py-24 lg:py-32 scroll-mt-32">

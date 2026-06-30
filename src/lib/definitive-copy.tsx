@@ -175,7 +175,7 @@ export const definitiveCopy: Record<string, Preset> = {
       { title: "Inquiry or quick call", body: "Share event type, date, headcount, location, and the goal of the event." },
       { title: "Proposal in 24–48 hours", body: "Itemized PDF proposal sent to you and your finance team — food, service, rentals, gratuity all listed separately." },
       { title: "Vendor onboarding (if needed)", body: "W-9, COI naming your company as additional insured, and any procurement documents handled fast." },
-      { title: "Confirm and pay Date Charge", body: "A 35% non-refundable Date Charge secures your event date and is applied directly to your final invoice. Final balance invoiced post-event for many corporate clients." },
+      { title: "Confirm and pay Date Retainer", body: "A 35% non-refundable Date Retainer secures your event date and is applied directly to your final invoice. Final balance invoiced post-event for many corporate clients." },
       { title: "Final headcount (10–14 days out)", body: "Lock guest count, dietary count, and layout. We confirm the run-of-show with your planner." },
       { title: "Event day execution", body: "Early arrival, clean setup, on-time service, full breakdown, no fingerprints left behind." },
       { title: "Post-event invoice + recap", body: "Clean invoice for AP, plus a short recap email noting what worked and what we'd refine next time." },
@@ -244,7 +244,7 @@ export const definitiveCopy: Record<string, Preset> = {
       { title: "Inquiry", body: "Date, guest count, location, and the type of moment you're planning." },
       { title: "Discovery call", body: "Quick call to align on menu, service style, and your home's layout." },
       { title: "Custom proposal", body: "Itemized proposal within a few business days." },
-      { title: "Date Charge holds the date", body: "A 35% non-refundable Date Charge secures your event date and is applied directly to your final invoice." },
+      { title: "Date Retainer holds the date", body: "A 35% non-refundable Date Retainer secures your event date and is applied directly to your final invoice." },
       { title: "Menu refinement", body: "Refine your menu over the next few weeks. We'll finalize 14 days before the event." },
       { title: "Final headcount", body: "Lock guest count, dietary needs, and layout details one to two weeks out." },
       { title: "Event night", body: "We arrive, set quietly, cook brilliantly, serve calmly, and leave your home spotless." },
@@ -284,7 +284,7 @@ export const definitiveCopy: Record<string, Preset> = {
   },
   steakhouse: {
     explainer:
-      "The Signature Live Fire Steakhouse Experience is what happens when a Food Network chef builds a premium steakhouse dinner service around your venue. Center-cut filet, prime ribeye, New York strip, T-bone, picanha, prime rib, and surf & turf — all charcoal-grilled over real hardwood, sliced in front of your guests, and plated with restaurant-grade presentation.",
+      "The Steakhouse Experience is what happens when a Food Network chef builds a premium steakhouse dinner service around your venue. Center-cut filet, prime ribeye, New York strip, T-bone, picanha, prime rib, and surf & turf — all charcoal-grilled over real hardwood, sliced in front of your guests, and plated with restaurant-grade presentation.",
     explainerLong:
       "This isn't a fancier buffet. It's a portable steakhouse: chef-attended grilling stations, polished service staff in chef coats, three signature sides, fresh-baked breads, butter board, salad course, and sauces. The room feels different the moment the first plate goes down.",
     included: [
@@ -313,7 +313,7 @@ export const definitiveCopy: Record<string, Preset> = {
       { title: "Inquiry", body: "Share date, venue, guest count, and protein direction." },
       { title: "Discovery call", body: "15–20 minute call with Chef Terry to align on menu and service style." },
       { title: "Itemized proposal", body: "Sent within a few business days — food, service, rentals, travel, gratuity all transparent." },
-      { title: "Reserve the date", body: "35% Date Charge secures your event date and credits to your final invoice." },
+      { title: "Reserve the date", body: "35% Date Retainer secures your event date and credits to your final invoice." },
       { title: "Final menu lock (2 weeks out)", body: "Final guest count, protein mix, sides, sauces, and doneness counts locked in 2 weeks prior to your event." },
       { title: "Event night", body: "On-time arrival, calm grill line, restaurant-grade plating, full breakdown." },
     ],
@@ -503,7 +503,7 @@ definitiveCopy.region = {
     { title: "Match service style to the room", body: "Buffet for energy, plated for elegance, family-style for intimacy, stations for movement. Tell us the room — we'll match it." },
     { title: "Pick one signature moment", body: "A live carving station, a chef-attended raw bar, a late-night brisket slider drop. One memorable beat beats six average ones." },
     { title: "Plan the dietary minority up front", body: "GF, vegetarian, vegan, allergy-specific — built in from day one, not patched on at the end." },
-    { title: "Reserve early", body: "Premium dates fill 6–14 months out. Lock the date with a 35% non-refundable Date Charge (applied to your final invoice) and refine the menu over time." },
+    { title: "Reserve early", body: "Premium dates fill 6–14 months out. Lock the date with a 35% non-refundable Date Retainer (applied to your final invoice) and refine the menu over time." },
     { title: "Use one vendor for food, bar, rentals", body: "One contract, one team, one timeline. Easier to coordinate, cleaner to budget, calmer on event day." },
   ],
   bookingSteps: [
@@ -562,7 +562,7 @@ definitiveCopy.menus = {
   explainer:
     "Our menus are not templates. Every Qfire menu is custom-built by Chef Terry around your guests, your venue, and the feeling you want the night to have. What's published here is a starting point — the real menu is the one we design together.",
   explainerLong:
-    "We run two distinct culinary programs: Wood-Fired (slow-smoked brisket, tri-tip, pulled meats, comfort sides) and Signature Live Fire Steakhouse Catering (charcoal-grilled ribeye, filet, picanha, surf & turf). Either can be served buffet, family-style, plated, or stationed — and either can scale from a 25-guest backyard dinner to a 2,500-guest gala.",
+    "We run two distinct culinary programs: Wood-Fired (slow-smoked brisket, tri-tip, pulled meats, comfort sides) and Steakhouse Experience (charcoal-grilled ribeye, filet, picanha, surf & turf). Either can be served buffet, family-style, plated, or stationed — and either can scale from a 25-guest backyard dinner to a 2,500-guest gala.",
   included: [
     "Personally designed menu PDF",
     "Itemized pricing on every line",
@@ -612,7 +612,7 @@ definitiveCopy.pricing = {
   explainer:
     "Qfire pricing is itemized and transparent. You see exactly what the food costs, what the service costs, what the rentals cost, and what travel costs — before you sign. The number on your proposal is the number on your final invoice.",
   explainerLong:
-    "Pricing varies by region, service style, guest count, and menu. Wood-Fired starts at $12.99/guest in Phoenix and $15.99/guest in San Diego. Signature Live Fire Steakhouse Catering starts at $74/guest buffet and $128/guest plated. Most full-service weddings and corporate events land between $65 and $145 per guest, all-in.",
+    "Pricing varies by region, service style, guest count, and menu. Wood-Fired starts at $12.99/guest in Phoenix and $15.99/guest in San Diego. Steakhouse Experience starts at $74/guest buffet and $128/guest plated. Most full-service weddings and corporate events land between $65 and $145 per guest, all-in.",
   included: [
     "Food and beverage line items",
     "Service staff hours by role",
@@ -650,7 +650,7 @@ definitiveCopy.pricing = {
   ],
   confidence: baseConfidence,
   extraFaqs: [
-    { q: "Is there a deposit?", a: "Yes — a 35% Date Charge holds your date and is applied directly to your final invoice. It is not a separate fee." },
+    { q: "Is there a deposit?", a: "Yes — a 35% Date Retainer holds your date and is applied directly to your final invoice. It is not a separate fee." },
     { q: "What payment methods do you accept?", a: "ACH, wire, all major credit cards, and corporate check. Card processing fees are passed through transparently." },
     { q: "Are gratuity and service charge the same?", a: "No. Service charge covers staff and operational overhead. Gratuity goes directly to the team. Both are shown separately on your proposal." },
   ],
@@ -1033,7 +1033,7 @@ definitiveCopy.reviews = {
     { title: "Read the reviews", body: "Top to bottom, recent first." },
     { title: "Ask for references", body: "We'll connect you with a past client." },
     { title: "Inquire", body: "Submit the form with date and headcount." },
-    { title: "Book", body: "Lock the date with a 35% non-refundable Date Charge — applied directly to your final invoice." },
+    { title: "Book", body: "Lock the date with a 35% non-refundable Date Retainer — applied directly to your final invoice." },
   ],
   expectations: {
     before: ["Honest reference calls if requested", "Full proposal in writing"],
