@@ -286,11 +286,11 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
               Live charcoal grilling, premium steaks, professional staff, and a stress-free experience — trusted by thousands of couples across {region}.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
-              <Link to="/quote" className="btn-primary">
-                Request Your Wedding Quote <ArrowRight className="size-4" />
-              </Link>
-              <Link to="/quote" className="btn-ghost">Check Date Availability</Link>
+              <a href="#pricing" className="btn-primary">
+                View Prices <ArrowRight className="size-4" />
+              </a>
             </div>
+
             <div className="mt-10 flex flex-wrap gap-8 text-sm text-bone/70">
               <div><span className="text-gold font-display text-2xl">25+</span> Years Experience</div>
               <div><span className="text-gold font-display text-2xl">2,000+</span> Weddings & Events</div>
