@@ -335,6 +335,10 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
 
       <MenusOpener regionKey={config.regionSlug} pageType="Wedding" />
 
+      <WeddingBuffetEstimator region={region} regionShort={regionShort as "Phoenix" | "San Diego"} />
+
+
+
       {/* TRUST STRIP */}
       <section className="border-y border-white/10 bg-onyx py-10">
         <div className="container-luxe">
