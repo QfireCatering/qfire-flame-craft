@@ -270,8 +270,24 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
     description: `Luxury wedding catering across ${region} — live charcoal grilling, premium steaks, full-service buffets, family-style, and plated dinner service.`,
   };
 
+  const sectionNavItems = [
+    { id: "menus", label: "Menus" },
+    { id: "pricing", label: "Pricing" },
+    { id: "scale", label: "Built for Scale" },
+    { id: "included", label: "What's Included" },
+    { id: "why-qfire", label: "Why Qfire" },
+    { id: "service-styles", label: "Service Styles" },
+    { id: "live-fire", label: "Live Fire" },
+    { id: "steakhouse", label: "Steakhouse" },
+    { id: "process", label: "Process" },
+    { id: "menu-options", label: "Menu Options" },
+    { id: "chef", label: "Chef Terry" },
+    { id: "faq", label: "FAQ" },
+  ];
+
   return (
     <>
+      <SectionNav items={sectionNavItems} />
       {/* HERO */}
       <section className="relative min-h-[88vh] flex items-end overflow-hidden">
         <img src={couple} alt={`Bride and groom enjoying their ${regionShort} wedding reception catered by Qfire`} className="absolute inset-0 w-full h-full object-cover" />
@@ -333,7 +349,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
 
 
       {/* WHY COUPLES CHOOSE QFIRE */}
-      <section className="py-24 lg:py-32">
+      <section id="why-qfire" className="py-24 lg:py-32 scroll-mt-32">
         <div className="container-luxe">
           <div className="max-w-2xl mb-16">
             <div className="eyebrow mb-6">Why Couples Choose Qfire</div>
@@ -360,7 +376,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
       <ScatteredReview review={reviews[0]} />
 
       {/* SERVICE STYLE COMPARISON */}
-      <section className="py-24 lg:py-32 bg-onyx">
+      <section id="service-styles" className="py-24 lg:py-32 bg-onyx scroll-mt-32">
         <div className="container-luxe">
           <div className="max-w-2xl mb-16">
             <div className="eyebrow mb-6">Service Styles</div>
@@ -400,7 +416,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
       <ScatteredReview review={reviews[1]} />
 
       {/* LIVE CHARCOAL GRILLING */}
-      <section className="py-24 lg:py-32">
+      <section id="live-fire" className="py-24 lg:py-32 scroll-mt-32">
         <div className="container-luxe grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="relative aspect-[4/5] overflow-hidden">
             <img src={grilling} alt={`Live charcoal grilling at a ${regionShort} wedding reception`} className="absolute inset-0 w-full h-full object-cover" />
@@ -425,7 +441,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
       </section>
 
       {/* STEAKHOUSE EXPERIENCE */}
-      <section className="py-24 lg:py-32 bg-onyx">
+      <section id="steakhouse" className="py-24 lg:py-32 bg-onyx scroll-mt-32">
         <div className="container-luxe grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="order-2 lg:order-1">
             <div className="eyebrow mb-6">The Signature Live Fire Steakhouse Experience</div>
@@ -447,7 +463,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
       <ScatteredReview review={reviews[2]} />
 
       {/* WHAT HAPPENS NEXT */}
-      <section className="py-24 lg:py-32">
+      <section id="process" className="py-24 lg:py-32 scroll-mt-32">
         <div className="container-luxe">
           <div className="max-w-2xl mb-16">
             <div className="eyebrow mb-6">What Happens Next</div>
@@ -534,7 +550,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
       </section>
 
       {/* MENU OPTIONS GRID */}
-      <section className="py-24 lg:py-32 bg-onyx">
+      <section id="menu-options" className="py-24 lg:py-32 bg-onyx scroll-mt-32">
         <div className="container-luxe">
           <div className="max-w-2xl mb-14">
             <div className="eyebrow mb-6">Menu Options</div>
@@ -582,7 +598,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
       <ScatteredReview review={reviews[4]} />
 
       {/* CITIES WE SERVE */}
-      <section className="py-24 lg:py-32">
+      <section id="service-area" className="py-24 lg:py-32 scroll-mt-32">
         <div className="container-luxe">
           <div className="max-w-2xl mb-12">
             <div className="eyebrow mb-6">{region} Wedding Service Area</div>
@@ -611,7 +627,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
       </section>
 
       {/* CHEF BIO */}
-      <section className="py-24 lg:py-32 bg-onyx">
+      <section id="chef" className="py-24 lg:py-32 bg-onyx scroll-mt-32">
         <div className="container-luxe grid lg:grid-cols-[1fr_1.2fr] gap-12 lg:gap-20 items-center">
           <div className="relative aspect-[4/5] overflow-hidden max-w-md">
             <img src={chef} alt="Chef Terry Matthews — The BBQ Daddy" className="absolute inset-0 w-full h-full object-cover" />
@@ -639,7 +655,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
       />
 
       {/* FAQ */}
-      <section className="py-24 lg:py-32">
+      <section id="faq" className="py-24 lg:py-32 scroll-mt-32">
         <div className="container-luxe">
           <div className="max-w-2xl mb-14">
             <div className="eyebrow mb-6">{regionShort} Wedding Catering FAQ</div>
