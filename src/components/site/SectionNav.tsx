@@ -34,7 +34,7 @@ export function SectionNav({ items }: { items: SectionNavItem[] }) {
     const el = document.getElementById(id);
     if (!el) return;
     const top = el.getBoundingClientRect().top + window.scrollY - 100;
-    smoothScrollTo(top, 1200);
+    smoothScrollTo(top, 2000);
     setActive(id);
     setMobileOpen(false);
   };
