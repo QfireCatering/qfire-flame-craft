@@ -69,7 +69,13 @@ export function Footer() {
             <div className="mt-6 space-y-1.5 text-xs text-muted-foreground">
               {contact.areas.map((a) => <div key={a}>{a}</div>)}
               <div className="pt-2">{contact.hours}</div>
+              <div className="pt-1 text-gold/80">Usually responds within 4 business hours.</div>
             </div>
+            <div className="mt-6 flex flex-wrap gap-3 text-[0.65rem] tracking-[0.25em] uppercase">
+              <a href="https://www.weddingwire.com/reviews/qfire-catering/4c33661ea8bcf7a8.html" target="_blank" rel="noopener noreferrer" className="text-gold border border-gold/40 px-3 py-1.5 hover:bg-gold/10 transition-colors">WeddingWire ★★★★★</a>
+              <a href="https://www.theknot.com/marketplace/qfire-catering-san-diego-ca-531715" target="_blank" rel="noopener noreferrer" className="text-gold border border-gold/40 px-3 py-1.5 hover:bg-gold/10 transition-colors">The Knot ★★★★★</a>
+            </div>
+
           </div>
         </div>
 
