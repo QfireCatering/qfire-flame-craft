@@ -574,7 +574,7 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
       />
 
       {/* FAQ */}
-      <section className="py-24 lg:py-32 bg-onyx">
+      <section id="faq" className="py-24 lg:py-32 bg-onyx scroll-mt-32">
         <div className="container-luxe">
           <div className="max-w-2xl mb-14">
             <div className="eyebrow mb-6">{regionShort} Private Party Catering FAQ</div>
