@@ -6,7 +6,10 @@ import { BookingProcess } from "./BookingProcess";
 import { ObjectionBuster } from "./ObjectionBuster";
 import { MenusOpener } from "./MenusOpener";
 import { SectionNav } from "./SectionNav";
+import { WeddingBuffetEstimator } from "./WeddingBuffetEstimator";
+import { contact } from "@/lib/contact";
 import asSeenOnBadge from "@/assets/as-seen-on-food-network.png.asset.json";
+
 
 import weddingCoupleAsset from "@/assets/wedding-couple.png.asset.json";
 import weddingRealAsset from "@/assets/wedding-real.jpg.asset.json";
