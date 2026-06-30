@@ -301,8 +301,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         </div>
       </section>
 
-      <GuestScaleStat regionKey={config.regionSlug} />
-
+      <MenusOpener regionKey={config.regionSlug} pageType="Wedding" />
 
       {/* TRUST STRIP */}
       <section className="border-y border-white/10 bg-onyx py-10">
@@ -332,7 +331,6 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         </div>
       </section>
 
-      <RegionalPricing regionKey={config.regionSlug} />
 
       {/* WHY COUPLES CHOOSE QFIRE */}
       <section className="py-24 lg:py-32">
