@@ -14,7 +14,7 @@ const sections: Section[] = [
     faqs: [
       {
         q: "💰 What does catering for my event typically cost?",
-        a: "Our pricing is structured on a per-person basis, with the final investment determined by several key factors: total guest count, menu selections (Wood-Fired vs. Signature Live Fire Steakhouse), and desired service style (delivery, buffet, family-style, or plated). View our Surf & Turf / Steakhouse pricing or Wood-Fired dinner pricing for details based on your preferred experience.",
+        a: "Our pricing is structured on a per-person basis, with the final investment determined by several key factors: total guest count, menu selections (Wood-Fired vs. Steakhouse Experience), and desired service style (delivery, buffet, family-style, or plated). View our Surf & Turf / Steakhouse pricing or Wood-Fired dinner pricing for details based on your preferred experience.",
       },
       {
         q: "💡 What is the average cost of catering?",
@@ -72,7 +72,7 @@ const sections: Section[] = [
       },
       {
         q: "What are your minimums?",
-        a: "Wood-Fired Menu: 20 guest minimum in Phoenix Metro; 50 guest minimum in San Diego County. Signature Live Fire Steakhouse Menu: 15 guest minimum in Phoenix Metro; 40 guest minimum in San Diego County. Private Chef Services: 4 guest minimum.",
+        a: "Wood-Fired Menu: 20 guest minimum in Phoenix Metro; 50 guest minimum in San Diego County. Steakhouse Experience Menu: 15 guest minimum in Phoenix Metro; 40 guest minimum in San Diego County. Private Chef Services: 4 guest minimum.",
       },
     ],
   },
