@@ -149,6 +149,12 @@ export function RegionalPricing({ regionKey }: { regionKey: RegionKey }) {
           </p>
         </div>
       </section>
+
+      {/* BUILT FOR SCALE — directly below steakhouse pricing */}
+      <section id="scale" className="scroll-mt-32">
+        <GuestScaleStat regionKey={regionKey} />
+      </section>
     </>
   );
 }
+
