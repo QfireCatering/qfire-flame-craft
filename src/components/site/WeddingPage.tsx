@@ -275,18 +275,21 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
 
   const sectionNavItems = [
     { id: "menus", label: "Menus" },
+    { id: "estimator", label: "100-Guest Estimate" },
+    { id: "included", label: "What's Included" },
     { id: "pricing", label: "Pricing" },
     { id: "scale", label: "Built for Scale" },
-    { id: "included", label: "What's Included" },
     { id: "why-qfire", label: "Why Qfire" },
     { id: "service-styles", label: "Service Styles" },
     { id: "live-fire", label: "Live Fire" },
     { id: "steakhouse", label: "Steakhouse" },
     { id: "process", label: "Process" },
+    { id: "real-reviews", label: "Real Reviews" },
     { id: "menu-options", label: "Menu Options" },
     { id: "chef", label: "Chef Terry" },
     { id: "faq", label: "FAQ" },
   ];
+
 
   return (
     <>
