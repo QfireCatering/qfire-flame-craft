@@ -182,6 +182,9 @@ function RootShell({ children }: { children: ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
+  useEffect(() => {
+    return initSmoothScrollLinks();
+  }, []);
   return (
     <QueryClientProvider client={queryClient}>
       <Nav />
