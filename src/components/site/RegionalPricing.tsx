@@ -109,8 +109,9 @@ export function RegionalPricing({ regionKey }: { regionKey: RegionKey }) {
       </section>
 
       {/* STEAKHOUSE PRICING SUMMARY */}
-      <section className="py-20 lg:py-28 bg-ink border-t border-white/5">
+      <section id="steakhouse-pricing" className="py-20 lg:py-28 bg-ink border-t border-white/5 scroll-mt-32">
         <div className="container-luxe">
+
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="eyebrow justify-center mb-6">Signature Live Fire Steakhouse Catering Experience — Pricing</div>
             <h2 className="heading-lg text-bone">
