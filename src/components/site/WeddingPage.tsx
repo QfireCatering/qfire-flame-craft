@@ -84,7 +84,7 @@ const baseFaqs = [
   },
   {
     q: "Do you grill onsite at the venue?",
-    a: "Yes — live charcoal grilling is one of our signature offerings. We roll in the wood-fired grill and cook ribeyes, picanha, brisket, salmon, and chicken right in front of your guests. The aroma, the visual, the freshness — it's the moment people remember.",
+    a: "Yes — live charcoal grilling is one of our signature offerings. We roll in the wood-fired grill and cook ribeyes, picanha (Brazilian top sirloin cap), brisket, salmon, and chicken right in front of your guests. The aroma, the visual, the freshness — it's the moment people remember.",
   },
   {
     q: "Do you provide bartenders?",
@@ -446,7 +446,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
             <h2 className="heading-lg text-bone">The aroma. The fire. The moment guests remember.</h2>
             <div className="mt-8 space-y-5 text-bone/80 text-lg font-light leading-relaxed">
               <p>Most wedding food is reheated in a back kitchen. Ours is grilled in front of your guests over real hardwood charcoal — the way steak is supposed to be cooked.</p>
-              <p>Ribeyes. New York strips. Picanha. Brick chicken. Fresh seafood. Burgers seared to order. The aroma drifts across the venue. Guests gather. Photos happen. The night levels up.</p>
+              <p>Ribeyes. New York strips. Picanha (the prized Brazilian top sirloin cap). Brick chicken. Fresh seafood. Burgers seared to order. The aroma drifts across the venue. Guests gather. Photos happen. The night levels up.</p>
             </div>
             <ul className="mt-8 grid sm:grid-cols-2 gap-3">
               {["Freshly grilled steaks", "Wood-fired chicken", "Seared fresh seafood", "Live-action carving", "Visual centerpiece", "Restaurant-quality char"].map((x) => (
@@ -467,7 +467,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
             <div className="eyebrow mb-6">The Steakhouse Experience</div>
             <h2 className="heading-lg text-bone">A Steakhouse Experience — brought to your venue.</h2>
             <div className="mt-8 space-y-5 text-bone/80 text-lg font-light leading-relaxed">
-              <p>Charcoal-grilled ribeye, New York strip, filet mignon, picanha, prime rib, salmon, and surf & turf — served under candlelight with polished service and unforgettable presentation.</p>
+              <p>Charcoal-grilled ribeye, New York strip, filet mignon, picanha (Brazilian top sirloin cap), prime rib, salmon, and surf & turf — served under candlelight with polished service and unforgettable presentation.</p>
               <p>The food, the atmosphere, the service. The luxury of a great steakhouse, without leaving your venue. Perfect for luxury weddings, black-tie receptions, and rehearsal dinners across {region}.</p>
             </div>
             <Link to="/steak-seafood-menu" className="inline-flex items-center gap-2 mt-10 text-[0.7rem] tracking-[0.28em] uppercase text-gold border-b border-gold/40 pb-1 hover:border-gold">
