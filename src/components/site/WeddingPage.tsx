@@ -307,10 +307,16 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
             <p className="mt-8 text-xl md:text-2xl text-bone/85 font-light leading-relaxed max-w-2xl">
               Live charcoal grilling, premium steaks, professional staff, and a stress-free experience — trusted by thousands of couples across {region}.
             </p>
-            <div className="mt-10 flex flex-wrap gap-4">
+            <p className="mt-8 text-xl md:text-2xl text-bone/85 font-light leading-relaxed max-w-2xl">
+              Live charcoal grilling, premium steaks, professional staff, and a stress-free experience — trusted by thousands of couples across {region}.
+            </p>
+            <div className="mt-10 flex flex-wrap items-center gap-4">
               <a href="#pricing" className="btn-primary">
                 View Prices <ArrowRight className="size-4" />
               </a>
+              <span className="inline-flex items-center gap-2 text-[0.7rem] tracking-[0.22em] uppercase text-gold/90 border border-gold/30 px-4 py-2.5 bg-gold/5">
+                <Clock className="size-3.5" /> Usually responds within 4 business hours
+              </span>
             </div>
 
             <div className="mt-10 flex flex-wrap gap-8 text-sm text-bone/70">
@@ -319,9 +325,13 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
               <div><span className="text-gold font-display text-2xl">4.9★</span> Couple-Rated</div>
               <div><span className="text-gold font-display text-2xl">Food Network</span> Featured Chef</div>
             </div>
+            <div className="mt-6 text-xs tracking-[0.2em] uppercase text-bone/55">
+              <span className="text-gold/80">Local {regionShort} Team</span> · <a href={contact.phoneHref} className="text-bone hover:text-gold transition-colors">{contact.phone}</a>
+            </div>
           </div>
         </div>
       </section>
+
 
       <MenusOpener regionKey={config.regionSlug} pageType="Wedding" />
 
