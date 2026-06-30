@@ -42,6 +42,15 @@ export function SectionNav({ items }: { items: SectionNavItem[] }) {
 
   return (
     <>
+      <style>{`
+        @keyframes bright-pulse {
+          0%, 100% { transform: scale(1); opacity: 1; box-shadow: 0 0 0 0 oklch(0.78 0.13 82 / 0.7); }
+          50% { transform: scale(1.35); opacity: 1; box-shadow: 0 0 10px 4px oklch(0.78 0.13 82 / 0.35); }
+        }
+        .bright-pulse-dot {
+          animation: bright-pulse 1.4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+      `}</style>
       {/* DESKTOP — pinned upper-right, collapsible */}
       <nav
         aria-label="Page sections"
@@ -52,13 +61,13 @@ export function SectionNav({ items }: { items: SectionNavItem[] }) {
           onClick={() => setOpen((v) => !v)}
           aria-expanded={open}
           aria-label={open ? "Collapse section menu" : "Expand section menu"}
-          className="mb-2 inline-flex items-center gap-2 px-3 py-2 bg-ink/85 backdrop-blur border border-gold/30 text-[0.6rem] tracking-[0.28em] uppercase text-gold hover:bg-ink hover:border-gold/60 transition-colors"
+          className="mb-2 inline-flex items-center gap-3 px-5 py-3 bg-ink/90 backdrop-blur border-2 border-gold/60 text-[0.72rem] tracking-[0.22em] uppercase text-gold hover:bg-ink hover:border-gold transition-colors shadow-[0_0_30px_-8px_oklch(0.78_0.13_82/0.4)]"
         >
-          <span className="size-1.5 rounded-full bg-gold animate-pulse" />
+          <span className="size-3 rounded-full bg-gold bright-pulse-dot" />
           {open ? "Hide" : "On this page"}
         </button>
         {open && (
-          <div className="bg-ink/85 backdrop-blur border border-white/10 shadow-2xl shadow-black/50 py-4 pl-5 pr-6 max-w-[16rem] overflow-y-auto">
+          <div className="bg-ink/90 backdrop-blur border border-white/10 shadow-2xl shadow-black/50 py-4 pl-5 pr-6 max-w-[16rem] overflow-y-auto">
             <ul className="space-y-2.5 border-l border-gold/25 pl-4">
               {items.map((it) => {
                 const isActive = active === it.id;
@@ -94,10 +103,10 @@ export function SectionNav({ items }: { items: SectionNavItem[] }) {
         type="button"
         onClick={() => setMobileOpen(true)}
         aria-label="Open page sections menu"
-        className="lg:hidden fixed top-20 right-3 z-30 inline-flex items-center gap-2 px-3 py-2 bg-ink/90 backdrop-blur border border-gold/40 text-[0.6rem] tracking-[0.25em] uppercase text-gold shadow-lg shadow-black/40"
+        className="lg:hidden fixed top-20 right-3 z-30 inline-flex items-center gap-3 px-5 py-3 bg-ink/95 backdrop-blur border-2 border-gold/60 text-[0.72rem] tracking-[0.22em] uppercase text-gold shadow-[0_0_30px_-8px_oklch(0.78_0.13_82/0.4)]"
       >
-        <Menu className="size-3.5" />
-        <span className="max-w-[8rem] truncate">{activeItem?.label ?? "Sections"}</span>
+        <Menu className="size-5" />
+        <span className="max-w-[10rem] truncate font-semibold">{activeItem?.label ?? "Sections"}</span>
       </button>
 
       {mobileOpen && (
