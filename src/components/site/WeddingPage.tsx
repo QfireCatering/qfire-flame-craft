@@ -674,6 +674,48 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         {...definitiveCopy.wedding}
       />
 
+      {/* REAL REVIEWS — independent third-party platforms */}
+      <section id="real-reviews" className="py-20 lg:py-28 bg-onyx border-y border-white/10 scroll-mt-32">
+        <div className="container-luxe">
+          <div className="max-w-2xl mx-auto text-center mb-12">
+            <div className="eyebrow justify-center mb-6">Real Couples · Verified Reviews</div>
+            <h2 className="heading-lg text-bone">Don't take our word for it.</h2>
+            <p className="mt-5 text-bone/70 text-lg font-light">
+              Read verified reviews from real Qfire couples on the two platforms brides trust most.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+            <a
+              href="https://www.weddingwire.com/reviews/qfire-catering/4c33661ea8bcf7a8.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group p-8 lg:p-10 border border-gold/30 bg-ink/70 hover:bg-ink hover:border-gold transition-all text-center"
+            >
+              <div className="text-[0.65rem] tracking-[0.3em] uppercase text-gold mb-3">WeddingWire</div>
+              <div className="font-display text-2xl text-bone group-hover:text-gold transition-colors">Read Verified Reviews</div>
+              <div className="flex justify-center gap-1 mt-4">
+                {[0,1,2,3,4].map((i) => <Star key={i} className="size-4 fill-gold text-gold" />)}
+              </div>
+              <div className="mt-4 text-xs tracking-[0.2em] uppercase text-bone/60">View on WeddingWire →</div>
+            </a>
+            <a
+              href="https://www.theknot.com/marketplace/qfire-catering-san-diego-ca-531715"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group p-8 lg:p-10 border border-gold/30 bg-ink/70 hover:bg-ink hover:border-gold transition-all text-center"
+            >
+              <div className="text-[0.65rem] tracking-[0.3em] uppercase text-gold mb-3">The Knot</div>
+              <div className="font-display text-2xl text-bone group-hover:text-gold transition-colors">Read Verified Reviews</div>
+              <div className="flex justify-center gap-1 mt-4">
+                {[0,1,2,3,4].map((i) => <Star key={i} className="size-4 fill-gold text-gold" />)}
+              </div>
+              <div className="mt-4 text-xs tracking-[0.2em] uppercase text-bone/60">View on The Knot →</div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+
       {/* FAQ */}
       <section id="faq" className="py-24 lg:py-32 scroll-mt-32">
         <div className="container-luxe">
