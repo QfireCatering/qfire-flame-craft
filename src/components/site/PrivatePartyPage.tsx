@@ -50,8 +50,8 @@ export interface PrivatePartyRegionConfig {
 }
 
 const baseFaqs = [
-  { q: "How much does private party catering cost?", a: "Most Qfire private parties land between $48 and $165 per guest depending on menu (Wood-Fire buffet vs. plated Signature Live Fire Steakhouse Catering vs. surf & turf), staffing, live-fire grilling, bar service, and rentals. Every proposal is fully itemized — no hidden fees, no surprise gratuity tricks." },
-  { q: "Can I customize my menu?", a: "Yes — completely. Chef Terry designs every menu around your guests, your dietary needs, your budget, and the vibe you want. Wood-Fire, Signature Live Fire Steakhouse Catering, surf & turf, taco bar, brunch, late-night bites — you choose, we build." },
+  { q: "How much does private party catering cost?", a: "Most Qfire private parties land between $48 and $165 per guest depending on menu (Wood-Fire buffet vs. plated Steakhouse Experience vs. surf & turf), staffing, live-fire grilling, bar service, and rentals. Every proposal is fully itemized — no hidden fees, no surprise gratuity tricks." },
+  { q: "Can I customize my menu?", a: "Yes — completely. Chef Terry designs every menu around your guests, your dietary needs, your budget, and the vibe you want. Wood-Fire, Steakhouse Experience, surf & turf, taco bar, brunch, late-night bites — you choose, we build." },
   { q: "Do you grill onsite?", a: "Yes. Live charcoal grilling is our signature. We bring the wood-fired grill to your backyard, pool deck, estate, park, rooftop, or rental venue and cook fresh steaks, brisket, chicken, salmon, and burgers right in front of your guests." },
   { q: "Do you travel?", a: "Yes. We cater private parties across the entire region — backyards, private homes, estates, rented venues, parks, and vacation rentals. Travel fees only apply for events well outside our standard service area." },
   { q: "Can you accommodate dietary restrictions?", a: "Always. Vegetarian, vegan, gluten-free, dairy-free, kosher-style, and halal-friendly options are standard. For nut and shellfish allergies we run a dedicated prep line and clearly label every dish." },
@@ -59,7 +59,7 @@ const baseFaqs = [
   { q: "Do you provide rentals?", a: "Yes. Linens, chinaware, glassware, flatware, chafers, bistro tables, lounge furniture, tents, dance floors, and lighting through trusted partners — billed at cost and coordinated by our team." },
   { q: "Do you provide setup?", a: "Yes. Our team arrives early, stages the buffet, builds beautiful displays, sets the bar, and gets everything photo-ready before your first guest walks in." },
   { q: "Do you handle cleanup?", a: "Yes. Full breakdown, trash bagged, surfaces wiped, equipment removed. Your kitchen will be cleaner than when we arrived." },
-  { q: "Can we change our menu later?", a: "Yes. The 35% Date Charge holds your date — menus stay flexible until roughly 14 days before the party and guest counts until about 7 days out." },
+  { q: "Can we change our menu later?", a: "Yes. The 35% Date Retainer holds your date — menus stay flexible until roughly 14 days before the party and guest counts until about 7 days out." },
   { q: "Can we update guest counts later?", a: "Yes. Guest counts can move up or down right up until your final headcount lock about 7 days before the event." },
   { q: "Do you provide vegetarian options?", a: "Absolutely — wood-fired vegetables, grain bowls, stuffed portobellos, composed salads, and chef-driven plant-forward entrees." },
   { q: "Do you provide vegan options?", a: "Yes — fully plant-based menus including grilled vegetable platters, plant-protein entrees, vegan sides, and dairy-free desserts." },
@@ -68,12 +68,12 @@ const baseFaqs = [
   { q: "Can you cater parks?", a: "Yes. We regularly cater park gatherings, family reunions, and outdoor celebrations with permits, generators, and self-contained setups." },
   { q: "Can you cater private homes?", a: "Yes — private estates, vacation rentals, condos, and luxury homes. We work cleanly, professionally, and discreetly in any home environment." },
   { q: "Can you handle large guest counts?", a: "Yes. We routinely execute private parties from 20 intimate guests to 500+ family reunions and milestone celebrations." },
-  { q: "What service style is best?", a: "It depends on the vibe. Casual backyards love buffet or family style. Milestone birthdays and anniversaries love plated Signature Steakhouse Catering. Pool parties love drop-off + bartender. We'll help you choose." },
+  { q: "What service style is best?", a: "It depends on the vibe. Casual backyards love buffet or family style. Milestone birthdays and anniversaries love plated Steakhouse Experience. Pool parties love drop-off + bartender. We'll help you choose." },
 ];
 
 const whyChoose = [
   { icon: Flame, title: "Live Charcoal Grilling", body: "The grill becomes the centerpiece. Guests gather, the aroma drifts, and the party levels up before dinner is even served." },
-  { icon: Sparkles, title: "Restaurant-Quality Food", body: "Fresh off the grill, plated like a live-fire steakhouse experience — not steam-pan party food. The kind of food guests text you about the next day." },
+  { icon: Sparkles, title: "Restaurant-Quality Food", body: "Fresh off the grill, plated like a Steakhouse Experience — not steam-pan party food. The kind of food guests text you about the next day." },
   { icon: Users, title: "Professional Staff", body: "Uniformed, friendly, polished. Servers, bartenders, and chefs who know how to read a room and elevate the energy." },
   { icon: Heart, title: "Stress-Free Hosting", body: "You won't touch a chafer, a trash bag, or a cocktail shaker. Show up, hug your guests, and actually enjoy your own party." },
   { icon: Star, title: "Beautiful Presentation", body: "Buffets, carving stations, and plated courses built to be photographed — the party looks as good as it tastes." },
@@ -118,7 +118,7 @@ const timelineSteps = [
   { n: "01", title: "Request Your Quote", body: "Send your date, headcount, and party vibe — takes about 90 seconds." },
   { n: "02", title: "We'll Contact You Personally", body: "A real person — not a chatbot — calls or emails within 24 hours." },
   { n: "03", title: "Customize Your Menu", body: "Wood-Fire, chef-attended steakhouse buffet, surf & turf, bar program — designed around your party." },
-  { n: "04", title: "Reserve Your Date", body: "35% Date Charge holds the date and the team — applied to your final invoice." },
+  { n: "04", title: "Reserve Your Date", body: "35% Date Retainer holds the date and the team — applied to your final invoice." },
   { n: "05", title: "Finalize Guest Count Later", body: "Headcount and menu adjustments lock 7–14 days before your party." },
   { n: "06", title: "Enjoy Your Party", body: "Setup, service, live-fire grilling, bar, breakdown — handled. You just host." },
 ];
@@ -394,7 +394,7 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
             <div className="eyebrow mb-6">Wood-Fire + live-fire dinner service Experience</div>
             <h2 className="heading-lg text-bone">Most caterers offer one style. We bring both.</h2>
             <div className="mt-8 space-y-5 text-bone/80 text-lg font-light leading-relaxed">
-              <p>Qfire is the rare caterer that fluently speaks both languages — authentic, slow-smoked Wood-Fire and a true Signature Steakhouse Catering experience. Charcoal-grilled ribeye, NY strip, filet mignon, picanha, prime rib, salmon, surf & turf alongside brisket, ribs, pulled pork, and smoked chicken.</p>
+              <p>Qfire is the rare caterer that fluently speaks both languages — authentic, slow-smoked Wood-Fire and a true Steakhouse Experience experience. Charcoal-grilled ribeye, NY strip, filet mignon, picanha, prime rib, salmon, surf & turf alongside brisket, ribs, pulled pork, and smoked chicken.</p>
               <p>That gives you more flexibility, more creativity in your menu, and the ability to design a party that doesn't feel like every other catered event in {region}.</p>
             </div>
             <div className="mt-10 flex flex-wrap gap-4">
@@ -403,7 +403,7 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
             </div>
           </div>
           <div className="order-1 lg:order-2 relative aspect-[4/5] overflow-hidden">
-            <img src={steak} alt={`Premium live-fire steakhouse experience plates served at a ${regionShort} private party`} className="absolute inset-0 w-full h-full object-cover" />
+            <img src={steak} alt={`Premium Steakhouse Experience plates served at a ${regionShort} private party`} className="absolute inset-0 w-full h-full object-cover" />
           </div>
         </div>
       </section>
@@ -437,12 +437,12 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
         <div className="container-luxe grid lg:grid-cols-[1fr_1.4fr] gap-12 lg:gap-20">
           <div>
             <div className="gold-rule mb-8" />
-            <div className="eyebrow mb-6">The 35% Date Charge</div>
+            <div className="eyebrow mb-6">The 35% Date Retainer</div>
             <h2 className="heading-md text-bone">Lock the date. Not the menu.</h2>
           </div>
           <div>
             <p className="text-bone/85 text-lg font-light leading-relaxed">
-              Your private party date is secured with a <strong className="text-gold">35% Date Charge</strong> — applied directly to your final invoice. It reserves our team and equipment for your date and nothing more.
+              Your private party date is secured with a <strong className="text-gold">35% Date Retainer</strong> — applied directly to your final invoice. It reserves our team and equipment for your date and nothing more.
             </p>
             <ul className="mt-8 space-y-4">
               {[

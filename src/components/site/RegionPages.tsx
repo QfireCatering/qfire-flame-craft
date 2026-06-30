@@ -63,7 +63,7 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
     { q: `Do you bring everything to the venue?`, a: `Yes. We arrive with chefs, uniformed servers, live-fire grills, hot-holding equipment, buffet displays, serviceware, and any rentals you've added. Setup is done before guests arrive and full breakdown is included — your venue manager will ask for our card.` },
     { q: `Are you licensed and insured in ${r.state}?`, a: `Yes — fully licensed and insured, COI-ready for any ${r.shortName} venue, including liquor liability for our bartending services.` },
     { q: `Can our menu be customized?`, a: `Always. Every Qfire menu is built from scratch around your taste, your dietary needs, your guest list, and your venue. Wood-Fire, premium steakhouse, surf & turf, brunch, late-night bites — Chef Terry designs it with you, and revisions are expected up until final lock.` },
-    { q: `What happens after I request a quote?`, a: `A real person — usually Chef Terry or your account lead — calls or emails within 24 hours. We talk through your event, send an itemized proposal, refine the menu together, and lock the date with a 35% Date Charge that's applied directly to your final invoice.` },
+    { q: `What happens after I request a quote?`, a: `A real person — usually Chef Terry or your account lead — calls or emails within 24 hours. We talk through your event, send an itemized proposal, refine the menu together, and lock the date with a 35% Date Retainer that's applied directly to your final invoice.` },
   ];
   const localBusinessSchema = {
     "@context": "https://schema.org",
@@ -115,7 +115,7 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
 
       <AnswerBox
         question={`How much does catering cost in ${r.name}?`}
-        answer={`Qfire Catering serves ${r.name} with wood-fired catering from ${regionKey === "phoenix" ? "$12.99" : "$15.99"} per guest and a Signature Live Fire Steakhouse Experience from ${regionKey === "phoenix" ? "$74" : "$79"} per guest. Pricing is all-in for menu, full-service staff, setup and breakdown. Chef Terry Matthews — featured on Food Network — personally designs every menu.`}
+        answer={`Qfire Catering serves ${r.name} with wood-fired catering from ${regionKey === "phoenix" ? "$12.99" : "$15.99"} per guest and a Steakhouse Experience from ${regionKey === "phoenix" ? "$74" : "$79"} per guest. Pricing is all-in for menu, full-service staff, setup and breakdown. Chef Terry Matthews — featured on Food Network — personally designs every menu.`}
         bullets={[
           regionKey === "phoenix"
             ? "1-Meat Wood-Fire $12.99 · 2-Meat $17.99 · 3-Meat $25.99 / guest"

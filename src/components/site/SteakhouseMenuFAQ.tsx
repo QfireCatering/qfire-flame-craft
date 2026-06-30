@@ -11,8 +11,8 @@ function buildFaqs(regionKey: RegionKey) {
   const p = REGION_PRICING[regionKey];
   return [
     {
-      q: `How much does the ${p.region} Signature Live Fire Steakhouse Catering Experience cost per guest?`,
-      a: `Our ${p.region} pricing starts at ${p.buffet} per guest for the Full-Service Buffet, ${p.family} per guest for Family Style, and ${p.plated} per guest for Plated Signature Live Fire Steakhouse Catering Service. Final pricing depends on protein selections, guest count, venue, and any add-ons like bar service or premium upgrades.`,
+      q: `How much does the ${p.region} Steakhouse Experience Experience cost per guest?`,
+      a: `Our ${p.region} pricing starts at ${p.buffet} per guest for the Full-Service Buffet, ${p.family} per guest for Family Style, and ${p.plated} per guest for Plated Steakhouse Experience Service. Final pricing depends on protein selections, guest count, venue, and any add-ons like bar service or premium upgrades.`,
     },
     {
       q: "What's included in the per-guest price?",
@@ -20,15 +20,15 @@ function buildFaqs(regionKey: RegionKey) {
     },
     {
       q: "Is there a minimum guest count?",
-      a: "The Signature Live Fire Steakhouse Experience is built for events of 30 guests or more. For intimate dinners under 30, we'll build a custom proposal — reach out and we'll quote your event directly.",
+      a: "The Steakhouse Experience is built for events of 30 guests or more. For intimate dinners under 30, we'll build a custom proposal — reach out and we'll quote your event directly.",
     },
     {
       q: "Can you accommodate dietary restrictions and allergies?",
       a: "Yes. Every menu can be adapted for vegetarian, vegan, gluten-free, dairy-free, and Halal needs. For serious allergies (peanut, tree-nut, shellfish), we run a dedicated prep line and label each plate at the pass.",
     },
     {
-      q: "How far in advance should we book the live-fire steakhouse experience Experience?",
-      a: "Peak Saturdays (March–November) typically book 6–12 months out. Off-peak weeknights and Sundays can often be accommodated inside 60–90 days. Premium dates lock in with a 35% Date Charge applied to your final invoice.",
+      q: "How far in advance should we book the Steakhouse Experience Experience?",
+      a: "Peak Saturdays (March–November) typically book 6–12 months out. Off-peak weeknights and Sundays can often be accommodated inside 60–90 days. Premium dates lock in with a 35% Date Retainer applied to your final invoice.",
     },
     {
       q: "Is bar service included?",

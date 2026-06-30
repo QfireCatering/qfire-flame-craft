@@ -54,7 +54,7 @@ export function weddingConfig(o: ServiceTemplateOptions = {}): ServicePageConfig
     title: r ? <>{o.regionShort} <span className="italic text-gold font-light">wedding</span> catering.</> : <>A wedding meal <span className="italic text-gold font-light">they'll remember.</span></>,
     subtitle: r
       ? `Full-service wedding catering across ${r}. Wood-fired flavors, refined presentation, stress-free execution — from rehearsal to last dance.`
-      : "Full-service wedding catering with the warmth of a backyard and the polish of a Signature Live Fire Steakhouse Catering. Plated dinners, live-fire stations, buffets and family-style — built around your day.",
+      : "Full-service wedding catering with the warmth of a backyard and the polish of a Steakhouse Experience. Plated dinners, live-fire stations, buffets and family-style — built around your day.",
     heroImage: weddingTable,
     intro: {
       heading: "Your day, plated.",
@@ -157,7 +157,7 @@ export function privatePartyConfig(o: ServiceTemplateOptions = {}): ServicePageC
     intro: {
       heading: "Your home. Our kitchen.",
       body: [
-        "We bring the wood-fired grill to your backyard, the Signature Live Fire Steakhouse Catering to your dining room, and a full team to keep everything running.",
+        "We bring the wood-fired grill to your backyard, the Steakhouse Experience to your dining room, and a full team to keep everything running.",
         "Small enough to feel personal. Polished enough to feel professional.",
       ],
     },
@@ -235,7 +235,7 @@ export function woodFiredConfig(o: ServiceTemplateOptions = {}): ServicePageConf
 export function steakhouseConfig(o: ServiceTemplateOptions = {}): ServicePageConfig {
   const r = o.region;
   return {
-    eyebrow: r ? `${r} Signature Steakhouse Catering` : "live-fire steakhouse experience",
+    eyebrow: r ? `${r} Steakhouse Experience` : "Steakhouse Experience",
     title: r ? <>{o.regionShort} <span className="italic text-gold font-light">Luxury Steakhouse Dining</span> catering.</> : <>The chef-attended steakhouse buffet Experience... <span className="italic text-gold font-light">Brought To You.</span></>,
     subtitle: r
       ? `Charcoal-grilled ribeye, New York strip, filet mignon, picanha, prime rib, salmon, and surf & turf served under candlelight with polished service and unforgettable presentation across ${r}. Perfect for luxury weddings, corporate dinners, and private events.`
@@ -267,7 +267,7 @@ export function steakhouseConfig(o: ServiceTemplateOptions = {}): ServicePageCon
     galleryImages: [steak, weddingTable, corporate, buffet, heroFire, brisket],
     ctaTitle: "Plan a wood-fired steakhouse experience evening.",
     definitiveKey: "steakhouse",
-    definitiveTopic: "Signature Live Fire Steakhouse Catering",
+    definitiveTopic: "Steakhouse Experience",
   };
 }
 

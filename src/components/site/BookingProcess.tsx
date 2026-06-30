@@ -30,7 +30,7 @@ const STEPS = [
     icon: CalendarCheck,
     n: "04",
     t: "Lock your date",
-    b: "A 35% Date Charge secures your event and credits 100% toward your final invoice. Rescheduling stays flexible — your deposit holds as a credit toward one future event within a year (minimum 80% of original value).",
+    b: "A 35% Date Retainer secures your event and credits 100% toward your final invoice. Rescheduling stays flexible — your deposit holds as a credit toward one future event within a year (minimum 80% of original value).",
   },
   {
     icon: Sparkles,

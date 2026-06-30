@@ -27,7 +27,7 @@ export const Route = createFileRoute("/corporate-catering-phoenix")({
       { property: "og:description", content: "On-time, professional, restaurant-quality corporate catering across Phoenix Metro. Office lunches, executive dinners, holiday parties, construction-site lunches, live-fire grilling." },
       { property: "og:url", content: "https://qfire-flame-craft.lovable.app/corporate-catering-phoenix" },
       { property: "og:type", content: "website" },
-      { name: "keywords", content: "Phoenix corporate catering, Scottsdale corporate caterer, office catering Phoenix, executive catering Scottsdale, holiday party catering Phoenix, employee appreciation catering Phoenix, construction site catering Phoenix, business catering Mesa, company catering Chandler, corporate Wood-Fire catering Phoenix, corporate Signature Live Fire Steakhouse Catering Scottsdale, office lunch catering Tempe, conference catering Phoenix" },
+      { name: "keywords", content: "Phoenix corporate catering, Scottsdale corporate caterer, office catering Phoenix, executive catering Scottsdale, holiday party catering Phoenix, employee appreciation catering Phoenix, construction site catering Phoenix, business catering Mesa, company catering Chandler, corporate Wood-Fire catering Phoenix, corporate Steakhouse Experience Scottsdale, office lunch catering Tempe, conference catering Phoenix" },
     ],
     links: [{ rel: "canonical", href: "https://qfire-flame-craft.lovable.app/corporate-catering-phoenix" }],
   }),

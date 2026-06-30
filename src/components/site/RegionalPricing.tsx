@@ -113,9 +113,9 @@ export function RegionalPricing({ regionKey }: { regionKey: RegionKey }) {
         <div className="container-luxe">
 
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <div className="eyebrow justify-center mb-6">Signature Live Fire Steakhouse Catering Experience — Pricing</div>
+            <div className="eyebrow justify-center mb-6">Steakhouse Experience Experience — Pricing</div>
             <h2 className="heading-lg text-bone">
-              Surf &amp; Turf Signature Live Fire Steakhouse Catering starting at <span className="text-gold italic font-light">{isPhx ? "$74" : "$79"}/guest.</span>
+              Surf &amp; Turf Steakhouse Experience starting at <span className="text-gold italic font-light">{isPhx ? "$74" : "$79"}/guest.</span>
             </h2>
             <p className="mt-5 text-bone/65 text-base font-light">
               Live charcoal grilling, white-glove service, and restaurant-quality presentation at your {r.shortName} venue.

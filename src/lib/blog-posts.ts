@@ -85,7 +85,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        h2: "How to plate it like a Signature Live Fire Steakhouse Catering",
+        h2: "How to plate it like a Steakhouse Experience",
         p: [
           "Slice against the grain at pencil thickness. Fan three slices off-center on warm white china. Add a smear of horseradish creme, a pinch of finishing salt, and a microgreen — that is it. No sauce drowning the bark.",
           "For family-style, carve at the table on a maple board. The smell hits the room before the first fork.",
@@ -126,7 +126,7 @@ export const blogPosts: BlogPost[] = [
       {
         h2: "Menu architecture for serious conversations",
         p: [
-          "Three courses, not five. A shared crudo or charcuterie to break the ice, a Signature Live Fire Steakhouse Catering main (filet, ribeye, or surf and turf), and a single dessert with espresso. Nothing that requires a fork-and-knife performance while someone is mid-pitch.",
+          "Three courses, not five. A shared crudo or charcuterie to break the ice, a Steakhouse Experience main (filet, ribeye, or surf and turf), and a single dessert with espresso. Nothing that requires a fork-and-knife performance while someone is mid-pitch.",
           "Pre-select the menu. Choice is great for weddings and terrible for term sheets.",
         ],
       },
@@ -147,7 +147,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "signature-steakhouse-at-home-private-dinners",
-    title: "live-fire steakhouse experience at home: a guide to upscale catering for private dinners.",
+    title: "Steakhouse Experience at home: a guide to upscale catering for private dinners.",
     category: "Planning Guides",
     date: "January 2026",
     isoDate: "2026-01-22",

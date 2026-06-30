@@ -53,7 +53,7 @@ export interface WeddingRegionConfig {
 const baseFaqs = [
   {
     q: "How much does luxury wedding catering cost?",
-    a: "Most full-service Qfire weddings land between $95 and $185 per guest depending on protein selection (Wood-Fire vs. Signature Live Fire Steakhouse Catering vs. surf & turf), service style, bar package, rentals, and staffing. Every proposal is itemized — no hidden fees, no surprise gratuities.",
+    a: "Most full-service Qfire weddings land between $95 and $185 per guest depending on protein selection (Wood-Fire vs. Steakhouse Experience vs. surf & turf), service style, bar package, rentals, and staffing. Every proposal is itemized — no hidden fees, no surprise gratuities.",
   },
   {
     q: "Can our wedding menu be fully customized?",
@@ -68,12 +68,12 @@ const baseFaqs = [
     a: "Absolutely. Couples seriously considering Qfire are invited to a private chef's-table tasting with Chef Terry. You'll sample your proposed entrees, sides, and a signature cocktail, then refine the menu in real time before contracts are finalized.",
   },
   {
-    q: "How does the 35% Date Charge work?",
-    a: "Your wedding date is reserved with a 35% Date Charge applied directly to your final invoice. It locks in your date and our team — it does NOT lock in your menu, guest count, or service style. Those can all change as your planning evolves.",
+    q: "How does the 35% Date Retainer work?",
+    a: "Your wedding date is reserved with a 35% Date Retainer applied directly to your final invoice. It locks in your date and our team — it does NOT lock in your menu, guest count, or service style. Those can all change as your planning evolves.",
   },
   {
     q: "Can we change our menu after we book?",
-    a: "Yes. Most couples refine their menu several times between booking and the final tasting. We expect it. Your Date Charge holds the date and the team — the menu is a living document until roughly 30 days out.",
+    a: "Yes. Most couples refine their menu several times between booking and the final tasting. We expect it. Your Date Retainer holds the date and the team — the menu is a living document until roughly 30 days out.",
   },
   {
     q: "Can we update our guest count later?",
@@ -192,7 +192,7 @@ const timelineSteps = [
   { n: "01", title: "Request a Quote", body: "Submit your date, venue, and rough guest count. Takes about 90 seconds." },
   { n: "02", title: "We Personally Contact You", body: "A real person — usually Chef Terry or your account lead — calls within 24 hours." },
   { n: "03", title: "Customize Your Menu", body: "We design a proposal around your taste, venue, and guest list. Revise as much as you want." },
-  { n: "04", title: "Reserve Your Date", body: "Lock in your wedding with a 35% Date Charge — applied directly to your final invoice." },
+  { n: "04", title: "Reserve Your Date", body: "Lock in your wedding with a 35% Date Retainer — applied directly to your final invoice." },
   { n: "05", title: "Finalize Guest Count Later", body: "Final headcount and menu adjustments lock 14–30 days before the wedding." },
   { n: "06", title: "Enjoy Your Wedding", body: "We handle setup, service, live-fire grilling, bar, and cleanup. You spend the night with your guests." },
 ];
@@ -236,7 +236,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
     url: path,
     telephone: "+1-602-555-0123",
     priceRange: "$$$",
-    servesCuisine: ["Wood-Fire", "Signature Live Fire Steakhouse Catering", "American", "Wedding Catering"],
+    servesCuisine: ["Wood-Fire", "Steakhouse Experience", "American", "Wedding Catering"],
     areaServed: cities.map((c) => ({ "@type": "City", name: c })),
     aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "400" },
   };
@@ -444,8 +444,8 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
       <section id="steakhouse" className="py-24 lg:py-32 bg-onyx scroll-mt-32">
         <div className="container-luxe grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="order-2 lg:order-1">
-            <div className="eyebrow mb-6">The Signature Live Fire Steakhouse Experience</div>
-            <h2 className="heading-lg text-bone">A live-fire steakhouse experience — brought to your venue.</h2>
+            <div className="eyebrow mb-6">The Steakhouse Experience</div>
+            <h2 className="heading-lg text-bone">A Steakhouse Experience — brought to your venue.</h2>
             <div className="mt-8 space-y-5 text-bone/80 text-lg font-light leading-relaxed">
               <p>Charcoal-grilled ribeye, New York strip, filet mignon, picanha, prime rib, salmon, and surf & turf — served under candlelight with polished service and unforgettable presentation.</p>
               <p>The food, the atmosphere, the service. The luxury of a great steakhouse, without leaving your venue. Perfect for luxury weddings, black-tie receptions, and rehearsal dinners across {region}.</p>
@@ -489,12 +489,12 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         <div className="container-luxe grid lg:grid-cols-[1fr_1.4fr] gap-12 lg:gap-20">
           <div>
             <div className="gold-rule mb-8" />
-            <div className="eyebrow mb-6">The 35% Date Charge</div>
+            <div className="eyebrow mb-6">The 35% Date Retainer</div>
             <h2 className="heading-md text-bone">Lock the date. Not the menu.</h2>
           </div>
           <div>
             <p className="text-bone/85 text-lg font-light leading-relaxed">
-              Your wedding date is secured with a <strong className="text-gold">35% Date Charge</strong> — applied directly to your final invoice. It reserves our team for your day and nothing more.
+              Your wedding date is secured with a <strong className="text-gold">35% Date Retainer</strong> — applied directly to your final invoice. It reserves our team for your day and nothing more.
             </p>
             <ul className="mt-8 space-y-4">
               {[

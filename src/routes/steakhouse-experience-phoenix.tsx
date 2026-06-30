@@ -6,16 +6,16 @@ const r: RegionCopy = {
   city: "Phoenix",
   region: "Phoenix Metro",
   serviceAreas:
-    "Qfire Catering brings the Signature Live Fire Steakhouse Catering experience to every corner of the Phoenix Metro — Scottsdale, Paradise Valley, Arcadia, Phoenix, Cave Creek, Carefree, Fountain Hills, Mesa, Gilbert, Chandler, Tempe, Queen Creek, Peoria, Glendale and beyond. Onsite charcoal grilling, surf and turf, and luxury catering across the Valley.",
+    "Qfire Catering brings the Steakhouse Experience experience to every corner of the Phoenix Metro — Scottsdale, Paradise Valley, Arcadia, Phoenix, Cave Creek, Carefree, Fountain Hills, Mesa, Gilbert, Chandler, Tempe, Queen Creek, Peoria, Glendale and beyond. Onsite charcoal grilling, surf and turf, and luxury catering across the Valley.",
   shortAreas: ["Scottsdale", "Paradise Valley", "Arcadia", "Phoenix", "Cave Creek", "Fountain Hills", "Mesa", "Gilbert", "Chandler", "Tempe", "Peoria", "Glendale"],
 };
 
 export const Route = createFileRoute("/steakhouse-experience-phoenix")({
   head: () => ({
     meta: [
-      { title: "Signature Live Fire Steakhouse Catering Phoenix — Surf & Turf, Onsite Charcoal Grilling | Qfire" },
-      { name: "description", content: "Luxury Signature Steakhouse Catering in the Phoenix Metro. Ribeye, filet mignon, prime rib, salmon and lobster — grilled live onsite at Phoenix, Scottsdale and Paradise Valley weddings, corporate events and private parties. Buffet from $74/pp · Plated from $128/pp." },
-      { property: "og:title", content: "live-fire steakhouse experience Phoenix | Qfire" },
+      { title: "Steakhouse Experience Phoenix — Surf & Turf, Onsite Charcoal Grilling | Qfire" },
+      { name: "description", content: "Luxury Steakhouse Experience in the Phoenix Metro. Ribeye, filet mignon, prime rib, salmon and lobster — grilled live onsite at Phoenix, Scottsdale and Paradise Valley weddings, corporate events and private parties. Buffet from $74/pp · Plated from $128/pp." },
+      { property: "og:title", content: "Steakhouse Experience Phoenix | Qfire" },
       { property: "og:description", content: "Live charcoal grilling, surf & turf and white-glove service across the Phoenix Metro — weddings, corporate dinners and luxury private parties." },
       { property: "og:url", content: "https://qfire-flame-craft.lovable.app/steakhouse-experience-phoenix" },
       { property: "og:image", content: steakhouseBackyard.url },
@@ -27,8 +27,8 @@ export const Route = createFileRoute("/steakhouse-experience-phoenix")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Service",
-          name: "Signature Live Fire Steakhouse Catering — Phoenix Metro",
-          serviceType: "Surf & Turf Signature Live Fire Steakhouse Catering",
+          name: "Steakhouse Experience — Phoenix Metro",
+          serviceType: "Surf & Turf Steakhouse Experience",
           provider: { "@type": "FoodEstablishment", name: "Qfire Catering" },
           areaServed: [
             { "@type": "City", name: "Phoenix" },

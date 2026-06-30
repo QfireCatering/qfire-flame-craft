@@ -13,8 +13,8 @@ import { definitiveCopy } from "@/lib/definitive-copy";
 export const Route = createFileRoute("/menus")({
   head: () => ({
     meta: [
-      { title: "Catering Menus — Wood-Fired BBQ & Signature Live Fire Steakhouse Catering | Qfire" },
-      { name: "description", content: "Explore Qfire Catering menus: slow-smoked wood-fired and hand-cut Signature Live Fire Steakhouse Catering plates. Phoenix Metro & San Diego County." },
+      { title: "Catering Menus — Wood-Fired BBQ & Steakhouse Experience | Qfire" },
+      { name: "description", content: "Explore Qfire Catering menus: slow-smoked wood-fired and hand-cut Steakhouse Experience plates. Phoenix Metro & San Diego County." },
       { property: "og:title", content: "Menus — Qfire" },
       { property: "og:url", content: "https://qfire-flame-craft.lovable.app/menus" },
     ],

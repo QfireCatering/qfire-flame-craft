@@ -23,7 +23,7 @@ const DEFAULT_OBJECTIONS: Objection[] = [
   },
   {
     q: "What does the deposit look like? Is it refundable?",
-    a: "A 35% Date Charge secures your event date and credits 100% toward your final invoice. If you need to reschedule due to weather or emergency, your payment holds as a credit toward one future event within a year (minimum 80% of original contracted value). No surprise fees, ever.",
+    a: "A 35% Date Retainer secures your event date and credits 100% toward your final invoice. If you need to reschedule due to weather or emergency, your payment holds as a credit toward one future event within a year (minimum 80% of original contracted value). No surprise fees, ever.",
   },
   {
     q: "Will there be enough food — and will it stay hot?",

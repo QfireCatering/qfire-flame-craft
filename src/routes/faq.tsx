@@ -22,7 +22,7 @@ const sections: Section[] = [
       },
       {
         q: "📅 How is my event secured?",
-        a: "A 35% initial payment, referred to as the Date Charge, is required to secure your event date. Once processed, your date is exclusively reserved.",
+        a: "A 35% initial payment, referred to as the Date Retainer, is required to secure your event date. Once processed, your date is exclusively reserved.",
       },
       {
         q: "🔁 What is your rescheduling policy?",

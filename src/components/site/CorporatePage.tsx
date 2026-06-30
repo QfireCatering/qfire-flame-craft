@@ -45,7 +45,7 @@ export interface CorporateRegionConfig {
 }
 
 const baseFaqs = [
-  { q: "How much does corporate catering cost?", a: "Most Qfire corporate events land between $32 and $145 per guest depending on menu (drop-off vs. buffet vs. plated Signature Live Fire Steakhouse Catering), staffing, live-fire stations, bar service, and rentals. Every proposal is itemized — no hidden fees, no surprise service charges, and clean invoicing your AP team will appreciate." },
+  { q: "How much does corporate catering cost?", a: "Most Qfire corporate events land between $32 and $145 per guest depending on menu (drop-off vs. buffet vs. plated Steakhouse Experience), staffing, live-fire stations, bar service, and rentals. Every proposal is itemized — no hidden fees, no surprise service charges, and clean invoicing your AP team will appreciate." },
   { q: "Can you accommodate last-minute orders?", a: "Yes. Drop-off office catering can often be turned around in 24–72 hours depending on guest count. Full-service events with staffing and live-fire grilling generally require 1–2 weeks. Call us — we move quickly for executive teams." },
   { q: "Do you deliver?", a: "Yes. We deliver hot, ready-to-serve corporate catering across the entire region with uniformed delivery staff, professional presentation, and chafing setup on request. Delivery windows are guaranteed to the minute." },
   { q: "Do you offer recurring office lunches?", a: "Yes. We run weekly, bi-weekly, and monthly recurring lunch programs for HR teams, real-estate offices, healthcare groups, and tech companies. One contact, one invoice, rotating menus, predictable schedule." },
@@ -63,7 +63,7 @@ const baseFaqs = [
   { q: "Can you serve construction job sites?", a: "Yes. We cater construction-site lunches across the region — hot, hearty, on-time meals delivered to active jobsites. Hard-hat-friendly setup, fast turnover, and crews are fed in 30 minutes or less." },
   { q: "Can you serve multiple shifts?", a: "Yes. We handle multi-shift hospitals, manufacturing facilities, warehouses, and 24-hour operations with staggered drop-offs or on-site service across the day." },
   { q: "Can we mix service styles?", a: "Yes. Many corporate events combine passed hors d'oeuvres, a live-fire grilling station, a buffet, and a plated dessert — we'll design the right blend for your event." },
-  { q: "Can we change our menu later?", a: "Yes. Your 35% Date Charge holds the date and the team. Menus, guest counts, and service styles stay flexible until roughly 14 days before the event." },
+  { q: "Can we change our menu later?", a: "Yes. Your 35% Date Retainer holds the date and the team. Menus, guest counts, and service styles stay flexible until roughly 14 days before the event." },
   { q: "Do you provide invoicing and corporate accounts?", a: "Yes. We work with AP departments, PO systems, COIs, and W-9s. Detailed invoicing available for established corporate accounts." },
 ];
 
@@ -114,13 +114,13 @@ const timelineSteps = [
   { n: "01", title: "Request a Quote", body: "Send your date, headcount, and brief — takes about 90 seconds." },
   { n: "02", title: "Receive Transparent Pricing", body: "An itemized proposal back within 24 business hours. No hidden fees." },
   { n: "03", title: "Customize Your Menu", body: "Refine the menu, service style, and bar program with your account lead." },
-  { n: "04", title: "Reserve with the Date Charge", body: "35% Date Charge locks your date and team — applied to your final invoice." },
+  { n: "04", title: "Reserve with the Date Retainer", body: "35% Date Retainer locks your date and team — applied to your final invoice." },
   { n: "05", title: "Finalize Guest Count", body: "Headcount and menu adjustments lock 7–14 days before the event." },
   { n: "06", title: "We Execute Everything", body: "Setup, service, live-fire grilling, bar, breakdown — handled. You host." },
 ];
 
 const menuOptions = [
-  "Wood-Fire Catering", "Signature Live Fire Steakhouse Catering", "Surf & Turf", "Breakfast Catering", "Brunch Catering",
+  "Wood-Fire Catering", "Steakhouse Experience", "Surf & Turf", "Breakfast Catering", "Brunch Catering",
   "Lunch Catering", "Dinner Catering", "Appetizers & Passed Hors d'oeuvres", "Desserts & Coffee Service",
   "Vegetarian Menus", "Vegan Menus", "Gluten-Free & Allergy Menus", "Live Charcoal Grilling Stations",
   "Premium Steaks & Carving Stations", "Boxed Executive Lunches", "Continental & Working Breakfasts",
@@ -146,7 +146,7 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
     url: path,
     telephone: "+1-602-555-0123",
     priceRange: "$$$",
-    servesCuisine: ["Wood-Fire", "live-fire steakhouse experience", "American", "Corporate Catering", "Office Catering"],
+    servesCuisine: ["Wood-Fire", "Steakhouse Experience", "American", "Corporate Catering", "Office Catering"],
     areaServed: cities.map((c) => ({ "@type": "City", name: c })),
     aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "400" },
   };
@@ -427,12 +427,12 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
         <div className="container-luxe grid lg:grid-cols-[1fr_1.4fr] gap-12 lg:gap-20">
           <div>
             <div className="gold-rule mb-8" />
-            <div className="eyebrow mb-6">The 35% Date Charge</div>
+            <div className="eyebrow mb-6">The 35% Date Retainer</div>
             <h2 className="heading-md text-bone">Lock the date. Not the menu.</h2>
           </div>
           <div>
             <p className="text-bone/85 text-lg font-light leading-relaxed">
-              Your corporate event date is secured with a <strong className="text-gold">35% Date Charge</strong> — applied directly to your final invoice. It reserves our team for your date and nothing more.
+              Your corporate event date is secured with a <strong className="text-gold">35% Date Retainer</strong> — applied directly to your final invoice. It reserves our team for your date and nothing more.
             </p>
             <ul className="mt-8 space-y-4">
               {[

@@ -68,7 +68,7 @@ export const services = [
   { slug: "corporate", label: "Corporate Catering", short: "Corporate" },
   { slug: "private-parties", label: "Private Party Catering", short: "Private Parties" },
   { slug: "wood-fired", label: "Wood-Fired Catering", short: "Wood-Fired" },
-  { slug: "steakhouse", label: "Signature Live Fire Steakhouse Catering", short: "Steakhouse" },
+  { slug: "steakhouse", label: "Steakhouse Experience", short: "Steakhouse" },
   { slug: "bartending", label: "Bartending Services", short: "Bartending" },
 ] as const;
 

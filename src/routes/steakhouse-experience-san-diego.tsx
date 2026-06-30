@@ -6,16 +6,16 @@ const r: RegionCopy = {
   city: "San Diego",
   region: "San Diego County",
   serviceAreas:
-    "Qfire Catering brings the Signature Live Fire Steakhouse Catering experience across San Diego County — La Jolla, Del Mar, Rancho Santa Fe, Coronado, Carmel Valley, Encinitas, Solana Beach, Cardiff, Carlsbad, Oceanside, Poway, Rancho Bernardo, Chula Vista, Mission Hills and Downtown San Diego. Onsite charcoal grilling, surf and turf, and luxury catering up and down the coast.",
+    "Qfire Catering brings the Steakhouse Experience experience across San Diego County — La Jolla, Del Mar, Rancho Santa Fe, Coronado, Carmel Valley, Encinitas, Solana Beach, Cardiff, Carlsbad, Oceanside, Poway, Rancho Bernardo, Chula Vista, Mission Hills and Downtown San Diego. Onsite charcoal grilling, surf and turf, and luxury catering up and down the coast.",
   shortAreas: ["La Jolla", "Del Mar", "Rancho Santa Fe", "Coronado", "Carmel Valley", "Encinitas", "Solana Beach", "Carlsbad", "Oceanside", "Poway", "Chula Vista", "Downtown San Diego"],
 };
 
 export const Route = createFileRoute("/steakhouse-experience-san-diego")({
   head: () => ({
     meta: [
-      { title: "Signature Live Fire Steakhouse Catering San Diego — Surf & Turf, Onsite Charcoal Grilling | Qfire" },
-      { name: "description", content: "Luxury Signature Steakhouse Catering across San Diego County. Ribeye, filet mignon, prime rib, salmon and lobster — grilled live onsite at La Jolla, Del Mar, Rancho Santa Fe and Coronado weddings, corporate events and private parties. Buffet from $79/pp · Plated from $133/pp." },
-      { property: "og:title", content: "live-fire steakhouse experience San Diego | Qfire" },
+      { title: "Steakhouse Experience San Diego — Surf & Turf, Onsite Charcoal Grilling | Qfire" },
+      { name: "description", content: "Luxury Steakhouse Experience across San Diego County. Ribeye, filet mignon, prime rib, salmon and lobster — grilled live onsite at La Jolla, Del Mar, Rancho Santa Fe and Coronado weddings, corporate events and private parties. Buffet from $79/pp · Plated from $133/pp." },
+      { property: "og:title", content: "Steakhouse Experience San Diego | Qfire" },
       { property: "og:description", content: "Live charcoal grilling, surf & turf and white-glove service across San Diego County — weddings, corporate dinners and luxury private parties." },
       { property: "og:url", content: "https://qfire-flame-craft.lovable.app/steakhouse-experience-san-diego" },
       { property: "og:image", content: steakhouseBackyard.url },
@@ -27,8 +27,8 @@ export const Route = createFileRoute("/steakhouse-experience-san-diego")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Service",
-          name: "Signature Live Fire Steakhouse Catering — San Diego County",
-          serviceType: "Surf & Turf Signature Live Fire Steakhouse Catering",
+          name: "Steakhouse Experience — San Diego County",
+          serviceType: "Surf & Turf Steakhouse Experience",
           provider: { "@type": "FoodEstablishment", name: "Qfire Catering" },
           areaServed: [
             { "@type": "City", name: "San Diego" },

@@ -28,14 +28,14 @@ export function SteakhouseExperiencePage({ r }: { r: RegionCopy }) {
   const plated = isSD ? "$133" : "$128";
   const steakMenuPath = isSD ? "/steak-seafood-menu-san-diego" : "/steak-seafood-menu";
   const steakFaqs = [
-    { q: `How much does the ${r.region} live-fire steakhouse experience cost?`, a: `Pricing starts at ${buffet} per guest for the chef-attended buffet, ${family} family style, and ${plated} for plated service. Every package includes a live charcoal Grill Master, three premium proteins, three gourmet sides, two desserts, polished dinnerware, and full setup and cleanup.` },
+    { q: `How much does the ${r.region} Steakhouse Experience cost?`, a: `Pricing starts at ${buffet} per guest for the chef-attended buffet, ${family} family style, and ${plated} for plated service. Every package includes a live charcoal Grill Master, three premium proteins, three gourmet sides, two desserts, polished dinnerware, and full setup and cleanup.` },
     { q: `What cuts of steak do you offer?`, a: `Ribeye, New York strip, T-bone, filet mignon, top sirloin, prime rib, tri-tip and picanha — charcoal-grilled over live fire to order. Beef tenderloin is available as a +$5 per steak upgrade. Surf and turf options pair steak with lobster tails, salmon, snapper, or bacon-wrapped scallops.` },
     { q: `Is everything grilled fresh on-site?`, a: `Yes. We bring the live charcoal grill to your venue and cook every steak to order in front of your guests. Nothing is reheated, nothing sits — the aroma alone changes the energy of the room.` },
     { q: `Can guests choose their steak temperature?`, a: `Yes. For plated and family-style service we collect temperature preferences in advance or fire to order tableside. For buffet service our Grill Master cooks a continuous rotation of rare through well-done so every guest gets exactly what they want.` },
     { q: `Is this a buffet or a plated experience?`, a: `Both — you choose. The buffet is chef-attended with a live grilling station and feels like an upscale steakhouse line. Family style sends shared platters down the center of each table. Plated service is fully coursed, restaurant-style, with captains and synchronized service.` },
     { q: `Can you accommodate dietary restrictions?`, a: `Yes. Every menu adapts for vegetarian, vegan, gluten-free, dairy-free, and Halal needs. For peanut, tree-nut and shellfish allergies we run a dedicated prep line and label each plate at the pass.` },
-    { q: `What's the minimum guest count?`, a: `The live-fire steakhouse experience is built for events of 30 or more. For intimate ${r.city} dinners under 30 we'll build a custom proposal — reach out and we'll quote it directly.` },
-    { q: `How far in advance should we book?`, a: `${r.region} peak Saturdays (spring through fall) typically book 6–12 months out. Off-peak weeknights and Sundays can often be accommodated inside 60–90 days. A 35% Date Charge locks your date and is applied to your final invoice.` },
+    { q: `What's the minimum guest count?`, a: `The Steakhouse Experience is built for events of 30 or more. For intimate ${r.city} dinners under 30 we'll build a custom proposal — reach out and we'll quote it directly.` },
+    { q: `How far in advance should we book?`, a: `${r.region} peak Saturdays (spring through fall) typically book 6–12 months out. Off-peak weeknights and Sundays can often be accommodated inside 60–90 days. A 35% Date Retainer locks your date and is applied to your final invoice.` },
   ];
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -43,7 +43,7 @@ export function SteakhouseExperiencePage({ r }: { r: RegionCopy }) {
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: "/" },
       { "@type": "ListItem", position: 2, name: r.region, item: `/${isSD ? "san-diego" : "phoenix"}` },
-      { "@type": "ListItem", position: 3, name: "Signature Live Fire Steakhouse Catering", item: `/steakhouse-experience-${isSD ? "san-diego" : "phoenix"}` },
+      { "@type": "ListItem", position: 3, name: "Steakhouse Experience", item: `/steakhouse-experience-${isSD ? "san-diego" : "phoenix"}` },
     ],
   };
   const serviceSchema = {
@@ -71,9 +71,9 @@ export function SteakhouseExperiencePage({ r }: { r: RegionCopy }) {
           <div className="absolute inset-0 bg-gradient-to-r from-ink/85 via-transparent to-transparent" />
         </div>
         <div className="container-luxe relative z-10 pt-40 pb-24 lg:pb-32">
-          <div className="eyebrow mb-8">Signature Live Fire Steakhouse Catering · {r.region}</div>
+          <div className="eyebrow mb-8">Steakhouse Experience · {r.region}</div>
           <h1 className="heading-xl text-bone max-w-4xl">
-            The Surf &amp; Turf Signature Live Fire Steakhouse Experience<br />
+            The Surf &amp; Turf Steakhouse Experience<br />
             <span className="text-gold/90 italic font-light">brought to {r.city}.</span>
           </h1>
           <p className="mt-8 max-w-2xl text-lg lg:text-xl text-bone/75 leading-relaxed font-light">
@@ -92,7 +92,7 @@ export function SteakhouseExperiencePage({ r }: { r: RegionCopy }) {
       <section className="py-20 lg:py-28 bg-onyx border-t border-white/5">
         <div className="container-luxe">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <div className="eyebrow justify-center mb-6">The live-fire steakhouse experience Experience — Pricing</div>
+            <div className="eyebrow justify-center mb-6">The Steakhouse Experience Experience — Pricing</div>
             <h2 className="heading-lg text-bone">
               Luxury Steakhouse Dining catering starting at <span className="text-gold italic font-light">{r.city === "San Diego" ? "$79" : "$74"}/guest.</span>
             </h2>
@@ -310,8 +310,8 @@ export function SteakhouseExperiencePage({ r }: { r: RegionCopy }) {
             <div className="grid md:grid-cols-3 gap-6">
               {[
                 { src: steakhouseMenu.url, alt: `Live charcoal grilling at a ${r.region} live-fire dinner service catered event` },
-                { src: weddingCouple.url, alt: `Luxury ${r.city} wedding Signature Steakhouse Catering reception` },
-                { src: steakhouseBackyard.url, alt: `Backyard ${r.region} live-fire steakhouse experience and surf & turf catering` },
+                { src: weddingCouple.url, alt: `Luxury ${r.city} wedding Steakhouse Experience reception` },
+                { src: steakhouseBackyard.url, alt: `Backyard ${r.region} Steakhouse Experience and surf & turf catering` },
               ].map((img) => (
                 <div key={img.alt} className="aspect-[4/5] overflow-hidden shadow-[0_30px_80px_-30px_rgba(0,0,0,0.35)]">
                   <img src={img.src} alt={img.alt} className="w-full h-full object-cover" />
@@ -337,7 +337,7 @@ export function SteakhouseExperiencePage({ r }: { r: RegionCopy }) {
       </section>
 
       <DefinitiveContent
-        topic={`${r.region} Signature Live Fire Steakhouse Catering`}
+        topic={`${r.region} Steakhouse Experience`}
         region={`${r.region} events`}
         {...definitiveCopy.steakhouse}
       />
