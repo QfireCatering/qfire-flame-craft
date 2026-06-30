@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
+import { smoothScrollTo } from "@/lib/smooth-scroll";
 
 export interface SectionNavItem {
   id: string;
