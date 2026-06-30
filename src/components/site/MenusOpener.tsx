@@ -145,16 +145,13 @@ export function MenusOpener({ regionKey, pageType }: { regionKey: RegionKey; pag
         </div>
       </section>
 
-      {/* PRICING (includes Built-for-Scale automatically) */}
-      <RegionalPricing regionKey={regionKey} />
-
-      {/* WHAT'S INCLUDED — "Your proposal, line by line" */}
-      <section id="included" className="py-24 lg:py-28">
+      {/* WHAT'S INCLUDED — placed BEFORE pricing so the value is read first */}
+      <section id="included" className="py-20 lg:py-24">
         <div className="container-luxe">
           <div className="max-w-2xl mb-12">
             <div className="eyebrow mb-5">What's Included</div>
             <h2 className="heading-lg text-bone">Your proposal, line by line.</h2>
-            <p className="mt-5 text-bone/70 font-light">No hidden fees, no surprise gratuities, no upsells the day of. Every Qfire proposal is itemized so you know exactly what your investment buys.</p>
+            <p className="mt-5 text-bone/70 font-light">No hidden fees, no surprise gratuities, no upsells the day of. Every Qfire proposal is itemized so you know exactly what your investment buys — before you ever see a price.</p>
           </div>
           <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {included.map((item) => (
@@ -166,6 +163,10 @@ export function MenusOpener({ regionKey, pageType }: { regionKey: RegionKey; pag
           </ul>
         </div>
       </section>
+
+      {/* PRICING (includes Built-for-Scale automatically) */}
+      <RegionalPricing regionKey={regionKey} />
+
     </>
   );
 }
