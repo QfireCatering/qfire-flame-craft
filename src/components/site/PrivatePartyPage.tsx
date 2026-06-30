@@ -4,9 +4,9 @@ import { DefinitiveContent } from "./DefinitiveContent";
 import { definitiveCopy } from "@/lib/definitive-copy";
 import { BookingProcess } from "./BookingProcess";
 import { ObjectionBuster } from "./ObjectionBuster";
-import { RegionalPricing } from "./RegionalPricing";
+import { MenusOpener } from "./MenusOpener";
+import { SectionNav } from "./SectionNav";
 import asSeenOnBadge from "@/assets/as-seen-on-food-network.png.asset.json";
-import { GuestScaleStat } from "./GuestScaleStat";
 import privatePartyHero from "@/assets/private-parties-hero.png.asset.json";
 import privatePartyAsset from "@/assets/private-party-setting.png.asset.json";
 import privateRealAsset from "@/assets/private-real.jpg.asset.json";
@@ -189,8 +189,26 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
     reviewBody: reviews[0].q,
   };
 
+  const sectionNavItems = [
+    { id: "pricing", label: "Pricing" },
+    { id: "scale", label: "Built for Scale" },
+    { id: "included", label: "What's Included" },
+    { id: "why-qfire", label: "Why Qfire" },
+    { id: "events", label: "Events" },
+    { id: "service-styles", label: "Service Styles" },
+    { id: "live-fire", label: "Live Fire" },
+    { id: "steakhouse", label: "Steakhouse" },
+    { id: "process", label: "Process" },
+    { id: "menu-options", label: "Menus" },
+    { id: "execution", label: "Execution" },
+    { id: "service-area", label: "Service Area" },
+    { id: "chef", label: "Chef Terry" },
+    { id: "faq", label: "FAQ" },
+  ];
+
   return (
     <>
+      <SectionNav items={sectionNavItems} />
       {/* HERO */}
       <section className="relative min-h-[88vh] flex items-end overflow-hidden">
         <img src={hero} alt={`Luxury private party catering in ${regionShort} backyard by Qfire Catering`} className="absolute inset-0 w-full h-full object-cover" />
@@ -212,9 +230,7 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
               Restaurant-quality catering for birthdays, backyard parties, anniversaries, graduations, and private celebrations across {region} — with live charcoal grilling, premium steaks, authentic Wood-Fire, and professional service.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
-              <Link to="/quote" className="btn-primary">Get My Quote <ArrowRight className="size-4" /></Link>
-              <Link to="/quote" className="btn-ghost">Check My Date</Link>
-              <Link to="/menus" className="btn-ghost">View Menus</Link>
+              <a href="#pricing" className="btn-primary">View Prices <ArrowRight className="size-4" /></a>
             </div>
             <div className="mt-10 flex flex-wrap gap-8 text-sm text-bone/70">
               <div><span className="text-gold font-display text-2xl">25+</span> Years Experience</div>
@@ -226,7 +242,7 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
         </div>
       </section>
 
-      <GuestScaleStat regionKey={config.regionSlug} />
+      <MenusOpener regionKey={config.regionSlug} pageType="Private Party" />
 
       {/* TRUST STRIP */}
       <section className="border-y border-white/10 bg-onyx py-10">
@@ -256,10 +272,8 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
         </div>
       </section>
 
-      <RegionalPricing regionKey={config.regionSlug} />
-
       {/* WHY PEOPLE CHOOSE QFIRE */}
-      <section className="py-24 lg:py-32">
+      <section id="why-qfire" className="py-24 lg:py-32 scroll-mt-32">
         <div className="container-luxe">
           <div className="max-w-2xl mb-16">
             <div className="eyebrow mb-6">Why People Choose Qfire</div>
@@ -286,7 +300,7 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
       <ScatteredReview review={reviews[0]} />
 
       {/* EVENTS WE CATER */}
-      <section className="py-24 lg:py-32 bg-onyx">
+      <section id="events" className="py-24 lg:py-32 bg-onyx scroll-mt-32">
         <div className="container-luxe">
           <div className="max-w-2xl mb-16">
             <div className="eyebrow mb-6">Events We Cater</div>
@@ -315,7 +329,7 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
       <ScatteredReview review={reviews[1]} />
 
       {/* SERVICE STYLE COMPARISON */}
-      <section className="py-24 lg:py-32">
+      <section id="service-styles" className="py-24 lg:py-32 scroll-mt-32">
         <div className="container-luxe">
           <div className="max-w-2xl mb-16">
             <div className="eyebrow mb-6">Service Styles</div>
@@ -351,7 +365,7 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
       <ScatteredReview review={reviews[2]} />
 
       {/* LIVE CHARCOAL GRILLING */}
-      <section className="py-24 lg:py-32 bg-onyx">
+      <section id="live-fire" className="py-24 lg:py-32 bg-onyx scroll-mt-32">
         <div className="container-luxe grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="relative aspect-[4/5] overflow-hidden">
             <img src={heroFire} alt={`Live charcoal grilling at a ${regionShort} backyard private party by Qfire`} className="absolute inset-0 w-full h-full object-cover" />
@@ -374,7 +388,7 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
       </section>
 
       {/* Wood-Fire + STEAKHOUSE EXPERIENCE */}
-      <section className="py-24 lg:py-32">
+      <section id="steakhouse" className="py-24 lg:py-32 scroll-mt-32">
         <div className="container-luxe grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="order-2 lg:order-1">
             <div className="eyebrow mb-6">Wood-Fire + live-fire dinner service Experience</div>
@@ -397,7 +411,7 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
       <ScatteredReview review={reviews[3]} />
 
       {/* WHAT HAPPENS NEXT */}
-      <section className="py-24 lg:py-32 bg-onyx">
+      <section id="process" className="py-24 lg:py-32 bg-onyx scroll-mt-32">
         <div className="container-luxe">
           <div className="max-w-2xl mb-16">
             <div className="eyebrow mb-6">What Happens Next</div>
@@ -419,7 +433,7 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
       </section>
 
       {/* DATE CHARGE */}
-      <section className="py-24 lg:py-32 border-y border-white/10">
+      <section id="date-charge" className="py-24 lg:py-32 border-y border-white/10 scroll-mt-32">
         <div className="container-luxe grid lg:grid-cols-[1fr_1.4fr] gap-12 lg:gap-20">
           <div>
             <div className="gold-rule mb-8" />
@@ -450,7 +464,7 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
       </section>
 
       {/* MENU OPTIONS */}
-      <section className="py-24 lg:py-32 bg-onyx">
+      <section id="menu-options" className="py-24 lg:py-32 bg-onyx scroll-mt-32">
         <div className="container-luxe">
           <div className="max-w-2xl mb-14">
             <div className="eyebrow mb-6">Private Party Menu Options</div>
@@ -489,7 +503,7 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
       <ScatteredReview review={reviews[4]} />
 
       {/* PROFESSIONAL EXECUTION */}
-      <section className="py-24 lg:py-32">
+      <section id="execution" className="py-24 lg:py-32 scroll-mt-32">
         <div className="container-luxe grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="relative aspect-[4/5] overflow-hidden">
             <img src={setting} alt={`Beautiful private party buffet setup by Qfire Catering staff in ${regionShort}`} className="absolute inset-0 w-full h-full object-cover" />
@@ -510,7 +524,7 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
       </section>
 
       {/* CITIES WE SERVE */}
-      <section className="py-24 lg:py-32 bg-onyx">
+      <section id="service-area" className="py-24 lg:py-32 bg-onyx scroll-mt-32">
         <div className="container-luxe">
           <div className="max-w-2xl mb-12">
             <div className="eyebrow mb-6">{region} Private Party Service Area</div>
@@ -532,7 +546,7 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
       <ScatteredReview review={reviews[5]} />
 
       {/* CHEF BIO */}
-      <section className="py-24 lg:py-32">
+      <section id="chef" className="py-24 lg:py-32 scroll-mt-32">
         <div className="container-luxe grid lg:grid-cols-[1fr_1.2fr] gap-12 lg:gap-20 items-center">
           <div className="relative aspect-[4/5] overflow-hidden max-w-md">
             <img src={chef} alt="Chef Terry Matthews — The BBQ Daddy — Food Network featured chef behind Qfire Catering" className="absolute inset-0 w-full h-full object-cover" />
@@ -560,7 +574,7 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
       />
 
       {/* FAQ */}
-      <section className="py-24 lg:py-32 bg-onyx">
+      <section id="faq" className="py-24 lg:py-32 bg-onyx scroll-mt-32">
         <div className="container-luxe">
           <div className="max-w-2xl mb-14">
             <div className="eyebrow mb-6">{regionShort} Private Party Catering FAQ</div>

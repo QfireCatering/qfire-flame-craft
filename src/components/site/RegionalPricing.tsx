@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Check } from "lucide-react";
 import type { RegionKey } from "@/lib/site";
 import { regions } from "@/lib/site";
+import { GuestScaleStat } from "./GuestScaleStat";
 
 export function RegionalPricing({ regionKey }: { regionKey: RegionKey }) {
   const r = regions[regionKey];
@@ -13,7 +14,8 @@ export function RegionalPricing({ regionKey }: { regionKey: RegionKey }) {
   return (
     <>
       {/* WOOD-FIRE PRICING SUMMARY */}
-      <section className="py-20 lg:py-28 bg-onyx border-t border-white/5">
+      <section id="pricing" className="py-20 lg:py-28 bg-onyx border-t border-white/5 scroll-mt-32">
+
         <div className="container-luxe">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <div className="eyebrow justify-center mb-6">Wood-Fire BBQ Catering — Pricing</div>
@@ -107,8 +109,9 @@ export function RegionalPricing({ regionKey }: { regionKey: RegionKey }) {
       </section>
 
       {/* STEAKHOUSE PRICING SUMMARY */}
-      <section className="py-20 lg:py-28 bg-ink border-t border-white/5">
+      <section id="steakhouse-pricing" className="py-20 lg:py-28 bg-ink border-t border-white/5 scroll-mt-32">
         <div className="container-luxe">
+
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="eyebrow justify-center mb-6">Signature Live Fire Steakhouse Catering Experience — Pricing</div>
             <h2 className="heading-lg text-bone">
@@ -146,6 +149,12 @@ export function RegionalPricing({ regionKey }: { regionKey: RegionKey }) {
           </p>
         </div>
       </section>
+
+      {/* BUILT FOR SCALE — directly below steakhouse pricing */}
+      <section id="scale" className="scroll-mt-32">
+        <GuestScaleStat regionKey={regionKey} />
+      </section>
     </>
   );
 }
+
