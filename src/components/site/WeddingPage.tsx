@@ -137,19 +137,19 @@ const baseFaqs = [
 ];
 
 const whyChoose = [
-  { icon: Award, title: "Professionalism", body: "Trained captains, uniformed servers, and a lead coordinator at every wedding. Every detail accounted for." },
-  { icon: Clock, title: "Reliability", body: "On time, every time. Twenty-five years of weddings without a missed call or a late entree." },
-  { icon: Sparkles, title: "Communication", body: "Direct line to your account lead. No agencies, no call centers, no waiting for callbacks." },
-  { icon: Check, title: "Organization", body: "Detailed timelines, BEOs, allergy cards, and run-of-show. Your planner will love working with us." },
-  { icon: Star, title: "Presentation", body: "Buffet displays, carving stations, and plate-ups built to be photographed." },
-  { icon: Flame, title: "Execution", body: "Live fire, hot food, perfect timing. Service that holds up from cocktail hour through the last dance." },
-  { icon: Award, title: "Experience", body: "25+ years of professional cooking. 2,000+ weddings and catered events delivered." },
-  { icon: Star, title: "Confidence", body: "Featured on Food Network's BBQ Brawl with Bobby Flay, Camp Cutthroat, and Cutthroat Kitchen." },
-  { icon: Users, title: "Guest Experience", body: "Generous portions, warm plates, and food guests still talk about months later." },
-  { icon: Sparkles, title: "Stress Reduction", body: "We handle setup, service, breakdown, rentals, and venue coordination. You enjoy your day." },
-  { icon: Check, title: "Venue Relationships", body: "Approved or preferred at most major venues across both regions." },
-  { icon: Clock, title: "Timeline Coordination", body: "Plate-up timed to the minute with your DJ, planner, and photographer." },
-  { icon: Star, title: "Consistency", body: "4.9-star reputation across hundreds of reviews. The 1,000th wedding tastes like the first." },
+  { icon: Award, title: "You'll feel taken care of", body: "From your first email to the last dance, you have a real person answering your questions. No agencies. No call centers. No 'let me check and get back to you.'" },
+  { icon: Clock, title: "We show up on time. Every time.", body: "In 25 years we have never missed a wedding, never been late for setup, and never held up a first dance. That's the promise." },
+  { icon: Sparkles, title: "You'll always know what's happening next", body: "Emails answered the same day. Timelines shared early. Changes handled without a sigh. You'll never feel like you're chasing us." },
+  { icon: Check, title: "We work beautifully with your planner", body: "Detailed BEOs, allergy cards, run-of-show, and vendor meals — planners actually thank us for how organized we are." },
+  { icon: Star, title: "Your food will be photographed", body: "Buffets styled. Plates composed. Carving stations lit. Your photographer will love us — and so will your Instagram." },
+  { icon: Flame, title: "Live fire. Real food. Hot plates.", body: "No sad chafing-dish reheats. We grill over hardwood charcoal on-site, and dinner reaches your guests hot, seasoned, and stunning." },
+  { icon: Award, title: "You're hiring a real chef", body: "25+ years of professional cooking. 2,000+ weddings under our belts. Chef Terry personally designs every menu we serve." },
+  { icon: Star, title: "You'll recognize the name", body: "Featured on Food Network's BBQ Brawl with Bobby Flay, Camp Cutthroat, and Cutthroat Kitchen. This is the caterer your guests will Google after." },
+  { icon: Users, title: "Your guests will come back for seconds", body: "Generous portions. Warm plates. Real seasoning. The food people still text you about months after the wedding." },
+  { icon: Sparkles, title: "You get to actually enjoy your day", body: "We handle setup, service, live-fire cooking, buffet refresh, coordination, and full breakdown. You sip champagne and dance." },
+  { icon: Check, title: "Your venue probably already knows us", body: "Approved or preferred at most major venues across Phoenix Metro and San Diego County. If they have rules, we already know them." },
+  { icon: Clock, title: "Plate-up timed to your first dance", body: "Coordinated with your DJ, planner, and photographer down to the minute. Toasts hit warm. Dinner clears in time for the dancing." },
+  { icon: Star, title: "Every wedding gets our best", body: "4.9 stars across hundreds of reviews. Whether you're 60 guests or 300, the food and service are the same." },
 ];
 
 const serviceStyles = [
@@ -157,47 +157,47 @@ const serviceStyles = [
     name: "Full-Service Buffet",
     tag: "Most Popular",
     bullets: [
-      "Great balance of elegance and value",
-      "Guests choose their favorites",
-      "Fast service, no long lines",
-      "Beautiful buffet presentation",
-      "Staff maintains buffet throughout service",
-      "Ideal for most weddings (75–250 guests)",
+      "Feels elegant without feeling stiff",
+      "Guests pick exactly what they love",
+      "Fast service — no long lines",
+      "Beautiful presentation, styled for photos",
+      "Our staff keeps it hot and refreshed all night",
+      "Perfect for most weddings (75–250 guests)",
     ],
   },
   {
     name: "Family Style",
     tag: "Most Intimate",
     bullets: [
-      "Shared platters brought directly to each table",
-      "Encourages conversation",
-      "Upscale and interactive",
-      "No buffet lines",
-      "Great for medium-sized receptions",
-      "Elegant, warm dining experience",
+      "Big shared platters brought right to each table",
+      "Everyone talks, everyone eats together",
+      "Feels warm and celebratory — like a big family dinner",
+      "No lines, no buffet traffic",
+      "Great for medium receptions who want intimacy",
+      "The style guests remember for the vibe alone",
     ],
   },
   {
     name: "Plated Dinner Service",
     tag: "Most Formal",
     bullets: [
-      "Restaurant-style synchronized service",
-      "Individually plated, coursed meals",
-      "Highest level of formality",
-      "Perfect for luxury weddings",
-      "Ideal for black-tie receptions",
-      "Premium, white-glove guest experience",
+      "Restaurant-style, coursed and synchronized",
+      "Every guest served at the same moment",
+      "The most polished, elegant dining experience",
+      "Ideal for luxury and black-tie receptions",
+      "Menu cards, wine pairings, white-glove service",
+      "The wedding your guests describe as 'unreal'",
     ],
   },
 ];
 
 const timelineSteps = [
-  { n: "01", title: "Request a Quote", body: "Submit your date, venue, and rough guest count. Takes about 90 seconds." },
-  { n: "02", title: "We Personally Contact You", body: "A real person — usually Chef Terry or your account lead — calls within 24 hours." },
-  { n: "03", title: "Customize Your Menu", body: "We design a proposal around your taste, venue, and guest list. Revise as much as you want." },
-  { n: "04", title: "Reserve Your Date", body: "Lock in your wedding with a 35% Date Retainer — applied directly to your final invoice." },
-  { n: "05", title: "Finalize Guest Count Later", body: "Final headcount and menu adjustments lock 14–30 days before the wedding." },
-  { n: "06", title: "Enjoy Your Wedding", body: "We handle setup, service, live-fire grilling, bar, and cleanup. You spend the night with your guests." },
+  { n: "01", title: "Tell us about your day", body: "Send over your date, venue, and rough guest count. Takes about 90 seconds. No commitment, no sales call." },
+  { n: "02", title: "We'll call you personally", body: "A real human — usually Chef Terry or your account lead — reaches out within 4 business hours to say hi and understand what you're picturing." },
+  { n: "03", title: "We build your menu together", body: "You share your vision. We design a proposal around your taste, your venue, and your guest list. Change it as many times as you want." },
+  { n: "04", title: "Lock your date (35% Retainer)", body: "Only when you're ready. The retainer holds your date and our team — it applies 100% to your final invoice." },
+  { n: "05", title: "Refine as your plans evolve", body: "Menu, guest count, upgrades — all still flexible. Everything locks in 14–30 days before the wedding, once RSVPs are in." },
+  { n: "06", title: "Enjoy your wedding day", body: "We set up hours early, cook live on-site, run service, refresh buffets, break down cleanly, and disappear. You spend the night with the people you love." },
 ];
 
 export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
@@ -302,14 +302,20 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
           <div className="max-w-3xl">
             <div className="eyebrow mb-6 text-gold">{region} Wedding Catering</div>
             <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-bone leading-[0.95] tracking-tight">
-              Luxury wedding catering <span className="italic text-gold font-light">in {regionShort}.</span>
+              Congratulations. <span className="italic text-gold font-light">Now let's feed your wedding.</span>
             </h1>
             <p className="mt-8 text-xl md:text-2xl text-bone/85 font-light leading-relaxed max-w-2xl">
-              Live charcoal grilling, premium steaks, professional staff, and a stress-free experience — trusted by thousands of couples across {region}.
+              Planning a wedding is a lot. The food shouldn't be the part that stresses you out. We've catered over 2,000 weddings across {region} — and we'd love to make yours one of them.
+            </p>
+            <p className="mt-6 text-lg text-bone/75 font-light leading-relaxed max-w-2xl">
+              You'll get a real chef, honest pricing, a team that shows up on time, and a wedding day where dinner is the thing your guests won't stop talking about.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-4">
-              <a href="#pricing" className="btn-primary">
-                View Prices <ArrowRight className="size-4" />
+              <Link to="/quote" className="btn-primary">
+                Start Planning My Wedding <ArrowRight className="size-4" />
+              </Link>
+              <a href="#pricing" className="btn-ghost">
+                See Real Wedding Pricing
               </a>
               <span className="inline-flex items-center gap-2 text-[0.7rem] tracking-[0.22em] uppercase text-gold/90 border border-gold/30 px-4 py-2.5 bg-gold/5">
                 <Clock className="size-3.5" /> Usually responds within 4 business hours
@@ -317,13 +323,13 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
             </div>
 
             <div className="mt-10 flex flex-wrap gap-8 text-sm text-bone/70">
-              <div><span className="text-gold font-display text-2xl">25+</span> Years Experience</div>
-              <div><span className="text-gold font-display text-2xl">2,000+</span> Weddings & Events</div>
-              <div><span className="text-gold font-display text-2xl">4.9★</span> Couple-Rated</div>
+              <div><span className="text-gold font-display text-2xl">25+</span> Years Doing This</div>
+              <div><span className="text-gold font-display text-2xl">2,000+</span> Weddings Catered</div>
+              <div><span className="text-gold font-display text-2xl">4.9★</span> Bride-Rated</div>
               <div><span className="text-gold font-display text-2xl">Food Network</span> Featured Chef</div>
             </div>
             <div className="mt-6 text-xs tracking-[0.2em] uppercase text-bone/55">
-              <span className="text-gold/80">Local {regionShort} Team</span> · <a href={contact.phoneHref} className="text-bone hover:text-gold transition-colors">{contact.phone}</a>
+              <span className="text-gold/80">Your Local {regionShort} Team</span> · <a href={contact.phoneHref} className="text-bone hover:text-gold transition-colors">{contact.phone}</a>
             </div>
           </div>
         </div>
@@ -369,10 +375,10 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
       <section id="why-qfire" className="py-24 lg:py-32 scroll-mt-32">
         <div className="container-luxe">
           <div className="max-w-2xl mb-16">
-            <div className="eyebrow mb-6">Why Couples Choose Qfire</div>
-            <h2 className="heading-lg text-bone">The kind of caterer you stop searching for.</h2>
-            <p className="mt-6 text-bone/70 text-lg leading-relaxed font-light">
-              Most couples interview three to five caterers before they find Qfire. Then they stop looking. Here's why.
+            <div className="eyebrow mb-6">Why Brides Choose Qfire</div>
+            <h2 className="heading-lg text-bone">The caterer you'll stop searching for.</h2>
+            <p className="mt-6 text-bone/75 text-lg leading-relaxed font-light">
+              Most brides meet three to five caterers before they find us. Then the search is over. Here's what makes the difference — and why you'll feel it on your very first call.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-white/5 border border-white/5">
@@ -385,7 +391,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
             ))}
           </div>
           <div className="mt-12 text-center">
-            <Link to="/quote" className="btn-primary">Request Your {regionShort} Wedding Quote <ArrowRight className="size-4" /></Link>
+            <Link to="/quote" className="btn-primary">Let's Start Planning My {regionShort} Wedding <ArrowRight className="size-4" /></Link>
           </div>
         </div>
       </section>
@@ -396,10 +402,10 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
       <section id="service-styles" className="py-24 lg:py-32 bg-onyx scroll-mt-32">
         <div className="container-luxe">
           <div className="max-w-2xl mb-16">
-            <div className="eyebrow mb-6">Service Styles</div>
-            <h2 className="heading-lg text-bone">Three ways to serve your {regionShort} wedding.</h2>
-            <p className="mt-6 text-bone/70 text-lg leading-relaxed font-light">
-              Choose the dining experience that fits your venue, your guest count, and the feeling you want for the night.
+            <div className="eyebrow mb-6">How Dinner Is Served</div>
+            <h2 className="heading-lg text-bone">Three ways to serve dinner at your {regionShort} wedding.</h2>
+            <p className="mt-6 text-bone/75 text-lg leading-relaxed font-light">
+              Not sure which style fits? Most brides don't at first — and that's completely okay. Here's a quick look at the three, and Chef Terry will help you decide once we know your venue and guest count.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
@@ -421,10 +427,10 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
               </div>
             ))}
           </div>
-          <div className="mt-12 text-center text-bone/70">
-            <p className="text-lg font-light">Not sure which service style is right for your wedding?</p>
+          <div className="mt-12 text-center text-bone/75">
+            <p className="text-lg font-light">Still not sure which one is right for you?</p>
             <Link to="/quote" className="inline-block mt-4 text-[0.7rem] tracking-[0.28em] uppercase text-gold border-b border-gold/40 pb-1 hover:border-gold">
-              Talk to Chef Terry
+              Ask Chef Terry — He'll Help You Decide
             </Link>
           </div>
         </div>
@@ -439,20 +445,21 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
             <img src={grilling} alt={`Live charcoal grilling at a ${regionShort} wedding reception`} className="absolute inset-0 w-full h-full object-cover" />
           </div>
           <div>
-            <div className="eyebrow mb-6">Live Charcoal Grilling</div>
-            <h2 className="heading-lg text-bone">The aroma. The fire. The moment guests remember.</h2>
-            <div className="mt-8 space-y-5 text-bone/80 text-lg font-light leading-relaxed">
-              <p>Most wedding food is reheated in a back kitchen. Ours is grilled in front of your guests over real hardwood charcoal — the way steak is supposed to be cooked.</p>
-              <p>Ribeyes. New York strips. Picanha (the prized Brazilian top sirloin cap). Brick chicken. Fresh seafood. Burgers seared to order. The aroma drifts across the venue. Guests gather. Photos happen. The night levels up.</p>
+            <div className="eyebrow mb-6">The Moment Guests Remember</div>
+            <h2 className="heading-lg text-bone">Real fire. Real steak. Right in the middle of your reception.</h2>
+            <div className="mt-8 space-y-5 text-bone/85 text-lg font-light leading-relaxed">
+              <p>Most wedding caterers reheat everything in a back kitchen. We don't. Your steaks, chops, and chicken are grilled over real hardwood charcoal right at your venue — the way great food is supposed to be cooked.</p>
+              <p>Ribeyes. New York strips. Picanha (that prized Brazilian top sirloin cap). Brick chicken. Fresh seafood. Burgers seared to order. The aroma drifts across your reception. Guests wander over. Photos happen. The whole night just… levels up.</p>
+              <p className="text-gold/90 italic text-base">"The live-fire station stopped the room. Guests are still texting us about it." — that's the note we get most often.</p>
             </div>
             <ul className="mt-8 grid sm:grid-cols-2 gap-3">
-              {["Freshly grilled steaks", "Wood-fired chicken", "Seared fresh seafood", "Live-action carving", "Visual centerpiece", "Restaurant-quality char"].map((x) => (
+              {["Grilled fresh in front of your guests", "Steakhouse-quality steaks & chops", "Wood-fired chicken & seafood", "Live-action carving stations", "A stunning visual centerpiece", "Restaurant-quality char every time"].map((x) => (
                 <li key={x} className="flex items-center gap-3 text-bone/85 text-sm">
                   <Flame className="size-4 text-gold" strokeWidth={1.5} /> {x}
                 </li>
               ))}
             </ul>
-            <Link to="/quote" className="btn-primary mt-10">Bring the Fire to Our Wedding <ArrowRight className="size-4" /></Link>
+            <Link to="/quote" className="btn-primary mt-10">Bring the Fire to My Wedding <ArrowRight className="size-4" /></Link>
           </div>
         </div>
       </section>
@@ -462,13 +469,13 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         <div className="container-luxe grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="order-2 lg:order-1">
             <div className="eyebrow mb-6">The Steakhouse Experience</div>
-            <h2 className="heading-lg text-bone">A Steakhouse Experience — brought to your venue.</h2>
-            <div className="mt-8 space-y-5 text-bone/80 text-lg font-light leading-relaxed">
-              <p>Charcoal-grilled ribeye, New York strip, filet mignon, picanha (Brazilian top sirloin cap), prime rib, salmon, and surf & turf — served under candlelight with polished service and unforgettable presentation.</p>
-              <p>The food, the atmosphere, the service. The luxury of a great steakhouse, without leaving your venue. Perfect for luxury weddings, black-tie receptions, and rehearsal dinners across {region}.</p>
+            <h2 className="heading-lg text-bone">Want your wedding to feel like a five-star steakhouse? We can do that.</h2>
+            <div className="mt-8 space-y-5 text-bone/85 text-lg font-light leading-relaxed">
+              <p>Charcoal-grilled ribeye, New York strip, filet mignon, picanha, prime rib, salmon, and surf &amp; turf — plated under candlelight, served with white-glove polish, presented like you're at the nicest steakhouse in town.</p>
+              <p>The food. The lighting. The service. The whole feeling of a great steakhouse — brought right to your venue. It's what most of our black-tie brides pick, and it's the moment your guests will describe as "unreal."</p>
             </div>
             <Link to="/steak-seafood-menu" className="inline-flex items-center gap-2 mt-10 text-[0.7rem] tracking-[0.28em] uppercase text-gold border-b border-gold/40 pb-1 hover:border-gold">
-              View the chef-attended steakhouse buffet Menu <ArrowRight className="size-3" />
+              See the Steakhouse Experience Menu <ArrowRight className="size-3" />
             </Link>
           </div>
           <div className="order-1 lg:order-2 relative aspect-[4/5] overflow-hidden">
@@ -483,20 +490,23 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
       <section id="process" className="py-24 lg:py-32 scroll-mt-32">
         <div className="container-luxe">
           <div className="max-w-2xl mb-16">
-            <div className="eyebrow mb-6">What Happens Next</div>
-            <h2 className="heading-lg text-bone">From "request a quote" to "I do" — handled.</h2>
+            <div className="eyebrow mb-6">What Happens After You Reach Out</div>
+            <h2 className="heading-lg text-bone">Here's exactly what planning with us looks like.</h2>
+            <p className="mt-6 text-bone/75 text-lg leading-relaxed font-light">
+              No high-pressure sales calls. No confusing forms. Just a clear, calm path from your first "hi" to your first dance.
+            </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/5 border border-white/5">
             {timelineSteps.map((s) => (
               <div key={s.n} className="bg-ink p-8 lg:p-10">
                 <div className="text-gold font-display text-4xl mb-4">{s.n}</div>
                 <h3 className="text-xl font-display text-bone mb-3">{s.title}</h3>
-                <p className="text-sm text-bone/70 leading-relaxed">{s.body}</p>
+                <p className="text-sm text-bone/75 leading-relaxed">{s.body}</p>
               </div>
             ))}
           </div>
           <div className="mt-12 text-center">
-            <Link to="/quote" className="btn-primary">Start Step 1 — Request a Quote <ArrowRight className="size-4" /></Link>
+            <Link to="/quote" className="btn-primary">Step 1 — Tell Us About Your Wedding <ArrowRight className="size-4" /></Link>
           </div>
         </div>
       </section>
@@ -506,28 +516,31 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         <div className="container-luxe grid lg:grid-cols-[1fr_1.4fr] gap-12 lg:gap-20">
           <div>
             <div className="gold-rule mb-8" />
-            <div className="eyebrow mb-6">The 35% Date Retainer</div>
-            <h2 className="heading-md text-bone">Lock the date. Not the menu.</h2>
+            <div className="eyebrow mb-6">About That Date Retainer</div>
+            <h2 className="heading-md text-bone">Reserve your date without locking in anything else.</h2>
           </div>
           <div>
             <p className="text-bone/85 text-lg font-light leading-relaxed">
-              Your wedding date is secured with a <strong className="text-gold">35% Date Retainer</strong> — applied directly to your final invoice. It reserves our team for your day and nothing more.
+              Once you're ready, we hold your date with a <strong className="text-gold">35% Date Retainer</strong> — and here's the important part: <em>it applies 100% to your final invoice</em>. You're not paying extra. You're just protecting your date on our calendar.
             </p>
-            <ul className="mt-8 space-y-4">
+            <p className="mt-5 text-bone/75 text-base font-light leading-relaxed">
+              We know it can feel scary to sign anything early in planning. So here's exactly what the retainer does <em>not</em> do:
+            </p>
+            <ul className="mt-6 space-y-4">
               {[
-                "You are NOT locking yourself into your menu",
-                "Menus can change later",
-                "Guest counts can change later",
-                "Food selections can change later",
-                "Bar packages can change later",
-                "Most planning happens after booking",
+                "It does NOT lock in your menu — that stays flexible",
+                "It does NOT lock in your guest count — RSVPs happen later",
+                "It does NOT lock in your service style — buffet, family, plated, all still open",
+                "It does NOT lock in your bar package — swap or add anytime",
+                "It does NOT lock in your upgrades — most planning happens after you book",
+                "It DOES lock in your date and our team so no one else can take it",
               ].map((x) => (
                 <li key={x} className="flex items-start gap-3 text-bone/85 text-base">
                   <Check className="size-5 text-gold mt-0.5 shrink-0" strokeWidth={1.5} /> {x}
                 </li>
               ))}
             </ul>
-            <Link to="/quote" className="btn-primary mt-10">Reserve Our Date <ArrowRight className="size-4" /></Link>
+            <Link to="/quote" className="btn-primary mt-10">Reserve My Wedding Date <ArrowRight className="size-4" /></Link>
           </div>
         </div>
       </section>
@@ -541,10 +554,10 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
             <img src={setting} alt={`Elegant ${regionShort} wedding reception table set by Qfire`} className="absolute inset-0 w-full h-full object-cover" />
           </div>
           <div>
-            <div className="eyebrow mb-6">Wedding Planners Love Us</div>
-            <h2 className="heading-lg text-bone">A caterer planners actually recommend.</h2>
-            <p className="mt-6 text-bone/80 text-lg font-light leading-relaxed">
-              Ask any planner in {region} what they want in a caterer. Then watch them describe Qfire. We're on the preferred-vendor lists planners reach for when the wedding has to be perfect.
+            <div className="eyebrow mb-6">Ask Your Planner About Us</div>
+            <h2 className="heading-lg text-bone">The caterer your planner will actually thank you for booking.</h2>
+            <p className="mt-6 text-bone/85 text-lg font-light leading-relaxed">
+              Wedding planners work with a lot of caterers. Ask any of them in {region} what they wish more caterers did — then watch them describe us. We're on the preferred-vendor lists planners reach for when the wedding absolutely has to go right.
             </p>
             <ul className="mt-8 grid sm:grid-cols-2 gap-3">
               {[
@@ -570,10 +583,10 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
       <section id="menu-options" className="py-24 lg:py-32 bg-onyx scroll-mt-32">
         <div className="container-luxe">
           <div className="max-w-2xl mb-14">
-            <div className="eyebrow mb-6">Menu Options</div>
-            <h2 className="heading-lg text-bone">Wood-fired. Premium upscale steakhouse catering. Surf & turf.</h2>
-            <p className="mt-6 text-bone/70 text-lg leading-relaxed font-light">
-              Whatever you serve at your {regionShort} wedding, it comes off our live-fire grill.
+            <div className="eyebrow mb-6">What You Can Serve</div>
+            <h2 className="heading-lg text-bone">Wood-fired. Upscale steakhouse. Surf &amp; turf. Or all three.</h2>
+            <p className="mt-6 text-bone/75 text-lg leading-relaxed font-light">
+              Whatever you dream up for your {regionShort} wedding menu, it comes off our live-fire grill — and Chef Terry will help you build the mix that fits your vibe and your budget.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-1">
@@ -619,9 +632,9 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         <div className="container-luxe">
           <div className="max-w-2xl mb-12">
             <div className="eyebrow mb-6">{region} Wedding Service Area</div>
-            <h2 className="heading-lg text-bone">Catering weddings across {region}.</h2>
-            <p className="mt-6 text-bone/70 text-lg font-light leading-relaxed">
-              From private estates to vineyards, ballrooms to backyards — Qfire caters luxury weddings throughout {region}, including:
+            <h2 className="heading-lg text-bone">Wherever you're getting married in {region} — we're there.</h2>
+            <p className="mt-6 text-bone/75 text-lg font-light leading-relaxed">
+              From private estates and vineyards to grand ballrooms and intimate backyards, we cater weddings all across {region}, including:
             </p>
           </div>
           <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-y-3 gap-x-6">
@@ -634,9 +647,9 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
           {venues.length > 0 && (
             <div className="mt-16">
               <div className="eyebrow mb-6">Venue Experience</div>
-              <h3 className="heading-md text-bone mb-6">{regionShort} venues we know.</h3>
-              <p className="text-bone/70 max-w-3xl font-light leading-relaxed">
-                We've executed weddings at {venues.slice(0, -1).join(", ")}, and {venues[venues.length - 1]} — plus dozens of private estates, vineyards, and resorts throughout the area. Already booked your venue? There's a good chance we already know the kitchen.
+              <h3 className="heading-md text-bone mb-6">Chances are, we already know your venue.</h3>
+              <p className="text-bone/75 max-w-3xl font-light leading-relaxed">
+                We've catered weddings at {venues.slice(0, -1).join(", ")}, and {venues[venues.length - 1]} — plus dozens of private estates, vineyards, and resorts across the area. If you've already picked your venue, there's a very good chance we already know the kitchen, the coordinator, and the loading dock.
               </p>
             </div>
           )}
@@ -651,10 +664,10 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
           </div>
           <div>
             <div className="eyebrow mb-6">Meet Your Chef</div>
-            <h2 className="heading-lg text-bone">Chef Terry Matthews — The BBQ Daddy.</h2>
-            <div className="mt-8 space-y-5 text-bone/80 text-lg font-light leading-relaxed">
-              <p>Twenty-five years of professional cooking. Over 2,000 weddings and catered events. Featured on Food Network's <em>BBQ Brawl</em> with Bobby Flay, <em>Camp Cutthroat</em>, and <em>Cutthroat Kitchen</em>.</p>
-              <p>Chef Terry — known to fans as <em>The BBQ Daddy</em> — personally designs every wedding menu Qfire serves. When you book Qfire, you book him.</p>
+            <h2 className="heading-lg text-bone">Chef Terry Matthews — the guy actually cooking your wedding.</h2>
+            <div className="mt-8 space-y-5 text-bone/85 text-lg font-light leading-relaxed">
+              <p>Twenty-five years behind the grill. Over 2,000 weddings and catered events. Featured on Food Network's <em>BBQ Brawl</em> with Bobby Flay, <em>Camp Cutthroat</em>, and <em>Cutthroat Kitchen</em> — where he actually won.</p>
+              <p>Here's the part most caterers won't tell you: when you hire Chef Terry, you get Chef Terry. He personally designs every wedding menu Qfire serves. He knows your name. He knows your date. And he cares — genuinely — about making your wedding one of the good ones.</p>
             </div>
             <div className="mt-8 flex flex-wrap gap-3">
               {["Food Network", "BBQ Brawl", "Camp Cutthroat", "Cutthroat Kitchen", "25+ Years"].map((b) => (
@@ -675,10 +688,10 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
       <section id="real-reviews" className="py-20 lg:py-28 bg-onyx border-y border-white/10 scroll-mt-32">
         <div className="container-luxe">
           <div className="max-w-2xl mx-auto text-center mb-12">
-            <div className="eyebrow justify-center mb-6">Real Couples · Verified Reviews</div>
-            <h2 className="heading-lg text-bone">Don't take our word for it.</h2>
-            <p className="mt-5 text-bone/70 text-lg font-light">
-              Read verified reviews from real Qfire couples on the two platforms brides trust most.
+            <div className="eyebrow justify-center mb-6">Real Brides · Verified Reviews</div>
+            <h2 className="heading-lg text-bone">Please don't just take our word for it.</h2>
+            <p className="mt-5 text-bone/75 text-lg font-light">
+              Here's what real Qfire brides are saying on the two platforms other brides trust most. Read every review — the good, the honest, all of it.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
@@ -718,7 +731,10 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         <div className="container-luxe">
           <div className="max-w-2xl mb-14">
             <div className="eyebrow mb-6">{regionShort} Wedding Catering FAQ</div>
-            <h2 className="heading-lg text-bone">Answers, before you ask.</h2>
+            <h2 className="heading-lg text-bone">All the questions you're already thinking — answered.</h2>
+            <p className="mt-5 text-bone/75 text-lg font-light leading-relaxed">
+              You shouldn't have to email us to find out the basics. Here's everything brides ask us most — pricing, tastings, allergies, guest counts, timing, and yes, the "what if it rains" question.
+            </p>
           </div>
           <div className="divide-y divide-white/10 border-t border-b border-white/10">
             {baseFaqs.map((f, i) => (
@@ -752,15 +768,15 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         <div className="container-luxe relative z-10 text-center">
           <div className="eyebrow mb-6">Let's Plan Your {regionShort} Wedding</div>
           <h2 className="font-display text-5xl md:text-7xl text-bone leading-[0.95]">
-            The wedding food <span className="italic text-gold font-light">guests will remember.</span>
+            The dinner your guests <span className="italic text-gold font-light">will remember forever.</span>
           </h2>
-          <p className="mt-8 text-xl text-bone/80 max-w-2xl mx-auto font-light">
-            Check your date. Request a quote. Schedule a tasting. We'll handle the rest.
+          <p className="mt-8 text-xl text-bone/85 max-w-2xl mx-auto font-light">
+            Send us your date. We'll check availability, put together a proposal, and set up a private tasting once you're ready. No pressure, no hard sell — just an easy conversation with a chef who wants your wedding to be incredible.
           </p>
           <div className="mt-12 flex flex-wrap gap-4 justify-center">
-            <Link to="/quote" className="btn-primary">Request Your Wedding Quote <ArrowRight className="size-4" /></Link>
+            <Link to="/quote" className="btn-primary">Start Planning My Wedding <ArrowRight className="size-4" /></Link>
             <Link to="/quote" className="btn-ghost">Schedule a Tasting</Link>
-            <Link to="/pricing" className="btn-ghost">View Pricing</Link>
+            <Link to="/pricing" className="btn-ghost">See Pricing</Link>
           </div>
         </div>
       </section>
