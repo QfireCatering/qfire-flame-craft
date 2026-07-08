@@ -136,7 +136,7 @@ const baseFaqs = [
   },
   {
     q: "Do you handle cake cutting?",
-    a: "Yes. Our servers cut, plate, and pass your wedding cake or dessert as part of service — at no extra fee. No cake-cutting charge, ever. If you're bringing in dessert from an outside bakery or doing a dessert bar (donuts, pies, macarons), we plate and serve those too.",
+    a: "Yes. We charge a $100 cake-cutting fee because cake is typically served after dinner, when our team would normally be wrapping up. That fee covers the extra staff time to beautifully cut, plate, and serve your cake — including outside-bakery cakes or dessert bars (donuts, pies, macarons) — so you can enjoy the moment worry-free.",
   },
   {
     q: "Do you feed our vendors — photographer, DJ, planner?",
