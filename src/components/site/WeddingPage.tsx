@@ -410,43 +410,6 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         </div>
       </section>
 
-      {/* 4. TWO WAYS TO SET THE TABLE — menu cards */}
-
-      <section id="menus" className="pt-20 lg:pt-28 pb-12 scroll-mt-32">
-        <div className="container-luxe max-w-5xl">
-          <div className="max-w-3xl mb-12">
-            <div className="eyebrow mb-6">{regionLabel} Wedding Reception Catering</div>
-            <h2 className="heading-xl text-bone">Choose your wedding reception menu.</h2>
-            <p className="mt-8 text-xl text-bone/70 leading-relaxed font-light">
-              Every Qfire wedding reception menu is fully customized to your day, your guests and your vision — with {regionLabel} pricing and local service.
-            </p>
-          </div>
-          <div className="grid sm:grid-cols-2 gap-6 lg:gap-8">
-            <a href={woodMenuUrl} target="_blank" rel="noopener noreferrer" className="group relative aspect-[5/4] overflow-hidden border border-white/5">
-              <img src={platter1} alt={`Wood-Fired — ${regionLabel}`} loading="lazy" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent" />
-              <div className="absolute inset-0 p-8 lg:p-12 flex flex-col justify-end">
-                <div className="heading-md text-bone group-hover:text-gold transition-colors">Wood-Fired — {regionLabel}</div>
-                <p className="mt-4 text-bone/70 max-w-sm">Slow-smoked brisket, tri-tip, pulled meats and comfort sides. Backyard elegance, restaurant polish.</p>
-                <div className="mt-6 inline-flex items-center gap-2 text-[0.65rem] tracking-[0.3em] uppercase text-gold">
-                  View Menu <ArrowRight className="size-3" />
-                </div>
-              </div>
-            </a>
-            <Link to={steakMenuPath} className="group relative aspect-[5/4] overflow-hidden border border-white/5">
-              <img src={steakMenu} alt={`Steakhouse — ${regionLabel}`} loading="lazy" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent" />
-              <div className="absolute inset-0 p-8 lg:p-12 flex flex-col justify-end">
-                <div className="heading-md text-bone group-hover:text-gold transition-colors">Steakhouse — {regionLabel}</div>
-                <p className="mt-4 text-bone/70 max-w-sm">Ribeye, filet, picanha, prime rib. Plated dinners and family-style service. Restaurant-quality at your venue.</p>
-                <div className="mt-6 inline-flex items-center gap-2 text-[0.65rem] tracking-[0.3em] uppercase text-gold">
-                  View Menu <ArrowRight className="size-3" />
-                </div>
-              </div>
-            </Link>
-          </div>
-        </div>
-      </section>
 
 
 
@@ -575,6 +538,45 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
       </section>
 
       <ScatteredReview review={reviews[1]} />
+
+      {/* TWO WAYS TO SET THE TABLE — menu cards */}
+
+      <section id="menus" className="pt-20 lg:pt-28 pb-12 scroll-mt-32">
+        <div className="container-luxe max-w-5xl">
+          <div className="max-w-3xl mb-12">
+            <div className="eyebrow mb-6">{regionLabel} Wedding Reception Catering</div>
+            <h2 className="heading-xl text-bone">Choose your wedding reception menu.</h2>
+            <p className="mt-8 text-xl text-bone/70 leading-relaxed font-light">
+              Every Qfire wedding reception menu is fully customized to your day, your guests and your vision — with {regionLabel} pricing and local service.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 gap-6 lg:gap-8">
+            <a href={woodMenuUrl} target="_blank" rel="noopener noreferrer" className="group relative aspect-[5/4] overflow-hidden border border-white/5">
+              <img src={platter1} alt={`Wood-Fired — ${regionLabel}`} loading="lazy" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent" />
+              <div className="absolute inset-0 p-8 lg:p-12 flex flex-col justify-end">
+                <div className="heading-md text-bone group-hover:text-gold transition-colors">Wood-Fired — {regionLabel}</div>
+                <p className="mt-4 text-bone/70 max-w-sm">Slow-smoked brisket, tri-tip, pulled meats and comfort sides. Backyard elegance, restaurant polish.</p>
+                <div className="mt-6 inline-flex items-center gap-2 text-[0.65rem] tracking-[0.3em] uppercase text-gold">
+                  View Menu <ArrowRight className="size-3" />
+                </div>
+              </div>
+            </a>
+            <Link to={steakMenuPath} className="group relative aspect-[5/4] overflow-hidden border border-white/5">
+              <img src={steakMenu} alt={`Steakhouse — ${regionLabel}`} loading="lazy" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent" />
+              <div className="absolute inset-0 p-8 lg:p-12 flex flex-col justify-end">
+                <div className="heading-md text-bone group-hover:text-gold transition-colors">Steakhouse — {regionLabel}</div>
+                <p className="mt-4 text-bone/70 max-w-sm">Ribeye, filet, picanha, prime rib. Plated dinners and family-style service. Restaurant-quality at your venue.</p>
+                <div className="mt-6 inline-flex items-center gap-2 text-[0.65rem] tracking-[0.3em] uppercase text-gold">
+                  View Menu <ArrowRight className="size-3" />
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
 
       {/* LIVE CHARCOAL GRILLING */}
       <section id="live-fire" className="py-24 lg:py-32 scroll-mt-32">
