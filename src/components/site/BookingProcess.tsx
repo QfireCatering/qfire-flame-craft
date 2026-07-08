@@ -84,7 +84,7 @@ export function BookingProcess({
           </div>
           <div className="flex flex-wrap gap-3">
             <a href={contact.phoneHref} className="btn-ghost">{contact.phone}</a>
-            <Link to="/quote" className="btn-primary">See If My Date Is Available <ArrowRight className="size-4" /></Link>
+            <Link to="/quote" className="btn-primary">See If My Date Is Open <ArrowRight className="size-4" /></Link>
           </div>
         </div>
       </div>

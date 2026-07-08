@@ -226,7 +226,7 @@ function FAQPage() {
                 Call {contact.phone}
               </a>
               <Link to="/quote" className="btn-primary">
-                See If My Date Is Available
+                See If My Date Is Open
               </Link>
             </div>
           </div>

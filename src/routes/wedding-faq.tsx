@@ -82,7 +82,7 @@ function WeddingFaqPage() {
             <p className="text-bone/60 text-sm tracking-[0.18em] uppercase mb-4">Still have a question?</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href={contact.phoneHref} className="btn-ghost">Call {contact.phone}</a>
-              <Link to="/quote" className="btn-primary">See If My Date Is Available <ArrowRight className="size-4" /></Link>
+              <Link to="/quote" className="btn-primary">See If My Date Is Open <ArrowRight className="size-4" /></Link>
             </div>
           </div>
         </div>
