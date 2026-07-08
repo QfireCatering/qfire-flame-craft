@@ -292,6 +292,8 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
     { id: "estimator", label: "Real Wedding Pricing" },
     { id: "steakhouse-pricing", label: "Steakhouse Pricing" },
     { id: "features", label: "Features" },
+    { id: "compare", label: "How We Compare" },
+
     { id: "menus", label: "Menus" },
     { id: "why-qfire", label: "Why Qfire" },
     { id: "service-styles", label: "Service Styles" },
