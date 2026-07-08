@@ -60,100 +60,51 @@ const baseFaqs = [
   },
   {
     q: "Can our wedding menu be fully customized?",
-    a: "Yes. Every Qfire menu is built from scratch around your taste, your venue, and your guest list. Chef Terry will design a custom proposal with passed hors d'oeuvres, entrees, sides, and dessert pairings — and you can refine it in a private tasting before the contract is finalized.",
-  },
-  {
-    q: "Do you travel for weddings?",
-    a: "Yes. We cater weddings throughout the entire metro and to destination venues, vineyards, ranches, and private estates within driving distance. Travel and lodging are quoted transparently inside your proposal.",
+    a: "Yes. Every Qfire menu is built from scratch around your taste, your venue, and your guest list. Chef Terry will design a custom proposal with passed hors d'oeuvres, entrees, sides, and dessert pairings — and you can refine it in a private tasting before the contract is finalized. Menu stays flexible up to 15 days out.",
   },
   {
     q: "Can we schedule a private tasting?",
-    a: "Absolutely. Couples seriously considering Qfire are invited to a private chef's-table tasting with Chef Terry. You'll sample your proposed entrees, sides, and a signature cocktail, then refine the menu in real time before contracts are finalized.",
+    a: "Absolutely. As long as your date is still available, you're welcome to schedule a tasting before booking. You'll sample 3 meats, 3 sides, and 2 appetizers for 5–7 guests ($200) — then decide if we're the right fit.",
   },
   {
     q: "How does the 35% Date Retainer work?",
-    a: "Your wedding date is reserved with a 35% Date Retainer applied directly to your final invoice. It locks in your date and our team — it does NOT lock in your menu, guest count, or service style. Those can all change as your planning evolves.",
+    a: "Your date is reserved with a 35% Date Retainer that applies 100% to your final invoice. It locks in your date and our team — NOT your menu, guest count, or service style. Those all stay flexible as your planning evolves.",
   },
   {
-    q: "Can we change our menu after we book?",
-    a: "Yes. Most couples refine their menu several times between booking and the final tasting. We expect it. Your Date Retainer holds the date and the team — the menu is a living document until roughly 15 days out.",
+    q: "Do you grill onsite at the venue?",
+    a: "Yes — live charcoal grilling is one of our signature offerings. We roll in the wood-fired grill and cook ribeyes, picanha, brisket, salmon, and chicken right in front of your guests. The aroma, the visual, the freshness — it's the moment people remember.",
   },
   {
     q: "Can we update our guest count later?",
     a: "Yes. The final guest count locks in 14 days before the wedding. Until then, you can scale up or down as RSVPs come in without any rebooking penalty.",
   },
   {
-    q: "Do you grill onsite at the venue?",
-    a: "Yes — live charcoal grilling is one of our signature offerings. We roll in the wood-fired grill and cook ribeyes, picanha (Brazilian top sirloin cap), brisket, salmon, and chicken right in front of your guests. The aroma, the visual, the freshness — it's the moment people remember.",
+    q: "What's the plan if it rains — or if it's 110° in July?",
+    a: "We plan for weather from day one. Our live-fire grills operate under a canopy in rain, wind, and heat. For extreme conditions we can shift to a covered service area or venue kitchen without changing your menu. Every proposal includes a weather contingency.",
   },
   {
-    q: "Do you provide bartenders?",
-    a: "Yes. Licensed and insured bartenders, signature cocktails, beer and wine programs, mixers, ice, and glassware. We can run the bar entirely or partner with your venue's beverage program.",
-  },
-  {
-    q: "Do you provide rentals?",
-    a: "We coordinate linens, chinaware, glassware, flatware, chafers, serving pieces, and staging through trusted rental partners — billed at cost and managed by our team so you don't field three vendor calls a week.",
-  },
-  {
-    q: "Do you accommodate allergies?",
+    q: "Do you accommodate allergies and dietary restrictions?",
     a: "Always. Every proposal includes vegetarian, vegan, gluten-free, and dairy-free options. For peanut, tree-nut, shellfish, and other serious allergies we run a dedicated prep line and label every plate at the pass.",
   },
-  {
-    q: "Do you offer vegetarian options?",
-    a: "Yes — beautifully composed vegetarian plates that stand alongside the steaks. Wood-fired vegetables, grain bowls, stuffed portobellos, handmade pastas, and seasonal sides built around what's at the market.",
-  },
-  {
-    q: "Do you offer vegan options?",
-    a: "Yes. Fully plant-based plated dinners and stations are available — grilled vegetable platters, vegan grain bowls, plant-protein entrees, and dairy-free desserts.",
-  },
-  {
-    q: "How early should we reserve our wedding date?",
-    a: "Most couples book Qfire 6 to 12 months in advance for peak Saturdays. Off-peak dates and intimate weddings can often be accommodated inside 90 days — but Saturdays from March through November book first.",
-  },
-  {
-    q: "What service styles do you offer?",
-    a: "Plated dinner, buffet, family-style, live-fire grilling stations, action stations (carving, raw bar, pasta), and passed-only cocktail receptions. Every menu can be served in the format that fits your venue and guest count.",
-  },
-  {
-    q: "Do you provide professional service staff?",
-    a: "Yes. Every wedding includes uniformed servers, captains, chefs, and a lead coordinator — fully staffed by our team, dressed appropriately for the level of the wedding, and trained to your timeline.",
-  },
-  {
-    q: "Who handles setup?",
-    a: "We do. Our team arrives hours before guest count, stages the kitchen, dresses every table assigned to catering, sets buffet and station displays, and coordinates with your planner and venue manager. You don't lift a thing.",
-  },
-  {
-    q: "Who handles cleanup?",
-    a: "We do. Full breakdown of all catering equipment, buffet stations, bar areas, and back-of-house. Trash bagged. Surfaces wiped. Your venue manager will ask for our card.",
-  },
-  {
-    q: "What if our venue has restrictions?",
-    a: "We work inside almost every major venue's catering rules and have existing relationships with most of the region's preferred-vendor lists. If your venue has specific power, propane, or fire-marshal restrictions for live grilling, we coordinate permits and approvals directly.",
-  },
-  {
-    q: "What areas do you serve — and are there travel fees?",
-    a: "We cater weddings throughout Phoenix Metro (Scottsdale, Paradise Valley, Mesa, Chandler, Gilbert, Tempe, Peoria, Queen Creek, and beyond) and San Diego County (La Jolla, Del Mar, Carlsbad, Rancho Santa Fe, Coronado, Encinitas, and beyond). Anything within roughly 30 miles of our home base is included at no additional charge. For destination venues (Sedona, Flagstaff, Temecula, wine country), travel and lodging are quoted transparently up front — no surprise mileage fees on your final invoice.",
-  },
-  {
-    q: "Do you handle cake cutting?",
-    a: "Yes. We charge a $100 cake-cutting fee because cake is typically served after dinner, when our team would normally be wrapping up. That fee covers the extra staff time to beautifully cut, plate, and serve your cake — including outside-bakery cakes or dessert bars (donuts, pies, macarons) — so you can enjoy the moment worry-free.",
-  },
-  {
-    q: "Do you feed our vendors — photographer, DJ, planner?",
-    a: "Yes. Vendor meals are billed at a reduced rate (typically $18–$24 per vendor depending on menu) and are served hot from the same kitchen right after the main service. Your planner will thank you — a fed vendor is a happy vendor.",
-  },
-  {
-    q: "What's the plan if it rains — or if it's 110° in July?",
-    a: "We plan for weather from day one. Our live-fire grills operate under a canopy in rain, wind, and heat. For extreme conditions we can shift to a covered service area or venue kitchen without changing your menu. Every proposal includes a weather contingency, and we coordinate directly with your planner and venue on the morning of if we need to pivot.",
-  },
-  {
-    q: "Are you licensed and insured?",
-    a: "Yes. Qfire Catering carries full general liability insurance, food handler licensing, and workers' compensation coverage. We can name your venue as an additional insured on our certificate — most venues require this, and we handle it directly with them so you don't have to.",
-  },
-  {
-    q: "What does a typical wedding-day timeline look like?",
-    a: "For a 5pm ceremony / 6pm reception: our team arrives around 1–2pm to set up the kitchen and buffet, cocktail-hour apps are passed at 6pm, dinner service begins at your first-dance cue (usually around 7pm), cake cutting around 8pm, and full breakdown wraps by 11pm or your venue's cutoff. Your account lead builds a detailed run-of-show with your planner in the weeks before the wedding.",
-  },
+];
+
+const extraFaqs = [
+  { q: "Do you travel for weddings?", a: "Yes. We cater weddings throughout the entire metro and to destination venues, vineyards, ranches, and private estates within driving distance. Travel and lodging are quoted transparently inside your proposal." },
+  { q: "Can we change our menu after we book?", a: "Yes. Most couples refine their menu several times between booking and the final tasting. The menu is a living document until roughly 15 days out." },
+  { q: "Do you provide bartenders?", a: "Yes. Licensed and insured bartenders, signature cocktails, beer and wine programs, mixers, ice, and glassware." },
+  { q: "Do you provide rentals?", a: "We coordinate linens, chinaware, glassware, flatware, chafers, serving pieces, and staging through trusted rental partners — billed at cost and managed by our team." },
+  { q: "Do you offer vegetarian options?", a: "Yes — beautifully composed vegetarian plates that stand alongside the steaks. Wood-fired vegetables, grain bowls, stuffed portobellos, handmade pastas, and seasonal sides." },
+  { q: "Do you offer vegan options?", a: "Yes. Fully plant-based plated dinners and stations — grilled vegetable platters, vegan grain bowls, plant-protein entrees, and dairy-free desserts." },
+  { q: "How early should we reserve our wedding date?", a: "Most couples book Qfire 6 to 12 months in advance for peak Saturdays. Off-peak dates and intimate weddings can often be accommodated inside 90 days." },
+  { q: "What service styles do you offer?", a: "Plated dinner, buffet, family-style, live-fire grilling stations, action stations (carving, raw bar, pasta), and passed-only cocktail receptions." },
+  { q: "Do you provide professional service staff?", a: "Yes. Every wedding includes uniformed servers, captains, chefs, and a lead coordinator." },
+  { q: "Who handles setup and cleanup?", a: "We do — arrival hours before guest count, full staging, buffet dressing, breakdown, trash bagged, surfaces wiped. Your venue manager will ask for our card." },
+  { q: "What if our venue has restrictions?", a: "We work inside almost every major venue's catering rules. If your venue has specific power, propane, or fire-marshal restrictions for live grilling, we coordinate permits directly." },
+  { q: "Do you handle cake cutting?", a: "Yes. $100 cake-cutting fee covers the additional staff time to cut, plate, and serve — including outside-bakery cakes and dessert bars." },
+  { q: "Do you feed our vendors — photographer, DJ, planner?", a: "Yes. Vendor meals billed at $18–$24 per vendor, served hot from the same kitchen right after main service." },
+  { q: "Are you licensed and insured?", a: "Yes — full general liability, food handler licensing, workers' comp. We name your venue as additional insured and handle the paperwork directly with them." },
+  { q: "What does a typical wedding-day timeline look like?", a: "5pm ceremony / 6pm reception: team arrives 1–2pm, passed apps at 6pm, dinner at first-dance cue (~7pm), cake around 8pm, breakdown by 11pm. Your account lead builds a detailed run-of-show with your planner." },
+  { q: "Are there travel fees for destination venues?", a: "Anything within roughly 30 miles of home base is included at no additional charge. Destination venues (Sedona, Flagstaff, Temecula) get transparent travel and lodging quotes up front." },
 ];
 
 const whyChoose = [
