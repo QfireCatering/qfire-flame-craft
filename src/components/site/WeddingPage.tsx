@@ -341,8 +341,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
                   <span className="text-5xl font-display text-bone tracking-tight">{tier.price}</span>
                   <span className="text-bone/55 text-sm">{tier.per}</span>
                 </div>
-                <p className="mt-6 text-bone/70 leading-relaxed font-light flex-1">{tier.desc}</p>
-                <Link to={steakMenuPath} className="btn-ghost mt-8">View Menu</Link>
+                <p className="mt-6 text-bone/70 leading-relaxed font-light">{tier.desc}</p>
               </article>
             ))}
           </div>
@@ -450,18 +449,6 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
       </section>
 
 
-      <InlineFAQ
-        items={[
-          {
-            q: "Do we get a tasting before we book?",
-            a: "As long as your reception date is still available, you're welcome to schedule a tasting before booking. You'll try 3 meats, 3 sides, and 2 appetizers — serving 5–7 guests — for $200, then decide if we're the right fit for your event.",
-          },
-          {
-            q: "Do you charge a cake-cutting fee?",
-            a: "Yes. We charge a $100 cake-cutting fee because cake is typically served after dinner, when our team would normally be wrapping up. This covers the additional staff time needed to beautifully cut, plate, and serve your cake so you can enjoy the moment worry-free.",
-          },
-        ]}
-      />
 
 
 

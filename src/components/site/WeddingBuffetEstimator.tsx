@@ -46,8 +46,8 @@ export function WeddingBuffetEstimator({
           <p className="mt-5 text-bone/75 text-lg font-light leading-relaxed">
             One of the first questions every couple asks is, "About how much should we budget for catering?" To make planning easier, we've put together an example of one of our most popular full-service wedding menus. This is not a package — it's simply an example to help you understand what a typical Qfire wedding looks like. Every wedding is fully customizable.
           </p>
-          <p className="mt-4 text-bone/90 text-base font-light leading-relaxed border border-gold/30 bg-ink/50 px-5 py-3 inline-block">
-            This is <span className="text-gold font-medium">Menu 1 of 2</span> — our Wood-Fired BBQ pricing. Keep scrolling to see our <span className="text-gold font-medium">Steakhouse Experience</span> pricing just below.
+          <p className="mt-4 text-bone text-lg md:text-xl font-medium leading-relaxed border-2 border-gold/50 bg-gold/15 px-6 py-4 inline-block shadow-[0_0_30px_rgba(212,175,55,0.15)]">
+            This is <span className="text-gold font-semibold">Menu 1 of 2</span> — our Wood-Fired BBQ pricing. Keep scrolling to see our <span className="text-gold font-semibold">Steakhouse Experience</span> pricing just below.
           </p>
         </div>
 
@@ -104,8 +104,8 @@ export function WeddingBuffetEstimator({
           </div>
         </div>
 
-        <div className="max-w-4xl mx-auto mt-10 p-6 lg:p-8 border border-white/10 bg-ink/40">
-          <p className="text-sm text-bone/75 leading-relaxed">
+        <div className="max-w-4xl mx-auto mt-10 p-6 lg:p-8 border border-gold/30 bg-gold/5">
+          <p className="text-base md:text-lg text-bone/90 leading-relaxed font-light">
             Pricing shown includes one premium meat upgrade, one appetizer, two beverages, and our professional buffet service. Guest count, menu selections, rentals, staffing, venue logistics, and optional upgrades may increase or decrease the final investment.
           </p>
         </div>
