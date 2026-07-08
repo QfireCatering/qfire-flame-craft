@@ -11,11 +11,12 @@ const hero = corpHeroAsset.url;
 export const Route = createFileRoute("/corporate")({
   head: () => ({
     meta: [
-      { title: "Corporate Catering in Phoenix & San Diego — Qfire Catering" },
-      { name: "description", content: "Premium corporate catering by Qfire — office lunches, executive dinners, holiday parties, construction-site catering and live-fire grilling across Phoenix Metro and San Diego County. 2,000+ events · 4.9★ · COI-ready." },
-      { property: "og:title", content: "Corporate Catering — Qfire | Phoenix & San Diego" },
-      { property: "og:description", content: "Reliable, on-time, restaurant-quality corporate catering across Phoenix and San Diego — executive dinners, holiday parties, employee appreciation, construction sites." },
+      { title: "Corporate Catering Phoenix & San Diego | Office, Executive, Holiday Party & BBQ Corporate Catering — Qfire" },
+      { name: "description", content: "Premium corporate catering by Qfire — office lunch catering, executive dinner catering, holiday party catering, employee appreciation, construction-site catering, BBQ corporate catering and live-fire grilling across Phoenix, Scottsdale, Mesa, Tempe, Chandler, Gilbert, San Diego, La Jolla, Carlsbad, Del Mar and Rancho Santa Fe. 2,000+ events · 4.9★ · COI-ready." },
+      { property: "og:title", content: "Corporate Catering — Qfire | Phoenix & San Diego Office & BBQ Corporate Catering" },
+      { property: "og:description", content: "Reliable, on-time, restaurant-quality corporate catering across Phoenix and San Diego — executive dinners, holiday parties, employee appreciation, construction-site BBQ catering." },
       { property: "og:url", content: "https://qfire-flame-craft.lovable.app/corporate" },
+      { name: "keywords", content: "corporate catering, corporate catering near me, office catering, office lunch catering, executive dinner catering, holiday party catering, employee appreciation catering, company party catering, business catering, corporate BBQ catering, BBQ corporate catering, construction site catering, jobsite catering, corporate catering Phoenix, corporate catering Scottsdale, corporate catering Mesa, corporate catering Tempe, corporate catering San Diego, corporate catering La Jolla, corporate catering Carlsbad" },
     ],
     links: [{ rel: "canonical", href: "https://qfire-flame-craft.lovable.app/corporate" }],
   }),
