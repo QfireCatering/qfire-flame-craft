@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowRight, Check, Flame, Award, Users, Star, Clock, Sparkles, Briefcase, ShieldCheck, Building2, Truck, MessageCircle } from "lucide-react";
 import { SectionNav } from "./SectionNav";
-import { WeddingBuffetEstimator } from "./WeddingBuffetEstimator";
+import { WoodFirePricing } from "./WoodFirePricing";
 import { contact } from "@/lib/contact";
 import asSeenOnBadge from "@/assets/as-seen-on-food-network.png.asset.json";
 
