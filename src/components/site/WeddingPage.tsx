@@ -630,7 +630,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
               <p>Charcoal-grilled ribeye, New York strip, filet mignon, picanha, prime rib, salmon, and surf &amp; turf — plated under candlelight, served with white-glove polish, presented like you're at the nicest steakhouse in town.</p>
               <p>The food. The lighting. The service. The whole feeling of a great steakhouse — brought right to your venue. It's what most of our black-tie brides pick, and it's the moment your guests will describe as "unreal."</p>
             </div>
-            <Link to="/steak-seafood-menu" className="inline-flex items-center gap-2 mt-10 text-[0.7rem] tracking-[0.28em] uppercase text-gold border-b border-gold/40 pb-1 hover:border-gold">
+            <Link to={steakMenuPath} className="inline-flex items-center gap-2 mt-10 text-[0.7rem] tracking-[0.28em] uppercase text-gold border-b border-gold/40 pb-1 hover:border-gold">
               See the Steakhouse Experience Menu <ArrowRight className="size-3" />
             </Link>
           </div>
@@ -776,7 +776,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
           <div className="grid md:grid-cols-3 gap-1">
             {[
               { img: platter, title: "Wood-Fire Catering", body: "Brisket, ribs, pulled pork, smoked chicken, sausage, all the sides.", to: "/menus" },
-              { img: steakMenu, title: "Steakhouse", body: "Ribeye, NY strip, filet, picanha, prime rib, salmon, surf & turf.", to: "/steak-seafood-menu" },
+              { img: steakMenu, title: "Steakhouse", body: "Ribeye, NY strip, filet, picanha, prime rib, salmon, surf & turf.", to: steakMenuPath },
               { img: platter1, title: "Carving Stations", body: "Chef-attended live carving — picanha, brisket, prime rib, lamb.", to: "/menus" },
             ].map((m) => (
               <Link key={m.title} to={m.to} className="group relative aspect-[4/5] overflow-hidden block">
@@ -864,7 +864,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
             <div className="eyebrow mb-6">Meet Your Chef</div>
             <h2 className="heading-lg text-bone">Chef Terry Matthews — the guy actually cooking your wedding.</h2>
             <div className="mt-8 space-y-5 text-bone/85 text-lg font-light leading-relaxed">
-              <p>Twenty-five years behind the grill. Over 2,000 weddings and catered events. Featured on Food Network's <em>BBQ Brawl</em> with Bobby Flay, <em>Camp Cutthroat</em>, and <em>Cutthroat Kitchen</em> — where he actually won.</p>
+              <p>Fifteen years behind the grill. Over 2,000 weddings and catered events. Featured on Food Network's <em>BBQ Brawl</em> with Bobby Flay, <em>Camp Cutthroat</em>, and <em>Cutthroat Kitchen</em> — where he actually won.</p>
               <p>Here's the part most caterers won't tell you: when you hire Chef Terry, you get Chef Terry. He personally designs every wedding menu Qfire serves. He knows your name. He knows your date. And he cares — genuinely — about making your wedding one of the good ones.</p>
             </div>
             <div className="mt-8 flex flex-wrap gap-3">
