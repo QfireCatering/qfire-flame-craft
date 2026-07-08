@@ -47,7 +47,14 @@ function QuotePage() {
   const { date: prefilledDate } = Route.useSearch();
   const [state, setState] = useState<"idle" | "sending" | "sent" | "error">("idle");
   const [error, setError] = useState<string | null>(null);
+  const [expanded, setExpanded] = useState(false);
+  const [step1, setStep1] = useState({
+    name: "",
+    email: "",
+    date: prefilledDate ?? "",
+  });
   const submit = useServerFn(submitLead);
+  const step1Ready = step1.name.trim().length > 1 && /.+@.+\..+/.test(step1.email) && step1.date.length > 0;
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -154,62 +161,114 @@ function QuotePage() {
                 ⏱ Usually responds within 4 business hours
               </p>
 
+              {/* STEP 1 — 3-field quick start */}
+              <div className="border-2 border-gold/40 bg-gold/[0.04] p-5 lg:p-6 space-y-4">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <div className="text-[0.65rem] tracking-[0.3em] uppercase text-gold mb-1">Step 1 of 2 · Takes 30 seconds</div>
+                    <div className="text-bone font-display text-xl leading-tight">Check my date &amp; start my quote</div>
+                  </div>
+                </div>
+                <div>
+                  <label className="block text-[0.6rem] tracking-[0.25em] uppercase text-white mb-2">First and Last Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    required
+                    maxLength={120}
+                    value={step1.name}
+                    onChange={(e) => setStep1((s) => ({ ...s, name: e.target.value }))}
+                    className="w-full bg-charcoal/60 border border-white/15 px-4 py-3 text-bone focus:border-gold focus:outline-none"
+                  />
+                </div>
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-[0.6rem] tracking-[0.25em] uppercase text-white mb-2">Email</label>
+                    <input
+                      type="email"
+                      name="email"
+                      required
+                      maxLength={255}
+                      value={step1.email}
+                      onChange={(e) => setStep1((s) => ({ ...s, email: e.target.value }))}
+                      className="w-full bg-charcoal/60 border border-white/15 px-4 py-3 text-bone focus:border-gold focus:outline-none"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-[0.6rem] tracking-[0.25em] uppercase text-white mb-2">Event Date</label>
+                    <input
+                      type="date"
+                      name="date"
+                      value={step1.date}
+                      onChange={(e) => setStep1((s) => ({ ...s, date: e.target.value }))}
+                      className="w-full bg-charcoal/60 border border-white/15 px-4 py-3 text-bone focus:border-gold focus:outline-none"
+                    />
+                  </div>
+                </div>
+                {!expanded && (
+                  <button
+                    type="button"
+                    onClick={() => setExpanded(true)}
+                    disabled={!step1Ready}
+                    className="btn-primary w-full disabled:opacity-40 disabled:cursor-not-allowed"
+                  >
+                    Check My Date &amp; Continue <ArrowRight className="size-4" />
+                  </button>
+                )}
+                {!expanded && !step1Ready && (
+                  <p className="text-xs text-bone/60 text-center">Fill the 3 fields above to continue — no commitment.</p>
+                )}
+              </div>
 
-              <div className="bg-red-950/30 border-2 border-red-500 rounded-md p-5 shadow-[0_0_24px_rgba(239,68,68,0.25)]">
-                <p className="text-bone font-bold text-base leading-relaxed text-center">
-                  Complete the form below to continue to our full menu and pricing page. You'll be able to build your ideal menu and request a detailed quote based on your exact selections.
-                </p>
-              </div>
-              <Field label="First and Last Name" name="name" required maxLength={120} />
-              <div className="grid sm:grid-cols-2 gap-6">
-                <Field label="Email" name="email" type="email" required maxLength={255} />
-                <Field label="Cell Phone" name="phone" type="tel" maxLength={40} />
-              </div>
-              <div className="grid sm:grid-cols-2 gap-6">
-                <Field label="Event Date" name="date" type="date" defaultValue={prefilledDate} />
-                <Field label="Approx Guest Count" name="guests" type="number" />
-              </div>
-              <SelectField
-                label="Region"
-                name="region"
-                options={["Arizona", "San Diego County", "Destination / Other"]}
-              />
-              <SelectField
-                label="Menu Interest"
-                name="menu"
-                options={["Wood-Fired Catering", "Steakhouse Experience", "Not sure yet"]}
-              />
-              <div>
-      <label className="block text-[0.65rem] tracking-[0.3em] uppercase text-white mb-3">
-                  What Question(s) may we help you with?
-                </label>
-                <textarea
-                  name="message"
-                  rows={5}
-                  maxLength={4000}
-                  className="w-full bg-charcoal/40 border border-white/10 px-4 py-4 text-bone focus:border-gold focus:outline-none transition-colors resize-none"
-                />
-              </div>
-              {state === "error" && (
-                <div className="text-sm text-red-400 border border-red-500/30 px-4 py-3">
-                  {error ?? "Submission failed."} Please call {contact.phone}.
+              {expanded && (
+                <div className="space-y-6 animate-in fade-in duration-500">
+                  <div className="text-[0.65rem] tracking-[0.3em] uppercase text-gold text-center pt-2">Step 2 of 2 · A few more details for your custom proposal</div>
+                  <Field label="Cell Phone" name="phone" type="tel" maxLength={40} />
+                  <Field label="Approx Guest Count" name="guests" type="number" />
+                  <SelectField
+                    label="Region"
+                    name="region"
+                    options={["Arizona", "San Diego County", "Destination / Other"]}
+                  />
+                  <SelectField
+                    label="Menu Interest"
+                    name="menu"
+                    options={["Wood-Fired Catering", "Steakhouse Experience", "Not sure yet"]}
+                  />
+                  <div>
+                    <label className="block text-[0.65rem] tracking-[0.3em] uppercase text-white mb-3">
+                      What Question(s) may we help you with?
+                    </label>
+                    <textarea
+                      name="message"
+                      rows={5}
+                      maxLength={4000}
+                      className="w-full bg-charcoal/40 border border-white/10 px-4 py-4 text-bone focus:border-gold focus:outline-none transition-colors resize-none"
+                    />
+                  </div>
+                  {state === "error" && (
+                    <div className="text-sm text-red-400 border border-red-500/30 px-4 py-3">
+                      {error ?? "Submission failed."} Please call {contact.phone}.
+                    </div>
+                  )}
+                  <button
+                    type="submit"
+                    disabled={state === "sending"}
+                    className="btn-primary w-full disabled:opacity-60"
+                  >
+                    {state === "sending" ? "Sending…" : "Request My Custom Proposal"}{" "}
+                    <ArrowRight className="size-4" />
+                  </button>
+                  <p className="text-sm text-bone font-bold text-center">
+                    Feel free to call RIGHT NOW, for faster service{" "}
+                    <a href={contact.phoneHref} className="text-gold">
+                      {contact.phone}
+                    </a>
+                  </p>
                 </div>
               )}
-              <button
-                type="submit"
-                disabled={state === "sending"}
-                className="btn-primary w-full disabled:opacity-60"
-              >
-                {state === "sending" ? "Sending…" : "Submit"}{" "}
-                <ArrowRight className="size-4" />
-              </button>
-              <p className="text-sm text-bone font-bold text-center">
-                Feel free to call RIGHT NOW, for faster service{" "}
-                <a href={contact.phoneHref} className="text-gold">
-                  {contact.phone}
-                </a>
-              </p>
             </form>
+
           )}
         </div>
       </div>

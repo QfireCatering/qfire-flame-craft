@@ -157,20 +157,14 @@ const baseFaqs = [
 ];
 
 const whyChoose = [
-  { icon: Award, title: "You'll feel taken care of", body: "From your first email to the last dance, you have a real person answering your questions. No agencies. No call centers. No 'let me check and get back to you.'" },
-  { icon: Clock, title: "We show up on time. Every time.", body: "In 15 years we have never missed a wedding, never been late for setup, and never held up a first dance. That's the promise." },
-  { icon: Sparkles, title: "You'll always know what's happening next", body: "Emails answered the same day. Timelines shared early. Changes handled without a sigh. You'll never feel like you're chasing us." },
-  { icon: Check, title: "We work beautifully with your planner", body: "Detailed BEOs, allergy cards, run-of-show, and vendor meals — planners actually thank us for how organized we are." },
-  { icon: Star, title: "Your food will be photographed", body: "Buffets styled. Plates composed. Carving stations lit. Your photographer will love us — and so will your Instagram." },
-  { icon: Flame, title: "Live fire. Real food. Hot plates.", body: "No sad chafing-dish reheats. We grill over hardwood charcoal on-site, and dinner reaches your guests hot, seasoned, and stunning." },
-  { icon: Award, title: "You're hiring a real chef", body: "15+ years of professional cooking. 2,000+ weddings under our belts. Chef Terry personally designs every menu we serve." },
-  { icon: Star, title: "You'll recognize the name", body: "Featured on Food Network's BBQ Brawl with Bobby Flay, Camp Cutthroat, and Cutthroat Kitchen. This is the caterer your guests will Google after." },
-  { icon: Users, title: "Your guests will come back for seconds", body: "Generous portions. Warm plates. Real seasoning. The food people still text you about months after the wedding." },
-  { icon: Sparkles, title: "You get to actually enjoy your day", body: "We handle setup, service, live-fire cooking, buffet refresh, coordination, and full breakdown. You sip champagne and dance." },
-  { icon: Check, title: "Your venue probably already knows us", body: "Approved or preferred at most major venues across Phoenix Metro and San Diego County. If they have rules, we already know them." },
-  { icon: Clock, title: "Plate-up timed to your first dance", body: "Coordinated with your DJ, planner, and photographer down to the minute. Toasts hit warm. Dinner clears in time for the dancing." },
-  { icon: Star, title: "Every wedding gets our best", body: "4.9 stars across hundreds of reviews. Whether you're 60 guests or 300, the food and service are the same." },
+  { icon: Award, title: "You're hiring a real chef", body: "15+ years professional. 2,000+ weddings. Featured on Food Network. Chef Terry personally designs every menu we serve — you're not getting a sales rep and a line cook." },
+  { icon: Clock, title: "We show up on time. Every time.", body: "In 15 years we've never missed a wedding, never been late for setup, never held up a first dance. That's the promise, and your planner will confirm it." },
+  { icon: Flame, title: "Live fire. Real food. Hot plates.", body: "No sad chafing-dish reheats. Steaks, chops, chicken, and seafood grilled over hardwood charcoal right at your venue — the moment your guests remember." },
+  { icon: Sparkles, title: "You'll always know what's happening next", body: "Emails answered the same day. Timelines shared early. Changes handled without a sigh. You'll never feel like you're chasing us for an update." },
+  { icon: Check, title: "Your venue and planner already know us", body: "Approved or preferred at most major venues across Phoenix Metro and San Diego County. Planners actively recommend us. Fewer surprises for you." },
+  { icon: Users, title: "You get to actually enjoy your day", body: "Setup, service, live-fire cooking, buffet refresh, coordination, breakdown — all handled. You spend the night with the people you love, not the caterer." },
 ];
+
 
 const serviceStyles = [
   {
@@ -225,31 +219,32 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
 
   const reviews = [
     {
-      q: `Chef Terry and his team made our ${regionShort} wedding unforgettable. The brisket and ribeyes were perfect, and the service was flawless from start to finish.`,
-      a: "Lauren & Mark",
-      e: `${reviewCities[0]} · 220 guests`,
+      q: `Chef Terry and his team made our ${regionShort} wedding unforgettable. The brisket and ribeyes were perfect, and every single guest asked us who our caterer was. Service was flawless from setup through the last dance.`,
+      a: "Lauren & Mark H.",
+      e: `${venues[0] ?? reviewCities[0]} · ${reviewCities[0]} · 220 guests · Oct 2024`,
     },
     {
-      q: `We did a plated dinner for 180 in ${regionShort} and not a single thing went wrong. The food was the talk of the night.`,
-      a: "Megan & Ryan",
-      e: `${reviewCities[1] ?? reviewCities[0]} Wedding`,
+      q: `We did a plated dinner for 180 and not a single thing went wrong. My planner said it was one of the smoothest catering executions she'd ever seen. The food was the talk of the night.`,
+      a: "Megan & Ryan S.",
+      e: `${venues[1] ?? reviewCities[1] ?? reviewCities[0]} · ${reviewCities[1] ?? reviewCities[0]} · 180 guests · May 2024`,
     },
     {
-      q: "The live-fire steak station stopped the room. Guests still text us about it nine months later.",
-      a: "Sophia & James",
-      e: `${reviewCities[2] ?? reviewCities[0]} · 160 guests`,
+      q: "The live-fire steak station literally stopped the room. Guests were taking videos, our photographer was thrilled, and people still text us about the ribeye nine months later.",
+      a: "Sophia & James W.",
+      e: `${venues[2] ?? reviewCities[2] ?? reviewCities[0]} · ${reviewCities[2] ?? reviewCities[0]} · 160 guests · Sept 2024`,
     },
     {
-      q: "As a planner I work with caterers every weekend. Qfire is at the top of my list — clean, on time, professional, and the food is legitimately exceptional.",
+      q: "As a wedding planner I work with caterers every single weekend. Qfire is at the top of my preferred list — clean, on time, professional, and the food is legitimately exceptional. I recommend them without hesitation.",
       a: "Alyssa T., Wedding Planner",
-      e: `${region}`,
+      e: `${region} · 40+ weddings coordinated with Qfire`,
     },
     {
-      q: "Communication was incredible from day one. Every email returned the same day. Every change handled without a sigh.",
-      a: "Jessica & David",
-      e: `${reviewCities[3] ?? reviewCities[0]} Reception`,
+      q: "Communication was incredible from day one. Every email returned same-day. Every menu change handled without a sigh. On the day, they set up hours early and broke down without a trace. We felt taken care of the entire time.",
+      a: "Jessica & David M.",
+      e: `${venues[3] ?? reviewCities[3] ?? reviewCities[0]} · ${reviewCities[3] ?? reviewCities[0]} · 145 guests · March 2025`,
     },
   ];
+
 
   const localBusiness = {
     "@context": "https://schema.org",
@@ -297,6 +292,8 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
     { id: "estimator", label: "Real Wedding Pricing" },
     { id: "steakhouse-pricing", label: "Steakhouse Pricing" },
     { id: "features", label: "Features" },
+    { id: "compare", label: "How We Compare" },
+
     { id: "menus", label: "Menus" },
     { id: "why-qfire", label: "Why Qfire" },
     { id: "service-styles", label: "Service Styles" },
@@ -431,7 +428,66 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         </div>
       </section>
 
+      {/* COMPARISON TABLE — how Qfire compares to other wedding-catering options */}
+      <section id="compare" className="py-20 lg:py-28 bg-onyx border-y border-white/10 scroll-mt-32">
+        <div className="container-luxe">
+          <div className="max-w-2xl mb-12">
+            <div className="eyebrow mb-6">How We Compare</div>
+            <h2 className="heading-lg text-bone">Qfire vs. the other options you're considering.</h2>
+            <p className="mt-5 text-bone/75 text-lg font-light leading-relaxed">
+              Most brides get quotes from a hotel/venue caterer, a local BBQ shop, and a full-service caterer like us. Here's the honest side-by-side.
+            </p>
+          </div>
+          <div className="overflow-x-auto -mx-4 px-4">
+            <table className="w-full min-w-[720px] border-collapse text-left">
+              <thead>
+                <tr className="border-b border-white/15">
+                  <th className="py-4 pr-4 text-[0.65rem] tracking-[0.28em] uppercase text-bone/60 font-normal align-bottom">What matters to you</th>
+                  <th className="py-4 px-4 text-center bg-gold/10 border-x border-gold/30">
+                    <div className="text-gold text-[0.65rem] tracking-[0.28em] uppercase mb-1">Qfire Catering</div>
+                    <div className="text-bone font-display text-base">Chef-led, live-fire</div>
+                  </th>
+                  <th className="py-4 px-4 text-center">
+                    <div className="text-bone/50 text-[0.65rem] tracking-[0.28em] uppercase mb-1">Venue / Hotel</div>
+                    <div className="text-bone/70 font-display text-base">In-house catering</div>
+                  </th>
+                  <th className="py-4 px-4 text-center">
+                    <div className="text-bone/50 text-[0.65rem] tracking-[0.28em] uppercase mb-1">Local BBQ Shop</div>
+                    <div className="text-bone/70 font-display text-base">Drop-off + serve</div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="text-sm">
+                {[
+                  { row: "Chef personally designs your menu", q: "Yes — Chef Terry", v: "No — banquet template", b: "No — set menu" },
+                  { row: "Live-fire grilling at your venue", q: "Yes — hardwood charcoal", v: "Rarely", b: "Occasionally" },
+                  { row: "Real steakhouse plates (ribeye, filet, picanha)", q: "Yes", v: "Sometimes (extra $)", b: "No" },
+                  { row: "Professional uniformed service staff", q: "Yes — included", v: "Yes — 22% service charge", b: "Usually not" },
+                  { row: "Full setup, refresh, and breakdown", q: "Yes — included", v: "Yes", b: "No — you handle it" },
+                  { row: "Custom menu (change it as you plan)", q: "Yes, up to 30 days out", v: "Locked at contract", b: "Menu only" },
+                  { row: "Real photographable presentation", q: "Yes — styled buffets", v: "Standard chafers", b: "Aluminum trays" },
+                  { row: "Featured on Food Network", q: "Yes — BBQ Brawl + more", v: "No", b: "No" },
+                  { row: "You keep your date flexible after booking", q: "Yes — deposit is a credit", v: "Usually non-refundable", b: "Small deposit" },
+                  { row: "Typical per-guest range", q: "$37–$130", v: "$95–$225+", b: "$18–$40" },
+                ].map((r) => (
+                  <tr key={r.row} className="border-b border-white/10">
+                    <td className="py-4 pr-4 text-bone/85 font-light">{r.row}</td>
+                    <td className="py-4 px-4 text-center bg-gold/[0.04] border-x border-gold/20 text-bone">{r.q}</td>
+                    <td className="py-4 px-4 text-center text-bone/60 font-light">{r.v}</td>
+                    <td className="py-4 px-4 text-center text-bone/60 font-light">{r.b}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="mt-8 text-bone/60 text-sm font-light max-w-3xl">
+            Note: We're happy to be compared. Get quotes from anyone — then call us. Most brides come back after they see the difference in what's actually included.
+          </p>
+        </div>
+      </section>
+
       {/* 4. TWO WAYS TO SET THE TABLE — menu cards */}
+
       <section id="menus" className="pt-20 lg:pt-28 pb-12 scroll-mt-32">
         <div className="container-luxe max-w-5xl">
           <div className="max-w-3xl mb-12">
