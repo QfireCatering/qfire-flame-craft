@@ -7,11 +7,12 @@ import heroAsset from "@/assets/private-parties-hero.png.asset.json";
 export const Route = createFileRoute("/private-parties")({
   head: () => ({
     meta: [
-      { title: "Private Party Catering in Phoenix & San Diego — Qfire" },
-      { name: "description", content: "Luxury private party catering for birthdays, backyard BBQs, anniversaries, graduations, holidays, and family reunions across Phoenix Metro and San Diego County. Live charcoal grilling, premium Steakhouse Experience plates, and full-service hosting by Chef Terry Matthews." },
-      { property: "og:title", content: "Private Party Catering — Qfire | Phoenix & San Diego" },
-      { property: "og:description", content: "Restaurant-quality private party catering for birthdays, backyard parties, anniversaries, and private celebrations. Choose your region to begin." },
+      { title: "Private Party Catering Phoenix & San Diego | Birthday, Backyard BBQ & Anniversary Catering — Qfire" },
+      { name: "description", content: "Luxury private party catering and BBQ catering near me for birthdays, backyard BBQs, anniversaries, graduations, holiday parties, and family reunions across Phoenix, Scottsdale, Paradise Valley, Mesa, Gilbert, Chandler, San Diego, La Jolla, Del Mar, Carlsbad, Encinitas and Rancho Santa Fe. Live charcoal grilling, wood-fire BBQ, premium Steakhouse Experience plates, and full-service hosting by Chef Terry Matthews." },
+      { property: "og:title", content: "Private Party Catering — Qfire | Phoenix & San Diego Backyard BBQ & Birthday Catering" },
+      { property: "og:description", content: "Restaurant-quality private party catering, backyard BBQ catering and private chef service for birthdays, anniversaries, graduations, and private celebrations across Phoenix Metro and San Diego County." },
       { property: "og:url", content: "https://qfire-flame-craft.lovable.app/private-parties" },
+      { name: "keywords", content: "private party catering, private party catering near me, backyard BBQ catering, birthday party catering, anniversary catering, graduation party catering, holiday party catering, family reunion catering, bachelor party catering, bachelorette catering, pool party catering, private chef Phoenix, private chef San Diego, private party catering Phoenix, private party catering Scottsdale, private party catering Paradise Valley, private party catering San Diego, private party catering La Jolla, private party catering Del Mar, backyard wedding catering" },
     ],
     links: [{ rel: "canonical", href: "https://qfire-flame-craft.lovable.app/private-parties" }],
   }),

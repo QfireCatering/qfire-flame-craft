@@ -11,11 +11,12 @@ const hero = weddingCoupleAsset.url;
 export const Route = createFileRoute("/weddings")({
   head: () => ({
     meta: [
-      { title: "Wedding Catering in Phoenix & San Diego — Qfire Catering" },
-      { name: "description", content: "Luxury wedding catering by Qfire — live charcoal grilling, premium steaks, full-service buffets and plated dinners across Phoenix Metro and San Diego County. 2,000+ weddings · 4.9★ · Featured on Food Network." },
-      { property: "og:title", content: "Luxury Wedding Catering — Qfire" },
-      { property: "og:description", content: "Wood-fired flavors, Steakhouse Experience polish. Full-service wedding catering by Chef Terry Matthews — Phoenix & San Diego." },
+      { title: "Wedding Catering Phoenix & San Diego | BBQ Wedding Catering, Wood-Fire & Steakhouse Wedding Caterer — Qfire" },
+      { name: "description", content: "Luxury wedding catering by Qfire — BBQ wedding catering, wood-fire wedding catering and steakhouse wedding catering with live charcoal grilling, premium steaks, full-service buffets and plated dinners. Wedding caterer near me for Phoenix, Scottsdale, Paradise Valley, Mesa, Chandler, Gilbert, San Diego, La Jolla, Del Mar, Carlsbad, Rancho Santa Fe and Coronado. 2,000+ weddings · 4.9★ · Featured on Food Network." },
+      { property: "og:title", content: "Wedding Catering Phoenix & San Diego — BBQ & Steakhouse Wedding Caterer | Qfire" },
+      { property: "og:description", content: "Wood-fire flavors, steakhouse polish. Full-service wedding catering, BBQ wedding catering and plated dinners by Chef Terry Matthews across Phoenix Metro and San Diego County." },
       { property: "og:url", content: "https://qfire-flame-craft.lovable.app/weddings" },
+      { name: "keywords", content: "wedding catering, wedding caterer near me, BBQ wedding catering, wood-fire wedding catering, steakhouse wedding catering, wedding catering Phoenix, wedding catering Scottsdale, wedding catering Paradise Valley, wedding catering Mesa, wedding catering San Diego, wedding catering La Jolla, wedding catering Del Mar, wedding catering Carlsbad, wedding catering Rancho Santa Fe, wedding catering Coronado, wedding BBQ caterer, wedding steakhouse caterer, luxury wedding catering, plated wedding catering, buffet wedding catering, live-fire wedding catering" },
     ],
     links: [{ rel: "canonical", href: "https://qfire-flame-craft.lovable.app/weddings" }],
   }),
