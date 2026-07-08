@@ -195,15 +195,24 @@ function QuotePage() {
                     />
                   </div>
                   <div>
-                    <label className="block text-[0.6rem] tracking-[0.25em] uppercase text-white mb-2">Event Date</label>
+                    <label className="block text-[0.6rem] tracking-[0.25em] uppercase text-white mb-2">Cell Phone</label>
                     <input
-                      type="date"
-                      name="date"
-                      value={step1.date}
-                      onChange={(e) => setStep1((s) => ({ ...s, date: e.target.value }))}
+                      type="tel"
+                      name="phone"
+                      maxLength={40}
                       className="w-full bg-charcoal/60 border border-white/15 px-4 py-3 text-bone focus:border-gold focus:outline-none"
                     />
                   </div>
+                </div>
+                <div>
+                  <label className="block text-[0.6rem] tracking-[0.25em] uppercase text-white mb-2">Event Date</label>
+                  <input
+                    type="date"
+                    name="date"
+                    value={step1.date}
+                    onChange={(e) => setStep1((s) => ({ ...s, date: e.target.value }))}
+                    className="w-full bg-charcoal/60 border border-white/15 px-4 py-3 text-bone focus:border-gold focus:outline-none"
+                  />
                 </div>
                 {!expanded && (
                   <button
@@ -223,7 +232,10 @@ function QuotePage() {
               {expanded && (
                 <div className="space-y-6 animate-in fade-in duration-500">
                   <div className="text-[0.65rem] tracking-[0.3em] uppercase text-gold text-center pt-2">Step 2 of 2 · A few more details for your custom proposal</div>
-                  <Field label="Cell Phone" name="phone" type="tel" maxLength={40} />
+                  <SelectField
+                    label="Leave a message"
+                    name="message"
+                  />
                   <Field label="Approx Guest Count" name="guests" type="number" />
                   <SelectField
                     label="Region"
