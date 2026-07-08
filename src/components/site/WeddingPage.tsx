@@ -158,12 +158,12 @@ const baseFaqs = [
 
 const whyChoose = [
   { icon: Award, title: "You'll feel taken care of", body: "From your first email to the last dance, you have a real person answering your questions. No agencies. No call centers. No 'let me check and get back to you.'" },
-  { icon: Clock, title: "We show up on time. Every time.", body: "In 25 years we have never missed a wedding, never been late for setup, and never held up a first dance. That's the promise." },
+  { icon: Clock, title: "We show up on time. Every time.", body: "In 15 years we have never missed a wedding, never been late for setup, and never held up a first dance. That's the promise." },
   { icon: Sparkles, title: "You'll always know what's happening next", body: "Emails answered the same day. Timelines shared early. Changes handled without a sigh. You'll never feel like you're chasing us." },
   { icon: Check, title: "We work beautifully with your planner", body: "Detailed BEOs, allergy cards, run-of-show, and vendor meals — planners actually thank us for how organized we are." },
   { icon: Star, title: "Your food will be photographed", body: "Buffets styled. Plates composed. Carving stations lit. Your photographer will love us — and so will your Instagram." },
   { icon: Flame, title: "Live fire. Real food. Hot plates.", body: "No sad chafing-dish reheats. We grill over hardwood charcoal on-site, and dinner reaches your guests hot, seasoned, and stunning." },
-  { icon: Award, title: "You're hiring a real chef", body: "25+ years of professional cooking. 2,000+ weddings under our belts. Chef Terry personally designs every menu we serve." },
+  { icon: Award, title: "You're hiring a real chef", body: "15+ years of professional cooking. 2,000+ weddings under our belts. Chef Terry personally designs every menu we serve." },
   { icon: Star, title: "You'll recognize the name", body: "Featured on Food Network's BBQ Brawl with Bobby Flay, Camp Cutthroat, and Cutthroat Kitchen. This is the caterer your guests will Google after." },
   { icon: Users, title: "Your guests will come back for seconds", body: "Generous portions. Warm plates. Real seasoning. The food people still text you about months after the wedding." },
   { icon: Sparkles, title: "You get to actually enjoy your day", body: "We handle setup, service, live-fire cooking, buffet refresh, coordination, and full breakdown. You sip champagne and dance." },
@@ -368,7 +368,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
             </div>
 
             <div className="mt-10 flex flex-wrap gap-8 text-sm text-bone/70">
-              <div><span className="text-gold font-display text-2xl">25+</span> Years Doing This</div>
+              <div><span className="text-gold font-display text-2xl">15+</span> Years Doing This</div>
               <div><span className="text-gold font-display text-2xl">2,000+</span> Weddings Catered</div>
               <div><span className="text-gold font-display text-2xl">4.9★</span> Bride-Rated</div>
               <div><span className="text-gold font-display text-2xl">Food Network</span> Featured Chef</div>
@@ -509,7 +509,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
             <div>
               <div className="text-[0.65rem] tracking-[0.3em] text-gold uppercase mb-2">Experience</div>
               <div className="text-bone font-display text-lg">2,000+ Events</div>
-              <div className="text-xs text-bone/60 mt-1">25+ years professional</div>
+              <div className="text-xs text-bone/60 mt-1">15+ years professional</div>
             </div>
           </div>
         </div>
@@ -871,7 +871,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
               <p>Here's the part most caterers won't tell you: when you hire Chef Terry, you get Chef Terry. He personally designs every wedding menu Qfire serves. He knows your name. He knows your date. And he cares — genuinely — about making your wedding one of the good ones.</p>
             </div>
             <div className="mt-8 flex flex-wrap gap-3">
-              {["Food Network", "BBQ Brawl", "Camp Cutthroat", "Cutthroat Kitchen", "25+ Years"].map((b) => (
+              {["Food Network", "BBQ Brawl", "Camp Cutthroat", "Cutthroat Kitchen", "15+ Years"].map((b) => (
                 <span key={b} className="text-[0.65rem] tracking-[0.28em] uppercase text-gold border border-gold/40 px-4 py-2">{b}</span>
               ))}
             </div>

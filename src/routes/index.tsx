@@ -319,7 +319,7 @@ function Home() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-white/5 border border-white/5">
             {[
               { n: "2,000+", l: "Events Served", icon: Users },
-              { n: "25+", l: "Years Behind Fire", icon: Flame },
+              { n: "15+", l: "Years Behind Fire", icon: Flame },
               { n: "4.9★", l: "Across All Platforms", icon: Award },
               { n: "Stress-Free", l: "Full-Service Execution", icon: Sparkles },
             ].map((s) => (
@@ -510,7 +510,7 @@ function Home() {
               "Featured on BBQ Brawl Season 2",
               "International Chef Competition Host",
               "Catering Coach & Mentor",
-              "25+ Years Behind the Fire",
+              "15+ Years Behind the Fire",
               "4.9★ rating across ALL platforms",
             ].map((line) => (
               <li key={line} className="flex items-start gap-3 text-bone/85 leading-relaxed">

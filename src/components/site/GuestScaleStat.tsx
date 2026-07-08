@@ -49,7 +49,7 @@ export function GuestScaleStat({ regionKey }: { regionKey: RegionKey }) {
             </div>
             <div className="bg-ink p-6 text-center">
               <Flame className="size-5 text-gold mx-auto mb-3" />
-              <div className="font-display text-bone text-2xl lg:text-3xl">25+</div>
+              <div className="font-display text-bone text-2xl lg:text-3xl">15+</div>
               <div className="text-[0.65rem] tracking-[0.25em] uppercase text-bone/55 mt-2">Years</div>
             </div>
           </div>

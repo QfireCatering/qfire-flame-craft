@@ -233,7 +233,7 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
               <a href="#pricing" className="btn-primary">View Prices <ArrowRight className="size-4" /></a>
             </div>
             <div className="mt-10 flex flex-wrap gap-8 text-sm text-bone/70">
-              <div><span className="text-gold font-display text-2xl">25+</span> Years Experience</div>
+              <div><span className="text-gold font-display text-2xl">15+</span> Years Experience</div>
               <div><span className="text-gold font-display text-2xl">2,000+</span> Parties Catered</div>
               <div><span className="text-gold font-display text-2xl">4.9★</span> Guest-Rated</div>
               <div><span className="text-gold font-display text-2xl">Food Network</span> Featured Chef</div>
@@ -266,7 +266,7 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
             <div>
               <div className="text-[0.65rem] tracking-[0.3em] text-gold uppercase mb-2">Experience</div>
               <div className="text-bone font-display text-lg">2,000+ Parties</div>
-              <div className="text-xs text-bone/60 mt-1">25+ years professional</div>
+              <div className="text-xs text-bone/60 mt-1">15+ years professional</div>
             </div>
           </div>
         </div>
@@ -559,7 +559,7 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
               <p>Chef Terry — known to fans as <em>The BBQ Daddy</em> — personally designs every private party menu Qfire serves. When you book Qfire, you book him.</p>
             </div>
             <div className="mt-8 flex flex-wrap gap-3">
-              {["Food Network", "BBQ Brawl with Bobby Flay", "Camp Cutthroat Winner", "Cutthroat Kitchen Champion", "25+ Years", "2,000+ Events", "4.9★ Reputation"].map((b) => (
+              {["Food Network", "BBQ Brawl with Bobby Flay", "Camp Cutthroat Winner", "Cutthroat Kitchen Champion", "15+ Years", "2,000+ Events", "4.9★ Reputation"].map((b) => (
                 <span key={b} className="text-[0.65rem] tracking-[0.28em] uppercase text-gold border border-gold/40 px-4 py-2">{b}</span>
               ))}
             </div>
