@@ -516,6 +516,9 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
               </details>
             ))}
           </div>
+          <div className="mt-10 text-center">
+            <Link to="/wedding-faq" className="btn-ghost">See all wedding catering FAQs <ArrowRight className="size-4" /></Link>
+          </div>
         </div>
       </section>
 
