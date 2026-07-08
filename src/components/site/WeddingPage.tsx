@@ -294,11 +294,10 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
   };
 
   const sectionNavItems = [
-    { id: "menus", label: "Menus" },
     { id: "estimator", label: "Real Wedding Pricing" },
-    { id: "included", label: "What's Included" },
-    { id: "pricing", label: "Pricing" },
-    { id: "scale", label: "Built for Scale" },
+    { id: "steakhouse-pricing", label: "Steakhouse Pricing" },
+    { id: "features", label: "Features" },
+    { id: "menus", label: "Menus" },
     { id: "why-qfire", label: "Why Qfire" },
     { id: "service-styles", label: "Service Styles" },
     { id: "live-fire", label: "Live Fire" },
@@ -308,6 +307,32 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
     { id: "menu-options", label: "Menu Options" },
     { id: "chef", label: "Chef Terry" },
     { id: "faq", label: "FAQ" },
+  ];
+
+  const isPhx = config.regionSlug === "phoenix";
+  const regionLabel = isPhx ? "Phoenix Metro" : "San Diego County";
+  const steakMenuPath = isPhx ? "/steak-seafood-menu" : "/steak-seafood-menu-san-diego";
+  const woodMenuUrl = isPhx
+    ? "https://fs17.formsite.com/matthews3404/BBQDADDYLLC/index"
+    : "https://fs17.formsite.com/matthews3404/SanDiego/index";
+  const steakTiers = [
+    { name: "Buffet Style", price: isPhx ? "$74" : "$79", per: "/ person", desc: `Smooth. Efficient. Elegant. Restaurant-quality buffet presentation. Ideal for ${regionShort} weddings.` },
+    { name: "Family Style", price: isPhx ? "$89" : "$94", per: "/ person", desc: "Shared dining. Passed platters. Connected guest experience. Luxury presentation, end to end." },
+    { name: "Plated Service", price: isPhx ? "$128" : "$133", per: "/ person", desc: "Restaurant-style service. Each course individually served. Our most luxurious dining experience." },
+  ];
+  const weddingFeatures = [
+    "Custom multi-course menu designed by Chef Terry",
+    "Premium proteins (Wood-Fire, Live-Fire Steakhouse, or surf & turf)",
+    "Passed hors d'oeuvres + cocktail-hour stations (optional)",
+    "Chef-attended live-fire grilling on-site",
+    "Buffet, family-style, plated, or stationed service",
+    "Salads, fresh-baked breads, sauces, and signature sides",
+    "Linen-draped buffet, chafing dishes, and serving equipment",
+    "Professional uniformed service staff",
+    "Full setup, refresh, and breakdown",
+    "Trash removal and venue walk-through at end of night",
+    "Optional bar program with bartenders and glassware",
+    "Optional rentals: china, flatware, linens, lounge, dance floor",
   ];
 
 
