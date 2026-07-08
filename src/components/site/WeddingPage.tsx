@@ -313,7 +313,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
     ? "https://fs17.formsite.com/matthews3404/BBQDADDYLLC/index"
     : "https://fs17.formsite.com/matthews3404/SanDiego/index";
   const steakTiers = [
-    { name: "Buffet Style", price: isPhx ? "$74" : "$79", per: "/ person", desc: `Smooth. Efficient. Elegant. Restaurant-quality buffet presentation. Ideal for ${regionShort} weddings.` },
+    { name: "Buffet Style", price: isPhx ? "$74" : "$79", per: "/ person", desc: `Smooth. Efficient. Elegant. Restaurant-quality buffet presentation. Ideal for ${regionShort} wedding receptions.` },
     { name: "Family Style", price: isPhx ? "$89" : "$94", per: "/ person", desc: "Shared dining. Passed platters. Connected guest experience. Luxury presentation, end to end." },
     { name: "Plated Service", price: isPhx ? "$128" : "$133", per: "/ person", desc: "Restaurant-style service. Each course individually served. Our most luxurious dining experience." },
   ];
@@ -716,7 +716,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
             </Link>
           </div>
           <div className="order-1 lg:order-2 relative aspect-[4/5] overflow-hidden">
-            <img src={steak} alt={`Premium steaks grilled live for a ${regionShort} luxury wedding`} className="absolute inset-0 w-full h-full object-cover" />
+            <img src={steak} alt={`Premium steaks grilled live for a ${regionShort} luxury wedding reception`} className="absolute inset-0 w-full h-full object-cover" />
           </div>
         </div>
       </section>
@@ -820,7 +820,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
             <div className="eyebrow mb-6">What You Can Serve</div>
             <h2 className="heading-lg text-bone">Wood-fired. Upscale steakhouse. Surf &amp; turf. Or all three.</h2>
             <p className="mt-6 text-bone/75 text-lg leading-relaxed font-light">
-              Whatever you dream up for your {regionShort} wedding menu, it comes off our live-fire grill — and Chef Terry will help you build the mix that fits your vibe and your budget.
+              Whatever you dream up for your {regionShort} wedding reception menu, it comes off our live-fire grill — and Chef Terry will help you build the mix that fits your vibe and your budget.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-1">
@@ -830,7 +830,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
               { img: platter1, title: "Carving Stations", body: "Chef-attended live carving — picanha, brisket, prime rib, lamb.", to: "/menus" },
             ].map((m) => (
               <Link key={m.title} to={m.to} className="group relative aspect-[4/5] overflow-hidden block">
-                <img src={m.img} alt={`${m.title} for ${regionShort} weddings`} loading="lazy" decoding="async" fetchPriority="low" width={800} height={1000} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <img src={m.img} alt={`${m.title} for ${regionShort} wedding receptions`} loading="lazy" decoding="async" fetchPriority="low" width={800} height={1000} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-8">
                   <h3 className="font-display text-2xl text-bone">{m.title}</h3>
