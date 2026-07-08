@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowRight, Check, Flame, Award, Users, Star, Clock, Sparkles, Briefcase, ShieldCheck, Building2, Truck, MessageCircle } from "lucide-react";
 import { SectionNav } from "./SectionNav";
-import { WeddingBuffetEstimator } from "./WeddingBuffetEstimator";
+import { WoodFirePricing } from "./WoodFirePricing";
 import { contact } from "@/lib/contact";
 import asSeenOnBadge from "@/assets/as-seen-on-food-network.png.asset.json";
 
@@ -218,8 +218,8 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
         </div>
       </section>
 
-      {/* 1. REAL CORPORATE PRICING */}
-      <WeddingBuffetEstimator region={region} regionShort={regionShort as "Phoenix" | "San Diego"} eventType="Corporate Event" eventTypeLower="corporate event" audienceNoun="planner" />
+      {/* 1. WOOD-FIRE PRICING */}
+      <WoodFirePricing regionSlug={config.regionSlug} />
 
       {/* 2. STEAKHOUSE EXPERIENCE PRICING */}
       <section id="steakhouse-pricing" className="py-20 lg:py-28 bg-ink border-t border-white/5 scroll-mt-32">
