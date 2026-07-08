@@ -4,7 +4,7 @@ import { DefinitiveContent } from "./DefinitiveContent";
 import { definitiveCopy } from "@/lib/definitive-copy";
 import { BookingProcess } from "./BookingProcess";
 import { ObjectionBuster } from "./ObjectionBuster";
-import { MenusOpener } from "./MenusOpener";
+
 import { SectionNav } from "./SectionNav";
 import { WeddingBuffetEstimator } from "./WeddingBuffetEstimator";
 import { contact } from "@/lib/contact";
