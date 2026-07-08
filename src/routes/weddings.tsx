@@ -26,7 +26,7 @@ function WeddingsHub() {
   return (
     <>
       <section className="relative min-h-[80vh] flex items-end overflow-hidden">
-        <img src={hero} alt="Luxury wedding reception catered by Qfire" className="absolute inset-0 w-full h-full object-cover" />
+        <img src={hero} alt="Luxury wedding reception catered by Qfire" className="absolute inset-0 w-full h-full object-cover" style={{ objectPosition: "50% 85%" }} />
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/70 to-ink/30" />
         <div className="container-luxe relative z-10 pb-20 pt-32">
           <div className="max-w-3xl">
