@@ -1,10 +1,12 @@
-import { Link, useRouterState } from "@tanstack/react-router";
+import { useNavigate, useRouterState } from "@tanstack/react-router";
 import { ArrowRight, Phone, CalendarCheck } from "lucide-react";
 import { useEffect, useState } from "react";
 
 export function FloatingQuoteCTA() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const navigate = useNavigate();
   const [visible, setVisible] = useState(false);
+  const [date, setDate] = useState("");
 
   useEffect(() => {
     const onScroll = () => setVisible(window.scrollY > 480);
@@ -13,16 +15,19 @@ export function FloatingQuoteCTA() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Reset visibility when navigating to a new page
   useEffect(() => {
     setVisible(window.scrollY > 480);
   }, [pathname]);
 
   if (pathname.startsWith("/quote")) return null;
 
+  const go = () => {
+    navigate({ to: "/quote", search: date ? { date } : undefined });
+  };
+
   return (
     <div
-      className={`hidden md:flex fixed bottom-6 right-6 z-40 items-center gap-3 transition-all duration-500 ${
+      className={`hidden md:flex fixed bottom-6 right-6 z-40 items-center gap-2 transition-all duration-500 ${
         visible
           ? "opacity-100 translate-y-0 pointer-events-auto"
           : "opacity-0 translate-y-4 pointer-events-none"
@@ -36,14 +41,23 @@ export function FloatingQuoteCTA() {
       >
         <Phone className="size-5" />
       </a>
-      <Link
-        to="/quote"
-        className="btn-primary text-sm py-3 px-5 shadow-[0_8px_28px_rgba(201,162,86,0.35)]"
-      >
-        <CalendarCheck className="size-4" />
-        Request a Quote
-        <ArrowRight className="size-4" />
-      </Link>
+      <div className="flex items-center gap-2 bg-ink/95 backdrop-blur-md border border-gold/40 pl-4 pr-2 py-2 shadow-[0_8px_28px_rgba(0,0,0,0.55)]">
+        <CalendarCheck className="size-4 text-gold shrink-0" />
+        <input
+          type="date"
+          value={date}
+          onChange={(e) => setDate(e.target.value)}
+          aria-label="Wedding date"
+          className="bg-transparent border-0 text-bone text-sm focus:outline-none w-40"
+        />
+        <button
+          type="button"
+          onClick={go}
+          className="btn-primary text-xs py-2.5 px-4 shadow-[0_8px_28px_rgba(201,162,86,0.35)]"
+        >
+          Check My Date <ArrowRight className="size-4" />
+        </button>
+      </div>
     </div>
   );
 }
