@@ -4,12 +4,15 @@ import { Menu, X, Phone } from "lucide-react";
 import qfireLogo from "@/assets/qfire-logo.png.asset.json";
 import { contact } from "@/lib/contact";
 
-const primary = [
+const primaryLeft = [
+  { to: "/menus", label: "Menus" },
+  { to: "/about", label: "Chef Terry" },
+];
+
+const primaryRight = [
   { to: "/weddings", label: "Weddings" },
   { to: "/corporate", label: "Corporate" },
   { to: "/private-parties", label: "Private Parties" },
-  { to: "/menus", label: "Menus" },
-  { to: "/about", label: "Chef Terry" },
 ];
 
 const secondary = [
@@ -59,7 +62,7 @@ export function Nav() {
           </Link>
 
           <nav className="hidden lg:flex items-center gap-9">
-            {primary.map(item => (
+            {primaryLeft.map(item => (
               <Link
                 key={item.to}
                 to={item.to}
@@ -73,6 +76,19 @@ export function Nav() {
           </nav>
 
           <div className="flex items-center gap-3">
+            <nav className="hidden lg:flex items-center gap-9 mr-3">
+              {primaryRight.map(item => (
+                <Link
+                  key={item.to}
+                  to={item.to}
+                  className="relative text-[0.78rem] tracking-[0.18em] uppercase text-bone hover:text-gold transition-colors duration-300 group"
+                  activeProps={{ className: "text-gold" }}
+                >
+                  {item.label}
+                  <span className="absolute -bottom-1 left-0 h-px w-0 bg-gold transition-all duration-500 group-hover:w-full" />
+                </Link>
+              ))}
+            </nav>
             <a
               href={contact.phoneHref}
               aria-label={`Call ${contact.phone}`}
@@ -114,7 +130,7 @@ export function Nav() {
         </div>
         <div className="container-luxe pt-6 pb-20 overflow-y-auto max-h-[calc(100vh-6rem)]">
           <div className="grid md:grid-cols-2 gap-x-12 gap-y-1">
-            {[...primary, ...secondary].map((item) => (
+            {[...primaryLeft, ...primaryRight, ...secondary].map((item) => (
               <Link
                 key={item.to}
                 to={item.to}
