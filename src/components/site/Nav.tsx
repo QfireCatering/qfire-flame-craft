@@ -89,6 +89,9 @@ export function Nav() {
                 </Link>
               ))}
             </nav>
+            <Link to="/quote" className="hidden md:inline-flex btn-primary text-[0.65rem] px-5 py-3">
+              See If My Date Is Open
+            </Link>
             <button
               onClick={() => setOpen(true)}
               className="lg:hidden p-2 -mr-2 text-bone"
