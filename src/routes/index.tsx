@@ -158,7 +158,7 @@ function Home() {
 
           <div className="mt-12 flex flex-wrap gap-4">
             <Link to="/quote" className="btn-primary">
-              See If My Date Is Open <ArrowRight className="size-4" />
+              See If My Date Is Available <ArrowRight className="size-4" />
             </Link>
             <Link to="/locations" className="btn-ghost">Choose Your Location</Link>
           </div>
@@ -531,7 +531,7 @@ function Home() {
           </h3>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <a href="tel:8778487211" className="btn-primary">Call 877.848.7211</a>
-            <Link to="/quote" className="btn-ghost">See If My Date Is Open</Link>
+            <Link to="/quote" className="btn-ghost">See If My Date Is Available</Link>
           </div>
         </div>
       </section>

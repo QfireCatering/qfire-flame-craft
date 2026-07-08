@@ -73,7 +73,7 @@ export function CTASection({
         <p className="mt-6 max-w-xl mx-auto text-bone/70 text-lg">{subtitle}</p>
         <div className="mt-12 flex flex-wrap justify-center gap-4">
           <Link to="/quote" className="btn-primary">
-            See If My Date Is Open <ArrowRight className="size-4" />
+            See If My Date Is Available <ArrowRight className="size-4" />
           </Link>
           <Link to="/pictures" className="btn-ghost">View Gallery</Link>
         </div>

@@ -64,7 +64,7 @@ function ServiceAreasPage() {
             and when — we'll quote it.
           </p>
           <Link to="/quote" className="btn-primary mt-8">
-            See If My Date Is Open <ArrowRight className="size-4" />
+            See If My Date Is Available <ArrowRight className="size-4" />
           </Link>
         </div>
       </div>
