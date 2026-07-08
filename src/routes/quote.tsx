@@ -44,6 +44,7 @@ function getRedirectUrl(region: string, menu: string): string | null {
 }
 
 function QuotePage() {
+  const { date: prefilledDate } = Route.useSearch();
   const [state, setState] = useState<"idle" | "sending" | "sent" | "error">("idle");
   const [error, setError] = useState<string | null>(null);
   const submit = useServerFn(submitLead);
