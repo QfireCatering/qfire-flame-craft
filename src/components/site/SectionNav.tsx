@@ -55,7 +55,7 @@ export function SectionNav({ items }: { items: SectionNavItem[] }) {
       {/* DESKTOP — pinned upper-right, collapsible */}
       <nav
         aria-label="Page sections"
-        className="hidden lg:flex fixed right-5 top-28 z-30 flex-col items-end max-h-[75vh]"
+        className="hidden lg:flex fixed right-5 top-44 z-30 flex-col items-end max-h-[75vh]"
       >
         <button
           type="button"
