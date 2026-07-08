@@ -166,7 +166,7 @@ function QuotePage() {
                 <Field label="Cell Phone" name="phone" type="tel" maxLength={40} />
               </div>
               <div className="grid sm:grid-cols-2 gap-6">
-                <Field label="Event Date" name="date" type="date" />
+                <Field label="Event Date" name="date" type="date" defaultValue={prefilledDate} />
                 <Field label="Approx Guest Count" name="guests" type="number" />
               </div>
               <SelectField
