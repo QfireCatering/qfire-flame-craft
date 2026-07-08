@@ -8,6 +8,9 @@ import { contact } from "@/lib/contact";
 import { BookingProcess } from "@/components/site/BookingProcess";
 
 export const Route = createFileRoute("/quote")({
+  validateSearch: (search: Record<string, unknown>) => ({
+    date: typeof search.date === "string" ? search.date : "",
+  }),
   head: () => ({
     meta: [
       { title: "Request a Quote — Qfire Catering" },
@@ -41,6 +44,7 @@ function getRedirectUrl(region: string, menu: string): string | null {
 }
 
 function QuotePage() {
+  const { date: prefilledDate } = Route.useSearch();
   const [state, setState] = useState<"idle" | "sending" | "sent" | "error">("idle");
   const [error, setError] = useState<string | null>(null);
   const submit = useServerFn(submitLead);
@@ -162,7 +166,7 @@ function QuotePage() {
                 <Field label="Cell Phone" name="phone" type="tel" maxLength={40} />
               </div>
               <div className="grid sm:grid-cols-2 gap-6">
-                <Field label="Event Date" name="date" type="date" />
+                <Field label="Event Date" name="date" type="date" defaultValue={prefilledDate} />
                 <Field label="Approx Guest Count" name="guests" type="number" />
               </div>
               <SelectField
@@ -225,12 +229,14 @@ function Field({
   type = "text",
   required = false,
   maxLength,
+  defaultValue,
 }: {
   label: string;
   name: string;
   type?: string;
   required?: boolean;
   maxLength?: number;
+  defaultValue?: string;
 }) {
   return (
     <div>
@@ -242,6 +248,7 @@ function Field({
         name={name}
         required={required}
         maxLength={maxLength}
+        defaultValue={defaultValue}
         className="w-full bg-charcoal/40 border border-white/10 px-4 py-3.5 text-bone focus:border-gold focus:outline-none transition-colors"
       />
     </div>
