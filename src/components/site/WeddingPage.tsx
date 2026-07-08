@@ -56,7 +56,7 @@ export interface WeddingRegionConfig {
 const baseFaqs = [
   {
     q: "About how much should I expect to spend on wedding catering?",
-    a: "A typical full-service Qfire wedding buffet (2 meats, sides, appetizer, drinks, staff, setup, and breakdown) starts around $32.35/guest in Phoenix Metro and $39.95/guest in San Diego County — see the 'Real Wedding Pricing' example above for a realistic 100-guest budget. Premium upgrades (live-fire grilling, surf & turf, plated service, full bar) move the number up. Every proposal is itemized — no hidden fees, no surprise gratuities.",
+    a: "A typical full-service Qfire wedding buffet (2 meats, sides, appetizer, drinks, staff, setup, and breakdown) starts around $37.15/guest in Phoenix Metro and $44.95/guest in San Diego County — see the 'Average Cost for Catering' example above for a realistic 100-guest budget. Premium upgrades (live-fire grilling, surf & turf, plated service, full bar) move the number up. Every proposal is itemized — no hidden fees, no surprise gratuities.",
   },
   {
     q: "Can our wedding menu be fully customized?",
