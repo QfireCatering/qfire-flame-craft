@@ -417,7 +417,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         <div className="container-luxe">
           <div className="max-w-2xl mb-12">
             <div className="eyebrow mb-5">Features</div>
-            <h2 className="heading-lg text-bone">Everything included in your wedding.</h2>
+            <h2 className="heading-lg text-bone">Features available for your reception.</h2>
             <p className="mt-5 text-bone/70 font-light">No hidden fees, no surprise gratuities, no upsells the day of. Every Qfire proposal is itemized so you know exactly what your investment buys — before you ever see a price.</p>
           </div>
           <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
