@@ -473,11 +473,11 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         items={[
           {
             q: "Do we get a tasting before we book?",
-            a: "Once you've reviewed your custom proposal, we invite you to a private chef's-table tasting with Chef Terry. You'll sample your proposed entrées and sides, refine the menu in real time, and only then decide if you want to move forward. No pressure, no obligation.",
+            a: "As long as your reception date is still available, you're welcome to schedule a tasting before booking. You'll try 3 meats, 3 sides, and 2 appetizers — serving 5–7 guests — for $200, then decide if we're the right fit for your event.",
           },
           {
             q: "Do you charge a cake-cutting fee?",
-            a: "Never. Our servers cut, plate, and pass your wedding cake as part of full service — at zero additional charge. Bringing in dessert from an outside bakery or doing a dessert bar? We serve those too.",
+            a: "Yes. We charge a $100 cake-cutting fee because cake is typically served after dinner, when our team would normally be wrapping up. This covers the additional staff time needed to beautifully cut, plate, and serve your cake so you can enjoy the moment worry-free.",
           },
         ]}
       />
