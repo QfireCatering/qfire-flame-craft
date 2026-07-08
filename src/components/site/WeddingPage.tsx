@@ -852,10 +852,6 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
 
 
 
-      <BookingProcess
-        eyebrow="Booking Your Wedding Is Simple"
-        title={`From inquiry to "I do" — exactly what happens.`}
-      />
 
       {/* FINAL CTA */}
       <section className="py-32 lg:py-40 relative overflow-hidden">
