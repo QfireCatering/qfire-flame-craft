@@ -848,7 +848,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
               { img: heroFire, title: "Onsite Grilling" },
             ].map((m) => (
               <div key={m.title} className="relative aspect-square overflow-hidden bg-ink">
-                <img src={m.img} alt={`${m.title} for ${regionShort} weddings`} loading="lazy" decoding="async" fetchPriority="low" width={600} height={600} className="absolute inset-0 w-full h-full object-cover" />
+                <img src={m.img} alt={`${m.title} for ${regionShort} wedding receptions`} loading="lazy" decoding="async" fetchPriority="low" width={600} height={600} className="absolute inset-0 w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink/95 via-ink/30 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-5">
                   <div className="text-bone font-display text-lg">{m.title}</div>
@@ -883,7 +883,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
               <div className="eyebrow mb-6">Venue Experience</div>
               <h3 className="heading-md text-bone mb-6">Chances are, we already know your venue.</h3>
               <p className="text-bone/75 max-w-3xl font-light leading-relaxed">
-                We've catered weddings at {venues.slice(0, -1).join(", ")}, and {venues[venues.length - 1]} — plus dozens of private estates, vineyards, and resorts across the area. If you've already picked your venue, there's a very good chance we already know the kitchen, the coordinator, and the loading dock.
+                We've catered wedding receptions at {venues.slice(0, -1).join(", ")}, and {venues[venues.length - 1]} — plus dozens of private estates, vineyards, and resorts across the area. If you've already picked your venue, there's a very good chance we already know the kitchen, the coordinator, and the loading dock.
               </p>
             </div>
           )}
@@ -915,7 +915,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
             <h2 className="heading-lg text-bone">Chef Terry Matthews — the guy actually cooking your wedding reception.</h2>
             <div className="mt-8 space-y-5 text-bone/85 text-lg font-light leading-relaxed">
               <p>Fifteen years behind the grill. Over 2,000 weddings and catered events. Featured on Food Network's <em>BBQ Brawl</em> with Bobby Flay, <em>Camp Cutthroat</em>, and <em>Cutthroat Kitchen</em> — where he actually won.</p>
-              <p>Here's the part most caterers won't tell you: when you hire Chef Terry, you get Chef Terry. He personally designs every wedding menu Qfire serves. He knows your name. He knows your date. And he cares — genuinely — about making your wedding one of the good ones.</p>
+              <p>Here's the part most caterers won't tell you: when you hire Chef Terry, you get Chef Terry. He personally designs every wedding reception menu Qfire serves. He knows your name. He knows your date. And he cares — genuinely — about making your wedding reception one of the good ones.</p>
             </div>
             <div className="mt-8 flex flex-wrap gap-3">
               {["Food Network", "BBQ Brawl", "Camp Cutthroat", "Cutthroat Kitchen", "15+ Years"].map((b) => (
