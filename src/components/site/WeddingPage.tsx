@@ -55,8 +55,8 @@ export interface WeddingRegionConfig {
 
 const baseFaqs = [
   {
-    q: "How much does luxury wedding catering cost?",
-    a: "Most full-service Qfire weddings land between $95 and $185 per guest depending on protein selection (Wood-Fire vs. Steakhouse Experience vs. surf & turf), service style, bar package, rentals, and staffing. Every proposal is itemized — no hidden fees, no surprise gratuities.",
+    q: "About how much should I expect to spend on wedding catering?",
+    a: "A typical full-service Qfire wedding buffet (2 meats, sides, appetizer, drinks, staff, setup, and breakdown) starts around $32.35/guest in Phoenix Metro and $39.95/guest in San Diego County — see the 'Real Wedding Pricing' example above for a realistic 100-guest budget. Premium upgrades (live-fire grilling, surf & turf, plated service, full bar) move the number up. Every proposal is itemized — no hidden fees, no surprise gratuities.",
   },
   {
     q: "Can our wedding menu be fully customized?",
@@ -275,7 +275,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
 
   const sectionNavItems = [
     { id: "menus", label: "Menus" },
-    { id: "estimator", label: "100-Guest Estimate" },
+    { id: "estimator", label: "Real Wedding Pricing" },
     { id: "included", label: "What's Included" },
     { id: "pricing", label: "Pricing" },
     { id: "scale", label: "Built for Scale" },
@@ -304,9 +304,6 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
             <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-bone leading-[0.95] tracking-tight">
               Luxury wedding catering <span className="italic text-gold font-light">in {regionShort}.</span>
             </h1>
-            <p className="mt-8 text-xl md:text-2xl text-bone/85 font-light leading-relaxed max-w-2xl">
-              Live charcoal grilling, premium steaks, professional staff, and a stress-free experience — trusted by thousands of couples across {region}.
-            </p>
             <p className="mt-8 text-xl md:text-2xl text-bone/85 font-light leading-relaxed max-w-2xl">
               Live charcoal grilling, premium steaks, professional staff, and a stress-free experience — trusted by thousands of couples across {region}.
             </p>
