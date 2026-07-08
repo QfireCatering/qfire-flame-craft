@@ -18,25 +18,25 @@ const STEPS = [
     icon: ClipboardCheck,
     n: "02",
     t: "We reply within 24 hours",
-    b: "A real human (often Chef Terry) reviews your event, confirms availability, and sends a custom proposal — not a generic price sheet.",
+    b: "A real human (often Chef Terry) reviews your event, confirms availability, and starts your custom proposal.",
   },
   {
     icon: Utensils,
     n: "03",
-    t: "Menu refinement",
-    b: "We fine-tune flavors, courses, dietary needs and presentation. You have until 2 weeks before the event to finalize menu and guest count — no penalty for normal adjustments.",
+    t: "Proposal in your inbox — within 24 hours",
+    b: "Custom menu, transparent line-item pricing, service style, and staffing — not a generic price sheet. Refine as many times as you like.",
   },
   {
     icon: CalendarCheck,
     n: "04",
     t: "Lock your date",
-    b: "A 35% Date Retainer secures your event and credits 100% toward your final invoice. Rescheduling stays flexible — your deposit holds as a credit toward one future event within a year (minimum 80% of original value).",
+    b: "A 35% Date Retainer secures your event and credits 100% toward your final invoice. Menu, guest count, and upgrades stay flexible.",
   },
   {
     icon: Sparkles,
     n: "05",
-    t: "Event day — we handle everything",
-    b: "Uniformed staff arrive early, set up, fire the grills, serve your guests, and clean up. You enjoy your event. That's the whole point.",
+    t: "Finalize 15 days out",
+    b: "Menu and final guest count both lock in about 15 days before your event, once RSVPs are in. Small changes after that — no problem, we roll with it.",
   },
 ];
 
