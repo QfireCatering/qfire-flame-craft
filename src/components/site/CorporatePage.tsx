@@ -287,11 +287,11 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
                   { row: "Real steakhouse plates (ribeye, filet, picanha)", q: "Yes", v: "Sometimes (extra $)", b: "No" },
                   { row: "Professional uniformed service staff", q: "Yes — included", v: "Yes — service fee", b: "Usually not" },
                   { row: "Full setup, refresh, and breakdown", q: "Yes — included", v: "Yes", b: "No — you handle it" },
-                  { row: "Custom menu (change it as you plan)", q: "Yes, up to 14 days out", v: "Locked at contract", b: "Menu only" },
+                  { row: "Custom menu (change it as you plan)", q: "Yes, up to 7 days out", v: "Locked at contract", b: "Menu only" },
                   { row: "Real photographable presentation", q: "Yes — styled buffets", v: "Standard chafers", b: "Aluminum trays" },
                   { row: "Featured on Food Network", q: "Yes — BBQ Brawl + more", v: "No", b: "No" },
                   { row: "COI, W-9, AP-ready invoicing", q: "Yes — same day", v: "Yes", b: "Basic invoice" },
-                  { row: "Typical per-guest range", q: "$32–$145", v: "$45–$125", b: "$14–$28" },
+                  { row: "Typical per-guest range", q: "$12.99–$35.99", v: "$45–$125", b: "$14–$28" },
                 ].map((r) => (
                   <tr key={r.row} className="border-b border-white/10">
                     <td className="py-4 pr-4 text-bone/85 font-light">{r.row}</td>

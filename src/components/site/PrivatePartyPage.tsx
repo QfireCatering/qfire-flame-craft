@@ -282,11 +282,11 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
                   { row: "Real steakhouse plates (ribeye, filet, picanha)", q: "Yes", v: "Yes (extra $)", b: "No" },
                   { row: "Professional uniformed service staff", q: "Yes — included", v: "1–2 helpers max", b: "Usually not" },
                   { row: "Full setup, refresh, and breakdown", q: "Yes — included", v: "Sometimes", b: "No — you handle it" },
-                  { row: "Custom menu (change it as you plan)", q: "Yes, up to 14 days out", v: "Flexible", b: "Menu only" },
+                  { row: "Custom menu (change it as you plan)", q: "Yes, up to 7 days out", v: "Flexible", b: "Menu only" },
                   { row: "Real photographable presentation", q: "Yes — styled buffets", v: "Simple plating", b: "Aluminum trays" },
                   { row: "Featured on Food Network", q: "Yes — BBQ Brawl + more", v: "Rarely", b: "No" },
                   { row: "Bartenders and full bar service", q: "Yes — licensed & insured", v: "No", b: "No" },
-                  { row: "Typical per-guest range", q: "$48–$165", v: "$120–$300+", b: "$18–$40" },
+                  { row: "Typical per-guest range", q: "$12.99–$35.99", v: "$120–$300+", b: "$18–$40" },
                 ].map((r) => (
                   <tr key={r.row} className="border-b border-white/10">
                     <td className="py-4 pr-4 text-bone/85 font-light">{r.row}</td>
