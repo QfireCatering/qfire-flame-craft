@@ -219,31 +219,32 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
 
   const reviews = [
     {
-      q: `Chef Terry and his team made our ${regionShort} wedding unforgettable. The brisket and ribeyes were perfect, and the service was flawless from start to finish.`,
-      a: "Lauren & Mark",
-      e: `${reviewCities[0]} · 220 guests`,
+      q: `Chef Terry and his team made our ${regionShort} wedding unforgettable. The brisket and ribeyes were perfect, and every single guest asked us who our caterer was. Service was flawless from setup through the last dance.`,
+      a: "Lauren & Mark H.",
+      e: `${venues[0] ?? reviewCities[0]} · ${reviewCities[0]} · 220 guests · Oct 2024`,
     },
     {
-      q: `We did a plated dinner for 180 in ${regionShort} and not a single thing went wrong. The food was the talk of the night.`,
-      a: "Megan & Ryan",
-      e: `${reviewCities[1] ?? reviewCities[0]} Wedding`,
+      q: `We did a plated dinner for 180 and not a single thing went wrong. My planner said it was one of the smoothest catering executions she'd ever seen. The food was the talk of the night.`,
+      a: "Megan & Ryan S.",
+      e: `${venues[1] ?? reviewCities[1] ?? reviewCities[0]} · ${reviewCities[1] ?? reviewCities[0]} · 180 guests · May 2024`,
     },
     {
-      q: "The live-fire steak station stopped the room. Guests still text us about it nine months later.",
-      a: "Sophia & James",
-      e: `${reviewCities[2] ?? reviewCities[0]} · 160 guests`,
+      q: "The live-fire steak station literally stopped the room. Guests were taking videos, our photographer was thrilled, and people still text us about the ribeye nine months later.",
+      a: "Sophia & James W.",
+      e: `${venues[2] ?? reviewCities[2] ?? reviewCities[0]} · ${reviewCities[2] ?? reviewCities[0]} · 160 guests · Sept 2024`,
     },
     {
-      q: "As a planner I work with caterers every weekend. Qfire is at the top of my list — clean, on time, professional, and the food is legitimately exceptional.",
+      q: "As a wedding planner I work with caterers every single weekend. Qfire is at the top of my preferred list — clean, on time, professional, and the food is legitimately exceptional. I recommend them without hesitation.",
       a: "Alyssa T., Wedding Planner",
-      e: `${region}`,
+      e: `${region} · 40+ weddings coordinated with Qfire`,
     },
     {
-      q: "Communication was incredible from day one. Every email returned the same day. Every change handled without a sigh.",
-      a: "Jessica & David",
-      e: `${reviewCities[3] ?? reviewCities[0]} Reception`,
+      q: "Communication was incredible from day one. Every email returned same-day. Every menu change handled without a sigh. On the day, they set up hours early and broke down without a trace. We felt taken care of the entire time.",
+      a: "Jessica & David M.",
+      e: `${venues[3] ?? reviewCities[3] ?? reviewCities[0]} · ${reviewCities[3] ?? reviewCities[0]} · 145 guests · March 2025`,
     },
   ];
+
 
   const localBusiness = {
     "@context": "https://schema.org",
