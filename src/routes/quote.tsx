@@ -8,6 +8,9 @@ import { contact } from "@/lib/contact";
 import { BookingProcess } from "@/components/site/BookingProcess";
 
 export const Route = createFileRoute("/quote")({
+  validateSearch: (search: Record<string, unknown>) => ({
+    date: typeof search.date === "string" ? search.date : "",
+  }),
   head: () => ({
     meta: [
       { title: "Request a Quote — Qfire Catering" },
