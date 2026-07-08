@@ -359,7 +359,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
               <Link to="/quote" className="btn-primary">
                 Start Planning My Wedding <ArrowRight className="size-4" />
               </Link>
-              <a href="#pricing" className="btn-ghost">
+              <a href="#estimator" className="btn-ghost">
                 See Real Wedding Pricing
               </a>
               <span className="inline-flex items-center gap-2 text-[0.7rem] tracking-[0.22em] uppercase text-gold/90 border border-gold/30 px-4 py-2.5 bg-gold/5">
