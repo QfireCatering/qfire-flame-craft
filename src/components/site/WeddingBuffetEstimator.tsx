@@ -2,21 +2,31 @@ import { Check } from "lucide-react";
 
 /**
  * "Average Cost for Catering" — a transparent planning example (NOT a package)
- * showing what a typical full-service Qfire wedding actually costs, per region.
- *
- * Answers the #1 bride question: "About how much should I expect to spend on catering?"
+ * showing what a typical full-service Qfire event actually costs, per region.
+ * Reused across Wedding, Corporate, and Private Party pages via eventType prop.
  */
 export function WeddingBuffetEstimator({
   region,
   regionShort,
+  eventType = "Wedding",
+  eventTypeLower,
+  audienceNoun,
 }: {
   region: string;
   regionShort: "Phoenix" | "San Diego";
+  /** "Wedding" | "Corporate Event" | "Private Party" */
+  eventType?: string;
+  /** Lowercase form: "wedding" | "corporate event" | "private party" */
+  eventTypeLower?: string;
+  /** Who's asking: "couple" | "planner" | "host" */
+  audienceNoun?: string;
 }) {
   const isPhx = regionShort === "Phoenix";
   const perGuest = isPhx ? 37.15 : 44.95;
   const total = isPhx ? 3715 : 4495;
   const guests = 100;
+  const evLower = eventTypeLower ?? eventType.toLowerCase();
+  const audience = audienceNoun ?? "host";
 
   const sampleMenu = [
     "Tri-Tip (Premium Upgrade)",
@@ -37,14 +47,14 @@ export function WeddingBuffetEstimator({
       <div className="container-luxe">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <div className="eyebrow justify-center mb-6">
-            {regionShort} · Wood-Fired BBQ Wedding Pricing · Menu 1 of 2
+            {regionShort} · Wood-Fired BBQ {eventType} Pricing · Menu 1 of 2
           </div>
           <h2 className="heading-lg text-bone">
             Average Cost for{" "}
             <span className="text-gold italic font-light">Catering</span>
           </h2>
           <p className="mt-5 text-bone/75 text-lg font-light leading-relaxed">
-            One of the first questions every couple asks is, "About how much should we budget for catering?" To make planning easier, we've put together an example of one of our most popular full-service wedding menus. This is not a package — it's simply an example to help you understand what a typical Qfire wedding looks like. Every wedding is fully customizable.
+            One of the first questions every {audience} asks is, "About how much should we budget for catering?" To make planning easier, we've put together an example of one of our most popular full-service {evLower} menus. This is not a package — it's simply an example to help you understand what a typical Qfire {evLower} looks like. Every {evLower} is fully customizable.
           </p>
           <p className="mt-4 text-bone text-lg md:text-xl font-medium leading-relaxed border-2 border-gold/50 bg-gold/15 px-6 py-4 inline-block shadow-[0_0_30px_rgba(212,175,55,0.15)]">
             This is <span className="text-gold font-semibold">Menu 1 of 2</span> — our Wood-Fired BBQ pricing. Keep scrolling to see our <span className="text-gold font-semibold">Steakhouse Experience</span> pricing just below.
