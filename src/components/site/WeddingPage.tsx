@@ -436,7 +436,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         <div className="container-luxe max-w-5xl">
           <div className="max-w-3xl mb-12">
             <div className="eyebrow mb-6">{regionLabel} Wedding Catering</div>
-            <h2 className="heading-xl text-bone">Two ways to set the table.</h2>
+            <h2 className="heading-xl text-bone">Choose your menu.</h2>
             <p className="mt-8 text-xl text-bone/70 leading-relaxed font-light">
               Every Qfire wedding menu is fully customized to your day, your guests and your vision — with {regionLabel} pricing and local service.
             </p>
