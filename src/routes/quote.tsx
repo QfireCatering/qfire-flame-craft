@@ -225,17 +225,13 @@ function QuotePage() {
                   </button>
                 )}
                 {!expanded && !step1Ready && (
-                  <p className="text-xs text-bone/60 text-center">Fill the 3 fields above to continue — no commitment.</p>
+                  <p className="text-xs text-bone/60 text-center">Fill the fields above to continue — no commitment.</p>
                 )}
               </div>
 
               {expanded && (
                 <div className="space-y-6 animate-in fade-in duration-500">
                   <div className="text-[0.65rem] tracking-[0.3em] uppercase text-gold text-center pt-2">Step 2 of 2 · A few more details for your custom proposal</div>
-                  <SelectField
-                    label="Leave a message"
-                    name="message"
-                  />
                   <Field label="Approx Guest Count" name="guests" type="number" />
                   <SelectField
                     label="Region"
@@ -249,7 +245,7 @@ function QuotePage() {
                   />
                   <div>
                     <label className="block text-[0.65rem] tracking-[0.3em] uppercase text-white mb-3">
-                      What Question(s) may we help you with?
+                      Leave a message
                     </label>
                     <textarea
                       name="message"
