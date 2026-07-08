@@ -229,12 +229,14 @@ function Field({
   type = "text",
   required = false,
   maxLength,
+  defaultValue,
 }: {
   label: string;
   name: string;
   type?: string;
   required?: boolean;
   maxLength?: number;
+  defaultValue?: string;
 }) {
   return (
     <div>
@@ -246,6 +248,7 @@ function Field({
         name={name}
         required={required}
         maxLength={maxLength}
+        defaultValue={defaultValue}
         className="w-full bg-charcoal/40 border border-white/10 px-4 py-3.5 text-bone focus:border-gold focus:outline-none transition-colors"
       />
     </div>
