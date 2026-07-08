@@ -4,12 +4,15 @@ import { Menu, X, Phone } from "lucide-react";
 import qfireLogo from "@/assets/qfire-logo.png.asset.json";
 import { contact } from "@/lib/contact";
 
-const primary = [
+const primaryLeft = [
+  { to: "/menus", label: "Menus" },
+  { to: "/about", label: "Chef Terry" },
+];
+
+const primaryRight = [
   { to: "/weddings", label: "Weddings" },
   { to: "/corporate", label: "Corporate" },
   { to: "/private-parties", label: "Private Parties" },
-  { to: "/menus", label: "Menus" },
-  { to: "/about", label: "Chef Terry" },
 ];
 
 const secondary = [
