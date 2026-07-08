@@ -4,7 +4,7 @@ import { DefinitiveContent } from "./DefinitiveContent";
 import { definitiveCopy } from "@/lib/definitive-copy";
 import { BookingProcess } from "./BookingProcess";
 import { ObjectionBuster } from "./ObjectionBuster";
-import { MenusOpener } from "./MenusOpener";
+
 import { SectionNav } from "./SectionNav";
 import { WeddingBuffetEstimator } from "./WeddingBuffetEstimator";
 import { contact } from "@/lib/contact";
@@ -294,11 +294,10 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
   };
 
   const sectionNavItems = [
-    { id: "menus", label: "Menus" },
     { id: "estimator", label: "Real Wedding Pricing" },
-    { id: "included", label: "What's Included" },
-    { id: "pricing", label: "Pricing" },
-    { id: "scale", label: "Built for Scale" },
+    { id: "steakhouse-pricing", label: "Steakhouse Pricing" },
+    { id: "features", label: "Features" },
+    { id: "menus", label: "Menus" },
     { id: "why-qfire", label: "Why Qfire" },
     { id: "service-styles", label: "Service Styles" },
     { id: "live-fire", label: "Live Fire" },
@@ -308,6 +307,32 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
     { id: "menu-options", label: "Menu Options" },
     { id: "chef", label: "Chef Terry" },
     { id: "faq", label: "FAQ" },
+  ];
+
+  const isPhx = config.regionSlug === "phoenix";
+  const regionLabel = isPhx ? "Phoenix Metro" : "San Diego County";
+  const steakMenuPath = isPhx ? "/steak-seafood-menu" : "/steak-seafood-menu-san-diego";
+  const woodMenuUrl = isPhx
+    ? "https://fs17.formsite.com/matthews3404/BBQDADDYLLC/index"
+    : "https://fs17.formsite.com/matthews3404/SanDiego/index";
+  const steakTiers = [
+    { name: "Buffet Style", price: isPhx ? "$74" : "$79", per: "/ person", desc: `Smooth. Efficient. Elegant. Restaurant-quality buffet presentation. Ideal for ${regionShort} weddings.` },
+    { name: "Family Style", price: isPhx ? "$89" : "$94", per: "/ person", desc: "Shared dining. Passed platters. Connected guest experience. Luxury presentation, end to end." },
+    { name: "Plated Service", price: isPhx ? "$128" : "$133", per: "/ person", desc: "Restaurant-style service. Each course individually served. Our most luxurious dining experience." },
+  ];
+  const weddingFeatures = [
+    "Custom multi-course menu designed by Chef Terry",
+    "Premium proteins (Wood-Fire, Live-Fire Steakhouse, or surf & turf)",
+    "Passed hors d'oeuvres + cocktail-hour stations (optional)",
+    "Chef-attended live-fire grilling on-site",
+    "Buffet, family-style, plated, or stationed service",
+    "Salads, fresh-baked breads, sauces, and signature sides",
+    "Linen-draped buffet, chafing dishes, and serving equipment",
+    "Professional uniformed service staff",
+    "Full setup, refresh, and breakdown",
+    "Trash removal and venue walk-through at end of night",
+    "Optional bar program with bartenders and glassware",
+    "Optional rentals: china, flatware, linens, lounge, dance floor",
   ];
 
 
@@ -334,7 +359,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
               <Link to="/quote" className="btn-primary">
                 Start Planning My Wedding <ArrowRight className="size-4" />
               </Link>
-              <a href="#pricing" className="btn-ghost">
+              <a href="#estimator" className="btn-ghost">
                 See Real Wedding Pricing
               </a>
               <span className="inline-flex items-center gap-2 text-[0.7rem] tracking-[0.22em] uppercase text-gold/90 border border-gold/30 px-4 py-2.5 bg-gold/5">
@@ -356,9 +381,95 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
       </section>
 
 
-      <MenusOpener regionKey={config.regionSlug} pageType="Wedding" />
-
+      {/* 1. REAL WEDDING PRICING (directly under hero) */}
       <WeddingBuffetEstimator region={region} regionShort={regionShort as "Phoenix" | "San Diego"} />
+
+      {/* 2. STEAKHOUSE EXPERIENCE PRICING */}
+      <section id="steakhouse-pricing" className="py-20 lg:py-28 bg-ink border-t border-white/5 scroll-mt-32">
+        <div className="container-luxe">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <div className="eyebrow justify-center mb-6">Steakhouse Experience — Pricing</div>
+            <h2 className="heading-lg text-bone">
+              Surf &amp; Turf Steakhouse Experience starting at <span className="text-gold italic font-light">{isPhx ? "$74" : "$79"}/guest.</span>
+            </h2>
+            <p className="mt-5 text-bone/65 text-base font-light">
+              Live charcoal grilling, white-glove service, and restaurant-quality presentation at your {regionShort} venue.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
+            {steakTiers.map((tier) => (
+              <article key={tier.name} className="relative p-9 lg:p-10 flex flex-col bg-ink/60 border border-white/10">
+                <div className="text-[0.7rem] tracking-[0.3em] uppercase text-gold mb-4">{tier.name}</div>
+                <div className="flex items-baseline gap-2">
+                  <span className="text-5xl font-display text-bone tracking-tight">{tier.price}</span>
+                  <span className="text-bone/55 text-sm">{tier.per}</span>
+                </div>
+                <p className="mt-6 text-bone/70 leading-relaxed font-light flex-1">{tier.desc}</p>
+                <Link to={steakMenuPath} className="btn-ghost mt-8">View Menu</Link>
+              </article>
+            ))}
+          </div>
+          <p className="text-center mt-10 text-xs text-bone/45 tracking-wider uppercase">
+            Pricing varies by guest count, menu selections and venue specifics. Final proposals are built one-to-one.
+          </p>
+        </div>
+      </section>
+
+      {/* 3. FEATURES (renamed from "What's Included / Your proposal, line by line") */}
+      <section id="features" className="py-20 lg:py-24">
+        <div className="container-luxe">
+          <div className="max-w-2xl mb-12">
+            <div className="eyebrow mb-5">Features</div>
+            <h2 className="heading-lg text-bone">Everything included in your wedding.</h2>
+            <p className="mt-5 text-bone/70 font-light">No hidden fees, no surprise gratuities, no upsells the day of. Every Qfire proposal is itemized so you know exactly what your investment buys — before you ever see a price.</p>
+          </div>
+          <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {weddingFeatures.map((item) => (
+              <li key={item} className="flex items-start gap-3 p-5 border border-white/10 bg-onyx/60">
+                <Check className="size-5 text-gold shrink-0 mt-0.5" />
+                <span className="text-bone/85 leading-snug font-light">{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* 4. TWO WAYS TO SET THE TABLE — menu cards */}
+      <section id="menus" className="pt-20 lg:pt-28 pb-12 scroll-mt-32">
+        <div className="container-luxe max-w-5xl">
+          <div className="max-w-3xl mb-12">
+            <div className="eyebrow mb-6">{regionLabel} Wedding Catering</div>
+            <h2 className="heading-xl text-bone">Two ways to set the table.</h2>
+            <p className="mt-8 text-xl text-bone/70 leading-relaxed font-light">
+              Every Qfire wedding menu is fully customized to your day, your guests and your vision — with {regionLabel} pricing and local service.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 gap-6 lg:gap-8">
+            <a href={woodMenuUrl} target="_blank" rel="noopener noreferrer" className="group relative aspect-[5/4] overflow-hidden border border-white/5">
+              <img src={platter1} alt={`Wood-Fired — ${regionLabel}`} loading="lazy" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent" />
+              <div className="absolute inset-0 p-8 lg:p-12 flex flex-col justify-end">
+                <div className="heading-md text-bone group-hover:text-gold transition-colors">Wood-Fired — {regionLabel}</div>
+                <p className="mt-4 text-bone/70 max-w-sm">Slow-smoked brisket, tri-tip, pulled meats and comfort sides. Backyard elegance, restaurant polish.</p>
+                <div className="mt-6 inline-flex items-center gap-2 text-[0.65rem] tracking-[0.3em] uppercase text-gold">
+                  View Menu <ArrowRight className="size-3" />
+                </div>
+              </div>
+            </a>
+            <Link to={steakMenuPath} className="group relative aspect-[5/4] overflow-hidden border border-white/5">
+              <img src={steakMenu} alt={`Steakhouse — ${regionLabel}`} loading="lazy" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent" />
+              <div className="absolute inset-0 p-8 lg:p-12 flex flex-col justify-end">
+                <div className="heading-md text-bone group-hover:text-gold transition-colors">Steakhouse — {regionLabel}</div>
+                <p className="mt-4 text-bone/70 max-w-sm">Ribeye, filet, picanha, prime rib. Plated dinners and family-style service. Restaurant-quality at your venue.</p>
+                <div className="mt-6 inline-flex items-center gap-2 text-[0.65rem] tracking-[0.3em] uppercase text-gold">
+                  View Menu <ArrowRight className="size-3" />
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
 
 
       <InlineFAQ
