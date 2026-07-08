@@ -3,21 +3,24 @@ import { Check } from "lucide-react";
 export function WoodFirePricing({ regionSlug }: { regionSlug: "phoenix" | "san-diego" }) {
   const isPhx = regionSlug === "phoenix";
   const regionShort = isPhx ? "Phoenix" : "San Diego";
-  const woodMenuUrl = isPhx
-    ? "https://fs17.formsite.com/matthews3404/BBQDADDYLLC/index"
-    : "https://fs17.formsite.com/matthews3404/SanDiego/index";
   const woodMin = isPhx ? "20 guest minimum" : "50 guest minimum";
   return (
     <section id="estimator" className="py-20 lg:py-28 bg-onyx border-t border-white/5 scroll-mt-32">
       <div className="container-luxe">
+        <div className="max-w-3xl mx-auto text-center mb-10">
+          <p className="text-bone text-lg md:text-xl font-medium leading-relaxed border-2 border-gold/50 bg-gold/15 px-6 py-4 inline-block shadow-[0_0_30px_rgba(212,175,55,0.15)]">
+            This is <span className="text-gold font-semibold">Menu 1 of 2</span> — our Wood-Fired BBQ pricing. Keep scrolling to see our <span className="text-gold font-semibold">Steakhouse Experience</span> pricing just below.
+          </p>
+        </div>
+
         <div className="text-center max-w-2xl mx-auto mb-14">
-          <div className="eyebrow justify-center mb-6">Wood-Fire BBQ Catering — Pricing</div>
+          <div className="eyebrow justify-center mb-6">Wood-Fire/BBQ Catering — Pricing</div>
           <h2 className="heading-lg text-bone">
-            Wood-fire catering starting at{" "}
+            Wood-fire/BBQ catering starting at{" "}
             <span className="text-gold italic font-light">{isPhx ? "$12.99" : "$15.99"}/guest.</span>
           </h2>
           <p className="mt-5 text-bone/65 text-base font-light">
-            Pick your package. Pick your meats. We bring the fire, the food, and the team.
+            Pick your package. Pick your meats. We bring the fire, the food, and the team — award-winning {regionShort} BBQ catering for weddings, corporate events, private parties, backyard celebrations and holiday gatherings.
           </p>
           <p className="mt-3 text-gold/90 text-xs tracking-[0.25em] uppercase">
             {regionShort} — {woodMin}
@@ -41,7 +44,6 @@ export function WoodFirePricing({ regionSlug }: { regionSlug: "phoenix" | "san-d
                 Example: Choose Tri-Tip only, or let your guests choose between Tri-Tip and Grilled Chicken.
               </p>
             </div>
-            <a href={woodMenuUrl} target="_blank" rel="noopener noreferrer" className="btn-ghost mt-8">View Menu</a>
           </article>
 
           <article className="relative p-8 lg:p-10 flex flex-col bg-ink/60 border border-white/10">
@@ -60,7 +62,6 @@ export function WoodFirePricing({ regionSlug }: { regionSlug: "phoenix" | "san-d
                 Example: Everyone gets Pulled Pork, then each guest chooses either Brisket or Chicken.
               </p>
             </div>
-            <a href={woodMenuUrl} target="_blank" rel="noopener noreferrer" className="btn-ghost mt-8">View Menu</a>
           </article>
 
           <article className="relative p-8 lg:p-10 flex flex-col bg-ink/60 border border-white/10">
@@ -79,9 +80,12 @@ export function WoodFirePricing({ regionSlug }: { regionSlug: "phoenix" | "san-d
                 This is our most popular package for weddings, corporate events, and larger celebrations.
               </p>
             </div>
-            <a href={woodMenuUrl} target="_blank" rel="noopener noreferrer" className="btn-ghost mt-8">View Menu</a>
           </article>
         </div>
+
+        <p className="mt-10 max-w-3xl mx-auto text-center text-bone/70 text-sm md:text-base font-light leading-relaxed">
+          Prices above reflect <span className="text-bone">"food only"</span> rates — delivery and pick-up. Full-service Buffet, Family Style and Plated service are also available for an additional service charge.
+        </p>
       </div>
     </section>
   );
