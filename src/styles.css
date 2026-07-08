@@ -51,7 +51,7 @@
   --ink: oklch(0.12 0.05 25);
   --onyx: oklch(0.16 0.06 25);
   --charcoal: oklch(0.22 0.05 25);
-  --bone: oklch(0.95 0.008 80);
+  --bone: #ffffff;
   --gold: oklch(0.78 0.13 82);
   --gold-soft: oklch(0.88 0.08 88);
   --gold-deep: oklch(0.62 0.13 70);
