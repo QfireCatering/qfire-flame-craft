@@ -102,7 +102,6 @@ function QuotePage() {
       <div className="relative z-10 hidden lg:block">
         <div className="absolute inset-0 flex items-start p-16 pt-20">
           <div>
-            <div className="eyebrow mb-8">Request a Quote</div>
             <h1 className="heading-lg text-bone max-w-md">Tell us about your event.</h1>
             <p className="mt-6 text-bone/70 text-lg max-w-md leading-relaxed font-light">
               We answer every inquiry personally — usually within 24 hours.
