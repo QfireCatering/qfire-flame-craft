@@ -137,7 +137,7 @@ function BlogPostPage() {
 
             <div className="mt-16 pt-10 border-t border-white/10 flex flex-wrap gap-4">
               <Link to="/quote" className="btn-primary">
-                Request a Quote <ArrowRight className="size-4" />
+                See If My Date Is Open <ArrowRight className="size-4" />
               </Link>
               <Link to="/menus" className="btn-ghost">
                 See the Menus
