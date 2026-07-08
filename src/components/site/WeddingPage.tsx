@@ -768,15 +768,6 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
               </li>
             ))}
           </ul>
-          {venues.length > 0 && (
-            <div className="mt-16">
-              <div className="eyebrow mb-6">Venue Experience</div>
-              <h3 className="heading-md text-bone mb-6">Chances are, we already know your venue.</h3>
-              <p className="text-bone/75 max-w-3xl font-light leading-relaxed">
-                We've catered wedding receptions at {venues.slice(0, -1).join(", ")}, and {venues[venues.length - 1]} — plus dozens of private estates, vineyards, and resorts across the area. If you've already picked your venue, there's a very good chance we already know the kitchen, the coordinator, and the loading dock.
-              </p>
-            </div>
-          )}
         </div>
       </section>
 
