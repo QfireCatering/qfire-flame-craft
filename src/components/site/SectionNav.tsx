@@ -55,7 +55,7 @@ export function SectionNav({ items }: { items: SectionNavItem[] }) {
       {/* DESKTOP — pinned upper-right, collapsible */}
       <nav
         aria-label="Page sections"
-        className="hidden lg:flex fixed right-5 top-28 z-30 flex-col items-end max-h-[75vh]"
+        className="hidden lg:flex fixed right-5 top-44 z-30 flex-col items-end max-h-[75vh]"
       >
         <button
           type="button"
@@ -104,7 +104,7 @@ export function SectionNav({ items }: { items: SectionNavItem[] }) {
         type="button"
         onClick={() => setMobileOpen(true)}
         aria-label="Open page sections menu"
-        className="lg:hidden fixed top-20 right-3 z-30 inline-flex items-center gap-3 px-5 py-3 bg-ink/95 backdrop-blur border-2 border-gold/60 text-[0.72rem] tracking-[0.22em] uppercase text-gold shadow-[0_0_30px_-8px_oklch(0.78_0.13_82/0.4)]"
+        className="lg:hidden fixed top-32 right-3 z-30 inline-flex items-center gap-3 px-5 py-3 bg-ink/95 backdrop-blur border-2 border-gold/60 text-[0.72rem] tracking-[0.22em] uppercase text-gold shadow-[0_0_30px_-8px_oklch(0.78_0.13_82/0.4)]"
       >
         <Menu className="size-5" />
         <span className="max-w-[10rem] truncate font-semibold">{activeItem?.label ?? "Sections"}</span>
