@@ -60,100 +60,51 @@ const baseFaqs = [
   },
   {
     q: "Can our wedding menu be fully customized?",
-    a: "Yes. Every Qfire menu is built from scratch around your taste, your venue, and your guest list. Chef Terry will design a custom proposal with passed hors d'oeuvres, entrees, sides, and dessert pairings — and you can refine it in a private tasting before the contract is finalized.",
-  },
-  {
-    q: "Do you travel for weddings?",
-    a: "Yes. We cater weddings throughout the entire metro and to destination venues, vineyards, ranches, and private estates within driving distance. Travel and lodging are quoted transparently inside your proposal.",
+    a: "Yes. Every Qfire menu is built from scratch around your taste, your venue, and your guest list. Chef Terry will design a custom proposal with passed hors d'oeuvres, entrees, sides, and dessert pairings — and you can refine it in a private tasting before the contract is finalized. Menu stays flexible up to 15 days out.",
   },
   {
     q: "Can we schedule a private tasting?",
-    a: "Absolutely. Couples seriously considering Qfire are invited to a private chef's-table tasting with Chef Terry. You'll sample your proposed entrees, sides, and a signature cocktail, then refine the menu in real time before contracts are finalized.",
+    a: "Absolutely. As long as your date is still available, you're welcome to schedule a tasting before booking. You'll sample 3 meats, 3 sides, and 2 appetizers for 5–7 guests ($200) — then decide if we're the right fit.",
   },
   {
     q: "How does the 35% Date Retainer work?",
-    a: "Your wedding date is reserved with a 35% Date Retainer applied directly to your final invoice. It locks in your date and our team — it does NOT lock in your menu, guest count, or service style. Those can all change as your planning evolves.",
+    a: "Your date is reserved with a 35% Date Retainer that applies 100% to your final invoice. It locks in your date and our team — NOT your menu, guest count, or service style. Those all stay flexible as your planning evolves.",
   },
   {
-    q: "Can we change our menu after we book?",
-    a: "Yes. Most couples refine their menu several times between booking and the final tasting. We expect it. Your Date Retainer holds the date and the team — the menu is a living document until roughly 15 days out.",
+    q: "Do you grill onsite at the venue?",
+    a: "Yes — live charcoal grilling is one of our signature offerings. We roll in the wood-fired grill and cook ribeyes, picanha, brisket, salmon, and chicken right in front of your guests. The aroma, the visual, the freshness — it's the moment people remember.",
   },
   {
     q: "Can we update our guest count later?",
     a: "Yes. The final guest count locks in 14 days before the wedding. Until then, you can scale up or down as RSVPs come in without any rebooking penalty.",
   },
   {
-    q: "Do you grill onsite at the venue?",
-    a: "Yes — live charcoal grilling is one of our signature offerings. We roll in the wood-fired grill and cook ribeyes, picanha (Brazilian top sirloin cap), brisket, salmon, and chicken right in front of your guests. The aroma, the visual, the freshness — it's the moment people remember.",
+    q: "What's the plan if it rains — or if it's 110° in July?",
+    a: "We plan for weather from day one. Our live-fire grills operate under a canopy in rain, wind, and heat. For extreme conditions we can shift to a covered service area or venue kitchen without changing your menu. Every proposal includes a weather contingency.",
   },
   {
-    q: "Do you provide bartenders?",
-    a: "Yes. Licensed and insured bartenders, signature cocktails, beer and wine programs, mixers, ice, and glassware. We can run the bar entirely or partner with your venue's beverage program.",
-  },
-  {
-    q: "Do you provide rentals?",
-    a: "We coordinate linens, chinaware, glassware, flatware, chafers, serving pieces, and staging through trusted rental partners — billed at cost and managed by our team so you don't field three vendor calls a week.",
-  },
-  {
-    q: "Do you accommodate allergies?",
+    q: "Do you accommodate allergies and dietary restrictions?",
     a: "Always. Every proposal includes vegetarian, vegan, gluten-free, and dairy-free options. For peanut, tree-nut, shellfish, and other serious allergies we run a dedicated prep line and label every plate at the pass.",
   },
-  {
-    q: "Do you offer vegetarian options?",
-    a: "Yes — beautifully composed vegetarian plates that stand alongside the steaks. Wood-fired vegetables, grain bowls, stuffed portobellos, handmade pastas, and seasonal sides built around what's at the market.",
-  },
-  {
-    q: "Do you offer vegan options?",
-    a: "Yes. Fully plant-based plated dinners and stations are available — grilled vegetable platters, vegan grain bowls, plant-protein entrees, and dairy-free desserts.",
-  },
-  {
-    q: "How early should we reserve our wedding date?",
-    a: "Most couples book Qfire 6 to 12 months in advance for peak Saturdays. Off-peak dates and intimate weddings can often be accommodated inside 90 days — but Saturdays from March through November book first.",
-  },
-  {
-    q: "What service styles do you offer?",
-    a: "Plated dinner, buffet, family-style, live-fire grilling stations, action stations (carving, raw bar, pasta), and passed-only cocktail receptions. Every menu can be served in the format that fits your venue and guest count.",
-  },
-  {
-    q: "Do you provide professional service staff?",
-    a: "Yes. Every wedding includes uniformed servers, captains, chefs, and a lead coordinator — fully staffed by our team, dressed appropriately for the level of the wedding, and trained to your timeline.",
-  },
-  {
-    q: "Who handles setup?",
-    a: "We do. Our team arrives hours before guest count, stages the kitchen, dresses every table assigned to catering, sets buffet and station displays, and coordinates with your planner and venue manager. You don't lift a thing.",
-  },
-  {
-    q: "Who handles cleanup?",
-    a: "We do. Full breakdown of all catering equipment, buffet stations, bar areas, and back-of-house. Trash bagged. Surfaces wiped. Your venue manager will ask for our card.",
-  },
-  {
-    q: "What if our venue has restrictions?",
-    a: "We work inside almost every major venue's catering rules and have existing relationships with most of the region's preferred-vendor lists. If your venue has specific power, propane, or fire-marshal restrictions for live grilling, we coordinate permits and approvals directly.",
-  },
-  {
-    q: "What areas do you serve — and are there travel fees?",
-    a: "We cater weddings throughout Phoenix Metro (Scottsdale, Paradise Valley, Mesa, Chandler, Gilbert, Tempe, Peoria, Queen Creek, and beyond) and San Diego County (La Jolla, Del Mar, Carlsbad, Rancho Santa Fe, Coronado, Encinitas, and beyond). Anything within roughly 30 miles of our home base is included at no additional charge. For destination venues (Sedona, Flagstaff, Temecula, wine country), travel and lodging are quoted transparently up front — no surprise mileage fees on your final invoice.",
-  },
-  {
-    q: "Do you handle cake cutting?",
-    a: "Yes. We charge a $100 cake-cutting fee because cake is typically served after dinner, when our team would normally be wrapping up. That fee covers the extra staff time to beautifully cut, plate, and serve your cake — including outside-bakery cakes or dessert bars (donuts, pies, macarons) — so you can enjoy the moment worry-free.",
-  },
-  {
-    q: "Do you feed our vendors — photographer, DJ, planner?",
-    a: "Yes. Vendor meals are billed at a reduced rate (typically $18–$24 per vendor depending on menu) and are served hot from the same kitchen right after the main service. Your planner will thank you — a fed vendor is a happy vendor.",
-  },
-  {
-    q: "What's the plan if it rains — or if it's 110° in July?",
-    a: "We plan for weather from day one. Our live-fire grills operate under a canopy in rain, wind, and heat. For extreme conditions we can shift to a covered service area or venue kitchen without changing your menu. Every proposal includes a weather contingency, and we coordinate directly with your planner and venue on the morning of if we need to pivot.",
-  },
-  {
-    q: "Are you licensed and insured?",
-    a: "Yes. Qfire Catering carries full general liability insurance, food handler licensing, and workers' compensation coverage. We can name your venue as an additional insured on our certificate — most venues require this, and we handle it directly with them so you don't have to.",
-  },
-  {
-    q: "What does a typical wedding-day timeline look like?",
-    a: "For a 5pm ceremony / 6pm reception: our team arrives around 1–2pm to set up the kitchen and buffet, cocktail-hour apps are passed at 6pm, dinner service begins at your first-dance cue (usually around 7pm), cake cutting around 8pm, and full breakdown wraps by 11pm or your venue's cutoff. Your account lead builds a detailed run-of-show with your planner in the weeks before the wedding.",
-  },
+];
+
+const extraFaqs = [
+  { q: "Do you travel for weddings?", a: "Yes. We cater weddings throughout the entire metro and to destination venues, vineyards, ranches, and private estates within driving distance. Travel and lodging are quoted transparently inside your proposal." },
+  { q: "Can we change our menu after we book?", a: "Yes. Most couples refine their menu several times between booking and the final tasting. The menu is a living document until roughly 15 days out." },
+  { q: "Do you provide bartenders?", a: "Yes. Licensed and insured bartenders, signature cocktails, beer and wine programs, mixers, ice, and glassware." },
+  { q: "Do you provide rentals?", a: "We coordinate linens, chinaware, glassware, flatware, chafers, serving pieces, and staging through trusted rental partners — billed at cost and managed by our team." },
+  { q: "Do you offer vegetarian options?", a: "Yes — beautifully composed vegetarian plates that stand alongside the steaks. Wood-fired vegetables, grain bowls, stuffed portobellos, handmade pastas, and seasonal sides." },
+  { q: "Do you offer vegan options?", a: "Yes. Fully plant-based plated dinners and stations — grilled vegetable platters, vegan grain bowls, plant-protein entrees, and dairy-free desserts." },
+  { q: "How early should we reserve our wedding date?", a: "Most couples book Qfire 6 to 12 months in advance for peak Saturdays. Off-peak dates and intimate weddings can often be accommodated inside 90 days." },
+  { q: "What service styles do you offer?", a: "Plated dinner, buffet, family-style, live-fire grilling stations, action stations (carving, raw bar, pasta), and passed-only cocktail receptions." },
+  { q: "Do you provide professional service staff?", a: "Yes. Every wedding includes uniformed servers, captains, chefs, and a lead coordinator." },
+  { q: "Who handles setup and cleanup?", a: "We do — arrival hours before guest count, full staging, buffet dressing, breakdown, trash bagged, surfaces wiped. Your venue manager will ask for our card." },
+  { q: "What if our venue has restrictions?", a: "We work inside almost every major venue's catering rules. If your venue has specific power, propane, or fire-marshal restrictions for live grilling, we coordinate permits directly." },
+  { q: "Do you handle cake cutting?", a: "Yes. $100 cake-cutting fee covers the additional staff time to cut, plate, and serve — including outside-bakery cakes and dessert bars." },
+  { q: "Do you feed our vendors — photographer, DJ, planner?", a: "Yes. Vendor meals billed at $18–$24 per vendor, served hot from the same kitchen right after main service." },
+  { q: "Are you licensed and insured?", a: "Yes — full general liability, food handler licensing, workers' comp. We name your venue as additional insured and handle the paperwork directly with them." },
+  { q: "What does a typical wedding-day timeline look like?", a: "5pm ceremony / 6pm reception: team arrives 1–2pm, passed apps at 6pm, dinner at first-dance cue (~7pm), cake around 8pm, breakdown by 11pm. Your account lead builds a detailed run-of-show with your planner." },
+  { q: "Are there travel fees for destination venues?", a: "Anything within roughly 30 miles of home base is included at no additional charge. Destination venues (Sedona, Flagstaff, Temecula) get transparent travel and lodging quotes up front." },
 ];
 
 const whyChoose = [
@@ -205,14 +156,6 @@ const serviceStyles = [
   },
 ];
 
-const timelineSteps = [
-  { n: "01", title: "Tell us about your day", body: "Send over your date, venue, and rough guest count. Takes about 90 seconds. No commitment, no sales call." },
-  { n: "02", title: "We'll call you personally", body: "A real human — usually Chef Terry or your account lead — reaches out within 4 business hours to say hi and understand what you're picturing." },
-  { n: "03", title: "We build your menu together", body: "You share your vision. We design a proposal around your taste, your venue, and your guest list. Change it as many times as you want." },
-  { n: "04", title: "Lock your date (35% Retainer)", body: "Only when you're ready. The retainer holds your date and our team — it applies 100% to your final invoice." },
-  { n: "05", title: "Refine as your plans evolve", body: "Menu, guest count, upgrades — all still flexible. Everything locks in 14–30 days before the wedding, once RSVPs are in." },
-  { n: "06", title: "Enjoy your wedding day", body: "We set up hours early, cook live on-site, run service, refresh buffets, break down cleanly, and disappear. You spend the night with the people you love." },
-];
 
 export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
   const { region, regionShort, cities, venues, reviewCities, path } = config;
@@ -409,24 +352,6 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         </div>
       </section>
 
-      {/* 3. FEATURES (renamed from "What's Included / Your proposal, line by line") */}
-      <section id="features" className="py-20 lg:py-24">
-        <div className="container-luxe">
-          <div className="max-w-2xl mb-12">
-            <div className="eyebrow mb-5">Features</div>
-            <h2 className="heading-lg text-bone">Features available for your reception.</h2>
-            <p className="mt-5 text-bone/70 font-light">No hidden fees, no surprise gratuities, no upsells the day of. Every Qfire proposal is itemized so you know exactly what your investment buys — before you ever see a price.</p>
-          </div>
-          <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {weddingFeatures.map((item) => (
-              <li key={item} className="flex items-start gap-3 p-5 border border-white/10 bg-onyx/60">
-                <Check className="size-5 text-gold shrink-0 mt-0.5" />
-                <span className="text-bone/85 leading-snug font-light">{item}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
 
       {/* COMPARISON TABLE — how Qfire compares to other wedding-catering options */}
       <section id="compare" className="py-20 lg:py-28 bg-onyx border-y border-white/10 scroll-mt-32">
@@ -591,6 +516,9 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
               </details>
             ))}
           </div>
+          <div className="mt-10 text-center">
+            <Link to="/wedding-faq" className="btn-ghost">See all wedding catering FAQs <ArrowRight className="size-4" /></Link>
+          </div>
         </div>
       </section>
 
@@ -723,44 +651,6 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
 
       <ScatteredReview review={reviews[2]} />
 
-      {/* WHAT HAPPENS NEXT */}
-      <section id="process" className="py-24 lg:py-32 scroll-mt-32">
-        <div className="container-luxe">
-          <div className="max-w-2xl mb-16">
-            <div className="eyebrow mb-6">What Happens After You Reach Out</div>
-            <h2 className="heading-lg text-bone">Here's exactly what planning with us looks like.</h2>
-            <p className="mt-6 text-bone/75 text-lg leading-relaxed font-light">
-              No high-pressure sales calls. No confusing forms. Just a clear, calm path from your first "hi" to your first dance.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/5 border border-white/5">
-            {timelineSteps.map((s) => (
-              <div key={s.n} className="bg-ink p-8 lg:p-10">
-                <div className="text-gold font-display text-4xl mb-4">{s.n}</div>
-                <h3 className="text-xl font-display text-bone mb-3">{s.title}</h3>
-                <p className="text-sm text-bone/75 leading-relaxed">{s.body}</p>
-              </div>
-            ))}
-          </div>
-          <div className="mt-12 text-center">
-            <Link to="/quote" className="btn-primary">Step 1 — Tell Us About Your Wedding Reception <ArrowRight className="size-4" /></Link>
-          </div>
-        </div>
-      </section>
-
-      <InlineFAQ
-        eyebrow="A quick note on timing"
-        items={[
-          {
-            q: "What does the wedding-day timeline actually look like?",
-            a: "For a typical 5pm ceremony / 6pm reception: our team arrives around 1–2pm to set up, passed apps at 6pm, dinner service starts at your first-dance cue (usually 7pm), cake cutting around 8pm, and full breakdown wraps by 11pm or your venue's cutoff. Your account lead builds a minute-by-minute run-of-show with your planner in the weeks before.",
-          },
-          {
-            q: "When does everything need to be finalized?",
-            a: "Menu can flex right up to about 15 days out. Final guest count locks 14 days before the wedding. Small changes after that (a few no-shows, a switched entrée) — no problem, we roll with it.",
-          },
-        ]}
-      />
 
       {/* DATE CHARGE */}
       <section className="py-24 lg:py-32 bg-onyx border-y border-white/10">
@@ -878,15 +768,6 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
               </li>
             ))}
           </ul>
-          {venues.length > 0 && (
-            <div className="mt-16">
-              <div className="eyebrow mb-6">Venue Experience</div>
-              <h3 className="heading-md text-bone mb-6">Chances are, we already know your venue.</h3>
-              <p className="text-bone/75 max-w-3xl font-light leading-relaxed">
-                We've catered wedding receptions at {venues.slice(0, -1).join(", ")}, and {venues[venues.length - 1]} — plus dozens of private estates, vineyards, and resorts across the area. If you've already picked your venue, there's a very good chance we already know the kitchen, the coordinator, and the loading dock.
-              </p>
-            </div>
-          )}
         </div>
       </section>
 
@@ -926,11 +807,6 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         </div>
       </section>
 
-      <DefinitiveContent
-        topic={`${regionShort} Wedding Reception Catering`}
-        region={`${regionShort} couples`}
-        {...definitiveCopy.wedding}
-      />
 
       {/* REAL REVIEWS — independent third-party platforms */}
       <section id="real-reviews" className="py-20 lg:py-28 bg-onyx border-y border-white/10 scroll-mt-32">
@@ -942,7 +818,20 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
               Here's what real Qfire brides are saying on the two platforms other brides trust most. Read every review — the good, the honest, all of it.
             </p>
           </div>
-          <div className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+          <div className="grid sm:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <a
+              href="https://www.google.com/search?q=Qfire+Catering+reviews"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group p-8 lg:p-10 border border-gold/30 bg-ink/70 hover:bg-ink hover:border-gold transition-all text-center"
+            >
+              <div className="text-[0.65rem] tracking-[0.3em] uppercase text-gold mb-3">Google Reviews</div>
+              <div className="font-display text-2xl text-bone group-hover:text-gold transition-colors">Read Google Reviews</div>
+              <div className="flex justify-center gap-1 mt-4">
+                {[0,1,2,3,4].map((i) => <Star key={i} className="size-4 fill-gold text-gold" />)}
+              </div>
+              <div className="mt-4 text-xs tracking-[0.2em] uppercase text-bone/60">View on Google →</div>
+            </a>
             <a
               href="https://www.weddingwire.com/reviews/qfire-catering/4c33661ea8bcf7a8.html"
               target="_blank"
@@ -976,10 +865,6 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
 
 
 
-      <BookingProcess
-        eyebrow="Booking Your Wedding Is Simple"
-        title={`From inquiry to "I do" — exactly what happens.`}
-      />
 
       {/* FINAL CTA */}
       <section className="py-32 lg:py-40 relative overflow-hidden">

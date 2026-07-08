@@ -70,6 +70,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "Full-service wood-fired catering for weddings, corporate events and private parties. Phoenix Metro & San Diego County. Chef Terry Matthews — featured on Food Network." },
       { name: "author", content: "Qfire Catering" },
       { name: "theme-color", content: "#0a0907" },
+      { name: "robots", content: "index,follow" },
       { property: "og:site_name", content: "Qfire Catering" },
       { property: "og:type", content: "website" },
       { property: "og:title", content: "Qfire Catering — Wood-Fired Catering for Weddings, Corporate & Private Events" },

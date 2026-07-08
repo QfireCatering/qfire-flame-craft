@@ -57,7 +57,7 @@ export function Footer() {
 
           <div>
             <div className="text-[0.65rem] tracking-[0.3em] uppercase text-gold mb-5">Get In Touch</div>
-            <Link to="/quote" className="btn-primary w-full text-[0.65rem]">Request a Quote</Link>
+            <Link to="/quote" className="btn-primary w-full text-[0.65rem]">See If My Date Is Open</Link>
             <div className="mt-6 space-y-2.5 text-sm text-bone/85">
               <a href={contact.phoneHref} className="flex items-center gap-3 hover:text-gold transition-colors">
                 <Phone className="size-4 text-gold" /> {contact.phone}

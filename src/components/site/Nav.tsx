@@ -87,7 +87,7 @@ export function Nav() {
               Choose Location
             </Link>
             <Link to="/quote" className="hidden md:inline-flex btn-primary text-[0.65rem] px-5 py-3">
-              Request Quote
+              See If My Date Is Open
             </Link>
             <button
               onClick={() => setOpen(true)}
@@ -130,7 +130,7 @@ export function Nav() {
               Choose Location
             </Link>
             <Link to="/quote" onClick={() => setOpen(false)} className="btn-primary flex-1">
-              Request Quote
+              See If My Date Is Open
             </Link>
           </div>
         </div>

@@ -19,9 +19,10 @@ export function StickyMobileCTA() {
       <a
         href="tel:+18778487211"
         aria-label="Call Qfire Catering"
-        className="flex items-center justify-center w-11 h-11 border border-gold/40 text-gold shrink-0"
+        className="relative flex items-center justify-center w-11 h-11 border border-gold/40 text-gold shrink-0 animate-pulse hover:animate-none"
       >
-        <Phone className="size-5" />
+        <span className="absolute inset-0 border border-gold/60 animate-ping opacity-75" aria-hidden />
+        <Phone className="size-5 relative" />
       </a>
       <input
         type="date"
