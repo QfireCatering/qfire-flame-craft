@@ -831,3 +831,37 @@ function ScatteredReview({ review }: { review: { q: string; a: string; e: string
     </section>
   );
 }
+
+function InlineFAQ({
+  eyebrow = "You're probably wondering",
+  items,
+}: {
+  eyebrow?: string;
+  items: { q: string; a: string }[];
+}) {
+  return (
+    <section className="py-14 lg:py-16 bg-ink/60 border-y border-gold/10">
+      <div className="container-luxe">
+        <div className="max-w-4xl mx-auto">
+          <div className="flex items-center gap-3 mb-6 text-gold">
+            <MessageCircle className="size-4" strokeWidth={1.6} />
+            <span className="text-[0.65rem] tracking-[0.3em] uppercase">{eyebrow}</span>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-10">
+            {items.map((f) => (
+              <div key={f.q} className="border-l-2 border-gold/40 pl-5">
+                <h3 className="font-display text-xl lg:text-2xl text-bone leading-snug mb-3">
+                  {f.q}
+                </h3>
+                <p className="text-bone/80 text-base leading-relaxed font-light">
+                  {f.a}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
