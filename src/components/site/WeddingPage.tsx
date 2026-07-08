@@ -381,9 +381,95 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
       </section>
 
 
-      <MenusOpener regionKey={config.regionSlug} pageType="Wedding" />
-
+      {/* 1. REAL WEDDING PRICING (directly under hero) */}
       <WeddingBuffetEstimator region={region} regionShort={regionShort as "Phoenix" | "San Diego"} />
+
+      {/* 2. STEAKHOUSE EXPERIENCE PRICING */}
+      <section id="steakhouse-pricing" className="py-20 lg:py-28 bg-ink border-t border-white/5 scroll-mt-32">
+        <div className="container-luxe">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <div className="eyebrow justify-center mb-6">Steakhouse Experience — Pricing</div>
+            <h2 className="heading-lg text-bone">
+              Surf &amp; Turf Steakhouse Experience starting at <span className="text-gold italic font-light">{isPhx ? "$74" : "$79"}/guest.</span>
+            </h2>
+            <p className="mt-5 text-bone/65 text-base font-light">
+              Live charcoal grilling, white-glove service, and restaurant-quality presentation at your {regionShort} venue.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
+            {steakTiers.map((tier) => (
+              <article key={tier.name} className="relative p-9 lg:p-10 flex flex-col bg-ink/60 border border-white/10">
+                <div className="text-[0.7rem] tracking-[0.3em] uppercase text-gold mb-4">{tier.name}</div>
+                <div className="flex items-baseline gap-2">
+                  <span className="text-5xl font-display text-bone tracking-tight">{tier.price}</span>
+                  <span className="text-bone/55 text-sm">{tier.per}</span>
+                </div>
+                <p className="mt-6 text-bone/70 leading-relaxed font-light flex-1">{tier.desc}</p>
+                <Link to={steakMenuPath} className="btn-ghost mt-8">View Menu</Link>
+              </article>
+            ))}
+          </div>
+          <p className="text-center mt-10 text-xs text-bone/45 tracking-wider uppercase">
+            Pricing varies by guest count, menu selections and venue specifics. Final proposals are built one-to-one.
+          </p>
+        </div>
+      </section>
+
+      {/* 3. FEATURES (renamed from "What's Included / Your proposal, line by line") */}
+      <section id="features" className="py-20 lg:py-24">
+        <div className="container-luxe">
+          <div className="max-w-2xl mb-12">
+            <div className="eyebrow mb-5">Features</div>
+            <h2 className="heading-lg text-bone">Everything included in your wedding.</h2>
+            <p className="mt-5 text-bone/70 font-light">No hidden fees, no surprise gratuities, no upsells the day of. Every Qfire proposal is itemized so you know exactly what your investment buys — before you ever see a price.</p>
+          </div>
+          <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {weddingFeatures.map((item) => (
+              <li key={item} className="flex items-start gap-3 p-5 border border-white/10 bg-onyx/60">
+                <Check className="size-5 text-gold shrink-0 mt-0.5" />
+                <span className="text-bone/85 leading-snug font-light">{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* 4. TWO WAYS TO SET THE TABLE — menu cards */}
+      <section id="menus" className="pt-20 lg:pt-28 pb-12 scroll-mt-32">
+        <div className="container-luxe max-w-5xl">
+          <div className="max-w-3xl mb-12">
+            <div className="eyebrow mb-6">{regionLabel} Wedding Catering</div>
+            <h2 className="heading-xl text-bone">Two ways to set the table.</h2>
+            <p className="mt-8 text-xl text-bone/70 leading-relaxed font-light">
+              Every Qfire wedding menu is fully customized to your day, your guests and your vision — with {regionLabel} pricing and local service.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 gap-6 lg:gap-8">
+            <a href={woodMenuUrl} target="_blank" rel="noopener noreferrer" className="group relative aspect-[5/4] overflow-hidden border border-white/5">
+              <img src={platter1} alt={`Wood-Fired — ${regionLabel}`} loading="lazy" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent" />
+              <div className="absolute inset-0 p-8 lg:p-12 flex flex-col justify-end">
+                <div className="heading-md text-bone group-hover:text-gold transition-colors">Wood-Fired — {regionLabel}</div>
+                <p className="mt-4 text-bone/70 max-w-sm">Slow-smoked brisket, tri-tip, pulled meats and comfort sides. Backyard elegance, restaurant polish.</p>
+                <div className="mt-6 inline-flex items-center gap-2 text-[0.65rem] tracking-[0.3em] uppercase text-gold">
+                  View Menu <ArrowRight className="size-3" />
+                </div>
+              </div>
+            </a>
+            <Link to={steakMenuPath} className="group relative aspect-[5/4] overflow-hidden border border-white/5">
+              <img src={steakMenu} alt={`Steakhouse — ${regionLabel}`} loading="lazy" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent" />
+              <div className="absolute inset-0 p-8 lg:p-12 flex flex-col justify-end">
+                <div className="heading-md text-bone group-hover:text-gold transition-colors">Steakhouse — {regionLabel}</div>
+                <p className="mt-4 text-bone/70 max-w-sm">Ribeye, filet, picanha, prime rib. Plated dinners and family-style service. Restaurant-quality at your venue.</p>
+                <div className="mt-6 inline-flex items-center gap-2 text-[0.65rem] tracking-[0.3em] uppercase text-gold">
+                  View Menu <ArrowRight className="size-3" />
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
 
 
       <InlineFAQ
