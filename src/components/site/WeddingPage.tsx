@@ -807,11 +807,6 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         </div>
       </section>
 
-      <DefinitiveContent
-        topic={`${regionShort} Wedding Reception Catering`}
-        region={`${regionShort} couples`}
-        {...definitiveCopy.wedding}
-      />
 
       {/* REAL REVIEWS — independent third-party platforms */}
       <section id="real-reviews" className="py-20 lg:py-28 bg-onyx border-y border-white/10 scroll-mt-32">
