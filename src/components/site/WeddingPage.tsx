@@ -76,7 +76,7 @@ const baseFaqs = [
   },
   {
     q: "Can we change our menu after we book?",
-    a: "Yes. Most couples refine their menu several times between booking and the final tasting. We expect it. Your Date Retainer holds the date and the team — the menu is a living document until roughly 30 days out.",
+    a: "Yes. Most couples refine their menu several times between booking and the final tasting. We expect it. Your Date Retainer holds the date and the team — the menu is a living document until roughly 15 days out.",
   },
   {
     q: "Can we update our guest count later?",
@@ -176,7 +176,7 @@ const serviceStyles = [
       "Fast service — no long lines",
       "Beautiful presentation, styled for photos",
       "Our staff keeps it hot and refreshed all night",
-      "Perfect for most weddings (75–250 guests)",
+      "Perfect for most wedding receptions (75–250 guests)",
     ],
   },
   {
@@ -200,7 +200,7 @@ const serviceStyles = [
       "The most polished, elegant dining experience",
       "Ideal for luxury and black-tie receptions",
       "Menu cards, wine pairings, white-glove service",
-      "The wedding your guests describe as 'unreal'",
+      "The wedding reception your guests describe as 'unreal'",
     ],
   },
 ];
@@ -219,7 +219,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
 
   const reviews = [
     {
-      q: `Chef Terry and his team made our ${regionShort} wedding unforgettable. The brisket and ribeyes were perfect, and every single guest asked us who our caterer was. Service was flawless from setup through the last dance.`,
+      q: `Chef Terry and his team made our ${regionShort} wedding reception unforgettable. The brisket and ribeyes were perfect, and every single guest asked us who our caterer was. Service was flawless from setup through the last dance.`,
       a: "Lauren & Mark H.",
       e: `${venues[0] ?? reviewCities[0]} · ${reviewCities[0]} · 220 guests · Oct 2024`,
     },
@@ -236,7 +236,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
     {
       q: "As a wedding planner I work with caterers every single weekend. Qfire is at the top of my preferred list — clean, on time, professional, and the food is legitimately exceptional. I recommend them without hesitation.",
       a: "Alyssa T., Wedding Planner",
-      e: `${region} · 40+ weddings coordinated with Qfire`,
+      e: `${region} · 40+ wedding receptions coordinated with Qfire`,
     },
     {
       q: "Communication was incredible from day one. Every email returned same-day. Every menu change handled without a sigh. On the day, they set up hours early and broke down without a trace. We felt taken care of the entire time.",
@@ -249,7 +249,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
   const localBusiness = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: `Qfire Catering — ${region} Wedding Catering`,
+    name: `Qfire Catering — ${region} Wedding Reception Catering`,
     image: couple,
     url: path,
     telephone: "+1-602-555-0123",
@@ -265,7 +265,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: "/" },
       { "@type": "ListItem", position: 2, name: "Weddings", item: "/weddings" },
-      { "@type": "ListItem", position: 3, name: `${region} Wedding Catering`, item: path },
+      { "@type": "ListItem", position: 3, name: `${region} Wedding Reception Catering`, item: path },
     ],
   };
 
@@ -285,7 +285,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
     serviceType: "Wedding Catering",
     provider: { "@type": "LocalBusiness", name: "Qfire Catering" },
     areaServed: cities.join(", "),
-    description: `Luxury wedding catering across ${region} — live charcoal grilling, premium steaks, full-service buffets, family-style, and plated dinner service.`,
+    description: `Luxury wedding reception catering across ${region} — live charcoal grilling, premium steaks, full-service buffets, family-style, and plated dinner service.`,
   };
 
   const sectionNavItems = [
@@ -313,7 +313,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
     ? "https://fs17.formsite.com/matthews3404/BBQDADDYLLC/index"
     : "https://fs17.formsite.com/matthews3404/SanDiego/index";
   const steakTiers = [
-    { name: "Buffet Style", price: isPhx ? "$74" : "$79", per: "/ person", desc: `Smooth. Efficient. Elegant. Restaurant-quality buffet presentation. Ideal for ${regionShort} weddings.` },
+    { name: "Buffet Style", price: isPhx ? "$74" : "$79", per: "/ person", desc: `Smooth. Efficient. Elegant. Restaurant-quality buffet presentation. Ideal for ${regionShort} wedding receptions.` },
     { name: "Family Style", price: isPhx ? "$89" : "$94", per: "/ person", desc: "Shared dining. Passed platters. Connected guest experience. Luxury presentation, end to end." },
     { name: "Plated Service", price: isPhx ? "$128" : "$133", per: "/ person", desc: "Restaurant-style service. Each course individually served. Our most luxurious dining experience." },
   ];
@@ -342,15 +342,15 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/70 to-ink/30" />
         <div className="container-luxe relative z-10 pb-20 lg:pb-28 pt-32">
           <div className="max-w-3xl">
-            <div className="eyebrow mb-6 text-gold">{region} Wedding Catering</div>
+            <div className="eyebrow mb-6 text-gold">{region} Wedding Reception Catering</div>
             <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-bone leading-[0.95] tracking-tight">
-              Congratulations. <span className="italic text-gold font-light">Now let's feed your wedding.</span>
+              Congratulations. <span className="italic text-gold font-light">Now let's feed your wedding reception.</span>
             </h1>
             <p className="mt-8 text-xl md:text-2xl text-bone/85 font-light leading-relaxed max-w-2xl">
-              Planning a wedding is a lot. The food shouldn't be the part that stresses you out. We've catered over 2,000 weddings across {region} — and we'd love to make yours one of them.
+              Planning a wedding reception is a lot. The food shouldn't be the part that stresses you out. We've catered over 2,000 wedding receptions across {region} — and we'd love to make yours one of them.
             </p>
             <p className="mt-6 text-lg text-bone/75 font-light leading-relaxed max-w-2xl">
-              You'll get a real chef, honest pricing, a team that shows up on time, and a wedding day where dinner is the thing your guests won't stop talking about.
+              You'll get a real chef, honest pricing, a team that shows up on time, and a wedding reception where dinner is the thing your guests won't stop talking about.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-4">
               <a href="#estimator" className="btn-primary">
@@ -363,7 +363,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
 
             <div className="mt-10 flex flex-wrap gap-8 text-sm text-bone/70">
               <div><span className="text-gold font-display text-2xl">15+</span> Years Doing This</div>
-              <div><span className="text-gold font-display text-2xl">2,000+</span> Weddings Catered</div>
+              <div><span className="text-gold font-display text-2xl">2,000+</span> Wedding Receptions Catered</div>
               <div><span className="text-gold font-display text-2xl">4.9★</span> Bride-Rated</div>
               <div><span className="text-gold font-display text-2xl">Food Network</span> Featured Chef</div>
             </div>
@@ -464,7 +464,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
                   { row: "Real steakhouse plates (ribeye, filet, picanha)", q: "Yes", v: "Sometimes (extra $)", b: "No" },
                   { row: "Professional uniformed service staff", q: "Yes — included", v: "Yes — 22% service charge", b: "Usually not" },
                   { row: "Full setup, refresh, and breakdown", q: "Yes — included", v: "Yes", b: "No — you handle it" },
-                  { row: "Custom menu (change it as you plan)", q: "Yes, up to 30 days out", v: "Locked at contract", b: "Menu only" },
+                  { row: "Custom menu (change it as you plan)", q: "Yes, up to 15 days out", v: "Locked at contract", b: "Menu only" },
                   { row: "Real photographable presentation", q: "Yes — styled buffets", v: "Standard chafers", b: "Aluminum trays" },
                   { row: "Featured on Food Network", q: "Yes — BBQ Brawl + more", v: "No", b: "No" },
                   { row: "You keep your date flexible after booking", q: "Yes — deposit is a credit", v: "Usually non-refundable", b: "Small deposit" },
@@ -491,10 +491,10 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
       <section id="menus" className="pt-20 lg:pt-28 pb-12 scroll-mt-32">
         <div className="container-luxe max-w-5xl">
           <div className="max-w-3xl mb-12">
-            <div className="eyebrow mb-6">{regionLabel} Wedding Catering</div>
-            <h2 className="heading-xl text-bone">Choose your menu.</h2>
+            <div className="eyebrow mb-6">{regionLabel} Wedding Reception Catering</div>
+            <h2 className="heading-xl text-bone">Choose your wedding reception menu.</h2>
             <p className="mt-8 text-xl text-bone/70 leading-relaxed font-light">
-              Every Qfire wedding menu is fully customized to your day, your guests and your vision — with {regionLabel} pricing and local service.
+              Every Qfire wedding reception menu is fully customized to your day, your guests and your vision — with {regionLabel} pricing and local service.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 gap-6 lg:gap-8">
@@ -547,12 +547,14 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
             <div>
               <div className="text-[0.65rem] tracking-[0.3em] text-gold uppercase mb-2">As Seen On</div>
               <img src={asSeenOnBadge.url} alt="As seen on Food Network" className="w-16 h-16 rounded-full mx-auto mb-2" />
-              <div className="text-xs text-bone/60 mt-1">BBQ Brawl with Bobby Flay</div>
             </div>
             <div>
-              <div className="text-[0.65rem] tracking-[0.3em] text-gold uppercase mb-2">Featured</div>
-              <div className="text-bone font-display text-lg">Camp Cutthroat</div>
-              <div className="text-xs text-bone/60 mt-1">Cutthroat Kitchen Champion</div>
+              <div className="text-[0.65rem] tracking-[0.3em] text-gold uppercase mb-3">Featured</div>
+              <div className="space-y-1">
+                <div className="text-bone font-display text-base">Camp Cutthroat</div>
+                <div className="text-bone font-display text-base">Cutthroat Kitchen Champion</div>
+                <div className="text-bone font-display text-base">BBQ Crawl w/ Bobby Flay</div>
+              </div>
             </div>
             <div>
               <div className="text-[0.65rem] tracking-[0.3em] text-gold uppercase mb-2">Reputation</div>
@@ -612,7 +614,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
             ))}
           </div>
           <div className="mt-12 text-center">
-            <Link to="/quote" className="btn-primary">Let's Start Planning My {regionShort} Wedding <ArrowRight className="size-4" /></Link>
+            <Link to="/quote" className="btn-primary">Let's Start Planning My {regionShort} Wedding Reception <ArrowRight className="size-4" /></Link>
           </div>
         </div>
       </section>
@@ -624,7 +626,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         <div className="container-luxe">
           <div className="max-w-2xl mb-16">
             <div className="eyebrow mb-6">How Dinner Is Served</div>
-            <h2 className="heading-lg text-bone">Three ways to serve dinner at your {regionShort} wedding.</h2>
+            <h2 className="heading-lg text-bone">Three ways to serve dinner at your {regionShort} wedding reception.</h2>
             <p className="mt-6 text-bone/75 text-lg leading-relaxed font-light">
               Not sure which style fits? Most brides don't at first — and that's completely okay. Here's a quick look at the three, and Chef Terry will help you decide once we know your venue and guest count.
             </p>
@@ -680,7 +682,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
                 </li>
               ))}
             </ul>
-            <Link to="/quote" className="btn-primary mt-10">Bring the Fire to My Wedding <ArrowRight className="size-4" /></Link>
+            <Link to="/quote" className="btn-primary mt-10">Bring the Fire to My Wedding Reception <ArrowRight className="size-4" /></Link>
           </div>
         </div>
       </section>
@@ -704,7 +706,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         <div className="container-luxe grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="order-2 lg:order-1">
             <div className="eyebrow mb-6">The Steakhouse Experience</div>
-            <h2 className="heading-lg text-bone">Want your wedding to feel like a five-star steakhouse? We can do that.</h2>
+            <h2 className="heading-lg text-bone">Want your wedding reception to feel like a five-star steakhouse? We can do that.</h2>
             <div className="mt-8 space-y-5 text-bone/85 text-lg font-light leading-relaxed">
               <p>Charcoal-grilled ribeye, New York strip, filet mignon, picanha, prime rib, salmon, and surf &amp; turf — plated under candlelight, served with white-glove polish, presented like you're at the nicest steakhouse in town.</p>
               <p>The food. The lighting. The service. The whole feeling of a great steakhouse — brought right to your venue. It's what most of our black-tie brides pick, and it's the moment your guests will describe as "unreal."</p>
@@ -714,7 +716,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
             </Link>
           </div>
           <div className="order-1 lg:order-2 relative aspect-[4/5] overflow-hidden">
-            <img src={steak} alt={`Premium steaks grilled live for a ${regionShort} luxury wedding`} className="absolute inset-0 w-full h-full object-cover" />
+            <img src={steak} alt={`Premium steaks grilled live for a ${regionShort} luxury wedding reception`} className="absolute inset-0 w-full h-full object-cover" />
           </div>
         </div>
       </section>
@@ -741,7 +743,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
             ))}
           </div>
           <div className="mt-12 text-center">
-            <Link to="/quote" className="btn-primary">Step 1 — Tell Us About Your Wedding <ArrowRight className="size-4" /></Link>
+            <Link to="/quote" className="btn-primary">Step 1 — Tell Us About Your Wedding Reception <ArrowRight className="size-4" /></Link>
           </div>
         </div>
       </section>
@@ -755,7 +757,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
           },
           {
             q: "When does everything need to be finalized?",
-            a: "Menu can flex right up to about 30 days out. Final guest count locks 14 days before the wedding. Small changes after that (a few no-shows, a switched entrée) — no problem, we roll with it.",
+            a: "Menu can flex right up to about 15 days out. Final guest count locks 14 days before the wedding. Small changes after that (a few no-shows, a switched entrée) — no problem, we roll with it.",
           },
         ]}
       />
@@ -789,7 +791,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
                 </li>
               ))}
             </ul>
-            <Link to="/quote" className="btn-primary mt-10">Reserve My Wedding Date <ArrowRight className="size-4" /></Link>
+            <Link to="/quote" className="btn-primary mt-10">Reserve My Wedding Reception Date <ArrowRight className="size-4" /></Link>
           </div>
         </div>
       </section>
@@ -818,7 +820,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
             <div className="eyebrow mb-6">What You Can Serve</div>
             <h2 className="heading-lg text-bone">Wood-fired. Upscale steakhouse. Surf &amp; turf. Or all three.</h2>
             <p className="mt-6 text-bone/75 text-lg leading-relaxed font-light">
-              Whatever you dream up for your {regionShort} wedding menu, it comes off our live-fire grill — and Chef Terry will help you build the mix that fits your vibe and your budget.
+              Whatever you dream up for your {regionShort} wedding reception menu, it comes off our live-fire grill — and Chef Terry will help you build the mix that fits your vibe and your budget.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-1">
@@ -828,7 +830,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
               { img: platter1, title: "Carving Stations", body: "Chef-attended live carving — picanha, brisket, prime rib, lamb.", to: "/menus" },
             ].map((m) => (
               <Link key={m.title} to={m.to} className="group relative aspect-[4/5] overflow-hidden block">
-                <img src={m.img} alt={`${m.title} for ${regionShort} weddings`} loading="lazy" decoding="async" fetchPriority="low" width={800} height={1000} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <img src={m.img} alt={`${m.title} for ${regionShort} wedding receptions`} loading="lazy" decoding="async" fetchPriority="low" width={800} height={1000} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-8">
                   <h3 className="font-display text-2xl text-bone">{m.title}</h3>
@@ -846,7 +848,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
               { img: heroFire, title: "Onsite Grilling" },
             ].map((m) => (
               <div key={m.title} className="relative aspect-square overflow-hidden bg-ink">
-                <img src={m.img} alt={`${m.title} for ${regionShort} weddings`} loading="lazy" decoding="async" fetchPriority="low" width={600} height={600} className="absolute inset-0 w-full h-full object-cover" />
+                <img src={m.img} alt={`${m.title} for ${regionShort} wedding receptions`} loading="lazy" decoding="async" fetchPriority="low" width={600} height={600} className="absolute inset-0 w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink/95 via-ink/30 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-5">
                   <div className="text-bone font-display text-lg">{m.title}</div>
@@ -863,16 +865,16 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
       <section id="service-area" className="py-24 lg:py-32 scroll-mt-32">
         <div className="container-luxe">
           <div className="max-w-2xl mb-12">
-            <div className="eyebrow mb-6">{region} Wedding Service Area</div>
+            <div className="eyebrow mb-6">{region} Wedding Reception Service Area</div>
             <h2 className="heading-lg text-bone">Wherever you're getting married in {region} — we're there.</h2>
             <p className="mt-6 text-bone/75 text-lg font-light leading-relaxed">
-              From private estates and vineyards to grand ballrooms and intimate backyards, we cater weddings all across {region}, including:
+              From private estates and vineyards to grand ballrooms and intimate backyards, we cater wedding receptions all across {region}, including:
             </p>
           </div>
           <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-y-3 gap-x-6">
             {cities.map((c) => (
               <li key={c} className="text-bone/85 text-base border-b border-white/10 pb-2 flex items-center gap-2">
-                <span className="text-gold">·</span> {c} Wedding Catering
+                <span className="text-gold">·</span> {c} Wedding Reception Catering
               </li>
             ))}
           </ul>
@@ -881,7 +883,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
               <div className="eyebrow mb-6">Venue Experience</div>
               <h3 className="heading-md text-bone mb-6">Chances are, we already know your venue.</h3>
               <p className="text-bone/75 max-w-3xl font-light leading-relaxed">
-                We've catered weddings at {venues.slice(0, -1).join(", ")}, and {venues[venues.length - 1]} — plus dozens of private estates, vineyards, and resorts across the area. If you've already picked your venue, there's a very good chance we already know the kitchen, the coordinator, and the loading dock.
+                We've catered wedding receptions at {venues.slice(0, -1).join(", ")}, and {venues[venues.length - 1]} — plus dozens of private estates, vineyards, and resorts across the area. If you've already picked your venue, there's a very good chance we already know the kitchen, the coordinator, and the loading dock.
               </p>
             </div>
           )}
@@ -910,10 +912,10 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
           </div>
           <div>
             <div className="eyebrow mb-6">Meet Your Chef</div>
-            <h2 className="heading-lg text-bone">Chef Terry Matthews — the guy actually cooking your wedding.</h2>
+            <h2 className="heading-lg text-bone">Chef Terry Matthews — the guy actually cooking your wedding reception.</h2>
             <div className="mt-8 space-y-5 text-bone/85 text-lg font-light leading-relaxed">
               <p>Fifteen years behind the grill. Over 2,000 weddings and catered events. Featured on Food Network's <em>BBQ Brawl</em> with Bobby Flay, <em>Camp Cutthroat</em>, and <em>Cutthroat Kitchen</em> — where he actually won.</p>
-              <p>Here's the part most caterers won't tell you: when you hire Chef Terry, you get Chef Terry. He personally designs every wedding menu Qfire serves. He knows your name. He knows your date. And he cares — genuinely — about making your wedding one of the good ones.</p>
+              <p>Here's the part most caterers won't tell you: when you hire Chef Terry, you get Chef Terry. He personally designs every wedding reception menu Qfire serves. He knows your name. He knows your date. And he cares — genuinely — about making your wedding reception one of the good ones.</p>
             </div>
             <div className="mt-8 flex flex-wrap gap-3">
               {["Food Network", "BBQ Brawl", "Camp Cutthroat", "Cutthroat Kitchen", "15+ Years"].map((b) => (
@@ -925,7 +927,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
       </section>
 
       <DefinitiveContent
-        topic={`${regionShort} Wedding Catering`}
+        topic={`${regionShort} Wedding Reception Catering`}
         region={`${regionShort} couples`}
         {...definitiveCopy.wedding}
       />
@@ -984,15 +986,15 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         <img src={reception} alt={`Luxury ${regionShort} wedding reception by Qfire`} className="absolute inset-0 w-full h-full object-cover opacity-30" />
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/80 to-ink/60" />
         <div className="container-luxe relative z-10 text-center">
-          <div className="eyebrow mb-6">Let's Plan Your {regionShort} Wedding</div>
+          <div className="eyebrow mb-6">Let's Plan Your {regionShort} Wedding Reception</div>
           <h2 className="font-display text-5xl md:text-7xl text-bone leading-[0.95]">
             The dinner your guests <span className="italic text-gold font-light">will remember forever.</span>
           </h2>
           <p className="mt-8 text-xl text-bone/85 max-w-2xl mx-auto font-light">
-            Send us your date. We'll check availability, put together a proposal, and set up a private tasting once you're ready. No pressure, no hard sell — just an easy conversation with a chef who wants your wedding to be incredible.
+            Send us your date. We'll check availability, put together a proposal, and set up a private tasting once you're ready. No pressure, no hard sell — just an easy conversation with a chef who wants your wedding reception to be incredible.
           </p>
           <div className="mt-12 flex flex-wrap gap-4 justify-center">
-            <Link to="/quote" className="btn-primary">Start Planning My Wedding <ArrowRight className="size-4" /></Link>
+            <Link to="/quote" className="btn-primary">Start Planning My Wedding Reception <ArrowRight className="size-4" /></Link>
             <Link to="/quote" className="btn-ghost">Schedule a Tasting</Link>
             <Link to="/pricing" className="btn-ghost">See Pricing</Link>
           </div>

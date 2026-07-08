@@ -6,7 +6,7 @@ const baseConfidence: Preset["confidence"] = [
   { title: "Itemized, all-in pricing", body: "Every proposal lists food, service, rentals, travel, and gratuity separately. No surprise fees. No day-of upsells. The number you sign is the number you pay." },
   { title: "Licensed, insured, food-safe", body: "Fully licensed and insured with ServSafe-certified leadership. Most premium venues already have us on their approved-vendor list." },
   { title: "Date held with a fair deposit", body: "Your date is reserved with a transparent date-charge applied directly to your final invoice — not a sunk fee." },
-  { title: "Menu stays flexible until 30 days out", body: "Refine your menu, swap proteins, and adjust guest count as your plans evolve. The contract holds the date, not the menu." },
+  { title: "Menu stays flexible until 15 days out", body: "Refine your menu, swap proteins, and adjust guest count as your plans evolve. The contract holds the date, not the menu." },
   { title: "Chef Terry personally designs every menu", body: "You aren't handed off to a junior coordinator. The chef who appears on Food Network reads your inquiry and builds your proposal." },
   { title: "On-time setup, every event", body: "We arrive early, set with calm precision, and finish service on schedule. Our reviews on Google and The Knot reflect it." },
 ];
@@ -107,7 +107,7 @@ export const definitiveCopy: Record<string, Preset> = {
       { title: "Receive your custom proposal", body: "Within 3–5 business days you'll get a fully itemized proposal — food, service, rentals, travel, gratuity — all transparent." },
       { title: "Hold your date", body: "Reserve your date with a 35% date-charge applied directly to your final invoice. Your date is now locked; the menu stays flexible." },
       { title: "Private tasting", body: "Come to a private chef's-table tasting with Chef Terry. Refine entrees, sides, and signature drinks in real time." },
-      { title: "Final details (30 days out)", body: "Lock the menu, finalize rentals, confirm the timeline, and review the layout with your planner or venue." },
+      { title: "Final details (15 days out)", body: "Lock the menu, finalize rentals, confirm the timeline, and review the layout with your planner or venue." },
       { title: "Guest count + balance (14 days out)", body: "Final guest count locks. Balance is due. We send the kitchen timeline to your planner." },
       { title: "Event day", body: "We arrive early, set with calm precision, run service on schedule, and leave the venue cleaner than we found it." },
     ],
