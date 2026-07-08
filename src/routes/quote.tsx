@@ -47,7 +47,14 @@ function QuotePage() {
   const { date: prefilledDate } = Route.useSearch();
   const [state, setState] = useState<"idle" | "sending" | "sent" | "error">("idle");
   const [error, setError] = useState<string | null>(null);
+  const [expanded, setExpanded] = useState(false);
+  const [step1, setStep1] = useState({
+    name: "",
+    email: "",
+    date: prefilledDate ?? "",
+  });
   const submit = useServerFn(submitLead);
+  const step1Ready = step1.name.trim().length > 1 && /.+@.+\..+/.test(step1.email) && step1.date.length > 0;
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
