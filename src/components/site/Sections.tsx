@@ -68,7 +68,7 @@ export function CTASection({
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 rounded-full bg-burgundy/30 blur-[140px]" />
       </div>
       <div className="container-luxe relative text-center">
-        <div className="eyebrow justify-center mb-8">See If My Date Is Open</div>
+        <div className="eyebrow justify-center mb-8">Ready When You Are</div>
         <h2 className="heading-lg text-bone max-w-3xl mx-auto">{title}</h2>
         <p className="mt-6 max-w-xl mx-auto text-bone/70 text-lg">{subtitle}</p>
         <div className="mt-12 flex flex-wrap justify-center gap-4">
