@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowRight, Check, Flame, Award, Users, Star, Clock, Sparkles } from "lucide-react";
+import { ArrowRight, Check, Flame, Award, Users, Star, Clock, Sparkles, MessageCircle } from "lucide-react";
 import { DefinitiveContent } from "./DefinitiveContent";
 import { definitiveCopy } from "@/lib/definitive-copy";
 import { BookingProcess } from "./BookingProcess";
@@ -131,8 +131,28 @@ const baseFaqs = [
     a: "We work inside almost every major venue's catering rules and have existing relationships with most of the region's preferred-vendor lists. If your venue has specific power, propane, or fire-marshal restrictions for live grilling, we coordinate permits and approvals directly.",
   },
   {
-    q: "What areas do you serve?",
-    a: "We cater weddings throughout Phoenix Metro (including Scottsdale, Paradise Valley, Mesa, Chandler, Gilbert, Tempe, Peoria, and Queen Creek) and San Diego County (including La Jolla, Del Mar, Carlsbad, Rancho Santa Fe, Coronado, and Encinitas).",
+    q: "What areas do you serve — and are there travel fees?",
+    a: "We cater weddings throughout Phoenix Metro (Scottsdale, Paradise Valley, Mesa, Chandler, Gilbert, Tempe, Peoria, Queen Creek, and beyond) and San Diego County (La Jolla, Del Mar, Carlsbad, Rancho Santa Fe, Coronado, Encinitas, and beyond). Anything within roughly 30 miles of our home base is included at no additional charge. For destination venues (Sedona, Flagstaff, Temecula, wine country), travel and lodging are quoted transparently up front — no surprise mileage fees on your final invoice.",
+  },
+  {
+    q: "Do you handle cake cutting?",
+    a: "Yes. Our servers cut, plate, and pass your wedding cake or dessert as part of service — at no extra fee. No cake-cutting charge, ever. If you're bringing in dessert from an outside bakery or doing a dessert bar (donuts, pies, macarons), we plate and serve those too.",
+  },
+  {
+    q: "Do you feed our vendors — photographer, DJ, planner?",
+    a: "Yes. Vendor meals are billed at a reduced rate (typically $18–$24 per vendor depending on menu) and are served hot from the same kitchen right after the main service. Your planner will thank you — a fed vendor is a happy vendor.",
+  },
+  {
+    q: "What's the plan if it rains — or if it's 110° in July?",
+    a: "We plan for weather from day one. Our live-fire grills operate under a canopy in rain, wind, and heat. For extreme conditions we can shift to a covered service area or venue kitchen without changing your menu. Every proposal includes a weather contingency, and we coordinate directly with your planner and venue on the morning of if we need to pivot.",
+  },
+  {
+    q: "Are you licensed and insured?",
+    a: "Yes. Qfire Catering carries full general liability insurance, food handler licensing, and workers' compensation coverage. We can name your venue as an additional insured on our certificate — most venues require this, and we handle it directly with them so you don't have to.",
+  },
+  {
+    q: "What does a typical wedding-day timeline look like?",
+    a: "For a 5pm ceremony / 6pm reception: our team arrives around 1–2pm to set up the kitchen and buffet, cocktail-hour apps are passed at 6pm, dinner service begins at your first-dance cue (usually around 7pm), cake cutting around 8pm, and full breakdown wraps by 11pm or your venue's cutoff. Your account lead builds a detailed run-of-show with your planner in the weeks before the wedding.",
   },
 ];
 
