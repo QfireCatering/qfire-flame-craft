@@ -43,7 +43,7 @@ export function DefinitiveContent({
   differentiators,
   confidence,
   extraFaqs,
-  ctaLabel = "Request a Quote",
+  ctaLabel = "See If My Date Is Open",
   children,
 }: DefinitiveContentProps) {
   return (
@@ -119,7 +119,7 @@ export function DefinitiveContent({
             ))}
           </ol>
           <div className="mt-12">
-            <Link to="/quote" className="btn-primary">Start My Quote <ArrowRight className="size-4" /></Link>
+            <Link to="/quote" className="btn-primary">See If My Date Is Open <ArrowRight className="size-4" /></Link>
           </div>
         </div>
       </section>
