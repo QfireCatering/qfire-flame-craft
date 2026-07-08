@@ -153,7 +153,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
               jobTitle: "Executive Chef & Founder",
               worksFor: { "@id": "https://qfire-flame-craft.lovable.app/#business" },
               description:
-                "Executive chef and founder of Qfire Catering. 25+ years catering luxury weddings, corporate events and private dinners. Featured on Food Network's BBQ Brawl, Cutthroat Kitchen champion, and Camp Cutthroat winner.",
+                "Executive chef and founder of Qfire Catering. 15+ years catering luxury weddings, corporate events and private dinners. Featured on Food Network's BBQ Brawl, Cutthroat Kitchen champion, and Camp Cutthroat winner.",
             },
           ],
         }),

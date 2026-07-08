@@ -136,7 +136,7 @@ const baseFaqs = [
   },
   {
     q: "Do you handle cake cutting?",
-    a: "Yes. Our servers cut, plate, and pass your wedding cake or dessert as part of service — at no extra fee. No cake-cutting charge, ever. If you're bringing in dessert from an outside bakery or doing a dessert bar (donuts, pies, macarons), we plate and serve those too.",
+    a: "Yes. We charge a $100 cake-cutting fee because cake is typically served after dinner, when our team would normally be wrapping up. That fee covers the extra staff time to beautifully cut, plate, and serve your cake — including outside-bakery cakes or dessert bars (donuts, pies, macarons) — so you can enjoy the moment worry-free.",
   },
   {
     q: "Do you feed our vendors — photographer, DJ, planner?",
@@ -158,12 +158,12 @@ const baseFaqs = [
 
 const whyChoose = [
   { icon: Award, title: "You'll feel taken care of", body: "From your first email to the last dance, you have a real person answering your questions. No agencies. No call centers. No 'let me check and get back to you.'" },
-  { icon: Clock, title: "We show up on time. Every time.", body: "In 25 years we have never missed a wedding, never been late for setup, and never held up a first dance. That's the promise." },
+  { icon: Clock, title: "We show up on time. Every time.", body: "In 15 years we have never missed a wedding, never been late for setup, and never held up a first dance. That's the promise." },
   { icon: Sparkles, title: "You'll always know what's happening next", body: "Emails answered the same day. Timelines shared early. Changes handled without a sigh. You'll never feel like you're chasing us." },
   { icon: Check, title: "We work beautifully with your planner", body: "Detailed BEOs, allergy cards, run-of-show, and vendor meals — planners actually thank us for how organized we are." },
   { icon: Star, title: "Your food will be photographed", body: "Buffets styled. Plates composed. Carving stations lit. Your photographer will love us — and so will your Instagram." },
   { icon: Flame, title: "Live fire. Real food. Hot plates.", body: "No sad chafing-dish reheats. We grill over hardwood charcoal on-site, and dinner reaches your guests hot, seasoned, and stunning." },
-  { icon: Award, title: "You're hiring a real chef", body: "25+ years of professional cooking. 2,000+ weddings under our belts. Chef Terry personally designs every menu we serve." },
+  { icon: Award, title: "You're hiring a real chef", body: "15+ years of professional cooking. 2,000+ weddings under our belts. Chef Terry personally designs every menu we serve." },
   { icon: Star, title: "You'll recognize the name", body: "Featured on Food Network's BBQ Brawl with Bobby Flay, Camp Cutthroat, and Cutthroat Kitchen. This is the caterer your guests will Google after." },
   { icon: Users, title: "Your guests will come back for seconds", body: "Generous portions. Warm plates. Real seasoning. The food people still text you about months after the wedding." },
   { icon: Sparkles, title: "You get to actually enjoy your day", body: "We handle setup, service, live-fire cooking, buffet refresh, coordination, and full breakdown. You sip champagne and dance." },
@@ -356,11 +356,8 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
               You'll get a real chef, honest pricing, a team that shows up on time, and a wedding day where dinner is the thing your guests won't stop talking about.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-4">
-              <Link to="/quote" className="btn-primary">
-                Start Planning My Wedding <ArrowRight className="size-4" />
-              </Link>
-              <a href="#estimator" className="btn-ghost">
-                See Real Wedding Pricing
+              <a href="#estimator" className="btn-primary">
+                See Real Wedding Pricing <ArrowRight className="size-4" />
               </a>
               <span className="inline-flex items-center gap-2 text-[0.7rem] tracking-[0.22em] uppercase text-gold/90 border border-gold/30 px-4 py-2.5 bg-gold/5">
                 <Clock className="size-3.5" /> Usually responds within 4 business hours
@@ -368,7 +365,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
             </div>
 
             <div className="mt-10 flex flex-wrap gap-8 text-sm text-bone/70">
-              <div><span className="text-gold font-display text-2xl">25+</span> Years Doing This</div>
+              <div><span className="text-gold font-display text-2xl">15+</span> Years Doing This</div>
               <div><span className="text-gold font-display text-2xl">2,000+</span> Weddings Catered</div>
               <div><span className="text-gold font-display text-2xl">4.9★</span> Bride-Rated</div>
               <div><span className="text-gold font-display text-2xl">Food Network</span> Featured Chef</div>
@@ -420,7 +417,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         <div className="container-luxe">
           <div className="max-w-2xl mb-12">
             <div className="eyebrow mb-5">Features</div>
-            <h2 className="heading-lg text-bone">Everything included in your wedding.</h2>
+            <h2 className="heading-lg text-bone">Features available for your reception.</h2>
             <p className="mt-5 text-bone/70 font-light">No hidden fees, no surprise gratuities, no upsells the day of. Every Qfire proposal is itemized so you know exactly what your investment buys — before you ever see a price.</p>
           </div>
           <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -439,7 +436,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         <div className="container-luxe max-w-5xl">
           <div className="max-w-3xl mb-12">
             <div className="eyebrow mb-6">{regionLabel} Wedding Catering</div>
-            <h2 className="heading-xl text-bone">Two ways to set the table.</h2>
+            <h2 className="heading-xl text-bone">Choose your menu.</h2>
             <p className="mt-8 text-xl text-bone/70 leading-relaxed font-light">
               Every Qfire wedding menu is fully customized to your day, your guests and your vision — with {regionLabel} pricing and local service.
             </p>
@@ -476,11 +473,11 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         items={[
           {
             q: "Do we get a tasting before we book?",
-            a: "Once you've reviewed your custom proposal, we invite you to a private chef's-table tasting with Chef Terry. You'll sample your proposed entrées and sides, refine the menu in real time, and only then decide if you want to move forward. No pressure, no obligation.",
+            a: "As long as your reception date is still available, you're welcome to schedule a tasting before booking. You'll try 3 meats, 3 sides, and 2 appetizers — serving 5–7 guests — for $200, then decide if we're the right fit for your event.",
           },
           {
             q: "Do you charge a cake-cutting fee?",
-            a: "Never. Our servers cut, plate, and pass your wedding cake as part of full service — at zero additional charge. Bringing in dessert from an outside bakery or doing a dessert bar? We serve those too.",
+            a: "Yes. We charge a $100 cake-cutting fee because cake is typically served after dinner, when our team would normally be wrapping up. This covers the additional staff time needed to beautifully cut, plate, and serve your cake so you can enjoy the moment worry-free.",
           },
         ]}
       />
@@ -509,7 +506,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
             <div>
               <div className="text-[0.65rem] tracking-[0.3em] text-gold uppercase mb-2">Experience</div>
               <div className="text-bone font-display text-lg">2,000+ Events</div>
-              <div className="text-xs text-bone/60 mt-1">25+ years professional</div>
+              <div className="text-xs text-bone/60 mt-1">15+ years professional</div>
             </div>
           </div>
         </div>
@@ -871,7 +868,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
               <p>Here's the part most caterers won't tell you: when you hire Chef Terry, you get Chef Terry. He personally designs every wedding menu Qfire serves. He knows your name. He knows your date. And he cares — genuinely — about making your wedding one of the good ones.</p>
             </div>
             <div className="mt-8 flex flex-wrap gap-3">
-              {["Food Network", "BBQ Brawl", "Camp Cutthroat", "Cutthroat Kitchen", "25+ Years"].map((b) => (
+              {["Food Network", "BBQ Brawl", "Camp Cutthroat", "Cutthroat Kitchen", "15+ Years"].map((b) => (
                 <span key={b} className="text-[0.65rem] tracking-[0.28em] uppercase text-gold border border-gold/40 px-4 py-2">{b}</span>
               ))}
             </div>

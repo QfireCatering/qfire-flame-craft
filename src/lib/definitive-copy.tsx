@@ -420,12 +420,12 @@ export const definitiveCopy: Record<string, Preset> = {
   },
   about: {
     explainer:
-      "Qfire Catering is led by Chef Terry Matthews — known to fans as The BBQ Daddy — a Food Network chef with 25+ years of professional kitchen experience and over 2,000 catered events. Every Qfire menu is personally designed by Chef Terry, and he's on-site for most signature events across Phoenix Metro and San Diego County.",
+      "Qfire Catering is led by Chef Terry Matthews — known to fans as The BBQ Daddy — a Food Network chef with 15+ years of professional kitchen experience and over 2,000 catered events. Every Qfire menu is personally designed by Chef Terry, and he's on-site for most signature events across Phoenix Metro and San Diego County.",
     explainerLong:
       "The brand was built around a simple refusal: never serve mediocre food, never treat a wedding like an assembly line, never let a private event feel transactional. That standard is what got us on television, what got us into premium venues' approved-vendor lists, and what keeps couples and corporate clients coming back.",
     included: [
       "Food Network appearances on BBQ Brawl, Camp Cutthroat, Cutthroat Kitchen",
-      "25+ years of professional kitchen experience",
+      "15+ years of professional kitchen experience",
       "2,000+ catered events executed",
       "ServSafe-certified leadership",
       "Two-region operation: Phoenix Metro + San Diego County",
