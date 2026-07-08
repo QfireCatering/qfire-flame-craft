@@ -426,7 +426,66 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         </div>
       </section>
 
+      {/* COMPARISON TABLE — how Qfire compares to other wedding-catering options */}
+      <section id="compare" className="py-20 lg:py-28 bg-onyx border-y border-white/10 scroll-mt-32">
+        <div className="container-luxe">
+          <div className="max-w-2xl mb-12">
+            <div className="eyebrow mb-6">How We Compare</div>
+            <h2 className="heading-lg text-bone">Qfire vs. the other options you're considering.</h2>
+            <p className="mt-5 text-bone/75 text-lg font-light leading-relaxed">
+              Most brides get quotes from a hotel/venue caterer, a local BBQ shop, and a full-service caterer like us. Here's the honest side-by-side.
+            </p>
+          </div>
+          <div className="overflow-x-auto -mx-4 px-4">
+            <table className="w-full min-w-[720px] border-collapse text-left">
+              <thead>
+                <tr className="border-b border-white/15">
+                  <th className="py-4 pr-4 text-[0.65rem] tracking-[0.28em] uppercase text-bone/60 font-normal align-bottom">What matters to you</th>
+                  <th className="py-4 px-4 text-center bg-gold/10 border-x border-gold/30">
+                    <div className="text-gold text-[0.65rem] tracking-[0.28em] uppercase mb-1">Qfire Catering</div>
+                    <div className="text-bone font-display text-base">Chef-led, live-fire</div>
+                  </th>
+                  <th className="py-4 px-4 text-center">
+                    <div className="text-bone/50 text-[0.65rem] tracking-[0.28em] uppercase mb-1">Venue / Hotel</div>
+                    <div className="text-bone/70 font-display text-base">In-house catering</div>
+                  </th>
+                  <th className="py-4 px-4 text-center">
+                    <div className="text-bone/50 text-[0.65rem] tracking-[0.28em] uppercase mb-1">Local BBQ Shop</div>
+                    <div className="text-bone/70 font-display text-base">Drop-off + serve</div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="text-sm">
+                {[
+                  { row: "Chef personally designs your menu", q: "Yes — Chef Terry", v: "No — banquet template", b: "No — set menu" },
+                  { row: "Live-fire grilling at your venue", q: "Yes — hardwood charcoal", v: "Rarely", b: "Occasionally" },
+                  { row: "Real steakhouse plates (ribeye, filet, picanha)", q: "Yes", v: "Sometimes (extra $)", b: "No" },
+                  { row: "Professional uniformed service staff", q: "Yes — included", v: "Yes — 22% service charge", b: "Usually not" },
+                  { row: "Full setup, refresh, and breakdown", q: "Yes — included", v: "Yes", b: "No — you handle it" },
+                  { row: "Custom menu (change it as you plan)", q: "Yes, up to 30 days out", v: "Locked at contract", b: "Menu only" },
+                  { row: "Real photographable presentation", q: "Yes — styled buffets", v: "Standard chafers", b: "Aluminum trays" },
+                  { row: "Featured on Food Network", q: "Yes — BBQ Brawl + more", v: "No", b: "No" },
+                  { row: "You keep your date flexible after booking", q: "Yes — deposit is a credit", v: "Usually non-refundable", b: "Small deposit" },
+                  { row: "Typical per-guest range", q: "$37–$130", v: "$95–$225+", b: "$18–$40" },
+                ].map((r) => (
+                  <tr key={r.row} className="border-b border-white/10">
+                    <td className="py-4 pr-4 text-bone/85 font-light">{r.row}</td>
+                    <td className="py-4 px-4 text-center bg-gold/[0.04] border-x border-gold/20 text-bone">{r.q}</td>
+                    <td className="py-4 px-4 text-center text-bone/60 font-light">{r.v}</td>
+                    <td className="py-4 px-4 text-center text-bone/60 font-light">{r.b}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="mt-8 text-bone/60 text-sm font-light max-w-3xl">
+            Note: We're happy to be compared. Get quotes from anyone — then call us. Most brides come back after they see the difference in what's actually included.
+          </p>
+        </div>
+      </section>
+
       {/* 4. TWO WAYS TO SET THE TABLE — menu cards */}
+
       <section id="menus" className="pt-20 lg:pt-28 pb-12 scroll-mt-32">
         <div className="container-luxe max-w-5xl">
           <div className="max-w-3xl mb-12">
