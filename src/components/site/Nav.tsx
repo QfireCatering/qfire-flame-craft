@@ -62,7 +62,7 @@ export function Nav() {
           </Link>
 
           <nav className="hidden lg:flex items-center gap-9">
-            {primary.map(item => (
+            {primaryLeft.map(item => (
               <Link
                 key={item.to}
                 to={item.to}
@@ -76,6 +76,19 @@ export function Nav() {
           </nav>
 
           <div className="flex items-center gap-3">
+            <nav className="hidden lg:flex items-center gap-9 mr-3">
+              {primaryRight.map(item => (
+                <Link
+                  key={item.to}
+                  to={item.to}
+                  className="relative text-[0.78rem] tracking-[0.18em] uppercase text-bone hover:text-gold transition-colors duration-300 group"
+                  activeProps={{ className: "text-gold" }}
+                >
+                  {item.label}
+                  <span className="absolute -bottom-1 left-0 h-px w-0 bg-gold transition-all duration-500 group-hover:w-full" />
+                </Link>
+              ))}
+            </nav>
             <a
               href={contact.phoneHref}
               aria-label={`Call ${contact.phone}`}
