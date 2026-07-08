@@ -512,6 +512,29 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         </div>
       </section>
 
+      {/* FAQ (moved up — brides want questions answered early) */}
+      <section id="faq" className="py-24 lg:py-32 scroll-mt-32">
+        <div className="container-luxe">
+          <div className="max-w-2xl mb-14">
+            <div className="eyebrow mb-6">{regionShort} Wedding Catering FAQ</div>
+            <h2 className="heading-lg text-bone">All the questions you're already thinking — answered.</h2>
+            <p className="mt-5 text-bone/75 text-lg font-light leading-relaxed">
+              You shouldn't have to email us to find out the basics. Here's everything brides ask us most — pricing, tastings, allergies, guest counts, timing, and yes, the "what if it rains" question.
+            </p>
+          </div>
+          <div className="divide-y divide-white/10 border-t border-b border-white/10">
+            {baseFaqs.map((f, i) => (
+              <details key={i} className="group py-6">
+                <summary className="flex cursor-pointer items-start justify-between gap-8 list-none">
+                  <h3 className="text-lg lg:text-xl text-bone font-display">{f.q}</h3>
+                  <span className="text-gold text-2xl leading-none transition-transform group-open:rotate-45 shrink-0">+</span>
+                </summary>
+                <p className="mt-4 text-bone/75 text-base lg:text-lg leading-relaxed font-light max-w-3xl">{f.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* WHY COUPLES CHOOSE QFIRE */}
       <section id="why-qfire" className="py-24 lg:py-32 scroll-mt-32">
