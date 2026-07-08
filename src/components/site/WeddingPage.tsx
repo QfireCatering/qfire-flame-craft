@@ -352,24 +352,6 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         </div>
       </section>
 
-      {/* 3. FEATURES (renamed from "What's Included / Your proposal, line by line") */}
-      <section id="features" className="py-20 lg:py-24">
-        <div className="container-luxe">
-          <div className="max-w-2xl mb-12">
-            <div className="eyebrow mb-5">Features</div>
-            <h2 className="heading-lg text-bone">Features available for your reception.</h2>
-            <p className="mt-5 text-bone/70 font-light">No hidden fees, no surprise gratuities, no upsells the day of. Every Qfire proposal is itemized so you know exactly what your investment buys — before you ever see a price.</p>
-          </div>
-          <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {weddingFeatures.map((item) => (
-              <li key={item} className="flex items-start gap-3 p-5 border border-white/10 bg-onyx/60">
-                <Check className="size-5 text-gold shrink-0 mt-0.5" />
-                <span className="text-bone/85 leading-snug font-light">{item}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
 
       {/* COMPARISON TABLE — how Qfire compares to other wedding-catering options */}
       <section id="compare" className="py-20 lg:py-28 bg-onyx border-y border-white/10 scroll-mt-32">
