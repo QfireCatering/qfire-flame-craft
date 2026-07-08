@@ -157,20 +157,14 @@ const baseFaqs = [
 ];
 
 const whyChoose = [
-  { icon: Award, title: "You'll feel taken care of", body: "From your first email to the last dance, you have a real person answering your questions. No agencies. No call centers. No 'let me check and get back to you.'" },
-  { icon: Clock, title: "We show up on time. Every time.", body: "In 15 years we have never missed a wedding, never been late for setup, and never held up a first dance. That's the promise." },
-  { icon: Sparkles, title: "You'll always know what's happening next", body: "Emails answered the same day. Timelines shared early. Changes handled without a sigh. You'll never feel like you're chasing us." },
-  { icon: Check, title: "We work beautifully with your planner", body: "Detailed BEOs, allergy cards, run-of-show, and vendor meals — planners actually thank us for how organized we are." },
-  { icon: Star, title: "Your food will be photographed", body: "Buffets styled. Plates composed. Carving stations lit. Your photographer will love us — and so will your Instagram." },
-  { icon: Flame, title: "Live fire. Real food. Hot plates.", body: "No sad chafing-dish reheats. We grill over hardwood charcoal on-site, and dinner reaches your guests hot, seasoned, and stunning." },
-  { icon: Award, title: "You're hiring a real chef", body: "15+ years of professional cooking. 2,000+ weddings under our belts. Chef Terry personally designs every menu we serve." },
-  { icon: Star, title: "You'll recognize the name", body: "Featured on Food Network's BBQ Brawl with Bobby Flay, Camp Cutthroat, and Cutthroat Kitchen. This is the caterer your guests will Google after." },
-  { icon: Users, title: "Your guests will come back for seconds", body: "Generous portions. Warm plates. Real seasoning. The food people still text you about months after the wedding." },
-  { icon: Sparkles, title: "You get to actually enjoy your day", body: "We handle setup, service, live-fire cooking, buffet refresh, coordination, and full breakdown. You sip champagne and dance." },
-  { icon: Check, title: "Your venue probably already knows us", body: "Approved or preferred at most major venues across Phoenix Metro and San Diego County. If they have rules, we already know them." },
-  { icon: Clock, title: "Plate-up timed to your first dance", body: "Coordinated with your DJ, planner, and photographer down to the minute. Toasts hit warm. Dinner clears in time for the dancing." },
-  { icon: Star, title: "Every wedding gets our best", body: "4.9 stars across hundreds of reviews. Whether you're 60 guests or 300, the food and service are the same." },
+  { icon: Award, title: "You're hiring a real chef", body: "15+ years professional. 2,000+ weddings. Featured on Food Network. Chef Terry personally designs every menu we serve — you're not getting a sales rep and a line cook." },
+  { icon: Clock, title: "We show up on time. Every time.", body: "In 15 years we've never missed a wedding, never been late for setup, never held up a first dance. That's the promise, and your planner will confirm it." },
+  { icon: Flame, title: "Live fire. Real food. Hot plates.", body: "No sad chafing-dish reheats. Steaks, chops, chicken, and seafood grilled over hardwood charcoal right at your venue — the moment your guests remember." },
+  { icon: Sparkles, title: "You'll always know what's happening next", body: "Emails answered the same day. Timelines shared early. Changes handled without a sigh. You'll never feel like you're chasing us for an update." },
+  { icon: Check, title: "Your venue and planner already know us", body: "Approved or preferred at most major venues across Phoenix Metro and San Diego County. Planners actively recommend us. Fewer surprises for you." },
+  { icon: Users, title: "You get to actually enjoy your day", body: "Setup, service, live-fire cooking, buffet refresh, coordination, breakdown — all handled. You spend the night with the people you love, not the caterer." },
 ];
+
 
 const serviceStyles = [
   {
