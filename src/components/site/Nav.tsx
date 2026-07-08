@@ -130,7 +130,7 @@ export function Nav() {
         </div>
         <div className="container-luxe pt-6 pb-20 overflow-y-auto max-h-[calc(100vh-6rem)]">
           <div className="grid md:grid-cols-2 gap-x-12 gap-y-1">
-            {[...primary, ...secondary].map((item) => (
+            {[...primaryLeft, ...primaryRight, ...secondary].map((item) => (
               <Link
                 key={item.to}
                 to={item.to}
