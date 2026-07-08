@@ -36,16 +36,14 @@ export function WeddingBuffetEstimator({
       <div className="container-luxe">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <div className="eyebrow justify-center mb-6">
-            {regionShort} · Real Wedding Pricing
+            {regionShort} · Wood-Fired BBQ Wedding Pricing · Menu 1 of 2
           </div>
           <h2 className="heading-lg text-bone">
             About how much should you{" "}
             <span className="text-gold italic font-light">expect to spend?</span>
           </h2>
           <p className="mt-5 text-bone/75 text-lg font-light leading-relaxed">
-            To help with planning, here's an example of one of our most common
-            full-service wedding menus. Every wedding is customized — this simply
-            gives you a realistic starting point when budgeting.
+            This is our <span className="text-gold">Wood-Fired BBQ</span> full-service wedding menu — one of two menus we offer. Keep scrolling to see our <span className="text-gold">Steakhouse Experience</span> pricing just below. Every wedding is customized — this gives you a realistic starting point when budgeting.
           </p>
         </div>
 
