@@ -818,7 +818,20 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
               Here's what real Qfire brides are saying on the two platforms other brides trust most. Read every review — the good, the honest, all of it.
             </p>
           </div>
-          <div className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+          <div className="grid sm:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <a
+              href="https://www.google.com/search?q=Qfire+Catering+reviews"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group p-8 lg:p-10 border border-gold/30 bg-ink/70 hover:bg-ink hover:border-gold transition-all text-center"
+            >
+              <div className="text-[0.65rem] tracking-[0.3em] uppercase text-gold mb-3">Google Reviews</div>
+              <div className="font-display text-2xl text-bone group-hover:text-gold transition-colors">Read Google Reviews</div>
+              <div className="flex justify-center gap-1 mt-4">
+                {[0,1,2,3,4].map((i) => <Star key={i} className="size-4 fill-gold text-gold" />)}
+              </div>
+              <div className="mt-4 text-xs tracking-[0.2em] uppercase text-bone/60">View on Google →</div>
+            </a>
             <a
               href="https://www.weddingwire.com/reviews/qfire-catering/4c33661ea8bcf7a8.html"
               target="_blank"
