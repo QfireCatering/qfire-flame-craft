@@ -648,44 +648,6 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
 
       <ScatteredReview review={reviews[2]} />
 
-      {/* WHAT HAPPENS NEXT */}
-      <section id="process" className="py-24 lg:py-32 scroll-mt-32">
-        <div className="container-luxe">
-          <div className="max-w-2xl mb-16">
-            <div className="eyebrow mb-6">What Happens After You Reach Out</div>
-            <h2 className="heading-lg text-bone">Here's exactly what planning with us looks like.</h2>
-            <p className="mt-6 text-bone/75 text-lg leading-relaxed font-light">
-              No high-pressure sales calls. No confusing forms. Just a clear, calm path from your first "hi" to your first dance.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/5 border border-white/5">
-            {timelineSteps.map((s) => (
-              <div key={s.n} className="bg-ink p-8 lg:p-10">
-                <div className="text-gold font-display text-4xl mb-4">{s.n}</div>
-                <h3 className="text-xl font-display text-bone mb-3">{s.title}</h3>
-                <p className="text-sm text-bone/75 leading-relaxed">{s.body}</p>
-              </div>
-            ))}
-          </div>
-          <div className="mt-12 text-center">
-            <Link to="/quote" className="btn-primary">Step 1 — Tell Us About Your Wedding Reception <ArrowRight className="size-4" /></Link>
-          </div>
-        </div>
-      </section>
-
-      <InlineFAQ
-        eyebrow="A quick note on timing"
-        items={[
-          {
-            q: "What does the wedding-day timeline actually look like?",
-            a: "For a typical 5pm ceremony / 6pm reception: our team arrives around 1–2pm to set up, passed apps at 6pm, dinner service starts at your first-dance cue (usually 7pm), cake cutting around 8pm, and full breakdown wraps by 11pm or your venue's cutoff. Your account lead builds a minute-by-minute run-of-show with your planner in the weeks before.",
-          },
-          {
-            q: "When does everything need to be finalized?",
-            a: "Menu can flex right up to about 15 days out. Final guest count locks 14 days before the wedding. Small changes after that (a few no-shows, a switched entrée) — no problem, we roll with it.",
-          },
-        ]}
-      />
 
       {/* DATE CHARGE */}
       <section className="py-24 lg:py-32 bg-onyx border-y border-white/10">
