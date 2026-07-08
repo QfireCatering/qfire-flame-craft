@@ -156,14 +156,6 @@ const serviceStyles = [
   },
 ];
 
-const timelineSteps = [
-  { n: "01", title: "Tell us about your day", body: "Send over your date, venue, and rough guest count. Takes about 90 seconds. No commitment, no sales call." },
-  { n: "02", title: "We'll call you personally", body: "A real human — usually Chef Terry or your account lead — reaches out within 4 business hours to say hi and understand what you're picturing." },
-  { n: "03", title: "We build your menu together", body: "You share your vision. We design a proposal around your taste, your venue, and your guest list. Change it as many times as you want." },
-  { n: "04", title: "Lock your date (35% Retainer)", body: "Only when you're ready. The retainer holds your date and our team — it applies 100% to your final invoice." },
-  { n: "05", title: "Refine as your plans evolve", body: "Menu, guest count, upgrades — all still flexible. Everything locks in 14–30 days before the wedding, once RSVPs are in." },
-  { n: "06", title: "Enjoy your wedding day", body: "We set up hours early, cook live on-site, run service, refresh buffets, break down cleanly, and disappear. You spend the night with the people you love." },
-];
 
 export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
   const { region, regionShort, cities, venues, reviewCities, path } = config;
