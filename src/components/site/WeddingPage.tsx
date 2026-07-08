@@ -361,6 +361,20 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
       <WeddingBuffetEstimator region={region} regionShort={regionShort as "Phoenix" | "San Diego"} />
 
 
+      <InlineFAQ
+        items={[
+          {
+            q: "Do we get a tasting before we book?",
+            a: "Once you've reviewed your custom proposal, we invite you to a private chef's-table tasting with Chef Terry. You'll sample your proposed entrées and sides, refine the menu in real time, and only then decide if you want to move forward. No pressure, no obligation.",
+          },
+          {
+            q: "Do you charge a cake-cutting fee?",
+            a: "Never. Our servers cut, plate, and pass your wedding cake as part of full service — at zero additional charge. Bringing in dessert from an outside bakery or doing a dessert bar? We serve those too.",
+          },
+        ]}
+      />
+
+
 
       {/* TRUST STRIP */}
       <section className="border-y border-white/10 bg-onyx py-10">
@@ -484,6 +498,20 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         </div>
       </section>
 
+      <InlineFAQ
+        eyebrow="Real questions we hear all the time"
+        items={[
+          {
+            q: "What if it rains — or hits 110° in the afternoon?",
+            a: "We plan for weather from day one. The live-fire grills operate under a canopy in rain, wind, and heat, and we can shift to a covered service area or venue kitchen if conditions change — same menu, same timing. Every proposal includes a weather contingency baked in.",
+          },
+          {
+            q: "Can you handle allergies and dietary restrictions?",
+            a: "Absolutely. Every wedding gets vegetarian, vegan, gluten-free, and dairy-free options as part of the menu. For peanut, tree-nut, shellfish, and other serious allergies, we run a dedicated prep line and label every plate at the pass. Just tell us who needs what.",
+          },
+        ]}
+      />
+
       {/* STEAKHOUSE EXPERIENCE */}
       <section id="steakhouse" className="py-24 lg:py-32 bg-onyx scroll-mt-32">
         <div className="container-luxe grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
@@ -530,6 +558,20 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
           </div>
         </div>
       </section>
+
+      <InlineFAQ
+        eyebrow="A quick note on timing"
+        items={[
+          {
+            q: "What does the wedding-day timeline actually look like?",
+            a: "For a typical 5pm ceremony / 6pm reception: our team arrives around 1–2pm to set up, passed apps at 6pm, dinner service starts at your first-dance cue (usually 7pm), cake cutting around 8pm, and full breakdown wraps by 11pm or your venue's cutoff. Your account lead builds a minute-by-minute run-of-show with your planner in the weeks before.",
+          },
+          {
+            q: "When does everything need to be finalized?",
+            a: "Menu can flex right up to about 30 days out. Final guest count locks 14 days before the wedding. Small changes after that (a few no-shows, a switched entrée) — no problem, we roll with it.",
+          },
+        ]}
+      />
 
       {/* DATE CHARGE */}
       <section className="py-24 lg:py-32 bg-onyx border-y border-white/10">
@@ -598,6 +640,20 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
           </div>
         </div>
       </section>
+
+      <InlineFAQ
+        eyebrow="The stuff planners always ask us"
+        items={[
+          {
+            q: "Do you feed the photographer, DJ, and planner?",
+            a: "Yes — vendor meals are billed at a reduced rate (typically $18–$24 per vendor) and served hot from the same kitchen right after your main service. A fed vendor is a happy vendor, and your planner will love you for it.",
+          },
+          {
+            q: "Are you licensed and fully insured?",
+            a: "Yes. We carry full general liability insurance, food handler licensing, and workers' compensation coverage. Most venues require a certificate naming them as additional insured — we handle that paperwork directly with your venue so you never have to think about it.",
+          },
+        ]}
+      />
 
       {/* MENU OPTIONS GRID */}
       <section id="menu-options" className="py-24 lg:py-32 bg-onyx scroll-mt-32">
@@ -675,6 +731,20 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
           )}
         </div>
       </section>
+
+      <InlineFAQ
+        eyebrow="One more thing brides ask"
+        items={[
+          {
+            q: "Are there travel fees for destination venues?",
+            a: `Anything within roughly 30 miles of our ${regionShort} home base is included at no additional charge. For destination venues (Sedona, Flagstaff, Temecula, wine country), travel and lodging are quoted transparently up front and shown right on your proposal — no surprise mileage line items on your final invoice.`,
+          },
+          {
+            q: "How far in advance should we book?",
+            a: "Most brides reserve Qfire 6–12 months out for peak Saturdays. Off-peak dates and intimate weddings can sometimes be booked inside 90 days — but if you have a spring or fall Saturday in mind, sooner is better.",
+          },
+        ]}
+      />
 
       {/* CHEF BIO */}
       <section id="chef" className="py-24 lg:py-32 bg-onyx scroll-mt-32">
