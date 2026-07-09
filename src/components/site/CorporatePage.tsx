@@ -189,7 +189,7 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
           <div className="max-w-3xl">
             <div className="eyebrow mb-6 text-gold">{region} Corporate Catering</div>
             <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-bone leading-[0.95] tracking-tight">
-              Big event on the calendar. <span className="italic text-gold font-light">Let's feed your team like it matters.</span>
+              Holiday parties, executive dinners &amp; team celebrations — <span className="italic text-gold font-light">catered like a restaurant.</span>
             </h1>
             <p className="mt-8 text-xl md:text-2xl text-bone/85 font-light leading-relaxed max-w-2xl">
               Planning a corporate event is a lot. The food shouldn't be the part that stresses you out. We've catered over 2,000 corporate events across {region} — and we'd love to make yours one of them.
@@ -199,7 +199,7 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-4">
               <a href="#estimator" className="btn-primary">
-                See Real Corporate Pricing <ArrowRight className="size-4" />
+                See Corporate Pricing <ArrowRight className="size-4" />
               </a>
               <span className="inline-flex items-center gap-2 text-[0.7rem] tracking-[0.22em] uppercase text-gold/90 border border-gold/30 px-4 py-2.5 bg-gold/5">
                 <Clock className="size-3.5" /> Usually responds within 4 business hours
