@@ -638,8 +638,8 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
             {[
               { img: bartender, title: "Bartending" },
               { img: buffet, title: "Buffet Service" },
-              { img: setting, title: "Family Style" },
               { img: heroFire, title: "Onsite Grilling" },
+
             ].map((m) => (
               <div key={m.title} className="relative aspect-square overflow-hidden bg-ink">
                 <img src={m.img} alt={`${m.title} for ${regionShort} corporate events`} loading="lazy" decoding="async" fetchPriority="low" width={600} height={600} className="absolute inset-0 w-full h-full object-cover" />
