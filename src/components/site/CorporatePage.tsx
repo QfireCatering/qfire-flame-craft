@@ -52,6 +52,9 @@ const baseFaqs = [
   { q: "Can we update our guest count later?", a: "Yes. The final guest count locks in 7–14 days before the event. Until then, you can scale up or down as RSVPs come in without any rebooking penalty." },
   { q: "What's the plan if it rains — or if it's 110° in July?", a: "We plan for weather from day one. Our live-fire grills operate under a canopy in rain, wind, and heat. For extreme conditions we can shift to a covered service area or interior space without changing your menu. Every proposal includes a weather contingency." },
   { q: "Do you accommodate allergies and dietary restrictions?", a: "Always. Every proposal includes vegetarian, vegan, gluten-free, and dairy-free options. For peanut, tree-nut, shellfish, and other serious allergies we run a dedicated prep line and label every plate at the pass." },
+  { q: "Do you offer bar packages for holiday parties and executive dinners?", a: "Yes. We offer beer & wine, full bar, and custom signature-cocktail packages with licensed, insured bartenders. Bar service can be built into your proposal or added à la carte — priced per guest or by consumption, whichever your finance team prefers." },
+  { q: "What's the minimum lead time for December holiday parties?", a: "December books out fast — we recommend locking your date 8–12 weeks out for holiday parties. If you're inside that window, call us anyway; we hold a small number of December dates specifically for late-booking corporate clients." },
+  { q: "Can you handle multiple corporate events for the same company throughout the year?", a: "Yes — we work with many companies on a recurring basis (quarterly team lunches, executive dinners, annual holiday party, summer picnic). Preferred-vendor clients get priority date holds, consistent pricing, and a single point of contact across every event." },
 ];
 
 const whyChoose = [
