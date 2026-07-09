@@ -218,6 +218,38 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
         </div>
       </section>
 
+      {/* EVENT TYPES */}
+      <section id="event-types" className="py-20 lg:py-24 bg-onyx border-t border-white/5 scroll-mt-32">
+        <div className="container-luxe">
+          <div className="text-center max-w-2xl mx-auto mb-14">
+            <div className="eyebrow justify-center mb-6">Corporate Events We Cater</div>
+            <h2 className="heading-lg text-bone">
+              Whatever's on your calendar, <span className="italic text-gold font-light">we've done it before.</span>
+            </h2>
+            <p className="mt-5 text-bone/70 text-base font-light">
+              From plated executive galas to jobsite lunches for 300 — every event gets the same on-time, chef-led treatment.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+            {[
+              { title: "Holiday Parties", body: "Plated dinners, wood-fired stations, bar service, and white-glove staffing for company holiday galas 60–400+ guests.", anchor: "#steakhouse-pricing" },
+              { title: "Executive Dinners", body: "Board dinners, sales kickoffs, and leadership retreats — family-style or plated, tableside carving, wine-friendly menus.", anchor: "#steakhouse-pricing" },
+              { title: "Employee Appreciation & Picnics", body: "Company picnics, summer BBQs, quarterly team lunches — wood-fire buffets that scale from 40 to 500+ without losing the fun.", anchor: "#pricing" },
+              { title: "Jobsite & Field Crew", body: "On-time hot lunches for construction crews, warehouses, and field teams. COI-ready, AP-friendly, no chafing-dish reheats.", anchor: "#pricing" },
+            ].map((c) => (
+              <a key={c.title} href={c.anchor} className="block p-7 bg-ink/60 border border-white/10 hover:border-gold/40 transition-colors group">
+                <div className="text-[0.7rem] tracking-[0.28em] uppercase text-gold mb-3">Corporate Event</div>
+                <h3 className="font-display text-2xl text-bone mb-3">{c.title}</h3>
+                <p className="text-bone/70 text-sm leading-relaxed font-light">{c.body}</p>
+                <div className="mt-5 inline-flex items-center gap-2 text-[0.65rem] tracking-[0.28em] uppercase text-gold border-b border-gold/40 pb-1 group-hover:border-gold">
+                  See Pricing <ArrowRight className="size-3" />
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* 1. WOOD-FIRE PRICING */}
       <WoodFirePricing regionSlug={config.regionSlug} />
 
