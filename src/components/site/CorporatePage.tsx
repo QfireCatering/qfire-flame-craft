@@ -474,7 +474,7 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
       <section id="menus" className="pt-20 lg:pt-28 pb-12 scroll-mt-32">
         <div className="container-luxe max-w-5xl">
           <div className="max-w-3xl mb-12">
-            <div className="eyebrow mb-6">{regionLabel} Corporate Catering</div>
+            <div className="eyebrow mb-6">Corporate Menus</div>
             <h2 className="heading-xl text-bone">Choose your corporate menu.</h2>
             <p className="mt-8 text-xl text-bone/70 leading-relaxed font-light">
               Every Qfire corporate menu is fully customized to your event, your team and your budget — with {regionLabel} pricing and local service.
