@@ -175,6 +175,7 @@ const serviceStyles = [
 
 export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
   const { region, regionShort, cities, venues, reviewCities, path } = config;
+  const isPhx = config.regionSlug === "phoenix";
 
   const reviews = [
     {
