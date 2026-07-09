@@ -25,6 +25,22 @@ import heroFire from "@/assets/hero-fire.jpg";
 import buffet from "@/assets/buffet.jpg";
 import brisket from "@/assets/brisket.jpg";
 
+// Wedding gallery (stock/existing — swap later)
+import g1 from "@/assets/gallery/phoenix-weddings/buffet_set_4.avif.asset.json";
+import g2 from "@/assets/gallery/phoenix-weddings/couple_eating-2.avif.asset.json";
+import g3 from "@/assets/gallery/phoenix-weddings/set_up6.avif.asset.json";
+import g4 from "@/assets/gallery/phoenix-weddings/set_up_4.avif.asset.json";
+import g5 from "@/assets/gallery/phoenix-weddings/onsite_grill2-2.avif.asset.json";
+import g6 from "@/assets/gallery/phoenix-weddings/smoked_brisket_station.avif.asset.json";
+import g7 from "@/assets/gallery/phoenix-weddings/fruit_veggie_platter.avif.asset.json";
+import g8 from "@/assets/gallery/pictures-page/set-up-1.avif.asset.json";
+import g9 from "@/assets/gallery/pictures-page/wedding-buffet-tower.jpg.asset.json";
+import g10 from "@/assets/gallery/sunset-table.jpg.asset.json";
+import g11 from "@/assets/gallery/wedding-buffet.jpg.asset.json";
+import g12 from "@/assets/gallery/setup.avif.asset.json";
+
+const weddingGallery = [g1, g2, g3, g4, g5, g6, g7, g8, g9, g10, g11, g12];
+
 const couple = weddingCoupleAsset.url;
 const reception = weddingRealAsset.url;
 const grilling = weddingGrillingAsset.url;
