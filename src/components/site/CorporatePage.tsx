@@ -28,7 +28,7 @@ const steakMenu = cardSteakhouse.url;
 const platter = cardWoodFired.url;
 const platter1 = cardCarving.url;
 const bartender = corpParkSetup.url;
-const setting = corpBuffetLine.url;
+
 const chef = chefAsset.url;
 const jobsiteCrew = corpJobsiteCrew.url;
 const retirement = corpRetirement.url;
