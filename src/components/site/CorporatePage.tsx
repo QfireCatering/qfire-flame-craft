@@ -280,7 +280,7 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
                   <span className="text-bone/55 text-sm">{tier.per}</span>
                 </div>
                 <p className="mt-6 text-bone/70 leading-relaxed font-light flex-1">{tier.desc}</p>
-                <Link to={steakMenuPath} className="btn-ghost mt-8">Learn More</Link>
+
               </article>
             ))}
           </div>
