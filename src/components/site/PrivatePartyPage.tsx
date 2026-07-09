@@ -419,12 +419,6 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
               </div>
             ))}
           </div>
-          <div className="mt-12 text-center text-bone/75">
-            <p className="text-lg font-light">Still not sure which one is right for you?</p>
-            <Link to="/quote" className="inline-block mt-4 text-[0.7rem] tracking-[0.28em] uppercase text-gold border-b border-gold/40 pb-1 hover:border-gold">
-              Ask Chef Terry — He'll Help You Decide
-            </Link>
-          </div>
         </div>
       </section>
 
@@ -462,6 +456,12 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
                   View Menu <ArrowRight className="size-3" />
                 </div>
               </div>
+            </Link>
+          </div>
+          <div className="mt-12 text-center text-bone/75">
+            <p className="text-lg font-light">Still not sure which one is right for you?</p>
+            <Link to="/quote" className="inline-block mt-4 text-[0.7rem] tracking-[0.28em] uppercase text-gold border-b border-gold/40 pb-1 hover:border-gold">
+              Ask Chef Terry — He'll Help You Decide
             </Link>
           </div>
         </div>
