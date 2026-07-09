@@ -864,6 +864,9 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
               <div className="mt-4 text-xs tracking-[0.2em] uppercase text-bone/60">View on The Knot →</div>
             </a>
           </div>
+        </div>
+      </section>
+
       {/* WEDDING GALLERY */}
       <section className="py-24 lg:py-32 bg-ink">
         <div className="container-luxe">
