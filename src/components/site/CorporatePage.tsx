@@ -68,6 +68,18 @@ const whyChoose = [
 
 const serviceStyles = [
   {
+    name: "Delivery",
+    tag: "Most Convenient",
+    bullets: [
+      "Hot, fresh, chef-prepared food dropped at your office",
+      "Disposable serving ware, utensils, and labels included",
+      "Perfect for team lunches, meetings, and quick offsites",
+      "No staff onsite — you handle service in-house",
+      "Contactless drop-off available",
+      "Great for 15–150 guests",
+    ],
+  },
+  {
     name: "Full-Service Buffet",
     tag: "Most Popular",
     bullets: [
@@ -77,18 +89,6 @@ const serviceStyles = [
       "Beautiful presentation, on-brand for the room",
       "Our staff keeps it hot and refreshed all event",
       "Perfect for most corporate events (50–500 guests)",
-    ],
-  },
-  {
-    name: "Family Style",
-    tag: "Most Connected",
-    bullets: [
-      "Big shared platters brought right to each table",
-      "Everyone talks, everyone eats together",
-      "Feels warm and celebratory — like the best team dinner",
-      "No lines, no buffet traffic",
-      "Great for executive retreats and board dinners",
-      "The style that changes how a team talks the next day",
     ],
   },
   {
@@ -104,6 +104,7 @@ const serviceStyles = [
     ],
   },
 ];
+
 
 export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
   const { region, regionShort, cities, reviewCities, path } = config;
