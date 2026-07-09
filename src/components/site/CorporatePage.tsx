@@ -52,6 +52,9 @@ const baseFaqs = [
   { q: "Can we update our guest count later?", a: "Yes. The final guest count locks in 7–14 days before the event. Until then, you can scale up or down as RSVPs come in without any rebooking penalty." },
   { q: "What's the plan if it rains — or if it's 110° in July?", a: "We plan for weather from day one. Our live-fire grills operate under a canopy in rain, wind, and heat. For extreme conditions we can shift to a covered service area or interior space without changing your menu. Every proposal includes a weather contingency." },
   { q: "Do you accommodate allergies and dietary restrictions?", a: "Always. Every proposal includes vegetarian, vegan, gluten-free, and dairy-free options. For peanut, tree-nut, shellfish, and other serious allergies we run a dedicated prep line and label every plate at the pass." },
+  { q: "Do you offer bar packages for holiday parties and executive dinners?", a: "Yes. We offer beer & wine, full bar, and custom signature-cocktail packages with licensed, insured bartenders. Bar service can be built into your proposal or added à la carte — priced per guest or by consumption, whichever your finance team prefers." },
+  { q: "What's the minimum lead time for December holiday parties?", a: "December books out fast — we recommend locking your date 8–12 weeks out for holiday parties. If you're inside that window, call us anyway; we hold a small number of December dates specifically for late-booking corporate clients." },
+  { q: "Can you handle multiple corporate events for the same company throughout the year?", a: "Yes — we work with many companies on a recurring basis (quarterly team lunches, executive dinners, annual holiday party, summer picnic). Preferred-vendor clients get priority date holds, consistent pricing, and a single point of contact across every event." },
 ];
 
 const whyChoose = [
@@ -189,7 +192,7 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
           <div className="max-w-3xl">
             <div className="eyebrow mb-6 text-gold">{region} Corporate Catering</div>
             <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-bone leading-[0.95] tracking-tight">
-              Big event on the calendar. <span className="italic text-gold font-light">Let's feed your team like it matters.</span>
+              Holiday parties, executive dinners &amp; team celebrations — <span className="italic text-gold font-light">catered like a restaurant.</span>
             </h1>
             <p className="mt-8 text-xl md:text-2xl text-bone/85 font-light leading-relaxed max-w-2xl">
               Planning a corporate event is a lot. The food shouldn't be the part that stresses you out. We've catered over 2,000 corporate events across {region} — and we'd love to make yours one of them.
@@ -199,7 +202,7 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-4">
               <a href="#estimator" className="btn-primary">
-                See Real Corporate Pricing <ArrowRight className="size-4" />
+                See Corporate Pricing <ArrowRight className="size-4" />
               </a>
               <span className="inline-flex items-center gap-2 text-[0.7rem] tracking-[0.22em] uppercase text-gold/90 border border-gold/30 px-4 py-2.5 bg-gold/5">
                 <Clock className="size-3.5" /> Usually responds within 4 business hours
@@ -214,6 +217,38 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
             <div className="mt-6 text-xs tracking-[0.2em] uppercase text-bone/55">
               <span className="text-gold/80">Your Local {regionShort} Team</span> · <a href={contact.phoneHref} className="text-bone hover:text-gold transition-colors">{contact.phone}</a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* EVENT TYPES */}
+      <section id="event-types" className="py-20 lg:py-24 bg-onyx border-t border-white/5 scroll-mt-32">
+        <div className="container-luxe">
+          <div className="text-center max-w-2xl mx-auto mb-14">
+            <div className="eyebrow justify-center mb-6">Corporate Events We Cater</div>
+            <h2 className="heading-lg text-bone">
+              Whatever's on your calendar, <span className="italic text-gold font-light">we've done it before.</span>
+            </h2>
+            <p className="mt-5 text-bone/70 text-base font-light">
+              From plated executive galas to jobsite lunches for 300 — every event gets the same on-time, chef-led treatment.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+            {[
+              { title: "Holiday Parties", body: "Plated dinners, wood-fired stations, bar service, and white-glove staffing for company holiday galas 60–400+ guests.", anchor: "#steakhouse-pricing" },
+              { title: "Executive Dinners", body: "Board dinners, sales kickoffs, and leadership retreats — family-style or plated, tableside carving, wine-friendly menus.", anchor: "#steakhouse-pricing" },
+              { title: "Employee Appreciation & Picnics", body: "Company picnics, summer BBQs, quarterly team lunches — wood-fire buffets that scale from 40 to 500+ without losing the fun.", anchor: "#pricing" },
+              { title: "Jobsite & Field Crew", body: "On-time hot lunches for construction crews, warehouses, and field teams. COI-ready, AP-friendly, no chafing-dish reheats.", anchor: "#pricing" },
+            ].map((c) => (
+              <a key={c.title} href={c.anchor} className="block p-7 bg-ink/60 border border-white/10 hover:border-gold/40 transition-colors group">
+                <div className="text-[0.7rem] tracking-[0.28em] uppercase text-gold mb-3">Corporate Event</div>
+                <h3 className="font-display text-2xl text-bone mb-3">{c.title}</h3>
+                <p className="text-bone/70 text-sm leading-relaxed font-light">{c.body}</p>
+                <div className="mt-5 inline-flex items-center gap-2 text-[0.65rem] tracking-[0.28em] uppercase text-gold border-b border-gold/40 pb-1 group-hover:border-gold">
+                  See Pricing <ArrowRight className="size-3" />
+                </div>
+              </a>
+            ))}
           </div>
         </div>
       </section>
@@ -241,7 +276,8 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
                   <span className="text-5xl font-display text-bone tracking-tight">{tier.price}</span>
                   <span className="text-bone/55 text-sm">{tier.per}</span>
                 </div>
-                <p className="mt-6 text-bone/70 leading-relaxed font-light">{tier.desc}</p>
+                <p className="mt-6 text-bone/70 leading-relaxed font-light flex-1">{tier.desc}</p>
+                <Link to={steakMenuPath} className="btn-ghost mt-8">Learn More</Link>
               </article>
             ))}
           </div>
