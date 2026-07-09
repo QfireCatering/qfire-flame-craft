@@ -286,7 +286,8 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
                   { row: "Real photographable presentation", q: "Yes — styled buffets", v: "Simple plating", b: "Aluminum trays" },
                   { row: "Featured on Food Network", q: "Yes — BBQ Brawl + more", v: "Rarely", b: "No" },
                   { row: "Bartenders and full bar service", q: "Yes — licensed & insured", v: "No", b: "No" },
-                  { row: "Typical per-guest range", q: "$12.99–$35.99", v: "$120–$300+", b: "$18–$40" },
+                  { row: "Typical per-guest range for BBQ", q: isPhx ? "$28 - $35" : "$35 - $54", v: "$120–$300+", b: "$18–$40" },
+                  { row: "Typical per-guest range for Steakhouse", q: isPhx ? "$84 - $95" : "$84 - $100", v: "$120–$300+", b: "$40–$80" },
                 ].map((r) => (
                   <tr key={r.row} className="border-b border-white/10">
                     <td className="py-4 pr-4 text-bone/85 font-light">{r.row}</td>
