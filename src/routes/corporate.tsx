@@ -36,7 +36,7 @@ function CorporateHub() {
               Corporate catering <span className="italic text-gold font-light">that makes you look good.</span>
             </h1>
             <p className="mt-8 text-xl md:text-2xl text-bone/85 font-light max-w-2xl">
-              Reliable, on-time, restaurant-quality catering for executive teams, HR departments, and construction sites — across Phoenix Metro and San Diego County.
+              Reliable, on-time, restaurant-quality catering for executive teams, HR departments, and construction sites — plus <Link to="/wood-fired" className="underline decoration-gold/40 hover:decoration-gold underline-offset-4">live-fire BBQ</Link> and <Link to="/steakhouse" className="underline decoration-gold/40 hover:decoration-gold underline-offset-4">premium steakhouse</Link> options across Phoenix Metro and San Diego County. Browse <Link to="/menus" className="underline decoration-gold/40 hover:decoration-gold underline-offset-4">menus</Link>, <Link to="/pricing" className="underline decoration-gold/40 hover:decoration-gold underline-offset-4">pricing</Link>, and <Link to="/reviews" className="underline decoration-gold/40 hover:decoration-gold underline-offset-4">client reviews</Link>.
             </p>
           </div>
         </div>
