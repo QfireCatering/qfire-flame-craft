@@ -25,6 +25,22 @@ import heroFire from "@/assets/hero-fire.jpg";
 import buffet from "@/assets/buffet.jpg";
 import brisket from "@/assets/brisket.jpg";
 
+// Wedding gallery (stock/existing — swap later)
+import g1 from "@/assets/gallery/phoenix-weddings/buffet_set_4.avif.asset.json";
+import g2 from "@/assets/gallery/phoenix-weddings/couple_eating-2.avif.asset.json";
+import g3 from "@/assets/gallery/phoenix-weddings/set_up6.avif.asset.json";
+import g4 from "@/assets/gallery/phoenix-weddings/set_up_4.avif.asset.json";
+import g5 from "@/assets/gallery/phoenix-weddings/onsite_grill2-2.avif.asset.json";
+import g6 from "@/assets/gallery/phoenix-weddings/smoked_brisket_station.avif.asset.json";
+import g7 from "@/assets/gallery/phoenix-weddings/fruit_veggie_platter.avif.asset.json";
+import g8 from "@/assets/gallery/pictures-page/set-up-1.avif.asset.json";
+import g9 from "@/assets/gallery/pictures-page/wedding-buffet-tower.jpg.asset.json";
+import g10 from "@/assets/gallery/sunset-table.jpg.asset.json";
+import g11 from "@/assets/gallery/wedding-buffet.jpg.asset.json";
+import g12 from "@/assets/gallery/setup.avif.asset.json";
+
+const weddingGallery = [g1, g2, g3, g4, g5, g6, g7, g8, g9, g10, g11, g12];
+
 const couple = weddingCoupleAsset.url;
 const reception = weddingRealAsset.url;
 const grilling = weddingGrillingAsset.url;
@@ -297,7 +313,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-4">
               <a href="#estimator" className="btn-primary">
-                See Real Wedding Pricing <ArrowRight className="size-4" />
+                See Wedding Pricing <ArrowRight className="size-4" />
               </a>
               <span className="inline-flex items-center gap-2 text-[0.7rem] tracking-[0.22em] uppercase text-gold/90 border border-gold/30 px-4 py-2.5 bg-gold/5">
                 <Clock className="size-3.5" /> Usually responds within 4 business hours
@@ -850,6 +866,39 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
           </div>
         </div>
       </section>
+
+      {/* WEDDING GALLERY */}
+      <section className="py-24 lg:py-32 bg-ink">
+        <div className="container-luxe">
+          <div className="max-w-2xl mx-auto text-center mb-14">
+            <div className="eyebrow mb-6 text-gold">Wedding Gallery</div>
+            <h2 className="font-display text-4xl md:text-6xl text-bone leading-[0.95]">
+              A look at <span className="italic text-gold font-light">the table.</span>
+            </h2>
+            <p className="mt-6 text-bone/70 font-light text-lg">
+              Recent {region} wedding receptions, buffets, live-fire stations and plated dinners by the Qfire team.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+            {weddingGallery.map((img, i) => (
+              <div key={i} className={`relative overflow-hidden group aspect-square ${i % 5 === 0 ? "md:col-span-2 md:row-span-2 aspect-square md:aspect-auto" : ""}`}>
+                <img
+                  src={img.url}
+                  alt={`Qfire wedding catering in ${region} — reception photo ${i + 1}`}
+                  loading="lazy"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+              </div>
+            ))}
+          </div>
+          <div className="mt-10 text-center">
+            <Link to="/pictures" className="btn-ghost">View Full Gallery <ArrowRight className="size-4" /></Link>
+          </div>
+        </div>
+      </section>
+
+
+
 
 
 
