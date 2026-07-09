@@ -21,9 +21,11 @@ import bbqPlatter1Asset from "@/assets/bbq-platter1.png.asset.json";
 import bartenderAsset from "@/assets/bartender.png.asset.json";
 import privatePartyAsset from "@/assets/private-party-setting.png.asset.json";
 import chefAsset from "@/assets/chef-terry.jpg.asset.json";
-import heroFire from "@/assets/hero-fire.jpg";
-import buffet from "@/assets/buffet.jpg";
+import heroFireAsset from "@/assets/gallery/onsite-grilling.avif.asset.json";
+import buffetAsset from "@/assets/gallery/buffet-service.png.asset.json";
 import brisket from "@/assets/brisket.jpg";
+const heroFire = heroFireAsset.url;
+const buffet = buffetAsset.url;
 
 // Wedding gallery (stock/existing — swap later)
 import g1 from "@/assets/gallery/phoenix-weddings/buffet_set_4.avif.asset.json";
