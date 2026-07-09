@@ -27,6 +27,7 @@ export const Route = createFileRoute("/sitemap.xml")({
           "/menus",
           "/pricing",
           "/wood-fired",
+          "/outdoor-wedding-grilling",
           "/steakhouse",
           "/steak-seafood-menu",
           "/steak-seafood-menu-san-diego",
