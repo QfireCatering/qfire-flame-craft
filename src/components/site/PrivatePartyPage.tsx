@@ -17,6 +17,10 @@ import weddingGrillingAsset from "@/assets/gallery/onsite-grill-v2.png.asset.jso
 import chefAsset from "@/assets/chef-terry.jpg.asset.json";
 import heroFire from "@/assets/hero-fire.jpg";
 import buffet from "@/assets/buffet.jpg";
+import carvingStationAsset from "@/assets/gallery/carving-station.png.asset.json";
+import familyStyleAsset from "@/assets/gallery/family-style.png.asset.json";
+const carvingStation = carvingStationAsset.url;
+const familyStyle = familyStyleAsset.url;
 
 const hero = privatePartyHero.url;
 const setting = privatePartyAsset.url;
@@ -577,7 +581,7 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
             {[
               { img: platter, title: "Wood-Fire/BBQ Catering", body: "Brisket, ribs, pulled pork, smoked chicken, sausage, all the sides.", to: "/menus" },
               { img: steakMenu, title: "Steakhouse", body: "Ribeye, NY strip, filet, picanha, prime rib, salmon, surf & turf.", to: steakMenuPath },
-              { img: platter1, title: "Carving Stations", body: "Chef-attended live carving — picanha, brisket, prime rib, lamb.", to: "/menus" },
+              { img: carvingStation, title: "Carving Stations", body: "Chef-attended live carving — picanha, brisket, prime rib, lamb.", to: "/menus" },
             ].map((m) => (
               <Link key={m.title} to={m.to} className="group relative aspect-[4/5] overflow-hidden block">
                 <img src={m.img} alt={`${m.title} for ${regionShort} private parties`} loading="lazy" decoding="async" fetchPriority="low" width={800} height={1000} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
@@ -594,7 +598,7 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
             {[
               { img: bartender, title: "Bartending" },
               { img: buffet, title: "Buffet Service" },
-              { img: setting, title: "Family Style" },
+              { img: familyStyle, title: "Family Style" },
               { img: heroFire, title: "Onsite Grilling" },
             ].map((m) => (
               <div key={m.title} className="relative aspect-square overflow-hidden bg-ink">
