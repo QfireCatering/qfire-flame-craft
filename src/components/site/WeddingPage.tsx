@@ -746,7 +746,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
             {[
               { img: bartender, title: "Bartending" },
               { img: buffet, title: "Buffet Service" },
-              { img: reception, title: "Family Style" },
+              { img: familyStyle, title: "Family Style" },
               { img: heroFire, title: "Onsite Grilling" },
             ].map((m) => (
               <div key={m.title} className="relative aspect-square overflow-hidden bg-ink">
