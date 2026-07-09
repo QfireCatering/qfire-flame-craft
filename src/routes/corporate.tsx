@@ -57,7 +57,7 @@ function CorporateHub() {
               { to: "/corporate-catering-san-diego", img: sanDiego, name: "San Diego County", cities: "La Jolla · Del Mar · Carlsbad · Rancho Santa Fe · Coronado · Encinitas · Mission Valley · Poway" },
             ].map((r) => (
               <Link key={r.to} to={r.to} className="group relative aspect-[4/5] overflow-hidden block border border-gold/20 hover:border-gold transition-colors">
-                <img src={r.img} alt={`${r.name} corporate catering`} className={`absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 ${r.name === "San Diego County" ? "object-right" : ""}`} />
+                <img src={r.img} alt={`${r.name} premium corporate catering — executive dinners, office lunches, holiday parties and live-fire BBQ catering serving ${r.cities.split(" · ").slice(0, 3).join(", ")} and beyond`} width={1200} height={1500} loading="lazy" decoding="async" className={`absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 ${r.name === "San Diego County" ? "object-right" : ""}`} />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/60 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-10">
                   <div className="eyebrow text-gold mb-3">Corporate Catering</div>
