@@ -261,7 +261,9 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
       <section id="steakhouse-pricing" className="py-20 lg:py-28 bg-ink border-t border-white/5 scroll-mt-32">
         <div className="container-luxe">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <div className="eyebrow justify-center mb-6">Steakhouse Experience — Pricing</div>
+            <div className="eyebrow justify-center mb-4">Steakhouse Experience — Pricing</div>
+            <div className="text-gold text-sm tracking-[0.25em] uppercase mb-6">{regionLabel} Corporate Catering</div>
+
             <h2 className="heading-lg text-bone">
               Surf &amp; Turf Steakhouse Experience starting at <span className="text-gold italic font-light">{isPhx ? "$74" : "$79"}/guest.</span>
             </h2>
