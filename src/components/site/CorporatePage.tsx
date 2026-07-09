@@ -8,7 +8,7 @@ import asSeenOnBadge from "@/assets/as-seen-on-food-network.png.asset.json";
 import corpSetupBg from "@/assets/corporate/corp-setup-bg.png.asset.json";
 import corpLuncheon from "@/assets/corporate/corp-luncheon-crowd.jpg.asset.json";
 import corpRetirement from "@/assets/corporate/corp-retirement.jpg.asset.json";
-import corpBuffetLine from "@/assets/corporate/corp-buffet-line.jpg.asset.json";
+
 import corpJobsiteTacos from "@/assets/corporate/corp-jobsite-tacos.jpg.asset.json";
 import corpJobsiteCrew from "@/assets/corporate/corp-jobsite-crew.jpg.asset.json";
 import corpBbqBuffet from "@/assets/corporate/corp-bbq-buffet.png.asset.json";
@@ -28,7 +28,7 @@ const steakMenu = cardSteakhouse.url;
 const platter = cardWoodFired.url;
 const platter1 = cardCarving.url;
 const bartender = corpParkSetup.url;
-const setting = corpBuffetLine.url;
+
 const chef = chefAsset.url;
 const jobsiteCrew = corpJobsiteCrew.url;
 const retirement = corpRetirement.url;
@@ -68,6 +68,18 @@ const whyChoose = [
 
 const serviceStyles = [
   {
+    name: "Delivery",
+    tag: "Most Convenient",
+    bullets: [
+      "Hot, fresh, chef-prepared food dropped at your office",
+      "Disposable serving ware, utensils, and labels included",
+      "Perfect for team lunches, meetings, and quick offsites",
+      "No staff onsite — you handle service in-house",
+      "Contactless drop-off available",
+      "Great for 15–150 guests",
+    ],
+  },
+  {
     name: "Full-Service Buffet",
     tag: "Most Popular",
     bullets: [
@@ -77,18 +89,6 @@ const serviceStyles = [
       "Beautiful presentation, on-brand for the room",
       "Our staff keeps it hot and refreshed all event",
       "Perfect for most corporate events (50–500 guests)",
-    ],
-  },
-  {
-    name: "Family Style",
-    tag: "Most Connected",
-    bullets: [
-      "Big shared platters brought right to each table",
-      "Everyone talks, everyone eats together",
-      "Feels warm and celebratory — like the best team dinner",
-      "No lines, no buffet traffic",
-      "Great for executive retreats and board dinners",
-      "The style that changes how a team talks the next day",
     ],
   },
   {
@@ -104,6 +104,7 @@ const serviceStyles = [
     ],
   },
 ];
+
 
 export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
   const { region, regionShort, cities, reviewCities, path } = config;
@@ -177,9 +178,9 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
     : "https://fs17.formsite.com/matthews3404/SanDiego/index";
   const steakTiers = [
     { name: "Buffet Style", price: isPhx ? "$74" : "$79", per: "/ person", desc: `Smooth. Efficient. Elegant. Restaurant-quality buffet presentation. Ideal for ${regionShort} corporate events.` },
-    { name: "Family Style", price: isPhx ? "$89" : "$94", per: "/ person", desc: "Shared dining. Passed platters. Connected guest experience. Luxury presentation, end to end." },
     { name: "Plated Service", price: isPhx ? "$128" : "$133", per: "/ person", desc: "Restaurant-style service. Each course individually served. Our most luxurious corporate dining experience." },
   ];
+
 
   return (
     <>
@@ -260,7 +261,9 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
       <section id="steakhouse-pricing" className="py-20 lg:py-28 bg-ink border-t border-white/5 scroll-mt-32">
         <div className="container-luxe">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <div className="eyebrow justify-center mb-6">Steakhouse Experience — Pricing</div>
+            <div className="eyebrow justify-center mb-4">Steakhouse Experience — Pricing</div>
+            <div className="text-gold text-sm tracking-[0.25em] uppercase mb-6">{regionLabel} Corporate Catering</div>
+
             <h2 className="heading-lg text-bone">
               Surf &amp; Turf Steakhouse Experience starting at <span className="text-gold italic font-light">{isPhx ? "$74" : "$79"}/guest.</span>
             </h2>
@@ -277,7 +280,7 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
                   <span className="text-bone/55 text-sm">{tier.per}</span>
                 </div>
                 <p className="mt-6 text-bone/70 leading-relaxed font-light flex-1">{tier.desc}</p>
-                <Link to={steakMenuPath} className="btn-ghost mt-8">Learn More</Link>
+
               </article>
             ))}
           </div>
@@ -631,12 +634,12 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
               </Link>
             ))}
           </div>
-          <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-white/5 border border-white/5">
+          <div className="mt-10 grid sm:grid-cols-3 gap-px bg-white/5 border border-white/5">
             {[
               { img: bartender, title: "Bartending" },
               { img: buffet, title: "Buffet Service" },
-              { img: setting, title: "Family Style" },
               { img: heroFire, title: "Onsite Grilling" },
+
             ].map((m) => (
               <div key={m.title} className="relative aspect-square overflow-hidden bg-ink">
                 <img src={m.img} alt={`${m.title} for ${regionShort} corporate events`} loading="lazy" decoding="async" fetchPriority="low" width={600} height={600} className="absolute inset-0 w-full h-full object-cover" />
