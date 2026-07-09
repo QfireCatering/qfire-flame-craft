@@ -15,7 +15,7 @@ import corpBbqBuffet from "@/assets/corporate/corp-bbq-buffet.png.asset.json";
 import corpParkSetup from "@/assets/corporate/corp-park-setup.avif.asset.json";
 import cardWoodFired from "@/assets/corporate/corp-card-wood-fired.png.asset.json";
 import cardSteakhouse from "@/assets/corporate/corp-card-steakhouse.png.asset.json";
-import cardCarving from "@/assets/corporate/corp-card-carving.avif.asset.json";
+import cardCarving from "@/assets/gallery/carving-station.png.asset.json";
 import chefAsset from "@/assets/chef-terry.jpg.asset.json";
 import heroFire from "@/assets/hero-fire.jpg";
 import buffet from "@/assets/buffet.jpg";
