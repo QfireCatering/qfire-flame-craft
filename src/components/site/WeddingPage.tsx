@@ -408,7 +408,8 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
                   { row: "Real photographable presentation", q: "Yes — styled buffets", v: "Standard chafers", b: "Aluminum trays" },
                   { row: "Featured on Food Network", q: "Yes — BBQ Brawl + more", v: "No", b: "No" },
                   { row: "You keep your date flexible after booking", q: "Yes — deposit is a credit", v: "Usually non-refundable", b: "Small deposit" },
-                  { row: "Typical per-guest range", q: "$37–$130", v: "$95–$225+", b: "$18–$40" },
+                  { row: "Typical per-guest range for BBQ", q: isPhx ? "$28 - $35" : "$35 - $54", v: "$95–$225+", b: "$18–$40" },
+                  { row: "Typical per-guest range for Steakhouse", q: isPhx ? "$84 - $95" : "$84 - $100", v: "$95–$225+", b: "$40–$80" },
                 ].map((r) => (
                   <tr key={r.row} className="border-b border-white/10">
                     <td className="py-4 pr-4 text-bone/85 font-light">{r.row}</td>
