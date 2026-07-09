@@ -11,12 +11,12 @@ const hero = corpHeroAsset.url;
 export const Route = createFileRoute("/corporate")({
   head: () => ({
     meta: [
-      { title: "Corporate Catering Phoenix & San Diego | Office, Executive, Holiday Party & BBQ Corporate Catering — Qfire" },
-      { name: "description", content: "Premium corporate catering by Qfire — office lunch catering, executive dinner catering, holiday party catering, employee appreciation, construction-site catering, BBQ corporate catering and live-fire grilling across Phoenix, Scottsdale, Mesa, Tempe, Chandler, Gilbert, San Diego, La Jolla, Carlsbad, Del Mar and Rancho Santa Fe. 2,000+ events · 4.9★ · COI-ready." },
-      { property: "og:title", content: "Corporate Catering — Qfire | Phoenix & San Diego Office & BBQ Corporate Catering" },
-      { property: "og:description", content: "Reliable, on-time, restaurant-quality corporate catering across Phoenix and San Diego — executive dinners, holiday parties, employee appreciation, construction-site BBQ catering." },
+      { title: "Premium Corporate Catering Phoenix & San Diego | Executive, Office, Holiday Party & Live-Fire BBQ — Qfire" },
+      { name: "description", content: "Premium corporate catering by Food Network veteran Chef Terry Matthews (BBQ Brawl, Cutthroat Kitchen). 15+ years, 2,000+ events, 4.9★, COI-ready. Executive dinners, office lunches, holiday parties, employee appreciation, construction-site catering and live-fire outdoor grilling across Phoenix, Scottsdale, Mesa, Tempe, Chandler, Gilbert, San Diego, La Jolla, Carlsbad, Del Mar and Rancho Santa Fe." },
+      { property: "og:title", content: "Premium Corporate Catering — Qfire | Phoenix & San Diego Executive & Live-Fire BBQ Corporate Catering" },
+      { property: "og:description", content: "Food Network veteran Chef Terry Matthews — 2,000+ events, 4.9★. Reliable, restaurant-quality corporate catering, executive dinners, holiday parties and live-fire BBQ catering across Phoenix and San Diego." },
       { property: "og:url", content: "https://qfire-flame-craft.lovable.app/corporate" },
-      { name: "keywords", content: "corporate catering, corporate catering near me, office catering, office lunch catering, executive dinner catering, holiday party catering, employee appreciation catering, company party catering, business catering, corporate BBQ catering, BBQ corporate catering, construction site catering, jobsite catering, corporate catering Phoenix, corporate catering Scottsdale, corporate catering Mesa, corporate catering Tempe, corporate catering San Diego, corporate catering La Jolla, corporate catering Carlsbad" },
+      { name: "keywords", content: "premium corporate catering, luxury corporate catering, corporate catering near me, office catering, office lunch catering, executive dinner catering, holiday party catering, employee appreciation catering, company party catering, business catering, corporate live fire catering, corporate outdoor grilling, corporate charcoal grilling catering, corporate BBQ catering, BBQ corporate catering, construction site catering, jobsite catering, corporate catering Phoenix, corporate catering Scottsdale, corporate catering Mesa, corporate catering Tempe, corporate catering San Diego, corporate catering La Jolla, corporate catering Carlsbad" },
     ],
     links: [{ rel: "canonical", href: "https://qfire-flame-craft.lovable.app/corporate" }],
   }),
@@ -27,7 +27,7 @@ function CorporateHub() {
   return (
     <>
       <section className="relative min-h-[80vh] flex items-end overflow-hidden">
-        <img src={hero} alt="Executive corporate catering by Qfire Catering" className="absolute inset-0 w-full h-full object-cover" />
+        <img src={hero} alt="Executive corporate catering setup — premium live-fire and steakhouse catering by Food Network Chef Terry Matthews, Qfire Catering Phoenix & San Diego" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/70 to-ink/30" />
         <div className="container-luxe relative z-10 pb-20 pt-32">
           <div className="max-w-3xl">

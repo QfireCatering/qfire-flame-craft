@@ -11,12 +11,12 @@ const hero = weddingCoupleAsset.url;
 export const Route = createFileRoute("/weddings")({
   head: () => ({
     meta: [
-      { title: "Wedding Catering Phoenix & San Diego | BBQ Wedding Catering, Wood-Fire & Steakhouse Wedding Caterer — Qfire" },
-      { name: "description", content: "Luxury wedding catering by Qfire — BBQ wedding catering, wood-fire wedding catering and steakhouse wedding catering with live charcoal grilling, premium steaks, full-service buffets and plated dinners. Wedding caterer near me for Phoenix, Scottsdale, Paradise Valley, Mesa, Chandler, Gilbert, San Diego, La Jolla, Del Mar, Carlsbad, Rancho Santa Fe and Coronado. 2,000+ weddings · 4.9★ · Featured on Food Network." },
-      { property: "og:title", content: "Wedding Catering Phoenix & San Diego — BBQ & Steakhouse Wedding Caterer | Qfire" },
-      { property: "og:description", content: "Wood-fire flavors, steakhouse polish. Full-service wedding catering, BBQ wedding catering and plated dinners by Chef Terry Matthews across Phoenix Metro and San Diego County." },
+      { title: "Luxury Wedding Catering Phoenix & San Diego | Live-Fire BBQ, Outdoor Grilling & Steakhouse Wedding Caterer — Qfire" },
+      { name: "description", content: "Luxury wedding catering by Food Network veteran Chef Terry Matthews (BBQ Brawl, Cutthroat Kitchen, Camp Cutthroat). 15+ years, 2,000+ weddings catered, 4.9★. Premium live-fire BBQ, outdoor wedding grilling, live steak grilling and plated steakhouse wedding dinners across Phoenix, Scottsdale, Paradise Valley, Mesa, Chandler, Gilbert, San Diego, La Jolla, Del Mar, Carlsbad, Rancho Santa Fe and Coronado." },
+      { property: "og:title", content: "Luxury Wedding Catering Phoenix & San Diego — Premium Live-Fire & Steakhouse Wedding Caterer | Qfire" },
+      { property: "og:description", content: "Food Network veteran Chef Terry Matthews — 2,000+ weddings, 4.9★. Live-fire BBQ, outdoor wedding grilling and plated steakhouse wedding dinners across Phoenix Metro and San Diego County." },
       { property: "og:url", content: "https://qfire-flame-craft.lovable.app/weddings" },
-      { name: "keywords", content: "wedding catering, wedding caterer near me, BBQ wedding catering, wood-fire wedding catering, steakhouse wedding catering, wedding catering Phoenix, wedding catering Scottsdale, wedding catering Paradise Valley, wedding catering Mesa, wedding catering San Diego, wedding catering La Jolla, wedding catering Del Mar, wedding catering Carlsbad, wedding catering Rancho Santa Fe, wedding catering Coronado, wedding BBQ caterer, wedding steakhouse caterer, luxury wedding catering, plated wedding catering, buffet wedding catering, live-fire wedding catering" },
+      { name: "keywords", content: "luxury wedding catering, outdoor wedding catering, outdoor wedding grilling, live fire wedding catering, live steak grilling, charcoal grilling catering, wood fired wedding catering, premium steakhouse wedding catering, BBQ wedding catering, wedding caterer near me, wedding catering Phoenix, wedding catering Scottsdale, wedding catering Paradise Valley, wedding catering Mesa, wedding catering San Diego, wedding catering La Jolla, wedding catering Del Mar, wedding catering Carlsbad, wedding catering Rancho Santa Fe, wedding catering Coronado, high-end wedding catering, plated wedding catering, buffet wedding catering" },
     ],
     links: [{ rel: "canonical", href: "https://qfire-flame-craft.lovable.app/weddings" }],
   }),
@@ -27,7 +27,7 @@ function WeddingsHub() {
   return (
     <>
       <section className="relative min-h-[80vh] flex items-end overflow-hidden">
-        <img src={hero} alt="Luxury wedding reception catered by Qfire" className="absolute inset-0 w-full h-full object-cover" style={{ objectPosition: "50% 85%" }} />
+        <img src={hero} alt="Luxury outdoor wedding reception with live-fire steakhouse catering by Chef Terry Matthews — Qfire Catering, Phoenix & San Diego" className="absolute inset-0 w-full h-full object-cover" style={{ objectPosition: "50% 85%" }} />
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/70 to-ink/30" />
         <div className="container-luxe relative z-10 pb-20 pt-32">
           <div className="max-w-3xl">
