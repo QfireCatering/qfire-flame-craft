@@ -634,7 +634,7 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
               </Link>
             ))}
           </div>
-          <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-white/5 border border-white/5">
+          <div className="mt-10 grid sm:grid-cols-3 gap-px bg-white/5 border border-white/5">
             {[
               { img: bartender, title: "Bartending" },
               { img: buffet, title: "Buffet Service" },
