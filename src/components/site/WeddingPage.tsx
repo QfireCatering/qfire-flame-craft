@@ -297,7 +297,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-4">
               <a href="#estimator" className="btn-primary">
-                See Real Wedding Pricing <ArrowRight className="size-4" />
+                See Wedding Pricing <ArrowRight className="size-4" />
               </a>
               <span className="inline-flex items-center gap-2 text-[0.7rem] tracking-[0.22em] uppercase text-gold/90 border border-gold/30 px-4 py-2.5 bg-gold/5">
                 <Clock className="size-3.5" /> Usually responds within 4 business hours
