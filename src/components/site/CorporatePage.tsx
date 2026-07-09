@@ -643,7 +643,7 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
             {[
               { img: bartender, title: "Bartending" },
               { img: buffet, title: "Buffet Service" },
-              { img: heroFire, title: "Onsite Grilling" },
+              { img: onsiteGrilling, title: "Onsite Grilling" },
 
             ].map((m) => (
               <div key={m.title} className="relative aspect-square overflow-hidden bg-ink">
