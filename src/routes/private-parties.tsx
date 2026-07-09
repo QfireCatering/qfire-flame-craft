@@ -32,7 +32,7 @@ function PrivatePartyChooser() {
               The party caterer <span className="italic text-gold font-light">guests talk about for years.</span>
             </h1>
             <p className="mt-8 text-xl md:text-2xl text-bone/85 font-light leading-relaxed max-w-2xl">
-              Live charcoal grilling, premium Steakhouse Experience plates, authentic Wood-Fire, full-service hosting. Choose your region to get started.
+              <Link to="/wood-fired" className="underline decoration-gold/40 hover:decoration-gold underline-offset-4">Live charcoal grilling</Link>, premium <Link to="/steakhouse" className="underline decoration-gold/40 hover:decoration-gold underline-offset-4">Steakhouse Experience</Link> plates, authentic <Link to="/wood-fired" className="underline decoration-gold/40 hover:decoration-gold underline-offset-4">wood-fired BBQ</Link>, full-service hosting. Choose your region — or browse the <Link to="/menus" className="underline decoration-gold/40 hover:decoration-gold underline-offset-4">menus</Link> and <Link to="/reviews" className="underline decoration-gold/40 hover:decoration-gold underline-offset-4">reviews</Link> to get started.
             </p>
           </div>
         </div>
@@ -50,7 +50,7 @@ function PrivatePartyChooser() {
               { to: "/private-party-catering-san-diego", title: "San Diego County", img: sanDiegoAsset.url, body: "La Jolla · Del Mar · Carlsbad · Encinitas · Rancho Santa Fe · Coronado · Poway · Oceanside · Pacific Beach · all of San Diego County." },
             ].map((r) => (
               <Link key={r.to} to={r.to} className="group relative aspect-[4/5] overflow-hidden block border border-gold/20 hover:border-gold transition-colors">
-                <img src={r.img} alt={`${r.title} private party catering`} className={`absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 ${r.title.includes("San Diego") ? "sd-card-img" : ""}`} />
+                <img src={r.img} alt={`${r.title} luxury private party catering — backyard BBQ, birthdays, anniversaries and live charcoal grilling for ${r.title}`} width={1200} height={1500} loading="lazy" decoding="async" className={`absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 ${r.title.includes("San Diego") ? "sd-card-img" : ""}`} />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/60 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-10">
                   <div className="eyebrow text-gold mb-3">Private Party Catering</div>

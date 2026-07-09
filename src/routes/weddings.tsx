@@ -36,7 +36,7 @@ function WeddingsHub() {
               A wedding meal <span className="italic text-gold font-light">they'll remember.</span>
             </h1>
             <p className="mt-8 text-xl md:text-2xl text-bone/85 font-light max-w-2xl">
-              Live charcoal grilling, premium Steakhouse Experience plates, full-service staffing — across Phoenix Metro and San Diego County.
+              <Link to="/wood-fired" className="underline decoration-gold/40 hover:decoration-gold underline-offset-4">Live charcoal grilling</Link>, premium <Link to="/steakhouse" className="underline decoration-gold/40 hover:decoration-gold underline-offset-4">Steakhouse Experience plates</Link>, full-service staffing — across Phoenix Metro and San Diego County. See our <Link to="/pictures" className="underline decoration-gold/40 hover:decoration-gold underline-offset-4">wedding gallery</Link> and <Link to="/reviews" className="underline decoration-gold/40 hover:decoration-gold underline-offset-4">real couple reviews</Link>.
             </p>
           </div>
         </div>
@@ -57,7 +57,7 @@ function WeddingsHub() {
               { to: "/wedding-catering-san-diego", img: sanDiego, name: "San Diego County", cities: "La Jolla · Del Mar · Carlsbad · Rancho Santa Fe · Coronado · Encinitas" },
             ].map((r) => (
               <Link key={r.to} to={r.to} className="group relative aspect-[4/5] overflow-hidden block border border-gold/20 hover:border-gold transition-colors">
-                <img src={r.img} alt={`${r.name} wedding catering`} className={`absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 ${r.name === "San Diego County" ? "object-right" : ""}`} />
+                <img src={r.img} alt={`${r.name} luxury wedding catering — live-fire and steakhouse wedding caterer serving ${r.cities.split(" · ").slice(0, 3).join(", ")} and beyond`} width={1200} height={1500} loading="lazy" decoding="async" className={`absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 ${r.name === "San Diego County" ? "object-right" : ""}`} />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/60 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-10">
                   <div className="eyebrow text-gold mb-3">Wedding Catering</div>

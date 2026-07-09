@@ -34,6 +34,7 @@ import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as PicturesRouteImport } from './routes/pictures'
 import { Route as PhoenixRouteImport } from './routes/phoenix'
+import { Route as OutdoorWeddingGrillingRouteImport } from './routes/outdoor-wedding-grilling'
 import { Route as MenusRouteImport } from './routes/menus'
 import { Route as MediaRouteImport } from './routes/media'
 import { Route as LocationsRouteImport } from './routes/locations'
@@ -183,6 +184,11 @@ const PhoenixRoute = PhoenixRouteImport.update({
   path: '/phoenix',
   getParentRoute: () => rootRouteImport,
 } as any)
+const OutdoorWeddingGrillingRoute = OutdoorWeddingGrillingRouteImport.update({
+  id: '/outdoor-wedding-grilling',
+  path: '/outdoor-wedding-grilling',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const MenusRoute = MenusRouteImport.update({
   id: '/menus',
   path: '/menus',
@@ -290,6 +296,7 @@ export interface FileRoutesByFullPath {
   '/locations': typeof LocationsRoute
   '/media': typeof MediaRoute
   '/menus': typeof MenusRoute
+  '/outdoor-wedding-grilling': typeof OutdoorWeddingGrillingRoute
   '/phoenix': typeof PhoenixRouteWithChildren
   '/pictures': typeof PicturesRoute
   '/pricing': typeof PricingRoute
@@ -335,6 +342,7 @@ export interface FileRoutesByTo {
   '/locations': typeof LocationsRoute
   '/media': typeof MediaRoute
   '/menus': typeof MenusRoute
+  '/outdoor-wedding-grilling': typeof OutdoorWeddingGrillingRoute
   '/pictures': typeof PicturesRoute
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
@@ -379,6 +387,7 @@ export interface FileRoutesById {
   '/locations': typeof LocationsRoute
   '/media': typeof MediaRoute
   '/menus': typeof MenusRoute
+  '/outdoor-wedding-grilling': typeof OutdoorWeddingGrillingRoute
   '/phoenix': typeof PhoenixRouteWithChildren
   '/pictures': typeof PicturesRoute
   '/pricing': typeof PricingRoute
@@ -426,6 +435,7 @@ export interface FileRouteTypes {
     | '/locations'
     | '/media'
     | '/menus'
+    | '/outdoor-wedding-grilling'
     | '/phoenix'
     | '/pictures'
     | '/pricing'
@@ -471,6 +481,7 @@ export interface FileRouteTypes {
     | '/locations'
     | '/media'
     | '/menus'
+    | '/outdoor-wedding-grilling'
     | '/pictures'
     | '/pricing'
     | '/privacy'
@@ -514,6 +525,7 @@ export interface FileRouteTypes {
     | '/locations'
     | '/media'
     | '/menus'
+    | '/outdoor-wedding-grilling'
     | '/phoenix'
     | '/pictures'
     | '/pricing'
@@ -560,6 +572,7 @@ export interface RootRouteChildren {
   LocationsRoute: typeof LocationsRoute
   MediaRoute: typeof MediaRoute
   MenusRoute: typeof MenusRoute
+  OutdoorWeddingGrillingRoute: typeof OutdoorWeddingGrillingRoute
   PhoenixRoute: typeof PhoenixRouteWithChildren
   PicturesRoute: typeof PicturesRoute
   PricingRoute: typeof PricingRoute
@@ -764,6 +777,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PhoenixRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/outdoor-wedding-grilling': {
+      id: '/outdoor-wedding-grilling'
+      path: '/outdoor-wedding-grilling'
+      fullPath: '/outdoor-wedding-grilling'
+      preLoaderRoute: typeof OutdoorWeddingGrillingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/menus': {
       id: '/menus'
       path: '/menus'
@@ -944,6 +964,7 @@ const rootRouteChildren: RootRouteChildren = {
   LocationsRoute: LocationsRoute,
   MediaRoute: MediaRoute,
   MenusRoute: MenusRoute,
+  OutdoorWeddingGrillingRoute: OutdoorWeddingGrillingRoute,
   PhoenixRoute: PhoenixRouteWithChildren,
   PicturesRoute: PicturesRoute,
   PricingRoute: PricingRoute,
