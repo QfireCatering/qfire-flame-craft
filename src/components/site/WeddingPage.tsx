@@ -864,8 +864,38 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
               <div className="mt-4 text-xs tracking-[0.2em] uppercase text-bone/60">View on The Knot →</div>
             </a>
           </div>
+      {/* WEDDING GALLERY */}
+      <section className="py-24 lg:py-32 bg-ink">
+        <div className="container-luxe">
+          <div className="max-w-2xl mx-auto text-center mb-14">
+            <div className="eyebrow mb-6 text-gold">Wedding Gallery</div>
+            <h2 className="font-display text-4xl md:text-6xl text-bone leading-[0.95]">
+              A look at <span className="italic text-gold font-light">the table.</span>
+            </h2>
+            <p className="mt-6 text-bone/70 font-light text-lg">
+              Recent {region} wedding receptions, buffets, live-fire stations and plated dinners by the Qfire team.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+            {weddingGallery.map((img, i) => (
+              <div key={i} className={`relative overflow-hidden group aspect-square ${i % 5 === 0 ? "md:col-span-2 md:row-span-2 aspect-square md:aspect-auto" : ""}`}>
+                <img
+                  src={img.url}
+                  alt={`Qfire wedding catering in ${region} — reception photo ${i + 1}`}
+                  loading="lazy"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+              </div>
+            ))}
+          </div>
+          <div className="mt-10 text-center">
+            <Link to="/pictures" className="btn-ghost">View Full Gallery <ArrowRight className="size-4" /></Link>
+          </div>
         </div>
       </section>
+
+      </section>
+
 
 
 
