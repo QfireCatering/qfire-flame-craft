@@ -17,6 +17,10 @@ import weddingGrillingAsset from "@/assets/gallery/onsite-grill-v2.png.asset.jso
 import chefAsset from "@/assets/chef-terry.jpg.asset.json";
 import heroFire from "@/assets/hero-fire.jpg";
 import buffet from "@/assets/buffet.jpg";
+import carvingStationAsset from "@/assets/gallery/carving-station.png.asset.json";
+import familyStyleAsset from "@/assets/gallery/family-style.png.asset.json";
+const carvingStation = carvingStationAsset.url;
+const familyStyle = familyStyleAsset.url;
 
 const hero = privatePartyHero.url;
 const setting = privatePartyAsset.url;
