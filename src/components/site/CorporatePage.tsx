@@ -178,9 +178,9 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
     : "https://fs17.formsite.com/matthews3404/SanDiego/index";
   const steakTiers = [
     { name: "Buffet Style", price: isPhx ? "$74" : "$79", per: "/ person", desc: `Smooth. Efficient. Elegant. Restaurant-quality buffet presentation. Ideal for ${regionShort} corporate events.` },
-    { name: "Family Style", price: isPhx ? "$89" : "$94", per: "/ person", desc: "Shared dining. Passed platters. Connected guest experience. Luxury presentation, end to end." },
     { name: "Plated Service", price: isPhx ? "$128" : "$133", per: "/ person", desc: "Restaurant-style service. Each course individually served. Our most luxurious corporate dining experience." },
   ];
+
 
   return (
     <>
