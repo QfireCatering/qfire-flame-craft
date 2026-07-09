@@ -132,7 +132,7 @@ function Home() {
       {/* HERO */}
       <section className="relative min-h-screen flex items-center overflow-hidden grain-overlay">
         <div className="absolute inset-0">
-          <img src={heroImage.url} alt="Chef grilling over live fire at elegant outdoor wedding" className="absolute inset-0 w-full h-full object-cover slow-zoom" width={1920} height={1280} />
+          <img src={heroImage.url} alt="Food Network Chef Terry Matthews live-fire grilling premium steaks at an elegant outdoor wedding — Qfire Catering, Phoenix Metro & San Diego County" className="absolute inset-0 w-full h-full object-cover slow-zoom" width={1920} height={1280} />
           <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/60 to-ink/30" />
           <div className="absolute inset-0 bg-gradient-to-r from-ink/85 via-ink/30 to-transparent" />
         </div>
