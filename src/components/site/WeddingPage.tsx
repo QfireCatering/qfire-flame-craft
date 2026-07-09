@@ -897,7 +897,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         </div>
       </section>
 
-      </section>
+
 
 
 
