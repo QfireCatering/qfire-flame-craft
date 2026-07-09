@@ -18,7 +18,9 @@ import cardSteakhouse from "@/assets/corporate/corp-card-steakhouse.png.asset.js
 import cardCarving from "@/assets/gallery/carving-station.png.asset.json";
 import chefAsset from "@/assets/chef-terry.jpg.asset.json";
 import heroFire from "@/assets/hero-fire.jpg";
-import buffet from "@/assets/buffet.jpg";
+import bartenderAsset from "@/assets/bartender.png.asset.json";
+import buffetServiceAsset from "@/assets/gallery/buffet-service.png.asset.json";
+import onsiteGrillingAsset from "@/assets/gallery/onsite-grilling.avif.asset.json";
 
 const officeHero = corpSetupBg.url;
 const officeAlt = corpLuncheon.url;
@@ -27,7 +29,10 @@ const steak = corpBbqBuffet.url;
 const steakMenu = cardSteakhouse.url;
 const platter = cardWoodFired.url;
 const platter1 = cardCarving.url;
-const bartender = corpParkSetup.url;
+const bartender = bartenderAsset.url;
+const buffet = buffetServiceAsset.url;
+const onsiteGrilling = onsiteGrillingAsset.url;
+
 
 const chef = chefAsset.url;
 const jobsiteCrew = corpJobsiteCrew.url;
