@@ -107,7 +107,6 @@ const serviceStyles = [
 
 export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
   const { region, regionShort, cities, reviewCities, path } = config;
-  const isPhx = config.regionSlug === "phoenix";
 
   const reviews = [
     { q: `Chef Terry and his team made our ${regionShort} executive holiday party unforgettable. The brisket and ribeyes were perfect, and every single team member asked us who our caterer was. Service was flawless from setup through the last handshake.`, a: "Rachel S., HR Director", e: `${reviewCities[0]} · Tech Company · 240 guests · Dec 2024` },
