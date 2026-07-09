@@ -8,7 +8,7 @@ import asSeenOnBadge from "@/assets/as-seen-on-food-network.png.asset.json";
 import corpSetupBg from "@/assets/corporate/corp-setup-bg.png.asset.json";
 import corpLuncheon from "@/assets/corporate/corp-luncheon-crowd.jpg.asset.json";
 import corpRetirement from "@/assets/corporate/corp-retirement.jpg.asset.json";
-import corpBuffetLine from "@/assets/corporate/corp-buffet-line.jpg.asset.json";
+
 import corpJobsiteTacos from "@/assets/corporate/corp-jobsite-tacos.jpg.asset.json";
 import corpJobsiteCrew from "@/assets/corporate/corp-jobsite-crew.jpg.asset.json";
 import corpBbqBuffet from "@/assets/corporate/corp-bbq-buffet.png.asset.json";
