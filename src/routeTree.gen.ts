@@ -52,7 +52,6 @@ import { Route as Items1RouteImport } from './routes/items-1'
 import { Route as InquiryServicesPageRouteImport } from './routes/inquiry-services-page'
 import { Route as FaqSRouteImport } from './routes/faq-s'
 import { Route as FaqRouteImport } from './routes/faq'
-import { Route as EventVenueDaddySPlaceRouteImport } from './routes/event-venue-daddy-s-place'
 import { Route as CorporateCateringSanDiegoRouteImport } from './routes/corporate-catering-san-diego'
 import { Route as CorporateCateringPhoenixRouteImport } from './routes/corporate-catering-phoenix'
 import { Route as CorporateRouteImport } from './routes/corporate'
@@ -298,11 +297,6 @@ const FaqRoute = FaqRouteImport.update({
   path: '/faq',
   getParentRoute: () => rootRouteImport,
 } as any)
-const EventVenueDaddySPlaceRoute = EventVenueDaddySPlaceRouteImport.update({
-  id: '/event-venue-daddy-s-place',
-  path: '/event-venue-daddy-s-place',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const CorporateCateringSanDiegoRoute =
   CorporateCateringSanDiegoRouteImport.update({
     id: '/corporate-catering-san-diego',
@@ -441,7 +435,6 @@ export interface FileRoutesByFullPath {
   '/corporate': typeof CorporateRoute
   '/corporate-catering-phoenix': typeof CorporateCateringPhoenixRoute
   '/corporate-catering-san-diego': typeof CorporateCateringSanDiegoRoute
-  '/event-venue-daddy-s-place': typeof EventVenueDaddySPlaceRoute
   '/faq': typeof FaqRoute
   '/faq-s': typeof FaqSRoute
   '/inquiry-services-page': typeof InquiryServicesPageRoute
@@ -510,7 +503,6 @@ export interface FileRoutesByTo {
   '/corporate': typeof CorporateRoute
   '/corporate-catering-phoenix': typeof CorporateCateringPhoenixRoute
   '/corporate-catering-san-diego': typeof CorporateCateringSanDiegoRoute
-  '/event-venue-daddy-s-place': typeof EventVenueDaddySPlaceRoute
   '/faq': typeof FaqRoute
   '/faq-s': typeof FaqSRoute
   '/inquiry-services-page': typeof InquiryServicesPageRoute
@@ -578,7 +570,6 @@ export interface FileRoutesById {
   '/corporate': typeof CorporateRoute
   '/corporate-catering-phoenix': typeof CorporateCateringPhoenixRoute
   '/corporate-catering-san-diego': typeof CorporateCateringSanDiegoRoute
-  '/event-venue-daddy-s-place': typeof EventVenueDaddySPlaceRoute
   '/faq': typeof FaqRoute
   '/faq-s': typeof FaqSRoute
   '/inquiry-services-page': typeof InquiryServicesPageRoute
@@ -649,7 +640,6 @@ export interface FileRouteTypes {
     | '/corporate'
     | '/corporate-catering-phoenix'
     | '/corporate-catering-san-diego'
-    | '/event-venue-daddy-s-place'
     | '/faq'
     | '/faq-s'
     | '/inquiry-services-page'
@@ -718,7 +708,6 @@ export interface FileRouteTypes {
     | '/corporate'
     | '/corporate-catering-phoenix'
     | '/corporate-catering-san-diego'
-    | '/event-venue-daddy-s-place'
     | '/faq'
     | '/faq-s'
     | '/inquiry-services-page'
@@ -785,7 +774,6 @@ export interface FileRouteTypes {
     | '/corporate'
     | '/corporate-catering-phoenix'
     | '/corporate-catering-san-diego'
-    | '/event-venue-daddy-s-place'
     | '/faq'
     | '/faq-s'
     | '/inquiry-services-page'
@@ -855,7 +843,6 @@ export interface RootRouteChildren {
   CorporateRoute: typeof CorporateRoute
   CorporateCateringPhoenixRoute: typeof CorporateCateringPhoenixRoute
   CorporateCateringSanDiegoRoute: typeof CorporateCateringSanDiegoRoute
-  EventVenueDaddySPlaceRoute: typeof EventVenueDaddySPlaceRoute
   FaqRoute: typeof FaqRoute
   FaqSRoute: typeof FaqSRoute
   InquiryServicesPageRoute: typeof InquiryServicesPageRoute
@@ -1204,13 +1191,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FaqRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/event-venue-daddy-s-place': {
-      id: '/event-venue-daddy-s-place'
-      path: '/event-venue-daddy-s-place'
-      fullPath: '/event-venue-daddy-s-place'
-      preLoaderRoute: typeof EventVenueDaddySPlaceRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/corporate-catering-san-diego': {
       id: '/corporate-catering-san-diego'
       path: '/corporate-catering-san-diego'
@@ -1441,7 +1421,6 @@ const rootRouteChildren: RootRouteChildren = {
   CorporateRoute: CorporateRoute,
   CorporateCateringPhoenixRoute: CorporateCateringPhoenixRoute,
   CorporateCateringSanDiegoRoute: CorporateCateringSanDiegoRoute,
-  EventVenueDaddySPlaceRoute: EventVenueDaddySPlaceRoute,
   FaqRoute: FaqRoute,
   FaqSRoute: FaqSRoute,
   InquiryServicesPageRoute: InquiryServicesPageRoute,
