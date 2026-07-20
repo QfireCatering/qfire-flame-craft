@@ -57,22 +57,29 @@ export function MobileHome() {
           <p className="mt-4 text-bone/90 text-base leading-relaxed">
             Arizona &amp; San Diego's premier live-fire caterer. Chef Terry
             Matthews and his team run the whole show — menu, staff, setup, service,
-            breakdown. Weddings, corporate, private parties. Booked out months in advance.
+            breakdown. Weddings, corporate, private parties. Pick Up &amp; Delivery Available.
           </p>
 
-          {/* PRIMARY ACTIONS — Quote + Call, both full-width, one-finger */}
+          {/* PRIMARY ACTIONS — View Menus + Leave a Message + Call */}
           <div className="mt-6 space-y-2.5">
             <Link
-              to="/quote"
+              to="/menus"
               className="flex items-center justify-center gap-2 w-full min-h-14 rounded-md bg-gold text-ink font-bold text-base tracking-wide shadow-[0_10px_30px_-8px_rgba(201,162,86,0.55)] active:scale-[0.99] transition-transform"
             >
-              Request A Quote <ArrowRight className="size-5" />
+              View Menus <ArrowRight className="size-5" />
+            </Link>
+            <Link
+              to="/contact"
+              className="flex items-center justify-center gap-2 w-full min-h-14 rounded-md border-2 border-gold/60 text-gold font-bold text-base active:bg-gold/10"
+            >
+              Leave a Message
             </Link>
             <a
               href={contact.phoneHref}
-              className="flex items-center justify-center gap-2 w-full min-h-14 rounded-md border-2 border-gold/60 text-gold font-bold text-base active:bg-gold/10"
+              className="flex items-center justify-center gap-2 w-full min-h-14 rounded-md border border-bone/20 text-bone/90 font-semibold text-base active:bg-bone/5"
             >
               <Phone className="size-5" /> Call {contact.phone}
+
             </a>
           </div>
 
@@ -173,7 +180,7 @@ export function MobileHome() {
             <div className="p-4">
               <div className="text-[0.58rem] tracking-[0.3em] uppercase text-gold mb-1">Wood-Fire / BBQ</div>
               <div className="font-display text-xl text-bone">Smoke. Hardwood. Live fire.</div>
-              <p className="mt-2 text-sm text-bone/70">Brisket, tri-tip, pulled pork, chicken. From <span className="text-gold font-semibold">$12.99/guest</span>.</p>
+              <p className="mt-2 text-sm text-bone/70">Brisket, tri-tip, pulled pork, chicken. From <span className="text-gold font-semibold">$13.99/guest</span>.</p>
               <div className="mt-3 inline-flex items-center gap-1.5 text-gold text-xs tracking-[0.2em] uppercase font-semibold">
                 View Menu <ArrowRight className="size-3.5" />
               </div>
@@ -307,7 +314,7 @@ export function MobileHome() {
         <div className="divide-y divide-white/8 border-y border-white/8">
           {[
             { q: "How far out should I book?", a: "Peak Saturdays go 6–12 months out. Corporate and private events, 4–8 weeks. Short-notice? Call — we move quickly." },
-            { q: "What does it cost?", a: "Wood-fire BBQ from $12.99/guest (Phoenix), $15.99/guest (San Diego). Steakhouse Experience from $74/guest. Every quote is itemized." },
+            { q: "What does it cost?", a: "Wood-fire BBQ from $13.99/guest (Phoenix), $16.99/guest (San Diego). Steakhouse Experience from $74/guest. Every quote is itemized." },
             { q: "Do you handle everything?", a: "Yes. Menu, staff, setup, live-fire cooking, service, breakdown. You enjoy your event." },
             { q: "Allergies and dietary needs?", a: "Vegetarian, vegan, GF, DF, kosher-style, Halal-friendly, and dedicated allergy prep — all standard." },
           ].map((f) => (
@@ -337,18 +344,25 @@ export function MobileHome() {
           </p>
           <div className="mt-6 space-y-2.5">
             <Link
-              to="/quote"
+              to="/menus"
               className="flex items-center justify-center gap-2 w-full min-h-14 rounded-md bg-gold text-ink font-bold text-base tracking-wide active:scale-[0.99] transition-transform"
             >
-              Request A Quote <ArrowRight className="size-5" />
+              View Menus <ArrowRight className="size-5" />
+            </Link>
+            <Link
+              to="/contact"
+              className="flex items-center justify-center gap-2 w-full min-h-14 rounded-md border-2 border-gold/60 text-gold font-bold text-base active:bg-gold/10"
+            >
+              Leave a Message
             </Link>
             <a
               href={contact.phoneHref}
-              className="flex items-center justify-center gap-2 w-full min-h-14 rounded-md border-2 border-gold/60 text-gold font-bold text-base active:bg-gold/10"
+              className="flex items-center justify-center gap-2 w-full min-h-14 rounded-md border border-bone/20 text-bone/90 font-semibold text-base active:bg-bone/5"
             >
               <Phone className="size-5" /> Call {contact.phone}
             </a>
           </div>
+
           <p className="mt-5 text-[0.62rem] tracking-[0.25em] uppercase text-bone/50">
             {contact.hours}
           </p>

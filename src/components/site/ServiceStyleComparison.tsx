@@ -8,7 +8,7 @@ import { Check, Minus } from "lucide-react";
  */
 const ROWS = [
   { feature: "Best for guest count",       buffet: "50–2,500",       family: "20–150",        plated: "30–400",         stations: "75–500",      grilling: "40–800" },
-  { feature: "Starting price / guest",     buffet: "$12.99",         family: "$24",           plated: "$48",            stations: "$32",         grilling: "$18" },
+  { feature: "Starting price / guest",     buffet: "$13.99",         family: "$24",           plated: "$48",            stations: "$32",         grilling: "$18" },
   { feature: "Service style",              buffet: "Self-serve line", family: "Shared platters", plated: "Course-by-course", stations: "Chef-attended", grilling: "Live-fire show" },
   { feature: "Staff required",             buffet: "Light",           family: "Medium",        plated: "Heavy",          stations: "Medium",      grilling: "Medium" },
   { feature: "Best for weddings",          buffet: true,              family: true,            plated: true,             stations: true,          grilling: true },

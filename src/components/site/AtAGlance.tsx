@@ -21,7 +21,7 @@ export function AtAGlance({
   maxGuests = 2500,
   guestCount,
   leadTime = "24–72 hrs (drop-off) · 4–8 weeks (full-service) · 6–12 months (peak weddings)",
-  priceFrom = "$12.99 / guest (wood-fired) · $74 / guest (steakhouse)",
+  priceFrom = "$13.99 / guest (wood-fired) · $74 / guest (steakhouse)",
   className = "",
 }: AtAGlanceProps) {
   const rows = [

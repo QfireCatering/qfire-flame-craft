@@ -10,7 +10,7 @@ const tiers = [
     name: "Wood-Fired",
     href: "/wood-fired",
     cta: "See the Wood-Fire Menu",
-    headline: "From $12.99 / guest (Phoenix) · From $15.99 / guest (San Diego)",
+    headline: "From $13.99 / guest (Phoenix) · From $16.99 / guest (San Diego)",
     blurb:
       "Slow-smoked brisket, tri-tip, pulled pork, and wood-fired chicken. Comfort sides. Fresh-baked rolls. House sauces.",
     bullets: [
@@ -43,7 +43,7 @@ export const Route = createFileRoute("/pricing")({
       {
         name: "description",
         content:
-          "Transparent catering pricing. Wood-fired catering from $12.99/guest (Phoenix) and $15.99/guest (San Diego). Steakhouse Experience buffet from $74/guest, plated from $128/guest.",
+          "Transparent catering pricing. Wood-fired catering from $13.99/guest (Phoenix) and $16.99/guest (San Diego). Steakhouse Experience buffet from $74/guest, plated from $128/guest.",
       },
       { property: "og:title", content: "Catering Pricing — Qfire Catering" },
       { property: "og:description", content: "What it actually costs to cater your event with Qfire." },
