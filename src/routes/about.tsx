@@ -61,6 +61,24 @@ export const Route = createFileRoute("/about")({
       { property: "og:image", content: chefTerry.url },
     ],
     links: [{ rel: "canonical", href: "https://qfire-flame-craft.lovable.app/about" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "@id": "https://qfire-flame-craft.lovable.app/about#aboutpage",
+          url: "https://qfire-flame-craft.lovable.app/about",
+          name: "About Chef Terry Matthews — The BBQ Daddy",
+          about: { "@id": "https://qfire-flame-craft.lovable.app/about#chef-terry" },
+          mainEntity: { "@id": "https://qfire-flame-craft.lovable.app/about#chef-terry" },
+          speakable: {
+            "@type": "SpeakableSpecification",
+            cssSelector: ["h1", ".speakable-answer"],
+          },
+        }),
+      },
+    ],
   }),
   component: AboutPage,
 });
@@ -94,9 +112,12 @@ function AboutPage() {
             <div className="gold-rule mt-8 mx-auto lg:mx-0 w-12" />
           </div>
           <div className="space-y-6 text-lg text-bone/75 leading-relaxed font-light">
+            <p className="speakable-answer text-bone/90">
+              Chef Terry Matthews — known as The BBQ Daddy — is the founder and executive chef of Qfire Catering, a 100% dedicated full-service catering company founded in 2012 serving Phoenix Metro, Arizona and San Diego County, California. He is a Food Network Cutthroat Kitchen champion, Camp Cutthroat winner, and featured pitmaster on BBQ Brawl with Bobby Flay.
+            </p>
             <p>
               Terry Matthews has been bringing the fire since <span className="text-gold/90">2001</span> — more than
-              <span className="text-gold/90"> 15 years</span> behind live flame and over <span className="text-gold/90">2,000 events</span> served.
+              <span className="text-gold/90"> 13 years</span> behind live flame and over <span className="text-gold/90">2,500 events</span> served.
               He built Qfire Catering on a simple belief: a great meal is the centerpiece of every memorable night, and the people behind it should make it look effortless.
             </p>
             <p>
