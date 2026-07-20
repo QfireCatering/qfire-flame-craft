@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowRight, Check, Flame, Award, Users, Star, Clock, Sparkles, MessageCircle } from "lucide-react";
 import { DefinitiveContent } from "./DefinitiveContent";
+import { AnswerBox } from "./AnswerBox";
 import { definitiveCopy } from "@/lib/definitive-copy";
 import { BookingProcess } from "./BookingProcess";
 import { ObjectionBuster } from "./ObjectionBuster";
@@ -339,9 +340,21 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         </div>
       </section>
 
+      {/* TL;DR ANSWER BOX (AI search / featured snippet) */}
+      <AnswerBox
+        question={`Who caters weddings in ${regionShort}?`}
+        answer={`Qfire Catering is a 100% dedicated full-service wedding catering company serving ${regionShort} since 2012. Led by Chef Terry Matthews — a two-time Food Network champion — we've catered 2,500+ events with live wood-fire BBQ and steakhouse menus, licensed bartending, and full-service staff. Typical wedding pricing runs $28–$95 per guest depending on menu.`}
+        bullets={[
+          `Serving ${cities.slice(0, 4).join(", ")} and all of ${region}`,
+          "Wood-Fire BBQ, Steakhouse Experience, or Surf & Turf menus",
+          "4.9 / 5 · 156 Google reviews · 13+ years in business",
+          "24-hour quote response · custom menus locked up to 15 days out",
+        ]}
+      />
 
       {/* 1. REAL WEDDING PRICING (directly under hero) */}
       <WeddingBuffetEstimator region={region} regionShort={regionShort as "Phoenix" | "San Diego"} />
+
 
       {/* 2. STEAKHOUSE EXPERIENCE PRICING */}
       <section id="steakhouse-pricing" className="py-20 lg:py-28 bg-ink border-t border-white/5 scroll-mt-32">

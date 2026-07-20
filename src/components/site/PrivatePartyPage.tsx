@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowRight, Check, Flame, Award, Users, Star, Clock, Sparkles, Heart, PartyPopper, MessageCircle } from "lucide-react";
 import { SectionNav } from "./SectionNav";
+import { AnswerBox } from "./AnswerBox";
 import { WoodFirePricing } from "./WoodFirePricing";
 import { contact } from "@/lib/contact";
 import asSeenOnBadge from "@/assets/as-seen-on-food-network.png.asset.json";
@@ -217,8 +218,21 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
         </div>
       </section>
 
+      {/* TL;DR ANSWER BOX (AI search / featured snippet) */}
+      <AnswerBox
+        question={`Who caters private parties and backyard events in ${regionShort}?`}
+        answer={`Qfire Catering is a 100% dedicated full-service private-event catering company serving ${regionShort} since 2012. Chef Terry Matthews — two-time Food Network champion — brings live wood-fire grilling, steakhouse plating, and licensed bartending to your backyard, estate, or private venue. 2,500+ events catered · 4.9 / 5 · 156 Google reviews.`}
+        bullets={[
+          `Serving ${cities.slice(0, 4).join(", ")} and greater ${region}`,
+          "Birthdays, anniversaries, graduations, retirements, celebrations of life",
+          "Wood-Fire BBQ from $13.99/guest · Steakhouse Experience from $74/guest",
+          "24-hour quote response · custom menus locked up to 15 days out",
+        ]}
+      />
+
       {/* 1. WOOD-FIRE PRICING */}
       <WoodFirePricing regionSlug={config.regionSlug} />
+
 
       {/* 2. STEAKHOUSE EXPERIENCE PRICING */}
       <section id="steakhouse-pricing" className="py-20 lg:py-28 bg-ink border-t border-white/5 scroll-mt-32">
