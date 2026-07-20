@@ -61,6 +61,24 @@ export const Route = createFileRoute("/about")({
       { property: "og:image", content: chefTerry.url },
     ],
     links: [{ rel: "canonical", href: "https://qfire-flame-craft.lovable.app/about" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "@id": "https://qfire-flame-craft.lovable.app/about#aboutpage",
+          url: "https://qfire-flame-craft.lovable.app/about",
+          name: "About Chef Terry Matthews — The BBQ Daddy",
+          about: { "@id": "https://qfire-flame-craft.lovable.app/about#chef-terry" },
+          mainEntity: { "@id": "https://qfire-flame-craft.lovable.app/about#chef-terry" },
+          speakable: {
+            "@type": "SpeakableSpecification",
+            cssSelector: ["h1", ".speakable-answer"],
+          },
+        }),
+      },
+    ],
   }),
   component: AboutPage,
 });

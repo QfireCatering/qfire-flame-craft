@@ -141,6 +141,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
                 { "@type": "City", name: "Rancho Santa Fe" },
               ],
               founder: { "@id": "https://qfire-flame-craft.lovable.app/about#chef-terry" },
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: "4.9",
+                reviewCount: "156",
+                bestRating: "5",
+                worstRating: "1",
+              },
               sameAs: [
                 "https://www.instagram.com/thebbqdaddy/",
                 "https://www.facebook.com/BBQDaddyCatering/",
