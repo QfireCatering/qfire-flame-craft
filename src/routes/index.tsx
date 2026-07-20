@@ -323,7 +323,7 @@ function Home() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-white/5 border border-white/5">
             {[
-              { n: "2,000+", l: "Events Served", icon: Users },
+              { n: "2,500+", l: "Events Served", icon: Users },
               { n: "15+", l: "Years Behind Fire", icon: Flame },
               { n: "4.9★", l: "Across All Platforms", icon: Award },
               { n: "Stress-Free", l: "Full-Service Execution", icon: Sparkles },

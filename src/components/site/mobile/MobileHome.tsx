@@ -88,7 +88,7 @@ export function MobileHome() {
             <div className="grid grid-cols-3 gap-2 text-center">
               {[
                 { icon: Award, top: "15+", bot: "Years" },
-                { icon: Flame, top: "2,000+", bot: "Events" },
+                { icon: Flame, top: "2,500+", bot: "Events" },
                 { icon: Star, top: "4.9★", bot: "Rated" },
               ].map((s) => (
                 <div key={s.bot} className="rounded-md border border-gold/25 bg-ink/60 backdrop-blur-sm px-2 py-3">

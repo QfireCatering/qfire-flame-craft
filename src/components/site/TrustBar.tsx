@@ -17,7 +17,7 @@ export interface TrustBarProps {
 const COMPACT = [
   { icon: Tv, label: "Featured on Food Network", sub: "BBQ Brawl · Bobby Flay" },
   { icon: Trophy, label: "Cutthroat Kitchen Champion", sub: "Camp Cutthroat finalist" },
-  { icon: Users, label: "2,000+ Events Catered", sub: "Weddings · Corporate · Private" },
+  { icon: Users, label: "2,500+ Events Catered", sub: "Weddings · Corporate · Private" },
   { icon: Star, label: "4.9★ Client Rated", sub: "Hundreds of verified reviews" },
 ];
 
@@ -26,7 +26,7 @@ const FULL = [
   { icon: ChefHat, label: "Cooked Alongside Bobby Flay", sub: "BBQ Brawl, Season 2" },
   { icon: Trophy, label: "Cutthroat Kitchen Champion", sub: "Food Network winner" },
   { icon: Award, label: "Camp Cutthroat Champion", sub: "Food Network competitor" },
-  { icon: Users, label: "2,000+ Weddings & Events", sub: "Catered across two regions" },
+  { icon: Users, label: "2,500+ Weddings & Events", sub: "Catered across two regions" },
   { icon: DollarSign, label: "$10M+ in Catered Events", sub: "Trusted at every scale" },
   { icon: CalendarDays, label: "Serving AZ & SoCal Since 2012", sub: "13+ years behind the fire" },
   { icon: Star, label: "4.9-Star Rated", sub: "Across hundreds of reviews" },

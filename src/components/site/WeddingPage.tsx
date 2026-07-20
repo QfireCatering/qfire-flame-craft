@@ -130,7 +130,7 @@ const extraFaqs = [
 ];
 
 const whyChoose = [
-  { icon: Award, title: "You're hiring a real chef", body: "15+ years professional. 2,000+ weddings. Featured on Food Network. Chef Terry personally designs every menu we serve — you're not getting a sales rep and a line cook." },
+  { icon: Award, title: "You're hiring a real chef", body: "13+ years professional. 2,500+ weddings. Featured on Food Network. Chef Terry personally designs every menu we serve — you're not getting a sales rep and a line cook." },
   { icon: Clock, title: "We show up on time. Every time.", body: "In 15 years we've never missed a wedding, never been late for setup, never held up a first dance. That's the promise, and your planner will confirm it." },
   { icon: Flame, title: "Live fire. Real food. Hot plates.", body: "No sad chafing-dish reheats. Steaks, chops, chicken, and seafood grilled over hardwood charcoal right at your venue — the moment your guests remember." },
   { icon: Sparkles, title: "You'll always know what's happening next", body: "Emails answered the same day. Timelines shared early. Changes handled without a sigh. You'll never feel like you're chasing us for an update." },
@@ -328,7 +328,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
 
             <div className="mt-10 flex flex-wrap gap-8 text-sm text-bone/70">
               <div><span className="text-gold font-display text-2xl">15+</span> Years Doing This</div>
-              <div><span className="text-gold font-display text-2xl">2,000+</span> Wedding Receptions Catered</div>
+              <div><span className="text-gold font-display text-2xl">2,500+</span> Wedding Receptions Catered</div>
               <div><span className="text-gold font-display text-2xl">4.9★</span> Bride-Rated</div>
               <div><span className="text-gold font-display text-2xl">Food Network</span> Featured Chef</div>
             </div>
@@ -461,8 +461,8 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
             </div>
             <div>
               <div className="text-[0.65rem] tracking-[0.3em] text-gold uppercase mb-2">Experience</div>
-              <div className="text-bone font-display text-lg">2,000+ Events</div>
-              <div className="text-xs text-bone/60 mt-1">15+ years professional</div>
+              <div className="text-bone font-display text-lg">2,500+ Events</div>
+              <div className="text-xs text-bone/60 mt-1">13+ years professional</div>
             </div>
           </div>
         </div>

@@ -25,7 +25,7 @@ export const Route = createFileRoute("/wedding-catering-phoenix")({
   head: () => ({
     meta: [
       { title: "Phoenix Metro Wedding Reception Catering | Luxury Wedding Caterer in Scottsdale, Mesa & Paradise Valley — Qfire" },
-      { name: "description", content: "Award-winning Phoenix Metro wedding reception catering by Chef Terry Matthews (Food Network's BBQ Brawl). Live charcoal grilling, premium steaks, full-service buffets & plated dinners across Scottsdale, Mesa, Chandler, Gilbert, Paradise Valley & all of Phoenix Metro. 2,000+ weddings · 4.9★." },
+      { name: "description", content: "Award-winning Phoenix Metro wedding reception catering by Chef Terry Matthews (Food Network's BBQ Brawl). Live charcoal grilling, premium steaks, full-service buffets & plated dinners across Scottsdale, Mesa, Chandler, Gilbert, Paradise Valley & all of Phoenix Metro. 2,500+ weddings · 4.9★." },
       { property: "og:title", content: "Phoenix Metro Wedding Reception Catering — Qfire | Live-Fire Steakhouse Experience Weddings" },
       { property: "og:description", content: "Luxury wedding reception catering across Phoenix, Scottsdale, Paradise Valley & all of Phoenix Metro. Live charcoal grilling, premium steaks, professional staff, stress-free execution." },
       { property: "og:url", content: "https://qfire-flame-craft.lovable.app/wedding-catering-phoenix" },
