@@ -161,11 +161,29 @@ function Home() {
             Wood-fired flavors. Professional service. Stress-free execution.
           </p>
 
-          <div className="mt-12 flex flex-wrap gap-4">
-            <Link to="/quote" className="btn-primary">
-              See If My Date Is Available <ArrowRight className="size-4" />
-            </Link>
-            <Link to="/locations" className="btn-ghost">Choose Your Location</Link>
+          <div className="mt-12">
+            <div className="eyebrow mb-6">What We Cater</div>
+            <h2 className="font-display text-3xl md:text-4xl text-bone mb-8">Three settings. One unforgettable standard.</h2>
+            <div className="grid md:grid-cols-3 gap-px bg-white/5 border border-white/5 max-w-4xl">
+              {[
+                { img: weddingTable, label: "Weddings", body: "Plated dinners and live-fire stations for the most photographed night of your life.", href: "/weddings" as const },
+                { img: corporate, label: "Corporate", body: "Investor dinners, holiday parties, board retreats — refined hospitality at scale.", href: "/corporate" as const },
+                { img: privateParty, label: "Private Parties", body: "Backyard luxury for milestones, anniversaries and the gatherings that matter most.", href: "/private-parties" as const },
+              ].map((s) => (
+                <Link key={s.label} to={s.href} className="group relative block aspect-[3/4] overflow-hidden bg-ink">
+                  <img src={s.img} alt={s.label} loading="lazy" width={1600} height={1100}
+                    className="absolute inset-0 w-full h-full object-cover opacity-70 transition-all duration-700 group-hover:opacity-100 group-hover:scale-105" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/60 to-transparent" />
+                  <div className="absolute inset-0 p-6 flex flex-col justify-end">
+                    <div className="font-display text-2xl text-bone group-hover:text-gold transition-colors">{s.label}</div>
+                    <p className="mt-3 text-sm text-bone/70 leading-relaxed">{s.body}</p>
+                    <div className="mt-4 flex items-center gap-2 text-[0.65rem] tracking-[0.3em] uppercase text-gold opacity-0 group-hover:opacity-100 transition-opacity">
+                      Explore <ArrowRight className="size-3" />
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
           </div>
 
           <div className="mt-20 lg:mt-28 flex flex-wrap items-center gap-x-10 gap-y-4">
@@ -246,43 +264,6 @@ function Home() {
         </div>
       </section>
 
-      {/* SERVICE TYPES */}
-      <section className="py-24 lg:py-36">
-        <div className="container-luxe">
-          <div className="grid lg:grid-cols-[1fr_1.5fr] gap-12 lg:gap-20 items-end mb-20">
-            <div>
-              <div className="eyebrow mb-6">What We Cater</div>
-              <h2 className="heading-lg text-bone">Three settings. One unforgettable standard.</h2>
-            </div>
-            <p className="text-lg text-bone/65 leading-relaxed">
-              Whether you're hosting two hundred guests under bistro lights or
-              twelve at a private chef's table, the standard never changes.
-              Wood-fired. Plated by hand. Served without a single dropped detail.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-px bg-white/5 border border-white/5">
-            {[
-              { img: weddingTable, label: "Weddings", body: "Plated dinners and live-fire stations for the most photographed night of your life.", href: "/weddings" as const },
-              { img: corporate, label: "Corporate", body: "Investor dinners, holiday parties, board retreats — refined hospitality at scale.", href: "/corporate" as const },
-              { img: privateParty, label: "Private Parties", body: "Backyard luxury for milestones, anniversaries and the gatherings that matter most.", href: "/private-parties" as const },
-            ].map((s) => (
-              <Link key={s.label} to={s.href} className="group relative block aspect-[3/4] overflow-hidden bg-ink">
-                <img src={s.img} alt={s.label} loading="lazy" width={1600} height={1100}
-                  className="absolute inset-0 w-full h-full object-cover opacity-70 transition-all duration-700 group-hover:opacity-100 group-hover:scale-105" />
-                <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/60 to-transparent" />
-                <div className="absolute inset-0 p-8 lg:p-10 flex flex-col justify-end">
-                  <div className="heading-md text-bone group-hover:text-gold transition-colors">{s.label}</div>
-                  <p className="mt-4 text-sm text-bone/70 leading-relaxed">{s.body}</p>
-                  <div className="mt-6 flex items-center gap-2 text-[0.65rem] tracking-[0.3em] uppercase text-gold opacity-0 group-hover:opacity-100 transition-opacity">
-                    Explore <ArrowRight className="size-3" />
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* MENU STYLES — split with parallax feel */}
       <section className="relative">
