@@ -34,6 +34,7 @@ import { AnswerBox } from "@/components/site/AnswerBox";
 import { AtAGlance } from "@/components/site/AtAGlance";
 import { ServiceStyleComparison } from "@/components/site/ServiceStyleComparison";
 import { ReviewsSection, REVIEW_SCHEMA } from "@/components/site/ReviewsSection";
+import { MobileHomeHero } from "@/components/site/mobile/MobileHomeHero";
 
 const HOME_FAQS = [
   { q: "How far in advance should we book Qfire Catering?", a: "Most weddings book 6–12 months out for peak Saturdays. Corporate and private events are usually comfortable inside 4–8 weeks. Drop-off office catering can often be turned around in 24–72 hours. Call us — we move quickly whenever the date is open." },
@@ -129,8 +130,9 @@ export const Route = createFileRoute("/")({
 function Home() {
   return (
     <>
-      {/* HERO */}
-      <section className="relative min-h-screen flex items-center overflow-hidden grain-overlay">
+      <MobileHomeHero />
+      {/* HERO — desktop / tablet */}
+      <section className="hidden md:flex relative min-h-screen items-center overflow-hidden grain-overlay">
         <div className="absolute inset-0">
           <img src={heroImage.url} alt="Food Network Chef Terry Matthews live-fire grilling premium steaks at an elegant outdoor wedding — Qfire Catering, Phoenix Metro & San Diego County" className="absolute inset-0 w-full h-full object-cover slow-zoom" width={1920} height={1280} />
           <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/60 to-ink/30" />
