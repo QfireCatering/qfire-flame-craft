@@ -14,6 +14,7 @@ import { Route as WhyQfireRouteImport } from './routes/why-qfire'
 import { Route as WeddingsRouteImport } from './routes/weddings'
 import { Route as WeddingFaqRouteImport } from './routes/wedding-faq'
 import { Route as WeddingCateringSanDiegoRouteImport } from './routes/wedding-catering-san-diego'
+import { Route as WeddingCateringPhoenixSanDiegoRouteImport } from './routes/wedding-catering-phoenix-san-diego'
 import { Route as WeddingCateringPhoenixRouteImport } from './routes/wedding-catering-phoenix'
 import { Route as TermsRouteImport } from './routes/terms'
 import { Route as SteakhouseExperienceSanDiegoRouteImport } from './routes/steakhouse-experience-san-diego'
@@ -23,28 +24,39 @@ import { Route as SteakSeafoodMenuSanDiegoRouteImport } from './routes/steak-sea
 import { Route as SteakSeafoodMenuRouteImport } from './routes/steak-seafood-menu'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ServiceAreasRouteImport } from './routes/service-areas'
+import { Route as SanDiegoCateringRouteImport } from './routes/san-diego-catering'
 import { Route as SanDiegoRouteImport } from './routes/san-diego'
 import { Route as ReviewsRouteImport } from './routes/reviews'
 import { Route as RentalsRouteImport } from './routes/rentals'
 import { Route as QuoteRouteImport } from './routes/quote'
+import { Route as PrivatechefRouteImport } from './routes/privatechef'
 import { Route as PrivatePartyCateringSanDiegoRouteImport } from './routes/private-party-catering-san-diego'
 import { Route as PrivatePartyCateringPhoenixRouteImport } from './routes/private-party-catering-phoenix'
 import { Route as PrivatePartiesRouteImport } from './routes/private-parties'
+import { Route as PrivateEventCateringRouteImport } from './routes/private-event-catering'
+import { Route as PrivacyPageRouteImport } from './routes/privacy-page'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as PicturesRouteImport } from './routes/pictures'
+import { Route as PicPageRouteImport } from './routes/pic-page'
+import { Route as PhoenixCateringRouteImport } from './routes/phoenix-catering'
 import { Route as PhoenixRouteImport } from './routes/phoenix'
 import { Route as OutdoorWeddingGrillingRouteImport } from './routes/outdoor-wedding-grilling'
 import { Route as MenusRouteImport } from './routes/menus'
 import { Route as MediaRouteImport } from './routes/media'
 import { Route as LocationsRouteImport } from './routes/locations'
+import { Route as InquiryServicesPageRouteImport } from './routes/inquiry-services-page'
+import { Route as FaqSRouteImport } from './routes/faq-s'
 import { Route as FaqRouteImport } from './routes/faq'
 import { Route as CorporateCateringSanDiegoRouteImport } from './routes/corporate-catering-san-diego'
 import { Route as CorporateCateringPhoenixRouteImport } from './routes/corporate-catering-phoenix'
 import { Route as CorporateRouteImport } from './routes/corporate'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as CompanyCateringPhoenixSandiegoRouteImport } from './routes/company-catering-phoenix-sandiego'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as BartendingRouteImport } from './routes/bartending'
+import { Route as BarServiceRouteImport } from './routes/bar-service'
+import { Route as AllInclusivePricingRouteImport } from './routes/all-inclusive-pricing'
 import { Route as AccessibilityRouteImport } from './routes/accessibility'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
@@ -79,6 +91,12 @@ const WeddingCateringSanDiegoRoute = WeddingCateringSanDiegoRouteImport.update({
   path: '/wedding-catering-san-diego',
   getParentRoute: () => rootRouteImport,
 } as any)
+const WeddingCateringPhoenixSanDiegoRoute =
+  WeddingCateringPhoenixSanDiegoRouteImport.update({
+    id: '/wedding-catering-phoenix-san-diego',
+    path: '/wedding-catering-phoenix-san-diego',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const WeddingCateringPhoenixRoute = WeddingCateringPhoenixRouteImport.update({
   id: '/wedding-catering-phoenix',
   path: '/wedding-catering-phoenix',
@@ -127,6 +145,11 @@ const ServiceAreasRoute = ServiceAreasRouteImport.update({
   path: '/service-areas',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SanDiegoCateringRoute = SanDiegoCateringRouteImport.update({
+  id: '/san-diego-catering',
+  path: '/san-diego-catering',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SanDiegoRoute = SanDiegoRouteImport.update({
   id: '/san-diego',
   path: '/san-diego',
@@ -147,6 +170,11 @@ const QuoteRoute = QuoteRouteImport.update({
   path: '/quote',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PrivatechefRoute = PrivatechefRouteImport.update({
+  id: '/privatechef',
+  path: '/privatechef',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PrivatePartyCateringSanDiegoRoute =
   PrivatePartyCateringSanDiegoRouteImport.update({
     id: '/private-party-catering-san-diego',
@@ -164,6 +192,16 @@ const PrivatePartiesRoute = PrivatePartiesRouteImport.update({
   path: '/private-parties',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PrivateEventCateringRoute = PrivateEventCateringRouteImport.update({
+  id: '/private-event-catering',
+  path: '/private-event-catering',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyPageRoute = PrivacyPageRouteImport.update({
+  id: '/privacy-page',
+  path: '/privacy-page',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PrivacyRoute = PrivacyRouteImport.update({
   id: '/privacy',
   path: '/privacy',
@@ -177,6 +215,16 @@ const PricingRoute = PricingRouteImport.update({
 const PicturesRoute = PicturesRouteImport.update({
   id: '/pictures',
   path: '/pictures',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PicPageRoute = PicPageRouteImport.update({
+  id: '/pic-page',
+  path: '/pic-page',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PhoenixCateringRoute = PhoenixCateringRouteImport.update({
+  id: '/phoenix-catering',
+  path: '/phoenix-catering',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PhoenixRoute = PhoenixRouteImport.update({
@@ -202,6 +250,16 @@ const MediaRoute = MediaRouteImport.update({
 const LocationsRoute = LocationsRouteImport.update({
   id: '/locations',
   path: '/locations',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InquiryServicesPageRoute = InquiryServicesPageRouteImport.update({
+  id: '/inquiry-services-page',
+  path: '/inquiry-services-page',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaqSRoute = FaqSRouteImport.update({
+  id: '/faq-s',
+  path: '/faq-s',
   getParentRoute: () => rootRouteImport,
 } as any)
 const FaqRoute = FaqRouteImport.update({
@@ -231,6 +289,12 @@ const ContactRoute = ContactRouteImport.update({
   path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CompanyCateringPhoenixSandiegoRoute =
+  CompanyCateringPhoenixSandiegoRouteImport.update({
+    id: '/company-catering-phoenix-sandiego',
+    path: '/company-catering-phoenix-sandiego',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const BlogRoute = BlogRouteImport.update({
   id: '/blog',
   path: '/blog',
@@ -239,6 +303,16 @@ const BlogRoute = BlogRouteImport.update({
 const BartendingRoute = BartendingRouteImport.update({
   id: '/bartending',
   path: '/bartending',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BarServiceRoute = BarServiceRouteImport.update({
+  id: '/bar-service',
+  path: '/bar-service',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AllInclusivePricingRoute = AllInclusivePricingRouteImport.update({
+  id: '/all-inclusive-pricing',
+  path: '/all-inclusive-pricing',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AccessibilityRoute = AccessibilityRouteImport.update({
@@ -286,28 +360,39 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/accessibility': typeof AccessibilityRoute
+  '/all-inclusive-pricing': typeof AllInclusivePricingRoute
+  '/bar-service': typeof BarServiceRoute
   '/bartending': typeof BartendingRoute
   '/blog': typeof BlogRouteWithChildren
+  '/company-catering-phoenix-sandiego': typeof CompanyCateringPhoenixSandiegoRoute
   '/contact': typeof ContactRoute
   '/corporate': typeof CorporateRoute
   '/corporate-catering-phoenix': typeof CorporateCateringPhoenixRoute
   '/corporate-catering-san-diego': typeof CorporateCateringSanDiegoRoute
   '/faq': typeof FaqRoute
+  '/faq-s': typeof FaqSRoute
+  '/inquiry-services-page': typeof InquiryServicesPageRoute
   '/locations': typeof LocationsRoute
   '/media': typeof MediaRoute
   '/menus': typeof MenusRoute
   '/outdoor-wedding-grilling': typeof OutdoorWeddingGrillingRoute
   '/phoenix': typeof PhoenixRouteWithChildren
+  '/phoenix-catering': typeof PhoenixCateringRoute
+  '/pic-page': typeof PicPageRoute
   '/pictures': typeof PicturesRoute
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
+  '/privacy-page': typeof PrivacyPageRoute
+  '/private-event-catering': typeof PrivateEventCateringRoute
   '/private-parties': typeof PrivatePartiesRoute
   '/private-party-catering-phoenix': typeof PrivatePartyCateringPhoenixRoute
   '/private-party-catering-san-diego': typeof PrivatePartyCateringSanDiegoRoute
+  '/privatechef': typeof PrivatechefRoute
   '/quote': typeof QuoteRoute
   '/rentals': typeof RentalsRoute
   '/reviews': typeof ReviewsRoute
   '/san-diego': typeof SanDiegoRouteWithChildren
+  '/san-diego-catering': typeof SanDiegoCateringRoute
   '/service-areas': typeof ServiceAreasRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/steak-seafood-menu': typeof SteakSeafoodMenuRoute
@@ -317,6 +402,7 @@ export interface FileRoutesByFullPath {
   '/steakhouse-experience-san-diego': typeof SteakhouseExperienceSanDiegoRoute
   '/terms': typeof TermsRoute
   '/wedding-catering-phoenix': typeof WeddingCateringPhoenixRoute
+  '/wedding-catering-phoenix-san-diego': typeof WeddingCateringPhoenixSanDiegoRoute
   '/wedding-catering-san-diego': typeof WeddingCateringSanDiegoRoute
   '/wedding-faq': typeof WeddingFaqRoute
   '/weddings': typeof WeddingsRoute
@@ -332,26 +418,37 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/accessibility': typeof AccessibilityRoute
+  '/all-inclusive-pricing': typeof AllInclusivePricingRoute
+  '/bar-service': typeof BarServiceRoute
   '/bartending': typeof BartendingRoute
   '/blog': typeof BlogRouteWithChildren
+  '/company-catering-phoenix-sandiego': typeof CompanyCateringPhoenixSandiegoRoute
   '/contact': typeof ContactRoute
   '/corporate': typeof CorporateRoute
   '/corporate-catering-phoenix': typeof CorporateCateringPhoenixRoute
   '/corporate-catering-san-diego': typeof CorporateCateringSanDiegoRoute
   '/faq': typeof FaqRoute
+  '/faq-s': typeof FaqSRoute
+  '/inquiry-services-page': typeof InquiryServicesPageRoute
   '/locations': typeof LocationsRoute
   '/media': typeof MediaRoute
   '/menus': typeof MenusRoute
   '/outdoor-wedding-grilling': typeof OutdoorWeddingGrillingRoute
+  '/phoenix-catering': typeof PhoenixCateringRoute
+  '/pic-page': typeof PicPageRoute
   '/pictures': typeof PicturesRoute
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
+  '/privacy-page': typeof PrivacyPageRoute
+  '/private-event-catering': typeof PrivateEventCateringRoute
   '/private-parties': typeof PrivatePartiesRoute
   '/private-party-catering-phoenix': typeof PrivatePartyCateringPhoenixRoute
   '/private-party-catering-san-diego': typeof PrivatePartyCateringSanDiegoRoute
+  '/privatechef': typeof PrivatechefRoute
   '/quote': typeof QuoteRoute
   '/rentals': typeof RentalsRoute
   '/reviews': typeof ReviewsRoute
+  '/san-diego-catering': typeof SanDiegoCateringRoute
   '/service-areas': typeof ServiceAreasRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/steak-seafood-menu': typeof SteakSeafoodMenuRoute
@@ -361,6 +458,7 @@ export interface FileRoutesByTo {
   '/steakhouse-experience-san-diego': typeof SteakhouseExperienceSanDiegoRoute
   '/terms': typeof TermsRoute
   '/wedding-catering-phoenix': typeof WeddingCateringPhoenixRoute
+  '/wedding-catering-phoenix-san-diego': typeof WeddingCateringPhoenixSanDiegoRoute
   '/wedding-catering-san-diego': typeof WeddingCateringSanDiegoRoute
   '/wedding-faq': typeof WeddingFaqRoute
   '/weddings': typeof WeddingsRoute
@@ -377,28 +475,39 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/accessibility': typeof AccessibilityRoute
+  '/all-inclusive-pricing': typeof AllInclusivePricingRoute
+  '/bar-service': typeof BarServiceRoute
   '/bartending': typeof BartendingRoute
   '/blog': typeof BlogRouteWithChildren
+  '/company-catering-phoenix-sandiego': typeof CompanyCateringPhoenixSandiegoRoute
   '/contact': typeof ContactRoute
   '/corporate': typeof CorporateRoute
   '/corporate-catering-phoenix': typeof CorporateCateringPhoenixRoute
   '/corporate-catering-san-diego': typeof CorporateCateringSanDiegoRoute
   '/faq': typeof FaqRoute
+  '/faq-s': typeof FaqSRoute
+  '/inquiry-services-page': typeof InquiryServicesPageRoute
   '/locations': typeof LocationsRoute
   '/media': typeof MediaRoute
   '/menus': typeof MenusRoute
   '/outdoor-wedding-grilling': typeof OutdoorWeddingGrillingRoute
   '/phoenix': typeof PhoenixRouteWithChildren
+  '/phoenix-catering': typeof PhoenixCateringRoute
+  '/pic-page': typeof PicPageRoute
   '/pictures': typeof PicturesRoute
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
+  '/privacy-page': typeof PrivacyPageRoute
+  '/private-event-catering': typeof PrivateEventCateringRoute
   '/private-parties': typeof PrivatePartiesRoute
   '/private-party-catering-phoenix': typeof PrivatePartyCateringPhoenixRoute
   '/private-party-catering-san-diego': typeof PrivatePartyCateringSanDiegoRoute
+  '/privatechef': typeof PrivatechefRoute
   '/quote': typeof QuoteRoute
   '/rentals': typeof RentalsRoute
   '/reviews': typeof ReviewsRoute
   '/san-diego': typeof SanDiegoRouteWithChildren
+  '/san-diego-catering': typeof SanDiegoCateringRoute
   '/service-areas': typeof ServiceAreasRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/steak-seafood-menu': typeof SteakSeafoodMenuRoute
@@ -408,6 +517,7 @@ export interface FileRoutesById {
   '/steakhouse-experience-san-diego': typeof SteakhouseExperienceSanDiegoRoute
   '/terms': typeof TermsRoute
   '/wedding-catering-phoenix': typeof WeddingCateringPhoenixRoute
+  '/wedding-catering-phoenix-san-diego': typeof WeddingCateringPhoenixSanDiegoRoute
   '/wedding-catering-san-diego': typeof WeddingCateringSanDiegoRoute
   '/wedding-faq': typeof WeddingFaqRoute
   '/weddings': typeof WeddingsRoute
@@ -425,28 +535,39 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/accessibility'
+    | '/all-inclusive-pricing'
+    | '/bar-service'
     | '/bartending'
     | '/blog'
+    | '/company-catering-phoenix-sandiego'
     | '/contact'
     | '/corporate'
     | '/corporate-catering-phoenix'
     | '/corporate-catering-san-diego'
     | '/faq'
+    | '/faq-s'
+    | '/inquiry-services-page'
     | '/locations'
     | '/media'
     | '/menus'
     | '/outdoor-wedding-grilling'
     | '/phoenix'
+    | '/phoenix-catering'
+    | '/pic-page'
     | '/pictures'
     | '/pricing'
     | '/privacy'
+    | '/privacy-page'
+    | '/private-event-catering'
     | '/private-parties'
     | '/private-party-catering-phoenix'
     | '/private-party-catering-san-diego'
+    | '/privatechef'
     | '/quote'
     | '/rentals'
     | '/reviews'
     | '/san-diego'
+    | '/san-diego-catering'
     | '/service-areas'
     | '/sitemap.xml'
     | '/steak-seafood-menu'
@@ -456,6 +577,7 @@ export interface FileRouteTypes {
     | '/steakhouse-experience-san-diego'
     | '/terms'
     | '/wedding-catering-phoenix'
+    | '/wedding-catering-phoenix-san-diego'
     | '/wedding-catering-san-diego'
     | '/wedding-faq'
     | '/weddings'
@@ -471,26 +593,37 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/accessibility'
+    | '/all-inclusive-pricing'
+    | '/bar-service'
     | '/bartending'
     | '/blog'
+    | '/company-catering-phoenix-sandiego'
     | '/contact'
     | '/corporate'
     | '/corporate-catering-phoenix'
     | '/corporate-catering-san-diego'
     | '/faq'
+    | '/faq-s'
+    | '/inquiry-services-page'
     | '/locations'
     | '/media'
     | '/menus'
     | '/outdoor-wedding-grilling'
+    | '/phoenix-catering'
+    | '/pic-page'
     | '/pictures'
     | '/pricing'
     | '/privacy'
+    | '/privacy-page'
+    | '/private-event-catering'
     | '/private-parties'
     | '/private-party-catering-phoenix'
     | '/private-party-catering-san-diego'
+    | '/privatechef'
     | '/quote'
     | '/rentals'
     | '/reviews'
+    | '/san-diego-catering'
     | '/service-areas'
     | '/sitemap.xml'
     | '/steak-seafood-menu'
@@ -500,6 +633,7 @@ export interface FileRouteTypes {
     | '/steakhouse-experience-san-diego'
     | '/terms'
     | '/wedding-catering-phoenix'
+    | '/wedding-catering-phoenix-san-diego'
     | '/wedding-catering-san-diego'
     | '/wedding-faq'
     | '/weddings'
@@ -515,28 +649,39 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/accessibility'
+    | '/all-inclusive-pricing'
+    | '/bar-service'
     | '/bartending'
     | '/blog'
+    | '/company-catering-phoenix-sandiego'
     | '/contact'
     | '/corporate'
     | '/corporate-catering-phoenix'
     | '/corporate-catering-san-diego'
     | '/faq'
+    | '/faq-s'
+    | '/inquiry-services-page'
     | '/locations'
     | '/media'
     | '/menus'
     | '/outdoor-wedding-grilling'
     | '/phoenix'
+    | '/phoenix-catering'
+    | '/pic-page'
     | '/pictures'
     | '/pricing'
     | '/privacy'
+    | '/privacy-page'
+    | '/private-event-catering'
     | '/private-parties'
     | '/private-party-catering-phoenix'
     | '/private-party-catering-san-diego'
+    | '/privatechef'
     | '/quote'
     | '/rentals'
     | '/reviews'
     | '/san-diego'
+    | '/san-diego-catering'
     | '/service-areas'
     | '/sitemap.xml'
     | '/steak-seafood-menu'
@@ -546,6 +691,7 @@ export interface FileRouteTypes {
     | '/steakhouse-experience-san-diego'
     | '/terms'
     | '/wedding-catering-phoenix'
+    | '/wedding-catering-phoenix-san-diego'
     | '/wedding-catering-san-diego'
     | '/wedding-faq'
     | '/weddings'
@@ -562,28 +708,39 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   AccessibilityRoute: typeof AccessibilityRoute
+  AllInclusivePricingRoute: typeof AllInclusivePricingRoute
+  BarServiceRoute: typeof BarServiceRoute
   BartendingRoute: typeof BartendingRoute
   BlogRoute: typeof BlogRouteWithChildren
+  CompanyCateringPhoenixSandiegoRoute: typeof CompanyCateringPhoenixSandiegoRoute
   ContactRoute: typeof ContactRoute
   CorporateRoute: typeof CorporateRoute
   CorporateCateringPhoenixRoute: typeof CorporateCateringPhoenixRoute
   CorporateCateringSanDiegoRoute: typeof CorporateCateringSanDiegoRoute
   FaqRoute: typeof FaqRoute
+  FaqSRoute: typeof FaqSRoute
+  InquiryServicesPageRoute: typeof InquiryServicesPageRoute
   LocationsRoute: typeof LocationsRoute
   MediaRoute: typeof MediaRoute
   MenusRoute: typeof MenusRoute
   OutdoorWeddingGrillingRoute: typeof OutdoorWeddingGrillingRoute
   PhoenixRoute: typeof PhoenixRouteWithChildren
+  PhoenixCateringRoute: typeof PhoenixCateringRoute
+  PicPageRoute: typeof PicPageRoute
   PicturesRoute: typeof PicturesRoute
   PricingRoute: typeof PricingRoute
   PrivacyRoute: typeof PrivacyRoute
+  PrivacyPageRoute: typeof PrivacyPageRoute
+  PrivateEventCateringRoute: typeof PrivateEventCateringRoute
   PrivatePartiesRoute: typeof PrivatePartiesRoute
   PrivatePartyCateringPhoenixRoute: typeof PrivatePartyCateringPhoenixRoute
   PrivatePartyCateringSanDiegoRoute: typeof PrivatePartyCateringSanDiegoRoute
+  PrivatechefRoute: typeof PrivatechefRoute
   QuoteRoute: typeof QuoteRoute
   RentalsRoute: typeof RentalsRoute
   ReviewsRoute: typeof ReviewsRoute
   SanDiegoRoute: typeof SanDiegoRouteWithChildren
+  SanDiegoCateringRoute: typeof SanDiegoCateringRoute
   ServiceAreasRoute: typeof ServiceAreasRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   SteakSeafoodMenuRoute: typeof SteakSeafoodMenuRoute
@@ -593,6 +750,7 @@ export interface RootRouteChildren {
   SteakhouseExperienceSanDiegoRoute: typeof SteakhouseExperienceSanDiegoRoute
   TermsRoute: typeof TermsRoute
   WeddingCateringPhoenixRoute: typeof WeddingCateringPhoenixRoute
+  WeddingCateringPhoenixSanDiegoRoute: typeof WeddingCateringPhoenixSanDiegoRoute
   WeddingCateringSanDiegoRoute: typeof WeddingCateringSanDiegoRoute
   WeddingFaqRoute: typeof WeddingFaqRoute
   WeddingsRoute: typeof WeddingsRoute
@@ -635,6 +793,13 @@ declare module '@tanstack/react-router' {
       path: '/wedding-catering-san-diego'
       fullPath: '/wedding-catering-san-diego'
       preLoaderRoute: typeof WeddingCateringSanDiegoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/wedding-catering-phoenix-san-diego': {
+      id: '/wedding-catering-phoenix-san-diego'
+      path: '/wedding-catering-phoenix-san-diego'
+      fullPath: '/wedding-catering-phoenix-san-diego'
+      preLoaderRoute: typeof WeddingCateringPhoenixSanDiegoRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/wedding-catering-phoenix': {
@@ -700,6 +865,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServiceAreasRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/san-diego-catering': {
+      id: '/san-diego-catering'
+      path: '/san-diego-catering'
+      fullPath: '/san-diego-catering'
+      preLoaderRoute: typeof SanDiegoCateringRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/san-diego': {
       id: '/san-diego'
       path: '/san-diego'
@@ -728,6 +900,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof QuoteRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/privatechef': {
+      id: '/privatechef'
+      path: '/privatechef'
+      fullPath: '/privatechef'
+      preLoaderRoute: typeof PrivatechefRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/private-party-catering-san-diego': {
       id: '/private-party-catering-san-diego'
       path: '/private-party-catering-san-diego'
@@ -749,6 +928,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PrivatePartiesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/private-event-catering': {
+      id: '/private-event-catering'
+      path: '/private-event-catering'
+      fullPath: '/private-event-catering'
+      preLoaderRoute: typeof PrivateEventCateringRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy-page': {
+      id: '/privacy-page'
+      path: '/privacy-page'
+      fullPath: '/privacy-page'
+      preLoaderRoute: typeof PrivacyPageRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/privacy': {
       id: '/privacy'
       path: '/privacy'
@@ -768,6 +961,20 @@ declare module '@tanstack/react-router' {
       path: '/pictures'
       fullPath: '/pictures'
       preLoaderRoute: typeof PicturesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pic-page': {
+      id: '/pic-page'
+      path: '/pic-page'
+      fullPath: '/pic-page'
+      preLoaderRoute: typeof PicPageRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/phoenix-catering': {
+      id: '/phoenix-catering'
+      path: '/phoenix-catering'
+      fullPath: '/phoenix-catering'
+      preLoaderRoute: typeof PhoenixCateringRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/phoenix': {
@@ -805,6 +1012,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LocationsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/inquiry-services-page': {
+      id: '/inquiry-services-page'
+      path: '/inquiry-services-page'
+      fullPath: '/inquiry-services-page'
+      preLoaderRoute: typeof InquiryServicesPageRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faq-s': {
+      id: '/faq-s'
+      path: '/faq-s'
+      fullPath: '/faq-s'
+      preLoaderRoute: typeof FaqSRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/faq': {
       id: '/faq'
       path: '/faq'
@@ -840,6 +1061,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/company-catering-phoenix-sandiego': {
+      id: '/company-catering-phoenix-sandiego'
+      path: '/company-catering-phoenix-sandiego'
+      fullPath: '/company-catering-phoenix-sandiego'
+      preLoaderRoute: typeof CompanyCateringPhoenixSandiegoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog': {
       id: '/blog'
       path: '/blog'
@@ -852,6 +1080,20 @@ declare module '@tanstack/react-router' {
       path: '/bartending'
       fullPath: '/bartending'
       preLoaderRoute: typeof BartendingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/bar-service': {
+      id: '/bar-service'
+      path: '/bar-service'
+      fullPath: '/bar-service'
+      preLoaderRoute: typeof BarServiceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/all-inclusive-pricing': {
+      id: '/all-inclusive-pricing'
+      path: '/all-inclusive-pricing'
+      fullPath: '/all-inclusive-pricing'
+      preLoaderRoute: typeof AllInclusivePricingRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/accessibility': {
@@ -954,28 +1196,39 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   AccessibilityRoute: AccessibilityRoute,
+  AllInclusivePricingRoute: AllInclusivePricingRoute,
+  BarServiceRoute: BarServiceRoute,
   BartendingRoute: BartendingRoute,
   BlogRoute: BlogRouteWithChildren,
+  CompanyCateringPhoenixSandiegoRoute: CompanyCateringPhoenixSandiegoRoute,
   ContactRoute: ContactRoute,
   CorporateRoute: CorporateRoute,
   CorporateCateringPhoenixRoute: CorporateCateringPhoenixRoute,
   CorporateCateringSanDiegoRoute: CorporateCateringSanDiegoRoute,
   FaqRoute: FaqRoute,
+  FaqSRoute: FaqSRoute,
+  InquiryServicesPageRoute: InquiryServicesPageRoute,
   LocationsRoute: LocationsRoute,
   MediaRoute: MediaRoute,
   MenusRoute: MenusRoute,
   OutdoorWeddingGrillingRoute: OutdoorWeddingGrillingRoute,
   PhoenixRoute: PhoenixRouteWithChildren,
+  PhoenixCateringRoute: PhoenixCateringRoute,
+  PicPageRoute: PicPageRoute,
   PicturesRoute: PicturesRoute,
   PricingRoute: PricingRoute,
   PrivacyRoute: PrivacyRoute,
+  PrivacyPageRoute: PrivacyPageRoute,
+  PrivateEventCateringRoute: PrivateEventCateringRoute,
   PrivatePartiesRoute: PrivatePartiesRoute,
   PrivatePartyCateringPhoenixRoute: PrivatePartyCateringPhoenixRoute,
   PrivatePartyCateringSanDiegoRoute: PrivatePartyCateringSanDiegoRoute,
+  PrivatechefRoute: PrivatechefRoute,
   QuoteRoute: QuoteRoute,
   RentalsRoute: RentalsRoute,
   ReviewsRoute: ReviewsRoute,
   SanDiegoRoute: SanDiegoRouteWithChildren,
+  SanDiegoCateringRoute: SanDiegoCateringRoute,
   ServiceAreasRoute: ServiceAreasRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   SteakSeafoodMenuRoute: SteakSeafoodMenuRoute,
@@ -985,6 +1238,7 @@ const rootRouteChildren: RootRouteChildren = {
   SteakhouseExperienceSanDiegoRoute: SteakhouseExperienceSanDiegoRoute,
   TermsRoute: TermsRoute,
   WeddingCateringPhoenixRoute: WeddingCateringPhoenixRoute,
+  WeddingCateringPhoenixSanDiegoRoute: WeddingCateringPhoenixSanDiegoRoute,
   WeddingCateringSanDiegoRoute: WeddingCateringSanDiegoRoute,
   WeddingFaqRoute: WeddingFaqRoute,
   WeddingsRoute: WeddingsRoute,
