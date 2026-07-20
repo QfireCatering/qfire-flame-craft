@@ -173,7 +173,7 @@ export function MobileHome() {
             <div className="p-4">
               <div className="text-[0.58rem] tracking-[0.3em] uppercase text-gold mb-1">Wood-Fire / BBQ</div>
               <div className="font-display text-xl text-bone">Smoke. Hardwood. Live fire.</div>
-              <p className="mt-2 text-sm text-bone/70">Brisket, tri-tip, pulled pork, chicken. From <span className="text-gold font-semibold">$12.99/guest</span>.</p>
+              <p className="mt-2 text-sm text-bone/70">Brisket, tri-tip, pulled pork, chicken. From <span className="text-gold font-semibold">$13.99/guest</span>.</p>
               <div className="mt-3 inline-flex items-center gap-1.5 text-gold text-xs tracking-[0.2em] uppercase font-semibold">
                 View Menu <ArrowRight className="size-3.5" />
               </div>
@@ -307,7 +307,7 @@ export function MobileHome() {
         <div className="divide-y divide-white/8 border-y border-white/8">
           {[
             { q: "How far out should I book?", a: "Peak Saturdays go 6–12 months out. Corporate and private events, 4–8 weeks. Short-notice? Call — we move quickly." },
-            { q: "What does it cost?", a: "Wood-fire BBQ from $12.99/guest (Phoenix), $15.99/guest (San Diego). Steakhouse Experience from $74/guest. Every quote is itemized." },
+            { q: "What does it cost?", a: "Wood-fire BBQ from $13.99/guest (Phoenix), $16.99/guest (San Diego). Steakhouse Experience from $74/guest. Every quote is itemized." },
             { q: "Do you handle everything?", a: "Yes. Menu, staff, setup, live-fire cooking, service, breakdown. You enjoy your event." },
             { q: "Allergies and dietary needs?", a: "Vegetarian, vegan, GF, DF, kosher-style, Halal-friendly, and dedicated allergy prep — all standard." },
           ].map((f) => (

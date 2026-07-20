@@ -20,7 +20,7 @@ export function RegionalPricing({ regionKey }: { regionKey: RegionKey }) {
           <div className="text-center max-w-2xl mx-auto mb-14">
             <div className="eyebrow justify-center mb-6">Wood-Fire BBQ Catering — Pricing</div>
             <h2 className="heading-lg text-bone">
-              Wood-fire catering starting at <span className="text-gold italic font-light">{isPhx ? "$12.99" : "$15.99"}/guest.</span>
+              Wood-fire catering starting at <span className="text-gold italic font-light">{isPhx ? "$13.99" : "$16.99"}/guest.</span>
             </h2>
             <p className="mt-5 text-bone/65 text-base font-light">
               Pick your package. Pick your meats. We bring the fire, the food, and the team.
@@ -33,7 +33,7 @@ export function RegionalPricing({ regionKey }: { regionKey: RegionKey }) {
             <article className="relative p-8 lg:p-10 flex flex-col bg-ink/60 border border-white/10">
               <div className="text-[0.7rem] tracking-[0.3em] uppercase text-gold mb-3">1 Meat Package</div>
               <div className="flex items-baseline gap-2 mb-6">
-                <span className="text-4xl font-display text-bone tracking-tight">{isPhx ? "$12.99" : "$15.99"}</span>
+                <span className="text-4xl font-display text-bone tracking-tight">{isPhx ? "$13.99" : "$16.99"}</span>
                 <span className="text-bone/55 text-sm">per person</span>
               </div>
               <div className="flex-1">
@@ -53,7 +53,7 @@ export function RegionalPricing({ regionKey }: { regionKey: RegionKey }) {
             <article className="relative p-8 lg:p-10 flex flex-col bg-ink/60 border border-white/10">
               <div className="text-[0.7rem] tracking-[0.3em] uppercase text-gold mb-3">2 Meat Package</div>
               <div className="flex items-baseline gap-2 mb-6">
-                <span className="text-4xl font-display text-bone tracking-tight">{isPhx ? "$17.99" : "$21.99"}</span>
+                <span className="text-4xl font-display text-bone tracking-tight">{isPhx ? "$18.99" : "$22.99"}</span>
                 <span className="text-bone/55 text-sm">per person</span>
               </div>
               <div className="flex-1">
@@ -73,7 +73,7 @@ export function RegionalPricing({ regionKey }: { regionKey: RegionKey }) {
             <article className="relative p-8 lg:p-10 flex flex-col bg-ink/60 border border-white/10">
               <div className="text-[0.7rem] tracking-[0.3em] uppercase text-gold mb-3">Premium Package</div>
               <div className="flex items-baseline gap-2 mb-6">
-                <span className="text-4xl font-display text-bone tracking-tight">{isPhx ? "$25.99" : "$33.99"}</span>
+                <span className="text-4xl font-display text-bone tracking-tight">{isPhx ? "$26.99" : "$34.99"}</span>
                 <span className="text-bone/55 text-sm">per person</span>
               </div>
               <div className="flex-1">

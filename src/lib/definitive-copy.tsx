@@ -552,7 +552,7 @@ definitiveCopy.region = {
     { q: "Do you have an approved-vendor list with local venues?", a: "Yes — we're on the approved-vendor list at many premium venues in both regions. Tell us your venue and we'll likely already know the kitchen." },
     { q: "What's the fastest you can turn a quote?", a: "For smaller drop-offs and meeting catering, often 24–48 hours. For weddings and large events, 3–5 business days for a fully itemized proposal." },
   ],
-  ctaLabel: "Request a Quote",
+  ctaLabel: "Leave a Message",
 };
 
 
@@ -612,7 +612,7 @@ definitiveCopy.pricing = {
   explainer:
     "Qfire pricing is itemized and transparent. You see exactly what the food costs, what the service costs, what the rentals cost, and what travel costs — before you sign. The number on your proposal is the number on your final invoice.",
   explainerLong:
-    "Pricing varies by region, service style, guest count, and menu. Wood-Fired starts at $12.99/guest in Phoenix and $15.99/guest in San Diego. Steakhouse Experience starts at $74/guest buffet and $128/guest plated. Most full-service weddings and corporate events land between $65 and $145 per guest, all-in.",
+    "Pricing varies by region, service style, guest count, and menu. Wood-Fired starts at $13.99/guest in Phoenix and $16.99/guest in San Diego. Steakhouse Experience starts at $74/guest buffet and $128/guest plated. Most full-service weddings and corporate events land between $65 and $145 per guest, all-in.",
   included: [
     "Food and beverage line items",
     "Service staff hours by role",
@@ -1008,7 +1008,7 @@ definitiveCopy.gallery = {
     { title: "Plating is the proof", body: "Anyone can post one good plate. We can show 200." },
   ],
   confidence: baseConfidence,
-  ctaLabel: "Request a Quote",
+  ctaLabel: "Leave a Message",
 };
 
 // Reviews preset
@@ -1046,7 +1046,7 @@ definitiveCopy.reviews = {
     { title: "Reference-ready", body: "We'll put you on the phone with someone who hosted a similar event." },
   ],
   confidence: baseConfidence,
-  ctaLabel: "Request a Quote",
+  ctaLabel: "Leave a Message",
 };
 
 // Blog / journal preset
@@ -1086,7 +1086,7 @@ definitiveCopy.blog = {
     { title: "Updated regularly", body: "New posts after meaningful events and seasons." },
   ],
   confidence: baseConfidence,
-  ctaLabel: "Request a Quote",
+  ctaLabel: "Leave a Message",
 };
 
 // Venues preset
@@ -1126,5 +1126,5 @@ definitiveCopy.venues = {
     { title: "Manager-friendly", body: "Venue managers ask for us by name." },
   ],
   confidence: baseConfidence,
-  ctaLabel: "Request a Quote",
+  ctaLabel: "Leave a Message",
 };

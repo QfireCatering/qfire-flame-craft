@@ -58,7 +58,7 @@ const regionHero: Record<RegionKey, string> = {
 export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
   const r = regions[regionKey];
   const regionFaqs = [
-    { q: `How much does ${r.shortName} catering cost?`, a: `Wood-fire catering in ${r.shortName} starts at ${regionKey === "phoenix" ? "$12.99" : "$15.99"} per guest. Our premium live-fire dinner experience starts at ${regionKey === "phoenix" ? "$74" : "$79"} per guest with the buffet, ${regionKey === "phoenix" ? "$89" : "$94"} family style, and ${regionKey === "phoenix" ? "$128" : "$133"} plated. Every proposal is itemized, fully customizable, and built one-to-one with you.` },
+    { q: `How much does ${r.shortName} catering cost?`, a: `Wood-fire catering in ${r.shortName} starts at ${regionKey === "phoenix" ? "$13.99" : "$16.99"} per guest. Our premium live-fire dinner experience starts at ${regionKey === "phoenix" ? "$74" : "$79"} per guest with the buffet, ${regionKey === "phoenix" ? "$89" : "$94"} family style, and ${regionKey === "phoenix" ? "$128" : "$133"} plated. Every proposal is itemized, fully customizable, and built one-to-one with you.` },
     { q: `How far in advance should we book?`, a: `${r.shortName} weddings typically book 6–12 months out for peak Saturdays. Corporate and private events are usually comfortable inside 4–8 weeks. Drop-off office catering can often be turned around in 24–72 hours. Call us — we move quickly when we can.` },
     { q: `Do you bring everything to the venue?`, a: `Yes. We arrive with chefs, uniformed servers, live-fire grills, hot-holding equipment, buffet displays, serviceware, and any rentals you've added. Setup is done before guests arrive and full breakdown is included — your venue manager will ask for our card.` },
     { q: `Are you licensed and insured in ${r.state}?`, a: `Yes — fully licensed and insured, COI-ready for any ${r.shortName} venue, including liquor liability for our bartending services.` },
@@ -115,11 +115,11 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
 
       <AnswerBox
         question={`How much does catering cost in ${r.name}?`}
-        answer={`Qfire Catering serves ${r.name} with wood-fired catering from ${regionKey === "phoenix" ? "$12.99" : "$15.99"} per guest and a Steakhouse Experience from ${regionKey === "phoenix" ? "$74" : "$79"} per guest. Pricing is all-in for menu, full-service staff, setup and breakdown. Chef Terry Matthews — featured on Food Network — personally designs every menu.`}
+        answer={`Qfire Catering serves ${r.name} with wood-fired catering from ${regionKey === "phoenix" ? "$13.99" : "$16.99"} per guest and a Steakhouse Experience from ${regionKey === "phoenix" ? "$74" : "$79"} per guest. Pricing is all-in for menu, full-service staff, setup and breakdown. Chef Terry Matthews — featured on Food Network — personally designs every menu.`}
         bullets={[
           regionKey === "phoenix"
-            ? "1-Meat Wood-Fire $12.99 · 2-Meat $17.99 · 3-Meat $25.99 / guest"
-            : "1-Meat Wood-Fire $15.99 · 2-Meat $21.99 · 3-Meat $33.99 / guest",
+            ? "1-Meat Wood-Fire $13.99 · 2-Meat $18.99 · 3-Meat $26.99 / guest"
+            : "1-Meat Wood-Fire $16.99 · 2-Meat $22.99 · 3-Meat $34.99 / guest",
           regionKey === "phoenix"
             ? "Steakhouse tiers: $74 · $89 · $128 / guest"
             : "Steakhouse tiers: $79 · $94 · $133 / guest",
@@ -131,8 +131,8 @@ export function RegionLanding({ regionKey }: { regionKey: RegionKey }) {
         region={r.name as "Phoenix Metro" | "San Diego County"}
         maxGuests={regionKey === "phoenix" ? 2000 : 2500}
         priceFrom={regionKey === "phoenix"
-          ? "$12.99 / guest (wood-fired) · $74 / guest (steakhouse)"
-          : "$15.99 / guest (wood-fired) · $79 / guest (steakhouse)"}
+          ? "$13.99 / guest (wood-fired) · $74 / guest (steakhouse)"
+          : "$16.99 / guest (wood-fired) · $79 / guest (steakhouse)"}
       />
 
 

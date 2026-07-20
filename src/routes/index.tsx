@@ -99,9 +99,9 @@ export const Route = createFileRoute("/")({
             worstRating: "1",
           },
           makesOffer: [
-            { "@type": "Offer", name: "Wood-Fired Catering (1-Meat)", priceCurrency: "USD", price: "12.99", priceSpecification: { "@type": "UnitPriceSpecification", price: "12.99", priceCurrency: "USD", unitText: "per guest" } },
-            { "@type": "Offer", name: "Wood-Fired Catering (2-Meat)", priceCurrency: "USD", price: "17.99" },
-            { "@type": "Offer", name: "Wood-Fired Catering (3-Meat)", priceCurrency: "USD", price: "25.99" },
+            { "@type": "Offer", name: "Wood-Fired Catering (1-Meat)", priceCurrency: "USD", price: "13.99", priceSpecification: { "@type": "UnitPriceSpecification", price: "13.99", priceCurrency: "USD", unitText: "per guest" } },
+            { "@type": "Offer", name: "Wood-Fired Catering (2-Meat)", priceCurrency: "USD", price: "18.99" },
+            { "@type": "Offer", name: "Wood-Fired Catering (3-Meat)", priceCurrency: "USD", price: "26.99" },
             { "@type": "Offer", name: "Steakhouse Experience", priceCurrency: "USD", price: "74.00" },
           ],
         }),
@@ -192,14 +192,14 @@ function Home() {
         question="What is Qfire Catering and where do you cater?"
         answer="Qfire Catering is a full-service luxury catering company led by Chef Terry Matthews — featured on Food Network's BBQ Brawl, Cutthroat Kitchen, and Camp Cutthroat. We specialize in wood-fired and live-fire steakhouse catering for weddings, corporate events, and private parties across Phoenix Metro, Arizona and San Diego County, California. 2,000+ events catered since 2011, 4.9★ rated, fully licensed and insured."
         bullets={[
-          "Wood-fired catering from $12.99 / guest · Steakhouse experience from $74 / guest",
+          "Wood-fired catering from $13.99 / guest · Steakhouse experience from $74 / guest",
           "Scales from intimate 25-guest dinners up to 2,500-guest galas",
           "Full service: menu design, staff, setup, service, and breakdown",
         ]}
       />
 
       <AtAGlance
-        priceFrom="Phoenix from $12.99 / guest (wood-fired) · San Diego from $15.99 / guest · Steakhouse from $74–$79 / guest"
+        priceFrom="Phoenix from $13.99 / guest (wood-fired) · San Diego from $16.99 / guest · Steakhouse from $74–$79 / guest"
         guestCount="20 guests (Phoenix) · 50 guests (San Diego)"
       />
 
