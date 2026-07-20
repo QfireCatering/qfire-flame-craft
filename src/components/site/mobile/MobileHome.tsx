@@ -344,18 +344,25 @@ export function MobileHome() {
           </p>
           <div className="mt-6 space-y-2.5">
             <Link
-              to="/quote"
+              to="/menus"
               className="flex items-center justify-center gap-2 w-full min-h-14 rounded-md bg-gold text-ink font-bold text-base tracking-wide active:scale-[0.99] transition-transform"
             >
-              Request A Quote <ArrowRight className="size-5" />
+              View Menus <ArrowRight className="size-5" />
+            </Link>
+            <Link
+              to="/contact"
+              className="flex items-center justify-center gap-2 w-full min-h-14 rounded-md border-2 border-gold/60 text-gold font-bold text-base active:bg-gold/10"
+            >
+              Leave a Message
             </Link>
             <a
               href={contact.phoneHref}
-              className="flex items-center justify-center gap-2 w-full min-h-14 rounded-md border-2 border-gold/60 text-gold font-bold text-base active:bg-gold/10"
+              className="flex items-center justify-center gap-2 w-full min-h-14 rounded-md border border-bone/20 text-bone/90 font-semibold text-base active:bg-bone/5"
             >
               <Phone className="size-5" /> Call {contact.phone}
             </a>
           </div>
+
           <p className="mt-5 text-[0.62rem] tracking-[0.25em] uppercase text-bone/50">
             {contact.hours}
           </p>
