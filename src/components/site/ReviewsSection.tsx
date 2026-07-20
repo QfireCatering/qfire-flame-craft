@@ -6,28 +6,40 @@ import { Star, Quote } from "lucide-react";
  */
 const REVIEWS = [
   {
-    name: "Jessica & Marcus T.",
-    role: "Wedding · 220 guests · Scottsdale, AZ",
+    name: "Tene",
+    role: "Wedding · 8/20/2025",
     rating: 5,
-    text: "Chef Terry and the Qfire team were the single best vendor decision we made. The brisket and prime rib were unreal — our guests are STILL texting us about it three months later. Setup was flawless, staff was warm and professional, and breakdown was so clean we didn't lift a finger.",
+    text: "Terry and his crew helped to make our special day magical. We did a food tasting a few weeks prior to the ceremony, and we were instantly sold! The food portions were more than plentiful!! There was enough food left over from the food tasting to share with our friends. On the day of the ceremony, his staff arrived on time, and they were so professional and friendly. The food was amazing, we heard about it from our guests all night long.",
   },
   {
-    name: "Daniel R.",
-    role: "Corporate Holiday Party · 480 guests · Tempe, AZ",
+    name: "Brittany D.",
+    role: "Wedding · 7/23/2020",
     rating: 5,
-    text: "We've used four caterers in five years. Qfire is now our exclusive vendor. Hot food stayed hot, the line moved fast, and the steak station was a showstopper. CFO approved the invoice without a single question.",
+    text: "These guys were absolute rock stars at our wedding! We had to reschedule our wedding due to COVID-19, and they were so compassionate and easy to work with when making plans to change. The day of, they showed up early, set up, and provided a meal that was better than we could have imagined. The baked potato bar was so impressive! They were such professionals. By the time my husband and I picked our heads up from grace, Terry was sliding our plates in front of us. The pulled chicken was so flavorful and juicy, and the brisket was a crowd favorite!",
   },
   {
-    name: "Priya S.",
-    role: "50th Birthday · 75 guests · La Jolla, CA",
+    name: "Mindy T.",
+    role: "Wedding · 11/15/2021",
     rating: 5,
-    text: "Booked Qfire for a backyard dinner in San Diego. The onsite live-fire grilling was an experience — guests gathered around the grill like it was theater. Salmon was perfect, picanha was perfect, every side was perfect. Easiest party I've ever hosted.",
+    text: "Terry's BBQ is a crowd pleaser and the way to go! All of our wedding guests are still talking about the BBQ from the wedding and how to get it! Not to mention, Terry's provides a great personal presence and energy to events. People said he could have easily been the MC! Terry was so fun and flexible to work with. He truly cares about how to make the guests happy and holds his employees to high standards that he plans ahead to fulfill. We hope to have his bbq every year on our anniversary, it is so dang delicious!",
   },
   {
-    name: "Coach Williams",
-    role: "Team Banquet · 140 guests · Glendale, AZ",
+    name: "Nanette B.",
+    role: "Wedding Shower · 85 guests · 8/30/2023",
     rating: 5,
-    text: "Qfire fed our whole organization — players, families, staff. Massive portions, premium quality, on time, on budget. Chef Terry even came out to talk to the team. Class act.",
+    text: "We had BBQ Daddy for an 85 person wedding shower that was a nice event. Terry BBQ'd tenderloin, rib eye steaks, and salmon along with 2 cold and 2 hot appys (the bacon wrapped scallops were to die for). It was really a great event. The food was awesome and so was the staff. Terry was SUPER easy to deal with and had great communication throughout.",
+  },
+  {
+    name: "Tangy Robinson",
+    role: "50th Birthday · 1/20/2026",
+    rating: 5,
+    text: "Best 50th Birthday Dinner EVER! HUGE shoutout to Chef Terry and his amazing assistant, Leslie! We hired them to cater my 50th birthday, and they literally brought the steakhouse to my backyard. Seriously, he brought his own grill! When Chef Terry says, 'We bring the steakhouse to you,' you better believe him. Every New York Strip, chicken, and salmon was grilled perfectly to temperature. What a FEAST!",
+  },
+  {
+    name: "Michael C.",
+    role: "Bachelor Party · 5/25/2022",
+    rating: 5,
+    text: "Terry cooked up a feast for my bachelor party and delivered it right to our backyard of the Airbnb. Food was amazing!!! We got the brisket, the BBQ chicken, mac n cheese, broccoli, and baked beans. The brisket was cooked perfectly and was more fatty pieces (which is great for me cuz that's my preference).",
   },
 ];
 
