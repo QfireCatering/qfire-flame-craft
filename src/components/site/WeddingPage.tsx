@@ -185,31 +185,27 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
 
   const reviews = [
     {
-      q: `Chef Terry and his team made our ${regionShort} wedding reception unforgettable. The brisket and ribeyes were perfect, and every single guest asked us who our caterer was. Service was flawless from setup through the last dance.`,
-      a: "Lauren & Mark H.",
-      e: `${venues[0] ?? reviewCities[0]} · ${reviewCities[0]} · 220 guests · Oct 2024`,
+      q: "Terry and his crew helped to make our special day magical. We did a food tasting a few weeks prior to the ceremony, and we were instantly sold! The food portions were more than plentiful! On the day of the ceremony, his staff arrived on time, and they were so professional and friendly. The food was amazing — we heard about it from our guests all night long.",
+      a: "Tene",
+      e: "Wedding · 8/20/2025 · Google review",
     },
     {
-      q: `We did a plated dinner for 180 and not a single thing went wrong. My planner said it was one of the smoothest catering executions she'd ever seen. The food was the talk of the night.`,
-      a: "Megan & Ryan S.",
-      e: `${venues[1] ?? reviewCities[1] ?? reviewCities[0]} · ${reviewCities[1] ?? reviewCities[0]} · 180 guests · May 2024`,
+      q: "These guys were absolute rock stars at our wedding! They showed up early, set up, and provided a meal that was better than we could have imagined. The baked potato bar was so impressive! By the time my husband and I picked our heads up from grace, Terry was sliding our plates in front of us. The pulled chicken was so flavorful and the brisket was a crowd favorite!",
+      a: "Brittany D.",
+      e: "Wedding · 7/23/2020 · Google review",
     },
     {
-      q: "The live-fire steak station literally stopped the room. Guests were taking videos, our photographer was thrilled, and people still text us about the ribeye nine months later.",
-      a: "Sophia & James W.",
-      e: `${venues[2] ?? reviewCities[2] ?? reviewCities[0]} · ${reviewCities[2] ?? reviewCities[0]} · 160 guests · Sept 2024`,
+      q: "Terry's BBQ is a crowd pleaser and the way to go! All of our wedding guests are still talking about the BBQ from the wedding. Terry provides a great personal presence and energy — people said he could have easily been the MC! He truly cares about making the guests happy and holds his employees to high standards.",
+      a: "Mindy T.",
+      e: "Wedding · 11/15/2021 · Google review",
     },
     {
-      q: "As a wedding planner I work with caterers every single weekend. Qfire is at the top of my preferred list — clean, on time, professional, and the food is legitimately exceptional. I recommend them without hesitation.",
-      a: "Alyssa T., Wedding Planner",
-      e: `${region} · 40+ wedding receptions coordinated with Qfire`,
-    },
-    {
-      q: "Communication was incredible from day one. Every email returned same-day. Every menu change handled without a sigh. On the day, they set up hours early and broke down without a trace. We felt taken care of the entire time.",
-      a: "Jessica & David M.",
-      e: `${venues[3] ?? reviewCities[3] ?? reviewCities[0]} · ${reviewCities[3] ?? reviewCities[0]} · 145 guests · March 2025`,
+      q: "We had BBQ Daddy for an 85 person wedding shower. Terry BBQ'd tenderloin, rib eye steaks, and salmon along with 2 cold and 2 hot appys (the bacon wrapped scallops were to die for). The food was awesome and so was the staff. Terry was SUPER easy to deal with and had great communication throughout.",
+      a: "Nanette B.",
+      e: "Wedding Shower · 85 guests · 8/30/2023 · Google review",
     },
   ];
+
 
 
   const localBusiness = {
