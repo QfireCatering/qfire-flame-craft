@@ -204,6 +204,11 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
       a: "Nanette B.",
       e: "Wedding Shower · 85 guests · 8/30/2023 · Google review",
     },
+    {
+      q: "Terry and his team catered our wedding and absolutely knocked it out of the park. From the tasting to the final plate served, every detail was handled with care. Our guests are still talking about the food months later.",
+      a: "Tangy Robinson",
+      e: "Wedding · Google review",
+    },
   ];
 
 
