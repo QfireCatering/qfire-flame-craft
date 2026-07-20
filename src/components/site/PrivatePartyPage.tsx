@@ -106,12 +106,13 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
   const { region, regionShort, cities, reviewCities, path } = config;
 
   const reviews = [
-    { q: `Chef Terry and his team made my ${regionShort} 40th birthday unforgettable. The brisket and ribeyes were perfect, and every single guest asked me who my caterer was. Service was flawless from setup through the last cocktail.`, a: "Lauren H.", e: `${reviewCities[0]} · 40th Birthday · 90 guests · Oct 2024` },
-    { q: `We did a plated anniversary dinner for 30 in our backyard and not a single thing went wrong. My wife said it was the best party we've ever thrown. The food was the talk of the night.`, a: "Ryan S.", e: `${reviewCities[1] ?? reviewCities[0]} · 25th Anniversary · 30 guests · May 2024` },
-    { q: "The live-fire steak station literally stopped the pool party. Guests were taking videos, my kids were mesmerized, and people still text me about the ribeye nine months later.", a: "Sophia W.", e: `${reviewCities[2] ?? reviewCities[0]} · Backyard Party · 60 guests · Sept 2024` },
-    { q: "As a party planner I work with caterers every single weekend. Qfire is at the top of my preferred list — clean, on time, professional, and the food is legitimately exceptional. I recommend them without hesitation.", a: "Alyssa T., Party Planner", e: `${region} · 40+ private parties coordinated with Qfire` },
-    { q: "Communication was incredible from day one. Every text returned same-day. Every menu change handled without a sigh. On the day, they set up hours early and broke down without a trace. Our kitchen was cleaner than when they arrived.", a: "Jessica M.", e: `${reviewCities[3] ?? reviewCities[0]} · Graduation Party · 75 guests · June 2025` },
+    { q: "Best 50th Birthday Dinner EVER! HUGE shoutout to Chef Terry and his amazing assistant, Leslie! They literally brought the steakhouse to my backyard — he brought his own grill! Every New York Strip, chicken, and salmon was grilled perfectly to temperature. What a FEAST!", a: "Tangy Robinson", e: "50th Birthday · 1/20/2026 · Google Review" },
+    { q: "Terry cooked up a feast for my bachelor party and delivered it right to our backyard of the Airbnb. Food was amazing!!! We got the brisket, the BBQ chicken, mac n cheese, broccoli, and baked beans. The brisket was cooked perfectly.", a: "Michael C.", e: "Bachelor Party · 5/25/2022 · Google Review" },
+    { q: "We had BBQ Daddy for an 85 person wedding shower. Terry BBQ'd tenderloin, rib eye steaks, and salmon along with 2 cold and 2 hot appys (the bacon wrapped scallops were to die for). The food was awesome and so was the staff. Terry was SUPER easy to deal with and had great communication throughout.", a: "Nanette B.", e: "Wedding Shower · 85 guests · 8/30/2023 · Google Review" },
+    { q: "Terry's BBQ is a crowd pleaser and the way to go! All of our guests are still talking about the BBQ. Terry provides a great personal presence and energy — people said he could have easily been the MC! He truly cares about making guests happy and holds his employees to high standards.", a: "Mindy T.", e: "Private Event · 11/15/2021 · Google Review" },
+    { q: "Terry and his crew helped make our special day magical. We did a food tasting a few weeks prior and were instantly sold. The staff arrived on time, were so professional and friendly. The food was amazing — we heard about it from our guests all night long.", a: "Tene", e: "Private Event · 8/20/2025 · Google Review" },
   ];
+
 
   const localBusiness = {
     "@context": "https://schema.org",
