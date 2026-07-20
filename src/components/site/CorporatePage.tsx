@@ -228,6 +228,18 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
         </div>
       </section>
 
+      {/* TL;DR ANSWER BOX (AI search / featured snippet) */}
+      <AnswerBox
+        question={`Who caters corporate events and holiday parties in ${regionShort}?`}
+        answer={`Qfire Catering is a 100% dedicated full-service corporate catering company serving ${regionShort} since 2012. Chef Terry Matthews — two-time Food Network champion — and our team have executed 2,500+ events for company holiday parties, executive dinners, employee appreciation lunches, and jobsite meals. Insured, licensed, and Net-30 friendly.`}
+        bullets={[
+          `Serving ${cities.slice(0, 4).join(", ")} and greater ${region}`,
+          "Wood-Fire BBQ from $13.99/guest · Steakhouse Experience from $74/guest",
+          "COI on request · certificate of insurance for any venue",
+          "24-hour quote response · dedicated event lead assigned to every booking",
+        ]}
+      />
+
       {/* EVENT TYPES */}
       <section id="event-types" className="py-20 lg:py-24 bg-onyx border-t border-white/5 scroll-mt-32">
         <div className="container-luxe">
