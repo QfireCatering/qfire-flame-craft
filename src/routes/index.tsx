@@ -48,9 +48,10 @@ const HOME_FAQS = [
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "BBQ & Wood-Fire Catering — Wedding, Corporate & Private Party Catering | Qfire Catering Phoenix & San Diego" },
-      { name: "description", content: "Qfire Catering by Chef Terry Matthews (The BBQ Daddy) — full-service BBQ catering, wood-fired catering and live-fire steakhouse catering for weddings, corporate events and private parties across Phoenix Metro and San Diego County. Featured on Food Network. 4.9★ rated. BBQ catering near me, wedding catering, corporate catering, private party catering — all in one team." },
-      { property: "og:title", content: "BBQ & Wood-Fire Catering Phoenix & San Diego — Qfire Catering" },
+      { title: "Qfire Catering — BBQ Catering Phoenix AZ & San Diego | Wedding, Corporate & Private Party Catering" },
+      { name: "description", content: "Qfire Catering by Chef Terry Matthews (The BBQ Daddy) — BBQ catering Phoenix AZ, BBQ catering San Diego, wood-fired catering and live-fire steakhouse catering for weddings, corporate events and private parties across Phoenix Metro and San Diego County. Featured on Food Network. 4.9★ rated. BBQ caterers for weddings, barbecue party catering and catering near me — all in one team." },
+      { name: "keywords", content: "qfire catering, catering phoenix az, bbq catering phoenix az, bbq catering phoenix, bbq catering san diego, barbecue catering phoenix az, bbq catering scottsdale, bbq caterers for weddings, bbq wedding catering, barbecue party catering, bar b q catering, caterers phoenix, catering glendale az, catering in goodyear az, san diego catering, phoenix catering, wedding catering phoenix, wedding catering san diego, corporate catering phoenix, corporate catering san diego" },
+      { property: "og:title", content: "Qfire Catering — BBQ Catering Phoenix AZ & San Diego | Wedding, Corporate & Private Party" },
       { property: "og:description", content: "BBQ, wood-fired and steakhouse catering for weddings, corporate events and private parties. Phoenix Metro & San Diego County. Chef Terry Matthews — Food Network." },
       { property: "og:url", content: "https://qfire-flame-craft.lovable.app/" },
       { property: "og:image", content: heroImage.url },
