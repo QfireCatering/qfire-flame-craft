@@ -828,14 +828,15 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         </div>
       </section>
 
-      {/* FEATURED BRIDE REVIEW — placeholder; swap with real review later */}
+      {/* FEATURED BRIDE REVIEW — real Google review */}
       <ScatteredReview
         review={{
-          q: "I was so stressed about feeding 180 guests, but Qfire made it the easiest part of our wedding. Chef Terry designed a menu around our favorites, the brisket was unreal, and our guests are still talking about the live-fire grill three months later. Best vendor decision we made.",
-          a: "Jessica M.",
-          e: `${regionShort} Bride · 180 Guests · ${config.reviewCities[0] || region}`,
+          q: "Terry and his crew helped to make our special day magical. We did a food tasting a few weeks prior to the ceremony, and we were instantly sold! The food portions were more than plentiful! On the day of the ceremony, his staff arrived on time, and they were so professional and friendly. The food was amazing — we heard about it from our guests all night long.",
+          a: "Tene",
+          e: "Wedding · 8/20/2025 · Google Review",
         }}
       />
+
 
       {/* REAL REVIEWS — independent third-party platforms */}
       <section id="real-reviews" className="py-20 lg:py-28 bg-onyx border-y border-white/10 scroll-mt-32">
