@@ -44,7 +44,7 @@ export function ReviewsSection({ className = "" }: { className?: string }) {
             {Array.from({ length: 5 }).map((_, i) => (
               <Star key={i} className="size-5 fill-gold text-gold" />
             ))}
-            <span className="ml-3 text-bone/70 font-light text-sm">4.9 / 5 · 287 verified reviews</span>
+            <span className="ml-3 text-bone/70 font-light text-sm">4.9 / 5 average client rating</span>
           </div>
         </div>
 
@@ -82,16 +82,13 @@ export function ReviewsSection({ className = "" }: { className?: string }) {
   );
 }
 
+// NOTE: aggregateRating removed pending verified review count from Google Business Profile.
+// Individual Review nodes remain (Google/AI engines can use them for context) but no
+// AggregateRating is emitted to avoid publishing an unverified count.
 export const REVIEW_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "Qfire Catering",
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "400",
-    bestRating: "5",
-  },
   review: REVIEWS.map((r) => ({
     "@type": "Review",
     author: { "@type": "Person", name: r.name },

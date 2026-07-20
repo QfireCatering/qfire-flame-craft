@@ -41,7 +41,7 @@ const HOME_FAQS = [
   { q: "Do you handle full service from setup to cleanup?", a: "Yes. Our team arrives early, stages the kitchen and buffet, runs service with uniformed staff, and handles full breakdown — trash bagged, surfaces wiped, equipment removed. You enjoy your event." },
   { q: "Can you accommodate dietary needs and allergies?", a: "Absolutely. Vegetarian, vegan, gluten-free, dairy-free, kosher-style, and Halal-friendly menus are standard. For peanut, tree-nut, and shellfish allergies we run a dedicated prep line and label every plate at the pass." },
   { q: "Do you travel to our venue?", a: "Yes. We cater across Phoenix Metro and San Diego County, and travel to destination venues, vineyards, ranches, and private estates within driving distance. Travel and lodging are quoted transparently inside your proposal." },
-  { q: "What makes Qfire different from other caterers?", a: "Chef Terry Matthews — featured on Food Network's BBQ Brawl with Bobby Flay, Camp Cutthroat, and a Cutthroat Kitchen champion — personally designs every menu. 2,000+ events, $10M+ catered since 2011, 4.9★ rated, fully licensed and insured, with live charcoal grilling at your venue." },
+  { q: "What makes Qfire different from other caterers?", a: "Qfire is a 100% dedicated catering company — not a restaurant that also caters. Chef Terry Matthews — featured on Food Network's BBQ Brawl with Bobby Flay, Camp Cutthroat, and a Cutthroat Kitchen champion — personally designs every menu. 2,500+ events, $10M+ catered since 2012, 4.9★ rated, fully licensed and insured, with live charcoal grilling at your venue." },
   { q: "What happens after I request a quote?", a: "A real person — usually Chef Terry or your account lead — calls or emails within 24 hours. We send an itemized proposal, refine the menu together, and lock the date with a 35% Date Retainer applied directly to your final invoice." },
 ];
 
@@ -77,7 +77,7 @@ export const Route = createFileRoute("/")({
           servesCuisine: ["American", "Wood-Fired", "Steakhouse"],
           priceRange: "$$$",
           founder: { "@type": "Person", name: "Terry Matthews", alternateName: "The BBQ Daddy", jobTitle: "Executive Chef & Founder" },
-          foundingDate: "2011",
+          foundingDate: "2012",
           sameAs: [
             "https://www.thebbqdaddy.com",
             "https://www.instagram.com/thebbqdaddy",
@@ -191,7 +191,7 @@ function Home() {
 
       <AnswerBox
         question="What is Qfire Catering and where do you cater?"
-        answer="Qfire Catering is a full-service luxury catering company led by Chef Terry Matthews — featured on Food Network's BBQ Brawl, Cutthroat Kitchen, and Camp Cutthroat. We specialize in wood-fired and live-fire steakhouse catering for weddings, corporate events, and private parties across Phoenix Metro, Arizona and San Diego County, California. 2,000+ events catered since 2011, 4.9★ rated, fully licensed and insured."
+        answer="Qfire Catering is a 100% dedicated full-service catering company — not a restaurant — led by Chef Terry Matthews, featured on Food Network's BBQ Brawl, Cutthroat Kitchen, and Camp Cutthroat. We specialize in live-fire, wood-fired BBQ and Steakhouse Experience catering for weddings, corporate events, and private parties across Phoenix Metro, Arizona and San Diego County, California. 2,500+ events catered since 2012, 4.9★ rated, fully licensed and insured."
         bullets={[
           "Wood-fired catering from $13.99 / guest · Steakhouse experience from $74 / guest",
           "Scales from intimate 25-guest dinners up to 2,500-guest galas",

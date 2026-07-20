@@ -28,7 +28,7 @@ const FULL = [
   { icon: Award, label: "Camp Cutthroat Champion", sub: "Food Network competitor" },
   { icon: Users, label: "2,000+ Weddings & Events", sub: "Catered across two regions" },
   { icon: DollarSign, label: "$10M+ in Catered Events", sub: "Trusted at every scale" },
-  { icon: CalendarDays, label: "Serving AZ & SoCal Since 2011", sub: "Over a decade behind the fire" },
+  { icon: CalendarDays, label: "Serving AZ & SoCal Since 2012", sub: "13+ years behind the fire" },
   { icon: Star, label: "4.9-Star Rated", sub: "Across hundreds of reviews" },
   { icon: ShieldCheck, label: "Licensed & Insured", sub: "COI-ready · venue-approved" },
   { icon: Sparkles, label: "Uniformed Professional Staff", sub: "Captains · servers · bartenders" },
