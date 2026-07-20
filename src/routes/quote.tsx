@@ -110,6 +110,7 @@ function QuotePage() {
               {[
                 "Custom proposal within 24 hours",
                 "Free phone consultation",
+                "Tastings for booked clients",
               ].map((t) => (
                 <div key={t} className="flex items-center gap-3">
                   <Check className="size-4 text-gold" /> {t}
