@@ -116,12 +116,13 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
   const { region, regionShort, cities, reviewCities, path } = config;
 
   const reviews = [
-    { q: `Chef Terry and his team made our ${regionShort} executive holiday party unforgettable. The brisket and ribeyes were perfect, and every single team member asked us who our caterer was. Service was flawless from setup through the last handshake.`, a: "Rachel S., HR Director", e: `${reviewCities[0]} · Tech Company · 240 guests · Dec 2024` },
-    { q: `We did a plated dinner for 180 at our sales kickoff and not a single thing went wrong. Our EA said it was one of the smoothest catering executions she'd ever seen. The food was the talk of the room.`, a: "Daniel M., COO", e: `${reviewCities[1] ?? reviewCities[0]} · Financial Firm · 180 guests · Feb 2024` },
-    { q: "The live-fire steak station literally stopped the room. Team members were taking videos, our photographer was thrilled, and people still text me about the ribeye months later.", a: "Patricia L., Facilities Director", e: `${reviewCities[2] ?? reviewCities[0]} · Healthcare · 320 guests · Sept 2024` },
-    { q: "As an EA who books corporate catering weekly, Qfire is at the top of my preferred vendor list — clean, on time, professional, and the food is legitimately exceptional. I recommend them without hesitation.", a: "Allison K., Executive Assistant", e: `${region} · 40+ corporate events coordinated with Qfire` },
-    { q: "Communication was incredible from day one. Every email returned same-day. Every menu change handled without a sigh. On the day, they set up hours early and broke down without a trace. Our facilities team asked for their card.", a: "Marcus T., Project Manager", e: `${reviewCities[3] ?? reviewCities[0]} · General Contractor · 145 guests · March 2025` },
+    { q: "Terry cooked up a feast for my bachelor party and delivered it right to our backyard of the Airbnb. Food was amazing!!! We got the brisket, the BBQ chicken, mac n cheese, broccoli, and baked beans. The brisket was cooked perfectly.", a: "Michael C.", e: "Delivered Event · 5/25/2022 · Google Review" },
+    { q: "We had BBQ Daddy for an 85 person wedding shower. Terry BBQ'd tenderloin, rib eye steaks, and salmon along with 2 cold and 2 hot appys (the bacon wrapped scallops were to die for). The food was awesome and so was the staff. Terry was SUPER easy to deal with and had great communication throughout.", a: "Nanette B.", e: "Private Event · 85 guests · 8/30/2023 · Google Review" },
+    { q: "Best 50th Birthday Dinner EVER! HUGE shoutout to Chef Terry and his amazing assistant, Leslie! They literally brought the steakhouse to my backyard — he brought his own grill! Every New York Strip, chicken, and salmon was grilled perfectly to temperature. What a FEAST!", a: "Tangy Robinson", e: "Private Event · 1/20/2026 · Google Review" },
+    { q: "Terry's team is a crowd pleaser and the way to go! Everyone is still talking about the BBQ. Terry provides a great personal presence and energy — people said he could have easily been the MC! He truly cares about making guests happy and holds his employees to high standards.", a: "Mindy T.", e: "Private Event · 11/15/2021 · Google Review" },
+    { q: "Terry and his crew helped make our event magical. We did a food tasting a few weeks prior and were instantly sold. The staff arrived on time, were so professional and friendly. The food was amazing — we heard about it from our guests all night long.", a: "Tene", e: "Private Event · 8/20/2025 · Google Review" },
   ];
+
 
   const localBusiness = {
     "@context": "https://schema.org",
