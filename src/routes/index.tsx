@@ -161,12 +161,27 @@ function Home() {
             Wood-fired flavors. Professional service. Stress-free execution.
           </p>
 
-          <div className="mt-12 flex flex-wrap gap-4">
-            <Link to="/quote" className="btn-primary">
-              See If My Date Is Available <ArrowRight className="size-4" />
-            </Link>
-            <Link to="/locations" className="btn-ghost">Choose Your Location</Link>
+          <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl">
+            {[
+              { to: "/weddings" as const, icon: Sparkles, label: "Weddings", body: "Plated dinners & live-fire stations for the most photographed night of your life." },
+              { to: "/corporate" as const, icon: Users, label: "Corporate", body: "Holiday parties, executive dinners & company events — refined hospitality at scale." },
+              { to: "/private-parties" as const, icon: Flame, label: "Private Parties", body: "Backyard luxury for birthdays, milestones & the gatherings that matter most." },
+            ].map((s) => (
+              <Link
+                key={s.to}
+                to={s.to}
+                className="group flex flex-col p-6 bg-ink/60 backdrop-blur-sm border border-gold/30 hover:border-gold hover:bg-ink/80 transition-all"
+              >
+                <s.icon className="size-8 text-gold mb-4 transition-transform group-hover:scale-110" />
+                <div className="font-display text-2xl text-bone group-hover:text-gold transition-colors">{s.label}</div>
+                <p className="mt-2 text-sm text-bone/70 leading-relaxed flex-1">{s.body}</p>
+                <div className="mt-4 inline-flex items-center gap-2 text-[0.65rem] tracking-[0.28em] uppercase text-gold">
+                  Explore <ArrowRight className="size-3" />
+                </div>
+              </Link>
+            ))}
           </div>
+
 
           <div className="mt-20 lg:mt-28 flex flex-wrap items-center gap-x-10 gap-y-4">
             <div className="text-[0.6rem] tracking-[0.35em] uppercase text-bone/50">As Seen On</div>
