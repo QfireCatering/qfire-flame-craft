@@ -25,6 +25,7 @@ import { Route as SteakSeafoodMenuRouteImport } from './routes/steak-seafood-men
 import { Route as SkoolRouteImport } from './routes/skool'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ServiceAreasRouteImport } from './routes/service-areas'
+import { Route as ScottsdaleCateringRouteImport } from './routes/scottsdale-catering'
 import { Route as SanDiegoMenuRouteImport } from './routes/san-diego-menu'
 import { Route as SanDiegoCateringRouteImport } from './routes/san-diego-catering'
 import { Route as SanDiegoRouteImport } from './routes/san-diego'
@@ -50,6 +51,7 @@ import { Route as MediaRouteImport } from './routes/media'
 import { Route as LocationsRouteImport } from './routes/locations'
 import { Route as Items1RouteImport } from './routes/items-1'
 import { Route as InquiryServicesPageRouteImport } from './routes/inquiry-services-page'
+import { Route as GoodyearCateringRouteImport } from './routes/goodyear-catering'
 import { Route as FaqSRouteImport } from './routes/faq-s'
 import { Route as FaqRouteImport } from './routes/faq'
 import { Route as CorporateCateringSanDiegoRouteImport } from './routes/corporate-catering-san-diego'
@@ -158,6 +160,11 @@ const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
 const ServiceAreasRoute = ServiceAreasRouteImport.update({
   id: '/service-areas',
   path: '/service-areas',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ScottsdaleCateringRoute = ScottsdaleCateringRouteImport.update({
+  id: '/scottsdale-catering',
+  path: '/scottsdale-catering',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SanDiegoMenuRoute = SanDiegoMenuRouteImport.update({
@@ -285,6 +292,11 @@ const Items1Route = Items1RouteImport.update({
 const InquiryServicesPageRoute = InquiryServicesPageRouteImport.update({
   id: '/inquiry-services-page',
   path: '/inquiry-services-page',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GoodyearCateringRoute = GoodyearCateringRouteImport.update({
+  id: '/goodyear-catering',
+  path: '/goodyear-catering',
   getParentRoute: () => rootRouteImport,
 } as any)
 const FaqSRoute = FaqSRouteImport.update({
@@ -437,6 +449,7 @@ export interface FileRoutesByFullPath {
   '/corporate-catering-san-diego': typeof CorporateCateringSanDiegoRoute
   '/faq': typeof FaqRoute
   '/faq-s': typeof FaqSRoute
+  '/goodyear-catering': typeof GoodyearCateringRoute
   '/inquiry-services-page': typeof InquiryServicesPageRoute
   '/items-1': typeof Items1RouteWithChildren
   '/locations': typeof LocationsRoute
@@ -462,6 +475,7 @@ export interface FileRoutesByFullPath {
   '/san-diego': typeof SanDiegoRouteWithChildren
   '/san-diego-catering': typeof SanDiegoCateringRoute
   '/san-diego-menu': typeof SanDiegoMenuRoute
+  '/scottsdale-catering': typeof ScottsdaleCateringRoute
   '/service-areas': typeof ServiceAreasRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/skool': typeof SkoolRoute
@@ -505,6 +519,7 @@ export interface FileRoutesByTo {
   '/corporate-catering-san-diego': typeof CorporateCateringSanDiegoRoute
   '/faq': typeof FaqRoute
   '/faq-s': typeof FaqSRoute
+  '/goodyear-catering': typeof GoodyearCateringRoute
   '/inquiry-services-page': typeof InquiryServicesPageRoute
   '/items-1': typeof Items1RouteWithChildren
   '/locations': typeof LocationsRoute
@@ -528,6 +543,7 @@ export interface FileRoutesByTo {
   '/reviews': typeof ReviewsRoute
   '/san-diego-catering': typeof SanDiegoCateringRoute
   '/san-diego-menu': typeof SanDiegoMenuRoute
+  '/scottsdale-catering': typeof ScottsdaleCateringRoute
   '/service-areas': typeof ServiceAreasRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/skool': typeof SkoolRoute
@@ -572,6 +588,7 @@ export interface FileRoutesById {
   '/corporate-catering-san-diego': typeof CorporateCateringSanDiegoRoute
   '/faq': typeof FaqRoute
   '/faq-s': typeof FaqSRoute
+  '/goodyear-catering': typeof GoodyearCateringRoute
   '/inquiry-services-page': typeof InquiryServicesPageRoute
   '/items-1': typeof Items1RouteWithChildren
   '/locations': typeof LocationsRoute
@@ -597,6 +614,7 @@ export interface FileRoutesById {
   '/san-diego': typeof SanDiegoRouteWithChildren
   '/san-diego-catering': typeof SanDiegoCateringRoute
   '/san-diego-menu': typeof SanDiegoMenuRoute
+  '/scottsdale-catering': typeof ScottsdaleCateringRoute
   '/service-areas': typeof ServiceAreasRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/skool': typeof SkoolRoute
@@ -642,6 +660,7 @@ export interface FileRouteTypes {
     | '/corporate-catering-san-diego'
     | '/faq'
     | '/faq-s'
+    | '/goodyear-catering'
     | '/inquiry-services-page'
     | '/items-1'
     | '/locations'
@@ -667,6 +686,7 @@ export interface FileRouteTypes {
     | '/san-diego'
     | '/san-diego-catering'
     | '/san-diego-menu'
+    | '/scottsdale-catering'
     | '/service-areas'
     | '/sitemap.xml'
     | '/skool'
@@ -710,6 +730,7 @@ export interface FileRouteTypes {
     | '/corporate-catering-san-diego'
     | '/faq'
     | '/faq-s'
+    | '/goodyear-catering'
     | '/inquiry-services-page'
     | '/items-1'
     | '/locations'
@@ -733,6 +754,7 @@ export interface FileRouteTypes {
     | '/reviews'
     | '/san-diego-catering'
     | '/san-diego-menu'
+    | '/scottsdale-catering'
     | '/service-areas'
     | '/sitemap.xml'
     | '/skool'
@@ -776,6 +798,7 @@ export interface FileRouteTypes {
     | '/corporate-catering-san-diego'
     | '/faq'
     | '/faq-s'
+    | '/goodyear-catering'
     | '/inquiry-services-page'
     | '/items-1'
     | '/locations'
@@ -801,6 +824,7 @@ export interface FileRouteTypes {
     | '/san-diego'
     | '/san-diego-catering'
     | '/san-diego-menu'
+    | '/scottsdale-catering'
     | '/service-areas'
     | '/sitemap.xml'
     | '/skool'
@@ -845,6 +869,7 @@ export interface RootRouteChildren {
   CorporateCateringSanDiegoRoute: typeof CorporateCateringSanDiegoRoute
   FaqRoute: typeof FaqRoute
   FaqSRoute: typeof FaqSRoute
+  GoodyearCateringRoute: typeof GoodyearCateringRoute
   InquiryServicesPageRoute: typeof InquiryServicesPageRoute
   Items1Route: typeof Items1RouteWithChildren
   LocationsRoute: typeof LocationsRoute
@@ -870,6 +895,7 @@ export interface RootRouteChildren {
   SanDiegoRoute: typeof SanDiegoRouteWithChildren
   SanDiegoCateringRoute: typeof SanDiegoCateringRoute
   SanDiegoMenuRoute: typeof SanDiegoMenuRoute
+  ScottsdaleCateringRoute: typeof ScottsdaleCateringRoute
   ServiceAreasRoute: typeof ServiceAreasRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   SkoolRoute: typeof SkoolRoute
@@ -1000,6 +1026,13 @@ declare module '@tanstack/react-router' {
       path: '/service-areas'
       fullPath: '/service-areas'
       preLoaderRoute: typeof ServiceAreasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/scottsdale-catering': {
+      id: '/scottsdale-catering'
+      path: '/scottsdale-catering'
+      fullPath: '/scottsdale-catering'
+      preLoaderRoute: typeof ScottsdaleCateringRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/san-diego-menu': {
@@ -1175,6 +1208,13 @@ declare module '@tanstack/react-router' {
       path: '/inquiry-services-page'
       fullPath: '/inquiry-services-page'
       preLoaderRoute: typeof InquiryServicesPageRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/goodyear-catering': {
+      id: '/goodyear-catering'
+      path: '/goodyear-catering'
+      fullPath: '/goodyear-catering'
+      preLoaderRoute: typeof GoodyearCateringRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/faq-s': {
@@ -1423,6 +1463,7 @@ const rootRouteChildren: RootRouteChildren = {
   CorporateCateringSanDiegoRoute: CorporateCateringSanDiegoRoute,
   FaqRoute: FaqRoute,
   FaqSRoute: FaqSRoute,
+  GoodyearCateringRoute: GoodyearCateringRoute,
   InquiryServicesPageRoute: InquiryServicesPageRoute,
   Items1Route: Items1RouteWithChildren,
   LocationsRoute: LocationsRoute,
@@ -1448,6 +1489,7 @@ const rootRouteChildren: RootRouteChildren = {
   SanDiegoRoute: SanDiegoRouteWithChildren,
   SanDiegoCateringRoute: SanDiegoCateringRoute,
   SanDiegoMenuRoute: SanDiegoMenuRoute,
+  ScottsdaleCateringRoute: ScottsdaleCateringRoute,
   ServiceAreasRoute: ServiceAreasRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   SkoolRoute: SkoolRoute,
