@@ -85,7 +85,7 @@ export function DefinitiveContent({
           <div className="max-w-2xl mb-12">
             <div className="eyebrow mb-5">Planning Tips From Chef Terry</div>
             <h2 className="heading-lg text-bone">What experienced hosts get right.</h2>
-            <p className="mt-5 text-bone/70 font-light">After 2,000+ events, these are the calls that consistently separate an unforgettable evening from a stressful one.</p>
+            <p className="mt-5 text-bone/70 font-light">After 2,500+ events, these are the calls that consistently separate an unforgettable evening from a stressful one.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-x-10 gap-y-8">
             {planningTips.map((tip, i) => (

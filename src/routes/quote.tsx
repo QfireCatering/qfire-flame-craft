@@ -156,9 +156,14 @@ function QuotePage() {
                   <Mail className="size-5" /> {contact.email}
                 </a>
               </div>
-              <p className="text-center text-[0.7rem] tracking-[0.25em] uppercase text-gold/90">
-                ⏱ Usually responds within 4 business hours
-              </p>
+              <div className="border border-gold/40 bg-gold/10 px-4 py-2.5 text-center">
+                <p className="text-[0.7rem] tracking-[0.25em] uppercase text-gold font-semibold">
+                  ⏱ 24-Hour Response Guarantee
+                </p>
+                <p className="text-bone/80 text-xs mt-1 font-light normal-case tracking-normal">
+                  Every inquiry answered personally by Chef Terry's team within 24 hours — usually within 4 business hours.
+                </p>
+              </div>
 
               {/* STEP 1 — 3-field quick start */}
               <div className="border-2 border-gold/40 bg-gold/[0.04] p-5 lg:p-6 space-y-4">

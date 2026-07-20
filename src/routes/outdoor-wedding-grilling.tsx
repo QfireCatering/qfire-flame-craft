@@ -13,7 +13,7 @@ export const Route = createFileRoute("/outdoor-wedding-grilling")({
       {
         name: "description",
         content:
-          "Outdoor wedding grilling by Food Network veteran Chef Terry Matthews (BBQ Brawl, Cutthroat Kitchen). Live charcoal, wood-fired and steakhouse grilling for luxury outdoor weddings across Phoenix Metro and San Diego County. 15+ years, 2,000+ events, 4.9★.",
+          "Outdoor wedding grilling by Food Network veteran Chef Terry Matthews (BBQ Brawl, Cutthroat Kitchen). Live charcoal, wood-fired and steakhouse grilling for luxury outdoor weddings across Phoenix Metro and San Diego County. 13+ years, 2,500+ events, 4.9★.",
       },
       { property: "og:title", content: "Outdoor Wedding Grilling — Live-Fire Wedding Catering | Qfire" },
       {
@@ -94,7 +94,7 @@ function OutdoorWeddingGrillingPage() {
             </p>
             <p>
               Qfire is Arizona and San Diego's premium live-fire wedding caterer. Chef Terry Matthews — featured on Food Network's{" "}
-              <em>BBQ Brawl</em>, <em>Cutthroat Kitchen</em> and <em>Camp Cutthroat</em> — brings 15+ years and 2,000+ events of live-fire experience directly to your venue. Whether it's a backyard estate wedding in{" "}
+              <em>BBQ Brawl</em>, <em>Cutthroat Kitchen</em> and <em>Camp Cutthroat</em> — brings 13+ years and 2,500+ events of live-fire experience directly to your venue. Whether it's a backyard estate wedding in{" "}
               <Link to="/wedding-catering-phoenix" className="underline decoration-gold/40 hover:decoration-gold underline-offset-4">Paradise Valley</Link>{" "}
               or a coastal reception in{" "}
               <Link to="/wedding-catering-san-diego" className="underline decoration-gold/40 hover:decoration-gold underline-offset-4">La Jolla</Link>, the fire comes to you.

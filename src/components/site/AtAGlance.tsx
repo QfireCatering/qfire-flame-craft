@@ -30,7 +30,7 @@ export function AtAGlance({
     { icon: DollarSign, label: "Starting price", value: priceFrom },
     { icon: Clock, label: "Lead time", value: leadTime },
     { icon: Flame, label: "Cooking style", value: "Live-fire charcoal · wood-smoked · onsite grilling" },
-    { icon: Award, label: "Credentials", value: "Food Network · 2,000+ events · Licensed & insured" },
+    { icon: Award, label: "Credentials", value: "Food Network · 2,500+ events · Licensed & insured" },
     { icon: Phone, label: "Phone", value: "(877) 848-7211" },
     { icon: Mail, label: "Email", value: "Eat@QfireCatering.com" },
   ];

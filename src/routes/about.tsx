@@ -55,7 +55,7 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "About Chef Terry Matthews — The BBQ Daddy | Qfire Catering" },
-      { name: "description", content: "Chef Terry Matthews — known as The BBQ Daddy — is the founder and executive chef of Qfire Catering. Bringing the fire since 2001, with 15+ years experience, 2,000+ events, a 4.9-star rating across every platform, and Food Network credits including Cutthroat Kitchen (Winner), Camp Cutthroat (Winner), BBQ Brawl Season 2 and the kitchen of Bobby Flay." },
+      { name: "description", content: "Chef Terry Matthews — known as The BBQ Daddy — is the founder and executive chef of Qfire Catering. Bringing the fire since 2001, with 13+ years experience, 2,500+ events, a 4.9-star rating across every platform, and Food Network credits including Cutthroat Kitchen (Winner), Camp Cutthroat (Winner), BBQ Brawl Season 2 and the kitchen of Bobby Flay." },
       { property: "og:title", content: "Chef Terry Matthews — Qfire" },
       { property: "og:url", content: "https://qfire-flame-craft.lovable.app/about" },
       { property: "og:image", content: chefTerry.url },
@@ -128,7 +128,7 @@ function AboutPage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-white/5 border border-white/5">
             {[
               { n: "15+", l: "Years Behind Fire" },
-              { n: "2,000+", l: "Events Served" },
+              { n: "2,500+", l: "Events Served" },
               { n: "4.9★", l: "Across All Platforms" },
               { n: "2×", l: "Food Network Champion" },
             ].map((s) => (

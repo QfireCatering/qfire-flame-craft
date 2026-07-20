@@ -33,7 +33,7 @@ function MediaPage() {
       <PageHero
         eyebrow="Press & Media"
         title={<>As seen on <span className="text-gold italic font-light">Food Network.</span></>}
-        subtitle="A national television run, a Bobby Flay kitchen stretch and 15+ years of live-fire mastery — the credentials behind every Qfire event."
+        subtitle="A national television run, a Bobby Flay kitchen stretch and 13+ years of live-fire mastery — the credentials behind every Qfire event."
         image={chefTerry.url}
       >
         <img src={asSeenOnBadge.url} alt="As seen on Food Network" className="w-20 h-20 rounded-full" />
@@ -58,7 +58,7 @@ function MediaPage() {
         <div className="container-luxe text-center max-w-3xl mx-auto">
           <div className="eyebrow justify-center mb-6">Bringing the fire since 2001</div>
           <h2 className="heading-md text-bone">
-            <span className="text-gold italic font-light">15+ years</span> behind live fire. 2,000+ events. One Chef Terry standard.
+            <span className="text-gold italic font-light">13+ years</span> behind live fire. 2,500+ events. One Chef Terry standard.
           </h2>
           <p className="mt-8 text-bone/75 text-lg leading-relaxed font-light">
             From early backyard fire pits to national television stages, every Qfire event carries the same obsession with detail, hospitality and the heat under the food.
