@@ -213,6 +213,7 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       <Nav />
+      <MobileNav />
       <main className="min-h-screen pb-20 md:pb-0">
         <Outlet />
       </main>
