@@ -22,8 +22,10 @@ import { Route as SteakhouseExperiencePhoenixRouteImport } from './routes/steakh
 import { Route as SteakhouseRouteImport } from './routes/steakhouse'
 import { Route as SteakSeafoodMenuSanDiegoRouteImport } from './routes/steak-seafood-menu-san-diego'
 import { Route as SteakSeafoodMenuRouteImport } from './routes/steak-seafood-menu'
+import { Route as SkoolRouteImport } from './routes/skool'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ServiceAreasRouteImport } from './routes/service-areas'
+import { Route as SanDiegoMenuRouteImport } from './routes/san-diego-menu'
 import { Route as SanDiegoCateringRouteImport } from './routes/san-diego-catering'
 import { Route as SanDiegoRouteImport } from './routes/san-diego'
 import { Route as ReviewsRouteImport } from './routes/reviews'
@@ -39,23 +41,31 @@ import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as PicturesRouteImport } from './routes/pictures'
 import { Route as PicPageRouteImport } from './routes/pic-page'
+import { Route as PhoenixMenuRouteImport } from './routes/phoenix-menu'
 import { Route as PhoenixCateringRouteImport } from './routes/phoenix-catering'
 import { Route as PhoenixRouteImport } from './routes/phoenix'
 import { Route as OutdoorWeddingGrillingRouteImport } from './routes/outdoor-wedding-grilling'
 import { Route as MenusRouteImport } from './routes/menus'
 import { Route as MediaRouteImport } from './routes/media'
 import { Route as LocationsRouteImport } from './routes/locations'
+import { Route as Items1RouteImport } from './routes/items-1'
 import { Route as InquiryServicesPageRouteImport } from './routes/inquiry-services-page'
 import { Route as FaqSRouteImport } from './routes/faq-s'
 import { Route as FaqRouteImport } from './routes/faq'
+import { Route as EventVenueDaddySPlaceRouteImport } from './routes/event-venue-daddy-s-place'
 import { Route as CorporateCateringSanDiegoRouteImport } from './routes/corporate-catering-san-diego'
 import { Route as CorporateCateringPhoenixRouteImport } from './routes/corporate-catering-phoenix'
 import { Route as CorporateRouteImport } from './routes/corporate'
+import { Route as CopyOfLunchCateringPhoenixRouteImport } from './routes/copy-of-lunch-catering-phoenix'
+import { Route as CopyOfHomeRouteImport } from './routes/copy-of-home'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CompanyCateringPhoenixSandiegoRouteImport } from './routes/company-catering-phoenix-sandiego'
+import { Route as CheatcodeRouteImport } from './routes/cheatcode'
 import { Route as BlogRouteImport } from './routes/blog'
+import { Route as BlankRouteImport } from './routes/blank'
 import { Route as BartendingRouteImport } from './routes/bartending'
 import { Route as BarServiceRouteImport } from './routes/bar-service'
+import { Route as AzorcaliRouteImport } from './routes/azorcali'
 import { Route as AllInclusivePricingRouteImport } from './routes/all-inclusive-pricing'
 import { Route as AccessibilityRouteImport } from './routes/accessibility'
 import { Route as AboutRouteImport } from './routes/about'
@@ -64,6 +74,7 @@ import { Route as SanDiegoIndexRouteImport } from './routes/san-diego.index'
 import { Route as PhoenixIndexRouteImport } from './routes/phoenix.index'
 import { Route as SanDiegoSlugRouteImport } from './routes/san-diego.$slug'
 import { Route as PhoenixSlugRouteImport } from './routes/phoenix.$slug'
+import { Route as Items1SplatRouteImport } from './routes/items-1.$'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 
 const WoodFiredRoute = WoodFiredRouteImport.update({
@@ -135,6 +146,11 @@ const SteakSeafoodMenuRoute = SteakSeafoodMenuRouteImport.update({
   path: '/steak-seafood-menu',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SkoolRoute = SkoolRouteImport.update({
+  id: '/skool',
+  path: '/skool',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
@@ -143,6 +159,11 @@ const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
 const ServiceAreasRoute = ServiceAreasRouteImport.update({
   id: '/service-areas',
   path: '/service-areas',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SanDiegoMenuRoute = SanDiegoMenuRouteImport.update({
+  id: '/san-diego-menu',
+  path: '/san-diego-menu',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SanDiegoCateringRoute = SanDiegoCateringRouteImport.update({
@@ -222,6 +243,11 @@ const PicPageRoute = PicPageRouteImport.update({
   path: '/pic-page',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PhoenixMenuRoute = PhoenixMenuRouteImport.update({
+  id: '/phoenix-menu',
+  path: '/phoenix-menu',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PhoenixCateringRoute = PhoenixCateringRouteImport.update({
   id: '/phoenix-catering',
   path: '/phoenix-catering',
@@ -252,6 +278,11 @@ const LocationsRoute = LocationsRouteImport.update({
   path: '/locations',
   getParentRoute: () => rootRouteImport,
 } as any)
+const Items1Route = Items1RouteImport.update({
+  id: '/items-1',
+  path: '/items-1',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const InquiryServicesPageRoute = InquiryServicesPageRouteImport.update({
   id: '/inquiry-services-page',
   path: '/inquiry-services-page',
@@ -265,6 +296,11 @@ const FaqSRoute = FaqSRouteImport.update({
 const FaqRoute = FaqRouteImport.update({
   id: '/faq',
   path: '/faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EventVenueDaddySPlaceRoute = EventVenueDaddySPlaceRouteImport.update({
+  id: '/event-venue-daddy-s-place',
+  path: '/event-venue-daddy-s-place',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CorporateCateringSanDiegoRoute =
@@ -284,6 +320,17 @@ const CorporateRoute = CorporateRouteImport.update({
   path: '/corporate',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CopyOfLunchCateringPhoenixRoute =
+  CopyOfLunchCateringPhoenixRouteImport.update({
+    id: '/copy-of-lunch-catering-phoenix',
+    path: '/copy-of-lunch-catering-phoenix',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const CopyOfHomeRoute = CopyOfHomeRouteImport.update({
+  id: '/copy-of-home',
+  path: '/copy-of-home',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
@@ -295,9 +342,19 @@ const CompanyCateringPhoenixSandiegoRoute =
     path: '/company-catering-phoenix-sandiego',
     getParentRoute: () => rootRouteImport,
   } as any)
+const CheatcodeRoute = CheatcodeRouteImport.update({
+  id: '/cheatcode',
+  path: '/cheatcode',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BlogRoute = BlogRouteImport.update({
   id: '/blog',
   path: '/blog',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlankRoute = BlankRouteImport.update({
+  id: '/blank',
+  path: '/blank',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BartendingRoute = BartendingRouteImport.update({
@@ -308,6 +365,11 @@ const BartendingRoute = BartendingRouteImport.update({
 const BarServiceRoute = BarServiceRouteImport.update({
   id: '/bar-service',
   path: '/bar-service',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AzorcaliRoute = AzorcaliRouteImport.update({
+  id: '/azorcali',
+  path: '/azorcali',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AllInclusivePricingRoute = AllInclusivePricingRouteImport.update({
@@ -350,6 +412,11 @@ const PhoenixSlugRoute = PhoenixSlugRouteImport.update({
   path: '/$slug',
   getParentRoute: () => PhoenixRoute,
 } as any)
+const Items1SplatRoute = Items1SplatRouteImport.update({
+  id: '/$',
+  path: '/$',
+  getParentRoute: () => Items1Route,
+} as any)
 const BlogSlugRoute = BlogSlugRouteImport.update({
   id: '/$slug',
   path: '/$slug',
@@ -361,23 +428,31 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/accessibility': typeof AccessibilityRoute
   '/all-inclusive-pricing': typeof AllInclusivePricingRoute
+  '/azorcali': typeof AzorcaliRoute
   '/bar-service': typeof BarServiceRoute
   '/bartending': typeof BartendingRoute
+  '/blank': typeof BlankRoute
   '/blog': typeof BlogRouteWithChildren
+  '/cheatcode': typeof CheatcodeRoute
   '/company-catering-phoenix-sandiego': typeof CompanyCateringPhoenixSandiegoRoute
   '/contact': typeof ContactRoute
+  '/copy-of-home': typeof CopyOfHomeRoute
+  '/copy-of-lunch-catering-phoenix': typeof CopyOfLunchCateringPhoenixRoute
   '/corporate': typeof CorporateRoute
   '/corporate-catering-phoenix': typeof CorporateCateringPhoenixRoute
   '/corporate-catering-san-diego': typeof CorporateCateringSanDiegoRoute
+  '/event-venue-daddy-s-place': typeof EventVenueDaddySPlaceRoute
   '/faq': typeof FaqRoute
   '/faq-s': typeof FaqSRoute
   '/inquiry-services-page': typeof InquiryServicesPageRoute
+  '/items-1': typeof Items1RouteWithChildren
   '/locations': typeof LocationsRoute
   '/media': typeof MediaRoute
   '/menus': typeof MenusRoute
   '/outdoor-wedding-grilling': typeof OutdoorWeddingGrillingRoute
   '/phoenix': typeof PhoenixRouteWithChildren
   '/phoenix-catering': typeof PhoenixCateringRoute
+  '/phoenix-menu': typeof PhoenixMenuRoute
   '/pic-page': typeof PicPageRoute
   '/pictures': typeof PicturesRoute
   '/pricing': typeof PricingRoute
@@ -393,8 +468,10 @@ export interface FileRoutesByFullPath {
   '/reviews': typeof ReviewsRoute
   '/san-diego': typeof SanDiegoRouteWithChildren
   '/san-diego-catering': typeof SanDiegoCateringRoute
+  '/san-diego-menu': typeof SanDiegoMenuRoute
   '/service-areas': typeof ServiceAreasRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/skool': typeof SkoolRoute
   '/steak-seafood-menu': typeof SteakSeafoodMenuRoute
   '/steak-seafood-menu-san-diego': typeof SteakSeafoodMenuSanDiegoRoute
   '/steakhouse': typeof SteakhouseRoute
@@ -409,6 +486,7 @@ export interface FileRoutesByFullPath {
   '/why-qfire': typeof WhyQfireRoute
   '/wood-fired': typeof WoodFiredRoute
   '/blog/$slug': typeof BlogSlugRoute
+  '/items-1/$': typeof Items1SplatRoute
   '/phoenix/$slug': typeof PhoenixSlugRoute
   '/san-diego/$slug': typeof SanDiegoSlugRoute
   '/phoenix/': typeof PhoenixIndexRoute
@@ -419,22 +497,30 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/accessibility': typeof AccessibilityRoute
   '/all-inclusive-pricing': typeof AllInclusivePricingRoute
+  '/azorcali': typeof AzorcaliRoute
   '/bar-service': typeof BarServiceRoute
   '/bartending': typeof BartendingRoute
+  '/blank': typeof BlankRoute
   '/blog': typeof BlogRouteWithChildren
+  '/cheatcode': typeof CheatcodeRoute
   '/company-catering-phoenix-sandiego': typeof CompanyCateringPhoenixSandiegoRoute
   '/contact': typeof ContactRoute
+  '/copy-of-home': typeof CopyOfHomeRoute
+  '/copy-of-lunch-catering-phoenix': typeof CopyOfLunchCateringPhoenixRoute
   '/corporate': typeof CorporateRoute
   '/corporate-catering-phoenix': typeof CorporateCateringPhoenixRoute
   '/corporate-catering-san-diego': typeof CorporateCateringSanDiegoRoute
+  '/event-venue-daddy-s-place': typeof EventVenueDaddySPlaceRoute
   '/faq': typeof FaqRoute
   '/faq-s': typeof FaqSRoute
   '/inquiry-services-page': typeof InquiryServicesPageRoute
+  '/items-1': typeof Items1RouteWithChildren
   '/locations': typeof LocationsRoute
   '/media': typeof MediaRoute
   '/menus': typeof MenusRoute
   '/outdoor-wedding-grilling': typeof OutdoorWeddingGrillingRoute
   '/phoenix-catering': typeof PhoenixCateringRoute
+  '/phoenix-menu': typeof PhoenixMenuRoute
   '/pic-page': typeof PicPageRoute
   '/pictures': typeof PicturesRoute
   '/pricing': typeof PricingRoute
@@ -449,8 +535,10 @@ export interface FileRoutesByTo {
   '/rentals': typeof RentalsRoute
   '/reviews': typeof ReviewsRoute
   '/san-diego-catering': typeof SanDiegoCateringRoute
+  '/san-diego-menu': typeof SanDiegoMenuRoute
   '/service-areas': typeof ServiceAreasRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/skool': typeof SkoolRoute
   '/steak-seafood-menu': typeof SteakSeafoodMenuRoute
   '/steak-seafood-menu-san-diego': typeof SteakSeafoodMenuSanDiegoRoute
   '/steakhouse': typeof SteakhouseRoute
@@ -465,6 +553,7 @@ export interface FileRoutesByTo {
   '/why-qfire': typeof WhyQfireRoute
   '/wood-fired': typeof WoodFiredRoute
   '/blog/$slug': typeof BlogSlugRoute
+  '/items-1/$': typeof Items1SplatRoute
   '/phoenix/$slug': typeof PhoenixSlugRoute
   '/san-diego/$slug': typeof SanDiegoSlugRoute
   '/phoenix': typeof PhoenixIndexRoute
@@ -476,23 +565,31 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/accessibility': typeof AccessibilityRoute
   '/all-inclusive-pricing': typeof AllInclusivePricingRoute
+  '/azorcali': typeof AzorcaliRoute
   '/bar-service': typeof BarServiceRoute
   '/bartending': typeof BartendingRoute
+  '/blank': typeof BlankRoute
   '/blog': typeof BlogRouteWithChildren
+  '/cheatcode': typeof CheatcodeRoute
   '/company-catering-phoenix-sandiego': typeof CompanyCateringPhoenixSandiegoRoute
   '/contact': typeof ContactRoute
+  '/copy-of-home': typeof CopyOfHomeRoute
+  '/copy-of-lunch-catering-phoenix': typeof CopyOfLunchCateringPhoenixRoute
   '/corporate': typeof CorporateRoute
   '/corporate-catering-phoenix': typeof CorporateCateringPhoenixRoute
   '/corporate-catering-san-diego': typeof CorporateCateringSanDiegoRoute
+  '/event-venue-daddy-s-place': typeof EventVenueDaddySPlaceRoute
   '/faq': typeof FaqRoute
   '/faq-s': typeof FaqSRoute
   '/inquiry-services-page': typeof InquiryServicesPageRoute
+  '/items-1': typeof Items1RouteWithChildren
   '/locations': typeof LocationsRoute
   '/media': typeof MediaRoute
   '/menus': typeof MenusRoute
   '/outdoor-wedding-grilling': typeof OutdoorWeddingGrillingRoute
   '/phoenix': typeof PhoenixRouteWithChildren
   '/phoenix-catering': typeof PhoenixCateringRoute
+  '/phoenix-menu': typeof PhoenixMenuRoute
   '/pic-page': typeof PicPageRoute
   '/pictures': typeof PicturesRoute
   '/pricing': typeof PricingRoute
@@ -508,8 +605,10 @@ export interface FileRoutesById {
   '/reviews': typeof ReviewsRoute
   '/san-diego': typeof SanDiegoRouteWithChildren
   '/san-diego-catering': typeof SanDiegoCateringRoute
+  '/san-diego-menu': typeof SanDiegoMenuRoute
   '/service-areas': typeof ServiceAreasRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/skool': typeof SkoolRoute
   '/steak-seafood-menu': typeof SteakSeafoodMenuRoute
   '/steak-seafood-menu-san-diego': typeof SteakSeafoodMenuSanDiegoRoute
   '/steakhouse': typeof SteakhouseRoute
@@ -524,6 +623,7 @@ export interface FileRoutesById {
   '/why-qfire': typeof WhyQfireRoute
   '/wood-fired': typeof WoodFiredRoute
   '/blog/$slug': typeof BlogSlugRoute
+  '/items-1/$': typeof Items1SplatRoute
   '/phoenix/$slug': typeof PhoenixSlugRoute
   '/san-diego/$slug': typeof SanDiegoSlugRoute
   '/phoenix/': typeof PhoenixIndexRoute
@@ -536,23 +636,31 @@ export interface FileRouteTypes {
     | '/about'
     | '/accessibility'
     | '/all-inclusive-pricing'
+    | '/azorcali'
     | '/bar-service'
     | '/bartending'
+    | '/blank'
     | '/blog'
+    | '/cheatcode'
     | '/company-catering-phoenix-sandiego'
     | '/contact'
+    | '/copy-of-home'
+    | '/copy-of-lunch-catering-phoenix'
     | '/corporate'
     | '/corporate-catering-phoenix'
     | '/corporate-catering-san-diego'
+    | '/event-venue-daddy-s-place'
     | '/faq'
     | '/faq-s'
     | '/inquiry-services-page'
+    | '/items-1'
     | '/locations'
     | '/media'
     | '/menus'
     | '/outdoor-wedding-grilling'
     | '/phoenix'
     | '/phoenix-catering'
+    | '/phoenix-menu'
     | '/pic-page'
     | '/pictures'
     | '/pricing'
@@ -568,8 +676,10 @@ export interface FileRouteTypes {
     | '/reviews'
     | '/san-diego'
     | '/san-diego-catering'
+    | '/san-diego-menu'
     | '/service-areas'
     | '/sitemap.xml'
+    | '/skool'
     | '/steak-seafood-menu'
     | '/steak-seafood-menu-san-diego'
     | '/steakhouse'
@@ -584,6 +694,7 @@ export interface FileRouteTypes {
     | '/why-qfire'
     | '/wood-fired'
     | '/blog/$slug'
+    | '/items-1/$'
     | '/phoenix/$slug'
     | '/san-diego/$slug'
     | '/phoenix/'
@@ -594,22 +705,30 @@ export interface FileRouteTypes {
     | '/about'
     | '/accessibility'
     | '/all-inclusive-pricing'
+    | '/azorcali'
     | '/bar-service'
     | '/bartending'
+    | '/blank'
     | '/blog'
+    | '/cheatcode'
     | '/company-catering-phoenix-sandiego'
     | '/contact'
+    | '/copy-of-home'
+    | '/copy-of-lunch-catering-phoenix'
     | '/corporate'
     | '/corporate-catering-phoenix'
     | '/corporate-catering-san-diego'
+    | '/event-venue-daddy-s-place'
     | '/faq'
     | '/faq-s'
     | '/inquiry-services-page'
+    | '/items-1'
     | '/locations'
     | '/media'
     | '/menus'
     | '/outdoor-wedding-grilling'
     | '/phoenix-catering'
+    | '/phoenix-menu'
     | '/pic-page'
     | '/pictures'
     | '/pricing'
@@ -624,8 +743,10 @@ export interface FileRouteTypes {
     | '/rentals'
     | '/reviews'
     | '/san-diego-catering'
+    | '/san-diego-menu'
     | '/service-areas'
     | '/sitemap.xml'
+    | '/skool'
     | '/steak-seafood-menu'
     | '/steak-seafood-menu-san-diego'
     | '/steakhouse'
@@ -640,6 +761,7 @@ export interface FileRouteTypes {
     | '/why-qfire'
     | '/wood-fired'
     | '/blog/$slug'
+    | '/items-1/$'
     | '/phoenix/$slug'
     | '/san-diego/$slug'
     | '/phoenix'
@@ -650,23 +772,31 @@ export interface FileRouteTypes {
     | '/about'
     | '/accessibility'
     | '/all-inclusive-pricing'
+    | '/azorcali'
     | '/bar-service'
     | '/bartending'
+    | '/blank'
     | '/blog'
+    | '/cheatcode'
     | '/company-catering-phoenix-sandiego'
     | '/contact'
+    | '/copy-of-home'
+    | '/copy-of-lunch-catering-phoenix'
     | '/corporate'
     | '/corporate-catering-phoenix'
     | '/corporate-catering-san-diego'
+    | '/event-venue-daddy-s-place'
     | '/faq'
     | '/faq-s'
     | '/inquiry-services-page'
+    | '/items-1'
     | '/locations'
     | '/media'
     | '/menus'
     | '/outdoor-wedding-grilling'
     | '/phoenix'
     | '/phoenix-catering'
+    | '/phoenix-menu'
     | '/pic-page'
     | '/pictures'
     | '/pricing'
@@ -682,8 +812,10 @@ export interface FileRouteTypes {
     | '/reviews'
     | '/san-diego'
     | '/san-diego-catering'
+    | '/san-diego-menu'
     | '/service-areas'
     | '/sitemap.xml'
+    | '/skool'
     | '/steak-seafood-menu'
     | '/steak-seafood-menu-san-diego'
     | '/steakhouse'
@@ -698,6 +830,7 @@ export interface FileRouteTypes {
     | '/why-qfire'
     | '/wood-fired'
     | '/blog/$slug'
+    | '/items-1/$'
     | '/phoenix/$slug'
     | '/san-diego/$slug'
     | '/phoenix/'
@@ -709,23 +842,31 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   AccessibilityRoute: typeof AccessibilityRoute
   AllInclusivePricingRoute: typeof AllInclusivePricingRoute
+  AzorcaliRoute: typeof AzorcaliRoute
   BarServiceRoute: typeof BarServiceRoute
   BartendingRoute: typeof BartendingRoute
+  BlankRoute: typeof BlankRoute
   BlogRoute: typeof BlogRouteWithChildren
+  CheatcodeRoute: typeof CheatcodeRoute
   CompanyCateringPhoenixSandiegoRoute: typeof CompanyCateringPhoenixSandiegoRoute
   ContactRoute: typeof ContactRoute
+  CopyOfHomeRoute: typeof CopyOfHomeRoute
+  CopyOfLunchCateringPhoenixRoute: typeof CopyOfLunchCateringPhoenixRoute
   CorporateRoute: typeof CorporateRoute
   CorporateCateringPhoenixRoute: typeof CorporateCateringPhoenixRoute
   CorporateCateringSanDiegoRoute: typeof CorporateCateringSanDiegoRoute
+  EventVenueDaddySPlaceRoute: typeof EventVenueDaddySPlaceRoute
   FaqRoute: typeof FaqRoute
   FaqSRoute: typeof FaqSRoute
   InquiryServicesPageRoute: typeof InquiryServicesPageRoute
+  Items1Route: typeof Items1RouteWithChildren
   LocationsRoute: typeof LocationsRoute
   MediaRoute: typeof MediaRoute
   MenusRoute: typeof MenusRoute
   OutdoorWeddingGrillingRoute: typeof OutdoorWeddingGrillingRoute
   PhoenixRoute: typeof PhoenixRouteWithChildren
   PhoenixCateringRoute: typeof PhoenixCateringRoute
+  PhoenixMenuRoute: typeof PhoenixMenuRoute
   PicPageRoute: typeof PicPageRoute
   PicturesRoute: typeof PicturesRoute
   PricingRoute: typeof PricingRoute
@@ -741,8 +882,10 @@ export interface RootRouteChildren {
   ReviewsRoute: typeof ReviewsRoute
   SanDiegoRoute: typeof SanDiegoRouteWithChildren
   SanDiegoCateringRoute: typeof SanDiegoCateringRoute
+  SanDiegoMenuRoute: typeof SanDiegoMenuRoute
   ServiceAreasRoute: typeof ServiceAreasRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  SkoolRoute: typeof SkoolRoute
   SteakSeafoodMenuRoute: typeof SteakSeafoodMenuRoute
   SteakSeafoodMenuSanDiegoRoute: typeof SteakSeafoodMenuSanDiegoRoute
   SteakhouseRoute: typeof SteakhouseRoute
@@ -851,6 +994,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SteakSeafoodMenuRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/skool': {
+      id: '/skool'
+      path: '/skool'
+      fullPath: '/skool'
+      preLoaderRoute: typeof SkoolRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/sitemap.xml': {
       id: '/sitemap.xml'
       path: '/sitemap.xml'
@@ -863,6 +1013,13 @@ declare module '@tanstack/react-router' {
       path: '/service-areas'
       fullPath: '/service-areas'
       preLoaderRoute: typeof ServiceAreasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/san-diego-menu': {
+      id: '/san-diego-menu'
+      path: '/san-diego-menu'
+      fullPath: '/san-diego-menu'
+      preLoaderRoute: typeof SanDiegoMenuRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/san-diego-catering': {
@@ -970,6 +1127,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PicPageRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/phoenix-menu': {
+      id: '/phoenix-menu'
+      path: '/phoenix-menu'
+      fullPath: '/phoenix-menu'
+      preLoaderRoute: typeof PhoenixMenuRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/phoenix-catering': {
       id: '/phoenix-catering'
       path: '/phoenix-catering'
@@ -1012,6 +1176,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LocationsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/items-1': {
+      id: '/items-1'
+      path: '/items-1'
+      fullPath: '/items-1'
+      preLoaderRoute: typeof Items1RouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/inquiry-services-page': {
       id: '/inquiry-services-page'
       path: '/inquiry-services-page'
@@ -1031,6 +1202,13 @@ declare module '@tanstack/react-router' {
       path: '/faq'
       fullPath: '/faq'
       preLoaderRoute: typeof FaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/event-venue-daddy-s-place': {
+      id: '/event-venue-daddy-s-place'
+      path: '/event-venue-daddy-s-place'
+      fullPath: '/event-venue-daddy-s-place'
+      preLoaderRoute: typeof EventVenueDaddySPlaceRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/corporate-catering-san-diego': {
@@ -1054,6 +1232,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CorporateRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/copy-of-lunch-catering-phoenix': {
+      id: '/copy-of-lunch-catering-phoenix'
+      path: '/copy-of-lunch-catering-phoenix'
+      fullPath: '/copy-of-lunch-catering-phoenix'
+      preLoaderRoute: typeof CopyOfLunchCateringPhoenixRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/copy-of-home': {
+      id: '/copy-of-home'
+      path: '/copy-of-home'
+      fullPath: '/copy-of-home'
+      preLoaderRoute: typeof CopyOfHomeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/contact': {
       id: '/contact'
       path: '/contact'
@@ -1068,11 +1260,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CompanyCateringPhoenixSandiegoRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/cheatcode': {
+      id: '/cheatcode'
+      path: '/cheatcode'
+      fullPath: '/cheatcode'
+      preLoaderRoute: typeof CheatcodeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog': {
       id: '/blog'
       path: '/blog'
       fullPath: '/blog'
       preLoaderRoute: typeof BlogRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blank': {
+      id: '/blank'
+      path: '/blank'
+      fullPath: '/blank'
+      preLoaderRoute: typeof BlankRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/bartending': {
@@ -1087,6 +1293,13 @@ declare module '@tanstack/react-router' {
       path: '/bar-service'
       fullPath: '/bar-service'
       preLoaderRoute: typeof BarServiceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/azorcali': {
+      id: '/azorcali'
+      path: '/azorcali'
+      fullPath: '/azorcali'
+      preLoaderRoute: typeof AzorcaliRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/all-inclusive-pricing': {
@@ -1145,6 +1358,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PhoenixSlugRouteImport
       parentRoute: typeof PhoenixRoute
     }
+    '/items-1/$': {
+      id: '/items-1/$'
+      path: '/$'
+      fullPath: '/items-1/$'
+      preLoaderRoute: typeof Items1SplatRouteImport
+      parentRoute: typeof Items1Route
+    }
     '/blog/$slug': {
       id: '/blog/$slug'
       path: '/$slug'
@@ -1164,6 +1384,17 @@ const BlogRouteChildren: BlogRouteChildren = {
 }
 
 const BlogRouteWithChildren = BlogRoute._addFileChildren(BlogRouteChildren)
+
+interface Items1RouteChildren {
+  Items1SplatRoute: typeof Items1SplatRoute
+}
+
+const Items1RouteChildren: Items1RouteChildren = {
+  Items1SplatRoute: Items1SplatRoute,
+}
+
+const Items1RouteWithChildren =
+  Items1Route._addFileChildren(Items1RouteChildren)
 
 interface PhoenixRouteChildren {
   PhoenixSlugRoute: typeof PhoenixSlugRoute
@@ -1197,23 +1428,31 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   AccessibilityRoute: AccessibilityRoute,
   AllInclusivePricingRoute: AllInclusivePricingRoute,
+  AzorcaliRoute: AzorcaliRoute,
   BarServiceRoute: BarServiceRoute,
   BartendingRoute: BartendingRoute,
+  BlankRoute: BlankRoute,
   BlogRoute: BlogRouteWithChildren,
+  CheatcodeRoute: CheatcodeRoute,
   CompanyCateringPhoenixSandiegoRoute: CompanyCateringPhoenixSandiegoRoute,
   ContactRoute: ContactRoute,
+  CopyOfHomeRoute: CopyOfHomeRoute,
+  CopyOfLunchCateringPhoenixRoute: CopyOfLunchCateringPhoenixRoute,
   CorporateRoute: CorporateRoute,
   CorporateCateringPhoenixRoute: CorporateCateringPhoenixRoute,
   CorporateCateringSanDiegoRoute: CorporateCateringSanDiegoRoute,
+  EventVenueDaddySPlaceRoute: EventVenueDaddySPlaceRoute,
   FaqRoute: FaqRoute,
   FaqSRoute: FaqSRoute,
   InquiryServicesPageRoute: InquiryServicesPageRoute,
+  Items1Route: Items1RouteWithChildren,
   LocationsRoute: LocationsRoute,
   MediaRoute: MediaRoute,
   MenusRoute: MenusRoute,
   OutdoorWeddingGrillingRoute: OutdoorWeddingGrillingRoute,
   PhoenixRoute: PhoenixRouteWithChildren,
   PhoenixCateringRoute: PhoenixCateringRoute,
+  PhoenixMenuRoute: PhoenixMenuRoute,
   PicPageRoute: PicPageRoute,
   PicturesRoute: PicturesRoute,
   PricingRoute: PricingRoute,
@@ -1229,8 +1468,10 @@ const rootRouteChildren: RootRouteChildren = {
   ReviewsRoute: ReviewsRoute,
   SanDiegoRoute: SanDiegoRouteWithChildren,
   SanDiegoCateringRoute: SanDiegoCateringRoute,
+  SanDiegoMenuRoute: SanDiegoMenuRoute,
   ServiceAreasRoute: ServiceAreasRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
+  SkoolRoute: SkoolRoute,
   SteakSeafoodMenuRoute: SteakSeafoodMenuRoute,
   SteakSeafoodMenuSanDiegoRoute: SteakSeafoodMenuSanDiegoRoute,
   SteakhouseRoute: SteakhouseRoute,
