@@ -49,6 +49,8 @@ export const Route = createFileRoute("/sitemap.xml")({
           "/accessibility",
           "/phoenix",
           "/san-diego",
+          "/scottsdale-catering",
+          "/goodyear-catering",
         ];
         const regionPaths: string[] = [];
         for (const region of ["phoenix", "san-diego"] as const) {
