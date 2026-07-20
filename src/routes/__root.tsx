@@ -13,6 +13,7 @@ import { initSmoothScrollLinks } from "../lib/smooth-scroll";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Nav } from "../components/site/Nav";
+import { MobileNav } from "../components/site/mobile/MobileNav";
 import { Footer } from "../components/site/Footer";
 import { StickyMobileCTA } from "../components/site/StickyMobileCTA";
 import { FloatingQuoteCTA } from "../components/site/FloatingQuoteCTA";

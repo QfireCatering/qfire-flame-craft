@@ -50,7 +50,7 @@ export function Nav() {
         </div>
       </div>
       <header
-        className={`fixed inset-x-0 z-50 transition-all duration-500 md:top-7 top-0 ${
+        className={`hidden md:block fixed inset-x-0 z-50 transition-all duration-500 md:top-7 top-0 ${
           scrolled
             ? "backdrop-blur-xl bg-ink/85 border-b border-white/5"
             : "bg-gradient-to-b from-ink/60 to-transparent"
