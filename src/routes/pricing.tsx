@@ -22,7 +22,7 @@ const tiers = [
   },
   {
     name: "Steakhouse Experience Experience",
-    href: "/steakhouse",
+    href: "/menus",
     cta: "Tour the Steakhouse Experience",
     headline: "From $74 / guest (Buffet) · $128 / guest (Plated)",
     blurb:

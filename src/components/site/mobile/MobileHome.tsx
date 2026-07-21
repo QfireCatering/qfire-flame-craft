@@ -187,7 +187,7 @@ export function MobileHome() {
             </div>
           </Link>
 
-          <Link to="/steakhouse" className="group block rounded-lg overflow-hidden border border-gold/20 active:border-gold">
+          <Link to="/menus" className="group block rounded-lg overflow-hidden border border-gold/20 active:border-gold">
             <div className="relative aspect-[16/9] overflow-hidden">
               <img src={steakImg.url} alt="Charcoal-grilled ribeye — Qfire Catering steakhouse experience" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/70 to-transparent" />

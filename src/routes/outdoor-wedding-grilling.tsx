@@ -119,7 +119,7 @@ function OutdoorWeddingGrillingPage() {
                 alt: "Wood-fired BBQ station at an outdoor wedding — Qfire Catering",
               },
               {
-                to: "/steakhouse",
+                to: "/menus",
                 title: "Live Steak Grilling",
                 body: "Ribeyes, filets, picanha and NY strips grilled to order over live charcoal. A five-course steakhouse experience, plated at your outdoor venue.",
                 img: steakhouseBackyardAsset.url,
