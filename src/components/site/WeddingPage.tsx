@@ -387,6 +387,17 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         </div>
       </section>
 
+      {/* BIG VIEW MENU CTA — jumps to menu selection section */}
+      <section className="py-16 lg:py-20 bg-ink border-t border-white/5">
+        <div className="container-luxe flex justify-center">
+          <a
+            href="#menus"
+            className="inline-flex items-center justify-center gap-3 px-12 py-6 lg:px-16 lg:py-7 bg-gold text-ink font-semibold text-2xl lg:text-3xl tracking-wide uppercase shadow-2xl hover:bg-gold/90 transition-all hover:scale-105 border-2 border-gold"
+          >
+            View Menu <ArrowRight className="size-7" />
+          </a>
+        </div>
+      </section>
 
       {/* COMPARISON TABLE — how Qfire compares to other wedding-catering options */}
       <section id="compare" className="py-20 lg:py-28 bg-onyx border-y border-white/10 scroll-mt-32">
