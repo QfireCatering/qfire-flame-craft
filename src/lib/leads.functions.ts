@@ -56,6 +56,30 @@ export const submitLead = createServerFn({ method: "POST" })
         return { ok: true as const, receivedAt: submittedAt, emailed: false };
       }
 
+      const textRows = [
+        ["Name", data.name],
+        ["Email", data.email],
+        ["Cell Phone", data.phone],
+        ["Event Date", data.date],
+        ["Guests", data.guests],
+        ["Region", data.region],
+        ["Event Type", data.type],
+        ["Menu Interest", data.menu],
+        ["Message", data.message],
+        ["Source", data.source || "quote"],
+        ["Submitted", submittedAt],
+      ]
+        .filter(([, value]) => typeof value === "string" && value.trim().length > 0)
+        .map(([label, value]) => `${label}: ${value}`);
+
+      const makeToken = () => {
+        const bytes = new Uint8Array(32);
+        crypto.getRandomValues(bytes);
+        return Array.from(bytes)
+          .map((byte) => byte.toString(16).padStart(2, "0"))
+          .join("");
+      };
+
       const templateData = { ...data, submittedAt };
       const html = await render(
         React.createElement(entry.component, templateData),
@@ -64,10 +88,52 @@ export const submitLead = createServerFn({ method: "POST" })
         typeof entry.subject === "function"
           ? entry.subject(templateData)
           : entry.subject;
+      const text = [`New Quote Request — Qfire Catering`, "", ...textRows].join("\n");
       const recipient = entry.to ?? OWNER_INBOX;
       const messageId = crypto.randomUUID();
 
       const supabase = createClient(supabaseUrl, serviceKey);
+      const normalizedRecipient = recipient.toLowerCase();
+      const { data: existingToken, error: tokenLookupError } = await supabase
+        .from("email_unsubscribe_tokens")
+        .select("token, used_at")
+        .eq("email", normalizedRecipient)
+        .maybeSingle();
+
+      if (tokenLookupError) {
+        console.error("qfire.lead.email.token_lookup_failed", tokenLookupError);
+        return { ok: true as const, receivedAt: submittedAt, emailed: false };
+      }
+
+      let unsubscribeToken = existingToken?.used_at ? null : existingToken?.token;
+      if (!unsubscribeToken) {
+        const newToken = makeToken();
+        const { error: tokenCreateError } = await supabase
+          .from("email_unsubscribe_tokens")
+          .upsert(
+            { token: newToken, email: normalizedRecipient },
+            { onConflict: "email", ignoreDuplicates: true },
+          );
+
+        if (tokenCreateError) {
+          console.error("qfire.lead.email.token_create_failed", tokenCreateError);
+          return { ok: true as const, receivedAt: submittedAt, emailed: false };
+        }
+
+        const { data: storedToken, error: tokenReadError } = await supabase
+          .from("email_unsubscribe_tokens")
+          .select("token")
+          .eq("email", normalizedRecipient)
+          .maybeSingle();
+
+        if (tokenReadError || !storedToken) {
+          console.error("qfire.lead.email.token_read_failed", tokenReadError);
+          return { ok: true as const, receivedAt: submittedAt, emailed: false };
+        }
+
+        unsubscribeToken = storedToken.token;
+      }
+
       const { error } = await supabase.rpc("enqueue_email", {
         queue_name: "transactional_emails",
         payload: {
@@ -78,8 +144,10 @@ export const submitLead = createServerFn({ method: "POST" })
           sender_domain: SENDER_DOMAIN,
           subject,
           html,
+          text,
           purpose: "transactional",
           label: TEMPLATE_NAME,
+          unsubscribe_token: unsubscribeToken,
           queued_at: submittedAt,
         },
       });
