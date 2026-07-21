@@ -58,7 +58,7 @@ export function PageHero({
 
 export function CTASection({
   title = "Let's plan something unforgettable.",
-  subtitle = "Tell us about your event. We'll send a custom proposal within 24 hours.",
+  subtitle = "Tell us about your event. We'll send a custom proposal within 4 hours.",
 }: { title?: string; subtitle?: string }) {
   return (
     <section className="relative py-32 lg:py-40 overflow-hidden">

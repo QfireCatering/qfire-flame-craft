@@ -17,12 +17,12 @@ export const Route = createFileRoute("/quote")({
       {
         name: "description",
         content:
-          "Tell us about your event. Custom catering proposal within 24 hours. Phoenix Metro & San Diego County.",
+          "Tell us about your event. Custom catering proposal within 4 hours. Phoenix Metro & San Diego County.",
       },
       { property: "og:title", content: "Request a Quote — Qfire Catering" },
       {
         property: "og:description",
-        content: "Custom proposal within 24 hours. Wood-fired + Steakhouse Experience.",
+        content: "Custom proposal within 4 hours. Wood-fired + Steakhouse Experience.",
       },
       { property: "og:url", content: "https://qfire-flame-craft.lovable.app/quote" },
     ],
@@ -104,20 +104,33 @@ function QuotePage() {
           <div>
             <h1 className="heading-lg text-bone max-w-md">Tell us about your event.</h1>
             <p className="mt-6 text-bone/70 text-lg max-w-md leading-relaxed font-light">
-              We answer every inquiry personally — usually within 24 hours.
+              We answer every inquiry personally — usually within 4 hours.
             </p>
             <div className="mt-12 space-y-3 text-bone/80">
               {[
-                "Custom proposal within 24 hours",
-                "Free phone consultation",
+                "Receive a Detailed Quote within 4 Hours",
+                "Free Phone (Non-Rushed) Consultation with a catering specialist",
               ].map((t) => (
 
-                <div key={t} className="flex items-center gap-3">
-                  <Check className="size-4 text-gold" /> {t}
+                <div key={t} className="flex items-start gap-3">
+                  <Check className="size-4 text-gold mt-1 shrink-0" /> <span>{t}</span>
                 </div>
               ))}
             </div>
-            <div className="mt-12 space-y-2 text-bone/70 text-sm">
+
+            <div className="mt-10 border-2 border-gold bg-gold/15 px-5 py-5 max-w-md shadow-[0_0_40px_-10px_oklch(0.78_0.13_82/0.5)]">
+              <p className="text-bone font-display text-2xl leading-tight">
+                If you would like to speak with someone right now,
+              </p>
+              <a
+                href={contact.phoneHref}
+                className="mt-2 inline-flex items-center gap-2 text-gold font-black text-xl tracking-tight hover:underline"
+              >
+                <Phone className="size-5" /> Call 877.848.7211
+              </a>
+            </div>
+
+            <div className="mt-8 space-y-2 text-bone/70 text-sm">
               <a href={contact.phoneHref} className="flex items-center gap-3 hover:text-gold">
                 <Phone className="size-4 text-gold" /> {contact.phone}
               </a>
@@ -135,7 +148,7 @@ function QuotePage() {
             <div className="border border-gold/40 p-10 text-center">
               <div className="text-gold text-5xl font-display mb-4">Thank you.</div>
               <p className="text-bone/70 text-lg">
-                Chef Terry's team will be in touch within 24 hours. For faster
+                Chef Terry's team will be in touch within 4 hours. For faster
                 response, call{" "}
                 <a href={contact.phoneHref} className="text-gold underline-offset-4 hover:underline">
                   {contact.phone}
@@ -148,7 +161,7 @@ function QuotePage() {
             </div>
           ) : (
             <form onSubmit={onSubmit} className="space-y-6" noValidate>
-              <div className="border-2 border-gold bg-gold/15 px-5 py-5 text-center shadow-[0_0_40px_-10px_oklch(0.78_0.13_82/0.5)]">
+              <div className="lg:hidden border-2 border-gold bg-gold/15 px-5 py-5 text-center shadow-[0_0_40px_-10px_oklch(0.78_0.13_82/0.5)]">
                 <p className="text-bone font-display text-2xl sm:text-3xl leading-tight">
                   If you would like to speak with someone right now,
                 </p>
@@ -167,10 +180,10 @@ function QuotePage() {
 
               <div className="border border-gold/40 bg-gold/10 px-4 py-2.5 text-center">
                 <p className="text-[0.7rem] tracking-[0.25em] uppercase text-gold font-semibold">
-                  ⏱ 24-Hour Response Guarantee
+                  ⏱ 4-Hour Response Guarantee
                 </p>
                 <p className="text-bone/80 text-xs mt-1 font-light normal-case tracking-normal">
-                  Every inquiry answered personally by Chef Terry's team within 24 hours — usually within 4 business hours.
+                  Every inquiry answered personally by Chef Terry's team within 4 hours — usually within 4 business hours.
                 </p>
               </div>
 

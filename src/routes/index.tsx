@@ -42,7 +42,7 @@ const HOME_FAQS = [
   { q: "Can you accommodate dietary needs and allergies?", a: "Absolutely. Vegetarian, vegan, gluten-free, dairy-free, kosher-style, and Halal-friendly menus are standard. For peanut, tree-nut, and shellfish allergies we run a dedicated prep line and label every plate at the pass." },
   { q: "Do you travel to our venue?", a: "Yes. We cater across Phoenix Metro and San Diego County, and travel to destination venues, vineyards, ranches, and private estates within driving distance. Travel and lodging are quoted transparently inside your proposal." },
   { q: "What makes Qfire different from other caterers?", a: "Qfire is a 100% dedicated catering company — not a restaurant that also caters. Chef Terry Matthews — featured on Food Network's BBQ Brawl with Bobby Flay, Camp Cutthroat, and a Cutthroat Kitchen champion — personally designs every menu. 2,500+ events, $10M+ catered since 2012, 4.9★ rated, fully licensed and insured, with live charcoal grilling at your venue." },
-  { q: "What happens after I request a quote?", a: "A real person — usually Chef Terry or your account lead — calls or emails within 24 hours. We send an itemized proposal, refine the menu together, and lock the date with a 35% Date Retainer applied directly to your final invoice." },
+  { q: "What happens after I request a quote?", a: "A real person — usually Chef Terry or your account lead — calls or emails within 4 hours. We send an itemized proposal, refine the menu together, and lock the date with a 35% Date Retainer applied directly to your final invoice." },
 ];
 
 export const Route = createFileRoute("/")({

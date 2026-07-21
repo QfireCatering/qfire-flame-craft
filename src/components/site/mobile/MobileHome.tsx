@@ -241,7 +241,7 @@ export function MobileHome() {
             "Full setup, live-fire cooking, and complete breakdown",
             "Beautifully styled buffets, stations, and plated service",
             "Fully licensed, insured, and Health Dept. compliant",
-            "24-hour response on every quote",
+            "4-hour response on every quote",
           ].map((line) => (
             <li key={line} className="flex items-start gap-3 text-bone/90 text-base leading-snug">
               <Check className="size-5 text-gold shrink-0 mt-0.5" strokeWidth={2} />
@@ -340,7 +340,7 @@ export function MobileHome() {
             Let's cook <span className="italic font-light text-bone/60">your event.</span>
           </h2>
           <p className="mt-3 text-bone/75 text-base">
-            One quote request. One real reply within 24 hours. From Chef Terry himself.
+            One quote request. One real reply within 4 hours. From Chef Terry himself.
           </p>
           <div className="mt-6 space-y-2.5">
             <Link

@@ -343,7 +343,7 @@ function SteakSeafoodMenuSanDiegoPage() {
             </div>
           </div>
           <p className="mt-10 text-sm text-bone/55 italic text-center">
-            Per-person San Diego County pricing is built around your guest count, venue and menu selections. Request a quote for current rates — we respond within 24 hours.
+            Per-person San Diego County pricing is built around your guest count, venue and menu selections. Request a quote for current rates — we respond within 4 hours.
           </p>
         </div>
       </section>
@@ -445,7 +445,7 @@ function SteakSeafoodMenuSanDiegoPage() {
 
       <CTASection
         title="Bring the signature steakhouse experience to your San Diego County event."
-        subtitle="Serving La Jolla, Del Mar, Rancho Santa Fe, Coronado, Carmel Valley, Encinitas, Carlsbad and surrounding areas. Tell us your date, guest count and venue — we'll send a custom proposal within 24 hours."
+        subtitle="Serving La Jolla, Del Mar, Rancho Santa Fe, Coronado, Carmel Valley, Encinitas, Carlsbad and surrounding areas. Tell us your date, guest count and venue — we'll send a custom proposal within 4 hours."
       />
     </>
   );

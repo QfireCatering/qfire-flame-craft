@@ -182,7 +182,7 @@ function AboutPage() {
         {...definitiveCopy.about}
       />
 
-      <CTASection title="Hire the chef behind the camera." subtitle="Tell us about your event. Chef Terry's team will be in touch within 24 hours." />
+      <CTASection title="Hire the chef behind the camera." subtitle="Tell us about your event. Chef Terry's team will be in touch within 4 hours." />
     </>
   );
 }

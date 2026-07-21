@@ -227,7 +227,7 @@ export function PrivatePartyPage({ config }: { config: PrivatePartyRegionConfig 
           `Serving ${cities.slice(0, 4).join(", ")} and greater ${region}`,
           "Birthdays, anniversaries, graduations, retirements, celebrations of life",
           "Wood-Fire BBQ from $13.99/guest · Steakhouse Experience from $74/guest",
-          "24-hour quote response · custom menus locked up to 15 days out",
+          "4-hour quote response · custom menus locked up to 15 days out",
         ]}
       />
 

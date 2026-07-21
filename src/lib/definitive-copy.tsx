@@ -113,7 +113,7 @@ export const definitiveCopy: Record<string, Preset> = {
     ],
     expectations: {
       before: [
-        "Discovery call within 24 hours of inquiry",
+        "Discovery call within 4 hours of inquiry",
         "Itemized proposal within 3–5 business days",
         "Tasting scheduled at our prep kitchen",
         "Floor-plan and timeline coordination with your planner",
@@ -251,7 +251,7 @@ export const definitiveCopy: Record<string, Preset> = {
     ],
     expectations: {
       before: [
-        "Discovery call within 24 hours",
+        "Discovery call within 4 hours",
         "Itemized proposal within a few business days",
         "Menu and service plan refined over multiple touches",
         "Walkthrough of your home or venue if needed",
@@ -517,7 +517,7 @@ definitiveCopy.region = {
   ],
   expectations: {
     before: [
-      "Inquiry response within 24 hours",
+      "Inquiry response within 4 hours",
       "Itemized proposal within a few business days",
       "Menu refinement across multiple touches",
       "Site visit available for unfamiliar venues",

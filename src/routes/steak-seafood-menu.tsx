@@ -368,7 +368,7 @@ function SteakSeafoodMenuPage() {
             </div>
           </div>
           <p className="mt-10 text-sm text-bone/55 italic text-center">
-            Per-person Phoenix Metro pricing is built around your guest count, venue and menu selections. Request a quote for current rates — we respond within 24 hours.
+            Per-person Phoenix Metro pricing is built around your guest count, venue and menu selections. Request a quote for current rates — we respond within 4 hours.
           </p>
         </div>
       </section>
@@ -488,7 +488,7 @@ function SteakSeafoodMenuPage() {
 
       <CTASection
         title="Bring the signature steakhouse experience to your Phoenix Metro event."
-        subtitle="Serving Phoenix, Scottsdale, Gilbert, Mesa, Tempe and surrounding areas. Tell us your date, guest count and venue — we'll send a custom proposal within 24 hours."
+        subtitle="Serving Phoenix, Scottsdale, Gilbert, Mesa, Tempe and surrounding areas. Tell us your date, guest count and venue — we'll send a custom proposal within 4 hours."
       />
     </>
   );

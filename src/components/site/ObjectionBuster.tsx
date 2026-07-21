@@ -103,7 +103,7 @@ export function ObjectionBuster({
             {ctaLabel} <ArrowRight className="size-4" />
           </Link>
           <p className="mt-4 text-bone/55 text-sm">
-            Free quote · Custom proposal in 24 hours · No obligation
+            Free quote · Custom proposal in 4 hours · No obligation
           </p>
         </div>
       </div>

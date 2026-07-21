@@ -140,7 +140,7 @@ function PricingPage() {
       <DefinitiveContent topic="Catering Pricing" region="weddings, corporate & private events" {...definitiveCopy.pricing} />
       <CTASection
         title="Want a number for your event?"
-        subtitle="Send us the date and guest count. Custom proposal back within 24 hours."
+        subtitle="Send us the date and guest count. Custom proposal back within 4 hours."
       />
     </>
   );

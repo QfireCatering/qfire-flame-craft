@@ -237,7 +237,7 @@ export function CorporatePage({ config }: { config: CorporateRegionConfig }) {
           `Serving ${cities.slice(0, 4).join(", ")} and greater ${region}`,
           "Wood-Fire BBQ from $13.99/guest · Steakhouse Experience from $74/guest",
           "COI on request · certificate of insurance for any venue",
-          "24-hour quote response · dedicated event lead assigned to every booking",
+          "4-hour quote response · dedicated event lead assigned to every booking",
         ]}
       />
 
