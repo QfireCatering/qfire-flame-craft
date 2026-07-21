@@ -179,7 +179,7 @@ function QuotePage() {
                 <div className="flex items-center justify-between">
                   <div>
                     <div className="text-[0.65rem] tracking-[0.3em] uppercase text-gold mb-1">Step 1 of 2 · Takes 30 seconds</div>
-                    <div className="text-bone font-display text-xl leading-tight">Check my date &amp; start my quote</div>
+                    <div className="text-white font-display text-3xl md:text-4xl leading-tight font-bold drop-shadow-[0_0_12px_rgba(212,175,55,0.35)]">Check my date &amp; start my quote</div>
                   </div>
                 </div>
                 <div>
