@@ -74,6 +74,8 @@ export interface WeddingRegionConfig {
   venues: string[];
   /** Location-flavored testimonial city tags */
   reviewCities: string[];
+  /** Featured hero review (shown right below hero) */
+  heroReview?: { q: string; a: string; e: string };
 }
 
 const baseFaqs = [
