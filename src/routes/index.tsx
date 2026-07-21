@@ -159,10 +159,13 @@ function Home() {
             <span className="text-bone/70">unforgettable.</span>
           </h1>
           <p className="mt-10 max-w-2xl text-xl text-bone/80 leading-relaxed font-light">
-            Full-service BBQ catering, wood-fired catering and steakhouse catering for weddings, corporate events and private parties — Phoenix Metro &amp; San Diego County.
+            Full-service Premium BBQ catering, and Steakhouse catering for weddings, corporate events and private parties — Phoenix Metro &amp; San Diego County.
           </p>
           <p className="mt-3 max-w-xl text-base text-bone/60 italic">
             Wood-fired flavors. Professional service. Stress-free execution.
+          </p>
+          <p className="mt-4 max-w-xl text-base text-gold/90 font-medium">
+            Delivery and Pick up orders also available.
           </p>
 
           <div className="mt-12">
