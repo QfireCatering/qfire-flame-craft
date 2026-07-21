@@ -34,7 +34,7 @@ export const Route = createFileRoute("/quote")({
 function getRedirectUrl(region: string, menu: string): string | null {
   const isPhx = region === "Arizona";
   const isSD = region === "San Diego County";
-  const isBBQ = menu === "Wood-Fired Catering";
+  const isBBQ = menu === "Wood-Fired BBQ Menu";
   const isSteak = menu === "Steakhouse Experience" || menu === "Steakhouse Experience";
   if (isPhx && isBBQ) return "https://fs17.formsite.com/matthews3404/BBQDADDYLLC/index";
   if (isSD && isBBQ) return "https://fs17.formsite.com/matthews3404/SanDiego/index";
