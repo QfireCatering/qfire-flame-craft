@@ -312,7 +312,49 @@ function QuotePage() {
       title="Your quote — step by step."
       variant="onyx"
     />
+    <section className="bg-charcoal border-t border-white/10 py-16 px-6">
+      <div className="max-w-3xl mx-auto">
+        <div className="text-[0.65rem] tracking-[0.3em] uppercase text-gold text-center mb-3">Quick Answers</div>
+        <h2 className="heading-md text-bone text-center mb-10">Before you hit send.</h2>
+        <div className="space-y-4">
+          {[
+            {
+              q: "How fast will I hear back?",
+              a: "Every inquiry is answered personally by Chef Terry's team within 4 hours — usually within 4 business hours. Need to talk now? Call 877.848.7211.",
+            },
+            {
+              q: "What menu options do you offer?",
+              a: "Two signature menus: Wood-Fire/BBQ (from $13.99/guest in Phoenix, $16.99 in San Diego) and our Steakhouse Experience with premium cuts, surf & turf, and carving stations. Fully customizable up to 15 days out.",
+            },
+            {
+              q: "What info do you need from me?",
+              a: "Just the basics to start: name, email, event date, guest count, region, and menu interest. The more you can share about your vision in the message field, the more tailored your proposal will be.",
+            },
+            {
+              q: "Do I need a final guest count right now?",
+              a: "No — an estimate is fine. You can adjust your final count and menu selections up to 15 days before your event.",
+            },
+            {
+              q: "What areas do you serve?",
+              a: "Phoenix Metro (including Scottsdale, Goodyear, and surrounding areas) and San Diego County. Destination events considered — mention it in your message.",
+            },
+          ].map((item) => (
+            <details
+              key={item.q}
+              className="group border border-white/10 bg-charcoal/60 open:border-gold/40 transition-colors"
+            >
+              <summary className="cursor-pointer list-none px-5 py-4 flex items-center justify-between gap-4 text-bone font-medium">
+                <span>{item.q}</span>
+                <span className="text-gold text-xl leading-none group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p className="px-5 pb-5 text-bone/70 text-sm leading-relaxed font-light">{item.a}</p>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
     </>
+
   );
 }
 
