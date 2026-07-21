@@ -36,7 +36,7 @@ function WeddingsHub() {
               A wedding meal <span className="italic text-gold font-light">they'll remember.</span>
             </h1>
             <p className="mt-8 text-xl md:text-2xl text-bone/85 font-light max-w-2xl">
-              <Link to="/wood-fired" className="underline decoration-gold/40 hover:decoration-gold underline-offset-4">Live charcoal grilling</Link>, premium <Link to="/steakhouse" className="underline decoration-gold/40 hover:decoration-gold underline-offset-4">Steakhouse Experience plates</Link>, full-service staffing — across Phoenix Metro and San Diego County. See our <Link to="/pictures" className="underline decoration-gold/40 hover:decoration-gold underline-offset-4">wedding gallery</Link> and <Link to="/reviews" className="underline decoration-gold/40 hover:decoration-gold underline-offset-4">real couple reviews</Link>.
+              <Link to="/wood-fired" className="underline decoration-gold/40 hover:decoration-gold underline-offset-4">Live charcoal grilling</Link>, premium <Link to="/menus" className="underline decoration-gold/40 hover:decoration-gold underline-offset-4">Steakhouse Experience plates</Link>, full-service staffing — across Phoenix Metro and San Diego County. See our <Link to="/pictures" className="underline decoration-gold/40 hover:decoration-gold underline-offset-4">wedding gallery</Link> and <Link to="/reviews" className="underline decoration-gold/40 hover:decoration-gold underline-offset-4">real couple reviews</Link>.
             </p>
           </div>
         </div>
