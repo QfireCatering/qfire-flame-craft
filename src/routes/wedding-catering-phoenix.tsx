@@ -19,6 +19,11 @@ const config: WeddingRegionConfig = {
     "The Farm at South Mountain", "Saguaro Lake Ranch",
   ],
   reviewCities: ["Scottsdale", "Paradise Valley", "Gilbert", "Mesa"],
+  heroReview: {
+    q: "Chef Terry and his staff were amazing at our daughter's wedding last month. He served 90+ people and the food was amazing! Guests were asking for his especially delicious Mac'N Cheese recipe :-) The appetizers meatballs were yummy as well. The chicken was so juicy and that's not easy to do with a large group. Chef Terry was so patient and kind with my daughter and her now husband's menu changes. We had great communication with his staff as well and everything went so smoothly. My daughter later told me that when Terry said a few words at the wedding that her friends just loved him! He's Excellent!!!",
+    a: "Karri Rowe",
+    e: "Wedding · 90+ guests · Google review",
+  },
 };
 
 export const Route = createFileRoute("/wedding-catering-phoenix")({
