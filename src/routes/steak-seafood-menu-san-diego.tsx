@@ -226,7 +226,6 @@ function SteakSeafoodMenuSanDiegoPage() {
           </div>
           <div className="flex flex-wrap gap-4">
             <a href="#sd-pricing" className="btn-primary">View the Steakhouse Menu <ArrowRight className="size-4" /></a>
-            <a href="#menu" className="btn-ghost">View the San Diego Menu</a>
           </div>
         </div>
       </PageHero>
