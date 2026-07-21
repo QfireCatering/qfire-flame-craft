@@ -77,6 +77,7 @@ import { Route as SanDiegoSlugRouteImport } from './routes/san-diego.$slug'
 import { Route as PhoenixSlugRouteImport } from './routes/phoenix.$slug'
 import { Route as Items1SplatRouteImport } from './routes/items-1.$'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
+import { Route as LovableEmailQueueProcessRouteImport } from './routes/lovable/email/queue/process'
 
 const WoodFiredRoute = WoodFiredRouteImport.update({
   id: '/wood-fired',
@@ -428,6 +429,12 @@ const BlogSlugRoute = BlogSlugRouteImport.update({
   path: '/$slug',
   getParentRoute: () => BlogRoute,
 } as any)
+const LovableEmailQueueProcessRoute =
+  LovableEmailQueueProcessRouteImport.update({
+    id: '/lovable/email/queue/process',
+    path: '/lovable/email/queue/process',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -498,6 +505,7 @@ export interface FileRoutesByFullPath {
   '/san-diego/$slug': typeof SanDiegoSlugRoute
   '/phoenix/': typeof PhoenixIndexRoute
   '/san-diego/': typeof SanDiegoIndexRoute
+  '/lovable/email/queue/process': typeof LovableEmailQueueProcessRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -566,6 +574,7 @@ export interface FileRoutesByTo {
   '/san-diego/$slug': typeof SanDiegoSlugRoute
   '/phoenix': typeof PhoenixIndexRoute
   '/san-diego': typeof SanDiegoIndexRoute
+  '/lovable/email/queue/process': typeof LovableEmailQueueProcessRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -637,6 +646,7 @@ export interface FileRoutesById {
   '/san-diego/$slug': typeof SanDiegoSlugRoute
   '/phoenix/': typeof PhoenixIndexRoute
   '/san-diego/': typeof SanDiegoIndexRoute
+  '/lovable/email/queue/process': typeof LovableEmailQueueProcessRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -709,6 +719,7 @@ export interface FileRouteTypes {
     | '/san-diego/$slug'
     | '/phoenix/'
     | '/san-diego/'
+    | '/lovable/email/queue/process'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -777,6 +788,7 @@ export interface FileRouteTypes {
     | '/san-diego/$slug'
     | '/phoenix'
     | '/san-diego'
+    | '/lovable/email/queue/process'
   id:
     | '__root__'
     | '/'
@@ -847,6 +859,7 @@ export interface FileRouteTypes {
     | '/san-diego/$slug'
     | '/phoenix/'
     | '/san-diego/'
+    | '/lovable/email/queue/process'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -912,6 +925,7 @@ export interface RootRouteChildren {
   WeddingsRoute: typeof WeddingsRoute
   WhyQfireRoute: typeof WhyQfireRoute
   WoodFiredRoute: typeof WoodFiredRoute
+  LovableEmailQueueProcessRoute: typeof LovableEmailQueueProcessRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -1392,6 +1406,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogSlugRouteImport
       parentRoute: typeof BlogRoute
     }
+    '/lovable/email/queue/process': {
+      id: '/lovable/email/queue/process'
+      path: '/lovable/email/queue/process'
+      fullPath: '/lovable/email/queue/process'
+      preLoaderRoute: typeof LovableEmailQueueProcessRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -1506,6 +1527,7 @@ const rootRouteChildren: RootRouteChildren = {
   WeddingsRoute: WeddingsRoute,
   WhyQfireRoute: WhyQfireRoute,
   WoodFiredRoute: WoodFiredRoute,
+  LovableEmailQueueProcessRoute: LovableEmailQueueProcessRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
