@@ -290,7 +290,7 @@ function SteakSeafoodMenuSanDiegoPage() {
                 </div>
                 <div>
                   <p className="font-display text-bone text-lg mb-1">Signature Surf & Turf Entrée</p>
-                  <p>Indulge in three premium proteins expertly prepared over live charcoal alongside three carefully selected gourmet sides designed to complement every bite.</p>
+                  <p>Indulge in three premium proteins expertly prepared over live charcoal alongside two carefully selected gourmet sides designed to complement every bite.</p>
                   <p className="mt-2">Every plate is crafted to deliver the flavor, presentation, and quality you'd expect from a high-end steakhouse.</p>
                 </div>
                 <div>
