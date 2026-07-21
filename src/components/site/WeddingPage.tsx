@@ -343,6 +343,27 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
         </div>
       </section>
 
+      {/* HERO REVIEW — real Google review directly under hero */}
+      {config.heroReview && (
+        <section className="bg-ink border-b border-gold/15 py-10 lg:py-14">
+          <div className="container-luxe">
+            <figure className="max-w-3xl mx-auto text-center">
+              <div className="flex justify-center gap-1 mb-5" aria-label="5 star Google review">
+                {[0,1,2,3,4].map((i) => (
+                  <Star key={i} className="size-5 text-gold fill-gold" />
+                ))}
+              </div>
+              <blockquote className="text-bone/95 text-xl md:text-2xl font-light italic leading-relaxed">
+                “{config.heroReview.q}”
+              </blockquote>
+              <figcaption className="mt-6 text-sm tracking-[0.22em] uppercase text-gold/90">
+                — {config.heroReview.a} · <span className="text-bone/60">{config.heroReview.e}</span>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+      )}
+
       {/* TL;DR ANSWER BOX (AI search / featured snippet) */}
       <AnswerBox
         question={`Who caters weddings in ${regionShort}?`}
