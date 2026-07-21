@@ -22,8 +22,8 @@ export function WeddingBuffetEstimator({
   audienceNoun?: string;
 }) {
   const isPhx = regionShort === "Phoenix";
-  const perGuest = isPhx ? 37.15 : 44.95;
-  const total = isPhx ? 3715 : 4495;
+  const perGuest = isPhx ? 38.15 : 45.95;
+  const total = isPhx ? 3815 : 4595;
   const guests = 100;
   const evLower = eventTypeLower ?? eventType.toLowerCase();
   const audience = audienceNoun ?? "host";
