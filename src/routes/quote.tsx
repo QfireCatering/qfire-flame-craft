@@ -110,8 +110,8 @@ function QuotePage() {
               {[
                 "Custom proposal within 24 hours",
                 "Free phone consultation",
-                "Tastings for booked clients",
               ].map((t) => (
+
                 <div key={t} className="flex items-center gap-3">
                   <Check className="size-4 text-gold" /> {t}
                 </div>
@@ -148,14 +148,23 @@ function QuotePage() {
             </div>
           ) : (
             <form onSubmit={onSubmit} className="space-y-6" noValidate>
-              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-center gap-3 sm:gap-6 text-center">
-                <a href={contact.phoneHref} className="inline-flex items-center justify-center gap-2 text-gold font-bold text-lg hover:underline">
-                  <Phone className="size-5" /> {contact.phone}
+              <div className="border-2 border-gold bg-gold/15 px-5 py-5 text-center shadow-[0_0_40px_-10px_oklch(0.78_0.13_82/0.5)]">
+                <p className="text-bone font-display text-2xl sm:text-3xl leading-tight">
+                  If you would like to speak with someone right now,
+                </p>
+                <a
+                  href={contact.phoneHref}
+                  className="mt-2 inline-flex items-center justify-center gap-2 text-gold font-black text-3xl sm:text-4xl tracking-tight hover:underline"
+                >
+                  <Phone className="size-7" /> Call 877.848.7211
                 </a>
+              </div>
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-center gap-3 sm:gap-6 text-center">
                 <a href={contact.emailHref} className="inline-flex items-center justify-center gap-2 text-gold font-bold text-base hover:underline break-all">
                   <Mail className="size-5" /> {contact.email}
                 </a>
               </div>
+
               <div className="border border-gold/40 bg-gold/10 px-4 py-2.5 text-center">
                 <p className="text-[0.7rem] tracking-[0.25em] uppercase text-gold font-semibold">
                   ⏱ 24-Hour Response Guarantee
