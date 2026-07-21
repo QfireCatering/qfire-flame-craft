@@ -301,7 +301,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
 
 
   return (
-    <>
+    <div className="wedding-theme">
       <SectionNav items={sectionNavItems} />
       {/* HERO */}
       <section className="relative min-h-[88vh] flex items-end overflow-hidden">
@@ -971,7 +971,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(eventSchema) }} />
-    </>
+    </div>
   );
 }
 
