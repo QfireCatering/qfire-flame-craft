@@ -112,7 +112,7 @@ function OutdoorWeddingGrillingPage() {
           <div className="grid md:grid-cols-3 gap-6">
             {[
               {
-                to: "/wood-fired",
+                to: "/menus",
                 title: "Wood-Fired BBQ",
                 body: "Oak, mesquite and pecan-smoked brisket, tri-tip, pulled pork and ribs. The signature BBQ Daddy experience — carved live at your reception.",
                 img: weddingGrillingAsset.url,
