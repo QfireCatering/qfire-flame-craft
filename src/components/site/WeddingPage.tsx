@@ -372,7 +372,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
           `Serving ${cities.slice(0, 4).join(", ")} and all of ${region}`,
           "Wood-Fire BBQ, Steakhouse Experience, or Surf & Turf menus",
           "4.9 / 5 · 156 Google reviews · 13+ years in business",
-          "24-hour quote response · custom menus locked up to 15 days out",
+          "4-hour quote response · custom menus locked up to 15 days out",
         ]}
       />
 

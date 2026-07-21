@@ -17,13 +17,13 @@ const STEPS = [
   {
     icon: ClipboardCheck,
     n: "02",
-    t: "We reply within 24 hours",
+    t: "We reply within 4 hours",
     b: "A real human (often Chef Terry) reviews your event, confirms availability, and starts your custom proposal.",
   },
   {
     icon: Utensils,
     n: "03",
-    t: "Proposal in your inbox — within 24 hours",
+    t: "Proposal in your inbox — within 4 hours",
     b: "Custom menu, transparent line-item pricing, service style, and staffing — not a generic price sheet. Refine as many times as you like.",
   },
   {

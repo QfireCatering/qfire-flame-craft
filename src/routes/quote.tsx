@@ -17,12 +17,12 @@ export const Route = createFileRoute("/quote")({
       {
         name: "description",
         content:
-          "Tell us about your event. Custom catering proposal within 24 hours. Phoenix Metro & San Diego County.",
+          "Tell us about your event. Custom catering proposal within 4 hours. Phoenix Metro & San Diego County.",
       },
       { property: "og:title", content: "Request a Quote — Qfire Catering" },
       {
         property: "og:description",
-        content: "Custom proposal within 24 hours. Wood-fired + Steakhouse Experience.",
+        content: "Custom proposal within 4 hours. Wood-fired + Steakhouse Experience.",
       },
       { property: "og:url", content: "https://qfire-flame-craft.lovable.app/quote" },
     ],
@@ -148,7 +148,7 @@ function QuotePage() {
             <div className="border border-gold/40 p-10 text-center">
               <div className="text-gold text-5xl font-display mb-4">Thank you.</div>
               <p className="text-bone/70 text-lg">
-                Chef Terry's team will be in touch within 24 hours. For faster
+                Chef Terry's team will be in touch within 4 hours. For faster
                 response, call{" "}
                 <a href={contact.phoneHref} className="text-gold underline-offset-4 hover:underline">
                   {contact.phone}
@@ -180,10 +180,10 @@ function QuotePage() {
 
               <div className="border border-gold/40 bg-gold/10 px-4 py-2.5 text-center">
                 <p className="text-[0.7rem] tracking-[0.25em] uppercase text-gold font-semibold">
-                  ⏱ 24-Hour Response Guarantee
+                  ⏱ 4-Hour Response Guarantee
                 </p>
                 <p className="text-bone/80 text-xs mt-1 font-light normal-case tracking-normal">
-                  Every inquiry answered personally by Chef Terry's team within 24 hours — usually within 4 business hours.
+                  Every inquiry answered personally by Chef Terry's team within 4 hours — usually within 4 business hours.
                 </p>
               </div>
 

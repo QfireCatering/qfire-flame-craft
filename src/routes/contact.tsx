@@ -9,7 +9,7 @@ export const Route = createFileRoute("/contact")({
       {
         name: "description",
         content:
-          "Call (877) 848-7211 or email Eat@QfireCatering.com to design your wedding, corporate event or private party menu. Wood-fired and Steakhouse Experience across Phoenix Metro and San Diego County — every inquiry answered within 24 hours by a real human.",
+          "Call (877) 848-7211 or email Eat@QfireCatering.com to design your wedding, corporate event or private party menu. Wood-fired and Steakhouse Experience across Phoenix Metro and San Diego County — every inquiry answered within 4 hours by a real human.",
       },
       { property: "og:title", content: "Contact Qfire Catering" },
       { property: "og:url", content: "https://qfire-flame-craft.lovable.app/contact" },
@@ -45,7 +45,7 @@ function ContactPage() {
             <Mail className="size-6 text-gold mb-6" />
             <div className="eyebrow mb-4">Email</div>
             <div className="text-2xl font-display text-bone group-hover:text-gold transition-colors break-all">{contact.email}</div>
-            <div className="mt-3 text-sm text-bone/60">Response within 24 hours.</div>
+            <div className="mt-3 text-sm text-bone/60">Response within 4 hours.</div>
           </a>
           <div className="bg-onyx p-10">
             <MapPin className="size-6 text-gold mb-6" />
