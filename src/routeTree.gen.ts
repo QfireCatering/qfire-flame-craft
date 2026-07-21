@@ -16,6 +16,7 @@ import { Route as WeddingFaqRouteImport } from './routes/wedding-faq'
 import { Route as WeddingCateringSanDiegoRouteImport } from './routes/wedding-catering-san-diego'
 import { Route as WeddingCateringPhoenixSanDiegoRouteImport } from './routes/wedding-catering-phoenix-san-diego'
 import { Route as WeddingCateringPhoenixRouteImport } from './routes/wedding-catering-phoenix'
+import { Route as UnsubscribeRouteImport } from './routes/unsubscribe'
 import { Route as TermsRouteImport } from './routes/terms'
 import { Route as SteakhouseExperienceSanDiegoRouteImport } from './routes/steakhouse-experience-san-diego'
 import { Route as SteakhouseExperiencePhoenixRouteImport } from './routes/steakhouse-experience-phoenix'
@@ -119,6 +120,11 @@ const WeddingCateringPhoenixSanDiegoRoute =
 const WeddingCateringPhoenixRoute = WeddingCateringPhoenixRouteImport.update({
   id: '/wedding-catering-phoenix',
   path: '/wedding-catering-phoenix',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const UnsubscribeRoute = UnsubscribeRouteImport.update({
+  id: '/unsubscribe',
+  path: '/unsubscribe',
   getParentRoute: () => rootRouteImport,
 } as any)
 const TermsRoute = TermsRouteImport.update({
@@ -530,6 +536,7 @@ export interface FileRoutesByFullPath {
   '/steakhouse-experience-phoenix': typeof SteakhouseExperiencePhoenixRoute
   '/steakhouse-experience-san-diego': typeof SteakhouseExperienceSanDiegoRoute
   '/terms': typeof TermsRoute
+  '/unsubscribe': typeof UnsubscribeRoute
   '/wedding-catering-phoenix': typeof WeddingCateringPhoenixRoute
   '/wedding-catering-phoenix-san-diego': typeof WeddingCateringPhoenixSanDiegoRoute
   '/wedding-catering-san-diego': typeof WeddingCateringSanDiegoRoute
@@ -605,6 +612,7 @@ export interface FileRoutesByTo {
   '/steakhouse-experience-phoenix': typeof SteakhouseExperiencePhoenixRoute
   '/steakhouse-experience-san-diego': typeof SteakhouseExperienceSanDiegoRoute
   '/terms': typeof TermsRoute
+  '/unsubscribe': typeof UnsubscribeRoute
   '/wedding-catering-phoenix': typeof WeddingCateringPhoenixRoute
   '/wedding-catering-phoenix-san-diego': typeof WeddingCateringPhoenixSanDiegoRoute
   '/wedding-catering-san-diego': typeof WeddingCateringSanDiegoRoute
@@ -683,6 +691,7 @@ export interface FileRoutesById {
   '/steakhouse-experience-phoenix': typeof SteakhouseExperiencePhoenixRoute
   '/steakhouse-experience-san-diego': typeof SteakhouseExperienceSanDiegoRoute
   '/terms': typeof TermsRoute
+  '/unsubscribe': typeof UnsubscribeRoute
   '/wedding-catering-phoenix': typeof WeddingCateringPhoenixRoute
   '/wedding-catering-phoenix-san-diego': typeof WeddingCateringPhoenixSanDiegoRoute
   '/wedding-catering-san-diego': typeof WeddingCateringSanDiegoRoute
@@ -762,6 +771,7 @@ export interface FileRouteTypes {
     | '/steakhouse-experience-phoenix'
     | '/steakhouse-experience-san-diego'
     | '/terms'
+    | '/unsubscribe'
     | '/wedding-catering-phoenix'
     | '/wedding-catering-phoenix-san-diego'
     | '/wedding-catering-san-diego'
@@ -837,6 +847,7 @@ export interface FileRouteTypes {
     | '/steakhouse-experience-phoenix'
     | '/steakhouse-experience-san-diego'
     | '/terms'
+    | '/unsubscribe'
     | '/wedding-catering-phoenix'
     | '/wedding-catering-phoenix-san-diego'
     | '/wedding-catering-san-diego'
@@ -914,6 +925,7 @@ export interface FileRouteTypes {
     | '/steakhouse-experience-phoenix'
     | '/steakhouse-experience-san-diego'
     | '/terms'
+    | '/unsubscribe'
     | '/wedding-catering-phoenix'
     | '/wedding-catering-phoenix-san-diego'
     | '/wedding-catering-san-diego'
@@ -992,6 +1004,7 @@ export interface RootRouteChildren {
   SteakhouseExperiencePhoenixRoute: typeof SteakhouseExperiencePhoenixRoute
   SteakhouseExperienceSanDiegoRoute: typeof SteakhouseExperienceSanDiegoRoute
   TermsRoute: typeof TermsRoute
+  UnsubscribeRoute: typeof UnsubscribeRoute
   WeddingCateringPhoenixRoute: typeof WeddingCateringPhoenixRoute
   WeddingCateringPhoenixSanDiegoRoute: typeof WeddingCateringPhoenixSanDiegoRoute
   WeddingCateringSanDiegoRoute: typeof WeddingCateringSanDiegoRoute
@@ -1057,6 +1070,13 @@ declare module '@tanstack/react-router' {
       path: '/wedding-catering-phoenix'
       fullPath: '/wedding-catering-phoenix'
       preLoaderRoute: typeof WeddingCateringPhoenixRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/unsubscribe': {
+      id: '/unsubscribe'
+      path: '/unsubscribe'
+      fullPath: '/unsubscribe'
+      preLoaderRoute: typeof UnsubscribeRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/terms': {
@@ -1642,6 +1662,7 @@ const rootRouteChildren: RootRouteChildren = {
   SteakhouseExperiencePhoenixRoute: SteakhouseExperiencePhoenixRoute,
   SteakhouseExperienceSanDiegoRoute: SteakhouseExperienceSanDiegoRoute,
   TermsRoute: TermsRoute,
+  UnsubscribeRoute: UnsubscribeRoute,
   WeddingCateringPhoenixRoute: WeddingCateringPhoenixRoute,
   WeddingCateringPhoenixSanDiegoRoute: WeddingCateringPhoenixSanDiegoRoute,
   WeddingCateringSanDiegoRoute: WeddingCateringSanDiegoRoute,
