@@ -57,7 +57,11 @@ export const Route = createFileRoute("/")({
       { property: "og:image", content: heroImage.url },
       { name: "twitter:image", content: heroImage.url },
     ],
-    links: [{ rel: "canonical", href: "https://qfire-flame-craft.lovable.app/" }],
+    links: [
+      { rel: "canonical", href: "https://qfire-flame-craft.lovable.app/" },
+      { rel: "preload", as: "image", href: heroImage.url, fetchpriority: "high" },
+    ],
+
     scripts: [
       {
         type: "application/ld+json",
