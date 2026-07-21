@@ -295,25 +295,25 @@ function SteakSeafoodMenuSanDiegoPage() {
               <h4 className="font-display text-bone text-xl lg:text-2xl mb-4">Your Guests Will Enjoy</h4>
               <div className="space-y-5 text-bone/65 leading-relaxed">
                 <div>
-                  <p className="font-display text-bone text-lg mb-1">Chilled Starter</p>
+                  <p className="font-display text-bone text-lg mb-1">1. 🥂 Chilled Starter</p>
                   <p>Begin the evening with a refreshing gourmet appetizer designed to welcome guests as they mingle and settle into the celebration.</p>
                 </div>
                 <div>
-                  <p className="font-display text-bone text-lg mb-1">Chef-Crafted Hot Appetizer</p>
+                  <p className="font-display text-bone text-lg mb-1">2. 🔥 Chef-Crafted Hot Appetizer</p>
                   <p>A warm, handcrafted appetizer served fresh to build anticipation and set the tone for an unforgettable dining experience.</p>
                 </div>
                 <div>
-                  <p className="font-display text-bone text-lg mb-1">Signature Surf & Turf Entrée</p>
-                  <p>Indulge in three premium proteins expertly prepared over live charcoal alongside two carefully selected gourmet sides designed to complement every bite.</p>
+                  <p className="font-display text-bone text-lg mb-1">3. 🥩🦞🍗 Signature Steakhouse Entrée</p>
+                  <p>Each guest may choose up to 3 total protein selections from any combination of Steak, Seafood, and Chicken. Whether they prefer all steak, a classic surf & turf, or a mix of all three, every plate is cooked fresh over live charcoal and paired with 2 gourmet side dishes.</p>
                   <p className="mt-2">Every plate is crafted to deliver the flavor, presentation, and quality you'd expect from a high-end steakhouse.</p>
                 </div>
                 <div>
-                  <p className="font-display text-bone text-lg mb-1">Gourmet Desserts</p>
-                  <p>Choose two handcrafted desserts from our premium collection—the perfect ending to an unforgettable meal and the course guests almost always come back for.</p>
+                  <p className="font-display text-bone text-lg mb-1">4. 🍰 Gourmet Desserts</p>
+                  <p>Choose 2 handcrafted desserts from our premium collection—the perfect ending to an unforgettable meal and the course guests almost always come back for.</p>
                 </div>
                 <div>
-                  <p className="font-display text-bone text-lg mb-1">Premium Beverage Service</p>
-                  <p>Two refreshing non-alcoholic beverage selections are professionally presented, continuously stocked, and refreshed throughout dinner so your guests never have to wait.</p>
+                  <p className="font-display text-bone text-lg mb-1">5. 🥤 Premium Beverage Service</p>
+                  <p>Enjoy 2 refreshing non-alcoholic beverage selections, professionally presented, continuously stocked, and refreshed throughout dinner so your guests never have to wait.</p>
                 </div>
               </div>
             </div>
