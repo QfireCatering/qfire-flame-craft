@@ -274,11 +274,12 @@
     linear-gradient(180deg, var(--ink) 0%, color-mix(in oklab, var(--ink) 82%, var(--w-chocolate)) 100%);
 }
 
-/* Softer, warmer section backgrounds — alternating mocha/taupe wash */
+/* Softer, warmer section backgrounds — alternating mocha/taupe wash.
+   Skip the hero (first section) so its image renders untouched. */
 .wedding-theme section {
   position: relative;
 }
-.wedding-theme section:nth-of-type(even)::before {
+.wedding-theme section:not(:first-of-type):nth-of-type(even)::before {
   content: "";
   position: absolute;
   inset: 0;
