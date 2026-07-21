@@ -22,6 +22,26 @@ const FROM_ADDRESS = `Qfire Catering Website <quotes@${FROM_DOMAIN}>`;
 const OWNER_INBOX = "Eat@QfireCatering.com";
 const TEMPLATE_NAME = "quote-lead-notification";
 
+function buildLeadText(data: LeadInput & { submittedAt: string }) {
+  const rows = [
+    ["Name", data.name],
+    ["Email", data.email],
+    ["Cell Phone", data.phone],
+    ["Event Date", data.date],
+    ["Guests", data.guests],
+    ["Region", data.region],
+    ["Event Type", data.type],
+    ["Menu Interest", data.menu],
+    ["Message", data.message],
+    ["Source", data.source || "quote"],
+    ["Submitted", data.submittedAt],
+  ]
+    .filter(([, value]) => typeof value === "string" && value.trim().length > 0)
+    .map(([label, value]) => `${label}: ${value}`);
+
+  return [`New Quote Request — Qfire Catering`, "", ...rows].join("\n");
+}
+
 /**
  * Submit a quote/contact lead. Server-side validated, logged to runtime logs,
  * and sent to the owner inbox via the Lovable Emails queue.
@@ -64,6 +84,7 @@ export const submitLead = createServerFn({ method: "POST" })
         typeof entry.subject === "function"
           ? entry.subject(templateData)
           : entry.subject;
+      const text = buildLeadText(templateData);
       const recipient = entry.to ?? OWNER_INBOX;
       const messageId = crypto.randomUUID();
 
@@ -78,6 +99,7 @@ export const submitLead = createServerFn({ method: "POST" })
           sender_domain: SENDER_DOMAIN,
           subject,
           html,
+          text,
           purpose: "transactional",
           label: TEMPLATE_NAME,
           queued_at: submittedAt,
