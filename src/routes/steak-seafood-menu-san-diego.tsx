@@ -252,6 +252,21 @@ function SteakSeafoodMenuSanDiegoPage() {
       </section>
 
       <section className="py-20 lg:py-28 border-t border-white/5">
+        <div className="container-luxe max-w-4xl">
+          <p className="eyebrow justify-center mb-6">San Diego County's #1 Choice</p>
+          <h3 className="heading-md text-bone mb-10 text-center">Why San Diego County Clients Choose This Experience</h3>
+          <div className="grid sm:grid-cols-2 gap-x-12 gap-y-5 text-bone/70">
+            <div className="flex items-start gap-3"><span className="text-gold mt-1">✔</span><span>Live charcoal grilling performed in front of your guests</span></div>
+            <div className="flex items-start gap-3"><span className="text-gold mt-1">✔</span><span>Premium charcoal-grilled steakhouse experience-quality ingredients</span></div>
+            <div className="flex items-start gap-3"><span className="text-gold mt-1">✔</span><span>Restaurant-level presentation and service</span></div>
+            <div className="flex items-start gap-3"><span className="text-gold mt-1">✔</span><span>Luxury dinnerware, linens, and glassware included</span></div>
+            <div className="flex items-start gap-3"><span className="text-gold mt-1">✔</span><span>Experienced culinary and service professionals</span></div>
+            <div className="flex items-start gap-3"><span className="text-gold mt-1">✔</span><span>An unforgettable dining experience that becomes part of the celebration—not just the meal</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 lg:py-28 border-t border-white/5">
         <div className="container-luxe">
           <h3 className="heading-md text-bone mb-16 text-center">Included With Every Steakhouse Experience Experience</h3>
           <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
@@ -302,21 +317,6 @@ function SteakSeafoodMenuSanDiegoPage() {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-20 lg:py-28 border-t border-white/5">
-        <div className="container-luxe max-w-4xl">
-          <p className="eyebrow justify-center mb-6">San Diego County's #1 Choice</p>
-          <h3 className="heading-md text-bone mb-10 text-center">Why San Diego County Clients Choose This Experience</h3>
-          <div className="grid sm:grid-cols-2 gap-x-12 gap-y-5 text-bone/70">
-            <div className="flex items-start gap-3"><span className="text-gold mt-1">✔</span><span>Live charcoal grilling performed in front of your guests</span></div>
-            <div className="flex items-start gap-3"><span className="text-gold mt-1">✔</span><span>Premium charcoal-grilled steakhouse experience-quality ingredients</span></div>
-            <div className="flex items-start gap-3"><span className="text-gold mt-1">✔</span><span>Restaurant-level presentation and service</span></div>
-            <div className="flex items-start gap-3"><span className="text-gold mt-1">✔</span><span>Luxury dinnerware, linens, and glassware included</span></div>
-            <div className="flex items-start gap-3"><span className="text-gold mt-1">✔</span><span>Experienced culinary and service professionals</span></div>
-            <div className="flex items-start gap-3"><span className="text-gold mt-1">✔</span><span>An unforgettable dining experience that becomes part of the celebration—not just the meal</span></div>
           </div>
         </div>
       </section>
