@@ -161,7 +161,7 @@ function QuotePage() {
             </div>
           ) : (
             <form onSubmit={onSubmit} className="space-y-6" noValidate>
-              <div className="border-2 border-gold bg-gold/15 px-5 py-5 text-center shadow-[0_0_40px_-10px_oklch(0.78_0.13_82/0.5)]">
+              <div className="lg:hidden border-2 border-gold bg-gold/15 px-5 py-5 text-center shadow-[0_0_40px_-10px_oklch(0.78_0.13_82/0.5)]">
                 <p className="text-bone font-display text-2xl sm:text-3xl leading-tight">
                   If you would like to speak with someone right now,
                 </p>
