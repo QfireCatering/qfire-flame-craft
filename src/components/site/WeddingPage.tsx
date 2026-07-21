@@ -388,13 +388,14 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
       </section>
 
       {/* BIG VIEW MENU CTA — jumps to menu selection section */}
-      <section className="py-16 lg:py-20 bg-ink border-t border-white/5">
+      <section className="py-12 lg:py-16 bg-ink border-t border-white/5">
         <div className="container-luxe flex justify-center">
           <a
             href="#menus"
-            className="inline-flex items-center justify-center gap-3 px-12 py-6 lg:px-16 lg:py-7 bg-gold text-ink font-semibold text-2xl lg:text-3xl tracking-wide uppercase shadow-2xl hover:bg-gold/90 transition-all hover:scale-105 border-2 border-gold"
+            style={{ fontFamily: '"Great Vibes", "Allura", "Pinyon Script", cursive' }}
+            className="inline-flex items-center justify-center gap-2 px-8 py-3 text-gold text-3xl lg:text-4xl bg-ink/40 border border-gold/60 rounded-full shadow-[0_0_0_1px_rgba(212,175,55,0.2)] hover:bg-gold hover:text-ink transition-all hover:scale-105"
           >
-            View Menu <ArrowRight className="size-7" />
+            View Menu <ArrowRight className="size-5" />
           </a>
         </div>
       </section>
