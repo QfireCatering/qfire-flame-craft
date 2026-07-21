@@ -400,7 +400,7 @@ function SteakSeafoodMenuSanDiegoPage() {
       />
       <Course
         number="04"
-        eyebrow="Choose 3"
+        eyebrow="Choose 2"
         title="Sides"
         sub="Classic wood-fired steakhouse experience accompaniments, scratch-made for your San Diego County event."
         items={sides}
