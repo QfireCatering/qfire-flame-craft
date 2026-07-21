@@ -172,7 +172,7 @@ export function MobileHome() {
         </div>
 
         <div className="space-y-4">
-          <Link to="/wood-fired" className="group block rounded-lg overflow-hidden border border-gold/20 active:border-gold">
+          <Link to="/menus" className="group block rounded-lg overflow-hidden border border-gold/20 active:border-gold">
             <div className="relative aspect-[16/9] overflow-hidden">
               <video src={brisketVideo.url} autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/70 to-transparent" />

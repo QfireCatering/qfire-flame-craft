@@ -26,7 +26,7 @@ export const Route = createFileRoute("/sitemap.xml")({
           "/private-party-catering-san-diego",
           "/menus",
           "/pricing",
-          "/wood-fired",
+          
           "/outdoor-wedding-grilling",
           
           "/steak-seafood-menu",

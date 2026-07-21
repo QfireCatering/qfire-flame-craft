@@ -8,7 +8,7 @@ import heroFire from "@/assets/hero-fire.jpg";
 const tiers = [
   {
     name: "Wood-Fired",
-    href: "/wood-fired",
+    href: "/menus",
     cta: "See the Wood-Fire Menu",
     headline: "From $13.99 / guest (Phoenix) · From $16.99 / guest (San Diego)",
     blurb:
