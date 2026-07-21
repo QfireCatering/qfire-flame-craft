@@ -16,6 +16,7 @@ import { Route as WeddingFaqRouteImport } from './routes/wedding-faq'
 import { Route as WeddingCateringSanDiegoRouteImport } from './routes/wedding-catering-san-diego'
 import { Route as WeddingCateringPhoenixSanDiegoRouteImport } from './routes/wedding-catering-phoenix-san-diego'
 import { Route as WeddingCateringPhoenixRouteImport } from './routes/wedding-catering-phoenix'
+import { Route as UnsubscribeRouteImport } from './routes/unsubscribe'
 import { Route as TermsRouteImport } from './routes/terms'
 import { Route as SteakhouseExperienceSanDiegoRouteImport } from './routes/steakhouse-experience-san-diego'
 import { Route as SteakhouseExperiencePhoenixRouteImport } from './routes/steakhouse-experience-phoenix'
@@ -76,7 +77,11 @@ import { Route as PhoenixIndexRouteImport } from './routes/phoenix.index'
 import { Route as SanDiegoSlugRouteImport } from './routes/san-diego.$slug'
 import { Route as PhoenixSlugRouteImport } from './routes/phoenix.$slug'
 import { Route as Items1SplatRouteImport } from './routes/items-1.$'
+import { Route as EmailUnsubscribeRouteImport } from './routes/email/unsubscribe'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
+import { Route as LovableEmailSuppressionRouteImport } from './routes/lovable/email/suppression'
+import { Route as LovableEmailTransactionalSendRouteImport } from './routes/lovable/email/transactional/send'
+import { Route as LovableEmailTransactionalPreviewRouteImport } from './routes/lovable/email/transactional/preview'
 import { Route as LovableEmailQueueProcessRouteImport } from './routes/lovable/email/queue/process'
 import { Route as LovableEmailAuthWebhookRouteImport } from './routes/lovable/email/auth/webhook'
 import { Route as LovableEmailAuthPreviewRouteImport } from './routes/lovable/email/auth/preview'
@@ -115,6 +120,11 @@ const WeddingCateringPhoenixSanDiegoRoute =
 const WeddingCateringPhoenixRoute = WeddingCateringPhoenixRouteImport.update({
   id: '/wedding-catering-phoenix',
   path: '/wedding-catering-phoenix',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const UnsubscribeRoute = UnsubscribeRouteImport.update({
+  id: '/unsubscribe',
+  path: '/unsubscribe',
   getParentRoute: () => rootRouteImport,
 } as any)
 const TermsRoute = TermsRouteImport.update({
@@ -426,11 +436,33 @@ const Items1SplatRoute = Items1SplatRouteImport.update({
   path: '/$',
   getParentRoute: () => Items1Route,
 } as any)
+const EmailUnsubscribeRoute = EmailUnsubscribeRouteImport.update({
+  id: '/email/unsubscribe',
+  path: '/email/unsubscribe',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BlogSlugRoute = BlogSlugRouteImport.update({
   id: '/$slug',
   path: '/$slug',
   getParentRoute: () => BlogRoute,
 } as any)
+const LovableEmailSuppressionRoute = LovableEmailSuppressionRouteImport.update({
+  id: '/lovable/email/suppression',
+  path: '/lovable/email/suppression',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LovableEmailTransactionalSendRoute =
+  LovableEmailTransactionalSendRouteImport.update({
+    id: '/lovable/email/transactional/send',
+    path: '/lovable/email/transactional/send',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const LovableEmailTransactionalPreviewRoute =
+  LovableEmailTransactionalPreviewRouteImport.update({
+    id: '/lovable/email/transactional/preview',
+    path: '/lovable/email/transactional/preview',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const LovableEmailQueueProcessRoute =
   LovableEmailQueueProcessRouteImport.update({
     id: '/lovable/email/queue/process',
@@ -504,6 +536,7 @@ export interface FileRoutesByFullPath {
   '/steakhouse-experience-phoenix': typeof SteakhouseExperiencePhoenixRoute
   '/steakhouse-experience-san-diego': typeof SteakhouseExperienceSanDiegoRoute
   '/terms': typeof TermsRoute
+  '/unsubscribe': typeof UnsubscribeRoute
   '/wedding-catering-phoenix': typeof WeddingCateringPhoenixRoute
   '/wedding-catering-phoenix-san-diego': typeof WeddingCateringPhoenixSanDiegoRoute
   '/wedding-catering-san-diego': typeof WeddingCateringSanDiegoRoute
@@ -512,14 +545,18 @@ export interface FileRoutesByFullPath {
   '/why-qfire': typeof WhyQfireRoute
   '/wood-fired': typeof WoodFiredRoute
   '/blog/$slug': typeof BlogSlugRoute
+  '/email/unsubscribe': typeof EmailUnsubscribeRoute
   '/items-1/$': typeof Items1SplatRoute
   '/phoenix/$slug': typeof PhoenixSlugRoute
   '/san-diego/$slug': typeof SanDiegoSlugRoute
   '/phoenix/': typeof PhoenixIndexRoute
   '/san-diego/': typeof SanDiegoIndexRoute
+  '/lovable/email/suppression': typeof LovableEmailSuppressionRoute
   '/lovable/email/auth/preview': typeof LovableEmailAuthPreviewRoute
   '/lovable/email/auth/webhook': typeof LovableEmailAuthWebhookRoute
   '/lovable/email/queue/process': typeof LovableEmailQueueProcessRoute
+  '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
+  '/lovable/email/transactional/send': typeof LovableEmailTransactionalSendRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -575,6 +612,7 @@ export interface FileRoutesByTo {
   '/steakhouse-experience-phoenix': typeof SteakhouseExperiencePhoenixRoute
   '/steakhouse-experience-san-diego': typeof SteakhouseExperienceSanDiegoRoute
   '/terms': typeof TermsRoute
+  '/unsubscribe': typeof UnsubscribeRoute
   '/wedding-catering-phoenix': typeof WeddingCateringPhoenixRoute
   '/wedding-catering-phoenix-san-diego': typeof WeddingCateringPhoenixSanDiegoRoute
   '/wedding-catering-san-diego': typeof WeddingCateringSanDiegoRoute
@@ -583,14 +621,18 @@ export interface FileRoutesByTo {
   '/why-qfire': typeof WhyQfireRoute
   '/wood-fired': typeof WoodFiredRoute
   '/blog/$slug': typeof BlogSlugRoute
+  '/email/unsubscribe': typeof EmailUnsubscribeRoute
   '/items-1/$': typeof Items1SplatRoute
   '/phoenix/$slug': typeof PhoenixSlugRoute
   '/san-diego/$slug': typeof SanDiegoSlugRoute
   '/phoenix': typeof PhoenixIndexRoute
   '/san-diego': typeof SanDiegoIndexRoute
+  '/lovable/email/suppression': typeof LovableEmailSuppressionRoute
   '/lovable/email/auth/preview': typeof LovableEmailAuthPreviewRoute
   '/lovable/email/auth/webhook': typeof LovableEmailAuthWebhookRoute
   '/lovable/email/queue/process': typeof LovableEmailQueueProcessRoute
+  '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
+  '/lovable/email/transactional/send': typeof LovableEmailTransactionalSendRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -649,6 +691,7 @@ export interface FileRoutesById {
   '/steakhouse-experience-phoenix': typeof SteakhouseExperiencePhoenixRoute
   '/steakhouse-experience-san-diego': typeof SteakhouseExperienceSanDiegoRoute
   '/terms': typeof TermsRoute
+  '/unsubscribe': typeof UnsubscribeRoute
   '/wedding-catering-phoenix': typeof WeddingCateringPhoenixRoute
   '/wedding-catering-phoenix-san-diego': typeof WeddingCateringPhoenixSanDiegoRoute
   '/wedding-catering-san-diego': typeof WeddingCateringSanDiegoRoute
@@ -657,14 +700,18 @@ export interface FileRoutesById {
   '/why-qfire': typeof WhyQfireRoute
   '/wood-fired': typeof WoodFiredRoute
   '/blog/$slug': typeof BlogSlugRoute
+  '/email/unsubscribe': typeof EmailUnsubscribeRoute
   '/items-1/$': typeof Items1SplatRoute
   '/phoenix/$slug': typeof PhoenixSlugRoute
   '/san-diego/$slug': typeof SanDiegoSlugRoute
   '/phoenix/': typeof PhoenixIndexRoute
   '/san-diego/': typeof SanDiegoIndexRoute
+  '/lovable/email/suppression': typeof LovableEmailSuppressionRoute
   '/lovable/email/auth/preview': typeof LovableEmailAuthPreviewRoute
   '/lovable/email/auth/webhook': typeof LovableEmailAuthWebhookRoute
   '/lovable/email/queue/process': typeof LovableEmailQueueProcessRoute
+  '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
+  '/lovable/email/transactional/send': typeof LovableEmailTransactionalSendRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -724,6 +771,7 @@ export interface FileRouteTypes {
     | '/steakhouse-experience-phoenix'
     | '/steakhouse-experience-san-diego'
     | '/terms'
+    | '/unsubscribe'
     | '/wedding-catering-phoenix'
     | '/wedding-catering-phoenix-san-diego'
     | '/wedding-catering-san-diego'
@@ -732,14 +780,18 @@ export interface FileRouteTypes {
     | '/why-qfire'
     | '/wood-fired'
     | '/blog/$slug'
+    | '/email/unsubscribe'
     | '/items-1/$'
     | '/phoenix/$slug'
     | '/san-diego/$slug'
     | '/phoenix/'
     | '/san-diego/'
+    | '/lovable/email/suppression'
     | '/lovable/email/auth/preview'
     | '/lovable/email/auth/webhook'
     | '/lovable/email/queue/process'
+    | '/lovable/email/transactional/preview'
+    | '/lovable/email/transactional/send'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -795,6 +847,7 @@ export interface FileRouteTypes {
     | '/steakhouse-experience-phoenix'
     | '/steakhouse-experience-san-diego'
     | '/terms'
+    | '/unsubscribe'
     | '/wedding-catering-phoenix'
     | '/wedding-catering-phoenix-san-diego'
     | '/wedding-catering-san-diego'
@@ -803,14 +856,18 @@ export interface FileRouteTypes {
     | '/why-qfire'
     | '/wood-fired'
     | '/blog/$slug'
+    | '/email/unsubscribe'
     | '/items-1/$'
     | '/phoenix/$slug'
     | '/san-diego/$slug'
     | '/phoenix'
     | '/san-diego'
+    | '/lovable/email/suppression'
     | '/lovable/email/auth/preview'
     | '/lovable/email/auth/webhook'
     | '/lovable/email/queue/process'
+    | '/lovable/email/transactional/preview'
+    | '/lovable/email/transactional/send'
   id:
     | '__root__'
     | '/'
@@ -868,6 +925,7 @@ export interface FileRouteTypes {
     | '/steakhouse-experience-phoenix'
     | '/steakhouse-experience-san-diego'
     | '/terms'
+    | '/unsubscribe'
     | '/wedding-catering-phoenix'
     | '/wedding-catering-phoenix-san-diego'
     | '/wedding-catering-san-diego'
@@ -876,14 +934,18 @@ export interface FileRouteTypes {
     | '/why-qfire'
     | '/wood-fired'
     | '/blog/$slug'
+    | '/email/unsubscribe'
     | '/items-1/$'
     | '/phoenix/$slug'
     | '/san-diego/$slug'
     | '/phoenix/'
     | '/san-diego/'
+    | '/lovable/email/suppression'
     | '/lovable/email/auth/preview'
     | '/lovable/email/auth/webhook'
     | '/lovable/email/queue/process'
+    | '/lovable/email/transactional/preview'
+    | '/lovable/email/transactional/send'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -942,6 +1004,7 @@ export interface RootRouteChildren {
   SteakhouseExperiencePhoenixRoute: typeof SteakhouseExperiencePhoenixRoute
   SteakhouseExperienceSanDiegoRoute: typeof SteakhouseExperienceSanDiegoRoute
   TermsRoute: typeof TermsRoute
+  UnsubscribeRoute: typeof UnsubscribeRoute
   WeddingCateringPhoenixRoute: typeof WeddingCateringPhoenixRoute
   WeddingCateringPhoenixSanDiegoRoute: typeof WeddingCateringPhoenixSanDiegoRoute
   WeddingCateringSanDiegoRoute: typeof WeddingCateringSanDiegoRoute
@@ -949,9 +1012,13 @@ export interface RootRouteChildren {
   WeddingsRoute: typeof WeddingsRoute
   WhyQfireRoute: typeof WhyQfireRoute
   WoodFiredRoute: typeof WoodFiredRoute
+  EmailUnsubscribeRoute: typeof EmailUnsubscribeRoute
+  LovableEmailSuppressionRoute: typeof LovableEmailSuppressionRoute
   LovableEmailAuthPreviewRoute: typeof LovableEmailAuthPreviewRoute
   LovableEmailAuthWebhookRoute: typeof LovableEmailAuthWebhookRoute
   LovableEmailQueueProcessRoute: typeof LovableEmailQueueProcessRoute
+  LovableEmailTransactionalPreviewRoute: typeof LovableEmailTransactionalPreviewRoute
+  LovableEmailTransactionalSendRoute: typeof LovableEmailTransactionalSendRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -1003,6 +1070,13 @@ declare module '@tanstack/react-router' {
       path: '/wedding-catering-phoenix'
       fullPath: '/wedding-catering-phoenix'
       preLoaderRoute: typeof WeddingCateringPhoenixRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/unsubscribe': {
+      id: '/unsubscribe'
+      path: '/unsubscribe'
+      fullPath: '/unsubscribe'
+      preLoaderRoute: typeof UnsubscribeRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/terms': {
@@ -1425,12 +1499,40 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof Items1SplatRouteImport
       parentRoute: typeof Items1Route
     }
+    '/email/unsubscribe': {
+      id: '/email/unsubscribe'
+      path: '/email/unsubscribe'
+      fullPath: '/email/unsubscribe'
+      preLoaderRoute: typeof EmailUnsubscribeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog/$slug': {
       id: '/blog/$slug'
       path: '/$slug'
       fullPath: '/blog/$slug'
       preLoaderRoute: typeof BlogSlugRouteImport
       parentRoute: typeof BlogRoute
+    }
+    '/lovable/email/suppression': {
+      id: '/lovable/email/suppression'
+      path: '/lovable/email/suppression'
+      fullPath: '/lovable/email/suppression'
+      preLoaderRoute: typeof LovableEmailSuppressionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/lovable/email/transactional/send': {
+      id: '/lovable/email/transactional/send'
+      path: '/lovable/email/transactional/send'
+      fullPath: '/lovable/email/transactional/send'
+      preLoaderRoute: typeof LovableEmailTransactionalSendRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/lovable/email/transactional/preview': {
+      id: '/lovable/email/transactional/preview'
+      path: '/lovable/email/transactional/preview'
+      fullPath: '/lovable/email/transactional/preview'
+      preLoaderRoute: typeof LovableEmailTransactionalPreviewRouteImport
+      parentRoute: typeof rootRouteImport
     }
     '/lovable/email/queue/process': {
       id: '/lovable/email/queue/process'
@@ -1560,6 +1662,7 @@ const rootRouteChildren: RootRouteChildren = {
   SteakhouseExperiencePhoenixRoute: SteakhouseExperiencePhoenixRoute,
   SteakhouseExperienceSanDiegoRoute: SteakhouseExperienceSanDiegoRoute,
   TermsRoute: TermsRoute,
+  UnsubscribeRoute: UnsubscribeRoute,
   WeddingCateringPhoenixRoute: WeddingCateringPhoenixRoute,
   WeddingCateringPhoenixSanDiegoRoute: WeddingCateringPhoenixSanDiegoRoute,
   WeddingCateringSanDiegoRoute: WeddingCateringSanDiegoRoute,
@@ -1567,20 +1670,14 @@ const rootRouteChildren: RootRouteChildren = {
   WeddingsRoute: WeddingsRoute,
   WhyQfireRoute: WhyQfireRoute,
   WoodFiredRoute: WoodFiredRoute,
+  EmailUnsubscribeRoute: EmailUnsubscribeRoute,
+  LovableEmailSuppressionRoute: LovableEmailSuppressionRoute,
   LovableEmailAuthPreviewRoute: LovableEmailAuthPreviewRoute,
   LovableEmailAuthWebhookRoute: LovableEmailAuthWebhookRoute,
   LovableEmailQueueProcessRoute: LovableEmailQueueProcessRoute,
+  LovableEmailTransactionalPreviewRoute: LovableEmailTransactionalPreviewRoute,
+  LovableEmailTransactionalSendRoute: LovableEmailTransactionalSendRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
