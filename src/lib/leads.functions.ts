@@ -16,22 +16,82 @@ const LeadSchema = z.object({
 
 export type LeadInput = z.infer<typeof LeadSchema>;
 
+const SENDER_DOMAIN = "notify.qfirecatering.com";
+const FROM_DOMAIN = "qfirecatering.com";
+const FROM_ADDRESS = `Qfire Catering Website <quotes@${FROM_DOMAIN}>`;
+const OWNER_INBOX = "Eat@QfireCatering.com";
+const TEMPLATE_NAME = "quote-lead-notification";
+
 /**
- * Submit a quote/contact lead. Server-side validated; logs to runtime logs so
- * the Lovable team can retrieve every lead even before email/DB is wired.
- *
- * To wire delivery, do ONE of:
- *  1) Connect the Resend connector, then add a fetch to
- *     https://connector-gateway.lovable.dev/resend/emails inside this handler.
- *  2) Enable Lovable Cloud, create a `quote_requests` table, and INSERT here
- *     using the server-side Supabase client.
+ * Submit a quote/contact lead. Server-side validated, logged to runtime logs,
+ * and sent to the owner inbox via the Lovable Emails queue.
  */
 export const submitLead = createServerFn({ method: "POST" })
   .inputValidator((input: unknown) => LeadSchema.parse(input))
   .handler(async ({ data }) => {
-    // Always print a structured line so the lead is retrievable from server logs.
+    const submittedAt = new Date().toISOString();
     console.log(
-      JSON.stringify({ event: "qfire.lead", at: new Date().toISOString(), ...data }),
+      JSON.stringify({ event: "qfire.lead", at: submittedAt, ...data }),
     );
-    return { ok: true as const, receivedAt: new Date().toISOString() };
+
+    try {
+      const [{ createClient }, React, { render }, registry] = await Promise.all([
+        import("@supabase/supabase-js"),
+        import("react"),
+        import("@react-email/render"),
+        import("./email-templates/registry"),
+      ]);
+
+      const supabaseUrl =
+        import.meta.env.VITE_SUPABASE_URL ?? process.env.SUPABASE_URL;
+      const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+      if (!supabaseUrl || !serviceKey) {
+        console.error("qfire.lead.email.missing_env");
+        return { ok: true as const, receivedAt: submittedAt, emailed: false };
+      }
+
+      const entry = registry.TEMPLATES[TEMPLATE_NAME];
+      if (!entry) {
+        console.error("qfire.lead.email.template_missing");
+        return { ok: true as const, receivedAt: submittedAt, emailed: false };
+      }
+
+      const templateData = { ...data, submittedAt };
+      const html = await render(
+        React.createElement(entry.component, templateData),
+      );
+      const subject =
+        typeof entry.subject === "function"
+          ? entry.subject(templateData)
+          : entry.subject;
+      const recipient = entry.to ?? OWNER_INBOX;
+      const messageId = crypto.randomUUID();
+
+      const supabase = createClient(supabaseUrl, serviceKey);
+      const { error } = await supabase.rpc("enqueue_email", {
+        queue_name: "transactional_emails",
+        payload: {
+          message_id: messageId,
+          idempotency_key: `quote-lead-${messageId}`,
+          to: recipient,
+          from: FROM_ADDRESS,
+          sender_domain: SENDER_DOMAIN,
+          subject,
+          html,
+          purpose: "transactional",
+          label: TEMPLATE_NAME,
+          queued_at: submittedAt,
+        },
+      });
+
+      if (error) {
+        console.error("qfire.lead.email.enqueue_failed", error);
+        return { ok: true as const, receivedAt: submittedAt, emailed: false };
+      }
+
+      return { ok: true as const, receivedAt: submittedAt, emailed: true };
+    } catch (err) {
+      console.error("qfire.lead.email.exception", err);
+      return { ok: true as const, receivedAt: submittedAt, emailed: false };
+    }
   });
