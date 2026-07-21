@@ -188,6 +188,7 @@ function QuotePage() {
               </div>
 
               {/* STEP 1 — 3-field quick start */}
+              {!expanded && (
               <div className="border-2 border-gold/40 bg-gold/[0.04] p-5 lg:p-6 space-y-4">
                 <div className="flex items-center justify-between">
                   <div>
@@ -240,24 +241,45 @@ function QuotePage() {
                     className="w-full bg-charcoal/60 border border-white/15 px-4 py-3 text-bone focus:border-gold focus:outline-none"
                   />
                 </div>
-                {!expanded && (
-                  <button
-                    type="button"
-                    onClick={() => setExpanded(true)}
-                    disabled={!step1Ready}
-                    className="btn-primary w-full disabled:opacity-40 disabled:cursor-not-allowed"
-                  >
-                    Check My Date &amp; Continue <ArrowRight className="size-4" />
-                  </button>
-                )}
-                {!expanded && !step1Ready && (
+                <button
+                  type="button"
+                  onClick={() => setExpanded(true)}
+                  disabled={!step1Ready}
+                  className="btn-primary w-full disabled:opacity-40 disabled:cursor-not-allowed"
+                >
+                  Check My Date &amp; Continue <ArrowRight className="size-4" />
+                </button>
+                {!step1Ready && (
                   <p className="text-xs text-bone/60 text-center">Fill the fields above to continue — no commitment.</p>
                 )}
               </div>
+              )}
 
               {expanded && (
                 <div className="space-y-6 animate-in fade-in duration-500">
-                  <div className="text-[0.65rem] tracking-[0.3em] uppercase text-gold text-center pt-2">Step 2 of 2 · A few more details for your custom proposal</div>
+                  {/* Hidden inputs preserve Step 1 data for submission */}
+                  <input type="hidden" name="name" value={step1.name} />
+                  <input type="hidden" name="email" value={step1.email} />
+                  <input type="hidden" name="date" value={step1.date} />
+
+                  <div className="border-2 border-gold bg-gold/15 px-5 py-4 shadow-[0_0_40px_-10px_oklch(0.78_0.13_82/0.5)]">
+                    <div className="flex items-center gap-2 text-gold text-[0.65rem] tracking-[0.3em] uppercase font-semibold">
+                      <Check className="size-4" /> Step 1 Complete
+                    </div>
+                    <p className="text-bone/80 text-sm mt-1">
+                      Thanks, {step1.name.split(" ")[0] || "friend"} — checking availability for {step1.date}. One more step.
+                    </p>
+                    <button
+                      type="button"
+                      onClick={() => setExpanded(false)}
+                      className="text-xs text-gold/80 hover:text-gold underline mt-2"
+                    >
+                      Edit my info
+                    </button>
+                  </div>
+                  <div className="text-white font-display text-3xl md:text-4xl leading-tight font-bold text-center drop-shadow-[0_0_12px_rgba(212,175,55,0.35)]">
+                    Step 2 of 2 — Tell us about your event
+                  </div>
                   <Field label="Approx Guest Count" name="guests" type="number" />
                   <SelectField
                     label="Region"
@@ -271,7 +293,7 @@ function QuotePage() {
                   />
                   <div>
                     <label className="block text-[0.65rem] tracking-[0.3em] uppercase text-white mb-3">
-                      Leave a message
+                      Leave a message — Optional
                     </label>
                     <textarea
                       name="message"
