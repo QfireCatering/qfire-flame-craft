@@ -301,7 +301,7 @@ export function WeddingPage({ config }: { config: WeddingRegionConfig }) {
 
 
   return (
-    <>
+    <div className="wedding-theme">
       <SectionNav items={sectionNavItems} />
       {/* HERO */}
       <section className="relative min-h-[88vh] flex items-end overflow-hidden">
