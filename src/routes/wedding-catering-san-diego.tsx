@@ -19,6 +19,11 @@ const config: WeddingRegionConfig = {
     "The US Grant", "Mt. Woodson Castle",
   ],
   reviewCities: ["La Jolla", "Del Mar", "Carlsbad", "Rancho Santa Fe"],
+  heroReview: {
+    q: "This is by far the best BBQ you can have at your event in San Diego. The Brisket, tenderloin, and tritip is cooked to perfection. Terry and his team are doing a phenomenal job. I can't wait to try this BBQ again. It is finger-licking good 👌🏽!",
+    a: "Sylvia Ntembe",
+    e: "San Diego · Google review",
+  },
 };
 
 export const Route = createFileRoute("/wedding-catering-san-diego")({
