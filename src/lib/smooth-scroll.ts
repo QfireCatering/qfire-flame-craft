@@ -1,4 +1,4 @@
-export function smoothScrollTo(targetY: number, duration = 2000) {
+export function smoothScrollTo(targetY: number, duration = 4500) {
   const startY = window.scrollY;
   const diff = targetY - startY;
   const startTime = performance.now();
