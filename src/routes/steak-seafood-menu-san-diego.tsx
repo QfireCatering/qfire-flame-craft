@@ -225,7 +225,7 @@ function SteakSeafoodMenuSanDiegoPage() {
             <span className="w-2.5 h-2.5 bg-gold rotate-45" />
           </div>
           <div className="flex flex-wrap gap-4">
-            <Link to="/quote" className="btn-primary">Request Your San Diego Quote <ArrowRight className="size-4" /></Link>
+            <a href="#sd-pricing" className="btn-primary">View the Steakhouse Menu <ArrowRight className="size-4" /></a>
             <a href="#menu" className="btn-ghost">View the San Diego Menu</a>
           </div>
         </div>
