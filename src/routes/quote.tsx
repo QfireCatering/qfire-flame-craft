@@ -104,20 +104,33 @@ function QuotePage() {
           <div>
             <h1 className="heading-lg text-bone max-w-md">Tell us about your event.</h1>
             <p className="mt-6 text-bone/70 text-lg max-w-md leading-relaxed font-light">
-              We answer every inquiry personally — usually within 24 hours.
+              We answer every inquiry personally — usually within 4 hours.
             </p>
             <div className="mt-12 space-y-3 text-bone/80">
               {[
-                "Custom proposal within 24 hours",
-                "Free phone consultation",
+                "Receive a Detailed Quote within 4 Hours",
+                "Free Phone (Non-Rushed) Consultation with a catering specialist",
               ].map((t) => (
 
-                <div key={t} className="flex items-center gap-3">
-                  <Check className="size-4 text-gold" /> {t}
+                <div key={t} className="flex items-start gap-3">
+                  <Check className="size-4 text-gold mt-1 shrink-0" /> <span>{t}</span>
                 </div>
               ))}
             </div>
-            <div className="mt-12 space-y-2 text-bone/70 text-sm">
+
+            <div className="mt-10 border-2 border-gold bg-gold/15 px-5 py-5 max-w-md shadow-[0_0_40px_-10px_oklch(0.78_0.13_82/0.5)]">
+              <p className="text-bone font-display text-2xl leading-tight">
+                If you would like to speak with someone right now,
+              </p>
+              <a
+                href={contact.phoneHref}
+                className="mt-2 inline-flex items-center gap-2 text-gold font-black text-xl tracking-tight hover:underline"
+              >
+                <Phone className="size-5" /> Call 877.848.7211
+              </a>
+            </div>
+
+            <div className="mt-8 space-y-2 text-bone/70 text-sm">
               <a href={contact.phoneHref} className="flex items-center gap-3 hover:text-gold">
                 <Phone className="size-4 text-gold" /> {contact.phone}
               </a>
