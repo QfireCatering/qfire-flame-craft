@@ -22,34 +22,6 @@ const FROM_ADDRESS = `Qfire Catering Website <quotes@${FROM_DOMAIN}>`;
 const OWNER_INBOX = "Eat@QfireCatering.com";
 const TEMPLATE_NAME = "quote-lead-notification";
 
-function buildLeadText(data: LeadInput & { submittedAt: string }) {
-  const rows = [
-    ["Name", data.name],
-    ["Email", data.email],
-    ["Cell Phone", data.phone],
-    ["Event Date", data.date],
-    ["Guests", data.guests],
-    ["Region", data.region],
-    ["Event Type", data.type],
-    ["Menu Interest", data.menu],
-    ["Message", data.message],
-    ["Source", data.source || "quote"],
-    ["Submitted", data.submittedAt],
-  ]
-    .filter(([, value]) => typeof value === "string" && value.trim().length > 0)
-    .map(([label, value]) => `${label}: ${value}`);
-
-  return [`New Quote Request — Qfire Catering`, "", ...rows].join("\n");
-}
-
-function generateUnsubscribeToken() {
-  const bytes = new Uint8Array(32);
-  crypto.getRandomValues(bytes);
-  return Array.from(bytes)
-    .map((byte) => byte.toString(16).padStart(2, "0"))
-    .join("");
-}
-
 /**
  * Submit a quote/contact lead. Server-side validated, logged to runtime logs,
  * and sent to the owner inbox via the Lovable Emails queue.
