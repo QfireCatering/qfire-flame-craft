@@ -42,6 +42,14 @@ function buildLeadText(data: LeadInput & { submittedAt: string }) {
   return [`New Quote Request — Qfire Catering`, "", ...rows].join("\n");
 }
 
+function generateUnsubscribeToken() {
+  const bytes = new Uint8Array(32);
+  crypto.getRandomValues(bytes);
+  return Array.from(bytes)
+    .map((byte) => byte.toString(16).padStart(2, "0"))
+    .join("");
+}
+
 /**
  * Submit a quote/contact lead. Server-side validated, logged to runtime logs,
  * and sent to the owner inbox via the Lovable Emails queue.
@@ -89,6 +97,47 @@ export const submitLead = createServerFn({ method: "POST" })
       const messageId = crypto.randomUUID();
 
       const supabase = createClient(supabaseUrl, serviceKey);
+      const normalizedRecipient = recipient.toLowerCase();
+      const { data: existingToken, error: tokenLookupError } = await supabase
+        .from("email_unsubscribe_tokens")
+        .select("token, used_at")
+        .eq("email", normalizedRecipient)
+        .maybeSingle();
+
+      if (tokenLookupError) {
+        console.error("qfire.lead.email.token_lookup_failed", tokenLookupError);
+        return { ok: true as const, receivedAt: submittedAt, emailed: false };
+      }
+
+      let unsubscribeToken = existingToken?.used_at ? null : existingToken?.token;
+      if (!unsubscribeToken) {
+        const newToken = generateUnsubscribeToken();
+        const { error: tokenCreateError } = await supabase
+          .from("email_unsubscribe_tokens")
+          .upsert(
+            { token: newToken, email: normalizedRecipient },
+            { onConflict: "email", ignoreDuplicates: true },
+          );
+
+        if (tokenCreateError) {
+          console.error("qfire.lead.email.token_create_failed", tokenCreateError);
+          return { ok: true as const, receivedAt: submittedAt, emailed: false };
+        }
+
+        const { data: storedToken, error: tokenReadError } = await supabase
+          .from("email_unsubscribe_tokens")
+          .select("token")
+          .eq("email", normalizedRecipient)
+          .maybeSingle();
+
+        if (tokenReadError || !storedToken) {
+          console.error("qfire.lead.email.token_read_failed", tokenReadError);
+          return { ok: true as const, receivedAt: submittedAt, emailed: false };
+        }
+
+        unsubscribeToken = storedToken.token;
+      }
+
       const { error } = await supabase.rpc("enqueue_email", {
         queue_name: "transactional_emails",
         payload: {
@@ -102,6 +151,7 @@ export const submitLead = createServerFn({ method: "POST" })
           text,
           purpose: "transactional",
           label: TEMPLATE_NAME,
+          unsubscribe_token: unsubscribeToken,
           queued_at: submittedAt,
         },
       });
