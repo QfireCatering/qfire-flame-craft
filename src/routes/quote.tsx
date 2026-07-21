@@ -154,9 +154,9 @@ function QuotePage() {
                 </p>
                 <a
                   href={contact.phoneHref}
-                  className="mt-2 inline-flex items-center justify-center gap-2 text-gold font-black text-3xl sm:text-4xl tracking-tight hover:underline"
+                  className="mt-2 inline-flex items-center justify-center gap-2 text-gold font-black text-xl sm:text-2xl tracking-tight hover:underline"
                 >
-                  <Phone className="size-7" /> Call 877.848.7211
+                  <Phone className="size-5" /> Call 877.848.7211
                 </a>
               </div>
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-center gap-3 sm:gap-6 text-center">
